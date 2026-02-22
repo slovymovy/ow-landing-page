@@ -6,6 +6,9 @@
     <title>OpenWords – The AI-Powered Dictionary & Vocabulary Builder</title>
     <meta name="description" content="Learn, review, and remember new words that actually stick — free and easy on mobile.">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon_otter.svg">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,43 +19,43 @@
            COZY NIGHT STUDY - DESIGN SYSTEM
            ======================================== */
         :root {
-            /* Warm, Cozy Color Palette */
-            --amber-50: #fffbeb;
-            --amber-100: #fef3c7;
-            --amber-200: #fde68a;
-            --amber-300: #fcd34d;
-            --amber-400: #fbbf24;
-            --amber-500: #f59e0b;
-            --amber-600: #d97706;
-            --amber-700: #b45309;
-            --amber-800: #92400e;
-            --amber-900: #78350f;
+            /* Burnished Gold Palette */
+            --amber-50: #faf6ef;
+            --amber-100: #f2e8d0;
+            --amber-200: #e8d4ab;
+            --amber-300: #dbbe84;
+            --amber-400: #C5A367;
+            --amber-500: #b08d4f;
+            --amber-600: #8c6f3a;
+            --amber-700: #6b5328;
+            --amber-800: #4a3a1c;
+            --amber-900: #2e240f;
 
-            --orange-400: #fb923c;
-            --orange-500: #f97316;
+            --orange-400: #c4924a;
+            --orange-500: #b07838;
 
-            --cream-50: #fefdfb;
-            --cream-100: #fdf8f0;
-            --cream-200: #f5ebe0;
-            --cream-300: #e8dcc8;
+            --cream-50: #faf9f7;
+            --cream-100: #f2eee6;
+            --cream-200: #e4ddd0;
+            --cream-300: #d0c6b5;
 
-            /* Deep, Warm Dark Tones */
-            --night-950: #0c0a09;
-            --night-900: #1c1917;
-            --night-800: #292524;
-            --night-700: #44403c;
-            --night-600: #57534e;
-            --night-500: #78716c;
-            --night-400: #a8a29e;
-            --night-300: #d6d3d1;
-            --night-200: #e7e5e4;
-            --night-100: #f5f5f4;
+            /* Midnight Ink Dark Tones */
+            --night-950: #0d0f16;
+            --night-900: #12141C;
+            --night-800: #1a1d28;
+            --night-700: #252838;
+            --night-600: #373b52;
+            --night-500: #545870;
+            --night-400: #848aab;
+            --night-300: #b8bcce;
+            --night-200: #d8dae6;
+            --night-100: #eceef5;
 
-            /* Cozy Gradients */
-            --gradient-night: linear-gradient(180deg, #1c1917 0%, #0c0a09 100%);
-            --gradient-warm: linear-gradient(135deg, var(--amber-500) 0%, var(--orange-500) 100%);
-            --gradient-lamp: radial-gradient(ellipse at top, rgba(251, 191, 36, 0.15) 0%, transparent 60%);
-            --gradient-glow: radial-gradient(circle, rgba(251, 191, 36, 0.2) 0%, transparent 70%);
+            /* Gradients */
+            --gradient-night: linear-gradient(180deg, #12141C 0%, #0d0f16 100%);
+            --gradient-warm: linear-gradient(135deg, var(--amber-400) 0%, var(--amber-500) 100%);
+            --gradient-lamp: radial-gradient(ellipse at top, rgba(197, 163, 103, 0.15) 0%, transparent 60%);
+            --gradient-glow: radial-gradient(circle, rgba(197, 163, 103, 0.2) 0%, transparent 70%);
 
             /* Typography - Warm, Readable */
             --font-display: 'Lora', Georgia, serif;
@@ -86,9 +89,9 @@
             --shadow-md: 0 8px 24px -4px rgba(0, 0, 0, 0.4);
             --shadow-lg: 0 16px 48px -8px rgba(0, 0, 0, 0.5);
             --shadow-xl: 0 24px 64px -12px rgba(0, 0, 0, 0.6);
-            --shadow-glow: 0 0 60px -10px rgba(251, 191, 36, 0.4);
-            --shadow-glow-soft: 0 0 40px -5px rgba(251, 191, 36, 0.25);
-            --shadow-warm: 0 8px 32px -4px rgba(251, 191, 36, 0.15);
+            --shadow-glow: 0 0 60px -10px rgba(197, 163, 103, 0.4);
+            --shadow-glow-soft: 0 0 40px -5px rgba(197, 163, 103, 0.25);
+            --shadow-warm: 0 8px 32px -4px rgba(197, 163, 103, 0.15);
 
             /* Transitions */
             --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
@@ -299,7 +302,7 @@
             content: '';
             position: absolute;
             inset: 0;
-            background: rgba(12, 10, 9, 0.9);
+            background: rgba(18, 20, 28, 0.9);
             backdrop-filter: blur(16px) saturate(180%);
             -webkit-backdrop-filter: blur(16px) saturate(180%);
             border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -448,7 +451,7 @@
             transform: translateX(-50%);
             width: 800px;
             height: 600px;
-            background: radial-gradient(ellipse 50% 40% at 50% 0%, rgba(251, 191, 36, 0.12) 0%, rgba(251, 191, 36, 0.05) 40%, transparent 70%);
+            background: radial-gradient(ellipse 50% 40% at 50% 0%, rgba(197, 163, 103, 0.12) 0%, rgba(197, 163, 103, 0.05) 40%, transparent 70%);
             pointer-events: none;
         }
 
@@ -509,7 +512,7 @@
 
         .hero__title-highlight {
             color: var(--amber-400);
-            text-shadow: 0 0 40px rgba(251, 191, 36, 0.4);
+            text-shadow: 0 0 40px rgba(197, 163, 103, 0.4);
         }
 
         .hero__subtitle {
@@ -541,7 +544,7 @@
            ======================================== */
         .divider {
             height: 1px;
-            background: linear-gradient(90deg, transparent, rgba(251, 191, 36, 0.2), transparent);
+            background: linear-gradient(90deg, transparent, rgba(197, 163, 103, 0.2), transparent);
         }
 
         /* ========================================
@@ -569,7 +572,7 @@
 
         .pain-card:hover {
             background: linear-gradient(145deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%);
-            border-color: rgba(251, 191, 36, 0.2);
+            border-color: rgba(197, 163, 103, 0.2);
             transform: translateY(-4px);
             box-shadow: var(--shadow-warm);
         }
@@ -583,8 +586,8 @@
             justify-content: center;
             margin-bottom: var(--space-5);
             font-size: 1.5rem;
-            background: rgba(251, 191, 36, 0.1);
-            border: 1px solid rgba(251, 191, 36, 0.15);
+            background: rgba(197, 163, 103, 0.1);
+            border: 1px solid rgba(197, 163, 103, 0.15);
         }
 
         .pain-card__title {
@@ -624,7 +627,7 @@
             right: 0;
             width: 400px;
             height: 400px;
-            background: radial-gradient(circle at top right, rgba(251, 191, 36, 0.06) 0%, transparent 60%);
+            background: radial-gradient(circle at top right, rgba(197, 163, 103, 0.06) 0%, transparent 60%);
             pointer-events: none;
         }
 
@@ -668,8 +671,8 @@
         }
 
         .feature-item:hover {
-            background: rgba(251, 191, 36, 0.05);
-            border-color: rgba(251, 191, 36, 0.15);
+            background: rgba(197, 163, 103, 0.05);
+            border-color: rgba(197, 163, 103, 0.15);
             transform: translateX(4px);
         }
 
@@ -682,7 +685,7 @@
             align-items: center;
             justify-content: center;
             flex-shrink: 0;
-            box-shadow: 0 0 16px rgba(251, 191, 36, 0.3);
+            box-shadow: 0 0 16px rgba(197, 163, 103, 0.3);
         }
 
         .feature-item__icon svg {
@@ -719,7 +722,7 @@
             transform: translateX(-50%);
             width: 200px;
             height: 200px;
-            background: radial-gradient(circle, rgba(251, 191, 36, 0.15) 0%, transparent 60%);
+            background: radial-gradient(circle, rgba(197, 163, 103, 0.15) 0%, transparent 60%);
             filter: blur(40px);
         }
 
@@ -760,7 +763,7 @@
             font-size: 1rem;
             font-weight: 600;
             color: var(--amber-400);
-            text-shadow: 0 0 20px rgba(251, 191, 36, 0.4);
+            text-shadow: 0 0 20px rgba(197, 163, 103, 0.4);
         }
 
         .phone-mockup__content {
@@ -782,15 +785,15 @@
             align-items: center;
             gap: var(--space-3);
             padding: var(--space-3);
-            background: rgba(251, 191, 36, 0.05);
-            border: 1px solid rgba(251, 191, 36, 0.1);
+            background: rgba(197, 163, 103, 0.05);
+            border: 1px solid rgba(197, 163, 103, 0.1);
             border-radius: var(--radius-lg);
         }
 
         .phone-mockup__feature-icon {
             width: 28px;
             height: 28px;
-            background: rgba(251, 191, 36, 0.15);
+            background: rgba(197, 163, 103, 0.15);
             border-radius: var(--radius-md);
             display: flex;
             align-items: center;
@@ -838,7 +841,7 @@
         }
 
         .step:hover {
-            border-color: rgba(251, 191, 36, 0.2);
+            border-color: rgba(197, 163, 103, 0.2);
             box-shadow: var(--shadow-warm);
             transform: translateY(-4px);
         }
@@ -872,8 +875,8 @@
             right: var(--space-4);
             width: 28px;
             height: 28px;
-            background: rgba(251, 191, 36, 0.1);
-            border: 1px solid rgba(251, 191, 36, 0.2);
+            background: rgba(197, 163, 103, 0.1);
+            border: 1px solid rgba(197, 163, 103, 0.2);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -921,7 +924,7 @@
             left: 0;
             width: 300px;
             height: 300px;
-            background: radial-gradient(circle at bottom left, rgba(251, 191, 36, 0.05) 0%, transparent 60%);
+            background: radial-gradient(circle at bottom left, rgba(197, 163, 103, 0.05) 0%, transparent 60%);
             pointer-events: none;
         }
 
@@ -942,8 +945,8 @@
             width: 100%;
             max-width: 420px;
             aspect-ratio: 4/3;
-            background: linear-gradient(145deg, rgba(251, 191, 36, 0.08) 0%, rgba(251, 191, 36, 0.02) 100%);
-            border: 1px solid rgba(251, 191, 36, 0.15);
+            background: linear-gradient(145deg, rgba(197, 163, 103, 0.08) 0%, rgba(197, 163, 103, 0.02) 100%);
+            border: 1px solid rgba(197, 163, 103, 0.15);
             border-radius: var(--radius-2xl);
             overflow: hidden;
         }
@@ -974,10 +977,10 @@
 
         @keyframes pulse-glow {
             0%, 100% {
-                box-shadow: 0 0 40px rgba(251, 191, 36, 0.4);
+                box-shadow: 0 0 40px rgba(197, 163, 103, 0.4);
             }
             50% {
-                box-shadow: 0 0 60px rgba(251, 191, 36, 0.6);
+                box-shadow: 0 0 60px rgba(197, 163, 103, 0.6);
             }
         }
 
@@ -1011,8 +1014,8 @@
         }
 
         .benefit-card:hover {
-            background: rgba(251, 191, 36, 0.05);
-            border-color: rgba(251, 191, 36, 0.15);
+            background: rgba(197, 163, 103, 0.05);
+            border-color: rgba(197, 163, 103, 0.15);
             transform: translateX(6px);
         }
 
@@ -1024,15 +1027,15 @@
             align-items: center;
             justify-content: center;
             flex-shrink: 0;
-            background: rgba(251, 191, 36, 0.1);
-            border: 1px solid rgba(251, 191, 36, 0.15);
+            background: rgba(197, 163, 103, 0.1);
+            border: 1px solid rgba(197, 163, 103, 0.15);
             color: var(--amber-400);
             transition: all var(--duration-base);
         }
 
         .benefit-card:hover .benefit-card__icon {
-            background: rgba(251, 191, 36, 0.2);
-            box-shadow: 0 0 20px rgba(251, 191, 36, 0.3);
+            background: rgba(197, 163, 103, 0.2);
+            box-shadow: 0 0 20px rgba(197, 163, 103, 0.3);
         }
 
         .benefit-card__icon svg {
@@ -1079,7 +1082,7 @@
             transform: translateX(-50%);
             width: 600px;
             height: 400px;
-            background: radial-gradient(ellipse 50% 50% at 50% 0%, rgba(251, 191, 36, 0.1) 0%, transparent 70%);
+            background: radial-gradient(ellipse 50% 50% at 50% 0%, rgba(197, 163, 103, 0.1) 0%, transparent 70%);
             pointer-events: none;
         }
 
@@ -1094,8 +1097,8 @@
             align-items: center;
             gap: var(--space-3);
             padding: var(--space-3) var(--space-5);
-            background: rgba(251, 191, 36, 0.1);
-            border: 1px solid rgba(251, 191, 36, 0.2);
+            background: rgba(197, 163, 103, 0.1);
+            border: 1px solid rgba(197, 163, 103, 0.2);
             border-radius: var(--radius-full);
             margin-bottom: var(--space-6);
         }
@@ -1167,13 +1170,13 @@
         .cta__form-select:focus {
             outline: none;
             border-color: var(--amber-500);
-            box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.15);
+            box-shadow: 0 0 0 3px rgba(197, 163, 103, 0.15);
         }
 
         .cta__form-select {
             cursor: pointer;
             appearance: none;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%2378716c' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23545870' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
             background-repeat: no-repeat;
             background-position: right var(--space-4) center;
             padding-right: var(--space-12);
@@ -1261,13 +1264,6 @@
         <div class="container">
             <div class="nav__inner">
                 <a href="#" class="nav__logo">
-                    <span class="nav__logo-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M9 18h6"/>
-                            <path d="M10 22h4"/>
-                            <path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7z"/>
-                        </svg>
-                    </span>
                     OpenWords
                 </a>
 
