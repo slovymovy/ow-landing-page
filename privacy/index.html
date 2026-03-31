@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy – OpenWords</title>
+    <meta name="description" content="Privacy policy for the OpenWords mobile application.">
+    <meta name="robots" content="noindex">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../favicon_otter.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --amber-400: #C5A367;
+            --amber-500: #b08d4f;
+            --cream-100: #f2eee6;
+            --cream-200: #e4ddd0;
+            --night-950: #0d0f16;
+            --night-900: #12141C;
+            --night-800: #1a1d28;
+            --night-700: #252838;
+            --night-600: #373b52;
+            --night-500: #545870;
+            --night-400: #848aab;
+            --night-300: #b8bcce;
+            --night-200: #d8dae6;
+            --font-display: 'Lora', Georgia, serif;
+            --font-body: 'Inter', system-ui, sans-serif;
+            --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+        body {
+            font-family: var(--font-body);
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--night-300);
+            background-color: var(--night-950);
+        }
+
+        a { color: var(--amber-400); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* Nav */
+        .nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 1.25rem 1.5rem;
+            background: rgba(13, 15, 22, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .nav__inner {
+            max-width: 760px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav__logo {
+            font-family: var(--font-display);
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--cream-100);
+            text-decoration: none;
+        }
+
+        .nav__back {
+            font-size: 0.875rem;
+            color: var(--night-400);
+            display: flex;
+            align-items: center;
+            gap: 0.375rem;
+            text-decoration: none;
+            transition: color 200ms;
+        }
+
+        .nav__back:hover { color: var(--amber-400); text-decoration: none; }
+
+        /* Content */
+        .page {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 4rem 1.5rem 6rem;
+        }
+
+        .page__eyebrow {
+            font-family: var(--font-body);
+            font-size: 0.8125rem;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--amber-500);
+            margin-bottom: 1rem;
+        }
+
+        .page__title {
+            font-family: var(--font-display);
+            font-size: clamp(1.875rem, 4vw, 2.5rem);
+            font-weight: 700;
+            color: var(--cream-100);
+            line-height: 1.2;
+            margin-bottom: 0.5rem;
+        }
+
+        .page__date {
+            font-size: 0.875rem;
+            color: var(--night-500);
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .section {
+            margin-bottom: 2.5rem;
+        }
+
+        .section__title {
+            font-family: var(--font-display);
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--cream-100);
+            margin-bottom: 0.75rem;
+        }
+
+        .section p {
+            color: var(--night-300);
+            font-size: 0.9375rem;
+            line-height: 1.75;
+        }
+
+        .section p + p {
+            margin-top: 0.75rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--night-950);
+            color: var(--night-500);
+            padding: 2rem 1.5rem;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            font-size: 0.875rem;
+        }
+
+        .footer a {
+            color: var(--night-400);
+        }
+
+        .footer a:hover {
+            color: var(--amber-400);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="nav__inner">
+            <a href="/" class="nav__logo">OpenWords</a>
+            <a href="/" class="nav__back">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M8.5 3L5 7L8.5 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Back to home
+            </a>
+        </div>
+    </nav>
+
+    <main class="page">
+
+        <p class="page__eyebrow">Legal</p>
+        <h1 class="page__title">Privacy Policy</h1>
+        <p class="page__date">Effective date: March 31, 2026</p>
+
+        <div class="section">
+            <p>This privacy policy applies to the OpenWords app (hereby referred to as "Application") for mobile devices, created by Dzina Maslouskaya (hereby referred to as "Service Provider") as a free service.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section__title">Data Collection</h2>
+            <p>The Service Provider does not collect, store, or process any personal data from users of the Application.</p>
+            <p>The Application does not require account registration, does not track usage behavior, and does not transmit any user data to the Service Provider.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section__title">Third-Party Services</h2>
+            <p>The Application runs on Android and uses Google Play Services, which may collect certain device information independently. This data is governed by Google's own privacy policy, which can be reviewed here: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Play Services Privacy Policy</a>.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section__title">Children</h2>
+            <p>The Application does not knowingly collect any information from children under the age of 13. Since no data is collected by the Service Provider, no special handling of children's data is required.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section__title">Security</h2>
+            <p>Since the Service Provider does not collect or store any user data, there is no user data at risk on the Service Provider's end.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section__title">Changes</h2>
+            <p>This Privacy Policy may be updated from time to time. Any changes will be reflected on this page with an updated effective date.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section__title">Contact</h2>
+            <p>If you have any questions about this privacy policy, please contact: <a href="mailto:admin@openwords.ai">admin@openwords.ai</a></p>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>2026 OpenWords &mdash; <a href="/privacy">Privacy Policy</a></p>
+    </footer>
+
+</body>
+</html>
