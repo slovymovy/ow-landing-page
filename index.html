@@ -6,15 +6,6 @@
     <title>OpenWords – Deep Dictionary for Dutch, English, Polish & Russian</title>
     <meta name="description" content="Search and save what matters to you. Free, no account needed.">
 
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-23FWM07P5G"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-23FWM07P5G');
-    </script>
-
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="favicon_otter.svg">
 
@@ -1160,6 +1151,80 @@
         }
 
         /* ========================================
+           COOKIE BANNER
+           ======================================== */
+        .cookie-banner {
+            position: fixed;
+            bottom: 1.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            width: calc(100% - 3rem);
+            max-width: 600px;
+            background: var(--night-800);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: var(--radius-xl);
+            padding: 1.25rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            box-shadow: var(--shadow-xl);
+        }
+
+        .cookie-banner.hidden { display: none; }
+
+        .cookie-banner__text {
+            font-size: 0.875rem;
+            color: var(--night-300);
+            line-height: 1.6;
+        }
+
+        .cookie-banner__text a {
+            color: var(--amber-400);
+            text-decoration: underline;
+        }
+
+        .cookie-banner__actions {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+
+        .cookie-btn {
+            font-family: var(--font-body);
+            font-size: 0.875rem;
+            font-weight: 600;
+            padding: 0.5rem 1.25rem;
+            border-radius: var(--radius-full);
+            cursor: pointer;
+            border: none;
+            transition: opacity 150ms;
+        }
+
+        .cookie-btn:hover { opacity: 0.85; }
+
+        .cookie-btn--accept {
+            background: var(--gradient-warm);
+            color: var(--night-950);
+        }
+
+        .cookie-btn--decline {
+            background: transparent;
+            color: var(--night-400);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        @media (min-width: 640px) {
+            .cookie-banner {
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .cookie-banner__text { flex: 1; }
+            .cookie-banner__actions { flex-shrink: 0; }
+        }
+
+        /* ========================================
            SCROLL ANIMATIONS
            ======================================== */
         .reveal {
@@ -1506,6 +1571,15 @@
         </div>
     </section>
 
+    <!-- Cookie Banner -->
+    <div class="cookie-banner hidden" id="cookie-banner">
+        <p class="cookie-banner__text">We use Google Analytics to count visits — that's why there's a cookie.</p>
+        <div class="cookie-banner__actions">
+            <button class="cookie-btn cookie-btn--accept" id="cookie-accept">Accept</button>
+            <button class="cookie-btn cookie-btn--decline" id="cookie-decline">Decline</button>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -1580,6 +1654,41 @@
                     window.scrollTo({ top: targetPosition, behavior: 'smooth' });
                 }
             });
+        });
+    </script>
+
+    <!-- Cookie Consent -->
+    <script>
+        const CONSENT_KEY = 'ow_cookie_consent';
+
+        function loadGA() {
+            const s = document.createElement('script');
+            s.async = true;
+            s.src = 'https://www.googletagmanager.com/gtag/js?id=G-23FWM07P5G';
+            document.head.appendChild(s);
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            window.gtag = gtag;
+            gtag('js', new Date());
+            gtag('config', 'G-23FWM07P5G');
+        }
+
+        const consent = localStorage.getItem(CONSENT_KEY);
+        if (consent === 'accepted') {
+            loadGA();
+        } else if (consent === null) {
+            document.getElementById('cookie-banner').classList.remove('hidden');
+        }
+
+        document.getElementById('cookie-accept').addEventListener('click', () => {
+            localStorage.setItem(CONSENT_KEY, 'accepted');
+            document.getElementById('cookie-banner').classList.add('hidden');
+            loadGA();
+        });
+
+        document.getElementById('cookie-decline').addEventListener('click', () => {
+            localStorage.setItem(CONSENT_KEY, 'declined');
+            document.getElementById('cookie-banner').classList.add('hidden');
         });
     </script>
 </body>
