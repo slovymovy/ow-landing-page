@@ -162,6 +162,83 @@
         .footer a:hover {
             color: var(--amber-400);
         }
+
+        .section ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 0.75rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.625rem;
+        }
+
+        .section ul li {
+            font-size: 0.9375rem;
+            line-height: 1.75;
+            color: var(--night-300);
+            padding-left: 1.25rem;
+            position: relative;
+        }
+
+        .section ul li::before {
+            content: '–';
+            position: absolute;
+            left: 0;
+            color: var(--amber-500);
+        }
+
+        /* Previous version accordion */
+        .prev-version {
+            margin-top: 4rem;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            padding-top: 2.5rem;
+        }
+
+        .prev-version summary {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+            list-style: none;
+            font-size: 0.8125rem;
+            font-weight: 500;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--night-500);
+            user-select: none;
+            transition: color 200ms;
+        }
+
+        .prev-version summary::-webkit-details-marker { display: none; }
+
+        .prev-version summary:hover { color: var(--night-400); }
+
+        .prev-version summary .chevron {
+            width: 14px;
+            height: 14px;
+            transition: transform 200ms var(--ease-out);
+            flex-shrink: 0;
+        }
+
+        .prev-version[open] summary .chevron {
+            transform: rotate(90deg);
+        }
+
+        .prev-version__body {
+            margin-top: 2.5rem;
+            padding: 2rem;
+            background: var(--night-900);
+            border: 1px solid rgba(255,255,255,0.05);
+            border-radius: 12px;
+        }
+
+        .prev-version__date {
+            font-size: 0.875rem;
+            color: var(--night-500);
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
     </style>
 </head>
 <body>
@@ -182,26 +259,30 @@
 
         <p class="page__eyebrow">Legal</p>
         <h1 class="page__title">Privacy Policy</h1>
-        <p class="page__date">Effective date: March 31, 2026</p>
+        <p class="page__date">Effective date: April 26, 2026</p>
 
         <div class="section">
-            <p>This privacy policy applies to the OpenWords app (hereby referred to as "Application") for mobile devices, created by Dzina Maslouskaya (hereby referred to as "Service Provider") as a free service.</p>
+            <p>This privacy policy applies to the OpenWords app (hereby referred to as "Application") for mobile devices, created by Dzina Maslouskaya (hereby referred to as "Service Provider") as a free service. The Application does not require account registration and does not transmit personal data to the Service Provider.</p>
         </div>
 
         <div class="section">
             <h2 class="section__title">Data Collection</h2>
             <p>The Service Provider does not collect, store, or process any personal data from users of the Application.</p>
-            <p>The Application does not require account registration, does not track usage behavior, and does not transmit any user data to the Service Provider.</p>
         </div>
 
         <div class="section">
             <h2 class="section__title">Third-Party Services</h2>
-            <p>The Application runs on Android and iOS. It uses Google Play Services (Android) and Apple frameworks (iOS), which may collect certain device information independently. This data is governed by their respective privacy policies: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a> and <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple Privacy Policy</a>.</p>
+            <p>The Application integrates third-party SDKs that collect anonymized usage and diagnostic data on the Service Provider's behalf:</p>
+            <ul>
+                <li><strong>Firebase Analytics (Google LLC)</strong> — collects anonymized usage data including app events, session information, device model, and OS version. This data is used solely to understand how the app is used and to improve it.</li>
+                <li><strong>Firebase Crashlytics (Google LLC)</strong> — collects crash reports including stack traces, device model, OS version, and app version at the time of a crash. This data is used solely to identify and fix bugs.</li>
+            </ul>
+            <p>The Application also relies on Google Play Services (Android) and Apple frameworks (iOS), which may independently collect device information subject to their own privacy terms: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a> and <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple Privacy Policy</a>.</p>
         </div>
 
         <div class="section">
             <h2 class="section__title">Children</h2>
-            <p>The Application does not knowingly collect any information from children under the age of 13. Since no data is collected by the Service Provider, no special handling of children's data is required.</p>
+            <p>The Application does not knowingly collect any personal data from children under the age of 13. The third-party services integrated into the app collect only anonymized, non-identifiable usage and diagnostic data.</p>
         </div>
 
         <div class="section">
@@ -218,6 +299,56 @@
             <h2 class="section__title">Contact</h2>
             <p>If you have any questions about this privacy policy, please contact: <a href="mailto:admin@openwords.ai">admin@openwords.ai</a></p>
         </div>
+
+        <!-- Previous version collapsed -->
+        <details class="prev-version">
+            <summary>
+                <svg class="chevron" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M5 3L9 7L5 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Previous version
+            </summary>
+            <div class="prev-version__body">
+                <p class="page__eyebrow">Superseded</p>
+                <h2 class="page__title" style="font-size:1.5rem;">Privacy Policy</h2>
+                <p class="prev-version__date">Effective date: March 31, 2026</p>
+
+                <div class="section">
+                    <p>This privacy policy applies to the OpenWords app (hereby referred to as "Application") for mobile devices, created by Dzina Maslouskaya (hereby referred to as "Service Provider") as a free service.</p>
+                </div>
+
+                <div class="section">
+                    <h2 class="section__title">Data Collection</h2>
+                    <p>The Service Provider does not collect, store, or process any personal data from users of the Application.</p>
+                    <p>The Application does not require account registration, does not track usage behavior, and does not transmit any user data to the Service Provider.</p>
+                </div>
+
+                <div class="section">
+                    <h2 class="section__title">Third-Party Services</h2>
+                    <p>The Application runs on Android and iOS. It uses Google Play Services (Android) and Apple frameworks (iOS), which may collect certain device information independently. This data is governed by their respective privacy policies: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a> and <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple Privacy Policy</a>.</p>
+                </div>
+
+                <div class="section">
+                    <h2 class="section__title">Children</h2>
+                    <p>The Application does not knowingly collect any information from children under the age of 13. Since no data is collected by the Service Provider, no special handling of children's data is required.</p>
+                </div>
+
+                <div class="section">
+                    <h2 class="section__title">Security</h2>
+                    <p>Since the Service Provider does not collect or store any user data, there is no user data at risk on the Service Provider's end.</p>
+                </div>
+
+                <div class="section">
+                    <h2 class="section__title">Changes</h2>
+                    <p>This Privacy Policy may be updated from time to time. Any changes will be reflected on this page with an updated effective date.</p>
+                </div>
+
+                <div class="section">
+                    <h2 class="section__title">Contact</h2>
+                    <p>If you have any questions about this privacy policy, please contact: <a href="mailto:admin@openwords.ai">admin@openwords.ai</a></p>
+                </div>
+            </div>
+        </details>
 
     </main>
 
