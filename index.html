@@ -128,7 +128,7 @@
         }
 
         body {
-            font-family: var(--font-body);
+            font-family: var(--font-body), sans-serif;
             font-size: 1rem;
             line-height: 1.7;
             color: var(--night-300);
@@ -139,7 +139,6 @@
         img, svg { display: block; max-width: 100%; }
         a { text-decoration: none; color: inherit; }
         button { font-family: inherit; cursor: pointer; border: none; background: none; }
-        ul, ol { list-style: none; }
 
         /* ========================================
            UTILITIES
@@ -155,13 +154,11 @@
             .container { padding: 0 var(--space-8); }
         }
 
-        .text-center { text-align: center; }
-
         /* ========================================
            TYPOGRAPHY
            ======================================== */
-        h1, h2, h3, h4, h5, h6 {
-            font-family: var(--font-display);
+        h1, h2 {
+            font-family: var(--font-display), serif;
             font-weight: 600;
             line-height: 1.2;
             color: var(--cream-100);
@@ -175,43 +172,6 @@
         }
 
         .h1 { font-size: clamp(1.875rem, 4.5vw, 2.75rem); }
-        .h2 { font-size: clamp(1.5rem, 4vw, 2.25rem); }
-        .h3 { font-size: clamp(1.25rem, 3vw, 1.5rem); }
-
-        .subtitle {
-            font-size: clamp(1.0625rem, 2vw, 1.1875rem);
-            line-height: 1.75;
-            color: var(--night-400);
-        }
-
-        .section-header {
-            max-width: 640px;
-            margin: 0 auto var(--space-12);
-        }
-
-        .section-header .h2 { margin-bottom: var(--space-4); }
-
-        .eyebrow {
-            display: inline-flex;
-            align-items: center;
-            gap: var(--space-3);
-            font-family: var(--font-body);
-            font-size: 0.8125rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: var(--amber-400);
-            margin-bottom: var(--space-4);
-        }
-
-        .eyebrow::before {
-            content: '';
-            width: 8px;
-            height: 8px;
-            background: var(--amber-400);
-            border-radius: 50%;
-            box-shadow: 0 0 12px var(--amber-400);
-        }
 
         /* ========================================
            BUTTONS
@@ -221,7 +181,7 @@
             align-items: center;
             justify-content: center;
             gap: var(--space-2);
-            font-family: var(--font-body);
+            font-family: var(--font-body), sans-serif;
             font-size: 0.9375rem;
             font-weight: 600;
             padding: var(--space-4) var(--space-6);
@@ -260,24 +220,9 @@
             border-radius: var(--radius-2xl);
         }
 
-        .btn__icon {
-            width: 20px;
-            height: 20px;
-            transition: transform var(--duration-base) var(--ease-out);
-        }
-
-        .btn:hover .btn__icon { transform: translateX(3px); }
-
         /* ========================================
            DOWNLOAD BUTTONS
            ======================================== */
-        .download-buttons {
-            display: flex;
-            flex-wrap: wrap;
-            gap: var(--space-3);
-            justify-content: center;
-        }
-
         .download-btn {
             display: inline-flex;
             align-items: center;
@@ -335,7 +280,7 @@
             font-size: 1rem;
             font-weight: 700;
             line-height: 1.3;
-            font-family: var(--font-display);
+            font-family: var(--font-display), serif;
         }
 
         /* ========================================
@@ -384,6 +329,7 @@
             transition: opacity var(--duration-base);
         }
 
+        /* noinspection CssUnusedSymbol */
         .nav.scrolled::before { opacity: 1; }
 
         .nav__inner {
@@ -397,7 +343,7 @@
             display: flex;
             align-items: center;
             gap: var(--space-3);
-            font-family: var(--font-display);
+            font-family: var(--font-display), serif;
             font-size: 1.375rem;
             font-weight: 700;
             color: var(--cream-100);
@@ -442,6 +388,7 @@
             z-index: 999;
         }
 
+        /* noinspection CssUnusedSymbol */
         .mobile-menu.active { transform: translateX(0); }
 
         .mobile-menu__actions {
@@ -586,169 +533,6 @@
             background: linear-gradient(90deg, transparent, rgba(197, 163, 103, 0.2), transparent);
         }
 
-        /* ========================================
-           PAIN POINTS SECTION
-           ======================================== */
-        .pain-points {
-            padding: var(--space-20) 0;
-            background: var(--night-900);
-            position: relative;
-        }
-
-        .pain-points__grid {
-            display: grid;
-            gap: var(--space-6);
-        }
-
-        .pain-card {
-            position: relative;
-            background: linear-gradient(145deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            border-radius: var(--radius-2xl);
-            padding: var(--space-8);
-            transition: all var(--duration-base) var(--ease-out);
-        }
-
-        .pain-card:hover {
-            background: linear-gradient(145deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%);
-            border-color: rgba(197, 163, 103, 0.2);
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-warm);
-        }
-
-        .pain-card__icon {
-            width: 52px;
-            height: 52px;
-            border-radius: var(--radius-lg);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: var(--space-5);
-            font-size: 1.5rem;
-            background: rgba(197, 163, 103, 0.1);
-            border: 1px solid rgba(197, 163, 103, 0.15);
-        }
-
-        .pain-card__title {
-            font-family: var(--font-display);
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-bottom: var(--space-3);
-            color: var(--cream-200);
-        }
-
-        .pain-card__description {
-            color: var(--night-400);
-            line-height: 1.7;
-        }
-
-        @media (min-width: 768px) {
-            .pain-points__grid { grid-template-columns: repeat(3, 1fr); }
-        }
-
-        /* ========================================
-           DEEP DICTIONARY SECTION
-           ======================================== */
-        .better-way {
-            padding: var(--space-20) 0;
-            background: var(--night-950);
-            position: relative;
-        }
-
-        .better-way::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 400px;
-            height: 400px;
-            background: radial-gradient(circle at top right, rgba(197, 163, 103, 0.06) 0%, transparent 60%);
-            pointer-events: none;
-        }
-
-        .better-way__grid {
-            position: relative;
-            display: grid;
-            gap: var(--space-12);
-            align-items: center;
-        }
-
-        .better-way__content { order: 2; }
-
-        .better-way__title { margin-bottom: var(--space-5); }
-
-        .better-way__subtitle {
-            color: var(--night-400);
-            font-size: 1.0625rem;
-            line-height: 1.8;
-            margin-bottom: var(--space-8);
-        }
-
-        .better-way__features {
-            display: flex;
-            flex-direction: column;
-            gap: var(--space-4);
-        }
-
-        .feature-item {
-            display: flex;
-            align-items: flex-start;
-            gap: var(--space-4);
-            padding: var(--space-4);
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            border-radius: var(--radius-xl);
-            transition: all var(--duration-base) var(--ease-out);
-        }
-
-        .feature-item:hover {
-            background: rgba(197, 163, 103, 0.05);
-            border-color: rgba(197, 163, 103, 0.15);
-            transform: translateX(4px);
-        }
-
-        .feature-item__icon {
-            width: 28px;
-            height: 28px;
-            background: var(--gradient-warm);
-            border-radius: var(--radius-md);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-            box-shadow: 0 0 16px rgba(197, 163, 103, 0.3);
-        }
-
-        .feature-item__icon svg {
-            width: 16px;
-            height: 16px;
-            color: var(--night-950);
-        }
-
-        .feature-item__body {
-            padding-top: 2px;
-        }
-
-        .feature-item__label {
-            font-size: 0.9375rem;
-            font-weight: 600;
-            color: var(--cream-200);
-            line-height: 1.4;
-            margin-bottom: 2px;
-        }
-
-        .feature-item__desc {
-            font-size: 0.875rem;
-            color: var(--night-400);
-            line-height: 1.6;
-        }
-
-        .better-way__visual {
-            order: 1;
-            display: flex;
-            justify-content: center;
-        }
-
         /* App Screenshot Phone */
         .screenshot-wrap {
             position: relative;
@@ -781,182 +565,7 @@
         }
 
         @media (min-width: 1024px) {
-            .better-way__grid {
-                grid-template-columns: 1fr 1fr;
-                gap: var(--space-16);
-            }
-            .better-way__content { order: 1; }
-            .better-way__visual { order: 2; }
             .screenshot-wrap { max-width: 260px; }
-        }
-
-        /* ========================================
-           HOW IT WORKS SECTION
-           ======================================== */
-        .how-it-works {
-            padding: var(--space-20) 0;
-            background: var(--night-900);
-        }
-
-        .steps {
-            display: grid;
-            gap: var(--space-6);
-        }
-
-        .step {
-            position: relative;
-            text-align: center;
-            padding: var(--space-10) var(--space-6);
-            background: linear-gradient(180deg, rgba(255,255,255,0.02) 0%, transparent 100%);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            border-radius: var(--radius-2xl);
-            transition: all var(--duration-base) var(--ease-out);
-        }
-
-        .step:hover {
-            border-color: rgba(197, 163, 103, 0.2);
-            box-shadow: var(--shadow-warm);
-            transform: translateY(-4px);
-        }
-
-        .step__icon {
-            width: 72px;
-            height: 72px;
-            margin: 0 auto var(--space-6);
-            background: var(--gradient-warm);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: var(--shadow-glow);
-            transition: transform var(--duration-base) var(--ease-spring);
-        }
-
-        .step:hover .step__icon { transform: scale(1.08); }
-
-        .step__icon svg {
-            width: 32px;
-            height: 32px;
-            color: var(--night-950);
-        }
-
-        .step__number {
-            position: absolute;
-            top: var(--space-4);
-            right: var(--space-4);
-            width: 28px;
-            height: 28px;
-            background: rgba(197, 163, 103, 0.1);
-            border: 1px solid rgba(197, 163, 103, 0.2);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: var(--font-display);
-            font-size: 0.8125rem;
-            font-weight: 600;
-            color: var(--amber-400);
-        }
-
-        .step__title {
-            font-family: var(--font-display);
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-bottom: var(--space-3);
-            color: var(--cream-200);
-        }
-
-        .step__description {
-            color: var(--night-400);
-            line-height: 1.7;
-            max-width: 240px;
-            margin: 0 auto;
-            font-size: 0.9375rem;
-        }
-
-        @media (min-width: 640px) {
-            .steps { grid-template-columns: repeat(2, 1fr); }
-        }
-
-        @media (min-width: 1024px) {
-            .steps { grid-template-columns: repeat(4, 1fr); }
-        }
-
-        /* ========================================
-           VALUES SECTION
-           ======================================== */
-        .values {
-            padding: var(--space-20) 0;
-            background: var(--night-950);
-            position: relative;
-        }
-
-        .values::before {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 300px;
-            height: 300px;
-            background: radial-gradient(circle at bottom left, rgba(197, 163, 103, 0.05) 0%, transparent 60%);
-            pointer-events: none;
-        }
-
-        .values__grid {
-            display: grid;
-            gap: var(--space-5);
-        }
-
-        .value-card {
-            padding: var(--space-6);
-            background: linear-gradient(145deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            border-radius: var(--radius-2xl);
-            transition: all var(--duration-base) var(--ease-out);
-        }
-
-        .value-card:hover {
-            background: linear-gradient(145deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%);
-            border-color: rgba(197, 163, 103, 0.2);
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-warm);
-        }
-
-        .value-card__icon {
-            width: 48px;
-            height: 48px;
-            border-radius: var(--radius-lg);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: var(--space-4);
-            background: rgba(197, 163, 103, 0.1);
-            border: 1px solid rgba(197, 163, 103, 0.15);
-            color: var(--amber-400);
-        }
-
-        .value-card__icon svg { width: 22px; height: 22px; }
-
-        .value-card__title {
-            font-family: var(--font-display);
-            font-size: 1.0625rem;
-            font-weight: 600;
-            color: var(--cream-200);
-            margin-bottom: var(--space-2);
-        }
-
-        .value-card__desc {
-            font-size: 0.9rem;
-            color: var(--night-400);
-            line-height: 1.7;
-        }
-
-        @media (min-width: 640px) {
-            .values__grid { grid-template-columns: repeat(2, 1fr); }
-        }
-
-        @media (min-width: 1024px) {
-            .values__grid { grid-template-columns: repeat(4, 1fr); }
         }
 
         /* ========================================
@@ -1011,45 +620,6 @@
 
         .cta__title { margin-bottom: var(--space-4); }
 
-        .cta__subtitle {
-            font-size: 1.0625rem;
-            color: var(--night-400);
-            max-width: 480px;
-            margin: 0 auto var(--space-8);
-            line-height: 1.8;
-        }
-
-        .cta__download {
-            display: flex;
-            flex-wrap: wrap;
-            gap: var(--space-4);
-            justify-content: center;
-            margin-bottom: var(--space-6);
-        }
-
-        .cta__trust {
-            display: flex;
-            flex-wrap: wrap;
-            gap: var(--space-3) var(--space-6);
-            justify-content: center;
-            margin-bottom: var(--space-5);
-        }
-
-        .cta__trust-item {
-            display: flex;
-            align-items: center;
-            gap: var(--space-2);
-            font-size: 0.875rem;
-            color: var(--night-400);
-        }
-
-        .cta__trust-item svg {
-            width: 14px;
-            height: 14px;
-            color: var(--amber-400);
-            flex-shrink: 0;
-        }
-
         /* ========================================
            FOOTER
            ======================================== */
@@ -1082,7 +652,7 @@
         .feature-panel:last-child { margin-bottom: 0; }
 
         .feature-panel__title {
-            font-family: var(--font-display);
+            font-family: var(--font-display), serif;
             font-size: clamp(1.5rem, 3.5vw, 2rem);
             font-weight: 700;
             color: var(--cream-100);
@@ -1139,7 +709,7 @@
         }
 
         .fact__value {
-            font-family: var(--font-display);
+            font-family: var(--font-display), serif;
             font-size: 1.75rem;
             font-weight: 700;
             color: var(--amber-400);
@@ -1191,7 +761,7 @@
         }
 
         .cookie-btn {
-            font-family: var(--font-body);
+            font-family: var(--font-body), sans-serif;
             font-size: 0.875rem;
             font-weight: 600;
             padding: 0.5rem 1.25rem;
@@ -1233,6 +803,7 @@
             transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out);
         }
 
+        /* noinspection CssUnusedSymbol */
         .reveal.visible {
             opacity: 1;
             transform: translateY(0);
@@ -1241,7 +812,6 @@
         .reveal-delay-1 { transition-delay: 0.1s; }
         .reveal-delay-2 { transition-delay: 0.2s; }
         .reveal-delay-3 { transition-delay: 0.3s; }
-        .reveal-delay-4 { transition-delay: 0.4s; }
 
         /* ========================================
            MASCOT ILLUSTRATIONS
@@ -1289,7 +859,6 @@
                 margin: 0;
             }
 
-            .hero__content .download-buttons,
             .hero__content .lang-chips {
                 justify-content: flex-start;
             }
@@ -1332,12 +901,6 @@
                 text-align: left;
             }
 
-            .cta__content .download-buttons,
-            .cta__content .cta__trust,
-            .cta__content .lang-chips {
-                justify-content: flex-start;
-            }
-
             .cta__mascot .mascot-img {
                 width: 320px;
             }
@@ -1347,8 +910,6 @@
            MOBILE OPTIMIZATIONS
            ======================================== */
         @media (max-width: 640px) {
-            .section-header { margin-bottom: var(--space-10); }
-
             .features,
             .facts,
             .cta {
@@ -1369,7 +930,7 @@
             <div class="nav__inner">
                 <a href="#" class="nav__logo">OpenWords</a>
                 <div class="nav__actions">
-                    <a href="https://apps.apple.com/us/app/openwords/id6754798978" target="_blank" rel="noopener noreferrer" class="btn btn--primary nav__cta">Download on iOS</a>
+                    <a href="#download" class="btn btn--primary nav__cta">Download</a>
                     <button class="nav__mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
                         <span></span>
                         <span></span>
@@ -1384,6 +945,7 @@
     <div class="mobile-menu" id="mobile-menu">
         <div class="mobile-menu__actions">
             <a href="https://apps.apple.com/us/app/openwords/id6754798978" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--lg" style="width:100%">Download on iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.slovy.slovymovyapp" target="_blank" rel="noopener noreferrer" class="btn btn--secondary btn--lg" style="width:100%">Get it on Google Play</a>
         </div>
     </div>
 
@@ -1403,7 +965,7 @@
                 <div class="hero__content">
                     <div class="hero__badge reveal">
                         <span class="hero__badge-dot"></span>
-                        Now on iOS · Android Beta
+                        Available on iOS &amp; Android
                     </div>
 
                     <h1 class="display hero__title">
@@ -1425,13 +987,13 @@
                                     <span class="download-btn__big">App Store</span>
                                 </div>
                             </a>
-                            <a href="https://forms.gle/VTU8yQeHFMD41Ucq7" target="_blank" rel="noopener noreferrer" class="download-btn">
+                            <a href="https://play.google.com/store/apps/details?id=com.slovy.slovymovyapp" target="_blank" rel="noopener noreferrer" class="download-btn">
                                 <svg class="download-btn__icon" viewBox="0 0 24 24" fill="currentColor">
                                     <path d="M3.18 23.76A1.97 1.97 0 0 1 2 22V2C2 1.26 2.44.62 3.18.24L13.41 12 3.18 23.76zm17.35-8.6L17.4 13.5 14.83 12l2.57-1.5 3.13-1.82a2 2 0 0 1 0 3.48zM4.34 1.15l10.8 6.23L12.52 9.9 4.34 1.15zm0 21.7 8.18-8.74 2.62 2.52-10.8 6.22z"/>
                                 </svg>
                                 <div class="download-btn__text">
-                                    <span class="download-btn__small">Apply for</span>
-                                    <span class="download-btn__big">Android Beta</span>
+                                    <span class="download-btn__small">Get it on</span>
+                                    <span class="download-btn__big">Google Play</span>
                                 </div>
                             </a>
                         </div>
@@ -1541,7 +1103,7 @@
                             <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
                             <polyline points="22 4 12 14.01 9 11.01"/>
                         </svg>
-                        <span class="cta__badge-text">Now on iOS · Android Beta</span>
+                        <span class="cta__badge-text">Available on iOS &amp; Android</span>
                     </div>
 
                     <h2 class="h1 cta__title reveal">Try it today.</h2>
@@ -1556,13 +1118,13 @@
                                 <span class="download-btn__big">App Store</span>
                             </div>
                         </a>
-                        <a href="https://forms.gle/VTU8yQeHFMD41Ucq7" target="_blank" rel="noopener noreferrer" class="download-btn">
+                        <a href="https://play.google.com/store/apps/details?id=com.slovy.slovymovyapp" target="_blank" rel="noopener noreferrer" class="download-btn">
                             <svg class="download-btn__icon" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M3.18 23.76A1.97 1.97 0 0 1 2 22V2C2 1.26 2.44.62 3.18.24L13.41 12 3.18 23.76zm17.35-8.6L17.4 13.5 14.83 12l2.57-1.5 3.13-1.82a2 2 0 0 1 0 3.48zM4.34 1.15l10.8 6.23L12.52 9.9 4.34 1.15zm0 21.7 8.18-8.74 2.62 2.52-10.8 6.22z"/>
                             </svg>
                             <div class="download-btn__text">
-                                <span class="download-btn__small">Apply for</span>
-                                <span class="download-btn__big">Android Beta</span>
+                                <span class="download-btn__small">Get it on</span>
+                                <span class="download-btn__big">Google Play</span>
                             </div>
                         </a>
                     </div>
@@ -1573,7 +1135,7 @@
 
     <!-- Cookie Banner -->
     <div class="cookie-banner hidden" id="cookie-banner">
-        <p class="cookie-banner__text">We use Google Analytics to count visits — that's why there's a cookie.</p>
+        <p class="cookie-banner__text">We use Google Analytics to count visits — that's why there's a cookie. <a href="/privacy">Privacy Policy</a>.</p>
         <div class="cookie-banner__actions">
             <button class="cookie-btn cookie-btn--accept" id="cookie-accept">Accept</button>
             <button class="cookie-btn cookie-btn--decline" id="cookie-decline">Decline</button>
