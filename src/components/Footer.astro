@@ -1,0 +1,74 @@
+---
+import { homeCopy } from '../data/copy';
+import { languageSlugs, languages, localizePath, type LocaleCode } from '../data/site';
+
+interface Props {
+  locale?: LocaleCode;
+}
+
+const { locale = 'en' } = Astro.props;
+const copy = homeCopy[locale];
+---
+<footer class="site-footer">
+  <div class="container site-footer__grid">
+    <div>
+      <a class="site-footer__brand" href={localizePath(locale, '/')}>OpenWords</a>
+      <p>{copy.footerTagline}</p>
+    </div>
+    <nav aria-label={copy.footerLearn}>
+      <h2>{copy.footerLearn}</h2>
+      {languageSlugs.map((slug) => (
+        <a href={localizePath(locale, `/learn/${slug}`)}>{languages[slug].displayName[locale]}</a>
+      ))}
+    </nav>
+    <nav aria-label={copy.footerLegal}>
+      <h2>{copy.footerLegal}</h2>
+      <a href="/privacy/">{copy.privacy}</a>
+    </nav>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    padding: 48px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    background: #090b10;
+    color: #848aab;
+  }
+
+  .site-footer__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) repeat(2, minmax(160px, 0.5fr));
+    gap: 30px;
+  }
+
+  .site-footer__brand {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #f2eee6;
+    font-family: Lora, Georgia, serif;
+    font-size: 1.1rem;
+    font-weight: 900;
+  }
+
+  .site-footer h2 {
+    margin-bottom: 12px;
+    color: #f2eee6;
+    font-size: 0.9rem;
+  }
+
+  .site-footer nav a {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .site-footer a:hover {
+    color: #c5a367;
+  }
+
+  @media (max-width: 720px) {
+    .site-footer__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

@@ -1,0 +1,49 @@
+---
+interface Props {
+  title: string;
+  items: { question: string; answer: string }[];
+}
+
+const { title, items } = Astro.props;
+---
+<section class="section quiet-band">
+  <div class="container faq">
+    <h2>{title}</h2>
+    <div class="faq__list">
+      {items.map((item) => (
+        <details>
+          <summary>{item.question}</summary>
+          <p>{item.answer}</p>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .faq__list {
+    display: grid;
+    gap: 10px;
+    max-width: 860px;
+  }
+
+  details {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.055);
+    box-shadow: 0 16px 38px rgba(0, 0, 0, 0.22);
+  }
+
+  summary {
+    cursor: pointer;
+    padding: 18px 20px;
+    color: #f2eee6;
+    font-weight: 850;
+  }
+
+  details p {
+    margin: 0;
+    padding: 0 20px 20px;
+    color: #b8bcce;
+  }
+</style>

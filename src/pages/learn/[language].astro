@@ -1,0 +1,101 @@
+---
+import FAQ from '../../components/FAQ.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+import StoreButtons from '../../components/StoreButtons.astro';
+import { homeCopy, learnCopy, learnFaq } from '../../data/copy';
+import { languageSlugs, languages, type LanguageSlug } from '../../data/site';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export function getStaticPaths() {
+  return languageSlugs.map((language) => ({ params: { language } }));
+}
+
+const locale = 'en';
+const language = Astro.params.language as LanguageSlug;
+const copy = learnCopy(locale, language);
+const ui = homeCopy[locale].ui;
+const faq = learnFaq(locale, language);
+const languageData = languages[language];
+---
+<BaseLayout title={copy.title} description={copy.description} locale={locale} path={`/learn/${language}`} faq={faq}>
+  <Header locale={locale} />
+
+  <main>
+    <section class="section hero">
+      <div class="container grid-2">
+        <div>
+          <p class="eyebrow">OpenWords for {languageData.name}</p>
+          <h1>{copy.h1}</h1>
+          <p class="lead">{copy.subtitle}</p>
+          <div class="hero__actions">
+            <StoreButtons locale={locale} />
+          </div>
+        </div>
+        <img class="mascot" src="/svg_final_search_otter.dark.optimized.svg" alt={ui.searchMascotAlt} />
+      </div>
+    </section>
+
+    <section class="section split-band">
+      <div class="container">
+        <h2>{copy.whoTitle}</h2>
+        <p class="lead">{copy.who}</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-2">
+        <div>
+          <h2>{copy.previewTitle}</h2>
+          <p class="lead">{copy.preview}</p>
+        </div>
+        <div class="word-preview">
+          {languageData.examples.map((word, index) => (
+            <article class="word-preview__item">
+              <div class="word-preview__word">
+                <span>{word}</span>
+                <span class="word-preview__badge">{index === 0 ? 'A2' : index === 1 ? 'B1' : 'B2'}</span>
+              </div>
+              <p>{copy.wordPreviewItem}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="section quiet-band">
+      <div class="container">
+        <h2>{copy.howTitle}</h2>
+        <ol class="steps">
+          {copy.how.map((step) => <li>{step}</li>)}
+        </ol>
+      </div>
+    </section>
+
+    <FAQ title={copy.faqTitle} items={faq} />
+
+    <section class="section dark-band" id="download">
+      <div class="container grid-2">
+        <div>
+          <h2>{copy.cta}</h2>
+          <StoreButtons locale={locale} />
+        </div>
+        <img class="mascot" src="/svg_final_otter_favourites.dark.optimized.svg" alt={ui.savedCardsAlt} />
+      </div>
+    </section>
+  </main>
+
+  <Footer locale={locale} />
+</BaseLayout>
+
+<style>
+  .hero {
+    background:
+      radial-gradient(circle at 78% 32%, rgba(197, 163, 103, 0.14), transparent 24rem),
+      linear-gradient(180deg, rgba(18, 20, 28, 0.2), rgba(13, 15, 22, 0.82));
+  }
+
+  .hero__actions {
+    margin-top: 24px;
+  }
+</style>

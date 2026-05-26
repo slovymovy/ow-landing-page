@@ -1,0 +1,470 @@
+---
+import FAQ from '../../components/FAQ.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+import LanguageCards from '../../components/LanguageCards.astro';
+import StoreButtons from '../../components/StoreButtons.astro';
+import { homeCopy, homeFaq } from '../../data/copy';
+import { languageSlugs, languages, locales, type LocaleCode } from '../../data/site';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export function getStaticPaths() {
+  return Object.keys(locales)
+    .filter((locale) => locale !== 'en')
+    .map((locale) => ({ params: { locale } }));
+}
+
+const locale = Astro.params.locale as LocaleCode;
+const copy = homeCopy[locale];
+const faq = homeFaq(locale);
+---
+<BaseLayout title={copy.title} description={copy.description} locale={locale} path="/" faq={faq}>
+  <Header locale={locale} />
+
+  <main>
+    <section class="section hero">
+      <div class="hero__lamp"></div>
+      <div class="hero__particles" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="container">
+        <div class="hero__grid">
+          <div class="hero__content">
+            <div class="hero__badge">
+              <span class="hero__badge-dot"></span>
+              {copy.eyebrow}
+            </div>
+            <h1 class="hero__title">{copy.h1}</h1>
+            <p class="hero__subtitle">{copy.subtitle}</p>
+            <div class="hero__actions">
+              <StoreButtons locale={locale} />
+            </div>
+            <div class="lang-chips" aria-label={copy.ui.supportedLanguages}>
+              {languageSlugs.map((slug) => (
+                <span class="lang-chip">{languages[slug].displayName[locale]}</span>
+              ))}
+            </div>
+          </div>
+          <div class="hero__mascot">
+            <img class="mascot-img" src="/svg_final_search_otter.dark.optimized.svg" alt={copy.ui.searchMascotAlt} />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="section split-band">
+      <div class="container">
+        <h2>{copy.problemTitle}</h2>
+        <p class="lead">{copy.problem}</p>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="features">
+      <div class="container">
+        <article class="feature-panel">
+          <div class="feature-panel__text">
+            <h2>{copy.loopTitle}</h2>
+            <p>{copy.loop.join(' ')}</p>
+          </div>
+          <div class="feature-panel__visual">
+            <div class="screenshot-wrap">
+              <div class="screenshot-phone">
+                <img src="/search_light.PNG" alt={copy.ui.searchScreenAlt} />
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="feature-panel feature-panel--reverse">
+          <div class="feature-panel__text">
+            <h2>{copy.dictionaryTitle}</h2>
+            <p>{copy.dictionary}</p>
+          </div>
+          <div class="feature-panel__visual">
+            <div class="screenshot-wrap">
+              <div class="screenshot-phone">
+                <img src="/sense_card.PNG" alt={copy.ui.meaningCardAlt} />
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="feature-panel">
+          <div class="feature-panel__text">
+            <h2>{copy.srsTitle}</h2>
+            <p>{copy.srs}</p>
+          </div>
+          <div class="feature-panel__visual">
+            <div class="screenshot-wrap">
+              <div class="screenshot-phone">
+                <img src="/favs_lightPNG.PNG" alt={copy.ui.savedScreenAlt} />
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="facts">
+      <div class="container facts__grid">
+        {copy.facts.map(([value, label]) => (
+          <div class="fact">
+            <span class="fact__value">{value}</span>
+            <span class="fact__label">{label}</span>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="section">
+      <div class="container">
+        <h2>{copy.languagesTitle}</h2>
+        <LanguageCards locale={locale} />
+      </div>
+    </section>
+
+    <FAQ title={copy.faqTitle} items={faq} />
+
+    <section class="cta" id="download">
+      <div class="cta__glow"></div>
+      <div class="container cta__grid">
+        <div class="cta__mascot">
+          <img class="mascot-img" src="/svg_final_otter_favourites.dark.optimized.svg" alt={copy.ui.savedMascotAlt} />
+        </div>
+        <div class="cta__content">
+          <div class="hero__badge">
+            <span class="hero__badge-dot"></span>
+            {copy.eyebrow}
+          </div>
+          <h2>{copy.finalCta}</h2>
+          <StoreButtons locale={locale} />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer locale={locale} />
+</BaseLayout>
+
+<style>
+  .hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: auto;
+    padding: calc(80px + 2rem) 0 4rem;
+    background: var(--gradient-night);
+    overflow: hidden;
+  }
+
+  .hero__lamp {
+    position: absolute;
+    top: -200px;
+    left: 50%;
+    width: 800px;
+    height: 600px;
+    transform: translateX(-50%);
+    background: radial-gradient(ellipse 50% 40% at 50% 0%, rgba(197, 163, 103, 0.12) 0%, rgba(197, 163, 103, 0.05) 40%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero__particles {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+  }
+
+  .hero__particles span {
+    position: absolute;
+    bottom: -100px;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: var(--amber-400);
+    opacity: 0;
+    animation: float-particle 8s infinite;
+  }
+
+  .hero__particles span:nth-child(1) { left: 20%; animation-delay: 0s; }
+  .hero__particles span:nth-child(2) { left: 40%; animation-delay: 2s; }
+  .hero__particles span:nth-child(3) { left: 60%; animation-delay: 4s; }
+  .hero__particles span:nth-child(4) { left: 80%; animation-delay: 6s; }
+  .hero__particles span:nth-child(5) { left: 30%; animation-delay: 1s; }
+  .hero__particles span:nth-child(6) { left: 70%; animation-delay: 3s; }
+
+  @keyframes float-particle {
+    0% { opacity: 0; transform: translateY(100px); }
+    20%, 80% { opacity: 0.3; }
+    100% { opacity: 0; transform: translateY(-200px); }
+  }
+
+  .hero__grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    gap: 2.5rem;
+    align-items: center;
+  }
+
+  .hero__content {
+    text-align: center;
+  }
+
+  .hero__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 1.25rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(197, 163, 103, 0.2);
+    border-radius: 999px;
+    background: rgba(197, 163, 103, 0.1);
+    color: var(--amber-400);
+    font-size: 0.8125rem;
+    font-weight: 600;
+  }
+
+  .hero__badge-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--amber-400);
+    box-shadow: 0 0 10px var(--amber-400);
+  }
+
+  .hero__title {
+    margin-bottom: 1.5rem;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.1;
+  }
+
+  .hero__subtitle {
+    max-width: 590px;
+    margin: 0 auto 2rem;
+    color: var(--night-400);
+    font-size: clamp(1.0625rem, 2.5vw, 1.1875rem);
+    line-height: 1.8;
+  }
+
+  .lang-chips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 1rem;
+  }
+
+  .lang-chip {
+    padding: 0.25rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--night-300);
+    font-size: 0.8125rem;
+    font-weight: 500;
+  }
+
+  .hero__mascot {
+    display: flex;
+    justify-content: center;
+    order: -1;
+  }
+
+  .mascot-img {
+    width: 200px;
+    filter: drop-shadow(0 8px 40px rgba(197, 163, 103, 0.32));
+    animation: float-mascot 6s ease-in-out infinite;
+  }
+
+  @keyframes float-mascot {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-14px); }
+  }
+
+  .divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(197, 163, 103, 0.2), transparent);
+  }
+
+  .features,
+  .facts,
+  .cta {
+    padding: 5rem 0;
+  }
+
+  .feature-panel {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+
+  .feature-panel:last-child {
+    margin-bottom: 0;
+  }
+
+  .feature-panel__text p {
+    max-width: 520px;
+    color: var(--night-300);
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .feature-panel__visual {
+    display: flex;
+    justify-content: center;
+  }
+
+  .screenshot-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .screenshot-wrap::before {
+    content: "";
+    position: absolute;
+    inset: -30% -20%;
+    z-index: 0;
+    background: radial-gradient(circle, rgba(197, 163, 103, 0.18) 0%, transparent 62%);
+    filter: blur(40px);
+  }
+
+  .screenshot-phone {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 32px;
+    box-shadow: var(--shadow), 0 0 0 1px rgba(255, 255, 255, 0.06);
+  }
+
+  .facts__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .fact {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: var(--radius-xl);
+    background: var(--night-800);
+    text-align: center;
+  }
+
+  .fact__value {
+    color: var(--amber-400);
+    font-family: var(--font-display);
+    font-size: 1.75rem;
+    font-weight: 700;
+  }
+
+  .fact__label {
+    color: var(--night-400);
+    font-size: 0.95rem;
+  }
+
+  .cta {
+    position: relative;
+    overflow: hidden;
+    background: var(--night-900);
+  }
+
+  .cta__glow {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 600px;
+    height: 400px;
+    transform: translateX(-50%);
+    background: radial-gradient(ellipse 50% 50% at 50% 0%, rgba(197, 163, 103, 0.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .cta__grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    gap: 2.5rem;
+    align-items: center;
+  }
+
+  .cta__mascot {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cta__content {
+    text-align: center;
+  }
+
+  @media (min-width: 768px) {
+    .feature-panel {
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+    }
+
+    .feature-panel--reverse .feature-panel__text {
+      order: 2;
+    }
+
+    .feature-panel--reverse .feature-panel__visual {
+      order: 1;
+    }
+
+    .facts__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .hero__grid {
+      grid-template-columns: 1fr 380px;
+      gap: 4rem;
+    }
+
+    .hero__content,
+    .cta__content {
+      text-align: left;
+    }
+
+    .hero__subtitle {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .lang-chips {
+      justify-content: flex-start;
+    }
+
+    .hero__mascot {
+      order: 2;
+    }
+
+    .hero__mascot .mascot-img {
+      width: 380px;
+    }
+
+    .cta__grid {
+      grid-template-columns: 340px 1fr;
+      gap: 4rem;
+    }
+
+    .cta__mascot .mascot-img {
+      width: 320px;
+    }
+  }
+</style>
