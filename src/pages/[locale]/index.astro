@@ -68,12 +68,12 @@ const faq = homeFaq(locale);
         <article class="feature-panel">
           <div class="feature-panel__text">
             <h2>{copy.loopTitle}</h2>
-            <p>{copy.loop.join(' ')}</p>
+            <p>{copy.loop}</p>
           </div>
           <div class="feature-panel__visual">
             <div class="screenshot-wrap">
               <div class="screenshot-phone">
-                <img src="/search_light.PNG" alt={copy.ui.searchScreenAlt} />
+                <img src="/word.jpg" alt={copy.ui.searchScreenAlt} />
               </div>
             </div>
           </div>
@@ -87,7 +87,7 @@ const faq = homeFaq(locale);
           <div class="feature-panel__visual">
             <div class="screenshot-wrap">
               <div class="screenshot-phone">
-                <img src="/sense_card.PNG" alt={copy.ui.meaningCardAlt} />
+                <img src="/sense.jpg" alt={copy.ui.meaningCardAlt} />
               </div>
             </div>
           </div>
@@ -101,7 +101,7 @@ const faq = homeFaq(locale);
           <div class="feature-panel__visual">
             <div class="screenshot-wrap">
               <div class="screenshot-phone">
-                <img src="/favs_lightPNG.PNG" alt={copy.ui.savedScreenAlt} />
+                <img src="/favs.jpg" alt={copy.ui.savedScreenAlt} />
               </div>
             </div>
           </div>
@@ -127,6 +127,7 @@ const faq = homeFaq(locale);
     <section class="section">
       <div class="container">
         <h2>{copy.languagesTitle}</h2>
+        <p class="lead">{copy.languagesSubtitle}</p>
         <LanguageCards locale={locale} />
       </div>
     </section>

@@ -1,6 +1,6 @@
 ---
 import { homeCopy } from '../data/copy';
-import { languageSlugs, languages, localizePath, type LocaleCode } from '../data/site';
+import { languageSlugs, languages, localizePath, site, type LocaleCode } from '../data/site';
 
 interface Props {
   locale?: LocaleCode;
@@ -11,7 +11,7 @@ const copy = homeCopy[locale];
 ---
 <footer class="site-footer">
   <div class="container site-footer__grid">
-    <div>
+    <div class="site-footer__brand-col">
       <a class="site-footer__brand" href={localizePath(locale, '/')}>OpenWords</a>
       <p>{copy.footerTagline}</p>
     </div>
@@ -25,6 +25,10 @@ const copy = homeCopy[locale];
       <h2>{copy.footerLegal}</h2>
       <a href="/privacy/">{copy.privacy}</a>
     </nav>
+    <div>
+      <h2>{copy.footerContact}</h2>
+      <a href={`mailto:${site.email}`}>{site.email}</a>
+    </div>
   </div>
 </footer>
 
@@ -38,8 +42,8 @@ const copy = homeCopy[locale];
 
   .site-footer__grid {
     display: grid;
-    grid-template-columns: minmax(0, 1.4fr) repeat(2, minmax(160px, 0.5fr));
-    gap: 30px;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px 24px;
   }
 
   .site-footer__brand {
@@ -57,7 +61,8 @@ const copy = homeCopy[locale];
     font-size: 0.9rem;
   }
 
-  .site-footer nav a {
+  .site-footer nav a,
+  .site-footer div a {
     display: block;
     margin-bottom: 8px;
   }
@@ -66,7 +71,17 @@ const copy = homeCopy[locale];
     color: #c5a367;
   }
 
-  @media (max-width: 720px) {
+@media (max-width: 720px) {
+    .site-footer__grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .site-footer__brand-col {
+      grid-column: 1 / -1;
+    }
+  }
+
+  @media (max-width: 480px) {
     .site-footer__grid {
       grid-template-columns: 1fr;
     }

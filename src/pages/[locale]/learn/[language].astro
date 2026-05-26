@@ -51,17 +51,40 @@ const languageData = languages[language];
           <h2>{copy.previewTitle}</h2>
           <p class="lead">{copy.preview}</p>
         </div>
-        <div class="word-preview">
-          {languageData.examples.map((word, index) => (
-            <article class="word-preview__item">
-              <div class="word-preview__word">
-                <span>{word}</span>
-                <span class="word-preview__badge">{index === 0 ? 'A2' : index === 1 ? 'B1' : 'B2'}</span>
+        {copy.previewSenses ? (
+          <div class="dict-card">
+            <div class="dict-card__header">
+              <span class="dict-card__word">{copy.previewWord}</span>
+              {copy.previewWordFamily && (
+                <div class="dict-card__family">
+                  {copy.previewWordFamily.join(' · ')}
+                </div>
+              )}
+            </div>
+            {copy.previewSenses.map((sense) => (
+              <div class="dict-card__sense">
+                <div class="dict-card__badges">
+                  <span class="dict-card__level">{sense.level}</span>
+                  <span class="dict-card__pos">{sense.pos}</span>
+                </div>
+                <p class="dict-card__def">{sense.definition}</p>
+                <p class="dict-card__ex">"{sense.example}"</p>
               </div>
-              <p>{copy.wordPreviewItem}</p>
-            </article>
-          ))}
-        </div>
+            ))}
+          </div>
+        ) : (
+          <div class="word-preview">
+            {languageData.examples.map((word, index) => (
+              <article class="word-preview__item">
+                <div class="word-preview__word">
+                  <span>{word}</span>
+                  <span class="word-preview__badge">{index === 0 ? 'A2' : index === 1 ? 'B1' : 'B2'}</span>
+                </div>
+                <p>{copy.wordPreviewItem}</p>
+              </article>
+            ))}
+          </div>
+        )}
       </div>
     </section>
 
@@ -92,6 +115,7 @@ const languageData = languages[language];
 
 <style>
   .hero {
+    padding-top: calc(80px + 5rem);
     background:
       radial-gradient(circle at 78% 32%, rgba(197, 163, 103, 0.14), transparent 24rem),
       linear-gradient(180deg, rgba(18, 20, 28, 0.2), rgba(13, 15, 22, 0.82));
@@ -99,5 +123,79 @@ const languageData = languages[language];
 
   .hero__actions {
     margin-top: 24px;
+  }
+
+  .dict-card {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    overflow: hidden;
+  }
+
+  .dict-card__header {
+    padding: 18px 20px 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  }
+
+  .dict-card__word {
+    display: block;
+    color: var(--cream-100);
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+
+  .dict-card__family {
+    color: var(--night-500);
+    font-size: 0.8rem;
+    letter-spacing: 0.01em;
+  }
+
+  .dict-card__sense {
+    padding: 14px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .dict-card__sense:last-child {
+    border-bottom: none;
+  }
+
+  .dict-card__badges {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 6px;
+  }
+
+  .dict-card__level {
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: rgba(197, 163, 103, 0.15);
+    color: var(--amber-400);
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+  }
+
+  .dict-card__pos {
+    color: var(--night-500);
+    font-size: 0.78rem;
+    font-style: italic;
+  }
+
+  .dict-card__def {
+    margin: 0 0 4px;
+    color: var(--cream-200);
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .dict-card__ex {
+    margin: 0;
+    color: var(--night-400);
+    font-size: 0.82rem;
+    font-style: italic;
+    line-height: 1.5;
   }
 </style>
