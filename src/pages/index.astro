@@ -259,7 +259,6 @@ const problemPre = copy.problemTitle.slice(0, copy.problemTitle.length - copy.pr
 <style>
   /* ── HERO ── */
   .hero {
-    min-height: 100svh;
     display: flex;
     align-items: center;
     padding-top: 60px;
@@ -279,14 +278,14 @@ const problemPre = copy.problemTitle.slice(0, copy.problemTitle.length - copy.pr
     z-index: 1;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 28px;
     align-items: center;
-    padding: 60px 0 80px;
+    padding: 40px 0 56px;
     width: 100%;
   }
 
-  .hero__text { order: 2; }
-  .hero__visual { order: 1; display: flex; justify-content: center; }
+  .hero__text { order: 1; }
+  .hero__visual { order: 2; display: flex; justify-content: center; }
 
   .hero__eyebrow {
     display: inline-flex;
@@ -367,7 +366,7 @@ const problemPre = copy.problemTitle.slice(0, copy.problemTitle.length - copy.pr
   }
 
   .hero__mascot {
-    width: clamp(180px, 48vw, 340px);
+    width: clamp(140px, 38vw, 280px);
     margin: 0 auto;
     animation: float-mascot 6s ease-in-out infinite;
     filter: drop-shadow(0 12px 40px rgba(197, 163, 103, .18));
@@ -379,6 +378,10 @@ const problemPre = copy.problemTitle.slice(0, copy.problemTitle.length - copy.pr
   }
 
   @media (min-width: 860px) {
+    .hero {
+      min-height: 100svh;
+    }
+
     .hero__inner {
       grid-template-columns: 1fr 360px;
       gap: 64px;
