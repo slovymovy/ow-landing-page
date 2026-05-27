@@ -9,81 +9,103 @@ interface Props {
 const { locale = 'en' } = Astro.props;
 const copy = homeCopy[locale];
 ---
-<footer class="site-footer">
-  <div class="container site-footer__grid">
-    <div class="site-footer__brand-col">
-      <a class="site-footer__brand" href={localizePath(locale, '/')}>OpenWords</a>
-      <p>{copy.footerTagline}</p>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+
+      <div class="footer__brand">
+        <div class="footer__brand-name">OpenWords</div>
+        <div class="footer__tagline">{copy.footerTagline}</div>
+      </div>
+
+      <div>
+        <div class="footer__col-label">{copy.footerLearn}</div>
+        <div class="footer__links">
+          {languageSlugs.map((slug) => (
+            <a href={localizePath(locale, `/learn/${slug}`)} class="footer__link">
+              {languages[slug].vocabPhrase[locale]}
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <div>
+        <div class="footer__col-label">{copy.footerLegal}</div>
+        <div class="footer__links">
+          <a href={localizePath(locale, '/privacy')} class="footer__link">{copy.privacy}</a>
+          <a href={`mailto:${site.email}`} class="footer__link">{site.email}</a>
+        </div>
+      </div>
+
     </div>
-    <nav aria-label={copy.footerLearn}>
-      <h2>{copy.footerLearn}</h2>
-      {languageSlugs.map((slug) => (
-        <a href={localizePath(locale, `/learn/${slug}`)}>{languages[slug].displayName[locale]}</a>
-      ))}
-    </nav>
-    <nav aria-label={copy.footerLegal}>
-      <h2>{copy.footerLegal}</h2>
-      <a href="/privacy/">{copy.privacy}</a>
-    </nav>
-    <div>
-      <h2>{copy.footerContact}</h2>
-      <a href={`mailto:${site.email}`}>{site.email}</a>
-    </div>
+    <div class="footer__bottom">{copy.footerBottom}</div>
   </div>
 </footer>
 
 <style>
-  .site-footer {
-    padding: 48px 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.06);
-    background: #090b10;
-    color: #848aab;
+  .footer {
+    background: #0f1118;
+    border-top: 1px solid rgba(255, 255, 255, .07);
+    padding: 56px 0 32px;
   }
 
-  .site-footer__grid {
+  .footer__grid {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap: 40px 24px;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
   }
 
-  .site-footer__brand {
-    display: inline-block;
-    margin-bottom: 10px;
-    color: #f2eee6;
+  @media (min-width: 600px) {
+    .footer__grid {
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 32px;
+    }
+  }
+
+  .footer__brand-name {
     font-family: Lora, Georgia, serif;
-    font-size: 1.1rem;
-    font-weight: 900;
-  }
-
-  .site-footer h2 {
-    margin-bottom: 12px;
-    color: #f2eee6;
-    font-size: 0.9rem;
-  }
-
-  .site-footer nav a,
-  .site-footer div a {
-    display: block;
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: #E2E4ED;
     margin-bottom: 8px;
   }
 
-  .site-footer a:hover {
-    color: #c5a367;
+  .footer__tagline {
+    font-size: .875rem;
+    color: #555a70;
+    line-height: 1.6;
   }
 
-@media (max-width: 720px) {
-    .site-footer__grid {
-      grid-template-columns: 1fr 1fr;
-    }
-
-    .site-footer__brand-col {
-      grid-column: 1 / -1;
-    }
+  .footer__col-label {
+    font-size: .6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    color: #555a70;
+    margin-bottom: 12px;
   }
 
-  @media (max-width: 480px) {
-    .site-footer__grid {
-      grid-template-columns: 1fr;
-    }
+  .footer__links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer__link {
+    font-size: .9rem;
+    color: #9499B0;
+    transition: color .2s;
+    text-decoration: none;
+  }
+
+  .footer__link:hover { color: #E2E4ED; }
+
+  .footer__bottom {
+    padding-top: 24px;
+    border-top: 1px solid rgba(255, 255, 255, .07);
+    font-size: .8125rem;
+    color: #555a70;
+    text-align: center;
   }
 </style>

@@ -6,14 +6,20 @@ interface Props {
 
 const { title, items } = Astro.props;
 ---
-<section class="section quiet-band">
-  <div class="container faq">
-    <h2>{title}</h2>
+<section class="faq">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">FAQ</div>
+      <h2 class="section-h2">{title}</h2>
+    </div>
     <div class="faq__list">
-      {items.map((item) => (
-        <details>
-          <summary>{item.question}</summary>
-          <p>{item.answer}</p>
+      {items.map((item, i) => (
+        <details class="faq-item" open={i === 0 || undefined}>
+          <summary>
+            {item.question}
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </summary>
+          <div class="faq-answer">{item.answer}</div>
         </details>
       ))}
     </div>
@@ -21,29 +27,93 @@ const { title, items } = Astro.props;
 </section>
 
 <style>
+  .faq {
+    background: #0f1118;
+    padding: 96px 0;
+  }
+
+  .section-head {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .section-eyebrow {
+    font-size: .6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #C5A367;
+    margin-bottom: 10px;
+  }
+
+  .section-h2 {
+    font-family: Lora, Georgia, serif;
+    font-size: clamp(1.625rem, 3.5vw, 2.25rem);
+    font-weight: 600;
+    line-height: 1.18;
+    color: #E2E4ED;
+    letter-spacing: -.01em;
+  }
+
   .faq__list {
-    display: grid;
-    gap: 10px;
-    max-width: 860px;
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
   }
 
-  details {
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.055);
-    box-shadow: 0 16px 38px rgba(0, 0, 0, 0.22);
+  .faq-item {
+    background: #1C1F2A;
+    border: 1px solid rgba(255, 255, 255, .07);
+    border-radius: 14px;
+    overflow: hidden;
+    transition: border-color .2s;
   }
 
-  summary {
+  .faq-item[open] { border-color: rgba(197, 163, 103, .2); }
+
+  .faq-item summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 20px 24px;
+    font-size: .9375rem;
+    font-weight: 600;
+    color: #E2E4ED;
     cursor: pointer;
-    padding: 18px 20px;
-    color: #f2eee6;
-    font-weight: 850;
+    list-style: none;
+    user-select: none;
+    -webkit-user-select: none;
   }
 
-  details p {
-    margin: 0;
-    padding: 0 20px 20px;
-    color: #b8bcce;
+  .faq-item summary::-webkit-details-marker { display: none; }
+
+  .faq-icon {
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, .15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    line-height: 1;
+    color: #C5A367;
+    transition: transform .25s, background .2s;
+  }
+
+  .faq-item[open] .faq-icon {
+    transform: rotate(45deg);
+    background: rgba(197, 163, 103, .1);
+  }
+
+  .faq-answer {
+    padding: 0 24px 20px;
+    font-size: .9375rem;
+    line-height: 1.77;
+    color: #9499B0;
   }
 </style>

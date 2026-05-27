@@ -3,108 +3,118 @@ import { site } from '../data/site';
 
 interface Props {
   locale?: 'en' | 'pl' | 'nl' | 'ru';
-  appStoreLabel?: string;
-  googlePlayLabel?: string;
 }
 
-const {
-  locale = 'en',
-  appStoreLabel = 'App Store',
-  googlePlayLabel = 'Google Play'
-} = Astro.props;
+const { locale = 'en' } = Astro.props;
 
-const label = {
-  en: ['Download on the', 'Get it on'],
-  pl: ['Pobierz z', 'Pobierz z'],
-  nl: ['Download in de', 'Download via'],
-  ru: ['Скачать в', 'Скачать в']
+const labels = {
+  en: { appSmall: 'Download on the', appBig: 'App Store', playSmall: 'Get it on', playBig: 'Google Play' },
+  pl: { appSmall: 'Pobierz z', appBig: 'App Store', playSmall: 'Pobierz z', playBig: 'Google Play' },
+  nl: { appSmall: 'Download in de', appBig: 'App Store', playSmall: 'Download via', playBig: 'Google Play' },
+  ru: { appSmall: 'Скачать в', appBig: 'App Store', playSmall: 'Скачать в', playBig: 'Google Play' }
 }[locale];
 ---
-<div class="download-buttons">
-  <a class="download-btn download-btn--primary" href={site.appStoreUrl} target="_blank" rel="noopener noreferrer">
-    <svg class="download-btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+<div class="store-btns">
+  <a class="store-btn store-btn--gold" href={site.appStoreUrl} target="_blank" rel="noopener noreferrer">
+    <svg class="store-btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
       <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
     </svg>
-    <span class="download-btn__text">
-      <span class="download-btn__small">{label[0]}</span>
-      <span class="download-btn__big">{appStoreLabel}</span>
-    </span>
+    <div class="store-btn__text">
+      <span class="store-btn__small">{labels.appSmall}</span>
+      <span class="store-btn__big">{labels.appBig}</span>
+    </div>
   </a>
-  <a class="download-btn" href={site.googlePlayUrl} target="_blank" rel="noopener noreferrer">
-    <svg class="download-btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+  <a class="store-btn store-btn--dark" href={site.googlePlayUrl} target="_blank" rel="noopener noreferrer">
+    <svg class="store-btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
       <path d="M3.18 23.76A1.97 1.97 0 0 1 2 22V2C2 1.26 2.44.62 3.18.24L13.41 12 3.18 23.76zm17.35-8.6L17.4 13.5 14.83 12l2.57-1.5 3.13-1.82a2 2 0 0 1 0 3.48zM4.34 1.15l10.8 6.23L12.52 9.9 4.34 1.15zm0 21.7 8.18-8.74 2.62 2.52-10.8 6.22z"/>
     </svg>
-    <span class="download-btn__text">
-      <span class="download-btn__small">{label[1]}</span>
-      <span class="download-btn__big">{googlePlayLabel}</span>
-    </span>
+    <div class="store-btn__text">
+      <span class="store-btn__small">{labels.playSmall}</span>
+      <span class="store-btn__big">{labels.playBig}</span>
+    </div>
   </a>
 </div>
 
 <style>
-  .download-buttons {
+  .store-btns {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.625rem;
-    justify-content: center;
+    gap: 10px;
   }
 
-  .download-btn {
+  .store-btn {
     display: inline-flex;
     align-items: center;
-    gap: 0.55rem;
-    min-width: 138px;
-    padding: 0.55rem 0.9rem;
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: var(--radius-xl);
-    background: rgba(255, 255, 255, 0.06);
-    color: var(--cream-100);
-    transition: all var(--duration-base) var(--ease-out);
+    gap: 10px;
+    padding: 12px 20px;
+    border-radius: 14px;
+    font-weight: 700;
+    font-size: .9375rem;
+    min-width: 172px;
+    transition: transform .2s, box-shadow .2s, opacity .2s;
+    text-decoration: none;
+    border: none;
   }
 
-  .download-btn:hover {
-    transform: translateY(-2px);
-    border-color: rgba(255, 255, 255, 0.22);
-    background: rgba(255, 255, 255, 0.1);
+  .store-btn:hover { transform: translateY(-2px); }
+
+  .store-btn--gold {
+    background: #C5A367;
+    color: #1c1407;
+    box-shadow: 0 4px 20px rgba(197, 163, 103, .30);
   }
 
-  .download-btn--primary {
-    border-color: transparent;
-    background: var(--gradient-warm);
-    color: var(--night-950);
-    box-shadow: var(--shadow-md), var(--shadow-glow-soft);
+  .store-btn--gold:hover {
+    box-shadow: 0 8px 28px rgba(197, 163, 103, .30);
   }
 
-  .download-btn--primary:hover {
-    border-color: transparent;
-    background: var(--gradient-warm);
-    color: var(--night-950);
-    box-shadow: var(--shadow-lg), var(--shadow-glow);
+  .store-btn--dark {
+    background: #1C1F2A;
+    color: #E2E4ED;
+    border: 1px solid rgba(255, 255, 255, .12);
   }
 
-  .download-btn__icon {
-    width: 19px;
-    height: 19px;
+  .store-btn--dark:hover {
+    border-color: rgba(255, 255, 255, .2);
+  }
+
+  .store-btn__icon {
+    width: 24px;
+    height: 24px;
     flex-shrink: 0;
   }
 
-  .download-btn__text {
+  .store-btn__text {
     display: flex;
     flex-direction: column;
     text-align: left;
+    gap: 1px;
   }
 
-  .download-btn__small {
-    font-size: 0.58rem;
+  .store-btn__small {
+    font-size: .6875rem;
     font-weight: 500;
+    opacity: .7;
     line-height: 1;
-    opacity: 0.7;
   }
 
-  .download-btn__big {
-    font-family: var(--font-display);
-    font-size: 0.82rem;
-    font-weight: 700;
-    line-height: 1.3;
+  .store-btn__big {
+    font-size: 1rem;
+    font-family: Lora, Georgia, serif;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  @media (max-width: 479px) {
+    .store-btns {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .store-btn {
+      min-width: 0;
+      width: 100%;
+      justify-content: center;
+    }
   }
 </style>

@@ -47,6 +47,7 @@ export const languages = {
   english: {
     slug: 'english',
     name: 'English',
+    flag: '🇬🇧',
     displayName: {
       en: 'English',
       pl: 'Angielski',
@@ -76,6 +77,7 @@ export const languages = {
   dutch: {
     slug: 'dutch',
     name: 'Dutch',
+    flag: '🇳🇱',
     displayName: {
       en: 'Dutch',
       pl: 'Niderlandzki',
@@ -105,6 +107,7 @@ export const languages = {
   polish: {
     slug: 'polish',
     name: 'Polish',
+    flag: '🇵🇱',
     displayName: {
       en: 'Polish',
       pl: 'Polski',
@@ -134,6 +137,7 @@ export const languages = {
   russian: {
     slug: 'russian',
     name: 'Russian',
+    flag: '🇷🇺',
     displayName: {
       en: 'Russian',
       pl: 'Rosyjski',

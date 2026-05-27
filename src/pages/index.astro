@@ -11,36 +11,36 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const locale = 'en';
 const copy = homeCopy[locale];
 const faq = homeFaq(locale);
+const h1Pre = copy.h1.slice(0, copy.h1.length - copy.heroH1Em.length);
+const problemPre = copy.problemTitle.slice(0, copy.problemTitle.length - copy.problemTitleEm.length);
 ---
 <BaseLayout title={copy.title} description={copy.description} locale={locale} path="/" faq={faq}>
   <Header locale={locale} />
 
   <main>
-    <section class="section hero">
-      <div class="hero__lamp"></div>
-      <div class="hero__particles" aria-hidden="true">
-        <span></span><span></span><span></span><span></span><span></span><span></span>
-      </div>
+    <section class="hero">
+      <div class="hero__glow" aria-hidden="true"></div>
       <div class="container">
-        <div class="hero__grid">
-          <div class="hero__content">
-            <div class="hero__badge">
-              <span class="hero__badge-dot"></span>
+        <div class="hero__inner">
+          <div class="hero__text">
+            <div class="hero__eyebrow">
+              <span class="eyebrow-dot" aria-hidden="true"></span>
               {copy.eyebrow}
             </div>
-            <h1 class="hero__title">{copy.h1}</h1>
-            <p class="hero__subtitle">{copy.subtitle}</p>
+            <h1 class="hero__h1">{h1Pre}<em>{copy.heroH1Em}</em></h1>
+            <p class="hero__sub">{copy.subtitle}</p>
             <div class="hero__actions">
               <StoreButtons locale={locale} />
-            </div>
-            <div class="lang-chips" aria-label={copy.ui.supportedLanguages}>
-              {languageSlugs.map((slug) => (
-                <span class="lang-chip">{languages[slug].displayName[locale]}</span>
-              ))}
+              <p class="hero__tagline">{copy.heroTagline}</p>
+              <div class="hero__chips" aria-label={copy.ui.supportedLanguages}>
+                {languageSlugs.map((slug) => (
+                  <span class="chip">{languages[slug].displayName[locale]}</span>
+                ))}
+              </div>
             </div>
           </div>
-          <div class="hero__mascot">
-            <img class="mascot-img" src="/svg_final_search_otter.dark.optimized.svg" alt={copy.ui.searchMascotAlt} />
+          <div class="hero__visual">
+            <img class="hero__mascot" src="/svg_final_search_otter.dark.optimized.svg" alt={copy.ui.searchMascotAlt} width="340" height="340" />
           </div>
         </div>
       </div>
@@ -48,99 +48,206 @@ const faq = homeFaq(locale);
 
     <div class="divider"></div>
 
-    <section class="section split-band">
+    <section class="problem">
       <div class="container">
-        <h2>{copy.problemTitle}</h2>
-        <p class="lead">{copy.problem}</p>
+        <h2 class="problem__quote">{problemPre}<em>{copy.problemTitleEm}</em></h2>
+        <p class="problem__body">{copy.problem}</p>
       </div>
     </section>
 
     <div class="divider"></div>
 
-    <section class="features">
+    <section class="how" id="how-it-works">
       <div class="container">
-        <article class="feature-panel">
-          <div class="feature-panel__text">
-            <h2>{copy.loopTitle}</h2>
-            <p>{copy.loop}</p>
-          </div>
-          <div class="feature-panel__visual">
-            <div class="screenshot-wrap">
-              <div class="screenshot-phone">
-                <img src="/word.jpg" alt={copy.ui.searchScreenAlt} />
-              </div>
-            </div>
-          </div>
-        </article>
 
-        <article class="feature-panel feature-panel--reverse">
-          <div class="feature-panel__text">
-            <h2>{copy.dictionaryTitle}</h2>
-            <p>{copy.dictionary}</p>
-          </div>
-          <div class="feature-panel__visual">
-            <div class="screenshot-wrap">
-              <div class="screenshot-phone">
-                <img src="/sense.jpg" alt={copy.ui.meaningCardAlt} />
-              </div>
-            </div>
-          </div>
-        </article>
+        <div class="section-head">
+          <div class="section-eyebrow">{copy.howItWorksEyebrow}</div>
+          <h2 class="section-h2">{copy.howItWorksTitle}</h2>
+          <p class="section-sub">{copy.howItWorksSub}</p>
+        </div>
 
-        <article class="feature-panel">
-          <div class="feature-panel__text">
-            <h2>{copy.srsTitle}</h2>
-            <p>{copy.srs}</p>
+        <div class="how__flow" aria-hidden="true">
+          <div class="how__step-chip">{copy.howStepChips[0]}</div>
+          <span class="how__connector">→</span>
+          <div class="how__step-chip">{copy.howStepChips[1]}</div>
+          <span class="how__connector">→</span>
+          <div class="how__step-chip">{copy.howStepChips[2]}</div>
+          <span class="how__connector">→</span>
+          <div class="how__step-chip">{copy.howStepChips[3]}</div>
+        </div>
+
+        <div class="how__row how__row--first">
+          <div class="how__text">
+            <span class="how__num" aria-hidden="true">01</span>
+            <h3 class="how__h3">{copy.loopTitle}</h3>
+            <p class="how__body">{copy.loop}</p>
           </div>
-          <div class="feature-panel__visual">
-            <div class="screenshot-wrap">
-              <div class="screenshot-phone">
-                <img src="/favs.jpg" alt={copy.ui.savedScreenAlt} />
-              </div>
+          <div class="how__visual">
+            <div class="phone-wrap">
+              <img src="/word.jpg" alt={copy.ui.searchScreenAlt} loading="lazy" width="260" height="565" />
             </div>
           </div>
-        </article>
+        </div>
+
+        <div class="how__row how__row--rev">
+          <div class="how__text">
+            <span class="how__num" aria-hidden="true">02</span>
+            <h3 class="how__h3">{copy.dictionaryTitle}</h3>
+            <p class="how__body">{copy.dictionary}</p>
+          </div>
+          <div class="how__visual">
+            <div class="phone-wrap">
+              <img src="/sense.jpg" alt={copy.ui.meaningCardAlt} loading="lazy" width="260" height="565" />
+            </div>
+          </div>
+        </div>
+
+        <div class="how__row">
+          <div class="how__text">
+            <span class="how__num" aria-hidden="true">03</span>
+            <h3 class="how__h3">{copy.srsTitle}</h3>
+            <p class="how__body">{copy.srs}</p>
+          </div>
+          <div class="how__visual">
+            <div class="phone-wrap">
+              <img src="/favs.jpg" alt={copy.ui.savedScreenAlt} loading="lazy" width="260" height="565" />
+            </div>
+          </div>
+        </div>
+
+        <div class="card-types">
+          <div class="card-types__head">
+            <div class="card-types__eyebrow">{copy.cardTypesEyebrow}</div>
+            <p class="card-types__title">{copy.cardTypesTitle}</p>
+          </div>
+          <div class="card-types__strip">
+
+            <div class="card-prev" role="img" aria-label="Recognition card: word shown, translate to your language">
+              <div class="card-prev__chip card-prev__chip--recog">NL → EN</div>
+              <div class="card-prev__body">
+                <div class="card-prev__word">gezellig <span class="card-prev__speaker" aria-hidden="true">🔊</span></div>
+              </div>
+              <div class="card-prev__hint" aria-hidden="true">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 15.5-6.3"/><path d="M21 4v5h-5"/><path d="M21 12a9 9 0 0 1-15.5 6.3"/><path d="M3 20v-5h5"/></svg>
+                Tap to flip
+              </div>
+            </div>
+
+            <div class="card-prev" role="img" aria-label="Production card: definition shown, recall the word">
+              <div class="card-prev__chip card-prev__chip--prod">EN → NL</div>
+              <div class="card-prev__body">
+                <div class="card-prev__prompt">Translate to Dutch</div>
+                <div class="card-prev__word card-prev__word--sm">pleasant,<br />cozy</div>
+              </div>
+              <div class="card-prev__hint" aria-hidden="true">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 15.5-6.3"/><path d="M21 4v5h-5"/><path d="M21 12a9 9 0 0 1-15.5 6.3"/><path d="M3 20v-5h5"/></svg>
+                Tap to check
+              </div>
+            </div>
+
+            <div class="card-prev" role="img" aria-label="Fill-in-the-blank card">
+              <div class="card-prev__chip card-prev__chip--cloze">Fill in</div>
+              <div class="card-prev__body">
+                <div class="card-prev__cloze">De avond was erg <span class="card-prev__blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>.</div>
+              </div>
+              <div class="card-prev__hint" aria-hidden="true">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 15.5-6.3"/><path d="M21 4v5h-5"/><path d="M21 12a9 9 0 0 1-15.5 6.3"/><path d="M3 20v-5h5"/></svg>
+                Tap to check
+              </div>
+            </div>
+
+            <div class="card-prev" role="img" aria-label="Listening card: audio only">
+              <div class="card-prev__chip card-prev__chip--listen">Listen</div>
+              <div class="card-prev__body card-prev__body--center">
+                <div class="card-prev__disc">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M19 5.5a9 9 0 0 1 0 13"/></svg>
+                </div>
+              </div>
+              <div class="card-prev__hint" aria-hidden="true">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 15.5-6.3"/><path d="M21 4v5h-5"/><path d="M21 12a9 9 0 0 1-15.5 6.3"/><path d="M3 20v-5h5"/></svg>
+                Tap to check
+              </div>
+            </div>
+
+            <div class="card-prev" role="img" aria-label="Monolingual card: word and definition in target language">
+              <div class="card-prev__chip card-prev__chip--mono">NL only</div>
+              <div class="card-prev__body">
+                <div class="card-prev__word">gezellig <span class="card-prev__speaker" aria-hidden="true">🔊</span></div>
+                <div class="card-prev__mono-note">think in Dutch</div>
+              </div>
+              <div class="card-prev__hint" aria-hidden="true">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 15.5-6.3"/><path d="M21 4v5h-5"/><path d="M21 12a9 9 0 0 1-15.5 6.3"/><path d="M3 20v-5h5"/></svg>
+                Tap to flip
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="how__row how__row--rev">
+          <div class="how__text">
+            <span class="how__num" aria-hidden="true">04</span>
+            <h3 class="how__h3">{copy.trackTitle}</h3>
+            <p class="how__body">{copy.track}</p>
+          </div>
+          <div class="how__visual">
+            <div class="phone-wrap">
+              <img src="/screen-stats.png" alt={copy.ui.statsScreenAlt} loading="lazy" width="260" height="565" />
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
     <div class="divider"></div>
 
-    <section class="facts">
-      <div class="container facts__grid">
-        {copy.facts.map(([value, label]) => (
-          <div class="fact">
-            <span class="fact__value">{value}</span>
-            <span class="fact__label">{label}</span>
-          </div>
-        ))}
+    <section class="trust">
+      <div class="container">
+        <div class="trust__grid">
+          {copy.facts.map(([val, desc]) => (
+            <div class="trust__cell">
+              <div class="trust__val">{val}</div>
+              <div class="trust__desc">{desc}</div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
 
     <div class="divider"></div>
 
-    <section class="section">
+    <section class="languages">
       <div class="container">
-        <h2>{copy.languagesTitle}</h2>
-        <p class="lead">{copy.languagesSubtitle}</p>
+        <div class="section-head">
+          <div class="section-eyebrow">{copy.languagesEyebrow}</div>
+          <h2 class="section-h2">{copy.languagesTitle}</h2>
+          <p class="section-sub">{copy.languagesSubtitle}</p>
+        </div>
         <LanguageCards locale={locale} />
       </div>
     </section>
 
+    <div class="divider"></div>
+
     <FAQ title={copy.faqTitle} items={faq} />
 
     <section class="cta" id="download">
-      <div class="cta__glow"></div>
-      <div class="container cta__grid">
-        <div class="cta__mascot">
-          <img class="mascot-img" src="/svg_final_otter_favourites.dark.optimized.svg" alt={copy.ui.savedMascotAlt} />
-        </div>
-        <div class="cta__content">
-          <div class="hero__badge">
-            <span class="hero__badge-dot"></span>
-            {copy.eyebrow}
+      <div class="cta__glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="cta__inner">
+          <div class="cta__mascot">
+            <img src="/svg_final_otter_favourites.dark.optimized.svg" alt={copy.ui.savedMascotAlt} width="280" />
           </div>
-          <h2>{copy.finalCta}</h2>
-          <StoreButtons locale={locale} />
+          <div class="cta__body">
+            <div class="cta__eyebrow">{copy.eyebrow}</div>
+            <h2 class="cta__h2">{copy.finalCta}</h2>
+            <p class="cta__sub">{copy.ctaSub}</p>
+            <div class="cta__btns">
+              <StoreButtons locale={locale} />
+            </div>
+            <p class="cta__note">{copy.heroTagline}</p>
+          </div>
         </div>
       </div>
     </section>
@@ -150,316 +257,607 @@ const faq = homeFaq(locale);
 </BaseLayout>
 
 <style>
+  /* ── HERO ── */
   .hero {
-    position: relative;
+    min-height: 100svh;
     display: flex;
     align-items: center;
-    min-height: auto;
-    padding: calc(80px + 2rem) 0 4rem;
-    background: var(--gradient-night);
+    padding-top: 60px;
+    position: relative;
     overflow: hidden;
   }
 
-  .hero__lamp {
+  .hero__glow {
     position: absolute;
-    top: -200px;
-    left: 50%;
-    width: 800px;
-    height: 600px;
-    transform: translateX(-50%);
-    background: radial-gradient(ellipse 50% 40% at 50% 0%, rgba(197, 163, 103, 0.12) 0%, rgba(197, 163, 103, 0.05) 40%, transparent 70%);
+    inset: 0;
+    background: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(197, 163, 103, .09) 0%, transparent 60%);
     pointer-events: none;
   }
 
-  .hero__particles {
-    position: absolute;
-    inset: 0;
-    overflow: hidden;
-  }
-
-  .hero__particles span {
-    position: absolute;
-    bottom: -100px;
-    width: 3px;
-    height: 3px;
-    border-radius: 50%;
-    background: var(--amber-400);
-    opacity: 0;
-    animation: float-particle 8s infinite;
-  }
-
-  .hero__particles span:nth-child(1) { left: 20%; animation-delay: 0s; }
-  .hero__particles span:nth-child(2) { left: 40%; animation-delay: 2s; }
-  .hero__particles span:nth-child(3) { left: 60%; animation-delay: 4s; }
-  .hero__particles span:nth-child(4) { left: 80%; animation-delay: 6s; }
-  .hero__particles span:nth-child(5) { left: 30%; animation-delay: 1s; }
-  .hero__particles span:nth-child(6) { left: 70%; animation-delay: 3s; }
-
-  @keyframes float-particle {
-    0% { opacity: 0; transform: translateY(100px); }
-    20%, 80% { opacity: 0.3; }
-    100% { opacity: 0; transform: translateY(-200px); }
-  }
-
-  .hero__grid {
+  .hero__inner {
     position: relative;
     z-index: 1;
     display: grid;
+    grid-template-columns: 1fr;
     gap: 40px;
     align-items: center;
+    padding: 60px 0 80px;
+    width: 100%;
   }
 
-  .hero__content {
-    text-align: center;
-  }
+  .hero__text { order: 2; }
+  .hero__visual { order: 1; display: flex; justify-content: center; }
 
-  .hero__badge {
+  .hero__eyebrow {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    margin-bottom: 1.25rem;
-    padding: 0.5rem 1rem;
-    border: 1px solid rgba(197, 163, 103, 0.2);
-    border-radius: 999px;
-    background: rgba(197, 163, 103, 0.1);
-    color: var(--amber-400);
-    font-size: 0.8125rem;
+    font-size: .8125rem;
     font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    color: #C5A367;
+    margin-bottom: 18px;
   }
 
-  .hero__badge-dot {
-    width: 6px;
-    height: 6px;
+  .eyebrow-dot {
+    width: 7px;
+    height: 7px;
     border-radius: 50%;
-    background: var(--amber-400);
-    box-shadow: 0 0 10px var(--amber-400);
+    background: #C5A367;
+    box-shadow: 0 0 8px #C5A367;
+    animation: pulse-dot 2.5s ease-in-out infinite;
   }
 
-  .hero__title {
-    margin-bottom: 1.5rem;
-    font-size: clamp(2rem, 5vw, 3.5rem);
+  @keyframes pulse-dot {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: .5; transform: scale(1.6); }
+  }
+
+  .hero__h1 {
+    font-family: Lora, Georgia, serif;
+    font-size: clamp(2rem, 5.5vw, 3.375rem);
     font-weight: 700;
-    line-height: 1.1;
+    line-height: 1.12;
+    letter-spacing: -.015em;
+    color: #E2E4ED;
+    margin-bottom: 20px;
   }
 
-  .hero__subtitle {
-    max-width: 590px;
-    margin: 0 auto 2rem;
-    color: var(--night-400);
-    font-size: clamp(1.0625rem, 2.5vw, 1.1875rem);
+  .hero__h1 em {
+    font-style: normal;
+    color: #C5A367;
+  }
+
+  .hero__sub {
+    font-size: clamp(1rem, 2vw, 1.0625rem);
     line-height: 1.8;
+    color: #9499B0;
+    max-width: 520px;
+    margin-top: 8px;
+    margin-bottom: 32px;
   }
 
-  .lang-chips {
+  .hero__actions {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .hero__tagline {
+    font-size: .8125rem;
+    color: #555a70;
+    margin: 0;
+    padding-top: 4px;
+  }
+
+  .hero__chips {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 1rem;
+    gap: 7px;
   }
 
-  .lang-chip {
-    padding: 0.25rem 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.05);
-    color: var(--night-300);
-    font-size: 0.8125rem;
+  .chip {
+    font-size: .8125rem;
     font-weight: 500;
+    color: #9499B0;
+    padding: 5px 14px;
+    border: 1px solid rgba(255, 255, 255, .07);
+    border-radius: 999px;
   }
 
   .hero__mascot {
-    display: flex;
-    justify-content: center;
-    order: -1;
-  }
-
-  .mascot-img {
-    width: 200px;
-    filter: drop-shadow(0 8px 40px rgba(197, 163, 103, 0.32));
+    width: clamp(180px, 48vw, 340px);
+    margin: 0 auto;
     animation: float-mascot 6s ease-in-out infinite;
+    filter: drop-shadow(0 12px 40px rgba(197, 163, 103, .18));
   }
 
   @keyframes float-mascot {
     0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-14px); }
+    50% { transform: translateY(-12px); }
+  }
+
+  @media (min-width: 860px) {
+    .hero__inner {
+      grid-template-columns: 1fr 360px;
+      gap: 64px;
+      padding: 80px 0 100px;
+    }
+
+    .hero__text { order: 1; }
+    .hero__visual { order: 2; }
+  }
+
+  /* ── PROBLEM ── */
+  .problem {
+    background: #0f1118;
+    padding: 96px 0;
+    text-align: center;
+  }
+
+  .problem__quote {
+    font-family: Lora, Georgia, serif;
+    font-size: clamp(1.5rem, 4vw, 2.625rem);
+    font-weight: 600;
+    line-height: 1.2;
+    color: #E2E4ED;
+    max-width: 720px;
+    margin: 0 auto 28px;
+    letter-spacing: -.01em;
+  }
+
+  .problem__quote em {
+    font-style: italic;
+    color: #C5A367;
+  }
+
+  .problem__body {
+    max-width: 640px;
+    margin: 0 auto;
+    font-size: 1.0625rem;
+    line-height: 1.82;
+    color: #9499B0;
   }
 
   .divider {
     height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(197, 163, 103, 0.2), transparent);
+    background: linear-gradient(90deg, transparent, rgba(197, 163, 103, 0.14), transparent);
   }
 
-  .features,
-  .facts,
-  .cta {
-    padding: 5rem 0;
+  /* ── HOW IT WORKS ── */
+  .how { padding: 80px 0 40px; }
+
+  .section-head { text-align: center; margin-bottom: 48px; }
+
+  .section-eyebrow {
+    font-size: .6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #C5A367;
+    margin-bottom: 10px;
   }
 
-  .feature-panel {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-    align-items: center;
-    margin-bottom: 5rem;
+  .section-h2 {
+    font-family: Lora, Georgia, serif;
+    font-size: clamp(1.625rem, 3.5vw, 2.25rem);
+    font-weight: 600;
+    line-height: 1.18;
+    color: #E2E4ED;
+    letter-spacing: -.01em;
+    margin-bottom: 12px;
   }
 
-  .feature-panel:last-child {
-    margin-bottom: 0;
-  }
-
-  .feature-panel__text p {
-    max-width: 520px;
-    color: var(--night-300);
+  .section-sub {
     font-size: 1rem;
-    line-height: 1.75;
+    color: #9499B0;
+    max-width: 520px;
+    margin: 0 auto;
+    line-height: 1.7;
   }
 
-  .feature-panel__visual {
-    display: flex;
-    justify-content: center;
+  .how__flow {
+    display: none;
   }
 
-  .screenshot-wrap {
-    position: relative;
-    width: 100%;
-    max-width: 280px;
+  @media (min-width: 800px) {
+    .how__flow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      margin-bottom: 72px;
+    }
   }
 
-  .screenshot-wrap::before {
-    content: "";
-    position: absolute;
-    inset: -30% -20%;
-    z-index: 0;
-    background: radial-gradient(circle, rgba(197, 163, 103, 0.18) 0%, transparent 62%);
-    filter: blur(40px);
+  .how__step-chip {
+    padding: 7px 18px;
+    border-radius: 999px;
+    background: #1C1F2A;
+    border: 1px solid rgba(255, 255, 255, .07);
+    font-size: .8rem;
+    font-weight: 700;
+    color: #555a70;
+    letter-spacing: .04em;
+    white-space: nowrap;
   }
 
-  .screenshot-phone {
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    border-radius: 32px;
-    box-shadow: var(--shadow), 0 0 0 1px rgba(255, 255, 255, 0.06);
+  .how__connector {
+    color: #555a70;
+    font-size: 1rem;
+    padding: 0 10px;
+    opacity: .5;
   }
 
-  .facts__grid {
+  .how__row {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 40px;
+    align-items: center;
+    padding: 64px 0;
+    border-top: 1px solid rgba(255, 255, 255, .07);
   }
 
-  .fact {
+  .how__row--first {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .how__num {
+    font-family: Lora, Georgia, serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    line-height: 1;
+    color: rgba(197, 163, 103, .22);
+    margin-bottom: 2px;
+    display: block;
+  }
+
+  .how__h3 {
+    font-family: Lora, Georgia, serif;
+    font-size: clamp(1.375rem, 3vw, 2rem);
+    font-weight: 600;
+    line-height: 1.18;
+    color: #E2E4ED;
+    margin-bottom: 14px;
+    letter-spacing: -.01em;
+  }
+
+  .how__body {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #9499B0;
+    margin: 0;
+  }
+
+  .how__body + .how__body { margin-top: 12px; }
+
+  .how__visual { display: flex; justify-content: center; }
+
+  /* ── CARD TYPE STRIP ── */
+  .card-types {
+    border-top: 1px solid rgba(255, 255, 255, .07);
+    padding: 48px 0 64px;
+  }
+
+  .card-types__head {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .card-types__eyebrow {
+    font-size: .6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #C5A367;
+    margin-bottom: 6px;
+  }
+
+  .card-types__title {
+    font-family: Lora, Georgia, serif;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-weight: 500;
+    color: #9499B0;
+    font-style: italic;
+    margin: 0;
+  }
+
+  .card-types__strip {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 8px 4px 24px;
+    justify-content: safe center;
+  }
+
+  .card-types__strip::-webkit-scrollbar { display: none; }
+
+  /* ── Mini card previews ── */
+  .card-prev {
+    width: 156px;
+    flex-shrink: 0;
+    background: #f5f2ed;
+    border-radius: 18px;
+    padding: 14px 13px 11px;
+    box-shadow: 0 0 0 1px rgba(255,255,255,.06), 0 2px 8px rgba(0,0,0,.22), 0 14px 36px rgba(0,0,0,.28);
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    padding: 2rem;
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    border-radius: var(--radius-xl);
-    background: var(--night-800);
+    height: 216px;
+  }
+
+  .card-prev__chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 3px 9px;
+    border-radius: 999px;
+    font-size: 10px;
+    font-weight: 700;
+    font-family: Inter, sans-serif;
+    letter-spacing: .02em;
+    align-self: flex-start;
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+
+  .card-prev__chip--recog { background: #d7eacc; color: #265c1c; }
+  .card-prev__chip--prod  { background: #e8d8c6; color: #3b1e08; }
+  .card-prev__chip--cloze { background: #f3e3bc; color: #472c00; }
+  .card-prev__chip--listen{ background: #d2e4f4; color: #0c3054; }
+  .card-prev__chip--mono  { background: #fddcc2; color: #2d1400; }
+
+  .card-prev__body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    padding: 8px 0 4px;
+  }
+
+  .card-prev__body--center { align-items: center; }
+
+  .card-prev__prompt {
+    font-size: 9.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #9b8f86;
+    font-family: Inter, sans-serif;
     text-align: center;
   }
 
-  .fact__value {
-    color: var(--amber-400);
-    font-family: var(--font-display);
-    font-size: 1.75rem;
+  .card-prev__word {
+    font-family: Lora, Georgia, serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #2d2620;
+    text-align: center;
+    line-height: 1.1;
+    letter-spacing: -.01em;
+  }
+
+  .card-prev__word--sm { font-size: 18px; }
+  .card-prev__speaker { font-size: 13px; opacity: .55; }
+
+  .card-prev__mono-note {
+    font-size: 10px;
+    color: #9b8f86;
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-style: italic;
+  }
+
+  .card-prev__cloze {
+    font-family: Lora, Georgia, serif;
+    font-size: 15px;
+    color: #2d2620;
+    line-height: 1.55;
+    text-align: center;
+  }
+
+  .card-prev__blank {
+    display: inline-block;
+    border-bottom: 2px solid #b87333;
+    color: transparent;
+    min-width: 48px;
+    vertical-align: bottom;
+    padding-bottom: 1px;
+  }
+
+  .card-prev__disc {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: rgba(184, 115, 51, .11);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #b87333;
+    box-shadow: 0 0 0 7px rgba(184,115,51,.05), 0 0 0 14px rgba(184,115,51,.03);
+  }
+
+  .card-prev__hint {
+    font-size: 10px;
+    color: #9b8f86;
+    text-align: center;
+    font-family: Inter, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding-top: 8px;
+    border-top: 1px solid rgba(45, 38, 32, .08);
+    flex-shrink: 0;
+  }
+
+  /* ── Phone wrap ── */
+  .phone-wrap {
+    position: relative;
+    max-width: 260px;
+    width: 100%;
+  }
+
+  .phone-wrap::before {
+    content: '';
+    position: absolute;
+    inset: -25% -20%;
+    background: radial-gradient(circle, rgba(197, 163, 103, .13) 0%, transparent 65%);
+    filter: blur(24px);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .phone-wrap img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 0 1px rgba(255,255,255,.08), 0 24px 64px rgba(0,0,0,.55);
+  }
+
+  /* ── LANGUAGES ── */
+  .languages { padding: 96px 0; }
+
+  /* ── TRUST STRIP ── */
+  .trust {
+    background: #0f1118;
+    padding: 80px 0;
+  }
+
+  .trust__grid {
+    display: grid;
+    gap: 2px;
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 600px) {
+    .trust__grid { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  .trust__cell {
+    background: #1C1F2A;
+    padding: 48px 32px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .trust__cell:first-child { border-radius: 20px 20px 0 0; }
+  .trust__cell:last-child  { border-radius: 0 0 20px 20px; }
+
+  @media (min-width: 600px) {
+    .trust__cell:first-child { border-radius: 20px 0 0 20px; }
+    .trust__cell:last-child  { border-radius: 0 20px 20px 0; }
+  }
+
+  .trust__val {
+    font-family: Lora, Georgia, serif;
+    font-size: 2rem;
     font-weight: 700;
+    color: #C5A367;
+    line-height: 1;
   }
 
-  .fact__label {
-    color: var(--night-400);
-    font-size: 0.95rem;
+  .trust__desc {
+    font-size: .9375rem;
+    color: #9499B0;
   }
 
+  /* ── FINAL CTA ── */
   .cta {
+    padding: 96px 0;
     position: relative;
     overflow: hidden;
-    background: var(--night-900);
   }
 
   .cta__glow {
     position: absolute;
-    top: 0;
+    top: -60px;
     left: 50%;
-    width: 600px;
-    height: 400px;
     transform: translateX(-50%);
-    background: radial-gradient(ellipse 50% 50% at 50% 0%, rgba(197, 163, 103, 0.12) 0%, transparent 70%);
+    width: 700px;
+    height: 400px;
+    background: radial-gradient(ellipse at 50% 0%, rgba(197, 163, 103, .07) 0%, transparent 60%);
     pointer-events: none;
   }
 
-  .cta__grid {
+  .cta__inner {
     position: relative;
     z-index: 1;
     display: grid;
-    gap: 40px;
+    grid-template-columns: 1fr;
+    gap: 48px;
     align-items: center;
   }
 
-  .cta__mascot {
-    display: flex;
-    justify-content: center;
+  .cta__mascot { display: flex; justify-content: center; }
+
+  .cta__mascot img {
+    width: clamp(180px, 48vw, 280px);
+    animation: float-mascot 7s ease-in-out 1.5s infinite;
+    filter: drop-shadow(0 12px 40px rgba(197, 163, 103, .18));
   }
 
-  .cta__content {
+  .cta__body { text-align: center; }
+
+  .cta__eyebrow {
+    font-size: .6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #C5A367;
+    margin-bottom: 10px;
+  }
+
+  .cta__h2 {
+    font-family: Lora, Georgia, serif;
+    font-size: clamp(1.625rem, 3.5vw, 2.25rem);
+    font-weight: 600;
+    line-height: 1.18;
+    letter-spacing: -.01em;
+    color: #E2E4ED;
+    margin-bottom: 16px;
+  }
+
+  .cta__sub {
+    font-size: 1rem;
+    color: #9499B0;
+    line-height: 1.75;
+    margin-bottom: 28px;
+  }
+
+  .cta__btns :global(.store-btns) { justify-content: center; }
+
+  .cta__note {
+    font-size: .8125rem;
+    color: #555a70;
+    margin-top: 14px;
     text-align: center;
   }
 
   @media (min-width: 768px) {
-    .feature-panel {
+    .how__row {
       grid-template-columns: 1fr 1fr;
-      gap: 4rem;
+      gap: 72px;
     }
 
-    .feature-panel--reverse .feature-panel__text {
-      order: 2;
-    }
-
-    .feature-panel--reverse .feature-panel__visual {
-      order: 1;
-    }
-
-    .facts__grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
+    .how__row--rev .how__text { order: 2; }
+    .how__row--rev .how__visual { order: 1; }
   }
 
-  @media (min-width: 1024px) {
-    .hero__grid {
-      grid-template-columns: 1fr 380px;
-      gap: 4rem;
+  @media (min-width: 860px) {
+    .cta__inner {
+      grid-template-columns: 280px 1fr;
+      gap: 80px;
     }
 
-    .hero__content,
-    .cta__content {
-      text-align: left;
-    }
-
-    .hero__subtitle {
-      margin-left: 0;
-      margin-right: 0;
-    }
-
-    .lang-chips {
-      justify-content: flex-start;
-    }
-
-    .hero__mascot {
-      order: 2;
-    }
-
-    .hero__mascot .mascot-img {
-      width: 380px;
-    }
-
-    .cta__grid {
-      grid-template-columns: 340px 1fr;
-      gap: 4rem;
-    }
-
-    .cta__mascot .mascot-img {
-      width: 320px;
-    }
+    .cta__body { text-align: left; }
+    .cta__btns :global(.store-btns) { justify-content: flex-start; }
+    .cta__note { text-align: left; }
   }
 </style>
