@@ -1,12 +1,14 @@
 ---
 import { homeCopy } from '../data/copy';
-import { languageSlugs, languages, locales, localizePath, site, type LocaleCode } from '../data/site';
+import { languageSlugs, languages, locales, localizePath, site, type LanguageSlug, type LocaleCode } from '../data/site';
 
 interface Props {
   locale?: LocaleCode;
+  activeLanguage?: LanguageSlug;
+  path?: string;
 }
 
-const { locale = 'en' } = Astro.props;
+const { locale = 'en', activeLanguage, path = '/' } = Astro.props;
 const copy = homeCopy[locale];
 ---
 <header class="nav" id="nav">
@@ -15,7 +17,7 @@ const copy = homeCopy[locale];
 
     <nav class="nav__links" aria-label={copy.ui.mainNavigation}>
       {languageSlugs.map((slug) => (
-        <a href={localizePath(locale, `/learn/${slug}`)} class="nav__link">
+        <a href={localizePath(locale, `/learn/${slug}`)} class:list={['nav__link', { 'nav__link--active': slug === activeLanguage }]}>
           {languages[slug].displayName[locale]}
         </a>
       ))}
@@ -25,7 +27,7 @@ const copy = homeCopy[locale];
       <nav class="nav__locales" aria-label={copy.ui.languageVersions}>
         {Object.values(locales).map((item) => (
           <a
-            href={localizePath(item.code, '/')}
+            href={localizePath(item.code, path)}
             class="nav__locale"
             aria-current={item.code === locale ? 'true' : undefined}
           >{item.code.toUpperCase()}</a>
@@ -66,7 +68,7 @@ const copy = homeCopy[locale];
     <div class="drawer__nav-title">{copy.ui.drawerLearnLabel}</div>
     <div class="drawer__nav-links">
       {languageSlugs.map((slug) => (
-        <a href={localizePath(locale, `/learn/${slug}`)} class="drawer__nav-link">
+        <a href={localizePath(locale, `/learn/${slug}`)} class:list={['drawer__nav-link', { 'drawer__nav-link--active': slug === activeLanguage }]}>
           {languages[slug].displayName[locale]}
         </a>
       ))}
@@ -79,7 +81,7 @@ const copy = homeCopy[locale];
       {Object.values(locales).map((item) => (
         <div class="drawer__locale-row">
           <a
-            href={localizePath(item.code, '/')}
+            href={localizePath(item.code, path)}
             class="drawer__locale-btn"
             aria-current={item.code === locale ? 'true' : undefined}
           >
@@ -181,6 +183,11 @@ const copy = homeCopy[locale];
   .nav__link:hover {
     color: #E2E4ED;
     background: rgba(255, 255, 255, .05);
+  }
+
+  .nav__link--active {
+    color: #C5A367;
+    pointer-events: none;
   }
 
   /* right cluster */
@@ -357,6 +364,7 @@ const copy = homeCopy[locale];
   }
 
   .drawer__nav-link:hover { color: #E2E4ED; }
+  .drawer__nav-link--active { color: #C5A367; pointer-events: none; }
 
   .drawer__locales {
     display: flex;

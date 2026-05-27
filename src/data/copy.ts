@@ -269,88 +269,194 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
   const displayLanguage = appLanguage.displayName[locale];
   const vocabPhrase = appLanguage.vocabPhrase[locale];
   const audience = appLanguage.learners[locale];
+  const name = appLanguage.name;
+
+  type Sense = { level: string; pos: string; definition: string; example: string };
+  type HowStep = { h3: string; body: string };
+  type LangSection = {
+    eyebrow: string;
+    h2: string;
+    body: string[];
+    gridLabel: string;
+    gridPairs: [string, string][];
+    gridNote: string;
+  };
 
   const templates = {
     en: {
-      title: `Learn ${appLanguage.name} vocabulary with OpenWords`,
-      description: `Build ${appLanguage.name} vocabulary with a deep dictionary, one-tap flashcards, spaced repetition, and offline study.`,
-      h1: `Learn ${appLanguage.name} vocabulary`,
-      subtitle: `Save any ${appLanguage.name} word as a flashcard in one tap. OpenWords helps ${audience} study vocabulary with dictionary context and spaced repetition.`,
-      whoTitle: `Who this ${appLanguage.name} page is for`,
-      who: `This page is for ${audience}. It focuses on vocabulary: the words you meet while reading, listening, working, studying, or living in another language.`,
-      previewTitle: `${appLanguage.name} dictionary preview`,
-      preview: `OpenWords is not just a translation lookup. A useful word card can include meanings, examples, word family, CEFR level, and frequency so the word becomes easier to remember and use.`,
-      wordPreviewItem: 'Meaning, example sentence, frequency, and saved review card in one place.',
-      howTitle: `How OpenWords helps you remember ${appLanguage.name} words`,
-      how: ['Look up the word in the dictionary.', 'Save the exact meaning in one tap.', 'Review it later with spaced repetition, even offline.'],
-      faqTitle: `${appLanguage.name} vocabulary FAQ`,
-      cta: `Start learning ${appLanguage.name} vocabulary with OpenWords.`,
+      title: `Learn ${name} Vocabulary — Deep Dictionary + Spaced Repetition | OpenWords`,
+      description: `Build ${name} vocabulary with a deep dictionary, one-tap flashcards, and spaced repetition. Save the exact meaning you need and review it before you forget. Free, no account, works offline.`,
+      h1: `Learn ${name} vocabulary\nthat sticks.`,
+      heroH1Em: 'that sticks.',
+      heroNote: 'Free · No account required · Works offline',
+      subtitle: `A deep ${name} dictionary with one-tap flashcards and spaced repetition. Save the words you meet while reading, working, or studying — and review them right before you'd forget.`,
+      howEyebrow: 'How it works',
+      howH2: 'Look up, save, review.\nNo setup.',
+      howSteps: [
+        { h3: 'Look it up.', body: `Search any ${name} word and get every meaning it carries, with CEFR level and example sentence.` },
+        { h3: 'Save the meaning you met.', body: 'One tap, no typing. That exact meaning becomes a flashcard.' },
+        { h3: 'Review before you forget.', body: 'Spaced repetition brings each word back at the right moment. Five card formats so the word sets from every angle.' }
+      ] as HowStep[],
+      vocabFactsEyebrow: `${name} vocabulary research`,
+      vocabFactsH2: `How many ${name} words do you actually need?`,
+      vocabFactsBody: `Vocabulary researchers measure size in word families — a root word and its common forms. The CEFR levels map roughly to these thresholds, based on studies by Nation, Milton, and others.`,
+      vocabFactsCallout: `The jump from B1 to B2 means learning roughly <strong>2,000 more word families</strong>. At 5 new words a day, that's about a year — if you review consistently and don't forget what you've already learned.`,
+      langSection: null as LangSection | null,
+      whoTitle: `For the ${name} you actually need.`,
+      who: `OpenWords starts from the words you run into and turns each one into a flashcard at the moment you look it up.`,
+      whoItems: [
+        `Speaking, reading, or working in ${name}`,
+        `Building vocabulary for an exam`,
+        `Advanced learners who keep forgetting the same words`,
+        `Anyone who found Anki too much work to set up`
+      ] as string[],
+      faqTitle: `${name} vocabulary questions`,
+      ctaEyebrow: 'Free · No account · Offline',
+      cta: `Start learning ${name} vocabulary with OpenWords.`,
+      ctaSub: `Every ${name.toLowerCase()} word you look up is one tap away from becoming a flashcard.`,
+      otherLangsLabel: 'Also available for',
       previewWord: null as string | null,
       previewWordFamily: null as string[] | null,
-      previewSenses: null as Array<{ level: string; pos: string; definition: string; example: string }> | null
+      previewSenses: null as Sense[] | null
     },
     pl: {
-      title: `Nauka ${vocabPhrase} z OpenWords`,
-      description: `Ucz się słownictwa języka ${localLanguage} ze słownikiem, fiszkami jednym dotknięciem, powtórkami interwałowymi i trybem offline.`,
-      h1: `Nauka ${vocabPhrase}`,
-      subtitle: `Zapisuj słowa jako fiszki jednym dotknięciem. OpenWords pomaga uczyć się słownictwa w kontekście i z powtórkami interwałowymi.`,
+      title: `Nauka ${vocabPhrase} z OpenWords — Słownik i powtórki interwałowe`,
+      description: `Ucz się słownictwa ${localLanguage} z głębokim słownikiem, fiszkami jednym dotknięciem i powtórkami interwałowymi. Bezpłatnie, bez konta, działa offline.`,
+      h1: `Nauka ${vocabPhrase}\nktóra zostaje.`,
+      heroH1Em: 'która zostaje.',
+      heroNote: 'Całkowicie bezpłatnie · Bez konta · Działa offline',
+      subtitle: `Zapisuj słowa jako fiszki jednym dotknięciem. OpenWords pomaga uczyć się słownictwa ${localLanguage} w kontekście i z powtórkami interwałowymi.`,
+      howEyebrow: 'Jak to działa',
+      howH2: 'Wyszukaj, zapisz, powtarzaj.\nBez konfiguracji.',
+      howSteps: [
+        { h3: 'Wyszukaj słowo.', body: `Wyszukaj dowolne słowo i poznaj każde jego znaczenie — z poziomem CEFR i przykładem zdania.` },
+        { h3: 'Zapisz napotkane znaczenie.', body: 'Jedno dotknięcie, bez wpisywania. To dokładne znaczenie staje się fiszką.' },
+        { h3: 'Powtarzaj zanim zapomnisz.', body: 'Powtórki interwałowe zwracają każde słowo we właściwym momencie. Pięć formatów kart — słowo utrwala się z wielu stron.' }
+      ] as HowStep[],
+      vocabFactsEyebrow: `Badania nad słownictwem ${localLanguage}`,
+      vocabFactsH2: `Ile słów ${localLanguage} naprawdę potrzebujesz?`,
+      vocabFactsBody: `Badacze słownictwa mierzą rozmiar zasobu słownikowego w rodzinach wyrazów — słowie podstawowym i jego pochodnych. Poziomy CEFR odpowiadają mniej więcej poniższym progom, opartym na badaniach Nation, Miltona i innych.`,
+      vocabFactsCallout: `Skok z B1 na B2 oznacza naukę około <strong>2000 dodatkowych rodzin wyrazów</strong>. Przy 5 nowych słowach dziennie to mniej więcej rok — jeśli będziesz regularnie powtarzać.`,
+      langSection: null as LangSection | null,
       whoTitle: `Dla kogo jest ta strona`,
       who: `Ta strona jest dla ${audience}. Skupia się na słownictwie: słowach spotykanych w czytaniu, słuchaniu, pracy, nauce i codziennym życiu.`,
-      previewTitle: `Podgląd słownika: ${displayLanguage}`,
-      preview: `OpenWords nie jest tylko tłumaczem. Karta słowa może zawierać znaczenia, przykłady, rodzinę wyrazów, poziom CEFR i częstotliwość użycia.`,
-      wordPreviewItem: 'Znaczenie, przykład, częstotliwość i zapisana fiszka w jednym miejscu.',
-      howTitle: `Jak OpenWords pomaga zapamiętywać słowa`,
-      how: ['Wyszukaj słowo w słowniku.', 'Zapisz dokładne znaczenie jednym dotknięciem.', 'Powtarzaj później metodą powtórek interwałowych, także offline.'],
-      faqTitle: `FAQ o nauce słownictwa języka ${localLanguage}`,
-      cta: `Zacznij uczyć się słownictwa języka ${localLanguage} z OpenWords.`
+      whoItems: [
+        `Uczący się ${localLanguage} do pracy, podróży lub nauki`,
+        `Przygotowujący się do egzaminów językowych`,
+        `Zaawansowani uczący się, którzy wciąż zapominają te same słowa`,
+        `Osoby, które uznały Anki za zbyt pracochłonne`
+      ] as string[],
+      faqTitle: `Pytania o naukę słownictwa ${localLanguage}`,
+      ctaEyebrow: 'Za darmo · Bez konta · Offline',
+      cta: `Zacznij uczyć się słownictwa ${localLanguage} z OpenWords.`,
+      ctaSub: `Każde napotkane słowo to jedno dotknięcie od stania się fiszką.`,
+      otherLangsLabel: 'Dostępne też dla',
+      previewWord: null as string | null,
+      previewWordFamily: null as string[] | null,
+      previewSenses: null as Sense[] | null
     },
     nl: {
-      title: `${vocabPhrase} leren met OpenWords`,
-      description: `Bouw ${vocabPhrase} met een diep woordenboek, flashcards met een tik, gespreide herhaling en offline studie.`,
-      h1: `${vocabPhrase} leren`,
-      subtitle: `Bewaar elk woord als flashcard met een tik. OpenWords helpt je oefenen met context en gespreide herhaling.`,
+      title: `${vocabPhrase} leren — Diep woordenboek + Gespreide herhaling | OpenWords`,
+      description: `Bouw ${vocabPhrase} met een diep woordenboek, flashcards met een tik en gespreide herhaling. Gratis, geen account, werkt offline.`,
+      h1: `${vocabPhrase} leren\ndat blijft hangen.`,
+      heroH1Em: 'dat blijft hangen.',
+      heroNote: 'Volledig gratis · Geen account · Werkt offline',
+      subtitle: `Bewaar elk woord als flashcard met een tik. OpenWords helpt je ${displayLanguage} woordenschat oefenen met context en gespreide herhaling.`,
+      howEyebrow: 'Hoe het werkt',
+      howH2: 'Opzoeken, opslaan, herhalen.\nGeen configuratie.',
+      howSteps: [
+        { h3: 'Zoek het op.', body: `Zoek elk woord op en ontdek elke betekenis die het draagt — met CEFR-niveau en voorbeeldzin.` },
+        { h3: 'Bewaar de betekenis die je tegenkwam.', body: 'Eén tik, geen typen. Die exacte betekenis wordt een flashcard.' },
+        { h3: 'Herhaal voordat je vergeet.', body: 'Gespreide herhaling brengt elk woord terug op het juiste moment. Vijf kaartformaten zodat het vanuit meerdere kanten blijft hangen.' }
+      ] as HowStep[],
+      vocabFactsEyebrow: `${displayLanguage} woordenschat onderzoek`,
+      vocabFactsH2: `Hoeveel ${displayLanguage} woorden heb je echt nodig?`,
+      vocabFactsBody: `Taalonderzoekers meten woordenschat in woordfamilies — een basiswoord en zijn veelgebruikte afleidingen. De CEFR-niveaus corresponderen met de onderstaande drempelwaarden.`,
+      vocabFactsCallout: `De sprong van B1 naar B2 betekent het leren van ongeveer <strong>2.000 woordfamilies meer</strong>. Bij 5 nieuwe woorden per dag duurt dat ongeveer een jaar.`,
+      langSection: null as LangSection | null,
       whoTitle: `Voor wie deze pagina is`,
       who: `Deze pagina is voor ${audience}. De focus ligt op woordenschat: woorden die je tegenkomt tijdens lezen, luisteren, werken, studeren of dagelijks leven.`,
-      previewTitle: `${vocabPhrase} in OpenWords`,
-      preview: `OpenWords is meer dan een vertaalvenster. Een woordkaart kan betekenissen, voorbeelden, woordfamilie, CEFR-niveau en frequentie tonen.`,
-      wordPreviewItem: 'Betekenis, voorbeeldzin, frequentie en opgeslagen herhaling op een plek.',
-      howTitle: `Hoe OpenWords helpt woorden onthouden`,
-      how: ['Zoek het woord op in het woordenboek.', 'Bewaar de juiste betekenis met een tik.', 'Herhaal later met gespreide herhaling, ook offline.'],
-      faqTitle: `${vocabPhrase} FAQ`,
-      cta: `Begin met ${vocabPhrase} in OpenWords.`
+      whoItems: [
+        `${displayLanguage} leren voor werk, studie of dagelijks leven`,
+        `Voorbereiding op een taalexamen`,
+        `Gevorderde leerders die steeds dezelfde woorden vergeten`,
+        `Iedereen voor wie Anki te veel werk was`
+      ] as string[],
+      faqTitle: `${vocabPhrase} vragen`,
+      ctaEyebrow: 'Gratis · Geen account · Offline',
+      cta: `Begin met ${vocabPhrase} leren in OpenWords.`,
+      ctaSub: `Elk woord dat je opzoekt is één tik verwijderd van een flashcard.`,
+      otherLangsLabel: 'Ook beschikbaar voor',
+      previewWord: null as string | null,
+      previewWordFamily: null as string[] | null,
+      previewSenses: null as Sense[] | null
     },
     ru: {
-      title: `Учить ${vocabPhrase}: словарь и карточки OpenWords`,
-      description: `Учите ${vocabPhrase} с глубоким словарем, карточками в одно нажатие, интервальными повторениями и офлайн-режимом.`,
-      h1: `Учить ${vocabPhrase}`,
-      subtitle: `Сохраняйте нужные значения как карточки одним нажатием. OpenWords помогает учить лексику с контекстом и интервальными повторениями: ${audience}.`,
+      title: `Учить ${vocabPhrase} — Словарь и интервальные повторения | OpenWords`,
+      description: `Учите ${vocabPhrase} с глубоким словарём, карточками в одно нажатие и интервальными повторениями. Бесплатно, без регистрации, работает офлайн.`,
+      h1: `Учите ${vocabPhrase},\nкоторые запомните.`,
+      heroH1Em: 'которые запомните.',
+      heroNote: 'Полностью бесплатно · Без регистрации · Работает офлайн',
+      subtitle: `Сохраняйте нужные значения как карточки одним нажатием. OpenWords помогает учить ${localLanguage} лексику с контекстом и интервальными повторениями.`,
+      howEyebrow: 'Как это работает',
+      howH2: 'Найдите, сохраните, повторяйте.\nНоль настроек.',
+      howSteps: [
+        { h3: 'Найдите слово.', body: `Ищите любое слово и получайте все значения, которые оно несёт — с уровнем CEFR и примером предложения.` },
+        { h3: 'Сохраните встреченное значение.', body: 'Одно нажатие, без ввода текста. Это точное значение становится карточкой.' },
+        { h3: 'Повторяйте до того, как забудете.', body: 'Интервальные повторения возвращают каждое слово в нужный момент. Пять форматов карточек — слово закрепляется с разных сторон.' }
+      ] as HowStep[],
+      vocabFactsEyebrow: `Исследования ${vocabPhrase}`,
+      vocabFactsH2: `Сколько слов ${localLanguage} нужно на самом деле?`,
+      vocabFactsBody: `Исследователи словарного запаса измеряют его размер в словарных семьях — корневом слове и его распространённых формах. Уровни CEFR примерно соответствуют приведённым порогам.`,
+      vocabFactsCallout: `Переход с B1 на B2 означает изучение примерно <strong>2 000 дополнительных словарных семей</strong>. При 5 новых словах в день это около года.`,
+      langSection: null as LangSection | null,
       whoTitle: `Для кого эта страница`,
-      who: `Эта страница для ${audience}. Фокус - лексика: слова, которые встречаются в чтении, аудировании, работе, учебе и повседневной жизни.`,
-      previewTitle: `Пример словаря: ${vocabPhrase}`,
-      preview: `OpenWords - не просто переводчик. Карточка слова может показывать значения, примеры, семью слов, уровень CEFR и частотность.`,
-      wordPreviewItem: 'Значение, пример, частотность и сохраненная карточка в одном месте.',
-      howTitle: `Как OpenWords помогает запоминать слова`,
-      how: ['Найдите слово в словаре.', 'Сохраните нужное значение одним нажатием.', 'Повторяйте позже через интервальные повторения, даже офлайн.'],
-      faqTitle: `FAQ: ${vocabPhrase}`,
-      cta: `Начните учить ${vocabPhrase} в OpenWords.`
+      who: `Эта страница для ${audience}. Фокус — лексика: слова, которые встречаются в чтении, аудировании, работе, учёбе и повседневной жизни.`,
+      whoItems: [
+        `Изучение ${localLanguage} для работы, учёбы или жизни`,
+        `Подготовка к языковому экзамену`,
+        `Продвинутые учащиеся, которые постоянно забывают одни и те же слова`,
+        `Те, кому Anki показался слишком трудоёмким`
+      ] as string[],
+      faqTitle: `Вопросы о ${vocabPhrase}`,
+      ctaEyebrow: 'Бесплатно · Без регистрации · Офлайн',
+      cta: `Начните учить ${vocabPhrase} в OpenWords.`,
+      ctaSub: `Каждое слово, которое вы ищете, — одно нажатие от того, чтобы стать карточкой.`,
+      otherLangsLabel: 'Также доступно для',
+      previewWord: null as string | null,
+      previewWordFamily: null as string[] | null,
+      previewSenses: null as Sense[] | null
     }
   };
 
   const overrides: Partial<Record<LanguageSlug, Partial<Record<LocaleCode, Partial<typeof templates.en>>>>> = {
     english: {
       en: {
-        h1: 'Learn English vocabulary that sticks.',
+        title: 'Learn English Vocabulary — Deep Dictionary + Spaced Repetition | OpenWords',
+        description: 'Build English vocabulary with a deep dictionary, one-tap flashcards, and spaced repetition. Save the exact meaning you need and review it before you forget. Free, no account, works offline.',
+        h1: 'Learn English vocabulary\nthat sticks.',
+        heroH1Em: 'that sticks.',
         subtitle: 'A deep English dictionary with one-tap flashcards and spaced repetition. Save the words you meet while reading, working, or studying — and review them right before you\'d forget.',
+        howSteps: [
+          { h3: 'Look it up.', body: 'Search any English word. Every meaning it carries — with CEFR level, frequency, and example. Run has dozens of senses. Get has more.' },
+          { h3: 'Save the meaning you met.', body: 'One tap, no typing. That exact meaning becomes a flashcard.' },
+          { h3: 'Review before you forget.', body: 'Spaced repetition brings each word back at the right moment. Five card formats so the word sets from every angle.' }
+        ],
+        vocabFactsEyebrow: 'English vocabulary research',
+        vocabFactsH2: 'How many English words do you actually need?',
+        vocabFactsBody: 'Vocabulary researchers measure size in word families — a root word and its common forms. The CEFR levels map roughly to these thresholds, based on studies by Nation, Milton, and others.',
+        vocabFactsCallout: 'The jump from B1 to B2 means learning roughly <strong>2,000 more word families</strong>. At 5 new words a day, that\'s about a year — if you review consistently and don\'t forget what you\'ve already learned.',
         whoTitle: 'For the English you actually need.',
         who: 'Most English vocabulary apps teach the same thousand words everyone already knows. OpenWords starts from the words you run into — in articles, in meetings, in lectures, in books — and turns each one into a flashcard at the moment you look it up.',
-        howTitle: 'How OpenWords helps you remember English words',
-        how: [
-          'Look it up. Search any English word and get every meaning it carries, with CEFR level and example sentence.',
-          'Save the meaning you met. Run has dozens of senses. Get has more. Pick the one that matches your sentence and tap save. The rest stay in the dictionary for next time.',
-          'Review before you forget. Spaced repetition brings each word back at the moment you\'d otherwise lose it. Different card types — recognition, recall, in context — so the word sets from more than one angle.'
+        whoItems: [
+          'Non-native speakers building everyday, academic, or professional English',
+          'IELTS, TOEFL, or Cambridge exam candidates who need CEFR-levelled word lists',
+          'Advanced readers who keep meeting C1–C2 words they half-know and keep forgetting',
+          'Anyone who\'s tried Anki and found it too much work to set up'
         ],
-        previewTitle: 'One word. Four meanings.',
-        preview: 'Approach carries four distinct meanings — as a verb and a noun, across A2 to C1. Each sense gets its own definition, example, and level, so you save the one you actually met, not a blurry average of all four.',
+        faqTitle: 'English vocabulary questions',
+        cta: 'Start learning English vocabulary with OpenWords.',
+        ctaSub: 'Every English word you look up is one tap away from becoming a flashcard.',
         previewWord: 'approach',
         previewWordFamily: ['approachable', 'unapproachable', 'approachability'],
         previewSenses: [
@@ -361,18 +467,17 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
         ]
       },
       pl: {
-        h1: 'Naucz się słownictwa angielskiego, które zostaje.',
+        h1: 'Naucz się słownictwa angielskiego,\nktóre zostaje.',
+        heroH1Em: 'które zostaje.',
         subtitle: 'Głęboki słownik angielski z fiszkami jednym dotknięciem i powtórkami interwałowymi. Zapisuj słowa, które spotykasz podczas czytania, pracy lub nauki — i powtarzaj je tuż przed tym, zanim je zapomnisz.',
         whoTitle: 'Angielski, którego naprawdę potrzebujesz.',
         who: 'Większość aplikacji do nauki słownictwa angielskiego uczy tych samych tysiąca słów, które wszyscy już znają. OpenWords zaczyna od słów, które napotykasz — w artykułach, na spotkaniach, na wykładach, w książkach — i zamienia każde z nich w fiszkę w momencie, gdy je wyszukujesz.',
-        howTitle: 'Jak OpenWords pomaga zapamiętywać angielskie słowa',
-        how: [
-          'Wyszukaj słowo. Znajdź dowolne angielskie słowo i poznaj każde znaczenie, jakie niesie, z poziomem CEFR i przykładem zdania.',
-          'Zapisz znaczenie, które napotkałeś. Run ma dziesiątki znaczeń. Get ma jeszcze więcej. Wybierz to, które pasuje do twojego zdania, i dotknij zapisz. Reszta zostaje w słowniku na następny raz.',
-          'Powtarzaj zanim zapomnisz. Powtórki interwałowe zwracają każde słowo w momencie, w którym inaczej byś je stracił. Różne typy kart — rozpoznawanie, przypominanie, w kontekście — żeby słowo utrwaliło się z więcej niż jednej strony.'
+        whoItems: [
+          'Nienatywni użytkownicy budujący angielski codzienny, akademicki lub zawodowy',
+          'Kandydaci na egzaminy IELTS, TOEFL lub Cambridge',
+          'Zaawansowani czytelnicy, którzy ciągle spotykają słowa C1–C2 i wciąż je zapominają',
+          'Każdy, kto próbował Anki i uznał konfigurację za zbyt pracochłonną'
         ],
-        previewTitle: 'Jedno słowo. Cztery znaczenia.',
-        preview: 'Approach niesie cztery różne znaczenia — jako czasownik i rzeczownik, od A2 do C1. Każde znaczenie ma własną definicję, przykład i poziom, więc zapisujesz to, które naprawdę napotkałeś, a nie rozmyte połączenie wszystkich czterech.',
         previewWord: 'approach',
         previewWordFamily: ['approachable', 'unapproachable', 'approachability'],
         previewSenses: [
@@ -383,18 +488,17 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
         ]
       },
       nl: {
-        h1: 'Leer Engelse woordenschat die blijft hangen.',
+        h1: 'Leer Engelse woordenschat\ndie blijft hangen.',
+        heroH1Em: 'die blijft hangen.',
         subtitle: 'Een diep Engels woordenboek met flashcards met een tik en gespreide herhaling. Bewaar de woorden die je tegenkomt tijdens lezen, werken of studeren — en herhaal ze net voordat je ze zou vergeten.',
         whoTitle: 'Voor het Engels dat je echt nodig hebt.',
         who: 'De meeste woordenschat-apps voor Engels leren dezelfde duizend woorden die iedereen al kent. OpenWords begint bij de woorden die je tegenkomt — in artikelen, in vergaderingen, in colleges, in boeken — en maakt van elk woord een flashcard op het moment dat je het opzoekt.',
-        howTitle: 'Hoe OpenWords helpt Engelse woorden te onthouden',
-        how: [
-          'Zoek het op. Zoek elk Engels woord op en ontdek elke betekenis die het draagt, met CEFR-niveau en voorbeeldzin.',
-          'Bewaar de betekenis die je tegenkwam. Run heeft tientallen betekenissen. Get heeft er meer. Kies de betekenis die past bij jouw zin en tik op opslaan. De rest blijft in het woordenboek voor de volgende keer.',
-          'Herhaal voordat je vergeet. Gespreide herhaling brengt elk woord terug op het moment dat je het anders zou verliezen. Verschillende kaarttypen — herkenning, herinnering, in context — zodat het woord vanuit meer dan één kant blijft hangen.'
+        whoItems: [
+          'Niet-moedertaalsprekers die alledaags, academisch of professioneel Engels opbouwen',
+          'IELTS-, TOEFL- of Cambridge-examenkandidaten',
+          'Gevorderde lezers die C1–C2-woorden blijven tegenkomen en vergeten',
+          'Iedereen die Anki heeft geprobeerd maar het te veel werk vond'
         ],
-        previewTitle: 'Één woord. Vier betekenissen.',
-        preview: 'Approach heeft vier verschillende betekenissen — als werkwoord en zelfstandig naamwoord, van A2 tot C1. Elke betekenis heeft zijn eigen definitie, voorbeeld en niveau, zodat je de betekenis bewaart die je echt tegenkwam, niet een vage mix van alle vier.',
         previewWord: 'approach',
         previewWordFamily: ['approachable', 'unapproachable', 'approachability'],
         previewSenses: [
@@ -405,18 +509,17 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
         ]
       },
       ru: {
-        h1: 'Учите английские слова, которые остаются.',
+        h1: 'Учите английские слова,\nкоторые остаются.',
+        heroH1Em: 'которые остаются.',
         subtitle: 'Глубокий английский словарь с карточками в одно нажатие и интервальными повторениями. Сохраняйте слова, которые встречаете при чтении, работе или учёбе — и повторяйте их прямо перед тем, как забудете.',
         whoTitle: 'Для английского, который вам действительно нужен.',
         who: 'Большинство приложений для изучения английской лексики учат одним и тем же тысячам слов, которые все уже знают. OpenWords начинается со слов, которые вы встречаете — в статьях, на встречах, на лекциях, в книгах — и превращает каждое в карточку в момент поиска.',
-        howTitle: 'Как OpenWords помогает запоминать английские слова',
-        how: [
-          'Найдите слово. Ищите любое английское слово и получайте все значения, которые оно несёт, с уровнем CEFR и примером предложения.',
-          'Сохраните значение, которое встретили. У run десятки значений. У get ещё больше. Выберите то, которое подходит вашему предложению, и нажмите сохранить. Остальное останется в словаре на следующий раз.',
-          'Повторяйте до того, как забудете. Интервальные повторения возвращают каждое слово в момент, когда вы иначе его потеряли бы. Разные типы карточек — узнавание, воспроизведение, в контексте — чтобы слово закрепилось с нескольких сторон.'
+        whoItems: [
+          'Не-носители языка, строящие повседневный, академический или профессиональный английский',
+          'Кандидаты на экзамены IELTS, TOEFL или Cambridge',
+          'Продвинутые читатели, которые постоянно встречают слова C1–C2 и забывают их',
+          'Те, кто пробовал Anki, но нашёл его слишком сложным в настройке'
         ],
-        previewTitle: 'Одно слово. Четыре значения.',
-        preview: 'Approach несёт четыре разных значения — как глагол и существительное, от A2 до C1. Каждое значение имеет собственное определение, пример и уровень — чтобы вы сохранили именно то, которое встретили, а не размытое сочетание всех четырёх.',
         previewWord: 'approach',
         previewWordFamily: ['approachable', 'unapproachable', 'approachability'],
         previewSenses: [
@@ -424,6 +527,162 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
           { level: 'B1', pos: 'verb', definition: 'To speak to someone for the first time about a proposal, request, or offer.', example: 'She decided to approach her boss about a pay rise.' },
           { level: 'B2', pos: 'noun', definition: 'A way of dealing with something or doing something.', example: 'We need to try a different approach to solve this puzzle.' },
           { level: 'C1', pos: 'verb', definition: 'To be almost the same as something; to come close to a particular quality or state.', example: 'His performance approached perfection during the final act.' }
+        ]
+      }
+    },
+    dutch: {
+      en: {
+        title: 'Learn Dutch Vocabulary — Deep Dictionary + Spaced Repetition | OpenWords',
+        description: 'Build Dutch vocabulary with a deep dictionary, one-tap flashcards, and spaced repetition. Save the exact meaning you need and review it before you forget. Free, no account, works offline.',
+        h1: 'Learn Dutch vocabulary\nthat sticks.',
+        heroH1Em: 'that sticks.',
+        subtitle: 'A deep Dutch dictionary with one-tap flashcards and spaced repetition. Save the words you meet while reading, studying, or working in Dutch — and review them right before you\'d forget.',
+        howSteps: [
+          { h3: 'Look it up.', body: 'Search any Dutch word — including separable verbs, compound nouns, and conjugated forms. Every meaning it carries, with CEFR level and example sentence.' },
+          { h3: 'Save the meaning you met.', body: 'One tap, no typing. That exact meaning becomes a flashcard.' },
+          { h3: 'Review before you forget.', body: 'Spaced repetition brings each word back at the right moment. Five card formats so the word sets from every angle.' }
+        ],
+        vocabFactsEyebrow: 'Dutch vocabulary research',
+        vocabFactsH2: 'How many Dutch words do you actually need?',
+        vocabFactsBody: 'Vocabulary researchers measure Dutch word size in word families — a root word and its common derived forms. The CEFR thresholds below reflect research by Schrooten, Vermeer, and Nation adapted to Dutch.',
+        vocabFactsCallout: 'The jump from B1 to B2 in Dutch means roughly <strong>2,000 more word families</strong>. At 5 new words a day, that\'s about a year — if you review consistently and don\'t forget what you\'ve already learned.',
+        langSection: {
+          eyebrow: 'Dutch for English speakers',
+          h2: 'The good news: Dutch and English are cousins.',
+          body: [
+            'Both Dutch and English come from the same West Germanic branch. Over the centuries, English borrowed hundreds of Dutch words — boss, cookie, landscape, yacht, and many more — and the core vocabulary still shows the family resemblance.',
+            'The real challenge isn\'t getting started; it\'s retention. Familiar-looking words carry unexpected meanings, and learners often re-look the same words repeatedly without them sticking. That\'s where building a personal wordbook pays off.'
+          ],
+          gridLabel: 'Shared roots — you already know these',
+          gridPairs: [
+            ['water', 'water'], ['hand', 'hand'], ['arm', 'arm'], ['open', 'open'],
+            ['naam', 'name'], ['winter', 'winter'], ['boek', 'book'], ['oud', 'old'],
+            ['groen', 'green'], ['huis', 'house'], ['goed', 'good'], ['melk', 'milk']
+          ] as [string, string][],
+          gridNote: "Dutch has thousands more that don't share English roots — and even familiar words often mean something unexpected. That's where building a personal wordbook pays off."
+        },
+        whoTitle: 'For the Dutch you actually need.',
+        who: 'Whether you\'re in the NT2 system, working in a Dutch company, watching Dutch TV without subtitles, or just tired of re-looking up the same words — OpenWords turns every word you look up into a flashcard at the moment you look it up.',
+        whoItems: [
+          'NT2 learners and inburgering exam candidates',
+          'Expats working or living in the Netherlands or Belgium',
+          'Daily life learners building vocabulary from TV, podcasts, and conversation',
+          'Heritage speakers reconnecting with the language'
+        ],
+        faqTitle: 'Dutch vocabulary questions',
+        cta: 'Start learning Dutch vocabulary with OpenWords.',
+        ctaSub: 'Every Dutch word you look up is one tap away from becoming a flashcard.',
+        previewWord: 'afspraak',
+        previewWordFamily: ['afspreken', 'afgesproken', 'afspraakje'],
+        previewSenses: [
+          { level: 'A2', pos: 'noun', definition: 'A planned meeting with someone at a set time and place.', example: 'Ik heb een afspraak bij de dokter om drie uur.' },
+          { level: 'A2', pos: 'noun', definition: 'A date or social get-together with someone.', example: 'Hebben jullie een afspraak vanavond?' },
+          { level: 'B1', pos: 'noun', definition: 'An arrangement or deal reached by agreement.', example: 'We hebben een afspraak gemaakt over de huurprijs.' },
+          { level: 'B2', pos: 'noun', definition: 'A convention or agreed rule between people.', example: 'Dat is niet de afspraak die we hadden gemaakt.' }
+        ]
+      }
+    },
+    polish: {
+      en: {
+        title: 'Learn Polish Vocabulary — Deep Dictionary + Spaced Repetition | OpenWords',
+        description: 'Build Polish vocabulary with a deep dictionary, one-tap flashcards, and spaced repetition. Save the exact meaning you need and review it before you forget. Free, no account, works offline.',
+        h1: 'Learn Polish vocabulary\nthat sticks.',
+        heroH1Em: 'that sticks.',
+        subtitle: 'A deep Polish dictionary with one-tap flashcards and spaced repetition. Save the words you meet while reading, studying, or working in Polish — and review them right before you\'d forget.',
+        howSteps: [
+          { h3: 'Look it up.', body: 'Search any Polish word — including inflected forms, aspects, and derivatives. Every meaning it carries, with CEFR level and example sentence.' },
+          { h3: 'Save the meaning you met.', body: 'One tap, no typing. That exact meaning becomes a flashcard.' },
+          { h3: 'Review before you forget.', body: 'Spaced repetition brings each word back at the right moment. Five card formats so the word sets from every angle.' }
+        ],
+        vocabFactsEyebrow: 'Polish vocabulary research',
+        vocabFactsH2: 'How many Polish words do you actually need?',
+        vocabFactsBody: 'Vocabulary researchers measure Polish word size in word families — a root word and its inflected and derived forms. Polish is a highly inflected language, so a single family can include many surface forms.',
+        vocabFactsCallout: 'The jump from B1 to B2 in Polish means roughly <strong>2,000 more word families</strong>. With consistent daily review, that\'s about a year — if you don\'t forget what you\'ve already learned.',
+        langSection: {
+          eyebrow: 'Polish for English speakers',
+          h2: 'The challenge: Polish and English don\'t share roots.',
+          body: [
+            'Polish is a Slavic language — a completely different branch from English. There are no shared Germanic roots to lean on. However, thousands of Latin, French, and English loanwords have entered Polish, and many of those are immediately readable.',
+            'The core Slavic vocabulary has no English parallel. You\'ll meet it constantly — and look it up repeatedly — until you build a system for retaining it.'
+          ],
+          gridLabel: 'International words — readable from day one',
+          gridPairs: [
+            ['komputer', 'computer'], ['telefon', 'telephone'], ['problem', 'problem'], ['student', 'student'],
+            ['hotel', 'hotel'], ['muzyka', 'music'], ['film', 'film'], ['sport', 'sport'],
+            ['park', 'park'], ['centrum', 'centre'], ['kultura', 'culture'], ['forma', 'form']
+          ] as [string, string][],
+          gridNote: "The core Slavic vocabulary has no English parallel. You'll meet it constantly — and look it up repeatedly — until you build a system for retaining it."
+        },
+        whoTitle: 'For the Polish you actually need.',
+        who: 'Whether you\'re a heritage speaker reconnecting with the language, preparing for a Polish certificate, or working in a Polish environment — OpenWords turns every word you look up into a flashcard at the moment you look it up.',
+        whoItems: [
+          'Heritage speakers reconnecting with the language',
+          'Polish language certificate (B1/B2) candidates',
+          'Work, family, or immersion learners',
+          'Advanced readers building precise, active vocabulary'
+        ],
+        faqTitle: 'Polish vocabulary questions',
+        cta: 'Start learning Polish vocabulary with OpenWords.',
+        ctaSub: 'Every Polish word you look up is one tap away from becoming a flashcard.',
+        previewWord: 'zamek',
+        previewWordFamily: ['zamknąć', 'zamknięty', 'zameczek'],
+        previewSenses: [
+          { level: 'A2', pos: 'noun', definition: 'A large medieval building or group of buildings fortified against attack.', example: 'Wawel to słynny zamek w Krakowie.' },
+          { level: 'A2', pos: 'noun', definition: 'A device for fastening a door or container, typically operated by a key.', example: 'Klucz nie pasuje do tego zamka.' },
+          { level: 'A2', pos: 'noun', definition: 'A fastener with two rows of teeth closed or opened by sliding a tab; a zip.', example: 'Zsuń zamek w kurtce, bo jest zimno.' },
+          { level: 'B1', pos: 'noun', definition: 'The locking mechanism of a firearm.', example: 'Zamek strzelby był zardzewiały.' }
+        ]
+      }
+    },
+    russian: {
+      en: {
+        title: 'Learn Russian Vocabulary — Deep Dictionary + Spaced Repetition | OpenWords',
+        description: 'Build Russian vocabulary with a deep dictionary, one-tap flashcards, and spaced repetition. Save the exact meaning you need and review it before you forget. Free, no account, works offline.',
+        h1: 'Learn Russian vocabulary\nthat sticks.',
+        heroH1Em: 'that sticks.',
+        subtitle: 'A deep Russian dictionary with one-tap flashcards and spaced repetition. Save the words you meet while reading, studying, or working in Russian — and review them right before you\'d forget.',
+        howSteps: [
+          { h3: 'Look it up.', body: 'Search any Russian word — including conjugated and inflected forms. Every meaning it carries, with CEFR level and example sentence.' },
+          { h3: 'Save the meaning you met.', body: 'One tap, no typing. That exact meaning becomes a flashcard.' },
+          { h3: 'Review before you forget.', body: 'Spaced repetition brings each word back at the right moment. Five card formats so the word sets from every angle.' }
+        ],
+        vocabFactsEyebrow: 'Russian vocabulary research',
+        vocabFactsH2: 'How many Russian words do you actually need?',
+        vocabFactsBody: 'Vocabulary researchers measure Russian word size in word families — a root word and its derived and inflected forms. Russian is a highly inflected language, meaning a single word family can include many surface forms with different endings.',
+        vocabFactsCallout: 'The jump from B1 to B2 in Russian means roughly <strong>2,000 more word families</strong>. With consistent daily review, that\'s about a year — if you don\'t forget what you\'ve already learned.',
+        langSection: {
+          eyebrow: 'Russian for English speakers',
+          h2: 'The challenge: Russian and English don\'t share roots.',
+          body: [
+            'Russian is an East Slavic language — a different branch from English. However, thousands of international loanwords (компьютер, телефон, проблема…) are recognisable once you know the Cyrillic alphabet. Learning Cyrillic takes roughly a week.',
+            'Once you know Cyrillic, international words become immediately readable. The core Slavic vocabulary has no English parallel and needs to be built from scratch through consistent review.'
+          ],
+          gridLabel: 'International words — readable once you know Cyrillic',
+          gridPairs: [
+            ['компьютер', 'computer'], ['телефон', 'telephone'], ['проблема', 'problem'], ['студент', 'student'],
+            ['отель', 'hotel'], ['музыка', 'music'], ['фильм', 'film'], ['спорт', 'sport'],
+            ['парк', 'park'], ['центр', 'centre'], ['культура', 'culture'], ['форма', 'form']
+          ] as [string, string][],
+          gridNote: "The core Slavic vocabulary has no English parallel. You'll meet it constantly — and look it up repeatedly — until you build a system for retaining it."
+        },
+        whoTitle: 'For the Russian you actually need.',
+        who: 'Whether you\'re a heritage speaker, preparing for the TORFL exam, working in a Russian-speaking environment, or following Russian media — OpenWords turns every word you look up into a flashcard at the moment you look it up.',
+        whoItems: [
+          'Heritage speakers reconnecting with the language',
+          'TORFL (ТРКИ) exam candidates',
+          'Work, family, or media learners',
+          'Advanced readers building precise, active vocabulary'
+        ],
+        faqTitle: 'Russian vocabulary questions',
+        cta: 'Start learning Russian vocabulary with OpenWords.',
+        ctaSub: 'Every Russian word you look up is one tap away from becoming a flashcard.',
+        previewWord: 'мир',
+        previewWordFamily: ['мирный', 'мировой', 'примирение'],
+        previewSenses: [
+          { level: 'A2', pos: 'noun', definition: 'A state of peace and the absence of war or conflict.', example: 'Все хотят жить в мире.' },
+          { level: 'A2', pos: 'noun', definition: 'The earth together with all its countries, peoples, and natural features.', example: 'Она объехала весь мир за два года.' },
+          { level: 'B1', pos: 'noun', definition: 'A particular sphere of activity, interest, or experience.', example: 'Мир науки требует точности и терпения.' },
+          { level: 'B2', pos: 'noun', definition: 'A historical peasant commune in pre-revolutionary Russia.', example: 'Крестьяне решали споры на общем собрании мира.' }
         ]
       }
     }
@@ -537,34 +796,147 @@ export const privacyCopy = {
 } as const;
 
 export function learnFaq(locale: LocaleCode, language: LanguageSlug) {
+  const name = languages[language].name;
   const vocabPhrase = languages[language].vocabPhrase[locale];
-  const base = {
-    en: language === 'english' ? [
-      ['What\'s the best way to learn English vocabulary?', 'Read and listen to things you find interesting, save the words you don\'t know in their exact meaning, and review them before you forget. That\'s the loop OpenWords runs for you.'],
-      ['Does it work for IELTS, TOEFL, or academic English?', 'Yes. Entries carry CEFR levels up to C2 and frequency data, so you can focus on the words that matter for academic reading, exam prep, or professional writing.'],
-      ['Can I study English offline?', 'Review works offline — once a word is saved, you can study it anywhere. Looking up new words needs internet.'],
-      ['What does CEFR mean?', 'The European scale for language levels, from A1 (beginner) to C2 (near-native). Every entry in OpenWords carries one, so you know what\'s worth learning at your level.']
-    ] : [
-      [`What is the best way to learn ${languages[language].name} vocabulary?`, 'The strongest approach is to learn words in context, save only the meanings you need, and review them before you forget them. OpenWords is built around that loop.'],
-      [`Can I study ${languages[language].name} vocabulary offline?`, 'Yes. OpenWords is designed so core vocabulary review can happen offline.'],
-      ['What does CEFR mean?', 'CEFR is the Common European Framework of Reference. It describes language levels from A1 beginner to C2 advanced.']
-    ],
-    pl: [
-      [`Jak najlepiej uczyć się ${vocabPhrase}?`, 'Najlepiej uczyć się słów w kontekście, zapisywać potrzebne znaczenia i powtarzać je zanim zostaną zapomniane.'],
-      [`Czy mogę uczyć się ${vocabPhrase} offline?`, 'Tak. OpenWords jest zaprojektowane tak, aby podstawowe powtórki działały offline.'],
-      ['Co oznacza CEFR?', 'CEFR to europejski system poziomów językowych od A1 dla początkujących do C2 dla zaawansowanych.']
-    ],
-    nl: [
-      [`Wat is de beste manier om ${vocabPhrase} te leren?`, 'Leer woorden in context, bewaar de betekenis die je nodig hebt en herhaal voordat je het vergeet.'],
-      [`Kan ik ${vocabPhrase} offline oefenen?`, 'Ja. OpenWords is ontworpen zodat de basisherhaling offline kan werken.'],
-      ['Wat betekent CEFR?', 'CEFR is het Europese raamwerk voor taalniveaus, van A1 beginner tot C2 gevorderd.']
-    ],
-    ru: [
-      [`Как лучше учить ${vocabPhrase}?`, 'Лучше учить слова в контексте, сохранять нужные значения и повторять их до того, как они забудутся.'],
-      [`Можно ли учить ${vocabPhrase} офлайн?`, 'Да. OpenWords спроектирован так, чтобы основные повторения могли работать офлайн.'],
-      ['Что значит CEFR?', 'CEFR - европейская шкала языковых уровней от A1 для начинающих до C2 для продвинутых.']
-    ]
+
+  const faqsByLanguage: Record<LanguageSlug, Record<LocaleCode, [string, string][]>> = {
+    english: {
+      en: [
+        ['What\'s the best way to learn English vocabulary?', 'Read and listen to things you find interesting, save the words you don\'t know in their exact meaning, and review them before you forget. That\'s the loop OpenWords runs for you.'],
+        ['Does it work for IELTS, TOEFL, or academic English?', 'Yes. Entries carry CEFR levels up to C2 and frequency data, so you can focus on the words that matter for academic reading, exam prep, or professional writing.'],
+        ['Can I study English vocabulary offline?', 'Review works offline — once a word is saved, you can study it anywhere. Looking up new words needs internet.'],
+        ['What does CEFR mean?', 'The European scale for language levels, from A1 (beginner) to C2 (near-native). Every entry in OpenWords carries one, so you know what\'s worth learning at your level.'],
+        ['Is OpenWords free?', 'Yes. No subscriptions, no paywalls. Free to download, free to use, no account required.'],
+        ['How is OpenWords different from Anki?', 'Anki is powerful but you build everything yourself — decks, cards, schedules. OpenWords does that work for you. Look up a word, tap save, and it joins your review queue automatically.']
+      ],
+      pl: [
+        ['Jak najlepiej uczyć się słownictwa angielskiego?', 'Czytaj i słuchaj tego, co cię interesuje, zapisuj nieznane słowa w ich dokładnym znaczeniu i powtarzaj je zanim zapomnisz. To właśnie robi za ciebie OpenWords.'],
+        ['Czy działa do IELTS, TOEFL lub angielskiego akademickiego?', 'Tak. Każde hasło ma poziom CEFR do C2 i dane o częstotliwości, więc możesz skupić się na słowach istotnych do egzaminu lub pracy zawodowej.'],
+        ['Czy mogę uczyć się offline?', 'Powtórki działają offline — po zapisaniu słowa możesz uczyć się go wszędzie. Wyszukiwanie nowych słów wymaga internetu.'],
+        ['Co oznacza CEFR?', 'Europejska skala poziomów językowych od A1 (początkujący) do C2 (biegły). Każde hasło w OpenWords ma przypisany poziom.'],
+        ['Czy OpenWords jest bezpłatny?', 'Tak. Bez subskrypcji, bez płatnych murów. Bezpłatny do pobrania i użytkowania, bez konta.'],
+        ['Czym OpenWords różni się od Anki?', 'Anki jest potężne, ale wszystko budujesz sam — talie, fiszki, harmonogramy. OpenWords robi to za ciebie. Wyszukaj słowo, dotknij zapisz, trafi automatycznie do kolejki powtórek.']
+      ],
+      nl: [
+        ['Wat is de beste manier om Engelse woordenschat te leren?', 'Lees en luister naar dingen die je interesseren, sla onbekende woorden op in hun exacte betekenis en herhaal ze voordat je ze vergeet. Dat is de lus die OpenWords voor je draait.'],
+        ['Werkt het voor IELTS, TOEFL of academisch Engels?', 'Ja. Inzendingen bevatten CEFR-niveaus tot C2 en frequentiegegevens, zodat je je kunt richten op woorden die belangrijk zijn voor academisch lezen of examenvoorbereiding.'],
+        ['Kan ik offline studeren?', 'Herhalen werkt offline — zodra een woord is opgeslagen, kun je het overal studeren. Nieuwe woorden opzoeken heeft internet nodig.'],
+        ['Wat betekent CEFR?', 'De Europese schaal voor taalniveaus, van A1 (beginner) tot C2 (near-native). Elke inzending in OpenWords heeft er een.'],
+        ['Is OpenWords gratis?', 'Ja. Geen abonnementen, geen betaalmuren. Gratis te downloaden en te gebruiken, geen account vereist.'],
+        ['Hoe verschilt OpenWords van Anki?', 'Anki is krachtig, maar je bouwt alles zelf — kaartspellen, kaarten, schema\'s. OpenWords doet dat werk voor je. Zoek een woord op, tik op opslaan, en het gaat automatisch je herhaalwachtrij in.']
+      ],
+      ru: [
+        ['Как лучше всего учить английскую лексику?', 'Читайте и слушайте то, что вас интересует, сохраняйте незнакомые слова в их точном значении и повторяйте до того, как забудете. Именно этот цикл OpenWords запускает за вас.'],
+        ['Подходит ли для IELTS, TOEFL или академического английского?', 'Да. Каждая запись содержит уровень CEFR до C2 и данные о частотности, чтобы вы могли сосредоточиться на словах, важных для академического чтения или экзаменов.'],
+        ['Можно ли учиться офлайн?', 'Повторения работают офлайн — сохранённые слова можно изучать где угодно. Поиск новых слов требует интернета.'],
+        ['Что значит CEFR?', 'Европейская шкала языковых уровней от A1 (начинающий) до C2 (почти носитель). Каждая запись в OpenWords содержит уровень.'],
+        ['OpenWords бесплатный?', 'Да. Без подписок, без платных барьеров. Бесплатно для загрузки и использования, без аккаунта.'],
+        ['Чем OpenWords отличается от Anki?', 'Anki мощный, но всё приходится строить самому — колоды, карточки, расписания. OpenWords делает это за вас. Найдите слово, нажмите сохранить — и оно автоматически попадёт в очередь повторений.']
+      ]
+    },
+    dutch: {
+      en: [
+        ['What\'s the best way to learn Dutch vocabulary?', 'Read and listen to Dutch that interests you — news, podcasts, subtitled TV. Save the words you don\'t know in their exact meaning and review them before you forget. OpenWords builds that loop around the dictionary lookup.'],
+        ['Does it help with NT2 and the inburgering exam?', 'Yes. NT2 vocabulary is mapped to CEFR levels. OpenWords shows you the level of every entry, so you can focus on A2–B1 words for inburgering, or push to B2 for NT2-2.'],
+        ['Can I study Dutch vocabulary offline?', 'Review works offline — once a word is saved, you can study it anywhere. Looking up new words needs internet.'],
+        ['What\'s the difference between NT2-1 and NT2-2?', 'NT2-1 targets roughly B1 level (around 2,000 word families), NT2-2 targets B2 (around 4,000 word families). The CEFR bar chart on this page shows the approximate word counts for each level.'],
+        ['Is OpenWords free?', 'Yes. No subscriptions, no paywalls. Free to download, free to use, no account required.'],
+        ['How is OpenWords different from other Dutch vocabulary apps?', 'Most Dutch apps focus on preset word lists. OpenWords starts from the dictionary: you save the Dutch words you actually meet, in the exact meaning they appeared in, and review them with spaced repetition.']
+      ],
+      pl: [
+        ['Jak najlepiej uczyć się słownictwa niderlandzkiego?', 'Czytaj i słuchaj niderlandzkiego, który cię interesuje. Zapisuj nieznane słowa i powtarzaj je zanim zapomnisz. OpenWords buduje tę pętlę wokół wyszukiwania w słowniku.'],
+        ['Czy pomaga w egzaminie NT2 i inburgering?', 'Tak. Słownictwo NT2 jest mapowane na poziomy CEFR. OpenWords pokazuje poziom każdego hasła, abyś mógł skupić się na słowach A2–B1 do inburgering lub na B2 do NT2-2.'],
+        ['Czy mogę uczyć się offline?', 'Powtórki działają offline — po zapisaniu słowa możesz uczyć się go wszędzie. Wyszukiwanie nowych słów wymaga internetu.'],
+        ['Co oznacza CEFR?', 'Europejska skala poziomów językowych od A1 (początkujący) do C2 (biegły). Każde hasło w OpenWords ma przypisany poziom.'],
+        ['Czy OpenWords jest bezpłatny?', 'Tak. Bez subskrypcji, bez płatnych murów. Bezpłatny do pobrania i użytkowania, bez konta.'],
+        ['Czym OpenWords różni się od innych aplikacji do niderlandzkiego?', 'Większość aplikacji skupia się na gotowych listach słów. OpenWords zaczyna od słownika: zapisujesz słowa, które naprawdę napotykasz, w dokładnym znaczeniu, w jakim się pojawiły.']
+      ],
+      nl: [
+        ['Wat is de beste manier om Nederlandse woordenschat te leren?', 'Lees en luister naar Nederlands dat je interesseert — nieuws, podcasts, tv. Sla onbekende woorden op in hun exacte betekenis en herhaal ze voordat je ze vergeet. OpenWords bouwt die lus rondom het woordenboek.'],
+        ['Helpt het bij NT2 en het inburgeringsexamen?', 'Ja. NT2-woordenschat is gekoppeld aan CEFR-niveaus. OpenWords toont het niveau van elk woord, zodat je je kunt richten op A2–B1 voor inburgering, of naar B2 voor NT2-2.'],
+        ['Kan ik offline studeren?', 'Herhalen werkt offline — zodra een woord is opgeslagen, kun je het overal studeren. Nieuwe woorden opzoeken heeft internet nodig.'],
+        ['Wat is het verschil tussen NT2-1 en NT2-2?', 'NT2-1 richt zich op ongeveer B1 (ca. 2.000 woordfamilies), NT2-2 op B2 (ca. 4.000 woordfamilies). De CEFR-staafgrafiek op deze pagina toont de aantallen per niveau.'],
+        ['Is OpenWords gratis?', 'Ja. Geen abonnementen, geen betaalmuren. Gratis te downloaden en te gebruiken, geen account vereist.'],
+        ['Hoe verschilt OpenWords van andere Nederlandse woordenschat-apps?', 'De meeste apps focussen op vaste woordenlijsten. OpenWords begint bij het woordenboek: je slaat de woorden op die je echt tegenkomt, in de exacte betekenis, en herhaalt ze met gespreide herhaling.']
+      ],
+      ru: [
+        ['Как лучше всего учить нидерландскую лексику?', 'Читайте и слушайте нидерландский, который вам интересен. Сохраняйте незнакомые слова и повторяйте до того, как забудете. OpenWords строит этот цикл вокруг поиска в словаре.'],
+        ['Помогает ли при подготовке к NT2 и inburgering?', 'Да. Лексика NT2 привязана к уровням CEFR. OpenWords показывает уровень каждого слова, чтобы вы могли сосредоточиться на A2–B1 для inburgering или на B2 для NT2-2.'],
+        ['Можно ли учиться офлайн?', 'Повторения работают офлайн — сохранённые слова можно изучать где угодно. Поиск новых слов требует интернета.'],
+        ['Что значит CEFR?', 'Европейская шкала языковых уровней от A1 до C2. Каждая запись в OpenWords содержит уровень.'],
+        ['OpenWords бесплатный?', 'Да. Без подписок, без платных барьеров. Бесплатно для загрузки и использования, без аккаунта.'],
+        ['Чем OpenWords отличается от других приложений для нидерландского?', 'Большинство приложений фокусируются на готовых списках слов. OpenWords начинается со словаря: вы сохраняете слова, которые реально встречаете, в точном значении, в котором они появились.']
+      ]
+    },
+    polish: {
+      en: [
+        ['What\'s the best way to learn Polish vocabulary?', 'Immerse yourself in real Polish — books, podcasts, films — and save every unknown word at the moment you look it up. With spaced repetition, each word comes back at the right moment before you\'d forget it.'],
+        ['Does it help with Polish language certificates?', 'Yes. Entries include CEFR levels, so you can target B1 or B2 vocabulary specifically. The certificate exams test active vocabulary use — OpenWords helps you build and retain that.'],
+        ['Can I study Polish vocabulary offline?', 'Review works offline — once a word is saved, you can study it anywhere. Looking up new words needs internet.'],
+        ['Is Polish hard for English speakers?', 'The grammar is complex, but vocabulary-building is the most time-intensive part. Polish has thousands of international loanwords you\'ll recognise immediately, and OpenWords helps you systematically build the core Slavic vocabulary that has no English parallel.'],
+        ['Is OpenWords free?', 'Yes. No subscriptions, no paywalls. Free to download, free to use, no account required.'],
+        ['How is OpenWords different from other Polish vocabulary apps?', 'Most Polish apps use preset word lists. OpenWords starts from the dictionary: you save the Polish words you actually meet, in the exact meaning they appeared in, and review them with spaced repetition.']
+      ],
+      pl: [
+        ['Jak najlepiej uczyć się słownictwa polskiego?', 'Zanurz się w prawdziwym polskim — książki, podcasty, filmy — i zapisuj każde nieznane słowo w momencie, gdy je wyszukujesz. Powtórki interwałowe zwracają każde słowo we właściwym momencie.'],
+        ['Czy pomaga w certyfikatach językowych?', 'Tak. Hasła mają poziomy CEFR, więc możesz celować w słownictwo B1 lub B2. Egzaminy certyfikatowe testują aktywne użycie słów — OpenWords pomaga je zbudować i utrwalić.'],
+        ['Czy mogę uczyć się offline?', 'Powtórki działają offline — po zapisaniu słowa możesz uczyć się go wszędzie. Wyszukiwanie nowych słów wymaga internetu.'],
+        ['Czy polski jest trudny dla angielskojęzycznych?', 'Gramatyka jest złożona, ale budowanie słownictwa jest najbardziej czasochłonne. Tysiące zapożyczeń jest od razu rozpoznawalnych, a OpenWords pomaga systematycznie budować podstawowe słownictwo słowiańskie.'],
+        ['Czy OpenWords jest bezpłatny?', 'Tak. Bez subskrypcji, bez płatnych murów. Bezpłatny do pobrania i użytkowania, bez konta.'],
+        ['Czym OpenWords różni się od innych aplikacji do polskiego?', 'Większość aplikacji skupia się na gotowych listach słów. OpenWords zaczyna od słownika: zapisujesz słowa, które naprawdę napotykasz, w dokładnym znaczeniu, w jakim się pojawiły.']
+      ],
+      nl: [
+        ['Wat is de beste manier om Poolse woordenschat te leren?', 'Dompel jezelf onder in echt Pools — boeken, podcasts, films — en sla elk onbekend woord op het moment dat je het opzoekt op.'],
+        ['Helpt het bij Poolse taalcertificaten?', 'Ja. Inzendingen bevatten CEFR-niveaus, zodat je specifiek B1- of B2-woordenschat kunt targeten.'],
+        ['Kan ik offline studeren?', 'Herhalen werkt offline — zodra een woord is opgeslagen, kun je het overal studeren. Nieuwe woorden opzoeken heeft internet nodig.'],
+        ['Is Pools moeilijk voor Engelssprekenden?', 'De grammatica is complex, maar woordenschatopbouw is het meest tijdrovende deel. OpenWords helpt je de kern van de Slavische woordenschat systematisch op te bouwen.'],
+        ['Is OpenWords gratis?', 'Ja. Geen abonnementen, geen betaalmuren. Gratis te downloaden en te gebruiken, geen account vereist.'],
+        ['Hoe verschilt OpenWords van andere Poolse apps?', 'De meeste apps gebruiken vaste woordenlijsten. OpenWords begint bij het woordenboek: je slaat de woorden op die je echt tegenkomt, in de exacte betekenis.']
+      ],
+      ru: [
+        ['Как лучше всего учить польскую лексику?', 'Погружайтесь в настоящий польский — книги, подкасты, фильмы — и сохраняйте каждое незнакомое слово в момент поиска. Интервальные повторения возвращают каждое слово в нужный момент.'],
+        ['Помогает ли при подготовке к языковым сертификатам?', 'Да. Записи содержат уровни CEFR, чтобы вы могли целенаправленно работать над лексикой B1 или B2.'],
+        ['Можно ли учиться офлайн?', 'Повторения работают офлайн — сохранённые слова можно изучать где угодно. Поиск новых слов требует интернета.'],
+        ['Сложен ли польский для носителей английского?', 'Грамматика сложная, но построение словарного запаса — самое трудоёмкое. OpenWords помогает систематически строить базовую славянскую лексику.'],
+        ['OpenWords бесплатный?', 'Да. Без подписок, без платных барьеров. Бесплатно для загрузки и использования, без аккаунта.'],
+        ['Чем OpenWords отличается от других приложений для польского?', 'Большинство приложений используют готовые списки слов. OpenWords начинается со словаря: вы сохраняете слова, которые реально встречаете, в точном значении.']
+      ]
+    },
+    russian: {
+      en: [
+        ['What\'s the best way to learn Russian vocabulary?', 'Read and listen to Russian at your level, save every unknown word at the moment you look it up, and review with spaced repetition. OpenWords builds that habit into the dictionary lookup itself.'],
+        ['Does it help with TORFL (ТРКИ)?', 'Yes. Entries include CEFR levels that correspond roughly to TORFL levels. The vocabulary for each level is well-defined — OpenWords helps you save and retain those words systematically.'],
+        ['Can I study Russian vocabulary offline?', 'Review works offline — once a word is saved, you can study it anywhere. Looking up new words needs internet.'],
+        ['Is Russian hard for English speakers?', 'The grammar is complex, but Cyrillic takes about a week to learn. After that, thousands of international loanwords (компьютер, телефон, музыка) are immediately readable. The core Slavic vocabulary is where consistent retention work pays off.'],
+        ['Is OpenWords free?', 'Yes. No subscriptions, no paywalls. Free to download, free to use, no account required.'],
+        ['How is OpenWords different from other Russian vocabulary apps?', 'Most Russian apps use preset word lists. OpenWords starts from the dictionary: you save the Russian words you actually meet, in the exact meaning they appeared in, and review them with spaced repetition.']
+      ],
+      pl: [
+        ['Jak najlepiej uczyć się słownictwa rosyjskiego?', 'Czytaj i słuchaj rosyjskiego na swoim poziomie, zapisuj każde nieznane słowo i powtarzaj z powtórkami interwałowymi. OpenWords buduje ten nawyk wokół wyszukiwania w słowniku.'],
+        ['Czy pomaga w egzaminie TORFL (ТРКИ)?', 'Tak. Hasła mają poziomy CEFR odpowiadające mniej więcej poziomom TORFL. OpenWords pomaga zapisywać i utrwalać te słowa systematycznie.'],
+        ['Czy mogę uczyć się offline?', 'Powtórki działają offline — po zapisaniu słowa możesz uczyć się go wszędzie. Wyszukiwanie nowych słów wymaga internetu.'],
+        ['Czy rosyjski jest trudny dla angielskojęzycznych?', 'Gramatyka jest złożona, ale cyrylicę można opanować w tydzień. Potem tysiące zapożyczeń jest od razu rozpoznawalnych. OpenWords pomaga systematycznie budować podstawowe słownictwo.'],
+        ['Czy OpenWords jest bezpłatny?', 'Tak. Bez subskrypcji, bez płatnych murów. Bezpłatny do pobrania i użytkowania, bez konta.'],
+        ['Czym OpenWords różni się od innych aplikacji do rosyjskiego?', 'Większość aplikacji skupia się na gotowych listach słów. OpenWords zaczyna od słownika: zapisujesz słowa, które naprawdę napotykasz, w dokładnym znaczeniu.']
+      ],
+      nl: [
+        ['Wat is de beste manier om Russische woordenschat te leren?', 'Lees en luister naar Russisch op jouw niveau, sla elk onbekend woord op en herhaal met gespreide herhaling. OpenWords bouwt die gewoonte in de opzoekfunctie zelf.'],
+        ['Helpt het bij TORFL (ТРКИ)?', 'Ja. Inzendingen bevatten CEFR-niveaus die ruwweg overeenkomen met TORFL-niveaus. OpenWords helpt je die woorden systematisch op te slaan en te onthouden.'],
+        ['Kan ik offline studeren?', 'Herhalen werkt offline — zodra een woord is opgeslagen, kun je het overal studeren. Nieuwe woorden opzoeken heeft internet nodig.'],
+        ['Is Russisch moeilijk voor Engelssprekenden?', 'De grammatica is complex, maar Cyrillisch leer je in een week. Daarna zijn duizenden internationale leenwoorden meteen leesbaar. OpenWords helpt je de kern van de Russische woordenschat systematisch op te bouwen.'],
+        ['Is OpenWords gratis?', 'Ja. Geen abonnementen, geen betaalmuren. Gratis te downloaden en te gebruiken, geen account vereist.'],
+        ['Hoe verschilt OpenWords van andere Russische apps?', 'De meeste apps gebruiken vaste woordenlijsten. OpenWords begint bij het woordenboek: je slaat de woorden op die je echt tegenkomt, in de exacte betekenis.']
+      ],
+      ru: [
+        ['Как лучше всего учить русскую лексику?', 'Читайте и слушайте русский на своём уровне, сохраняйте каждое незнакомое слово в момент поиска и повторяйте с интервальными повторениями. OpenWords встраивает эту привычку в сам поиск по словарю.'],
+        ['Помогает ли при подготовке к ТРКИ?', 'Да. Записи содержат уровни CEFR, примерно соответствующие уровням ТРКИ. OpenWords помогает систематически сохранять и запоминать нужные слова.'],
+        ['Можно ли учиться офлайн?', 'Повторения работают офлайн — сохранённые слова можно изучать где угодно. Поиск новых слов требует интернета.'],
+        ['Сложен ли русский для носителей английского?', 'Грамматика сложная, но кириллицу можно выучить за неделю. После этого тысячи международных заимствований сразу читаются. OpenWords помогает систематически строить основной словарный запас.'],
+        ['OpenWords бесплатный?', 'Да. Без подписок, без платных барьеров. Бесплатно для загрузки и использования, без аккаунта.'],
+        ['Чем OpenWords отличается от других приложений для русского?', 'Большинство приложений используют готовые списки слов. OpenWords начинается со словаря: вы сохраняете слова, которые реально встречаете, в точном значении.']
+      ]
+    }
   };
 
-  return base[locale].map(([question, answer]) => ({ question, answer }));
+  return faqsByLanguage[language][locale].map(([question, answer]) => ({ question, answer }));
 }

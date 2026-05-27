@@ -1,10 +1,9 @@
 ---
-import FAQ from '../../components/FAQ.astro';
 import Footer from '../../components/Footer.astro';
 import Header from '../../components/Header.astro';
 import StoreButtons from '../../components/StoreButtons.astro';
 import { homeCopy, learnCopy, learnFaq } from '../../data/copy';
-import { languageSlugs, languages, type LanguageSlug } from '../../data/site';
+import { languageSlugs, languages, site, type LanguageSlug } from '../../data/site';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
 export function getStaticPaths() {
@@ -14,186 +13,792 @@ export function getStaticPaths() {
 const locale = 'en';
 const language = Astro.params.language as LanguageSlug;
 const copy = learnCopy(locale, language);
-const ui = homeCopy[locale].ui;
 const faq = learnFaq(locale, language);
 const languageData = languages[language];
+const otherLanguages = languageSlugs.filter((s) => s !== language);
+const pageFooterCopy = homeCopy[locale];
+const learnPath = `/learn/${language}`;
+
+const h1Parts = copy.h1.split('\n');
+const h1Pre = h1Parts[0];
+
+const cefrRows = [
+  { level: 'A1', cls: 'a1', count: '~500',    pct: '3%'   },
+  { level: 'A2', cls: 'a2', count: '~1,000',  pct: '6%'   },
+  { level: 'B1', cls: 'b1', count: '~2,000',  pct: '13%'  },
+  { level: 'B2', cls: 'b2', count: '~4,000',  pct: '25%'  },
+  { level: 'C1', cls: 'c1', count: '~8,000',  pct: '50%'  },
+  { level: 'C2', cls: 'c2', count: '~16,000', pct: '100%' },
+];
+
+const flagMap: Record<LanguageSlug, string> = {
+  english: '🇬🇧',
+  dutch:   '🇳🇱',
+  polish:  '🇵🇱',
+  russian: '🇷🇺',
+};
 ---
-<BaseLayout title={copy.title} description={copy.description} locale={locale} path={`/learn/${language}`} faq={faq}>
-  <Header locale={locale} />
+<BaseLayout
+  title={copy.title}
+  description={copy.description}
+  locale={locale}
+  path={learnPath}
+  faq={faq}
+>
+  <Header locale={locale} activeLanguage={language} path={learnPath} />
 
   <main>
-    <section class="section hero">
-      <div class="container grid-2">
-        <div>
-          <p class="eyebrow">OpenWords for {languageData.name}</p>
-          <h1>{copy.h1}</h1>
-          <p class="lead">{copy.subtitle}</p>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero__inner">
+          <nav class="hero__breadcrumb" aria-label="Breadcrumb">
+            <a href="/">OpenWords</a> / <span>{languageData.name} vocabulary</span>
+          </nav>
+          <div class="hero__eyebrow">{languageData.name} vocabulary</div>
+          <h1 class="hero__h1">
+            {h1Pre}<br /><em>{copy.heroH1Em}</em>
+          </h1>
+          <p class="hero__sub">{copy.subtitle}</p>
           <div class="hero__actions">
             <StoreButtons locale={locale} />
+            <p class="hero__note">{copy.heroNote}</p>
           </div>
         </div>
-        <img class="mascot" src="/svg_final_search_otter.dark.optimized.svg" alt={ui.searchMascotAlt} />
       </div>
     </section>
 
-    <section class="section split-band">
+    <div class="divider"></div>
+
+    <!-- HOW IT WORKS + WORD CARD -->
+    <section class="how">
       <div class="container">
-        <h2>{copy.whoTitle}</h2>
-        <p class="lead">{copy.who}</p>
+        <div class="how__inner">
+          <div class="how__text reveal">
+            <div class="section-eyebrow">{copy.howEyebrow}</div>
+            {copy.howH2.split('\n').map((line, i) => (
+              <h2 class="how__h2" style={i > 0 ? 'margin-top:0' : ''}>{line}</h2>
+            ))}
+            <div class="how__steps">
+              {copy.howSteps.map((step, i) => (
+                <div class="how__step">
+                  <div class="how__num" aria-hidden="true">{String(i + 1).padStart(2, '0')}</div>
+                  <div>
+                    <h3 class="how__h3">{step.h3}</h3>
+                    <p class="how__body">{step.body}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {copy.previewWord && copy.previewSenses && (
+            <div class="how__visual reveal d1">
+              <div class="word-card" role="region" aria-label={`Dictionary entry for '${copy.previewWord}'`}>
+                <div class="word-card__head">
+                  <div class="word-card__word">{copy.previewWord}</div>
+                  <div class="word-card__meta">
+                    <div class="word-card__pos">
+                      <span class="word-card__pos-dot" aria-hidden="true"></span>
+                      {copy.previewSenses.map(s => s.pos).filter((v, i, a) => a.indexOf(v) === i).join(' / ').toUpperCase()} · {copy.previewSenses.length} SENSES
+                    </div>
+                  </div>
+                </div>
+                {copy.previewWordFamily && (
+                  <div class="word-card__family" aria-label="Related word forms">
+                    {copy.previewWordFamily.map((w) => (
+                      <span class="word-card__family-chip">{w}</span>
+                    ))}
+                  </div>
+                )}
+                <div class="sense-list" role="list">
+                  {copy.previewSenses.map((sense, i) => (
+                    <details class="sense" open={i === 0 || undefined}>
+                      <summary role="listitem">
+                        <span class={`sense__badge badge--${sense.level.toLowerCase()}`}>{sense.level}</span>
+                        <span class="sense__gloss">{sense.definition.split('.')[0].toLowerCase()}</span>
+                        <span class="sense__pos-tag">{sense.pos}</span>
+                        <svg class="sense__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+                      </summary>
+                      <div class="sense__body">
+                        <div class="sense__def">{sense.definition}</div>
+                        <div class="sense__example">
+                          <div class="sense__example-bar"></div>
+                          <div class="sense__example-text">{sense.example}</div>
+                        </div>
+                      </div>
+                    </details>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container grid-2">
-        <div>
-          <h2>{copy.previewTitle}</h2>
-          <p class="lead">{copy.preview}</p>
-        </div>
-        {copy.previewSenses ? (
-          <div class="dict-card">
-            <div class="dict-card__header">
-              <span class="dict-card__word">{copy.previewWord}</span>
-              {copy.previewWordFamily && (
-                <div class="dict-card__family">
-                  {copy.previewWordFamily.join(' · ')}
-                </div>
-              )}
-            </div>
-            {copy.previewSenses.map((sense) => (
-              <div class="dict-card__sense">
-                <div class="dict-card__badges">
-                  <span class="dict-card__level">{sense.level}</span>
-                  <span class="dict-card__pos">{sense.pos}</span>
-                </div>
-                <p class="dict-card__def">{sense.definition}</p>
-                <p class="dict-card__ex">"{sense.example}"</p>
+    <div class="divider"></div>
+
+    <!-- VOCAB FACTS + CEFR CHART -->
+    <section class="vocab-facts">
+      <div class="container">
+        <div class="vocab-facts__inner">
+          <div class="reveal">
+            <div class="section-eyebrow">{copy.vocabFactsEyebrow}</div>
+            <h2 class="vocab-facts__h2">{copy.vocabFactsH2}</h2>
+            <p class="vocab-facts__body">{copy.vocabFactsBody}</p>
+            <div class="vocab-facts__note" set:html={copy.vocabFactsCallout}></div>
+          </div>
+          <div class="cefr-scale reveal d1" aria-label="Vocabulary size by CEFR level">
+            {cefrRows.map(({ level, cls, count, pct }) => (
+              <div class={`cefr-row cefr-row--${cls}`}>
+                <span class="cefr-badge">{level}</span>
+                <div class="cefr-bar-wrap"><div class="cefr-bar" style="width:0%" data-width={pct}></div></div>
+                <span class="cefr-count">{count}</span>
               </div>
             ))}
           </div>
-        ) : (
-          <div class="word-preview">
-            {languageData.examples.map((word, index) => (
-              <article class="word-preview__item">
-                <div class="word-preview__word">
-                  <span>{word}</span>
-                  <span class="word-preview__badge">{index === 0 ? 'A2' : index === 1 ? 'B1' : 'B2'}</span>
+        </div>
+      </div>
+    </section>
+
+    {copy.langSection && (
+      <>
+        <div class="divider"></div>
+        <section class="lang-specific">
+          <div class="container">
+            <div class="lang-specific__inner">
+              <div class="reveal">
+                <div class="section-eyebrow">{copy.langSection.eyebrow}</div>
+                <h2 class="lang-specific__h2">{copy.langSection.h2}</h2>
+                {copy.langSection.body.map((para) => (
+                  <p class="lang-specific__body">{para}</p>
+                ))}
+              </div>
+              <div class="reveal d1">
+                <div class="cognate-label">{copy.langSection.gridLabel}</div>
+                <div class="cognate-grid">
+                  {copy.langSection.gridPairs.map(([target, english]) => (
+                    <div class="cognate-cell">
+                      <div class="cognate-cell__target">{target}</div>
+                      <div class="cognate-cell__english">{english}</div>
+                    </div>
+                  ))}
                 </div>
-                <p>{copy.wordPreviewItem}</p>
-              </article>
+                <p class="cognate-note">{copy.langSection.gridNote}</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </>
+    )}
+
+    <div class="divider"></div>
+
+    <!-- WHO IT'S FOR -->
+    <section class="who">
+      <div class="container">
+        <div class="who__inner">
+          <div class="reveal">
+            <h2 class="who__h2">{copy.whoTitle}</h2>
+            <p class="who__body">{copy.who}</p>
+          </div>
+          <div class="who__checklist reveal d1">
+            {copy.whoItems.map((item) => (
+              <div class="who__item">
+                <div class="who__tick" aria-hidden="true">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>
+                </div>
+                <span class="who__item-text">{item}</span>
+              </div>
             ))}
           </div>
-        )}
-      </div>
-    </section>
-
-    <section class="section quiet-band">
-      <div class="container">
-        <h2>{copy.howTitle}</h2>
-        <ol class="steps">
-          {copy.how.map((step) => <li>{step}</li>)}
-        </ol>
-      </div>
-    </section>
-
-    <FAQ title={copy.faqTitle} items={faq} />
-
-    <section class="section dark-band" id="download">
-      <div class="container grid-2">
-        <div>
-          <h2>{copy.cta}</h2>
-          <StoreButtons locale={locale} />
         </div>
-        <img class="mascot" src="/svg_final_otter_favourites.dark.optimized.svg" alt={ui.savedCardsAlt} />
       </div>
     </section>
+
+    <div class="divider"></div>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-eyebrow">FAQ</div>
+          <h2 class="section-h2">{copy.faqTitle}</h2>
+        </div>
+        <div class="faq__list">
+          {faq.map((item, i) => (
+            <details class="faq-item" open={i === 0 || undefined}>
+              <summary>
+                {item.question}
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </summary>
+              <div class="faq-answer">{item.answer}</div>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- FINAL CTA -->
+    <section class="cta" id="download">
+      <div class="container">
+        <div class="cta__eyebrow">{copy.ctaEyebrow}</div>
+        <h2 class="cta__h2">{copy.cta}</h2>
+        <p class="cta__sub">{copy.ctaSub}</p>
+        <StoreButtons locale={locale} centered />
+        <p class="cta__note">{copy.heroNote}</p>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- OTHER LANGUAGES -->
+    <section class="other-langs">
+      <div class="container">
+        <h2 class="other-langs__label">{copy.otherLangsLabel}</h2>
+        <div class="other-langs__grid">
+          {otherLanguages.map((slug) => (
+            <a href={`/learn/${slug}/`} class="lang-card">
+              <span class="lang-card__flag" aria-hidden="true">{flagMap[slug]}</span>
+              <div class="lang-card__name">{languages[slug].name} vocabulary</div>
+              <span class="lang-card__arrow" aria-hidden="true">→</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <Footer locale={locale} />
 </BaseLayout>
 
 <style>
+  /* ── HERO ── */
   .hero {
-    padding-top: calc(80px + 5rem);
-    background:
-      radial-gradient(circle at 78% 32%, rgba(197, 163, 103, 0.14), transparent 24rem),
-      linear-gradient(180deg, rgba(18, 20, 28, 0.2), rgba(13, 15, 22, 0.82));
-  }
-
-  .hero__actions {
-    margin-top: 24px;
-  }
-
-  .dict-card {
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    background: rgba(255, 255, 255, 0.04);
+    padding: 120px 0 88px;
+    position: relative;
     overflow: hidden;
+    background: var(--night-900);
   }
-
-  .dict-card__header {
-    padding: 18px 20px 14px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  .hero__glow {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 70% 50% at 50% -10%, rgba(197,163,103,.08), transparent 60%);
+    pointer-events: none;
   }
-
-  .dict-card__word {
-    display: block;
-    color: var(--cream-100);
-    font-family: var(--font-display);
-    font-size: 1.4rem;
+  .hero__inner {
+    position: relative;
+    z-index: 1;
+    max-width: 760px;
+  }
+  .hero__breadcrumb {
+    font-size: .8125rem;
+    color: #555a70;
+    margin-bottom: 16px;
+  }
+  .hero__breadcrumb a { color: #555a70; transition: color .18s; }
+  .hero__breadcrumb a:hover { color: #9499B0; }
+  .hero__eyebrow {
+    font-size: .8125rem;
     font-weight: 700;
-    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    color: #C5A367;
+    margin-bottom: 20px;
+    white-space: nowrap;
   }
-
-  .dict-card__family {
-    color: var(--night-500);
-    font-size: 0.8rem;
-    letter-spacing: 0.01em;
+  .hero__h1 {
+    font-family: Lora, Georgia, serif;
+    font-size: clamp(2.125rem, 5vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -.02em;
+    color: #E2E4ED;
+    margin-bottom: 20px;
   }
-
-  .dict-card__sense {
-    padding: 14px 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  .hero__h1 em { font-style: normal; color: #C5A367; }
+  .hero__sub {
+    font-size: clamp(1rem, 2vw, 1.125rem);
+    line-height: 1.78;
+    color: #9499B0;
+    max-width: 580px;
+    margin-bottom: 36px;
   }
+  .hero__actions { display: flex; flex-direction: column; gap: 16px; }
+  .hero__note { font-size: .8125rem; color: #555a70; margin: 0; }
 
-  .dict-card__sense:last-child {
-    border-bottom: none;
-  }
-
-  .dict-card__badges {
-    display: flex;
-    gap: 8px;
+  /* ── HOW IT WORKS ── */
+  .how { padding: 96px 0; background: var(--night-900); }
+  .how__inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 48px;
     align-items: center;
-    margin-bottom: 6px;
   }
+  @media (min-width: 900px) {
+    .how__inner { grid-template-columns: 1fr 420px; gap: 72px; }
+  }
+  @media (max-width: 899px) { .how__visual { order: -1; } }
+  .how__visual { display: flex; justify-content: center; }
+  .how__h2 {
+    font-family: Lora, Georgia, serif;
+    font-size: clamp(1.625rem, 3.5vw, 2.25rem);
+    font-weight: 600;
+    line-height: 1.18;
+    color: #E2E4ED;
+    letter-spacing: -.01em;
+    margin-bottom: 0;
+    text-align: left;
+  }
+  .how__steps { display: flex; flex-direction: column; gap: 0; margin-top: 40px; }
+  .how__step {
+    display: grid;
+    grid-template-columns: 36px 1fr;
+    gap: 14px;
+    padding: 22px 0;
+    border-top: 1px solid rgba(255,255,255,.07);
+    align-items: start;
+  }
+  .how__step:first-child { border-top: none; padding-top: 0; }
+  .how__num {
+    font-family: Lora, Georgia, serif;
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: rgba(197,163,103,.25);
+    line-height: 1;
+    padding-top: 3px;
+  }
+  .how__h3 {
+    font-family: Lora, Georgia, serif;
+    font-size: clamp(1.0625rem, 2vw, 1.25rem);
+    font-weight: 600;
+    color: #E2E4ED;
+    margin-bottom: 6px;
+    letter-spacing: -.01em;
+    line-height: 1.2;
+  }
+  .how__body { font-size: .9rem; line-height: 1.75; color: #9499B0; margin: 0; }
 
-  .dict-card__level {
+  /* ── WORD CARD ── */
+  .word-card {
+    background: #f5f2ed;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,.18), 0 20px 56px rgba(0,0,0,.32);
+    width: 100%;
+    max-width: 420px;
+  }
+  .word-card__head { padding: 32px 28px 22px; border-bottom: 1px solid rgba(45,38,32,.10); }
+  .word-card__word {
+    font-family: Lora, Georgia, serif;
+    font-size: 3rem;
+    font-weight: 500;
+    color: #2d2620;
+    letter-spacing: -.025em;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+  .word-card__meta { display: flex; align-items: center; gap: 8px; }
+  .word-card__pos {
+    font-size: .6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #9b8f86;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .word-card__pos-dot { width: 6px; height: 6px; border-radius: 50%; background: #b87333; opacity: .6; }
+  .word-card__family {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 16px 28px;
+    border-bottom: 1px solid rgba(45,38,32,.10);
+  }
+  .word-card__family-chip {
+    font-size: 12px;
+    color: #6b6057;
+    background: rgba(184,115,51,.08);
+    border: 1px solid rgba(184,115,51,.15);
+    border-radius: 999px;
+    padding: 3px 10px;
+  }
+  .sense-list { display: flex; flex-direction: column; }
+  details.sense { border-bottom: 1px solid rgba(45,38,32,.10); }
+  details.sense:last-child { border-bottom: none; }
+  details.sense summary {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 28px;
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+    -webkit-user-select: none;
+    transition: background .15s;
+  }
+  details.sense summary::-webkit-details-marker { display: none; }
+  details.sense summary:hover { background: rgba(45,38,32,.03); }
+  details.sense[open] summary { background: rgba(184,115,51,.04); }
+  .sense__badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     padding: 2px 8px;
     border-radius: 999px;
-    background: rgba(197, 163, 103, 0.15);
-    color: var(--amber-400);
-    font-size: 0.72rem;
-    font-weight: 800;
-    letter-spacing: 0.06em;
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: .02em;
+    flex-shrink: 0;
+    min-width: 32px;
   }
-
-  .dict-card__pos {
-    color: var(--night-500);
-    font-size: 0.78rem;
+  .badge--a1, .badge--a2 { background: #d7eacc; color: #265c1c; }
+  .badge--b1 { background: #d2e4f4; color: #0c3054; }
+  .badge--b2 { background: #e4d2f5; color: #3d0f6b; }
+  .badge--c1 { background: #fddcc2; color: #2d1400; }
+  .sense__gloss { flex: 1; font-size: .9375rem; color: #2d2620; line-height: 1.35; }
+  .sense__pos-tag {
+    font-size: 10.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: #9b8f86;
+    flex-shrink: 0;
+  }
+  .sense__chevron { width: 16px; height: 16px; color: #9b8f86; flex-shrink: 0; transition: transform .22s; }
+  details.sense[open] .sense__chevron { transform: rotate(180deg); }
+  .sense__body { padding: 4px 28px 24px; display: flex; flex-direction: column; gap: 12px; }
+  .sense__def { font-size: .9375rem; color: #6b6057; line-height: 1.55; }
+  .sense__example { display: flex; gap: 10px; }
+  .sense__example-bar { width: 3px; border-radius: 2px; background: rgba(184,115,51,.35); flex-shrink: 0; }
+  .sense__example-text {
+    font-size: .9rem;
     font-style: italic;
+    color: #2d2620;
+    font-family: Lora, Georgia, serif;
+    line-height: 1.55;
   }
 
-  .dict-card__def {
-    margin: 0 0 4px;
-    color: var(--cream-200);
-    font-size: 0.9rem;
-    line-height: 1.5;
+  /* ── VOCAB FACTS ── */
+  .vocab-facts { padding: 96px 0; background: var(--night-900); }
+  .vocab-facts__inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 56px;
+    align-items: center;
+  }
+  @media (min-width: 860px) { .vocab-facts__inner { grid-template-columns: 1fr 1fr; gap: 80px; } }
+  .vocab-facts__h2 {
+    font-family: Lora, Georgia, serif;
+    font-size: clamp(1.625rem, 3.5vw, 2.25rem);
+    font-weight: 600;
+    line-height: 1.18;
+    color: #E2E4ED;
+    letter-spacing: -.01em;
+    margin-bottom: 14px;
+  }
+  .vocab-facts__body { font-size: 1rem; line-height: 1.8; color: #9499B0; margin-bottom: 20px; }
+  .vocab-facts__note {
+    font-size: .875rem;
+    line-height: 1.7;
+    color: #555a70;
+    padding: 14px 18px;
+    border-left: 2px solid rgba(197,163,103,.20);
+    background: rgba(197,163,103,.10);
+    border-radius: 0 8px 8px 0;
+  }
+  .vocab-facts__note :global(strong) { color: #C5A367; font-weight: 600; }
+  .cefr-scale { display: flex; flex-direction: column; gap: 10px; }
+  .cefr-row { display: grid; grid-template-columns: 36px 1fr 64px; align-items: center; gap: 12px; }
+  .cefr-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 0;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    width: 36px;
+    flex-shrink: 0;
+  }
+  .cefr-bar-wrap { height: 8px; background: #1C1F2A; border-radius: 999px; overflow: hidden; }
+  .cefr-bar { height: 100%; border-radius: 999px; transition: width 1.2s cubic-bezier(.16,1,.3,1); }
+  .cefr-row--a1 .cefr-badge { background: #d7eacc; color: #265c1c; }
+  .cefr-row--a2 .cefr-badge { background: #c8e6b8; color: #1e4f14; }
+  .cefr-row--b1 .cefr-badge { background: #d2e4f4; color: #0c3054; }
+  .cefr-row--b2 .cefr-badge { background: #bdd6ef; color: #093050; }
+  .cefr-row--c1 .cefr-badge { background: #fddcc2; color: #2d1400; }
+  .cefr-row--c2 .cefr-badge { background: #f5c8a0; color: #271000; }
+  .cefr-row--a1 .cefr-bar, .cefr-row--a2 .cefr-bar { background: #6ab04c; }
+  .cefr-row--b1 .cefr-bar, .cefr-row--b2 .cefr-bar { background: #4a90c4; }
+  .cefr-row--c1 .cefr-bar, .cefr-row--c2 .cefr-bar { background: #C5A367; }
+  .cefr-count { font-size: .8125rem; font-weight: 600; color: #555a70; text-align: right; white-space: nowrap; }
+
+  /* ── LANGUAGE-SPECIFIC SECTION ── */
+  .lang-specific { padding: 96px 0; background: #0f1118; }
+  .lang-specific__inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 56px;
+    align-items: start;
+  }
+  @media (min-width: 860px) { .lang-specific__inner { grid-template-columns: 1fr 1fr; gap: 72px; } }
+  .lang-specific__h2 {
+    font-family: Lora, Georgia, serif;
+    font-size: clamp(1.625rem, 3.5vw, 2.25rem);
+    font-weight: 600;
+    line-height: 1.18;
+    color: #E2E4ED;
+    letter-spacing: -.01em;
+    margin-bottom: 16px;
+  }
+  .lang-specific__body { font-size: 1rem; line-height: 1.82; color: #9499B0; margin-bottom: 14px; }
+  .lang-specific__body:last-of-type { margin-bottom: 0; }
+  .cognate-label {
+    font-size: .75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: #555a70;
+    margin-bottom: 12px;
+  }
+  .cognate-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    border-radius: 14px;
+    overflow: hidden;
+  }
+  .cognate-cell {
+    background: #1C1F2A;
+    padding: 14px 16px;
+  }
+  .cognate-cell__target {
+    font-family: Lora, Georgia, serif;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    color: #E2E4ED;
+    line-height: 1.2;
+    margin-bottom: 4px;
+  }
+  .cognate-cell__english { font-size: .8125rem; color: #555a70; }
+  .cognate-note { font-size: .875rem; line-height: 1.65; color: #555a70; font-style: italic; margin-top: 16px; }
+
+  /* ── WHO IT'S FOR ── */
+  .who { padding: 96px 0; background: #0f1118; }
+  .who__inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  @media (min-width: 768px) { .who__inner { grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; } }
+  .who__h2 {
+    font-family: Lora, Georgia, serif;
+    font-size: clamp(1.625rem, 3.5vw, 2.25rem);
+    font-weight: 600;
+    line-height: 1.18;
+    color: #E2E4ED;
+    letter-spacing: -.01em;
+    margin-bottom: 16px;
+  }
+  .who__body { font-size: 1rem; line-height: 1.82; color: #9499B0; margin: 0; }
+  .who__checklist { display: flex; flex-direction: column; gap: 14px; }
+  .who__item { display: flex; align-items: flex-start; gap: 12px; }
+  .who__tick {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgba(197,163,103,.10);
+    border: 1px solid rgba(197,163,103,.20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+    color: #C5A367;
+  }
+  .who__item-text { font-size: .9375rem; line-height: 1.55; color: #9499B0; }
+
+  /* ── FAQ ── */
+  .faq-section { padding: 96px 0; background: var(--night-900); }
+  .section-head { text-align: center; margin-bottom: 48px; }
+  .section-eyebrow {
+    font-size: .6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #C5A367;
+    margin-bottom: 10px;
+  }
+  .section-h2 {
+    font-family: Lora, Georgia, serif;
+    font-size: clamp(1.625rem, 3.5vw, 2.25rem);
+    font-weight: 600;
+    line-height: 1.18;
+    color: #E2E4ED;
+    letter-spacing: -.01em;
+  }
+  .faq__list {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .faq-item {
+    background: #1C1F2A;
+    border: 1px solid rgba(255,255,255,.07);
+    border-radius: 14px;
+    overflow: hidden;
+    transition: border-color .2s;
+  }
+  .faq-item[open] { border-color: rgba(197,163,103,.20); }
+  .faq-item summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 20px 24px;
+    font-size: .9375rem;
+    font-weight: 600;
+    color: #E2E4ED;
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-icon {
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: #C5A367;
+    transition: transform .25s, background .2s;
+  }
+  .faq-item[open] .faq-icon { transform: rotate(45deg); background: rgba(197,163,103,.10); }
+  .faq-answer { padding: 0 24px 20px; font-size: .9375rem; line-height: 1.77; color: #9499B0; }
+
+  /* ── CTA ── */
+  .cta { padding: 96px 0; background: #0f1118; text-align: center; }
+  .cta__eyebrow {
+    font-size: .6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #C5A367;
+    margin-bottom: 10px;
+  }
+  .cta__h2 {
+    font-family: Lora, Georgia, serif;
+    font-size: clamp(1.625rem, 3.5vw, 2.25rem);
+    font-weight: 600;
+    line-height: 1.18;
+    color: #E2E4ED;
+    margin-bottom: 14px;
+    letter-spacing: -.01em;
+  }
+  .cta__sub { font-size: 1rem; color: #9499B0; margin-bottom: 28px; }
+  .cta__note { font-size: .8125rem; color: #555a70; margin-top: 14px; }
+
+  /* ── OTHER LANGUAGES ── */
+  .other-langs { padding: 72px 0; background: var(--night-900); }
+  .other-langs__label {
+    font-size: .6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #555a70;
+    text-align: center;
+    margin-bottom: 28px;
+  }
+  .other-langs__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  @media (min-width: 500px) { .other-langs__grid { grid-template-columns: repeat(3, 1fr); } }
+  .lang-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 18px 20px;
+    background: #1C1F2A;
+    border: 1px solid rgba(255,255,255,.07);
+    border-radius: 20px;
+    transition: border-color .2s, transform .2s;
+  }
+  .lang-card:hover { border-color: rgba(197,163,103,.20); transform: translateY(-2px); }
+  .lang-card__flag { font-size: 1.5rem; line-height: 1; flex-shrink: 0; }
+  .lang-card__name {
+    font-family: Lora, Georgia, serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #E2E4ED;
+    line-height: 1.2;
+    flex: 1;
+  }
+  .lang-card__arrow { color: #555a70; font-size: 1rem; }
+
+  /* ── DIVIDER ── */
+  .divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(197,163,103,.14), transparent);
   }
 
-  .dict-card__ex {
-    margin: 0;
-    color: var(--night-400);
-    font-size: 0.82rem;
-    font-style: italic;
-    line-height: 1.5;
-  }
+  /* ── REVEAL ── */
+  .reveal { opacity: 0; transform: translateY(16px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+  .d1 { transition-delay: .1s; }
 </style>
+
+<script>
+  const nav = document.getElementById('nav');
+  if (nav) {
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 16), { passive: true });
+    nav.classList.toggle('scrolled', window.scrollY > 16);
+  }
+
+  const cefrScale = document.querySelector('.cefr-scale');
+  if (cefrScale) {
+    const barObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          (e.target as Element).querySelectorAll<HTMLElement>('.cefr-bar').forEach(bar => {
+            bar.style.width = bar.dataset.width ?? '0%';
+          });
+          barObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    barObs.observe(cefrScale);
+  }
+
+  const revObs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); revObs.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => revObs.observe(el));
+
+  document.querySelectorAll('details.sense').forEach(d => {
+    d.addEventListener('toggle', () => {
+      if ((d as HTMLDetailsElement).open) {
+        document.querySelectorAll('details.sense').forEach(other => {
+          if (other !== d) (other as HTMLDetailsElement).open = false;
+        });
+      }
+    });
+  });
+</script>
