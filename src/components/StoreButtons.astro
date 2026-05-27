@@ -123,3 +123,15 @@ const labels = {
     }
   }
 </style>
+
+<script>
+  document.querySelectorAll<HTMLAnchorElement>('.store-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const platform = btn.classList.contains('store-btn--gold') ? 'ios' : 'android';
+      window.gtag?.('event', 'download_click', {
+        platform,
+        page_path: window.location.pathname
+      });
+    });
+  });
+</script>
