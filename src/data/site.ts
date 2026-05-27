@@ -68,9 +68,9 @@ export const languages = {
     },
     learners: {
       en: 'non-native speakers building everyday, academic, or professional English vocabulary',
-      pl: 'osób uczących się angielskiego do pracy, nauki i codziennego czytania',
-      nl: 'niet-moedertaalsprekers die Engelse woordenschat voor werk, studie of dagelijks lezen opbouwen',
-      ru: 'тех, кто учит английскую лексику для учебы, работы и чтения'
+      pl: 'osobach uczących się języka angielskiego na potrzeby pracy, studiów oraz codziennego czytania',
+      nl: 'iedereen die de Engelse woordenschat wil opbouwen voor werk, studie of dagelijks lezen',
+      ru: 'тех, кто учит английскую лексику для работы, учёбы или чтения литературы в оригинале'
     },
     examples: ['approach', 'reliable', 'evidence']
   },
@@ -98,9 +98,9 @@ export const languages = {
     },
     learners: {
       en: 'Dutch learners, NT2 students, and people living or working in the Netherlands or Belgium',
-      pl: 'osób uczących się niderlandzkiego do życia, pracy lub egzaminów NT2',
-      nl: 'NT2-leerders, expats en iedereen die Nederlandse woordenschat doelgericht wil oefenen',
-      ru: 'студентов NT2, экспатов и всех, кто учит нидерландскую лексику для жизни и работы'
+      pl: 'osobach uczących się języka niderlandzkiego na potrzeby codziennego życia, pracy lub przygotowujących się do egzaminów NT2',
+      nl: 'NT2-leerders, expats en iedereen die de Nederlandse woordenschat doelgericht wil oefenen',
+      ru: 'студентов курсов NT2, экспатов и всех, кто учит нидерландскую лексику для жизни и работы в стране'
     },
     examples: ['afspraak', 'duidelijk', 'omgeving']
   },
@@ -128,9 +128,9 @@ export const languages = {
     },
     learners: {
       en: 'Polish learners, heritage speakers, and students preparing for language exams',
-      pl: 'uczniów, studentów i osób, które chcą świadomie poszerzać słownictwo po polsku',
-      nl: 'mensen die Pools leren, erfgoedsprekers en studenten die hun woordenschat willen versterken',
-      ru: 'изучающих польский, билингвов и студентов, которые готовятся к экзаменам'
+      pl: 'uczniach, studentach oraz wszystkich tych, którzy chcą świadomie i precyzyjnie poszerzać swój zasób słownictwa w języku polskim',
+      nl: 'mensen die Pools leren, erfgoedsprekers (heritage speakers) en studenten die hun actieve woordenschat willen versterken',
+      ru: 'тех, кто учит польский язык, а также для билингвов и студентов, которые готовятся к сдаче языковых экзаменов'
     },
     examples: ['znaczenie', 'wymagać', 'przykład']
   },
@@ -158,9 +158,9 @@ export const languages = {
     },
     learners: {
       en: 'Russian learners and native speakers who want richer, more precise vocabulary',
-      pl: 'osób uczących się rosyjskiego oraz rodzimych użytkowników języka rozwijających precyzyjne słownictwo',
-      nl: 'Russischleerders en moedertaalsprekers die preciezere woordenschat willen opbouwen',
-      ru: 'изучающих русский и носителей, которые хотят расширять активный словарь'
+      pl: 'osobach uczących się języka rosyjskiego oraz rodzimych użytkownikach (native speakerach), którzy chcą rozwijać bardziej precyzyjne i zaawansowane słownictwo',
+      nl: 'iedereen die Russisch leert en voor moedertaalsprekers die een preciezere of geavanceerdere woordenschat willen opbouwen',
+      ru: 'тех, кто изучает русский язык как иностранный, а также для носителей языка, желающих расширить свой активный словарный запас'
     },
     examples: ['смысл', 'пример', 'точный']
   }

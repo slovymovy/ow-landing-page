@@ -322,10 +322,10 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
     pl: {
       title: `Nauka ${vocabPhrase} z OpenWords — Słownik i powtórki interwałowe`,
       description: `Ucz się słownictwa ${localLanguage} z głębokim słownikiem, fiszkami jednym dotknięciem i powtórkami interwałowymi. Bezpłatnie, bez konta, działa offline.`,
-      h1: `Nauka ${vocabPhrase}\nktóra zostaje.`,
-      heroH1Em: 'która zostaje.',
+      h1: `Nauka ${vocabPhrase},\nktóre zostaje w głowie.`,
+      heroH1Em: 'które zostaje w głowie.',
       heroNote: 'Całkowicie bezpłatnie · Bez konta · Działa offline',
-      subtitle: `Zapisuj słowa jako fiszki jednym dotknięciem. OpenWords pomaga uczyć się słownictwa ${localLanguage} w kontekście i z powtórkami interwałowymi.`,
+      subtitle: `Zapisuj słówka jako fiszki jednym dotknięciem. OpenWords pomaga skutecznie uczyć się ${localLanguage} słownictwa w kontekście i z wykorzystaniem powtórek interwałowych.`,
       howEyebrow: 'Jak to działa',
       howH2: 'Wyszukaj, zapisz, powtarzaj.\nBez konfiguracji.',
       howSteps: [
@@ -333,22 +333,22 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
         { h3: 'Zapisz napotkane znaczenie.', body: 'Jedno dotknięcie, bez wpisywania. To dokładne znaczenie staje się fiszką.' },
         { h3: 'Powtarzaj zanim zapomnisz.', body: 'Powtórki interwałowe zwracają każde słowo we właściwym momencie. Pięć formatów kart — słowo utrwala się z wielu stron.' }
       ] as HowStep[],
-      vocabFactsEyebrow: `Badania nad słownictwem ${localLanguage}`,
-      vocabFactsH2: `Ile słów ${localLanguage} naprawdę potrzebujesz?`,
+      vocabFactsEyebrow: `Badania nad językiem ${localLanguage.replace('ego', 'im')}`,
+      vocabFactsH2: `Ilu ${localLanguage.replace('ego', 'ich')} słów tak naprawdę potrzebujesz?`,
       vocabFactsBody: `Badacze słownictwa mierzą rozmiar zasobu słownikowego w rodzinach wyrazów — słowie podstawowym i jego pochodnych. Poziomy CEFR odpowiadają mniej więcej poniższym progom, opartym na badaniach Nation, Miltona i innych.`,
       vocabFactsCallout: `Skok z B1 na B2 oznacza naukę około <strong>2000 dodatkowych rodzin wyrazów</strong>. Przy 5 nowych słowach dziennie to mniej więcej rok — jeśli będziesz regularnie powtarzać.`,
       langSection: null as LangSection | null,
       whoTitle: `Dla kogo jest ta strona`,
-      who: `Ta strona jest dla ${audience}. Skupia się na słownictwie: słowach spotykanych w czytaniu, słuchaniu, pracy, nauce i codziennym życiu.`,
+      who: `Ta strona powstała z myślą o ${audience}. Skupiamy się na praktycznym słownictwie – wyrazach, które realnie napotykasz podczas czytania, słuchania, w pracy, szkole i życiu codziennym.`,
       whoItems: [
-        `Uczący się ${localLanguage} do pracy, podróży lub nauki`,
+        `Osoby uczące się ${localLanguage} do pracy, podróży lub nauki`,
         `Przygotowujący się do egzaminów językowych`,
         `Zaawansowani uczący się, którzy wciąż zapominają te same słowa`,
         `Osoby, które uznały Anki za zbyt pracochłonne`
       ] as string[],
-      faqTitle: `Pytania o naukę słownictwa ${localLanguage}`,
+      faqTitle: `Najczęstsze pytania o naukę słownictwa ${localLanguage}`,
       ctaEyebrow: 'Za darmo · Bez konta · Offline',
-      cta: `Zacznij uczyć się słownictwa ${localLanguage} z OpenWords.`,
+      cta: `Zacznij rozwijać swoje ${localLanguage.replace('ego', 'ie')} słownictwo z OpenWords.`,
       ctaSub: `Każde napotkane słowo to jedno dotknięcie od stania się fiszką.`,
       otherLangsLabel: 'Dostępne też dla',
       previewWord: null as string | null,
@@ -356,12 +356,12 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
       previewSenses: null as Sense[] | null
     },
     nl: {
-      title: `${vocabPhrase} leren — Diep woordenboek + Gespreide herhaling | OpenWords`,
-      description: `Bouw ${vocabPhrase} met een diep woordenboek, flashcards met een tik en gespreide herhaling. Gratis, geen account, werkt offline.`,
-      h1: `${vocabPhrase} leren\ndat blijft hangen.`,
-      heroH1Em: 'dat blijft hangen.',
+      title: `${vocabPhrase} leren — Uitgebreid woordenboek + Gespreide herhaling | OpenWords`,
+      description: `Bouw ${vocabPhrase} met een uitgebreid woordenboek, flashcards met een tik en gespreide herhaling. Gratis, geen account, werkt offline.`,
+      h1: `${vocabPhrase} leren\ndie echt blijft hangen.`,
+      heroH1Em: 'die echt blijft hangen.',
       heroNote: 'Volledig gratis · Geen account · Werkt offline',
-      subtitle: `Bewaar elk woord als flashcard met een tik. OpenWords helpt je ${displayLanguage} woordenschat oefenen met context en gespreide herhaling.`,
+      subtitle: `Sla woorden met één tik op als flashcard. OpenWords helpt je de ${vocabPhrase} te oefenen in context en met gespreide herhaling.`,
       howEyebrow: 'Hoe het werkt',
       howH2: 'Opzoeken, opslaan, herhalen.\nGeen configuratie.',
       howSteps: [
@@ -369,22 +369,22 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
         { h3: 'Bewaar de betekenis die je tegenkwam.', body: 'Eén tik, geen typen. Die exacte betekenis wordt een flashcard.' },
         { h3: 'Herhaal voordat je vergeet.', body: 'Gespreide herhaling brengt elk woord terug op het juiste moment. Vijf kaartformaten zodat het vanuit meerdere kanten blijft hangen.' }
       ] as HowStep[],
-      vocabFactsEyebrow: `${displayLanguage} woordenschat onderzoek`,
-      vocabFactsH2: `Hoeveel ${displayLanguage} woorden heb je echt nodig?`,
+      vocabFactsEyebrow: `Onderzoek naar de ${vocabPhrase}`,
+      vocabFactsH2: `Hoeveel ${vocabPhrase.replace(' woordenschat', '')} woorden heb je echt nodig?`,
       vocabFactsBody: `Taalonderzoekers meten woordenschat in woordfamilies — een basiswoord en zijn veelgebruikte afleidingen. De CEFR-niveaus corresponderen met de onderstaande drempelwaarden.`,
       vocabFactsCallout: `De sprong van B1 naar B2 betekent het leren van ongeveer <strong>2.000 woordfamilies meer</strong>. Bij 5 nieuwe woorden per dag duurt dat ongeveer een jaar.`,
       langSection: null as LangSection | null,
       whoTitle: `Voor wie deze pagina is`,
-      who: `Deze pagina is voor ${audience}. De focus ligt op woordenschat: woorden die je tegenkomt tijdens lezen, luisteren, werken, studeren of dagelijks leven.`,
+      who: `Deze pagina is voor ${audience}. We richten ons specifiek op de praktijk: woorden die je echt tegenkomt tijdens het lezen, luisteren, op je werk of in het dagelijks leven.`,
       whoItems: [
-        `${displayLanguage} leren voor werk, studie of dagelijks leven`,
+        `${displayLanguage} leren voor werk, studie of het dagelijks leven`,
         `Voorbereiding op een taalexamen`,
         `Gevorderde leerders die steeds dezelfde woorden vergeten`,
         `Iedereen voor wie Anki te veel werk was`
       ] as string[],
-      faqTitle: `${vocabPhrase} vragen`,
+      faqTitle: `Veelgestelde vragen over de ${vocabPhrase}`,
       ctaEyebrow: 'Gratis · Geen account · Offline',
-      cta: `Begin met ${vocabPhrase} leren in OpenWords.`,
+      cta: `Begin met het leren van de ${vocabPhrase} in OpenWords.`,
       ctaSub: `Elk woord dat je opzoekt is één tik verwijderd van een flashcard.`,
       otherLangsLabel: 'Ook beschikbaar voor',
       previewWord: null as string | null,
@@ -394,10 +394,10 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
     ru: {
       title: `Учить ${vocabPhrase} — Словарь и интервальные повторения | OpenWords`,
       description: `Учите ${vocabPhrase} с глубоким словарём, карточками в одно нажатие и интервальными повторениями. Бесплатно, без регистрации, работает офлайн.`,
-      h1: `Учите ${vocabPhrase},\nкоторые запомните.`,
-      heroH1Em: 'которые запомните.',
+      h1: `Учите ${vocabPhrase},\nтак, чтобы они оставались в памяти.`,
+      heroH1Em: 'так, чтобы они оставались в памяти.',
       heroNote: 'Полностью бесплатно · Без регистрации · Работает офлайн',
-      subtitle: `Сохраняйте нужные значения как карточки одним нажатием. OpenWords помогает учить ${localLanguage} лексику с контекстом и интервальными повторениями.`,
+      subtitle: `Сохраняйте нужные значения как карточки в один тап. OpenWords помогает учить ${localLanguage.replace(/ий$/, 'ую')} лексику в контексте и с помощью интервальных повторений.`,
       howEyebrow: 'Как это работает',
       howH2: 'Найдите, сохраните, повторяйте.\nНоль настроек.',
       howSteps: [
@@ -405,20 +405,20 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
         { h3: 'Сохраните встреченное значение.', body: 'Одно нажатие, без ввода текста. Это точное значение становится карточкой.' },
         { h3: 'Повторяйте до того, как забудете.', body: 'Интервальные повторения возвращают каждое слово в нужный момент. Пять форматов карточек — слово закрепляется с разных сторон.' }
       ] as HowStep[],
-      vocabFactsEyebrow: `Исследования ${vocabPhrase}`,
-      vocabFactsH2: `Сколько слов ${localLanguage} нужно на самом деле?`,
+      vocabFactsEyebrow: 'Исследования словарного запаса',
+      vocabFactsH2: `Сколько ${localLanguage.replace(/ий$/, 'их')} слов нужно знать на самом деле?`,
       vocabFactsBody: `Исследователи словарного запаса измеряют его размер в словарных семьях — корневом слове и его распространённых формах. Уровни CEFR примерно соответствуют приведённым порогам.`,
       vocabFactsCallout: `Переход с B1 на B2 означает изучение примерно <strong>2 000 дополнительных словарных семей</strong>. При 5 новых словах в день это около года.`,
       langSection: null as LangSection | null,
       whoTitle: `Для кого эта страница`,
-      who: `Эта страница для ${audience}. Фокус — лексика: слова, которые встречаются в чтении, аудировании, работе, учёбе и повседневной жизни.`,
+      who: `Эта страница создана для ${audience}. Мы фокусируемся на практике: словах, которые вы реально встречаете в текстах, аудио, на рабочем месте и в повседневной жизни.`,
       whoItems: [
-        `Изучение ${localLanguage} для работы, учёбы или жизни`,
+        `Изучение ${localLanguage.replace(/ий$/, 'ого')} для работы, учёбы или жизни`,
         `Подготовка к языковому экзамену`,
         `Продвинутые учащиеся, которые постоянно забывают одни и те же слова`,
         `Те, кому Anki показался слишком трудоёмким`
       ] as string[],
-      faqTitle: `Вопросы о ${vocabPhrase}`,
+      faqTitle: `Вопросы об изучении ${localLanguage.replace(/ий$/, 'их')} слов`,
       ctaEyebrow: 'Бесплатно · Без регистрации · Офлайн',
       cta: `Начните учить ${vocabPhrase} в OpenWords.`,
       ctaSub: `Каждое слово, которое вы ищете, — одно нажатие от того, чтобы стать карточкой.`,
@@ -467,13 +467,8 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
         ]
       },
       pl: {
-        h1: 'Naucz się słownictwa angielskiego,\nktóre zostaje.',
-        heroH1Em: 'które zostaje.',
-        subtitle: 'Głęboki słownik angielski z fiszkami jednym dotknięciem i powtórkami interwałowymi. Zapisuj słowa, które spotykasz podczas czytania, pracy lub nauki — i powtarzaj je tuż przed tym, zanim je zapomnisz.',
-        whoTitle: 'Angielski, którego naprawdę potrzebujesz.',
-        who: 'Większość aplikacji do nauki słownictwa angielskiego uczy tych samych tysiąca słów, które wszyscy już znają. OpenWords zaczyna od słów, które napotykasz — w artykułach, na spotkaniach, na wykładach, w książkach — i zamienia każde z nich w fiszkę w momencie, gdy je wyszukujesz.',
         whoItems: [
-          'Nienatywni użytkownicy budujący angielski codzienny, akademicki lub zawodowy',
+          'Osoby uczące się angielskiego do pracy, podróży lub nauki',
           'Kandydaci na egzaminy IELTS, TOEFL lub Cambridge',
           'Zaawansowani czytelnicy, którzy ciągle spotykają słowa C1–C2 i wciąż je zapominają',
           'Każdy, kto próbował Anki i uznał konfigurację za zbyt pracochłonną'
@@ -488,13 +483,8 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
         ]
       },
       nl: {
-        h1: 'Leer Engelse woordenschat\ndie blijft hangen.',
-        heroH1Em: 'die blijft hangen.',
-        subtitle: 'Een diep Engels woordenboek met flashcards met een tik en gespreide herhaling. Bewaar de woorden die je tegenkomt tijdens lezen, werken of studeren — en herhaal ze net voordat je ze zou vergeten.',
-        whoTitle: 'Voor het Engels dat je echt nodig hebt.',
-        who: 'De meeste woordenschat-apps voor Engels leren dezelfde duizend woorden die iedereen al kent. OpenWords begint bij de woorden die je tegenkomt — in artikelen, in vergaderingen, in colleges, in boeken — en maakt van elk woord een flashcard op het moment dat je het opzoekt.',
         whoItems: [
-          'Niet-moedertaalsprekers die alledaags, academisch of professioneel Engels opbouwen',
+          'Engels leren voor werk, studie of het dagelijks leven',
           'IELTS-, TOEFL- of Cambridge-examenkandidaten',
           'Gevorderde lezers die C1–C2-woorden blijven tegenkomen en vergeten',
           'Iedereen die Anki heeft geprobeerd maar het te veel werk vond'
@@ -509,13 +499,8 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
         ]
       },
       ru: {
-        h1: 'Учите английские слова,\nкоторые остаются.',
-        heroH1Em: 'которые остаются.',
-        subtitle: 'Глубокий английский словарь с карточками в одно нажатие и интервальными повторениями. Сохраняйте слова, которые встречаете при чтении, работе или учёбе — и повторяйте их прямо перед тем, как забудете.',
-        whoTitle: 'Для английского, который вам действительно нужен.',
-        who: 'Большинство приложений для изучения английской лексики учат одним и тем же тысячам слов, которые все уже знают. OpenWords начинается со слов, которые вы встречаете — в статьях, на встречах, на лекциях, в книгах — и превращает каждое в карточку в момент поиска.',
         whoItems: [
-          'Не-носители языка, строящие повседневный, академический или профессиональный английский',
+          'Изучение английского для работы, учёбы или жизни',
           'Кандидаты на экзамены IELTS, TOEFL или Cambridge',
           'Продвинутые читатели, которые постоянно встречают слова C1–C2 и забывают их',
           'Те, кто пробовал Anki, но нашёл его слишком сложным в настройке'
@@ -632,6 +617,10 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
           { level: 'A2', pos: 'noun', definition: 'A fastener with two rows of teeth closed or opened by sliding a tab; a zip.', example: 'Zsuń zamek w kurtce, bo jest zimno.' },
           { level: 'B1', pos: 'noun', definition: 'The locking mechanism of a firearm.', example: 'Zamek strzelby był zardzewiały.' }
         ]
+      },
+      pl: {
+        subtitle: 'Zapisuj słowa jako fiszki jednym dotknięciem. OpenWords pomaga skutecznie uczyć się polskiego słownictwa w kontekście i z wykorzystaniem powtórek interwałowych.',
+        who: 'Ta strona powstała z myślą o uczniach, studentach oraz wszystkich tych, którzy chcą świadomie i precyzyjnie poszerzać swój zasób słownictwa w języku polskim. Skupiamy się na bogactwie językowym – słowach, które realnie napotykasz podczas czytania, słuchania, w pracy, szkole i życiu codziennym.',
       }
     },
     russian: {

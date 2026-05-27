@@ -76,7 +76,7 @@ const flagMap: Record<LanguageSlug, string> = {
     <section class="how">
       <div class="container">
         <div class="how__inner">
-          <div class="how__text reveal">
+          <div class="how__text">
             <div class="section-eyebrow">{copy.howEyebrow}</div>
             {copy.howH2.split('\n').map((line, i) => (
               <h2 class="how__h2" style={i > 0 ? 'margin-top:0' : ''}>{line}</h2>
@@ -95,7 +95,7 @@ const flagMap: Record<LanguageSlug, string> = {
           </div>
 
           {copy.previewWord && copy.previewSenses && (
-            <div class="how__visual reveal d1">
+            <div class="how__visual">
               <div class="word-card" role="region" aria-label={`Dictionary entry for '${copy.previewWord}'`}>
                 <div class="word-card__head">
                   <div class="word-card__word">{copy.previewWord}</div>
@@ -792,13 +792,4 @@ const flagMap: Record<LanguageSlug, string> = {
   }, { threshold: 0.1 });
   document.querySelectorAll('.reveal').forEach(el => revObs.observe(el));
 
-  document.querySelectorAll('details.sense').forEach(d => {
-    d.addEventListener('toggle', () => {
-      if ((d as HTMLDetailsElement).open) {
-        document.querySelectorAll('details.sense').forEach(other => {
-          if (other !== d) (other as HTMLDetailsElement).open = false;
-        });
-      }
-    });
-  });
 </script>
