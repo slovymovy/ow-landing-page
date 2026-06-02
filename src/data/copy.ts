@@ -686,39 +686,47 @@ export function homeFaq(locale: LocaleCode) {
   const faqs = {
     en: [
       ['What is OpenWords?', 'A vocabulary app for Dutch, English, Polish, and Russian. You look up a word, save the exact meaning in one tap, and the app brings it back at the right moment so you actually remember it.'],
+      ['Is OpenWords good for beginners?', 'OpenWords works for any level — beginners included. Start with the most common words, save what you encounter, and build from there. It\'s not a substitute for grammar lessons or speaking practice — OpenWords is your vocabulary partner.'],
       ['Is it really free?', 'Yes. No subscriptions, no paywalls, no premium tier waiting behind a feature.'],
       ['Do I need an account?', 'No. No email, no sign-up. Your saved words live on your phone.'],
       ['Does it work offline?', 'Review works offline — once a word is saved, you can study it anywhere. Looking up new words needs internet.'],
-      ['Where does the dictionary data come from?', 'From Wiktionary, the open multilingual dictionary, via the kaikki.org project. That\'s why entries are deep, multilingual, and free of licensing fees.'],
-      ['How is OpenWords different from Anki?', 'Anki is powerful but you build everything yourself — decks, cards, schedules. OpenWords does that work for you. Look up a word, tap save, and it joins your review queue automatically.'],
-      ['How is OpenWords different from Quizlet?', 'Quizlet is built around study sets someone else made. OpenWords starts with the dictionary: you save the words you actually meet, in the exact meaning you met them.']
+      ['Where does the dictionary data come from?', 'From Wiktionary\'s open multilingual dictionary, via kaikki.org, cleaned and completed with AI — so entries are deep, multilingual, and completely free.'],
+      ['How is OpenWords different from Anki?', 'Anki is great and powerful, but you build everything yourself — or rely on someone else\'s decks. OpenWords takes care of that. Look up a word, tap save, it\'s in your queue. Multiple review formats, FSRS scheduling, zero setup.'],
+      ['How is OpenWords different from Quizlet?', 'Quizlet gives you other people\'s flashcards. OpenWords starts with a real dictionary: full definitions, examples, usage notes — then turns what you save into smart, scheduled review. Multiple card formats, not just front-back drills — you practice exactly what you saved.'],
+      ['How is OpenWords different from Google Translate?', 'Google Translate is great for texts, sentences, and photo translation. OpenWords is for vocabulary building: every meaning, level, forms, and usage — save a word once, remember it through repetition.']
     ],
     pl: [
       ['Czym jest OpenWords?', 'To nowoczesna aplikacja do słownictwa dla języka niderlandzkiego, angielskiego, polskiego i rosyjskiego. Wyszukujesz słowo, zapisujesz jego dokładne znaczenie jednym dotknięciem, a aplikacja przypomina Ci je w optymalnym momencie, aby naprawdę zapadło w pamięć.'],
+      ['Czy OpenWords jest odpowiedni dla początkujących?', 'OpenWords działa na każdym poziomie — także dla początkujących. Zacznij od najczęstszych słów, zapisuj to, co napotykasz, i buduj od tego miejsca. To nie zastępstwo dla lekcji gramatyki ani praktyki mówienia — OpenWords to twój partner do nauki słownictwa.'],
       ['Czy aplikacja jest naprawdę darmowa?', 'Tak. Nie ma tu subskrypcji, paywalli ani funkcji premium ukrytych za ścianą płatności.'],
       ['Czy muszę zakładać konto?', 'Nie. Nie wymagamy e-maila ani rejestracji. Wszystkie zapisane słówka są przechowywane bezpiecznie na Twoim telefonie.'],
       ['Czy aplikacja działa offline?', 'Sesje powtórek działają offline – raz zapisane słowo możesz powtarzać w dowolnym miejscu na świecie. Połączenie z internetem jest potrzebne jedynie do wyszukiwania nowych słówek w słowniku.'],
-      ['Skąd pochodzą dane słownikowe?', 'Korzystamy z Wikisłownika (Wiktionary), otwartego, wielojęzycznego projektu, poprzez platformę kaikki.org. Dzięki temu definicje są niezwykle szczegółowe, wielojęzyczne i wolne od opłat licencyjnych.'],
-      ['Czym OpenWords różni się od Anki?', 'Anki ma ogromne możliwości, ale wymaga zrobienia wszystkiego samemu: od tworzenia talii, przez projektowanie fiszek, po konfigurację algorytmu. OpenWords robi to za Ciebie. Wyszukujesz słowo, klikasz „Zapisz", a ono automatycznie trafia do kolejki powtórek.'],
-      ['Czym OpenWords różni się od Quizlet?', 'Quizlet bazuje głównie na zestawach do nauki stworzonych przez innych użytkowników. OpenWords wychodzi od słownika: zapisujesz dokładnie te słowa, na które sam trafiasz, w precyzyjnym znaczeniu, w jakim wystąpiły w Twoim tekście.']
+      ['Skąd pochodzą dane słownikowe?', 'Ze słownika Wiktionary, otwartego wielojęzycznego słownika, przez kaikki.org, oczyszczone i uzupełnione przez AI — tak że wpisy są szczegółowe, wielojęzyczne i całkowicie bezpłatne.'],
+      ['Czym OpenWords różni się od Anki?', 'Anki jest świetne i potężne, ale wszystko budujesz sam — albo korzystasz z cudzych talii. OpenWords robi to za ciebie. Wyszukaj słowo, dotknij zapisz — i trafia do kolejki powtórek. Wiele formatów, harmonogram FSRS, zero konfiguracji.'],
+      ['Czym OpenWords różni się od Quizlet?', 'Quizlet daje cudze fiszki. OpenWords zaczyna od prawdziwego słownika: pełne definicje, przykłady, uwagi o użyciu — i zamienia zapisane słowa w inteligentne, zaplanowane powtórki. Kilka formatów ćwiczeń, nie tylko „słowo — tłumaczenie" — praktyka dokładnie tego, co zostało zapisane.'],
+      ['Czym OpenWords różni się od Google Translate?', 'Google Translate świetnie radzi sobie z tekstami, zdaniami i tłumaczeniem zdjęć. OpenWords służy do budowania słownictwa: każde znaczenie, poziom, formy i użycie — zapisz słowo raz i zapamiętaj je przez powtarzanie.']
     ],
     nl: [
       ['Wat is OpenWords?', 'Een effectieve woordenschat-app voor Nederlands, Engels, Pools en Russisch. Je zoekt een woord op, slaat de exacte betekenis op met één tik, en de app herinnert je er op het juiste moment aan zodat je het ook echt onthoudt.'],
+      ['Is OpenWords geschikt voor beginners?', 'OpenWords werkt voor elk niveau — ook voor beginners. Begin met de meest voorkomende woorden, sla op wat je tegenkomt en bouw van daaruit verder. Het is geen vervanging voor grammaticalessen of spreekoefeningen — OpenWords is jouw woordenschatpartner.'],
       ['Is het echt gratis?', 'Ja. Er zijn geen abonnementen, geen betaalmuren en er zitten geen premium-functies achter een slotje verborgen.'],
       ['Heb ik een account nodig?', 'Nee. Geen e-mailadres, geen registratie. Je opgeslagen woorden blijven veilig op je eigen telefoon staan.'],
       ['Werkt de app offline?', 'Woorden herhalen en studeren werkt volledig offline – eenmaal opgeslagen kun je overal aan de slag. Alleen voor het opzoeken van nieuwe woorden is een internetverbinding nodig.'],
-      ['Waar komen de woordenboekgegevens vandaan?', 'Van Wiktionary, het open meertalige woordenboek, via het kaikki.org-project. Hierdoor zijn de definities uitgebreid, meertalig en volledig vrij van licentiekosten.'],
-      ['Hoe verschilt OpenWords van Anki?', 'Anki is krachtig, maar je moet alles zelf bouwen: van decks en kaarten tot het herhaalschema. OpenWords neemt je dat werk uit handen. Je zoekt een woord op, tikt op opslaan, en het wordt automatisch aan je herhaallijst toegevoegd.'],
-      ['Hoe verschilt OpenWords van Quizlet?', 'Quizlet draait om studielijsten die door anderen zijn gemaakt. OpenWords begint bij het woordenboek: je slaat de woorden op die je zelf in het wild tegenkomt, in de exacte betekenis van de context waarin je ze las of hoorde.']
+      ['Waar komen de woordenboekgegevens vandaan?', 'Van Wiktionary\'s open meertalige woordenboek, via kaikki.org, opgeschoond en aangevuld met AI — zodat woorden diepgaand, meertalig en volledig gratis zijn.'],
+      ['Hoe verschilt OpenWords van Anki?', 'Anki is geweldig en krachtig, maar je bouwt alles zelf — of je gebruikt de decks van iemand anders. OpenWords regelt dat voor je. Zoek een woord op, tik op opslaan, en het staat in je wachtrij. Meerdere oefenvormen, FSRS-planning, geen gedoe.'],
+      ['Hoe verschilt OpenWords van Quizlet?', 'Quizlet geeft je de flashcards van anderen. OpenWords begint met een echt woordenboek: volledige definities, voorbeelden, gebruiksnotities — en zet wat je opslaat om in slimme, geplande herhaling. Meerdere oefenvormen, niet alleen voor-achterkant — je oefent precies wat je hebt opgeslagen.'],
+      ['Hoe verschilt OpenWords van Google Translate?', 'Google Translate is geweldig voor teksten, zinnen en fotovertaling. OpenWords is voor woordenschatopbouw: elke betekenis, niveau, vormen en gebruik — sla een woord één keer op en onthoud het door herhaling.']
     ],
     ru: [
       ['Что такое OpenWords?', 'Это удобное приложение для изучения слов в английском, нидерландском, польском и русском языках. Вы ищете слово, сохраняете его точный перевод в один тап, а приложение напоминает его в нужный момент, чтобы вы действительно его запомнили.'],
+      ['Подходит ли OpenWords для начинающих?', 'OpenWords работает на любом уровне — в том числе для начинающих. Начни с самых частотных слов, сохраняй то, что встречается, и постепенно расширяй словарный запас. Это не замена урокам грамматики или разговорной практике — OpenWords это твой партнёр по словарному запасу.'],
       ['Приложение правда бесплатное?', 'Да. Здесь нет подписок, ограничений функционала (paywall) или скрытых премиум-тарифов.'],
       ['Нужен ли аккаунт?', 'Нет. Мы не требуем email или регистрацию. Все ваши сохранённые слова хранятся локально на вашем телефоне.'],
       ['Работает ли приложение без интернета?', 'Повторение слов отлично работает офлайн — вы можете учить сохранённые карточки где угодно. Подключение к сети требуется только для поиска новых слов в словаре.'],
-      ['Откуда берутся данные для словаря?', 'Мы используем Викисловарь (Wiktionary) — открытый многоязычный проект — через платформу kaikki.org. Благодаря этому наши словарные статьи очень глубокие, подробные и не требуют лицензионных сборов.'],
-      ['Чем OpenWords отличается от Anki?', 'Anки — мощный инструмент, но там всё приходится настраивать вручную: создавать колоды, верстать карточки и выставлять интервалы. OpenWords делает эту рутину за вас. Нашли слово, нажали «Сохранить» — и оно уже в очереди на повторение.'],
-      ['Чем OpenWords отличается от Quizlet?', 'Quizlet построен вокруг чужих готовых наборов для заучивания. В OpenWords всё начинается со словаря: вы сохраняете именно те слова, на которые наткнулись сами, и именно в том контекстном значении, в котором они вам встретились.']
+      ['Откуда берутся данные для словаря?', 'Из открытого многоязычного словаря Wiktionary, через kaikki.org, очищено и дополнено с помощью ИИ — записи подробные, многоязычные и полностью бесплатные.'],
+      ['Чем OpenWords отличается от Anki?', 'Anki — отличный и мощный инструмент, но всё приходится строить самому — или использовать чужие колоды. OpenWords берёт это на себя. Найди слово, нажми «сохранить» — и оно уже в очереди на повторение. Несколько форматов, планирование по FSRS, никаких лишних усилий.'],
+      ['Чем OpenWords отличается от Quizlet?', 'Quizlet даёт чужие карточки. OpenWords начинается с настоящего словаря: полные определения, примеры, пометки об употреблении — и превращает сохранённые слова в умные, запланированные повторения. Несколько форматов упражнений, не только «слово — перевод» — отрабатываешь именно то, что сохранил.'],
+      ['Чем OpenWords отличается от Google Translate?', 'Google Переводчик отлично справляется с текстами, предложениями и переводом с фото. OpenWords — для пополнения словарного запаса: все значения, уровень, формы и употребление — сохрани слово один раз и запомни через повторение.']
     ]
   };
 
