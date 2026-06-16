@@ -29,12 +29,17 @@ const { title, items } = Astro.props;
 <style>
   .faq {
     background: #0f1118;
-    padding: 96px 0;
+    padding: 72px 0;
   }
 
   .section-head {
     text-align: center;
-    margin-bottom: 48px;
+    margin-bottom: 36px;
+  }
+
+  @media (max-width: 640px) {
+    .faq { padding: 40px 0; }
+    .section-head { margin-bottom: 22px; }
   }
 
   .section-eyebrow {

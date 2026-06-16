@@ -23,25 +23,33 @@ const copy = homeCopy[locale];
 </div>
 
 <style>
+  /* Compact 2×2 grid on phones — avoids tall stacked cards / dead space. */
   .lang-grid {
     display: grid;
-    gap: 12px;
-    grid-template-columns: 1fr;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
   }
 
-  @media (min-width: 560px) { .lang-grid { grid-template-columns: 1fr 1fr; } }
   @media (min-width: 960px) { .lang-grid { grid-template-columns: repeat(4, 1fr); } }
 
   .lang-card {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 28px 24px 24px;
+    gap: 6px;
+    padding: 16px 16px 14px;
     background: #1C1F2A;
     border: 1px solid rgba(255, 255, 255, .07);
-    border-radius: 20px;
+    border-radius: 16px;
     text-decoration: none;
     transition: border-color .2s, transform .2s, box-shadow .2s;
+  }
+
+  @media (min-width: 560px) {
+    .lang-card { gap: 8px; padding: 22px 20px 18px; border-radius: 18px; }
+  }
+
+  @media (min-width: 960px) {
+    .lang-card { gap: 10px; padding: 28px 24px 24px; border-radius: 20px; }
   }
 
   .lang-card:hover {
@@ -50,22 +58,28 @@ const copy = homeCopy[locale];
     box-shadow: 0 8px 28px rgba(0, 0, 0, .3);
   }
 
-  .lang-card__flag { font-size: 2rem; line-height: 1; }
+  .lang-card__flag { font-size: 1.625rem; line-height: 1; }
+
+  @media (min-width: 560px) { .lang-card__flag { font-size: 2rem; } }
 
   .lang-card__name {
     font-family: Lora, Georgia, serif;
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 600;
     color: #E2E4ED;
   }
+
+  @media (min-width: 560px) { .lang-card__name { font-size: 1.125rem; } }
 
   .lang-card__cta {
     display: inline-flex;
     align-items: center;
     gap: 5px;
-    font-size: .875rem;
+    font-size: .8125rem;
     font-weight: 600;
     color: #C5A367;
-    margin-top: 4px;
+    margin-top: 2px;
   }
+
+  @media (min-width: 560px) { .lang-card__cta { font-size: .875rem; margin-top: 4px; } }
 </style>

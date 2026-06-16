@@ -3,3 +3,4 @@
 node_modules/
 .astro/
 dist/
+design_handoff_mobile_first/
