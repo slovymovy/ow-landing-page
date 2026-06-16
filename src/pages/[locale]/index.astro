@@ -3,6 +3,7 @@ import FAQ from '../../components/FAQ.astro';
 import Footer from '../../components/Footer.astro';
 import Header from '../../components/Header.astro';
 import LanguageCards from '../../components/LanguageCards.astro';
+import MobileDownloadBar from '../../components/MobileDownloadBar.astro';
 import StoreButtons from '../../components/StoreButtons.astro';
 import { homeCopy, homeFaq } from '../../data/copy';
 import { languageSlugs, languages, locales, type LocaleCode } from '../../data/site';
@@ -17,8 +18,6 @@ export function getStaticPaths() {
 const locale = Astro.params.locale as LocaleCode;
 const copy = homeCopy[locale];
 const faq = homeFaq(locale);
-const h1Pre = copy.h1.slice(0, copy.h1.length - copy.heroH1Em.length);
-const problemPre = copy.problemTitle.slice(0, copy.problemTitle.length - copy.problemTitleEm.length);
 ---
 <BaseLayout title={copy.title} description={copy.description} locale={locale} path="/" faq={faq}>
   <Header locale={locale} />
@@ -31,9 +30,9 @@ const problemPre = copy.problemTitle.slice(0, copy.problemTitle.length - copy.pr
           <div class="hero__text">
             <div class="hero__eyebrow">
               <span class="eyebrow-dot" aria-hidden="true"></span>
-              {copy.eyebrow}
+              {copy.heroEyebrow}
             </div>
-            <h1 class="hero__h1">{h1Pre}<em>{copy.heroH1Em}</em></h1>
+            <h1 class="hero__h1" set:html={copy.heroH1Html}></h1>
             <p class="hero__sub">{copy.subtitle}</p>
             <div class="hero__actions">
               <StoreButtons locale={locale} />
@@ -56,8 +55,26 @@ const problemPre = copy.problemTitle.slice(0, copy.problemTitle.length - copy.pr
 
     <section class="problem">
       <div class="container">
-        <h2 class="problem__quote">{problemPre}<em>{copy.problemTitleEm}</em></h2>
-        <p class="problem__body">{copy.problem}</p>
+        <div class="problem__head">
+          <h2 class="problem__title" set:html={copy.problemTitleHtml}></h2>
+          <p class="problem__lead">{copy.problemLead}</p>
+        </div>
+
+        <div class="ba">
+          <div class="ba__card ba__card--before">
+            <div class="ba__label">{copy.beforeLabel}</div>
+            <p class="ba__text">{copy.beforeText}</p>
+          </div>
+
+          <div class="ba__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+          </div>
+
+          <div class="ba__card ba__card--after">
+            <div class="ba__label ba__label--gold">{copy.afterLabel}</div>
+            <p class="ba__text">{copy.afterText}</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -69,7 +86,6 @@ const problemPre = copy.problemTitle.slice(0, copy.problemTitle.length - copy.pr
         <div class="section-head">
           <div class="section-eyebrow">{copy.howItWorksEyebrow}</div>
           <h2 class="section-h2">{copy.howItWorksTitle}</h2>
-          <p class="section-sub">{copy.howItWorksSub}</p>
         </div>
 
         <div class="how__flow" aria-hidden="true">
@@ -87,6 +103,7 @@ const problemPre = copy.problemTitle.slice(0, copy.problemTitle.length - copy.pr
             <span class="how__num" aria-hidden="true">01</span>
             <h3 class="how__h3">{copy.loopTitle}</h3>
             <p class="how__body">{copy.loop}</p>
+            <p class="how__body">{copy.loop2}</p>
           </div>
           <div class="how__visual">
             <div class="phone-wrap">
@@ -208,16 +225,25 @@ const problemPre = copy.problemTitle.slice(0, copy.problemTitle.length - copy.pr
 
     <div class="divider"></div>
 
-    <section class="trust">
+    <section class="forme">
       <div class="container">
-        <div class="trust__grid">
-          {copy.facts.map(([val, desc]) => (
-            <div class="trust__cell">
-              <div class="trust__val">{val}</div>
-              <div class="trust__desc">{desc}</div>
-            </div>
-          ))}
+        <div class="section-head">
+          <div class="section-eyebrow">{copy.formeEyebrow}</div>
+          <h2 class="section-h2">{copy.formeTitle}</h2>
         </div>
+        <ul class="forme__list">
+          {copy.formeItems.map((item) => (
+            <li class="forme__item">
+              <span class="forme__check" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+              </span>
+              <div>
+                <div class="forme__lead">{item.lead}</div>
+                <div class="forme__desc">{item.desc}</div>
+              </div>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
 
@@ -258,6 +284,8 @@ const problemPre = copy.problemTitle.slice(0, copy.problemTitle.length - copy.pr
       </div>
     </section>
   </main>
+
+  <MobileDownloadBar locale={locale} />
 
   <Footer locale={locale} />
 </BaseLayout>
@@ -321,7 +349,7 @@ const problemPre = copy.problemTitle.slice(0, copy.problemTitle.length - copy.pr
 
   .hero__h1 {
     font-family: Lora, Georgia, serif;
-    font-size: clamp(2rem, 5.5vw, 3.375rem);
+    font-size: clamp(2.25rem, 9vw, 3.5rem);
     font-weight: 700;
     line-height: 1.12;
     letter-spacing: -.015em;
@@ -329,7 +357,7 @@ const problemPre = copy.problemTitle.slice(0, copy.problemTitle.length - copy.pr
     margin-bottom: 20px;
   }
 
-  .hero__h1 em {
+  .hero__h1 :global(em) {
     font-style: normal;
     color: #C5A367;
   }
@@ -373,6 +401,7 @@ const problemPre = copy.problemTitle.slice(0, copy.problemTitle.length - copy.pr
 
   .hero__mascot {
     width: clamp(140px, 38vw, 280px);
+    height: auto;
     margin: 0 auto;
     animation: float-mascot 6s ease-in-out infinite;
     filter: drop-shadow(0 12px 40px rgba(197, 163, 103, .18));
@@ -385,48 +414,119 @@ const problemPre = copy.problemTitle.slice(0, copy.problemTitle.length - copy.pr
 
   @media (min-width: 860px) {
     .hero {
-      min-height: 100svh;
+      min-height: auto;
     }
 
     .hero__inner {
       grid-template-columns: 1fr 360px;
       gap: 64px;
-      padding: 80px 0 100px;
+      padding: 72px 0 76px;
     }
 
     .hero__text { order: 1; }
     .hero__visual { order: 2; }
   }
 
-  /* ── PROBLEM ── */
+  /* ── PROBLEM / BEFORE-AFTER ── */
   .problem {
     background: #0f1118;
-    padding: 96px 0;
+    padding: 72px 0;
+  }
+
+  .problem__head {
     text-align: center;
+    max-width: 680px;
+    margin: 0 auto 36px;
   }
 
-  .problem__quote {
+  .problem__title {
     font-family: Lora, Georgia, serif;
-    font-size: clamp(1.5rem, 4vw, 2.625rem);
+    font-size: clamp(1.75rem, 4vw, 2.625rem);
     font-weight: 600;
-    line-height: 1.2;
+    line-height: 1.18;
     color: #E2E4ED;
-    max-width: 720px;
-    margin: 0 auto 28px;
     letter-spacing: -.01em;
+    margin-bottom: 14px;
   }
 
-  .problem__quote em {
+  .problem__title :global(em) {
     font-style: italic;
     color: #C5A367;
   }
 
-  .problem__body {
-    max-width: 640px;
-    margin: 0 auto;
+  .problem__lead {
     font-size: 1.0625rem;
-    line-height: 1.82;
+    line-height: 1.7;
     color: #9499B0;
+    margin: 0;
+  }
+
+  .ba {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    max-width: 880px;
+    margin: 0 auto;
+    align-items: stretch;
+  }
+
+  @media (min-width: 760px) {
+    .ba { grid-template-columns: 1fr auto 1fr; gap: 18px; align-items: center; }
+  }
+
+  .ba__card {
+    border-radius: 20px;
+    padding: 32px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    height: 100%;
+    justify-content: center;
+  }
+
+  .ba__card--before {
+    background: #191C26;
+    border: 1px solid rgba(255, 255, 255, .07);
+  }
+
+  .ba__card--after {
+    background: linear-gradient(180deg, rgba(197, 163, 103, .12), rgba(197, 163, 103, .03));
+    border: 1px solid rgba(197, 163, 103, .20);
+    box-shadow: 0 20px 54px rgba(0, 0, 0, .4);
+  }
+
+  .ba__label {
+    font-size: .6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .11em;
+    color: #555a70;
+  }
+
+  .ba__label--gold { color: #C5A367; }
+
+  .ba__text {
+    font-size: clamp(1.125rem, 2.4vw, 1.375rem);
+    font-weight: 500;
+    line-height: 1.4;
+    color: #9499B0;
+    letter-spacing: -.005em;
+    margin: 0;
+  }
+
+  .ba__card--after .ba__text { color: #E2E4ED; }
+
+  .ba__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #C5A367;
+  }
+
+  .ba__arrow svg { width: 26px; height: 26px; }
+
+  @media (max-width: 759px) {
+    .ba__arrow { transform: rotate(90deg); margin: -2px 0; }
   }
 
   .divider {
@@ -435,9 +535,9 @@ const problemPre = copy.problemTitle.slice(0, copy.problemTitle.length - copy.pr
   }
 
   /* ── HOW IT WORKS ── */
-  .how { padding: 80px 0 40px; }
+  .how { padding: 56px 0 32px; }
 
-  .section-head { text-align: center; margin-bottom: 48px; }
+  .section-head { text-align: center; margin-bottom: 36px; }
 
   .section-eyebrow {
     font-size: .6875rem;
@@ -502,7 +602,7 @@ const problemPre = copy.problemTitle.slice(0, copy.problemTitle.length - copy.pr
     grid-template-columns: 1fr;
     gap: 40px;
     align-items: center;
-    padding: 64px 0;
+    padding: 56px 0;
     border-top: 1px solid rgba(255, 255, 255, .07);
   }
 
@@ -726,57 +826,72 @@ const problemPre = copy.problemTitle.slice(0, copy.problemTitle.length - copy.pr
   }
 
   /* ── LANGUAGES ── */
-  .languages { padding: 96px 0; }
+  .languages { padding: 72px 0; }
 
-  /* ── TRUST STRIP ── */
-  .trust {
-    background: #0f1118;
-    padding: 80px 0;
-  }
+  /* ── IS IT FOR YOU ── */
+  .forme { padding: 72px 0; }
 
-  .trust__grid {
-    display: grid;
-    gap: 2px;
-    grid-template-columns: 1fr;
-  }
-
-  @media (min-width: 600px) {
-    .trust__grid { grid-template-columns: repeat(3, 1fr); }
-  }
-
-  .trust__cell {
-    background: #1C1F2A;
-    padding: 48px 32px;
-    text-align: center;
+  .forme__list {
+    max-width: 680px;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 14px;
   }
 
-  .trust__cell:first-child { border-radius: 20px 20px 0 0; }
-  .trust__cell:last-child  { border-radius: 0 0 20px 20px; }
-
-  @media (min-width: 600px) {
-    .trust__cell:first-child { border-radius: 20px 0 0 20px; }
-    .trust__cell:last-child  { border-radius: 0 20px 20px 0; }
+  .forme__item {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    background: #1C1F2A;
+    border: 1px solid rgba(255, 255, 255, .07);
+    border-radius: 20px;
+    padding: 24px 26px;
   }
 
-  .trust__val {
-    font-family: Lora, Georgia, serif;
-    font-size: 2rem;
-    font-weight: 700;
+  .forme__check {
+    flex-shrink: 0;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: rgba(197, 163, 103, .10);
+    border: 1px solid rgba(197, 163, 103, .20);
     color: #C5A367;
-    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
   }
 
-  .trust__desc {
-    font-size: .9375rem;
+  .forme__check svg { width: 18px; height: 18px; }
+
+  .forme__lead {
+    font-family: Lora, Georgia, serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #E2E4ED;
+    margin-bottom: 5px;
+    letter-spacing: -.01em;
+  }
+
+  .forme__desc {
+    font-size: 1rem;
+    line-height: 1.6;
     color: #9499B0;
+  }
+
+  @media (max-width: 640px) {
+    .forme { padding: 40px 0; }
+    .forme__list { gap: 12px; }
+    .forme__item { padding: 20px; gap: 14px; }
+    .forme__lead { font-size: 1.125rem; }
   }
 
   /* ── FINAL CTA ── */
   .cta {
-    padding: 96px 0;
+    padding: 72px 0;
     position: relative;
     overflow: hidden;
   }
@@ -865,5 +980,67 @@ const problemPre = copy.problemTitle.slice(0, copy.problemTitle.length - copy.pr
     .cta__body { text-align: left; }
     .cta__btns :global(.store-btns) { justify-content: flex-start; }
     .cta__note { text-align: left; }
+  }
+
+  /* ════════════════════════════════════════════
+     MOBILE-FIRST REFINEMENTS
+     ~100% of traffic is mobile — the phone is the
+     canonical layout; desktop is the adaptation.
+     ════════════════════════════════════════════ */
+  .hero__inner { padding: 24px 0 36px; }
+  .hero__text { text-align: center; }
+  .hero__eyebrow { margin-bottom: 14px; }
+  .hero__h1 { margin-bottom: 16px; }
+  .hero__sub { margin: 8px auto 28px; }
+  .hero__actions { align-items: center; }
+  .hero__tagline { text-align: center; }
+  .hero__chips { justify-content: center; }
+
+  /* two equal store buttons side-by-side even on the smallest phones */
+  .hero :global(.store-btns) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 380px;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .hero :global(.store-btn) {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 11px 12px;
+    justify-content: center;
+  }
+
+  .hero :global(.store-btn__big) { font-size: .9375rem; }
+
+  /* hero mascot — small on mobile so it doesn't eat the fold */
+  .hero__mascot { width: clamp(104px, 28vw, 132px); margin: 4px auto 0; }
+
+  @media (min-width: 860px) {
+    .hero__inner { padding: 72px 0 76px; }
+    .hero__text { text-align: left; }
+    .hero__eyebrow { margin-bottom: 18px; }
+    .hero__h1 { font-size: clamp(2.75rem, 4.4vw, 3.75rem); margin-bottom: 20px; }
+    .hero__sub { margin: 8px 0 32px; }
+    .hero__actions { align-items: flex-start; }
+    .hero__tagline { text-align: left; }
+    .hero__chips { justify-content: flex-start; }
+    .hero :global(.store-btns) { flex-wrap: wrap; max-width: none; justify-content: flex-start; }
+    .hero :global(.store-btn) { flex: 0 1 auto; padding: 12px 20px; }
+    .hero__mascot { width: clamp(220px, 22vw, 300px); margin: 0 auto; }
+  }
+
+  /* tighter vertical rhythm on small screens */
+  @media (max-width: 640px) {
+    .problem { padding: 40px 0; }
+    .problem__head { margin-bottom: 24px; }
+    .how { padding: 40px 0 8px; }
+    .how__row { padding: 28px 0; gap: 22px; }
+    .card-types { padding: 40px 0 48px; }
+    .languages { padding: 40px 0; }
+    .section-head { margin-bottom: 22px; }
+    .cta { padding: 48px 0; }
   }
 </style>

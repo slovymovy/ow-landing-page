@@ -1,0 +1,120 @@
+---
+import { site } from '../data/site';
+
+interface Props {
+  locale?: 'en' | 'pl' | 'nl' | 'ru';
+}
+// locale is accepted for symmetry with other components; the store names
+// (App Store / Google Play) are brand names and stay the same in every locale.
+const { locale = 'en' } = Astro.props;
+void locale;
+---
+<div class="mobile-cta" id="mobileCta" aria-hidden="true">
+  <a class="mobile-cta__btn mobile-cta__btn--gold" href={site.appStoreUrl} target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+    </svg>
+    App Store
+  </a>
+  <a class="mobile-cta__btn mobile-cta__btn--dark" href={site.googlePlayUrl} target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M3.18 23.76A1.97 1.97 0 0 1 2 22V2C2 1.26 2.44.62 3.18.24L13.41 12 3.18 23.76zm17.35-8.6L17.4 13.5 14.83 12l2.57-1.5 3.13-1.82a2 2 0 0 1 0 3.48zM4.34 1.15l10.8 6.23L12.52 9.9 4.34 1.15zm0 21.7 8.18-8.74 2.62 2.52-10.8 6.22z"/>
+    </svg>
+    Google Play
+  </a>
+</div>
+
+<style>
+  /* Sticky bottom download bar — thumb zone, mobile only. */
+  .mobile-cta {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 180;
+    display: flex;
+    gap: 10px;
+    padding: 11px 16px calc(11px + env(safe-area-inset-bottom, 0px));
+    background: rgba(15, 17, 24, .94);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border-top: 1px solid rgba(255, 255, 255, .12);
+    transform: translateY(130%);
+    transition: transform .4s cubic-bezier(.16, 1, .3, 1);
+  }
+
+  .mobile-cta.show { transform: none; }
+
+  @media (min-width: 768px) {
+    .mobile-cta { display: none; }
+  }
+
+  .mobile-cta__btn {
+    flex: 1 1 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 48px;
+    border-radius: 14px;
+    font-weight: 700;
+    font-size: .9375rem;
+    text-decoration: none;
+  }
+
+  .mobile-cta__btn svg { width: 20px; height: 20px; flex-shrink: 0; }
+
+  .mobile-cta__btn--gold { background: #C5A367; color: #1c1407; }
+
+  .mobile-cta__btn--dark {
+    background: #191C26;
+    border: 1px solid rgba(255, 255, 255, .12);
+    color: #E2E4ED;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .mobile-cta { transition: none; }
+  }
+</style>
+
+<!-- Reserve space under the footer so the sticky bar never crowds the last
+     line of content on small screens. -->
+<style is:global>
+  @media (max-width: 767px) {
+    body { padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px)); }
+  }
+</style>
+
+<script>
+  // Appears once the user scrolls past the hero; hides again over the final
+  // CTA so its buttons never duplicate the ones already on screen.
+  const mobileCta = document.getElementById('mobileCta');
+  const hero = document.querySelector('.hero') as HTMLElement | null;
+  const finalCta = document.getElementById('download');
+  const cookieBanner = document.getElementById('cookie-banner');
+
+  if (mobileCta) {
+    let overFinalCta = false;
+    // The cookie banner is also pinned to the bottom; don't stack on top of
+    // it — wait until the user has dismissed it.
+    const cookieVisible = () => !!cookieBanner && !cookieBanner.hasAttribute('hidden');
+    const syncCta = () => {
+      const heroBottom = hero ? hero.offsetTop + hero.offsetHeight - 120 : 600;
+      const pastHero = window.scrollY > heroBottom;
+      const show = pastHero && !overFinalCta && !cookieVisible();
+      mobileCta.classList.toggle('show', show);
+      mobileCta.setAttribute('aria-hidden', String(!show));
+    };
+    window.addEventListener('scroll', syncCta, { passive: true });
+    if (finalCta) {
+      new IntersectionObserver(([entry]) => {
+        overFinalCta = entry.isIntersecting;
+        syncCta();
+      }, { threshold: 0 }).observe(finalCta);
+    }
+    if (cookieBanner) {
+      new MutationObserver(syncCta).observe(cookieBanner, { attributes: true, attributeFilter: ['hidden'] });
+    }
+    syncCta();
+  }
+</script>
