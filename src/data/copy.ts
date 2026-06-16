@@ -357,7 +357,7 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
       h1: `Learn ${name} vocabulary\nthat sticks.`,
       heroH1Em: 'that sticks.',
       heroNote: 'Free · No account required · Works offline',
-      subtitle: `A deep ${name} dictionary with one-tap flashcards and spaced repetition. Save the words you meet while reading, working, or studying — and review them right before you'd forget.`,
+      subtitle: `OpenWords is a comprehensive ${name} dictionary app with one-tap flashcards and spaced repetition. Save the words you look up while reading, working, or studying — and review them just before you forget them.`,
       howEyebrow: 'How it works',
       howH2: 'Look up, save, review.\nNo setup.',
       howSteps: [
@@ -366,11 +366,11 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
         { h3: 'Review before you forget.', body: 'Spaced repetition brings each word back at the right moment. Five card formats so the word sets from every angle.' }
       ] as HowStep[],
       vocabFactsEyebrow: `${name} vocabulary research`,
-      vocabFactsH2: `How many ${name} words do you actually need?`,
+      vocabFactsH2: `How many words do you need to be fluent in ${name}?`,
       vocabFactsBody: `Vocabulary researchers measure size in word families — a root word and its common forms. The CEFR levels map roughly to these thresholds, based on studies by Nation, Milton, and others.`,
       vocabFactsCallout: `The jump from B1 to B2 means learning roughly <strong>2,000 more word families</strong>. At 5 new words a day, that's about a year — if you review consistently and don't forget what you've already learned.`,
       langSection: null as LangSection | null,
-      whoTitle: `For the ${name} you actually need.`,
+      whoTitle: `Made for ${name} learners who want to expand their vocabulary.`,
       who: `OpenWords starts from the words you run into and turns each one into a flashcard at the moment you look it up.`,
       whoItems: [
         `Speaking, reading, or working in ${name}`,
@@ -379,7 +379,10 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
         `Anyone who found Anki too much work to set up`
       ] as string[],
       faqTitle: `${name} vocabulary questions`,
-      ctaEyebrow: 'Free · No account · Offline',
+      langsBandH2Html: 'Every meaning, in <em>your language.</em>',
+      langsBandSub: `Definitions and example sentences are translated into 9 languages — so you understand every new ${name} word from the very first tap.`,
+      wordCardCaption: 'Tap a meaning to expand',
+      ctaEyebrow: 'Available on iOS & Android',
       cta: `Start learning ${name} vocabulary with OpenWords.`,
       ctaSub: `Every ${name.toLowerCase()} word you look up is one tap away from becoming a flashcard.`,
       otherLangsLabel: 'Also available for',
@@ -393,7 +396,7 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
       h1: `Nauka ${vocabPhrase},\nktóre zostaje w głowie.`,
       heroH1Em: 'które zostaje w głowie.',
       heroNote: 'Całkowicie bezpłatnie · Bez konta · Działa offline',
-      subtitle: `Zapisuj słówka jako fiszki jednym dotknięciem. OpenWords pomaga skutecznie uczyć się ${localLanguage} słownictwa w kontekście i z wykorzystaniem powtórek interwałowych.`,
+      subtitle: `OpenWords to kompleksowa aplikacja-słownik ${localLanguage} z fiszkami tworzonymi jednym dotknięciem i powtórkami interwałowymi. Zapisuj słowa, które sprawdzasz podczas czytania, pracy lub nauki — i powtarzaj je tuż przed tym, jak wypadną Ci z głowy.`,
       howEyebrow: 'Jak to działa',
       howH2: 'Wyszukaj, zapisz, powtarzaj.\nBez konfiguracji.',
       howSteps: [
@@ -402,11 +405,11 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
         { h3: 'Powtarzaj zanim zapomnisz.', body: 'Powtórki interwałowe zwracają każde słowo we właściwym momencie. Pięć formatów kart — słowo utrwala się z wielu stron.' }
       ] as HowStep[],
       vocabFactsEyebrow: `Badania nad językiem ${localLanguage.replace('ego', 'im')}`,
-      vocabFactsH2: `Ilu ${localLanguage.replace('ego', 'ich')} słów tak naprawdę potrzebujesz?`,
+      vocabFactsH2: `Ile słów potrzebujesz, by płynnie mówić po ${displayLanguage.toLowerCase().replace(/i$/, 'u')}?`,
       vocabFactsBody: `Badacze słownictwa mierzą rozmiar zasobu słownikowego w rodzinach wyrazów — słowie podstawowym i jego pochodnych. Poziomy CEFR odpowiadają mniej więcej poniższym progom, opartym na badaniach Nation, Miltona i innych.`,
       vocabFactsCallout: `Skok z B1 na B2 oznacza naukę około <strong>2000 dodatkowych rodzin wyrazów</strong>. Przy 5 nowych słowach dziennie to mniej więcej rok — jeśli będziesz regularnie powtarzać.`,
       langSection: null as LangSection | null,
-      whoTitle: `Dla kogo jest ta strona`,
+      whoTitle: `Stworzone dla osób uczących się ${localLanguage}, które chcą poszerzyć swoje słownictwo.`,
       who: `Ta strona powstała z myślą o ${audience}. Skupiamy się na praktycznym słownictwie – wyrazach, które realnie napotykasz podczas czytania, słuchania, w pracy, szkole i życiu codziennym.`,
       whoItems: [
         `Osoby uczące się ${localLanguage} do pracy, podróży lub nauki`,
@@ -415,7 +418,10 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
         `Osoby, które uznały Anki za zbyt pracochłonne`
       ] as string[],
       faqTitle: `Najczęstsze pytania o naukę słownictwa ${localLanguage}`,
-      ctaEyebrow: 'Za darmo · Bez konta · Offline',
+      langsBandH2Html: 'Każde znaczenie w <em>Twoim języku.</em>',
+      langsBandSub: 'Definicje i przykładowe zdania są tłumaczone na 9 języków — dzięki czemu rozumiesz każde nowe słowo już od pierwszego stuknięcia.',
+      wordCardCaption: 'Stuknij znaczenie, aby je rozwinąć',
+      ctaEyebrow: 'Dostępne na iOS i Androida',
       cta: `Zacznij rozwijać swoje ${localLanguage.replace('ego', 'ie')} słownictwo z OpenWords.`,
       ctaSub: `Każde napotkane słowo to jedno dotknięcie od stania się fiszką.`,
       otherLangsLabel: 'Dostępne też dla',
@@ -429,7 +435,7 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
       h1: `${vocabPhrase} leren\ndie echt blijft hangen.`,
       heroH1Em: 'die echt blijft hangen.',
       heroNote: 'Volledig gratis · Geen account · Werkt offline',
-      subtitle: `Sla woorden met één tik op als flashcard. OpenWords helpt je de ${vocabPhrase} te oefenen in context en met gespreide herhaling.`,
+      subtitle: `OpenWords is een uitgebreide woordenboek-app voor ${displayLanguage} met flashcards in één tik en gespreide herhaling. Sla de woorden op die je opzoekt tijdens het lezen, werken of studeren — en herhaal ze net voordat je ze vergeet.`,
       howEyebrow: 'Hoe het werkt',
       howH2: 'Opzoeken, opslaan, herhalen.\nGeen configuratie.',
       howSteps: [
@@ -438,11 +444,11 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
         { h3: 'Herhaal voordat je vergeet.', body: 'Gespreide herhaling brengt elk woord terug op het juiste moment. Vijf kaartformaten zodat het vanuit meerdere kanten blijft hangen.' }
       ] as HowStep[],
       vocabFactsEyebrow: `Onderzoek naar de ${vocabPhrase}`,
-      vocabFactsH2: `Hoeveel ${vocabPhrase.replace(' woordenschat', '')} woorden heb je echt nodig?`,
+      vocabFactsH2: `Hoeveel woorden heb je nodig om vloeiend ${displayLanguage} te spreken?`,
       vocabFactsBody: `Taalonderzoekers meten woordenschat in woordfamilies — een basiswoord en zijn veelgebruikte afleidingen. De CEFR-niveaus corresponderen met de onderstaande drempelwaarden.`,
       vocabFactsCallout: `De sprong van B1 naar B2 betekent het leren van ongeveer <strong>2.000 woordfamilies meer</strong>. Bij 5 nieuwe woorden per dag duurt dat ongeveer een jaar.`,
       langSection: null as LangSection | null,
-      whoTitle: `Voor wie deze pagina is`,
+      whoTitle: `Gemaakt voor iedereen die ${displayLanguage} leert en een grotere woordenschat wil opbouwen.`,
       who: `Deze pagina is voor ${audience}. We richten ons specifiek op de praktijk: woorden die je echt tegenkomt tijdens het lezen, luisteren, op je werk of in het dagelijks leven.`,
       whoItems: [
         `${displayLanguage} leren voor werk, studie of het dagelijks leven`,
@@ -451,7 +457,10 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
         `Iedereen voor wie Anki te veel werk was`
       ] as string[],
       faqTitle: `Veelgestelde vragen over de ${vocabPhrase}`,
-      ctaEyebrow: 'Gratis · Geen account · Offline',
+      langsBandH2Html: 'Elke betekenis, in <em>jouw taal.</em>',
+      langsBandSub: 'Definities en voorbeeldzinnen zijn vertaald in 9 talen — zodat je elk nieuw woord vanaf de allereerste tik begrijpt.',
+      wordCardCaption: 'Tik op een betekenis om uit te klappen',
+      ctaEyebrow: 'Beschikbaar voor iOS & Android',
       cta: `Begin met het leren van de ${vocabPhrase} in OpenWords.`,
       ctaSub: `Elk woord dat je opzoekt is één tik verwijderd van een flashcard.`,
       otherLangsLabel: 'Ook beschikbaar voor',
@@ -465,7 +474,7 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
       h1: `Учите ${vocabPhrase},\nтак, чтобы они оставались в памяти.`,
       heroH1Em: 'так, чтобы они оставались в памяти.',
       heroNote: 'Полностью бесплатно · Без регистрации · Работает офлайн',
-      subtitle: `Сохраняйте нужные значения как карточки в один тап. OpenWords помогает учить ${localLanguage.replace(/ий$/, 'ую')} лексику в контексте и с помощью интервальных повторений.`,
+      subtitle: `OpenWords — это приложение-словарь ${localLanguage.replace(/ий$/, 'ого')} с карточками в одно нажатие и интервальными повторениями. Сохраняйте слова, которые вы ищете во время чтения, работы или учёбы, — и повторяйте их как раз перед тем, как они начнут забываться.`,
       howEyebrow: 'Как это работает',
       howH2: 'Найдите, сохраните, повторяйте.\nНоль настроек.',
       howSteps: [
@@ -474,11 +483,11 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
         { h3: 'Повторяйте до того, как забудете.', body: 'Интервальные повторения возвращают каждое слово в нужный момент. Пять форматов карточек — слово закрепляется с разных сторон.' }
       ] as HowStep[],
       vocabFactsEyebrow: 'Исследования словарного запаса',
-      vocabFactsH2: `Сколько ${localLanguage.replace(/ий$/, 'их')} слов нужно знать на самом деле?`,
+      vocabFactsH2: `Сколько слов нужно знать, чтобы свободно говорить на ${localLanguage.replace(/ий$/, 'ом')}?`,
       vocabFactsBody: `Исследователи словарного запаса измеряют его размер в словарных семьях — корневом слове и его распространённых формах. Уровни CEFR примерно соответствуют приведённым порогам.`,
       vocabFactsCallout: `Переход с B1 на B2 означает изучение примерно <strong>2 000 дополнительных словарных семей</strong>. При 5 новых словах в день это около года.`,
       langSection: null as LangSection | null,
-      whoTitle: `Для кого эта страница`,
+      whoTitle: `Создано для тех, кто учит ${localLanguage} и хочет расширить свой словарный запас.`,
       who: `Эта страница создана для ${audience}. Мы фокусируемся на практике: словах, которые вы реально встречаете в текстах, аудио, на рабочем месте и в повседневной жизни.`,
       whoItems: [
         `Изучение ${localLanguage.replace(/ий$/, 'ого')} для работы, учёбы или жизни`,
@@ -487,7 +496,10 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
         `Те, кому Anki показался слишком трудоёмким`
       ] as string[],
       faqTitle: `Вопросы об изучении ${localLanguage.replace(/ий$/, 'их')} слов`,
-      ctaEyebrow: 'Бесплатно · Без регистрации · Офлайн',
+      langsBandH2Html: 'Каждое значение — на <em>вашем языке.</em>',
+      langsBandSub: 'Определения и примеры предложений переведены на 9 языков — чтобы вы понимали каждое новое слово с первого же тапа.',
+      wordCardCaption: 'Нажмите на значение, чтобы развернуть',
+      ctaEyebrow: 'Доступно на iOS и Android',
       cta: `Начните учить ${vocabPhrase} в OpenWords.`,
       ctaSub: `Каждое слово, которое вы ищете, — одно нажатие от того, чтобы стать карточкой.`,
       otherLangsLabel: 'Также доступно для',
@@ -504,17 +516,17 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
         description: 'Build English vocabulary with a deep dictionary, one-tap flashcards, and spaced repetition. Save the exact meaning you need and review it before you forget. Free, no account, works offline.',
         h1: 'Learn English vocabulary\nthat sticks.',
         heroH1Em: 'that sticks.',
-        subtitle: 'A deep English dictionary with one-tap flashcards and spaced repetition. Save the words you meet while reading, working, or studying — and review them right before you\'d forget.',
+        subtitle: 'OpenWords is a comprehensive English dictionary app with one-tap flashcards and spaced repetition. Save the words you look up while reading, working, or studying — and review them just before you forget them.',
         howSteps: [
           { h3: 'Look it up.', body: 'Search any English word. Every meaning it carries — with CEFR level, frequency, and example. Run has dozens of senses. Get has more.' },
           { h3: 'Save the meaning you met.', body: 'One tap, no typing. That exact meaning becomes a flashcard.' },
           { h3: 'Review before you forget.', body: 'Spaced repetition brings each word back at the right moment. Five card formats so the word sets from every angle.' }
         ],
         vocabFactsEyebrow: 'English vocabulary research',
-        vocabFactsH2: 'How many English words do you actually need?',
+        vocabFactsH2: 'How many words do you need to be fluent in English?',
         vocabFactsBody: 'Vocabulary researchers measure size in word families — a root word and its common forms. The CEFR levels map roughly to these thresholds, based on studies by Nation, Milton, and others.',
         vocabFactsCallout: 'The jump from B1 to B2 means learning roughly <strong>2,000 more word families</strong>. At 5 new words a day, that\'s about a year — if you review consistently and don\'t forget what you\'ve already learned.',
-        whoTitle: 'For the English you actually need.',
+        whoTitle: 'Made for English learners who want to expand their vocabulary.',
         who: 'Most English vocabulary apps teach the same thousand words everyone already knows. OpenWords starts from the words you run into — in articles, in meetings, in lectures, in books — and turns each one into a flashcard at the moment you look it up.',
         whoItems: [
           'Non-native speakers building everyday, academic, or professional English',
@@ -589,14 +601,14 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
         description: 'Build Dutch vocabulary with a deep dictionary, one-tap flashcards, and spaced repetition. Save the exact meaning you need and review it before you forget. Free, no account, works offline.',
         h1: 'Learn Dutch vocabulary\nthat sticks.',
         heroH1Em: 'that sticks.',
-        subtitle: 'A deep Dutch dictionary with one-tap flashcards and spaced repetition. Save the words you meet while reading, studying, or working in Dutch — and review them right before you\'d forget.',
+        subtitle: 'OpenWords is a comprehensive Dutch dictionary app with one-tap flashcards and spaced repetition. Save the words you look up while reading, working, or studying — and review them just before you forget them.',
         howSteps: [
           { h3: 'Look it up.', body: 'Search any Dutch word — including separable verbs, compound nouns, and conjugated forms. Every meaning it carries, with CEFR level and example sentence.' },
           { h3: 'Save the meaning you met.', body: 'One tap, no typing. That exact meaning becomes a flashcard.' },
           { h3: 'Review before you forget.', body: 'Spaced repetition brings each word back at the right moment. Five card formats so the word sets from every angle.' }
         ],
         vocabFactsEyebrow: 'Dutch vocabulary research',
-        vocabFactsH2: 'How many Dutch words do you actually need?',
+        vocabFactsH2: 'How many words do you need to be fluent in Dutch?',
         vocabFactsBody: 'Vocabulary researchers measure Dutch word size in word families — a root word and its common derived forms. The CEFR thresholds below reflect research by Schrooten, Vermeer, and Nation adapted to Dutch.',
         vocabFactsCallout: 'The jump from B1 to B2 in Dutch means roughly <strong>2,000 more word families</strong>. At 5 new words a day, that\'s about a year — if you review consistently and don\'t forget what you\'ve already learned.',
         langSection: {
@@ -614,7 +626,7 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
           ] as [string, string][],
           gridNote: "Dutch has thousands more that don't share English roots — and even familiar words often mean something unexpected. That's where building a personal wordbook pays off."
         },
-        whoTitle: 'For the Dutch you actually need.',
+        whoTitle: 'Made for Dutch learners who want to expand their vocabulary.',
         who: 'Whether you\'re in the NT2 system, working in a Dutch company, watching Dutch TV without subtitles, or just tired of re-looking up the same words — OpenWords turns every word you look up into a flashcard at the moment you look it up.',
         whoItems: [
           'NT2 learners and inburgering exam candidates',
@@ -641,14 +653,14 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
         description: 'Build Polish vocabulary with a deep dictionary, one-tap flashcards, and spaced repetition. Save the exact meaning you need and review it before you forget. Free, no account, works offline.',
         h1: 'Learn Polish vocabulary\nthat sticks.',
         heroH1Em: 'that sticks.',
-        subtitle: 'A deep Polish dictionary with one-tap flashcards and spaced repetition. Save the words you meet while reading, studying, or working in Polish — and review them right before you\'d forget.',
+        subtitle: 'OpenWords is a comprehensive Polish dictionary app with one-tap flashcards and spaced repetition. Save the words you look up while reading, working, or studying — and review them just before you forget them.',
         howSteps: [
           { h3: 'Look it up.', body: 'Search any Polish word — including inflected forms, aspects, and derivatives. Every meaning it carries, with CEFR level and example sentence.' },
           { h3: 'Save the meaning you met.', body: 'One tap, no typing. That exact meaning becomes a flashcard.' },
           { h3: 'Review before you forget.', body: 'Spaced repetition brings each word back at the right moment. Five card formats so the word sets from every angle.' }
         ],
         vocabFactsEyebrow: 'Polish vocabulary research',
-        vocabFactsH2: 'How many Polish words do you actually need?',
+        vocabFactsH2: 'How many words do you need to be fluent in Polish?',
         vocabFactsBody: 'Vocabulary researchers measure Polish word size in word families — a root word and its inflected and derived forms. Polish is a highly inflected language, so a single family can include many surface forms.',
         vocabFactsCallout: 'The jump from B1 to B2 in Polish means roughly <strong>2,000 more word families</strong>. With consistent daily review, that\'s about a year — if you don\'t forget what you\'ve already learned.',
         langSection: {
@@ -666,7 +678,7 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
           ] as [string, string][],
           gridNote: "The core Slavic vocabulary has no English parallel. You'll meet it constantly — and look it up repeatedly — until you build a system for retaining it."
         },
-        whoTitle: 'For the Polish you actually need.',
+        whoTitle: 'Made for Polish learners who want to expand their vocabulary.',
         who: 'Whether you\'re a heritage speaker reconnecting with the language, preparing for a Polish certificate, or working in a Polish environment — OpenWords turns every word you look up into a flashcard at the moment you look it up.',
         whoItems: [
           'Heritage speakers reconnecting with the language',
@@ -697,14 +709,14 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
         description: 'Build Russian vocabulary with a deep dictionary, one-tap flashcards, and spaced repetition. Save the exact meaning you need and review it before you forget. Free, no account, works offline.',
         h1: 'Learn Russian vocabulary\nthat sticks.',
         heroH1Em: 'that sticks.',
-        subtitle: 'A deep Russian dictionary with one-tap flashcards and spaced repetition. Save the words you meet while reading, studying, or working in Russian — and review them right before you\'d forget.',
+        subtitle: 'OpenWords is a comprehensive Russian dictionary app with one-tap flashcards and spaced repetition. Save the words you look up while reading, working, or studying — and review them just before you forget them.',
         howSteps: [
           { h3: 'Look it up.', body: 'Search any Russian word — including conjugated and inflected forms. Every meaning it carries, with CEFR level and example sentence.' },
           { h3: 'Save the meaning you met.', body: 'One tap, no typing. That exact meaning becomes a flashcard.' },
           { h3: 'Review before you forget.', body: 'Spaced repetition brings each word back at the right moment. Five card formats so the word sets from every angle.' }
         ],
         vocabFactsEyebrow: 'Russian vocabulary research',
-        vocabFactsH2: 'How many Russian words do you actually need?',
+        vocabFactsH2: 'How many words do you need to be fluent in Russian?',
         vocabFactsBody: 'Vocabulary researchers measure Russian word size in word families — a root word and its derived and inflected forms. Russian is a highly inflected language, meaning a single word family can include many surface forms with different endings.',
         vocabFactsCallout: 'The jump from B1 to B2 in Russian means roughly <strong>2,000 more word families</strong>. With consistent daily review, that\'s about a year — if you don\'t forget what you\'ve already learned.',
         langSection: {
@@ -722,7 +734,7 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
           ] as [string, string][],
           gridNote: "The core Slavic vocabulary has no English parallel. You'll meet it constantly — and look it up repeatedly — until you build a system for retaining it."
         },
-        whoTitle: 'For the Russian you actually need.',
+        whoTitle: 'Made for Russian learners who want to expand their vocabulary.',
         who: 'Whether you\'re a heritage speaker, preparing for the TORFL exam, working in a Russian-speaking environment, or following Russian media — OpenWords turns every word you look up into a flashcard at the moment you look it up.',
         whoItems: [
           'Heritage speakers reconnecting with the language',
@@ -1003,5 +1015,13 @@ export function learnFaq(locale: LocaleCode, language: LanguageSlug) {
     }
   };
 
-  return faqsByLanguage[language][locale].map(([question, answer]) => ({ question, answer }));
+  const base = faqsByLanguage[language][locale]
+    .slice(0, -1)
+    .map(([question, answer]) => ({ question, answer }));
+
+  // Replace the per-language "other apps" question with the shared
+  // Anki / Quizlet / Google Translate comparisons used on the home page.
+  const comparisons = homeFaq(locale).slice(-3);
+
+  return [...base, ...comparisons];
 }

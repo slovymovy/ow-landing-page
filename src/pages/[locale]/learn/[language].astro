@@ -1,9 +1,10 @@
 ---
 import Footer from '../../../components/Footer.astro';
 import Header from '../../../components/Header.astro';
+import MobileDownloadBar from '../../../components/MobileDownloadBar.astro';
 import StoreButtons from '../../../components/StoreButtons.astro';
 import { homeCopy, learnCopy, learnFaq } from '../../../data/copy';
-import { languageSlugs, languages, locales, localizePath, type LanguageSlug, type LocaleCode } from '../../../data/site';
+import { languageSlugs, languages, locales, localizePath, translationLanguages, type LanguageSlug, type LocaleCode } from '../../../data/site';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 
 export function getStaticPaths() {
@@ -59,7 +60,7 @@ const flagMap: Record<LanguageSlug, string> = {
           <nav class="hero__breadcrumb" aria-label="Breadcrumb">
             <a href={localizePath(locale, '/')}>OpenWords</a> / <span>{languageData.name} vocabulary</span>
           </nav>
-          <div class="hero__eyebrow">{languageData.name} vocabulary</div>
+          <div class="hero__eyebrow">{languageData.name} vocabulary app</div>
           <h1 class="hero__h1">
             {h1Pre}<br /><em>{copy.heroH1Em}</em>
           </h1>
@@ -67,6 +68,31 @@ const flagMap: Record<LanguageSlug, string> = {
           <div class="hero__actions">
             <StoreButtons locale={locale} />
             <p class="hero__note">{copy.heroNote}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- BEFORE / AFTER -->
+    <section class="problem">
+      <div class="container">
+        <div class="problem__head reveal">
+          <h2 class="problem__title" set:html={pageFooterCopy.problemTitleHtml}></h2>
+          <p class="problem__lead">{pageFooterCopy.problemLead}</p>
+        </div>
+        <div class="ba reveal">
+          <div class="ba__card ba__card--before">
+            <div class="ba__label">{pageFooterCopy.beforeLabel}</div>
+            <p class="ba__text">{pageFooterCopy.beforeText}</p>
+          </div>
+          <div class="ba__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+          </div>
+          <div class="ba__card ba__card--after">
+            <div class="ba__label ba__label--gold">{pageFooterCopy.afterLabel}</div>
+            <p class="ba__text">{pageFooterCopy.afterText}</p>
           </div>
         </div>
       </div>
@@ -98,6 +124,10 @@ const flagMap: Record<LanguageSlug, string> = {
 
           {copy.previewWord && copy.previewSenses && (
             <div class="how__visual">
+              <div class="word-card-cap" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                {copy.wordCardCaption}
+              </div>
               <div class="word-card" role="region" aria-label={`Dictionary entry for '${copy.previewWord}'`}>
                 <div class="word-card__head">
                   <div class="word-card__word">{copy.previewWord}</div>
@@ -137,6 +167,23 @@ const flagMap: Record<LanguageSlug, string> = {
               </div>
             </div>
           )}
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- TRANSLATION LANGUAGES BAND -->
+    <section class="langs-band">
+      <div class="container">
+        <div class="langs-band__inner reveal">
+          <h2 class="langs-band__h2" set:html={copy.langsBandH2Html}></h2>
+          <p class="langs-band__sub">{copy.langsBandSub}</p>
+          <div class="langs-band__pills">
+            {translationLanguages.filter((l) => l.exclude !== language).map((l) => (
+              <span class="lang-pill"><span class="lang-pill__code">{l.code}</span>{l.name[locale]}</span>
+            ))}
+          </div>
         </div>
       </div>
     </section>
@@ -277,6 +324,8 @@ const flagMap: Record<LanguageSlug, string> = {
 
   </main>
 
+  <MobileDownloadBar locale={locale} />
+
   <Footer locale={locale} />
 </BaseLayout>
 
@@ -335,6 +384,75 @@ const flagMap: Record<LanguageSlug, string> = {
   .hero__actions { display: flex; flex-direction: column; gap: 16px; }
   .hero__note { font-size: .8125rem; color: #555a70; margin: 0; }
 
+  /* ── BEFORE / AFTER ── */
+  .problem { padding: 96px 0; background: #0f1118; }
+  .problem__head { text-align: center; max-width: 680px; margin: 0 auto 44px; }
+  .problem__title {
+    font-family: Lora, Georgia, serif;
+    font-size: clamp(1.75rem, 4vw, 2.625rem);
+    font-weight: 600;
+    line-height: 1.18;
+    color: #E2E4ED;
+    letter-spacing: -.01em;
+    margin-bottom: 14px;
+  }
+  .problem__title :global(em) { font-style: italic; color: #C5A367; }
+  .problem__lead { font-size: 1.0625rem; line-height: 1.7; color: #9499B0; margin: 0; }
+  .ba { display: grid; grid-template-columns: 1fr; gap: 14px; max-width: 880px; margin: 0 auto; align-items: stretch; }
+  @media (min-width: 760px) { .ba { grid-template-columns: 1fr auto 1fr; gap: 18px; align-items: center; } }
+  .ba__card { border-radius: 20px; padding: 32px 30px; display: flex; flex-direction: column; gap: 14px; height: 100%; justify-content: center; }
+  .ba__card--before { background: #191C26; border: 1px solid rgba(255,255,255,.07); }
+  .ba__card--after { background: linear-gradient(180deg, rgba(197,163,103,.12), rgba(197,163,103,.03)); border: 1px solid rgba(197,163,103,.20); box-shadow: 0 20px 54px rgba(0,0,0,.4); }
+  .ba__label { font-size: .6875rem; font-weight: 700; text-transform: uppercase; letter-spacing: .11em; color: #555a70; }
+  .ba__label--gold { color: #C5A367; }
+  .ba__text { font-size: clamp(1.125rem, 2.4vw, 1.375rem); font-weight: 500; line-height: 1.4; color: #9499B0; letter-spacing: -.005em; margin: 0; }
+  .ba__card--after .ba__text { color: #E2E4ED; }
+  .ba__arrow { display: flex; align-items: center; justify-content: center; color: #C5A367; }
+  .ba__arrow svg { width: 26px; height: 26px; }
+  @media (max-width: 759px) { .ba__arrow { transform: rotate(90deg); margin: -2px 0; } }
+
+  /* ── TRANSLATION LANGUAGES BAND ── */
+  .langs-band { padding: 96px 0; background: #0f1118; }
+  .langs-band__inner { max-width: 760px; margin: 0 auto; text-align: center; }
+  .langs-band__h2 {
+    font-family: Lora, Georgia, serif;
+    font-size: clamp(1.625rem, 3.5vw, 2.25rem);
+    font-weight: 600;
+    line-height: 1.18;
+    color: #E2E4ED;
+    letter-spacing: -.01em;
+    margin-bottom: 14px;
+  }
+  .langs-band__h2 :global(em) { font-style: italic; color: #C5A367; }
+  .langs-band__sub { font-size: 1rem; line-height: 1.7; color: #9499B0; max-width: 600px; margin: 0 auto 28px; }
+  .langs-band__pills { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+  .lang-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px 8px 8px;
+    background: #1C1F2A;
+    border: 1px solid rgba(255,255,255,.07);
+    border-radius: 999px;
+    font-size: .875rem;
+    color: #9499B0;
+  }
+  .lang-pill__code {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 30px;
+    height: 22px;
+    padding: 0 6px;
+    border-radius: 999px;
+    background: rgba(197,163,103,.10);
+    border: 1px solid rgba(197,163,103,.20);
+    color: #C5A367;
+    font-size: .6875rem;
+    font-weight: 700;
+    letter-spacing: .04em;
+  }
+
   /* ── HOW IT WORKS ── */
   .how { padding: 96px 0; background: var(--night-900); }
   .how__inner {
@@ -346,8 +464,17 @@ const flagMap: Record<LanguageSlug, string> = {
   @media (min-width: 900px) {
     .how__inner { grid-template-columns: 1fr 420px; gap: 72px; }
   }
-  @media (max-width: 899px) { .how__visual { order: -1; } }
-  .how__visual { display: flex; justify-content: center; }
+  .how__visual { display: flex; flex-direction: column; align-items: center; }
+  .word-card-cap {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: .8125rem;
+    color: #555a70;
+    margin-bottom: 14px;
+    text-align: center;
+  }
+  .word-card-cap svg { color: #C5A367; flex-shrink: 0; }
   .how__h2 {
     font-family: Lora, Georgia, serif;
     font-size: clamp(1.625rem, 3.5vw, 2.25rem);
@@ -765,6 +892,32 @@ const flagMap: Record<LanguageSlug, string> = {
   .reveal { opacity: 0; transform: translateY(16px); transition: opacity .7s ease, transform .7s ease; }
   .reveal.in { opacity: 1; transform: none; }
   .d1 { transition-delay: .1s; }
+
+  /* ── MOBILE-FIRST SPACING ── */
+  @media (max-width: 640px) {
+    .hero { padding: 92px 0 48px; }
+    .hero__eyebrow { margin-bottom: 14px; }
+    .hero__h1 { margin-bottom: 16px; }
+    .hero__sub { margin-bottom: 28px; }
+    .problem { padding: 40px 0; }
+    .problem__head { margin-bottom: 24px; }
+    .how { padding: 48px 0; }
+    .how__inner { gap: 32px; }
+    .how__steps { margin-top: 26px; }
+    .langs-band { padding: 44px 0; }
+    .vocab-facts { padding: 48px 0; }
+    .lang-specific { padding: 48px 0; }
+    .who { padding: 48px 0; }
+    .faq-section { padding: 48px 0; }
+    .cta { padding: 52px 0; }
+    .other-langs { padding: 44px 0; }
+    .word-card__word { font-size: 2.25rem; margin-bottom: 8px; }
+    .word-card__head { padding: 22px 20px 16px; }
+    .word-card__family { padding: 12px 20px; }
+    details.sense summary { padding: 14px 18px; }
+    .sense__body { padding: 2px 18px 18px; }
+    .word-card-cap { margin-bottom: 12px; }
+  }
 </style>
 
 <script>

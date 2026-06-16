@@ -166,6 +166,23 @@ export const languages = {
   }
 } as const;
 
+// Languages that definitions + example sentences are translated into, shown in
+// the "Every meaning, in your language" band on each /learn page. Names are
+// localised to the page's own locale (SEO: single-language content signal).
+// `exclude` drops the band entry that matches the page's own learn language.
+export const translationLanguages = [
+  { code: 'DE', name: { en: 'German', pl: 'Niemiecki', nl: 'Duits', ru: 'Немецкий' } },
+  { code: 'EN', exclude: 'english', name: { en: 'English', pl: 'Angielski', nl: 'Engels', ru: 'Английский' } },
+  { code: 'ES', name: { en: 'Spanish', pl: 'Hiszpański', nl: 'Spaans', ru: 'Испанский' } },
+  { code: 'FR', name: { en: 'French', pl: 'Francuski', nl: 'Frans', ru: 'Французский' } },
+  { code: 'IT', name: { en: 'Italian', pl: 'Włoski', nl: 'Italiaans', ru: 'Итальянский' } },
+  { code: 'NL', exclude: 'dutch', name: { en: 'Dutch', pl: 'Niderlandzki', nl: 'Nederlands', ru: 'Нидерландский' } },
+  { code: 'PL', exclude: 'polish', name: { en: 'Polish', pl: 'Polski', nl: 'Pools', ru: 'Польский' } },
+  { code: 'TR', name: { en: 'Turkish', pl: 'Turecki', nl: 'Turks', ru: 'Турецкий' } },
+  { code: 'CS', name: { en: 'Czech', pl: 'Czeski', nl: 'Tsjechisch', ru: 'Чешский' } },
+  { code: 'RU', exclude: 'russian', name: { en: 'Russian', pl: 'Rosyjski', nl: 'Russisch', ru: 'Русский' } }
+] as const;
+
 export type LocaleCode = keyof typeof locales;
 export type LanguageSlug = keyof typeof languages;
 
