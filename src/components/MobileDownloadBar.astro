@@ -91,13 +91,17 @@ void locale;
   const mobileCta = document.getElementById('mobileCta');
   const hero = document.querySelector('.hero') as HTMLElement | null;
   const finalCta = document.getElementById('download');
+  const cookieBanner = document.getElementById('cookie-banner');
 
   if (mobileCta) {
     let overFinalCta = false;
+    // The cookie banner is also pinned to the bottom; don't stack on top of
+    // it — wait until the user has dismissed it.
+    const cookieVisible = () => !!cookieBanner && !cookieBanner.hasAttribute('hidden');
     const syncCta = () => {
       const heroBottom = hero ? hero.offsetTop + hero.offsetHeight - 120 : 600;
       const pastHero = window.scrollY > heroBottom;
-      const show = pastHero && !overFinalCta;
+      const show = pastHero && !overFinalCta && !cookieVisible();
       mobileCta.classList.toggle('show', show);
       mobileCta.setAttribute('aria-hidden', String(!show));
     };
@@ -107,6 +111,9 @@ void locale;
         overFinalCta = entry.isIntersecting;
         syncCta();
       }, { threshold: 0 }).observe(finalCta);
+    }
+    if (cookieBanner) {
+      new MutationObserver(syncCta).observe(cookieBanner, { attributes: true, attributeFilter: ['hidden'] });
     }
     syncCta();
   }
