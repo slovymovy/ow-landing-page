@@ -1,5 +1,5 @@
 ---
-import { absoluteUrl, alternateLinks, localizePath, locales, site, type LocaleCode } from '../data/site';
+import { absoluteUrl, alternateLinks, localeCodes, localizePath, locales, site, type LocaleCode } from '../data/site';
 import CookieConsent from '../components/CookieConsent.astro';
 
 interface Props {
@@ -47,7 +47,7 @@ const jsonLd = [
     '@type': 'WebSite',
     name: site.name,
     url: site.origin,
-    inLanguage: ['en', 'pl', 'nl', 'ru']
+    inLanguage: [...localeCodes]
   },
   ...(faq.length > 0
     ? [{
