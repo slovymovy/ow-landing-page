@@ -2,7 +2,7 @@
 import { site } from '../data/site';
 
 interface Props {
-  locale?: 'en' | 'pl' | 'nl' | 'ru';
+  locale?: 'en' | 'pl' | 'nl' | 'ru' | 'it' | 'es' | 'de';
   centered?: boolean;
 }
 
@@ -12,7 +12,10 @@ const labels = {
   en: { appSmall: 'Download on the', appBig: 'App Store', playSmall: 'Get it on', playBig: 'Google Play' },
   pl: { appSmall: 'Pobierz z', appBig: 'App Store', playSmall: 'Pobierz z', playBig: 'Google Play' },
   nl: { appSmall: 'Download in de', appBig: 'App Store', playSmall: 'Download via', playBig: 'Google Play' },
-  ru: { appSmall: 'Скачать в', appBig: 'App Store', playSmall: 'Скачать в', playBig: 'Google Play' }
+  ru: { appSmall: 'Скачать в', appBig: 'App Store', playSmall: 'Скачать в', playBig: 'Google Play' },
+  it: { appSmall: 'Scarica su', appBig: 'App Store', playSmall: 'Disponibile su', playBig: 'Google Play' },
+  es: { appSmall: 'Descárgalo en el', appBig: 'App Store', playSmall: 'Disponible en', playBig: 'Google Play' },
+  de: { appSmall: 'Laden im', appBig: 'App Store', playSmall: 'Jetzt bei', playBig: 'Google Play' }
 }[locale];
 ---
 <div class:list={['store-btns', { 'store-btns--centered': centered }]}>
