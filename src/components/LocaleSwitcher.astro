@@ -1,0 +1,374 @@
+---
+import { homeCopy } from '../data/copy';
+import { locales, localizePath, type LocaleCode } from '../data/site';
+
+interface Props {
+  /** The locale the current page is written in. */
+  current?: LocaleCode;
+  /** Path after the locale prefix, preserved when switching (deep pages stay deep). */
+  path?: string;
+}
+
+const { current = 'en', path = '/' } = Astro.props;
+const ui = homeCopy[current].ui;
+// Single source of truth — the same `locales` table also feeds the <head>
+// hreflang alternates in BaseLayout, so links and hreflang never drift.
+const items = Object.values(locales);
+---
+<div class="locale" id="locale">
+  <button
+    class="locale__trigger"
+    id="localeTrigger"
+    type="button"
+    aria-haspopup="true"
+    aria-expanded="false"
+    aria-controls="localeMenu"
+    aria-label={ui.changeLang}
+  >
+    <svg class="locale__globe" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <circle cx="12" cy="12" r="9"></circle>
+      <path d="M3 12h18"></path>
+      <path d="M12 3c2.4 2.5 2.4 15.5 0 18M12 3c-2.4 2.5-2.4 15.5 0 18"></path>
+    </svg>
+    <span class="locale__code">{current.toUpperCase()}</span>
+    <svg class="locale__caret" viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M4 6l4 4 4-4"></path>
+    </svg>
+  </button>
+
+  <!-- Scrim + sheet are portaled to <body> on mount (see script) so the header's
+       backdrop-filter / stacking context can't trap their fixed positioning. -->
+  <div class="locale__scrim" id="localeScrim" aria-hidden="true"></div>
+
+  <div class="locale__sheet" id="localeMenu" role="menu" aria-label={ui.language}>
+    <div class="locale__handle" aria-hidden="true"></div>
+    <div class="locale__heading">{ui.language}</div>
+    {items.map((item) => (
+      <a
+        role="menuitem"
+        href={localizePath(item.code, path)}
+        hreflang={item.code}
+        lang={item.htmlLang}
+        class:list={['locale__item', { 'is-current': item.code === current }]}
+        aria-current={item.code === current ? 'true' : undefined}
+      >
+        <span class="locale__badge">{item.code.toUpperCase()}</span>
+        <span class="locale__name">{item.nativeLabel}</span>
+        {item.code === current && (
+          <svg class="locale__check" viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3.5 8.5l3 3 6-6.5"></path>
+          </svg>
+        )}
+      </a>
+    ))}
+  </div>
+</div>
+
+<script>
+  const root = document.getElementById('locale');
+  const trigger = document.getElementById('localeTrigger');
+  const sheet = document.getElementById('localeMenu');
+  const scrim = document.getElementById('localeScrim');
+
+  if (root && trigger && sheet && scrim) {
+    // Portal the overlay out of the header so its fixed positioning references
+    // the viewport, not the header's backdrop-filter containing block.
+    document.body.appendChild(scrim);
+    document.body.appendChild(sheet);
+
+    const isMobile = () => window.matchMedia('(max-width: 859.98px)').matches;
+    let open = false;
+
+    // Desktop: anchor the dropdown under the trigger, right-aligned.
+    const positionDropdown = () => {
+      if (isMobile()) {
+        sheet.style.top = '';
+        sheet.style.right = '';
+        return;
+      }
+      const r = trigger.getBoundingClientRect();
+      // clientWidth excludes the scrollbar, so right-alignment stays exact.
+      sheet.style.top = `${r.bottom + 8}px`;
+      sheet.style.right = `${document.documentElement.clientWidth - r.right}px`;
+    };
+
+    const setOpen = (next: boolean, { announce = true, focus = false } = {}) => {
+      open = next;
+      if (open) positionDropdown();
+      root.classList.toggle('is-open', open);
+      sheet.classList.toggle('is-open', open);
+      scrim.classList.toggle('is-open', open);
+      trigger.setAttribute('aria-expanded', String(open));
+      document.body.style.overflow = open && isMobile() ? 'hidden' : '';
+      if (open && announce) {
+        document.dispatchEvent(new CustomEvent('nav:menu-open', { detail: 'locale' }));
+      }
+      if (open && focus) {
+        // Move focus into the menu for keyboard users (current locale first).
+        const target = sheet.querySelector<HTMLElement>('.locale__item.is-current')
+          ?? sheet.querySelector<HTMLElement>('.locale__item');
+        requestAnimationFrame(() => target?.focus());
+      }
+    };
+
+    trigger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      // detail === 0 means the click came from Enter/Space (keyboard), not a pointer.
+      setOpen(!open, { focus: e.detail === 0 });
+    });
+
+    scrim.addEventListener('click', () => setOpen(false));
+
+    // Outside click closes (the sheet now lives at body level, so check both).
+    document.addEventListener('click', (e) => {
+      const t = e.target as Node;
+      if (open && !root.contains(t) && !sheet.contains(t)) setOpen(false);
+    });
+
+    // Esc closes and returns focus to the trigger.
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && open) {
+        setOpen(false);
+        (trigger as HTMLElement).focus();
+      }
+    });
+
+    // Arrow-key navigation between rows.
+    sheet.addEventListener('keydown', (e) => {
+      if (e.key !== 'ArrowDown' && e.key !== 'ArrowUp') return;
+      const rows = Array.from(sheet.querySelectorAll<HTMLElement>('.locale__item'));
+      if (!rows.length) return;
+      e.preventDefault();
+      const i = rows.indexOf(document.activeElement as HTMLElement);
+      const dir = e.key === 'ArrowDown' ? 1 : -1;
+      rows[(i + dir + rows.length) % rows.length].focus();
+    });
+
+    // Close when another nav menu (the hamburger drawer) opens.
+    document.addEventListener('nav:menu-open', (e) => {
+      if ((e as CustomEvent).detail !== 'locale' && open) setOpen(false, { announce: false });
+    });
+
+    // Keep the dropdown anchored / scroll-lock correct across breakpoints.
+    window.addEventListener('resize', () => {
+      if (!open) return;
+      positionDropdown();
+      document.body.style.overflow = isMobile() ? 'hidden' : '';
+    });
+  }
+</script>
+
+<style is:global>
+  .locale {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  /* ── Trigger ── */
+  .locale__trigger {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    height: 42px;
+    padding: 0 8px;
+    border: none;
+    background: none;
+    border-radius: 10px;
+    color: #9499B0;
+    cursor: pointer;
+    transition: color .18s, background .18s;
+  }
+
+  .locale__trigger:hover { color: #E2E4ED; }
+
+  .locale__globe { flex-shrink: 0; }
+
+  .locale__code {
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .04em;
+  }
+
+  .locale__caret { display: none; }
+
+  /* ── Scrim (mobile bottom-sheet backdrop) — portaled to <body> ── */
+  .locale__scrim {
+    position: fixed;
+    inset: 0;
+    z-index: 310;
+    background: rgba(8, 9, 13, .62);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .25s ease, visibility .25s;
+  }
+
+  .locale__scrim.is-open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* ── Sheet / panel — portaled to <body> ── */
+  .locale__sheet {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 320;
+    background: #161823;
+    border-top: 1px solid rgba(255, 255, 255, .08);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 6px 14px max(20px, env(safe-area-inset-bottom));
+    max-height: 85vh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    transform: translateY(100%);
+    visibility: hidden;
+    transition: transform .3s cubic-bezier(.16, 1, .3, 1), visibility .3s;
+  }
+
+  .locale__sheet.is-open {
+    transform: translateY(0);
+    visibility: visible;
+  }
+
+  .locale__handle {
+    width: 38px;
+    height: 4px;
+    margin: 8px auto 4px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, .18);
+  }
+
+  .locale__heading {
+    padding: 8px 14px 12px;
+    font-size: .78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: #555a70;
+  }
+
+  /* ── Rows ── */
+  .locale__item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 48px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #C7CAD9;
+    text-decoration: none;
+    transition: color .18s, background .18s;
+  }
+
+  .locale__item:hover { color: #E2E4ED; background: rgba(255, 255, 255, .05); }
+
+  .locale__badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 34px;
+    height: 22px;
+    padding: 0 6px;
+    border-radius: 5px;
+    background: #191C26;
+    border: 1px solid rgba(255, 255, 255, .12);
+    font-size: .68rem;
+    font-weight: 700;
+    letter-spacing: .04em;
+    color: #9499B0;
+    flex-shrink: 0;
+  }
+
+  .locale__name { flex: 1; }
+
+  .locale__check { margin-left: auto; color: #C5A367; flex-shrink: 0; }
+
+  .locale__item.is-current { color: #C5A367; }
+
+  .locale__item.is-current .locale__badge {
+    background: rgba(197, 163, 103, .10);
+    border-color: rgba(197, 163, 103, .25);
+    color: #C5A367;
+  }
+
+  /* ── Desktop: anchored dropdown (top/right set inline by JS) ── */
+  @media (min-width: 860px) {
+    .locale__trigger {
+      height: auto;
+      padding: 6px 10px;
+      gap: 6px;
+      border: 1px solid rgba(255, 255, 255, .12);
+      border-radius: 999px;
+      transition: color .18s, border-color .18s, background .18s;
+    }
+
+    .locale__trigger:hover {
+      color: #E2E4ED;
+      border-color: rgba(255, 255, 255, .22);
+    }
+
+    .locale__caret {
+      display: block;
+      transition: transform .2s;
+    }
+
+    .locale.is-open .locale__caret { transform: rotate(180deg); }
+
+    .locale__scrim { display: none; }
+
+    .locale__handle,
+    .locale__heading { display: none; }
+
+    .locale__sheet {
+      left: auto;
+      bottom: auto;
+      width: 200px;
+      max-height: none;
+      overflow-y: visible;
+      padding: 6px;
+      border: 1px solid rgba(255, 255, 255, .1);
+      border-radius: 12px;
+      background: rgba(22, 24, 35, .98);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      box-shadow: 0 16px 48px -8px rgba(0, 0, 0, .5);
+      transform: translateY(-6px);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .18s ease, transform .18s ease, visibility .18s;
+    }
+
+    .locale__sheet.is-open {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .locale__item {
+      min-height: 0;
+      padding: 8px 10px;
+      gap: 10px;
+      font-size: .82rem;
+    }
+
+    .locale__badge {
+      min-width: 28px;
+      height: 20px;
+      font-size: .64rem;
+    }
+  }
+
+  /* ── Reduced motion ── */
+  @media (prefers-reduced-motion: reduce) {
+    .locale__sheet,
+    .locale__scrim,
+    .locale__caret { transition: none; }
+  }
+</style>

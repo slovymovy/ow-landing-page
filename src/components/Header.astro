@@ -1,6 +1,7 @@
 ---
 import { homeCopy } from '../data/copy';
-import { languageSlugs, languages, locales, localizePath, site, type LanguageSlug, type LocaleCode } from '../data/site';
+import { languageSlugs, languages, localizePath, site, type LanguageSlug, type LocaleCode } from '../data/site';
+import LocaleSwitcher from './LocaleSwitcher.astro';
 
 interface Props {
   locale?: LocaleCode;
@@ -24,15 +25,7 @@ const copy = homeCopy[locale];
     </nav>
 
     <div class="nav__right">
-      <nav class="nav__locales" aria-label={copy.ui.languageVersions}>
-        {Object.values(locales).map((item) => (
-          <a
-            href={localizePath(item.code, path)}
-            class="nav__locale"
-            aria-current={item.code === locale ? 'true' : undefined}
-          >{item.code.toUpperCase()}</a>
-        ))}
-      </nav>
+      <LocaleSwitcher current={locale} path={path} />
 
       <a class="nav__cta" href="#download">{copy.navDownload}</a>
 
@@ -74,24 +67,6 @@ const copy = homeCopy[locale];
       ))}
     </div>
   </div>
-
-  <div>
-    <div class="drawer__nav-title">{copy.ui.drawerLocaleLabel}</div>
-    <div class="drawer__locales">
-      {Object.values(locales).map((item) => (
-        <div class="drawer__locale-row">
-          <a
-            href={localizePath(item.code, path)}
-            class="drawer__locale-btn"
-            aria-current={item.code === locale ? 'true' : undefined}
-          >
-            <span class="drawer__locale-code">{item.code.toUpperCase()}</span>
-            {item.nativeLabel}
-          </a>
-        </div>
-      ))}
-    </div>
-  </div>
 </div>
 
 <script>
@@ -103,22 +78,32 @@ const copy = homeCopy[locale];
   const burger = document.getElementById('nav-burger');
   const drawer = document.getElementById('nav-drawer');
 
+  const closeDrawer = () => {
+    burger?.classList.remove('is-open');
+    drawer?.classList.remove('is-open');
+    drawer?.setAttribute('aria-hidden', 'true');
+    burger?.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  };
+
   burger?.addEventListener('click', () => {
     const open = burger.classList.toggle('is-open');
     drawer?.classList.toggle('is-open', open);
     drawer?.setAttribute('aria-hidden', String(!open));
     burger.setAttribute('aria-expanded', String(open));
     document.body.style.overflow = open ? 'hidden' : '';
+    if (open) {
+      document.dispatchEvent(new CustomEvent('nav:menu-open', { detail: 'drawer' }));
+    }
   });
 
   drawer?.querySelectorAll('a').forEach((a) => {
-    a.addEventListener('click', () => {
-      burger?.classList.remove('is-open');
-      drawer.classList.remove('is-open');
-      drawer.setAttribute('aria-hidden', 'true');
-      burger?.setAttribute('aria-expanded', 'false');
-      document.body.style.overflow = '';
-    });
+    a.addEventListener('click', closeDrawer);
+  });
+
+  // Close the drawer if the locale switcher (or any other nav menu) opens.
+  document.addEventListener('nav:menu-open', (e) => {
+    if ((e as CustomEvent).detail !== 'drawer') closeDrawer();
   });
 </script>
 
@@ -196,32 +181,6 @@ const copy = homeCopy[locale];
     align-items: center;
     gap: 8px;
     flex-shrink: 0;
-  }
-
-  /* locale switcher */
-  .nav__locales {
-    display: none;
-    align-items: center;
-    gap: 2px;
-  }
-
-  @media (min-width: 640px) {
-    .nav__locales { display: flex; }
-  }
-
-  .nav__locale {
-    font-size: .75rem;
-    font-weight: 600;
-    padding: 4px 8px;
-    border-radius: 6px;
-    color: #555a70;
-    transition: color .18s, background .18s;
-  }
-
-  .nav__locale:hover,
-  .nav__locale[aria-current] {
-    color: #E2E4ED;
-    background: rgba(255, 255, 255, .07);
   }
 
   /* nav CTA */
@@ -365,56 +324,4 @@ const copy = homeCopy[locale];
 
   .drawer__nav-link:hover { color: #E2E4ED; }
   .drawer__nav-link--active { color: #C5A367; pointer-events: none; }
-
-  .drawer__locales {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .drawer__locale-row {
-    border-bottom: 1px solid rgba(255, 255, 255, .07);
-  }
-
-  .drawer__locale-row:last-child { border-bottom: none; }
-
-  .drawer__locale-btn {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 0;
-    width: 100%;
-    font-size: .9375rem;
-    color: #9499B0;
-    transition: color .2s;
-    text-decoration: none;
-  }
-
-  .drawer__locale-btn:hover { color: #E2E4ED; }
-
-  .drawer__locale-btn[aria-current] {
-    color: #E2E4ED;
-    font-weight: 600;
-  }
-
-  .drawer__locale-code {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 32px;
-    height: 22px;
-    border-radius: 4px;
-    background: #191C26;
-    border: 1px solid rgba(255, 255, 255, .12);
-    font-size: .6875rem;
-    font-weight: 700;
-    letter-spacing: .04em;
-    color: #9499B0;
-    flex-shrink: 0;
-  }
-
-  .drawer__locale-btn[aria-current] .drawer__locale-code {
-    background: rgba(197, 163, 103, .10);
-    border-color: rgba(197, 163, 103, .20);
-    color: #C5A367;
-  }
 </style>
