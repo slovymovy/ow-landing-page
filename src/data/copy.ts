@@ -68,6 +68,8 @@ export const homeCopy = {
     ui: {
       mainNavigation: 'Main navigation',
       languageVersions: 'Language versions',
+      changeLang: 'Change language',
+      language: 'Language',
       mobileNavigation: 'Mobile navigation',
       mobileLanguageVersions: 'Mobile language versions',
       openMenu: 'Open menu',
@@ -150,6 +152,8 @@ export const homeCopy = {
     ui: {
       mainNavigation: 'Główna nawigacja',
       languageVersions: 'Wersje językowe',
+      changeLang: 'Zmień język',
+      language: 'Język',
       mobileNavigation: 'Nawigacja mobilna',
       mobileLanguageVersions: 'Mobilne wersje językowe',
       openMenu: 'Otwórz menu',
@@ -232,6 +236,8 @@ export const homeCopy = {
     ui: {
       mainNavigation: 'Hoofdnavigatie',
       languageVersions: 'Taalversies',
+      changeLang: 'Taal wijzigen',
+      language: 'Taal',
       mobileNavigation: 'Mobiele navigatie',
       mobileLanguageVersions: 'Mobiele taalversies',
       openMenu: 'Menu openen',
@@ -314,6 +320,8 @@ export const homeCopy = {
     ui: {
       mainNavigation: 'Основная навигация',
       languageVersions: 'Языковые версии',
+      changeLang: 'Сменить язык',
+      language: 'Язык',
       mobileNavigation: 'Мобильная навигация',
       mobileLanguageVersions: 'Мобильные языковые версии',
       openMenu: 'Открыть меню',
@@ -396,6 +404,8 @@ export const homeCopy = {
     ui: {
       mainNavigation: 'Navigazione principale',
       languageVersions: 'Versioni linguistiche',
+      changeLang: 'Cambia lingua',
+      language: 'Lingua',
       mobileNavigation: 'Navigazione mobile',
       mobileLanguageVersions: 'Versioni linguistiche mobile',
       openMenu: 'Apri il menu',
@@ -478,6 +488,8 @@ export const homeCopy = {
     ui: {
       mainNavigation: 'Navegación principal',
       languageVersions: 'Versiones de idioma',
+      changeLang: 'Cambiar idioma',
+      language: 'Idioma',
       mobileNavigation: 'Navegación móvil',
       mobileLanguageVersions: 'Versiones de idioma móviles',
       openMenu: 'Abrir el menú',
@@ -560,6 +572,8 @@ export const homeCopy = {
     ui: {
       mainNavigation: 'Hauptnavigation',
       languageVersions: 'Sprachversionen',
+      changeLang: 'Sprache ändern',
+      language: 'Sprache',
       mobileNavigation: 'Mobile Navigation',
       mobileLanguageVersions: 'Mobile Sprachversionen',
       openMenu: 'Menü öffnen',
