@@ -29,6 +29,7 @@ export const GET: APIRoute = () => {
       `- ${site.origin}/ - Main English homepage.`,
       learnPages,
       localized,
+      `- ${site.origin}/about/ - About OpenWords.`,
       `- ${site.origin}/privacy/ - Privacy policy.`,
       '',
       'Official links:',

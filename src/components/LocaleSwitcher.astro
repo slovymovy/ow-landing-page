@@ -7,13 +7,20 @@ interface Props {
   current?: LocaleCode;
   /** Path after the locale prefix, preserved when switching (deep pages stay deep). */
   path?: string;
+  /** False when this path exists only in the current locale; other locales fall back to their homepage. */
+  localized?: boolean;
 }
 
-const { current = 'en', path = '/' } = Astro.props;
+const { current = 'en', path = '/', localized = true } = Astro.props;
 const ui = homeCopy[current].ui;
 // Single source of truth — the same `locales` table also feeds the <head>
 // hreflang alternates in BaseLayout, so links and hreflang never drift.
 const items = Object.values(locales);
+
+// On a single-locale page, only the current locale keeps the deep path; every
+// other locale points at its homepage so we never link to a page that 404s.
+const localeHref = (code: LocaleCode) =>
+  localizePath(code, localized || code === current ? path : '/');
 ---
 <div class="locale" id="locale">
   <button
@@ -46,7 +53,7 @@ const items = Object.values(locales);
     {items.map((item) => (
       <a
         role="menuitem"
-        href={localizePath(item.code, path)}
+        href={localeHref(item.code)}
         hreflang={item.code}
         lang={item.htmlLang}
         class:list={['locale__item', { 'is-current': item.code === current }]}

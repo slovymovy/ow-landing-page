@@ -30,8 +30,9 @@ const copy = homeCopy[locale];
       </div>
 
       <div>
-        <div class="footer__col-label">{copy.footerLegal}</div>
+        <div class="footer__col-label" aria-hidden="true">&nbsp;</div>
         <div class="footer__links">
+          <a href="/about/" class="footer__link">{copy.footerAbout}</a>
           <a href={localizePath(locale, '/privacy')} class="footer__link">{copy.privacy}</a>
           <a href={`mailto:${site.email}`} class="footer__link">{site.email}</a>
         </div>

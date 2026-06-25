@@ -279,6 +279,10 @@ export function alternateLinks(path = '/') {
   }));
 }
 
+// Indexable pages that exist only in English (no locale variants), so they get a
+// self-canonical and a bare sitemap entry — no hreflang alternates.
+export const standalonePaths = ['/about/'];
+
 export function allIndexablePaths() {
   const paths = ['/'];
 

@@ -1,0 +1,378 @@
+---
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import MobileDownloadBar from '../components/MobileDownloadBar.astro';
+import StoreButtons from '../components/StoreButtons.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { absoluteUrl } from '../data/site';
+
+const locale = 'en';
+
+const team = [
+  {
+    name: 'Mikhail Nikalayeu',
+    role: 'Architecture & engineering',
+    bio: '16+ years in software development, focused on large-scale systems and data infrastructure',
+    photo: '/team/mikhail.jpg',
+    url: 'https://www.linkedin.com/in/mikhail-nikalayeu-a44634130/'
+  },
+  {
+    name: 'Dzina Maslouskaya',
+    role: 'Product & design',
+    bio: '8+ years in product management, focused on IT products',
+    photo: '/team/dzina.jpg',
+    url: 'https://www.linkedin.com/in/dina-maslouskaya-98509a1aa/'
+  },
+  {
+    name: 'Raman Maslouski',
+    role: 'Engineering',
+    bio: '10+ years in software development, focused on banking and enterprise solutions',
+    photo: '/team/raman.jpg',
+    url: 'https://www.linkedin.com/in/raman-maslouski-33054936/'
+  }
+];
+
+const structuredData = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    name: 'About OpenWords',
+    url: absoluteUrl('/about/'),
+    mainEntity: {
+      '@type': 'Organization',
+      name: 'OpenWords',
+      url: absoluteUrl('/'),
+      foundingDate: '2025-09',
+      founder: team.map((member) => ({
+        '@type': 'Person',
+        name: member.name,
+        sameAs: member.url
+      }))
+    }
+  }
+];
+---
+<BaseLayout
+  title="About – OpenWords"
+  description="OpenWords is a free vocabulary app for English, Dutch, Polish, and Russian, built by an indie team of three in the Netherlands. Why we built it, how it works, and who we are."
+  locale={locale}
+  path="/about"
+  localized={false}
+  structuredData={structuredData}
+>
+  <Header locale={locale} path="/about" localized={false} />
+
+  <main class="about">
+    <section class="about-hero">
+      <div class="container about-container">
+        <div class="about-eyebrow">About</div>
+        <h1 class="about-h1">Remember the words you usually forget by tomorrow.</h1>
+        <p class="about-lead">
+          OpenWords is a free multilingual vocabulary learning app, currently available for
+          English, Dutch, Polish, and Russian learners — built by an indie team of three
+          based in the Netherlands.
+        </p>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="about-body">
+      <div class="container about-container">
+
+        <article class="about-section about-section--first">
+          <h2 class="about-h2">How it started</h2>
+          <p>
+            The project started in September 2025, when the three of us kept hitting the
+            same wall while learning a foreign language: remembering new words. Vocabulary
+            is by far the most time-consuming part of that journey, and we needed a way to
+            learn words efficiently and retain them long-term.
+          </p>
+        </article>
+
+        <article class="about-section">
+          <h2 class="about-h2">Why we built it</h2>
+          <p>
+            To solve the frustration of forgetting a new word the day after you learn it —
+            and to give people a tool that beats the forgetting curve.
+          </p>
+          <p>
+            The deeper frustration is that existing solutions fall short: shallow one-word
+            translations with no context, no way to form solid associations, and annoying
+            ads or paywalls.
+          </p>
+        </article>
+
+        <article class="about-section">
+          <h2 class="about-h2">Why now</h2>
+          <p>
+            Good vocabulary learning needs rich context — clear definitions, natural example
+            sentences, and the nuances of how a word is actually used.
+          </p>
+          <p>
+            AI is now genuinely good with language, so with the right tools a small team can
+            take on complex linguistic tasks at scale — cleaning, structuring, and enriching
+            dictionary data into entries with real depth.
+          </p>
+        </article>
+
+        <article class="about-section">
+          <h2 class="about-h2">How it works</h2>
+          <p>
+            We build OpenWords on Wiktionary as our source dictionary — the free and
+            remarkable work of many linguists. We parse it with kaikki, use AI to clean and
+            enrich the data, and apply the FSRS algorithm used in Anki for scheduling.
+          </p>
+          <p>
+            The result is a rich dictionary entry for every word: all its meanings, examples,
+            CEFR level, synonyms, and common phrases. Save a meaning in one tap, and
+            multi-format flashcards are generated automatically and scheduled for review.
+            No setup, all context — just learn.
+          </p>
+        </article>
+
+        <p class="about-note">True to its name, OpenWords is free for everyone to use.</p>
+
+        <article class="about-section">
+          <h2 class="about-h2">Licensing</h2>
+          <p>
+            OpenWords builds on open language data and open-source tools. Our dictionary
+            content comes from Wiktionary, parsed with kaikki/wiktextract, and is licensed
+            under CC BY-SA 4.0. For spaced repetition we use a Kotlin port,
+            FSRS-Kotlin, under the MIT License — originally developed by
+            Jarrett Ye with the Open Spaced Repetition community.
+          </p>
+          <p>
+            Our own application source code is released under the
+            Business Source License 1.1. It is free to use for personal,
+            educational, research, and non-profit purposes, and converts to
+            GPL 3.0 over time.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="about-team">
+      <div class="container about-container about-container--wide">
+        <div class="about-section-head">
+          <h2 class="about-h2">Created by</h2>
+        </div>
+        <ul class="team-grid">
+          {team.map((member) => (
+            <li class="team-card">
+              <img class="team-card__avatar" src={member.photo} alt={member.name} width="104" height="104" loading="lazy" />
+              <div class="team-card__name">{member.name}</div>
+              <div class="team-card__role">{member.role}</div>
+              <p class="team-card__bio">{member.bio}</p>
+              <a class="team-card__link" href={member.url} target="_blank" rel="noopener noreferrer" aria-label={`${member.name} on LinkedIn`}>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 18.34V9.96H5.56v8.38h2.78zM6.95 8.73a1.61 1.61 0 1 0 0-3.22 1.61 1.61 0 0 0 0 3.22zm11.39 9.61v-4.59c0-2.45-.52-4.33-3.38-4.33-1.38 0-2.3.75-2.68 1.47h-.04V9.96H9.57v8.38h2.78v-4.15c0-1.09.21-2.15 1.56-2.15 1.33 0 1.35 1.25 1.35 2.22v4.08h2.78z"/>
+                </svg>
+                LinkedIn
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+
+    <section class="about-cta">
+      <div class="container about-container">
+        <h2 class="about-h2 about-cta__title">Start building your own wordbook.</h2>
+        <p class="about-cta__sub">Free · No account required · Works offline</p>
+        <div class="about-cta__btns">
+          <StoreButtons locale={locale} />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <MobileDownloadBar locale={locale} />
+
+  <Footer locale={locale} />
+</BaseLayout>
+
+<style>
+  .about-container {
+    max-width: 760px;
+  }
+
+  .about-container--wide {
+    max-width: 920px;
+  }
+
+  .divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(197, 163, 103, 0.14), transparent);
+  }
+
+  /* ── Hero ── */
+  .about-hero {
+    padding: calc(60px + 56px) 0 48px;
+  }
+
+  .about-eyebrow {
+    font-size: .6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #C5A367;
+    margin-bottom: 14px;
+  }
+
+  .about-h1 {
+    font-family: Lora, Georgia, serif;
+    font-size: clamp(1.75rem, 4vw, 2.375rem);
+    font-weight: 600;
+    line-height: 1.18;
+    letter-spacing: -.01em;
+    color: #E2E4ED;
+    margin: 0 0 18px;
+  }
+
+  .about-lead {
+    font-size: clamp(1.0625rem, 2.4vw, 1.1875rem);
+    line-height: 1.7;
+    color: #b8bcce;
+    margin: 0;
+  }
+
+  /* ── Body prose ── */
+  .about-body { padding: 48px 0; }
+
+  .about-section { margin-top: 40px; }
+
+  .about-section--first { margin-top: 0; }
+
+  .about-h2 {
+    font-family: Lora, Georgia, serif;
+    font-size: clamp(1.375rem, 3.2vw, 1.875rem);
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -.01em;
+    color: #E2E4ED;
+    margin: 0 0 14px;
+  }
+
+  .about-section p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #9499B0;
+    margin: 0 0 14px;
+  }
+
+  .about-section p:last-child { margin-bottom: 0; }
+
+  .about-note {
+    margin: 36px 0 0;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #9499B0;
+  }
+
+  /* ── Team ── */
+  .about-team { padding: 56px 0; }
+
+  .about-section-head { margin-bottom: 28px; }
+
+  .team-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .team-card {
+    background: #1C1F2A;
+    border: 1px solid rgba(255, 255, 255, .07);
+    border-radius: 18px;
+    padding: 28px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .team-card__avatar {
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 16px;
+    border: 1px solid rgba(255, 255, 255, .12);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .35), 0 0 0 5px rgba(255, 255, 255, .03);
+  }
+
+  .team-card__name {
+    font-family: Lora, Georgia, serif;
+    font-size: 1.1875rem;
+    font-weight: 600;
+    color: #E2E4ED;
+    letter-spacing: -.01em;
+  }
+
+  .team-card__role {
+    font-size: .6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: #848aab;
+    margin-top: 7px;
+  }
+
+  .team-card__bio {
+    font-size: .9375rem;
+    line-height: 1.55;
+    color: #9499B0;
+    margin: 6px 0 0;
+    flex: 1;
+  }
+
+  .team-card__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 14px;
+    font-size: .875rem;
+    font-weight: 600;
+    color: #9499B0;
+    transition: color .18s;
+  }
+
+  .team-card__link:hover { color: #C5A367; }
+
+  @media (min-width: 720px) {
+    .team-grid { grid-template-columns: repeat(3, 1fr); }
+    .team-card { padding: 24px; }
+  }
+
+  /* ── CTA ── */
+  .about-cta {
+    padding: 24px 0 80px;
+    text-align: center;
+  }
+
+  .about-cta__title { margin-bottom: 10px; }
+
+  .about-cta__sub {
+    font-size: .9375rem;
+    color: #555a70;
+    margin: 0 0 24px;
+  }
+
+  .about-cta__btns :global(.store-btns) { justify-content: center; }
+
+  @media (max-width: 640px) {
+    .about-hero { padding: calc(60px + 36px) 0 36px; }
+    .about-body { padding: 36px 0; }
+    .about-section { margin-top: 32px; }
+    .about-team { padding: 40px 0; }
+    .about-cta { padding: 16px 0 56px; }
+  }
+</style>

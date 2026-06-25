@@ -7,9 +7,11 @@ interface Props {
   locale?: LocaleCode;
   activeLanguage?: LanguageSlug;
   path?: string;
+  /** False when the path exists only in the current locale (e.g. /about). */
+  localized?: boolean;
 }
 
-const { locale = 'en', activeLanguage, path = '/' } = Astro.props;
+const { locale = 'en', activeLanguage, path = '/', localized = true } = Astro.props;
 const copy = homeCopy[locale];
 ---
 <header class="nav" id="nav">
@@ -25,7 +27,7 @@ const copy = homeCopy[locale];
     </nav>
 
     <div class="nav__right">
-      <LocaleSwitcher current={locale} path={path} />
+      <LocaleSwitcher current={locale} path={path} localized={localized} />
 
       <a class="nav__cta" href="#download">{copy.navDownload}</a>
 
