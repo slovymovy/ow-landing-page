@@ -853,6 +853,138 @@ export const homeCopy = {
   }
 } as const;
 
+// Locale-aware demo content for the "5 card formats" band. The learner's
+// target language is English on every locale except the English site (which
+// demos Dutch). The target word, cloze sentence and code arrows are shared
+// across the non-English locales; only the one-word translation and the
+// microcopy change per locale. `translation` may contain inline <br>.
+export type CardDemo = {
+  word: string;
+  translation: string;
+  clozeBefore: string;
+  clozeAfter: string;
+  targetCode: string;
+  locCode: string;
+  translatePrompt: string;
+  fillInChip: string;
+  listenChip: string;
+  monoChip: string;
+  thinkIn: string;
+};
+
+const enTarget = {
+  word: 'reliable',
+  clozeBefore: 'You can always count on a',
+  clozeAfter: ' friend.',
+  targetCode: 'EN'
+};
+
+export const cardDemo: Record<LocaleCode, CardDemo> = {
+  en: {
+    word: 'gezellig',
+    translation: 'pleasant,<br>cozy',
+    clozeBefore: 'De avond was erg',
+    clozeAfter: '.',
+    targetCode: 'NL',
+    locCode: 'EN',
+    translatePrompt: 'Translate to Dutch',
+    fillInChip: 'Fill in',
+    listenChip: 'Listen',
+    monoChip: 'NL only',
+    thinkIn: 'think in Dutch'
+  },
+  cs: {
+    ...enTarget,
+    translation: 'spolehlivý',
+    locCode: 'CS',
+    translatePrompt: 'Přeložte do angličtiny',
+    fillInChip: 'Doplňte',
+    listenChip: 'Poslech',
+    monoChip: 'Jen EN',
+    thinkIn: 'myslete anglicky'
+  },
+  de: {
+    ...enTarget,
+    translation: 'zuverlässig',
+    locCode: 'DE',
+    translatePrompt: 'Ins Englische übersetzen',
+    fillInChip: 'Lücke füllen',
+    listenChip: 'Hören',
+    monoChip: 'Nur EN',
+    thinkIn: 'auf Englisch denken'
+  },
+  es: {
+    ...enTarget,
+    translation: 'fiable',
+    locCode: 'ES',
+    translatePrompt: 'Traducir al inglés',
+    fillInChip: 'Completar',
+    listenChip: 'Escuchar',
+    monoChip: 'Solo EN',
+    thinkIn: 'piensa en inglés'
+  },
+  fr: {
+    ...enTarget,
+    translation: 'fiable',
+    locCode: 'FR',
+    translatePrompt: 'Traduire en anglais',
+    fillInChip: 'À compléter',
+    listenChip: 'Écouter',
+    monoChip: 'EN uniquement',
+    thinkIn: 'pensez en anglais'
+  },
+  it: {
+    ...enTarget,
+    translation: 'affidabile',
+    locCode: 'IT',
+    translatePrompt: 'Traduci in inglese',
+    fillInChip: 'Completa',
+    listenChip: 'Ascolta',
+    monoChip: 'Solo EN',
+    thinkIn: 'pensa in inglese'
+  },
+  nl: {
+    ...enTarget,
+    translation: 'betrouwbaar',
+    locCode: 'NL',
+    translatePrompt: 'Vertaal naar het Engels',
+    fillInChip: 'Invullen',
+    listenChip: 'Luisteren',
+    monoChip: 'Alleen EN',
+    thinkIn: 'denk in het Engels'
+  },
+  pl: {
+    ...enTarget,
+    translation: 'niezawodny',
+    locCode: 'PL',
+    translatePrompt: 'Przetłumacz na angielski',
+    fillInChip: 'Uzupełnij',
+    listenChip: 'Słuchaj',
+    monoChip: 'Tylko EN',
+    thinkIn: 'myśl po angielsku'
+  },
+  ru: {
+    ...enTarget,
+    translation: 'надёжный',
+    locCode: 'RU',
+    translatePrompt: 'Переведите на английский',
+    fillInChip: 'Заполните',
+    listenChip: 'Прослушать',
+    monoChip: 'Только EN',
+    thinkIn: 'думайте по-английски'
+  },
+  tr: {
+    ...enTarget,
+    translation: 'güvenilir',
+    locCode: 'TR',
+    translatePrompt: 'İngilizceye çevir',
+    fillInChip: 'Boşluğu doldur',
+    listenChip: 'Dinle',
+    monoChip: 'Yalnızca EN',
+    thinkIn: 'İngilizce düşün'
+  }
+};
+
 export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
   const appLanguage = languages[language];
   const localLanguage = appLanguage.localName[locale];
