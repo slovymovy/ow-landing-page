@@ -17,6 +17,14 @@ export const locales = {
     flag: 'GB',
     htmlLang: 'en'
   },
+  cs: {
+    code: 'cs',
+    base: '/cs',
+    label: 'Czech',
+    nativeLabel: 'Čeština',
+    flag: 'CZ',
+    htmlLang: 'cs'
+  },
   de: {
     code: 'de',
     base: '/de',
@@ -32,6 +40,14 @@ export const locales = {
     nativeLabel: 'Español',
     flag: 'ES',
     htmlLang: 'es'
+  },
+  fr: {
+    code: 'fr',
+    base: '/fr',
+    label: 'French',
+    nativeLabel: 'Français',
+    flag: 'FR',
+    htmlLang: 'fr'
   },
   it: {
     code: 'it',
@@ -64,6 +80,14 @@ export const locales = {
     nativeLabel: 'Русский',
     flag: 'RU',
     htmlLang: 'ru'
+  },
+  tr: {
+    code: 'tr',
+    base: '/tr',
+    label: 'Turkish',
+    nativeLabel: 'Türkçe',
+    flag: 'TR',
+    htmlLang: 'tr'
   }
 } as const;
 
@@ -79,7 +103,10 @@ export const languages = {
       ru: 'Английский',
       it: 'Inglese',
       es: 'Inglés',
-      de: 'Englisch'
+      de: 'Englisch',
+      fr: 'Anglais',
+      cs: 'Angličtina',
+      tr: 'İngilizce'
     },
     localName: {
       en: 'English',
@@ -88,7 +115,10 @@ export const languages = {
       ru: 'английский',
       it: 'inglese',
       es: 'inglés',
-      de: 'Englisch'
+      de: 'Englisch',
+      fr: 'anglais',
+      cs: 'angličtiny',
+      tr: 'İngilizce'
     },
     vocabPhrase: {
       en: 'English vocabulary',
@@ -97,7 +127,10 @@ export const languages = {
       ru: 'английские слова',
       it: 'vocabolario inglese',
       es: 'vocabulario inglés',
-      de: 'englischer Wortschatz'
+      de: 'englischer Wortschatz',
+      fr: 'vocabulaire anglais',
+      cs: 'slovní zásoba angličtiny',
+      tr: 'İngilizce kelime hazinesi'
     },
     learners: {
       en: 'non-native speakers building everyday, academic, or professional English vocabulary',
@@ -106,7 +139,10 @@ export const languages = {
       ru: 'тех, кто учит английскую лексику для работы, учёбы или чтения литературы в оригинале',
       it: 'chi studia l\'inglese per il lavoro, lo studio o la lettura quotidiana',
       es: 'quienes aprenden inglés para el trabajo, los estudios o la lectura diaria',
-      de: 'alle, die ihren englischen Wortschatz für Beruf, Studium oder das tägliche Lesen aufbauen wollen'
+      de: 'alle, die ihren englischen Wortschatz für Beruf, Studium oder das tägliche Lesen aufbauen wollen',
+      fr: 'les personnes qui apprennent l\'anglais pour le travail, les études ou la lecture au quotidien',
+      cs: 'ty, kteří se učí anglicky kvůli práci, studiu nebo každodennímu čtení',
+      tr: 'iş, eğitim veya günlük okuma için İngilizce öğrenen herkes'
     },
     examples: ['approach', 'reliable', 'evidence']
   },
@@ -121,7 +157,10 @@ export const languages = {
       ru: 'Нидерландский',
       it: 'Olandese',
       es: 'Neerlandés',
-      de: 'Niederländisch'
+      de: 'Niederländisch',
+      fr: 'Néerlandais',
+      cs: 'Nizozemština',
+      tr: 'Felemenkçe'
     },
     localName: {
       en: 'Dutch',
@@ -130,7 +169,10 @@ export const languages = {
       ru: 'нидерландский',
       it: 'olandese',
       es: 'neerlandés',
-      de: 'Niederländisch'
+      de: 'Niederländisch',
+      fr: 'néerlandais',
+      cs: 'nizozemštiny',
+      tr: 'Felemenkçe'
     },
     vocabPhrase: {
       en: 'Dutch vocabulary',
@@ -139,7 +181,10 @@ export const languages = {
       ru: 'нидерландские слова',
       it: 'vocabolario olandese',
       es: 'vocabulario neerlandés',
-      de: 'niederländischer Wortschatz'
+      de: 'niederländischer Wortschatz',
+      fr: 'vocabulaire néerlandais',
+      cs: 'slovní zásoba nizozemštiny',
+      tr: 'Felemenkçe kelime hazinesi'
     },
     learners: {
       en: 'Dutch learners, NT2 students, and people living or working in the Netherlands or Belgium',
@@ -148,7 +193,10 @@ export const languages = {
       ru: 'студентов курсов NT2, экспатов и всех, кто учит нидерландскую лексику для жизни и работы в стране',
       it: 'chi studia l\'olandese, gli studenti NT2 e chi vive o lavora nei Paesi Bassi o in Belgio',
       es: 'quienes aprenden neerlandés, los estudiantes de NT2 y quienes viven o trabajan en los Países Bajos o Bélgica',
-      de: 'Niederländischlernende, NT2-Teilnehmende und alle, die in den Niederlanden oder Belgien leben oder arbeiten'
+      de: 'Niederländischlernende, NT2-Teilnehmende und alle, die in den Niederlanden oder Belgien leben oder arbeiten',
+      fr: 'les apprenants de néerlandais, les étudiants en NT2 et ceux qui vivent ou travaillent aux Pays-Bas ou en Belgique',
+      cs: 'ty, kteří se učí nizozemsky, připravují se na zkoušku NT2 nebo žijí a pracují v Nizozemsku či Belgii',
+      tr: 'Felemenkçe öğrenenler, NT2 öğrencileri ve Hollanda ya da Belçika\'da yaşayan veya çalışan herkes'
     },
     examples: ['afspraak', 'duidelijk', 'omgeving']
   },
@@ -163,7 +211,10 @@ export const languages = {
       ru: 'Польский',
       it: 'Polacco',
       es: 'Polaco',
-      de: 'Polnisch'
+      de: 'Polnisch',
+      fr: 'Polonais',
+      cs: 'Polština',
+      tr: 'Lehçe'
     },
     localName: {
       en: 'Polish',
@@ -172,7 +223,10 @@ export const languages = {
       ru: 'польский',
       it: 'polacco',
       es: 'polaco',
-      de: 'Polnisch'
+      de: 'Polnisch',
+      fr: 'polonais',
+      cs: 'polštiny',
+      tr: 'Lehçe'
     },
     vocabPhrase: {
       en: 'Polish vocabulary',
@@ -181,7 +235,10 @@ export const languages = {
       ru: 'польские слова',
       it: 'vocabolario polacco',
       es: 'vocabulario polaco',
-      de: 'polnischer Wortschatz'
+      de: 'polnischer Wortschatz',
+      fr: 'vocabulaire polonais',
+      cs: 'slovní zásoba polštiny',
+      tr: 'Lehçe kelime hazinesi'
     },
     learners: {
       en: 'Polish learners, heritage speakers, and students preparing for language exams',
@@ -190,7 +247,10 @@ export const languages = {
       ru: 'тех, кто учит польский язык, а также для билингвов и студентов, которые готовятся к сдаче языковых экзаменов',
       it: 'chi studia il polacco, i parlanti di origine e gli studenti che si preparano agli esami di lingua',
       es: 'quienes aprenden polaco, los hablantes de herencia y los estudiantes que se preparan para exámenes de idioma',
-      de: 'Polnischlernende, Herkunftssprecher und alle, die sich auf Sprachprüfungen vorbereiten'
+      de: 'Polnischlernende, Herkunftssprecher und alle, die sich auf Sprachprüfungen vorbereiten',
+      fr: 'les apprenants de polonais, les locuteurs d\'origine et les étudiants qui préparent un examen de langue',
+      cs: 'ty, kteří se učí polsky, mají polské kořeny nebo se připravují na jazykové zkoušky',
+      tr: 'Lehçe öğrenenler, köken konuşurları ve dil sınavlarına hazırlanan öğrenciler'
     },
     examples: ['znaczenie', 'wymagać', 'przykład']
   },
@@ -205,7 +265,10 @@ export const languages = {
       ru: 'Русский',
       it: 'Russo',
       es: 'Ruso',
-      de: 'Russisch'
+      de: 'Russisch',
+      fr: 'Russe',
+      cs: 'Ruština',
+      tr: 'Rusça'
     },
     localName: {
       en: 'Russian',
@@ -214,7 +277,10 @@ export const languages = {
       ru: 'русский',
       it: 'russo',
       es: 'ruso',
-      de: 'Russisch'
+      de: 'Russisch',
+      fr: 'russe',
+      cs: 'ruštiny',
+      tr: 'Rusça'
     },
     vocabPhrase: {
       en: 'Russian vocabulary',
@@ -223,7 +289,10 @@ export const languages = {
       ru: 'русские слова',
       it: 'vocabolario russo',
       es: 'vocabulario ruso',
-      de: 'russischer Wortschatz'
+      de: 'russischer Wortschatz',
+      fr: 'vocabulaire russe',
+      cs: 'slovní zásoba ruštiny',
+      tr: 'Rusça kelime hazinesi'
     },
     learners: {
       en: 'Russian learners and native speakers who want richer, more precise vocabulary',
@@ -232,7 +301,10 @@ export const languages = {
       ru: 'тех, кто изучает русский язык как иностранный, а также для носителей языка, желающих расширить свой активный словарный запас',
       it: 'chi studia il russo e i madrelingua che desiderano un vocabolario più ricco e preciso',
       es: 'quienes aprenden ruso y los hablantes nativos que quieren un vocabulario más rico y preciso',
-      de: 'Russischlernende und Muttersprachler, die einen reicheren, präziseren Wortschatz aufbauen möchten'
+      de: 'Russischlernende und Muttersprachler, die einen reicheren, präziseren Wortschatz aufbauen möchten',
+      fr: 'les apprenants de russe et les locuteurs natifs qui souhaitent enrichir et préciser leur vocabulaire',
+      cs: 'ty, kteří se učí rusky, i rodilé mluvčí, kteří chtějí bohatší a přesnější slovní zásobu',
+      tr: 'Rusça öğrenenler ve daha zengin, daha kesin bir kelime hazinesi isteyen ana dili konuşurları'
     },
     examples: ['смысл', 'пример', 'точный']
   }
@@ -243,16 +315,16 @@ export const languages = {
 // localised to the page's own locale (SEO: single-language content signal).
 // `exclude` drops the band entry that matches the page's own learn language.
 export const translationLanguages = [
-  { code: 'DE', name: { en: 'German', pl: 'Niemiecki', nl: 'Duits', ru: 'Немецкий', it: 'Tedesco', es: 'Alemán', de: 'Deutsch' } },
-  { code: 'EN', exclude: 'english', name: { en: 'English', pl: 'Angielski', nl: 'Engels', ru: 'Английский', it: 'Inglese', es: 'Inglés', de: 'Englisch' } },
-  { code: 'ES', name: { en: 'Spanish', pl: 'Hiszpański', nl: 'Spaans', ru: 'Испанский', it: 'Spagnolo', es: 'Español', de: 'Spanisch' } },
-  { code: 'FR', name: { en: 'French', pl: 'Francuski', nl: 'Frans', ru: 'Французский', it: 'Francese', es: 'Francés', de: 'Französisch' } },
-  { code: 'IT', name: { en: 'Italian', pl: 'Włoski', nl: 'Italiaans', ru: 'Итальянский', it: 'Italiano', es: 'Italiano', de: 'Italienisch' } },
-  { code: 'NL', exclude: 'dutch', name: { en: 'Dutch', pl: 'Niderlandzki', nl: 'Nederlands', ru: 'Нидерландский', it: 'Olandese', es: 'Neerlandés', de: 'Niederländisch' } },
-  { code: 'PL', exclude: 'polish', name: { en: 'Polish', pl: 'Polski', nl: 'Pools', ru: 'Польский', it: 'Polacco', es: 'Polaco', de: 'Polnisch' } },
-  { code: 'TR', name: { en: 'Turkish', pl: 'Turecki', nl: 'Turks', ru: 'Турецкий', it: 'Turco', es: 'Turco', de: 'Türkisch' } },
-  { code: 'CS', name: { en: 'Czech', pl: 'Czeski', nl: 'Tsjechisch', ru: 'Чешский', it: 'Ceco', es: 'Checo', de: 'Tschechisch' } },
-  { code: 'RU', exclude: 'russian', name: { en: 'Russian', pl: 'Rosyjski', nl: 'Russisch', ru: 'Русский', it: 'Russo', es: 'Ruso', de: 'Russisch' } }
+  { code: 'DE', name: { en: 'German', pl: 'Niemiecki', nl: 'Duits', ru: 'Немецкий', it: 'Tedesco', es: 'Alemán', de: 'Deutsch', fr: 'Allemand', cs: 'Němčina', tr: 'Almanca' } },
+  { code: 'EN', exclude: 'english', name: { en: 'English', pl: 'Angielski', nl: 'Engels', ru: 'Английский', it: 'Inglese', es: 'Inglés', de: 'Englisch', fr: 'Anglais', cs: 'Angličtina', tr: 'İngilizce' } },
+  { code: 'ES', name: { en: 'Spanish', pl: 'Hiszpański', nl: 'Spaans', ru: 'Испанский', it: 'Spagnolo', es: 'Español', de: 'Spanisch', fr: 'Espagnol', cs: 'Španělština', tr: 'İspanyolca' } },
+  { code: 'FR', name: { en: 'French', pl: 'Francuski', nl: 'Frans', ru: 'Французский', it: 'Francese', es: 'Francés', de: 'Französisch', fr: 'Français', cs: 'Francouzština', tr: 'Fransızca' } },
+  { code: 'IT', name: { en: 'Italian', pl: 'Włoski', nl: 'Italiaans', ru: 'Итальянский', it: 'Italiano', es: 'Italiano', de: 'Italienisch', fr: 'Italien', cs: 'Italština', tr: 'İtalyanca' } },
+  { code: 'NL', exclude: 'dutch', name: { en: 'Dutch', pl: 'Niderlandzki', nl: 'Nederlands', ru: 'Нидерландский', it: 'Olandese', es: 'Neerlandés', de: 'Niederländisch', fr: 'Néerlandais', cs: 'Nizozemština', tr: 'Felemenkçe' } },
+  { code: 'PL', exclude: 'polish', name: { en: 'Polish', pl: 'Polski', nl: 'Pools', ru: 'Польский', it: 'Polacco', es: 'Polaco', de: 'Polnisch', fr: 'Polonais', cs: 'Polština', tr: 'Lehçe' } },
+  { code: 'TR', name: { en: 'Turkish', pl: 'Turecki', nl: 'Turks', ru: 'Турецкий', it: 'Turco', es: 'Turco', de: 'Türkisch', fr: 'Turc', cs: 'Turečtina', tr: 'Türkçe' } },
+  { code: 'CS', name: { en: 'Czech', pl: 'Czeski', nl: 'Tsjechisch', ru: 'Чешский', it: 'Ceco', es: 'Checo', de: 'Tschechisch', fr: 'Tchèque', cs: 'Čeština', tr: 'Çekçe' } },
+  { code: 'RU', exclude: 'russian', name: { en: 'Russian', pl: 'Rosyjski', nl: 'Russisch', ru: 'Русский', it: 'Russo', es: 'Ruso', de: 'Russisch', fr: 'Russe', cs: 'Ruština', tr: 'Rusça' } }
 ] as const;
 
 export type LocaleCode = keyof typeof locales;

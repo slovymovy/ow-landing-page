@@ -595,6 +595,261 @@ export const homeCopy = {
       savedCardsAlt: 'Gespeicherte Wortkarten in OpenWords',
       statsScreenAlt: 'Fortschrittsbildschirm von OpenWords mit Kalender und Serie'
     }
+  },
+  fr: {
+    title: 'OpenWords – Application de vocabulaire pour l\'anglais, le néerlandais, le polonais et le russe',
+    description: 'Recherchez n\'importe quel mot, enregistrez son sens exact d\'un seul toucher et révisez-le avec la répétition espacée. Application de vocabulaire gratuite pour l\'anglais, le néerlandais, le polonais et le russe.',
+    navDownload: 'Télécharger',
+    eyebrow: 'Disponible sur iOS et Android',
+    heroEyebrow: 'Dictionnaire et cartes mémoire',
+    h1: 'Enrichissez votre vocabulaire à partir des mots que vous rencontrez vraiment.',
+    heroH1Em: 'que vous rencontrez vraiment.',
+    heroH1Html: 'Recherchez n\'importe quel mot.<br>Enregistrez-le.<br><em>Mémorisez-le.</em>',
+    heroTagline: 'Gratuit · Sans compte · Fonctionne hors ligne',
+    subtitle: 'Mémorisez les mots que vous oublieriez d\'habitude dès le lendemain. OpenWords est une application de dictionnaire et de cartes mémoire pour l\'anglais, le néerlandais, le polonais et le russe. Recherchez un mot que vous venez de rencontrer, enregistrez son sens exact d\'un seul toucher, et il revient sous forme de carte mémoire jusqu\'à ce qu\'il soit acquis.',
+    problemTitle: 'Vous recherchez déjà des mots. Vous les oubliez déjà. Ce n\'est pas votre faute.',
+    problemTitleEm: 'Ce n\'est pas votre faute.',
+    problem: 'Oublier, c\'est ainsi que fonctionne la mémoire — un mot rencontré une seule fois est censé s\'effacer. La solution n\'est pas plus de discipline. C\'est de revoir le mot au bon moment, de différentes façons. OpenWords boucle ce cycle : la recherche devient la carte mémoire, le calendrier de révision se gère tout seul, et chaque mot revient sous une forme différente pour s\'ancrer sous plusieurs angles.',
+    problemTitleHtml: 'Le mot que vous avez cherché hier<br><em>s\'efface déjà.</em>',
+    problemLead: 'Ce n\'est pas un défaut de mémoire — c\'est simplement le fonctionnement du cerveau. Un mot vu une seule fois s\'efface. La solution, c\'est de le revoir au moment exact où il le faut.',
+    beforeLabel: 'Sans OpenWords',
+    beforeText: 'Vous cherchez un mot aujourd\'hui — et vous l\'avez oublié la semaine suivante.',
+    afterLabel: 'Avec OpenWords',
+    afterText: 'Enregistrez-le d\'un toucher. Révisez-le jusqu\'à ce qu\'il soit acquis.',
+    loopTitle: 'Recherchez n\'importe quel mot en quelques secondes.',
+    loop: 'Recherchez un mot que vous venez de lire ou d\'entendre. OpenWords en affiche tous les sens — pas seulement une traduction générique. Choisissez la définition qui correspond à votre contexte et touchez Enregistrer.',
+    loop2: 'Vous demandez peut-être déjà à une IA ce qu\'un mot signifie — mais cette réponse disparaît dès que vous fermez la conversation. Ici, chaque recherche n\'est qu\'à un toucher d\'être enregistrée et maîtrisée.',
+    dictionaryTitle: 'Un dictionnaire qui enseigne, pas seulement qui traduit.',
+    dictionary: 'Chaque entrée affiche les sens, des exemples, le niveau CECR, la fréquence et la famille de mots. Vous savez ainsi ce que le mot signifie, comment il s\'emploie, s\'il vaut la peine d\'être appris maintenant et quelles formes apparentées l\'accompagnent.',
+    srsTitle: 'Révisé comme fonctionne la mémoire.',
+    srs: 'La répétition espacée ramène chaque mot juste avant que vous ne l\'oubliiez. Et chaque mot revient sous un format de carte différent — reconnaissance, rappel, en contexte — pour s\'ancrer sous plusieurs angles.',
+    trackTitle: 'Regardez-le s\'ancrer.',
+    track: 'Un calendrier marque chaque jour où vous avez révisé. Une série compte les jours consécutifs. Le compteur de mots montre comment votre bibliothèque s\'agrandit. Rien à configurer — le calendrier se gère tout seul.',
+    howItWorksEyebrow: 'Comment ça marche',
+    howItWorksTitle: 'D\'un mot que vous cherchez à un mot que vous gardez.',
+    howItWorksSub: 'Aucune configuration. Aucune création de paquets. Aucune carte à créer à la main. Le dictionnaire est la carte mémoire.',
+    howStepChips: ['01 Rechercher', '02 Enregistrer', '03 Étudier', '04 Suivre'],
+    cardTypesEyebrow: '5 formats de cartes',
+    cardTypesTitle: 'Les mots reviennent différemment — pour s\'ancrer sous plusieurs angles.',
+    formeEyebrow: 'À qui ça s\'adresse',
+    formeTitle: 'OpenWords est-il fait pour vous ?',
+    formeItems: [
+      { lead: 'Quel que soit votre niveau', desc: 'Enregistrez et apprenez exactement les mots dont vous avez besoin, du débutant au niveau courant.' },
+      { lead: 'Si vous voulez une vraie progression de vocabulaire', desc: 'OpenWords se concentre sur le passage des mots de votre mémoire passive à votre vocabulaire actif.' },
+      { lead: 'Si vous préférez la pratique au jeu', desc: 'Vous obtenez un outil clair dédié à l\'étude, pas un jeu conçu pour vous accrocher.' },
+      { lead: 'Si les applications superficielles vous ont déçu', desc: 'Vous obtenez un outil avec toutes les informations dont vous avez besoin, sans paywall caché ni publicité.' }
+    ],
+    trustTitle: 'Gratuit. Sans compte. Hors ligne.',
+    trust: 'OpenWords est conçu pour les apprenants sérieux qui veulent moins de friction : aucune inscription, aucun e-mail et aucune connexion Internet nécessaire pour l\'étude de base.',
+    languagesEyebrow: 'Langues prises en charge',
+    learnVerb: 'Apprendre',
+    languagesTitle: 'Choisissez une langue pour enrichir votre vocabulaire.',
+    languagesSubtitle: 'Chaque langue est livrée avec une sélection de mots courants. Cherchez au-delà et nous préparons l\'entrée pour vous.',
+    faqTitle: 'Les questions des apprenants',
+    finalCta: 'Commencez à construire votre propre carnet de mots.',
+    ctaSub: 'Apprendre de nouveaux mots ne devrait pas être un combat. Et avec OpenWords, ça ne l\'est pas.',
+    footerTagline: 'Enrichissez votre vocabulaire à partir des mots que vous rencontrez vraiment.',
+    facts: [
+      ['Gratuit.', 'Aucun abonnement, aucun paywall.'],
+      ['Sans compte.', 'Aucun e-mail, aucune inscription.'],
+      ['Hors ligne.', 'Fonctionne sans Internet.']
+    ],
+    footerLearn: 'Apprendre',
+    footerLegal: 'Mentions légales',
+    footerAbout: 'À propos',
+    footerContact: 'Contact',
+    footerBottom: 'Conçu par des apprenants de langues, pour des apprenants de langues.',
+    privacy: 'Politique de confidentialité',
+    sitemap: 'Plan du site',
+    ui: {
+      mainNavigation: 'Navigation principale',
+      languageVersions: 'Versions linguistiques',
+      changeLang: 'Changer de langue',
+      language: 'Langue',
+      mobileNavigation: 'Navigation mobile',
+      mobileLanguageVersions: 'Versions linguistiques mobiles',
+      openMenu: 'Ouvrir le menu',
+      drawerLearnLabel: 'Apprendre le vocabulaire',
+      drawerLocaleLabel: 'Version linguistique',
+      supportedLanguages: 'Langues prises en charge',
+      searchMascotAlt: 'La mascotte d\'OpenWords cherche du vocabulaire',
+      savedMascotAlt: 'La mascotte d\'OpenWords avec du vocabulaire enregistré',
+      searchScreenAlt: 'Écran de recherche d\'OpenWords',
+      meaningCardAlt: 'Carte de sens d\'un mot dans OpenWords',
+      savedScreenAlt: 'Écran des mots enregistrés dans OpenWords',
+      savedCardsAlt: 'Cartes de mots enregistrés dans OpenWords',
+      statsScreenAlt: 'Écran de progression d\'OpenWords avec calendrier et série'
+    }
+  },
+  cs: {
+    title: 'OpenWords – Slovníková aplikace pro angličtinu, nizozemštinu, polštinu a ruštinu',
+    description: 'Vyhledejte jakékoli slovo, jedním ťuknutím uložte jeho přesný význam a díky rozloženému opakování si ho zafixujte. Bezplatná aplikace na slovní zásobu pro angličtinu, nizozemštinu, polštinu a ruštinu.',
+    navDownload: 'Stáhnout',
+    eyebrow: 'Dostupné pro iOS a Android',
+    heroEyebrow: 'Slovník a kartičky',
+    h1: 'Rozšiřujte si slovní zásobu o slova, na která doopravdy narazíte.',
+    heroH1Em: 'doopravdy narazíte.',
+    heroH1Html: 'Vyhledejte jakékoli slovo.<br>Uložte si ho.<br><em>Zapamatujte si ho.</em>',
+    heroTagline: 'Zdarma · Bez účtu · Funguje offline',
+    subtitle: 'Zapamatujte si slova, která byste jinak do zítřka zapomněli. OpenWords je slovníková aplikace s kartičkami pro angličtinu, nizozemštinu, polštinu a ruštinu. Vyhledejte slovo, na které jste právě narazili, a uložte jeho přesný význam jedním ťuknutím. Aplikace vám ho pak bude vracet jako kartičku, dokud vám neutkví v paměti.',
+    problemTitle: 'Slova si stejně vyhledáváte. A stejně je zapomínáte. Není to vaše chyba.',
+    problemTitleEm: 'Není to vaše chyba.',
+    problem: 'Zapomínání je přesně to, jak funguje paměť — slovo, na které narazíte jen jednou, se má z paměti vytratit. Řešením není víc disciplíny, ale připomenout si slovo ve správnou chvíli, a to různými způsoby. OpenWords tento okruh uzavírá: vyhledání se stává kartičkou, plán opakování běží sám a každé slovo se vrací v jiné podobě, aby vám utkvělo v paměti ze všech stran.',
+    problemTitleHtml: 'Slovo, které jste si včera vyhledali,<br><em>už vám bledne v paměti.</em>',
+    problemLead: 'Není to chyba paměti — takhle prostě funguje mozek. Slovo, které uvidíte jen jednou, z paměti vyprchá. Řešením je připomenout si ho přesně ve správnou chvíli.',
+    beforeLabel: 'Bez OpenWords',
+    beforeText: 'Dnes si slovo vyhledáte — a do týdne ho zapomenete.',
+    afterLabel: 'S OpenWords',
+    afterText: 'Uložte si ho jedním ťuknutím. Opakujte si ho, dokud vám neutkví v paměti.',
+    loopTitle: 'Vyhledejte jakékoli slovo za pár vteřin.',
+    loop: 'Vyhledejte slovo, které jste právě četli nebo slyšeli. OpenWords zobrazí všechny jeho významy — nejen jeden obecný překlad. Vyberte definici, která odpovídá vašemu kontextu, a jedním ťuknutím ho uložte.',
+    loop2: 'Možná se už ptáte AI, co dané slovo znamená — jenže její odpověď zmizí, jakmile chat zavřete. V OpenWords stačí jediné ťuknutí, abyste si slovo uložili a nadobro si ho osvojili.',
+    dictionaryTitle: 'Slovník, který učí, nejen překládá.',
+    dictionary: 'Každé heslo ukazuje významy, příklady, úroveň CEFR, frekvenci a slovní rodinu. Dovíte se tak, co slovo znamená, jak se používá, zda se vyplatí se ho učit zrovna teď a jaké tvary k němu patří.',
+    srsTitle: 'Opakování přesně podle toho, jak funguje paměť.',
+    srs: 'Rozložené opakování vám každé slovo připomene právě včas, abyste ho nezapomněli. Každé slovo se navíc vrací v jiném typu kartičky — procvičíte si rozpoznání, vybavení i použití v kontextu — aby vám utkvělo v paměti ze všech stran.',
+    trackTitle: 'Sledujte, jak vám slova utkví v paměti.',
+    track: 'Kalendář zaznamená každý den, kdy jste si opakovali. Série vám počítá dny v řadě a počet slov ukazuje, jak vaše knihovna roste. Nemusíte nic nastavovat — plán běží sám.',
+    howItWorksEyebrow: 'Jak to funguje',
+    howItWorksTitle: 'Od slov, která si vyhledáte, k těm, která už nezapomenete.',
+    howItWorksSub: 'Žádné nastavování. Žádné stavění balíčků. Žádné ruční vytváření kartiček. Slovník je kartička.',
+    howStepChips: ['01 Vyhledat', '02 Uložit', '03 Učit se', '04 Sledovat'],
+    cardTypesEyebrow: '5 formátů kartiček',
+    cardTypesTitle: 'Slova se vracejí pokaždé jinak — aby vám utkvěla v paměti ze všech stran.',
+    formeEyebrow: 'Pro koho to je',
+    formeTitle: 'Je OpenWords pro vás?',
+    formeItems: [
+      { lead: 'Ať už jste na jakékoli úrovni', desc: 'Ukládejte a učte se přesně ta slova, která potřebujete – od úplných začátků až po plynulou úroveň.' },
+      { lead: 'Pokud chcete, aby vaše slovní zásoba skutečně rostla', desc: 'OpenWords se zaměřuje na přesun slov z pasivní slovní zásoby do té aktivní.' },
+      { lead: 'Pokud dáváte přednost studiu před hrami', desc: 'Získáte přehledný nástroj určený k učení, nikoli hru, která vás má jen udržet u obrazovky.' },
+      { lead: 'Pokud vás zklamaly povrchní aplikace', desc: 'Získáte nástroj se všemi informacemi, které potřebujete, a to bez skrytých poplatků a reklam.' }
+    ],
+    trustTitle: 'Zdarma. Bez účtu. Offline.',
+    trust: 'OpenWords je vytvořen pro ty, kdo to s učením myslí vážně a chtějí méně překážek: žádná registrace, žádný e-mail a k základnímu učení není potřeba internet.',
+    languagesEyebrow: 'Podporované jazyky',
+    learnVerb: 'Učit se',
+    languagesTitle: 'Vyberte si jazyk a rozšiřujte svou slovní zásobu.',
+    languagesSubtitle: 'Každý jazyk už v základu obsahuje výběr nejčastějších slov. Vyhledejte cokoli dalšího a my pro vás heslo okamžitě připravíme.',
+    faqTitle: 'Časté otázky',
+    finalCta: 'Začněte budovat svůj vlastní slovníček.',
+    ctaSub: 'Učení nových slov nemusí být dřina. S OpenWords to půjde samo.',
+    footerTagline: 'Rozšiřujte si slovní zásobu díky slovům, na která doopravdy narazíte.',
+    facts: [
+      ['Zdarma.', 'Žádná předplatná, žádné placené zdi.'],
+      ['Bez účtu.', 'Žádný e-mail, žádná registrace.'],
+      ['Offline.', 'Funguje bez internetu.']
+    ],
+    footerLearn: 'Učit se',
+    footerLegal: 'Právní informace',
+    footerAbout: 'O nás',
+    footerContact: 'Kontakt',
+    footerBottom: 'Vytvořeno lidmi, co se učí jazyky, pro ty, co se je učí.',
+    privacy: 'Zásady ochrany osobních údajů',
+    sitemap: 'Mapa webu',
+    ui: {
+      mainNavigation: 'Hlavní navigace',
+      languageVersions: 'Jazykové verze',
+      changeLang: 'Změnit jazyk',
+      language: 'Jazyk',
+      mobileNavigation: 'Mobilní navigace',
+      mobileLanguageVersions: 'Mobilní jazykové verze',
+      openMenu: 'Otevřít menu',
+      drawerLearnLabel: 'Učit se slovní zásobu',
+      drawerLocaleLabel: 'Jazyková verze',
+      supportedLanguages: 'Podporované jazyky',
+      searchMascotAlt: 'Maskot OpenWords hledá slovíčka',
+      savedMascotAlt: 'Maskot OpenWords s uloženými slovíčky',
+      searchScreenAlt: 'Vyhledávací obrazovka OpenWords',
+      meaningCardAlt: 'Kartička s významem slova v OpenWords',
+      savedScreenAlt: 'Obrazovka uložených slov v OpenWords',
+      savedCardsAlt: 'Uložené kartičky se slovy v OpenWords',
+      statsScreenAlt: 'Obrazovka pokroku OpenWords s kalendářem a sérií'
+    }
+  },
+  tr: {
+    title: 'OpenWords – İngilizce, Felemenkçe, Lehçe ve Rusça için kelime uygulaması',
+    description: 'Herhangi bir kelimeyi arayın, anlamını tek dokunuşla kaydedin ve aralıklı tekrarla gözden geçirin. İngilizce, Felemenkçe, Lehçe ve Rusça için ücretsiz kelime uygulaması.',
+    navDownload: 'İndir',
+    eyebrow: 'iOS ve Android\'de mevcut',
+    heroEyebrow: 'Sözlük ve kelime kartları',
+    h1: 'Kelime hazinenizi gerçekten karşılaştığınız kelimelerden oluşturun.',
+    heroH1Em: 'gerçekten karşılaştığınız kelimelerden',
+    heroH1Html: 'Herhangi bir kelimeyi arayın.<br>Kaydedin.<br><em>Aklınızda tutun.</em>',
+    heroTagline: 'Ücretsiz · Hesap gerekmez · Çevrimdışı çalışır',
+    subtitle: 'Genelde ertesi güne kadar unuttuğunuz kelimeleri aklınızda tutun. OpenWords; İngilizce, Felemenkçe, Lehçe ve Rusça için bir sözlük ve kelime kartı uygulamasıdır. Yeni karşılaştığınız bir kelimeyi arayın, tam anlamını tek dokunuşla kaydedin; kelime, siz onu öğrenene kadar bir kart olarak geri gelsin.',
+    problemTitle: 'Kelimeleri zaten arıyorsunuz. Zaten unutuyorsunuz. Bu sizin suçunuz değil.',
+    problemTitleEm: 'Bu sizin suçunuz değil.',
+    problem: 'Unutmak, hafızanın çalışma biçimidir — yalnızca bir kez karşılaştığınız bir kelimenin solması doğaldır. Çözüm daha fazla disiplin değildir. Çözüm, kelimeyi doğru anda ve farklı biçimlerde yeniden görmektir. OpenWords bu döngüyü kapatır: arama kelime kartına dönüşür, tekrar planı kendi kendine işler ve her kelime farklı bir biçimde geri gelir, böylece birden çok açıdan yerleşir.',
+    problemTitleHtml: 'Dün aradığınız kelime<br><em>çoktan soluyor.</em>',
+    problemLead: 'Bu bir hafıza kusuru değil — beyin böyle çalışır. Yalnızca bir kez gördüğünüz kelime solar. Çözüm, onu tam doğru anda yeniden görmektir.',
+    beforeLabel: 'OpenWords olmadan',
+    beforeText: 'Bugün bir kelime ararsınız — ve gelecek haftaya unutursunuz.',
+    afterLabel: 'OpenWords ile',
+    afterText: 'Tek dokunuşla kaydedin. Yerleşene kadar tekrar edin.',
+    loopTitle: 'Herhangi bir kelimeyi saniyeler içinde arayın.',
+    loop: 'Az önce okuduğunuz veya duyduğunuz bir kelimeyi arayın. OpenWords onun tüm anlamlarını gösterir — yalnızca tek bir genel çeviriyi değil. Bağlamınıza uyan tanımı seçin ve kaydet\'e dokunun.',
+    loop2: 'Belki bir kelimenin ne anlama geldiğini zaten yapay zekâya soruyorsunuz — ama o yanıt, sohbeti kapattığınız an kaybolur. Burada her arama, kaydedilmeye ve öğrenilmeye yalnızca bir dokunuş uzaklıkta.',
+    dictionaryTitle: 'Yalnızca çeviren değil, öğreten bir sözlük.',
+    dictionary: 'Her madde anlamları, örnekleri, CEFR düzeyini, sıklığı ve kelime ailesini gösterir. Böylece kelimenin ne anlama geldiğini, nasıl kullanıldığını, şimdi öğrenmeye değip değmediğini ve hangi türevlerin geldiğini bilirsiniz.',
+    srsTitle: 'Hafızanın çalıştığı gibi tekrar edilir.',
+    srs: 'Aralıklı tekrar, her kelimeyi tam unutmadan önce geri getirir. Ve her kelime farklı bir kart biçiminde geri gelir — tanıma, hatırlama, bağlam içinde — böylece birden çok açıdan yerleşir.',
+    trackTitle: 'Yerleştiğini görün.',
+    track: 'Bir takvim, tekrar yaptığınız her günü işaretler. Seri, art arda gelen günleri sayar. Kelime sayıları kütüphanenizin nasıl büyüdüğünü gösterir. Ayarlanacak bir şey yok — plan kendi kendine işler.',
+    howItWorksEyebrow: 'Nasıl çalışır',
+    howItWorksTitle: 'Aradığınız bir kelimeden, kalıcı olacak bir kelimeye.',
+    howItWorksSub: 'Kurulum yok. Deste oluşturma yok. Elle kart oluşturma yok. Sözlük zaten kelime kartıdır.',
+    howStepChips: ['01 Ara', '02 Kaydet', '03 Çalış', '04 Takip et'],
+    cardTypesEyebrow: '5 kart biçimi',
+    cardTypesTitle: 'Kelimeler farklı biçimlerde geri gelir — böylece birden çok açıdan yerleşir.',
+    formeEyebrow: 'Kimler için',
+    formeTitle: 'OpenWords size göre mi?',
+    formeItems: [
+      { lead: 'Hangi seviyede olursanız olun', desc: 'Başlangıçtan akıcılığa kadar, tam ihtiyacınız olan kelimeleri kaydedin ve öğrenin.' },
+      { lead: 'Gerçek bir kelime hazinesi gelişimi istiyorsanız', desc: 'OpenWords, kelimeleri pasif hafızanızdan aktif kelime hazinenize taşımaya odaklanır.' },
+      { lead: 'Oyundan çok pratiği tercih ediyorsanız', desc: 'Sizi bağımlı kılmak için tasarlanmış bir oyun değil, çalışmaya adanmış sade bir araç edinirsiniz.' },
+      { lead: 'Yüzeysel uygulamalardan bıktıysanız', desc: 'Gizli ödeme duvarları veya reklamlar olmadan, ihtiyacınız olan tüm bilgileri içeren bir araç edinirsiniz.' }
+    ],
+    trustTitle: 'Ücretsiz. Hesapsız. Çevrimdışı.',
+    trust: 'OpenWords, daha az engel isteyen ciddi öğrenenler için tasarlandı: kayıt yok, e-posta yok ve temel çalışma için internet gerekmez.',
+    languagesEyebrow: 'Desteklenen diller',
+    learnVerb: 'Öğren',
+    languagesTitle: 'Kelime hazinenizi geliştirmek için bir dil seçin.',
+    languagesSubtitle: 'Her dil, özenle seçilmiş yaygın kelimelerle gelir. Bunun ötesinde herhangi bir şey arayın, maddesini sizin için hazırlayalım.',
+    faqTitle: 'Öğrenenlerin soruları',
+    finalCta: 'Kendi kelime defterinizi oluşturmaya başlayın.',
+    ctaSub: 'Yeni kelimeler öğrenmek bir mücadele olmamalı. OpenWords ile olmayacak.',
+    footerTagline: 'Gerçekten karşılaştığınız kelimelerden kelime hazinesi oluşturun.',
+    facts: [
+      ['Ücretsiz.', 'Abonelik yok, ödeme duvarı yok.'],
+      ['Hesapsız.', 'E-posta yok, kayıt yok.'],
+      ['Çevrimdışı.', 'İnternet olmadan çalışır.']
+    ],
+    footerLearn: 'Öğren',
+    footerLegal: 'Yasal',
+    footerAbout: 'Hakkında',
+    footerContact: 'İletişim',
+    footerBottom: 'Dil öğrenenler tarafından, dil öğrenenler için yapıldı.',
+    privacy: 'Gizlilik Politikası',
+    sitemap: 'Site haritası',
+    ui: {
+      mainNavigation: 'Ana gezinme',
+      languageVersions: 'Dil sürümleri',
+      changeLang: 'Dili değiştir',
+      language: 'Dil',
+      mobileNavigation: 'Mobil gezinme',
+      mobileLanguageVersions: 'Mobil dil sürümleri',
+      openMenu: 'Menüyü aç',
+      drawerLearnLabel: 'Kelime öğren',
+      drawerLocaleLabel: 'Dil sürümü',
+      supportedLanguages: 'Desteklenen diller',
+      searchMascotAlt: 'Kelime arayan OpenWords maskotu',
+      savedMascotAlt: 'Kaydedilmiş kelimelerle OpenWords maskotu',
+      searchScreenAlt: 'OpenWords arama ekranı',
+      meaningCardAlt: 'OpenWords kelime anlamı kartı',
+      savedScreenAlt: 'OpenWords kaydedilen kelimeler ekranı',
+      savedCardsAlt: 'OpenWords kaydedilen kelime kartları',
+      statsScreenAlt: 'Takvim ve seri içeren OpenWords ilerleme ekranı'
+    }
   }
 } as const;
 
@@ -605,6 +860,14 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
   const vocabPhrase = appLanguage.vocabPhrase[locale];
   const audience = appLanguage.learners[locale];
   const name = appLanguage.name;
+
+  // Czech case/adjective forms of the language name that the shared `localName`
+  // (genitive, e.g. "angličtiny") doesn't cover. Used only by the Czech template.
+  const csForm = {
+    adjAcc: { english: 'anglickou', dutch: 'nizozemskou', polish: 'polskou', russian: 'ruskou' }[language],
+    nameAcc: { english: 'angličtinu', dutch: 'nizozemštinu', polish: 'polštinu', russian: 'ruštinu' }[language],
+    nameLoc: { english: 'angličtině', dutch: 'nizozemštině', polish: 'polštině', russian: 'ruštině' }[language]
+  };
 
   type Sense = { level: string; pos: string; definition: string; example: string };
   type HowStep = { h3: string; body: string };
@@ -904,6 +1167,129 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
       previewWord: null as string | null,
       previewWordFamily: null as string[] | null,
       previewSenses: null as Sense[] | null
+    },
+    fr: {
+      title: `Apprendre le ${vocabPhrase} — Dictionnaire complet et répétition espacée | OpenWords`,
+      description: `Développez votre ${vocabPhrase} avec un dictionnaire complet, des cartes mémoire en un toucher et la répétition espacée. Gratuit, sans compte, fonctionne hors ligne.`,
+      h1: `Apprenez le ${vocabPhrase}\nqui reste en mémoire.`,
+      heroH1Em: 'qui reste en mémoire.',
+      heroNote: 'Gratuit · Sans compte · Fonctionne hors ligne',
+      breadcrumb: `Vocabulaire ${localLanguage}`,
+      heroEyebrow: `Application de ${vocabPhrase}`,
+      subtitle: `OpenWords est une application de dictionnaire complète pour le ${vocabPhrase}, avec des cartes mémoire en un toucher et la répétition espacée. Enregistrez les mots que vous cherchez en lisant, en travaillant ou en étudiant — et révisez-les juste avant de les oublier.`,
+      howEyebrow: 'Comment ça marche',
+      howH2: 'Cherchez, enregistrez, révisez.\nSans configuration.',
+      howSteps: [
+        { h3: 'Cherchez-le.', body: `Cherchez n'importe quel mot et obtenez tous les sens qu'il porte — avec le niveau CECR et une phrase d'exemple.` },
+        { h3: 'Enregistrez le sens rencontré.', body: 'Un toucher, sans rien taper. Ce sens précis devient une carte mémoire.' },
+        { h3: 'Révisez avant d\'oublier.', body: 'La répétition espacée ramène chaque mot au bon moment. Cinq formats de carte pour que le mot s\'ancre sous tous les angles.' }
+      ] as HowStep[],
+      vocabFactsEyebrow: `Recherche sur le ${vocabPhrase}`,
+      vocabFactsH2: `Combien de mots faut-il pour parler ${localLanguage} couramment ?`,
+      vocabFactsBody: `Les chercheurs en vocabulaire en mesurent la taille en familles de mots — un mot racine et ses formes courantes. Les niveaux CECR correspondent à peu près à ces seuils, d'après les travaux de Nation, Milton et d'autres.`,
+      vocabFactsCallout: `Le passage de B1 à B2 représente environ <strong>2 000 familles de mots supplémentaires</strong> à apprendre. À 5 nouveaux mots par jour, cela fait environ un an — si vous révisez avec régularité.`,
+      langSection: null as LangSection | null,
+      whoTitle: `Conçu pour ceux qui apprennent le ${vocabPhrase} et veulent l'enrichir.`,
+      who: `Cette page est pensée pour ${audience}. Nous nous concentrons sur la pratique : les mots que vous rencontrez vraiment en lisant, en écoutant, au travail et dans la vie de tous les jours.`,
+      whoItems: [
+        `Apprendre le ${vocabPhrase} pour le travail, les voyages ou les études`,
+        `Préparer un examen de langue`,
+        `Apprenants avancés qui oublient toujours les mêmes mots`,
+        `Tous ceux qui ont trouvé Anki trop compliqué à configurer`
+      ] as string[],
+      faqTitle: `Questions sur le ${vocabPhrase}`,
+      langsBandH2Html: 'Chaque sens, dans <em>votre langue.</em>',
+      langsBandSub: `Les définitions et les phrases d'exemple sont traduites en 9 langues — pour que vous compreniez chaque nouveau mot dès le premier toucher.`,
+      wordCardCaption: 'Touchez un sens pour le développer',
+      ctaEyebrow: 'Disponible sur iOS et Android',
+      cta: `Commencez à apprendre le ${vocabPhrase} avec OpenWords.`,
+      ctaSub: `Chaque mot que vous cherchez est à un toucher de devenir une carte mémoire.`,
+      otherLangsLabel: 'Également disponible pour',
+      previewWord: null as string | null,
+      previewWordFamily: null as string[] | null,
+      previewSenses: null as Sense[] | null
+    },
+    cs: {
+      title: `Slovní zásoba ${localLanguage} — Rozsáhlý slovník a rozložené opakování | OpenWords`,
+      description: `Budujte ${csForm.adjAcc} slovní zásobu s rozsáhlým slovníkem, kartičkami na jedno ťuknutí a rozloženým opakováním. Zdarma, bez účtu, funguje offline.`,
+      h1: `Učte se ${csForm.adjAcc} slovní zásobu,\nkterá vám opravdu zůstane v hlavě.`,
+      heroH1Em: 'která vám opravdu zůstane v hlavě.',
+      heroNote: 'Zdarma · Bez účtu · Funguje offline',
+      breadcrumb: `Slovní zásoba ${localLanguage}`,
+      heroEyebrow: `Aplikace pro ${csForm.adjAcc} slovní zásobu`,
+      subtitle: `OpenWords je propracovaná slovníková aplikace pro ${csForm.nameAcc} s kartičkami na jedno ťuknutí a chytrým rozloženým opakováním. Ukládejte si slova, která si vyhledáte při čtení, práci nebo studiu – a opakujte si je těsně předtím, než je zapomenete.`,
+      howEyebrow: 'Jak to funguje',
+      howH2: 'Vyhledat, uložit, zopakovat.\nNulové nastavování.',
+      howSteps: [
+        { h3: 'Vyhledejte ho.', body: `Vyhledejte jakékoli slovo a okamžitě uvidíte všechny jeho významy, včetně úrovně CEFR a příkladových vět.` },
+        { h3: 'Uložte si význam, na který jste narazili.', body: 'Stačí jedno ťuknutí, žádné zdlouhavé vypisování. Přesně tento konkrétní význam se promění v kartičku.' },
+        { h3: 'Opakujte si je dřív, než je zapomenete.', body: 'Rozložené opakování vám každé slovo připomene přesně ve správnou chvíli. Díky pěti formátům kartiček vám slovo utkví v paměti ze všech stran.' }
+      ] as HowStep[],
+      vocabFactsEyebrow: 'Výzkum v oblasti slovní zásoby',
+      vocabFactsH2: `Kolik slov potřebujete k plynulé ${csForm.nameLoc}?`,
+      vocabFactsBody: `Vědci měří rozsah slovní zásoby v takzvaných slovních rodinách – tedy podle základního slova a jeho běžných tvarů. Úrovně CEFR zhruba odpovídají těmto milníkům, což potvrzují i studie lingvistů, jako jsou Paul Nation, James Milton a další.`,
+      vocabFactsCallout: `Skok z úrovně B1 na B2 znamená osvojit si zhruba <strong>2 000 dalších slovních rodin</strong>. Pokud se naučíte 5 nových slov denně, zabere vám to asi rok – ale pouze v případě, že je budete pravidelně opakovat.`,
+      langSection: null as LangSection | null,
+      whoTitle: `Vytvořeno pro všechny, kdo si chtějí rozšířit ${csForm.adjAcc} slovní zásobu.`,
+      who: `Tato aplikace je ideální pro ${audience}. Zaměřujeme se čistě na praxi – na slova, se kterými se opravdu setkáváte při čtení, poslechu, v zaměstnání i v běžném životě.`,
+      whoItems: [
+        `Pro ty, kteří studují ${csForm.nameAcc} kvůli práci, cestování nebo škole`,
+        `Pro lidi připravující se na jazykové zkoušky`,
+        `Pro pokročilé, kteří neustále zapomínají stejná slovíčka dokola`,
+        `Pro všechny, kterým přišlo nastavení Anki příliš komplikované`
+      ] as string[],
+      faqTitle: 'Časté otázky',
+      langsBandH2Html: 'Každý význam ve <em>vašem rodném jazyce.</em>',
+      langsBandSub: `Definice a příkladové věty jsou přeloženy do 9 jazyků, abyste každému novému slovu porozuměli hned od prvního ťuknutí.`,
+      wordCardCaption: 'Ťuknutím význam rozbalíte',
+      ctaEyebrow: 'Dostupné pro iOS a Android',
+      cta: `Začněte si rozšiřovat ${csForm.adjAcc} slovní zásobu s OpenWords.`,
+      ctaSub: `Z každého slova, které si vyhledáte, uděláte kartičku jediným ťuknutím.`,
+      otherLangsLabel: 'Dostupné také pro',
+      previewWord: null as string | null,
+      previewWordFamily: null as string[] | null,
+      previewSenses: null as Sense[] | null
+    },
+    tr: {
+      title: `${vocabPhrase} öğrenin — Kapsamlı sözlük ve aralıklı tekrar | OpenWords`,
+      description: `Kapsamlı bir sözlük, tek dokunuşla kelime kartları ve aralıklı tekrarla ${vocabPhrase} oluşturun. Ücretsiz, hesapsız, çevrimdışı çalışır.`,
+      h1: `${vocabPhrase}ni\nkalıcı olarak öğrenin.`,
+      heroH1Em: 'kalıcı olarak öğrenin.',
+      heroNote: 'Ücretsiz · Hesapsız · Çevrimdışı çalışır',
+      breadcrumb: `${vocabPhrase}`,
+      heroEyebrow: `${vocabPhrase} uygulaması`,
+      subtitle: `OpenWords, tek dokunuşla kelime kartları ve aralıklı tekrar sunan kapsamlı bir ${displayLanguage} sözlük uygulamasıdır. Okurken, çalışırken veya ders çalışırken aradığınız kelimeleri kaydedin — ve onları tam unutmadan önce tekrar edin.`,
+      howEyebrow: 'Nasıl çalışır',
+      howH2: 'Ara, kaydet, tekrar et.\nKurulum yok.',
+      howSteps: [
+        { h3: 'Ara.', body: `Herhangi bir ${displayLanguage} kelimesini arayın ve taşıdığı her anlamı — CEFR düzeyi ve örnek cümleyle birlikte — görün.` },
+        { h3: 'Karşılaştığın anlamı kaydet.', body: 'Tek dokunuş, yazmak yok. Tam o anlam bir kelime kartına dönüşür.' },
+        { h3: 'Unutmadan önce tekrar et.', body: 'Aralıklı tekrar her kelimeyi doğru anda geri getirir. Beş kart biçimi, böylece kelime her açıdan yerleşir.' }
+      ] as HowStep[],
+      vocabFactsEyebrow: `${vocabPhrase} araştırması`,
+      vocabFactsH2: `${displayLanguage} dilinde akıcı olmak için kaç kelime gerekir?`,
+      vocabFactsBody: `Kelime araştırmacıları, büyüklüğü kelime ailelerinde ölçer — bir kök kelime ve onun yaygın biçimleri. CEFR düzeyleri, Nation, Milton ve diğerlerinin çalışmalarına dayanarak bu eşiklere kabaca karşılık gelir.`,
+      vocabFactsCallout: `B1'den B2'ye geçiş, yaklaşık <strong>2.000 kelime ailesi daha</strong> öğrenmek demektir. Günde 5 yeni kelimeyle bu yaklaşık bir yıl sürer — düzenli tekrar ederseniz.`,
+      langSection: null as LangSection | null,
+      whoTitle: `${vocabPhrase}ni geliştirmek isteyen ${displayLanguage} öğrenenler için tasarlandı.`,
+      who: `Bu sayfa ${audience} için hazırlandı. Pratiğe odaklanıyoruz: okurken, dinlerken, işte ve günlük hayatta gerçekten karşılaştığınız kelimelere.`,
+      whoItems: [
+        `İş, seyahat veya eğitim için ${displayLanguage} öğrenmek`,
+        `Bir dil sınavına hazırlanmak`,
+        `Aynı kelimeleri sürekli unutan ileri düzey öğrenenler`,
+        `Anki'yi kurması çok zahmetli bulan herkes`
+      ] as string[],
+      faqTitle: `${vocabPhrase} hakkında sorular`,
+      langsBandH2Html: 'Her anlam, <em>kendi dilinizde.</em>',
+      langsBandSub: `Tanımlar ve örnek cümleler 9 dile çevrilir — böylece her yeni kelimeyi daha ilk dokunuştan anlarsınız.`,
+      wordCardCaption: 'Genişletmek için bir anlama dokunun',
+      ctaEyebrow: 'iOS ve Android\'de mevcut',
+      cta: `OpenWords ile ${vocabPhrase} öğrenmeye başlayın.`,
+      ctaSub: `Aradığınız her kelime, bir kelime kartına dönüşmeye yalnızca bir dokunuş uzaklıkta.`,
+      otherLangsLabel: 'Şunlar için de mevcut',
+      previewWord: null as string | null,
+      previewWordFamily: null as string[] | null,
+      previewSenses: null as Sense[] | null
     }
   };
 
@@ -1030,6 +1416,54 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
           'Kandidaten für IELTS-, TOEFL- oder Cambridge-Prüfungen',
           'Fortgeschrittene Leser, die immer wieder C1–C2-Wörter treffen und vergessen',
           'Alle, die Anki ausprobiert haben und die Einrichtung zu aufwendig fanden'
+        ],
+        previewWord: 'approach',
+        previewWordFamily: ['approachable', 'unapproachable', 'approachability'],
+        previewSenses: [
+          { level: 'A2', pos: 'verb', definition: 'To come near or nearer to something or someone in space, time, quality, or amount.', example: 'The train began to approach the station slowly.' },
+          { level: 'B1', pos: 'verb', definition: 'To speak to someone for the first time about a proposal, request, or offer.', example: 'She decided to approach her boss about a pay rise.' },
+          { level: 'B2', pos: 'noun', definition: 'A way of dealing with something or doing something.', example: 'We need to try a different approach to solve this puzzle.' },
+          { level: 'C1', pos: 'verb', definition: 'To be almost the same as something; to come close to a particular quality or state.', example: 'His performance approached perfection during the final act.' }
+        ]
+      },
+      fr: {
+        whoItems: [
+          'Locuteurs non natifs qui construisent un anglais courant, académique ou professionnel',
+          'Candidats aux examens IELTS, TOEFL ou Cambridge ayant besoin de listes de mots classées par niveau CECR',
+          'Lecteurs avancés qui croisent sans cesse des mots C1–C2 qu\'ils connaissent à moitié et oublient',
+          'Tous ceux qui ont essayé Anki et l\'ont trouvé trop laborieux à configurer'
+        ],
+        previewWord: 'approach',
+        previewWordFamily: ['approachable', 'unapproachable', 'approachability'],
+        previewSenses: [
+          { level: 'A2', pos: 'verb', definition: 'To come near or nearer to something or someone in space, time, quality, or amount.', example: 'The train began to approach the station slowly.' },
+          { level: 'B1', pos: 'verb', definition: 'To speak to someone for the first time about a proposal, request, or offer.', example: 'She decided to approach her boss about a pay rise.' },
+          { level: 'B2', pos: 'noun', definition: 'A way of dealing with something or doing something.', example: 'We need to try a different approach to solve this puzzle.' },
+          { level: 'C1', pos: 'verb', definition: 'To be almost the same as something; to come close to a particular quality or state.', example: 'His performance approached perfection during the final act.' }
+        ]
+      },
+      cs: {
+        whoItems: [
+          'Pro lidi, kteří si chtějí vybudovat spolehlivou obecnou, akademickou nebo profesní angličtinu',
+          'Pro ty, kteří se připravují na zkoušky IELTS, TOEFL nebo Cambridge a potřebují slovíčka roztříděná podle úrovní CEFR',
+          'Pro pokročilé studenty, kteří neustále narážejí na slova úrovně C1–C2, znají je jen zběžně a rychle je zapomínají',
+          'Pro každého, kdo vyzkoušel Anki, ale odradilo ho příliš složité nastavování'
+        ],
+        previewWord: 'approach',
+        previewWordFamily: ['approachable', 'unapproachable', 'approachability'],
+        previewSenses: [
+          { level: 'A2', pos: 'verb', definition: 'To come near or nearer to something or someone in space, time, quality, or amount.', example: 'The train began to approach the station slowly.' },
+          { level: 'B1', pos: 'verb', definition: 'To speak to someone for the first time about a proposal, request, or offer.', example: 'She decided to approach her boss about a pay rise.' },
+          { level: 'B2', pos: 'noun', definition: 'A way of dealing with something or doing something.', example: 'We need to try a different approach to solve this puzzle.' },
+          { level: 'C1', pos: 'verb', definition: 'To be almost the same as something; to come close to a particular quality or state.', example: 'His performance approached perfection during the final act.' }
+        ]
+      },
+      tr: {
+        whoItems: [
+          'Günlük, akademik veya profesyonel İngilizcesini geliştiren ana dili İngilizce olmayanlar',
+          'CEFR düzeyine göre sıralanmış kelime listelerine ihtiyaç duyan IELTS, TOEFL veya Cambridge adayları',
+          'Yarı bildikleri C1–C2 kelimelerle sürekli karşılaşıp onları unutan ileri düzey okuyucular',
+          'Anki\'yi deneyip kurulumunu fazla zahmetli bulan herkes'
         ],
         previewWord: 'approach',
         previewWordFamily: ['approachable', 'unapproachable', 'approachability'],
@@ -1286,6 +1720,39 @@ export function homeFaq(locale: LocaleCode) {
       ['Wie unterscheidet sich OpenWords von Anki?', 'Anki ist großartig und mächtig, aber du baust alles selbst — oder verlässt dich auf die Stapel anderer. OpenWords übernimmt das. Wort nachschlagen, auf Speichern tippen, schon ist es in deiner Warteschlange. Mehrere Wiederholungsformate, FSRS-Planung, null Einrichtung.'],
       ['Wie unterscheidet sich OpenWords von Quizlet?', 'Quizlet gibt dir die Karteikarten anderer. OpenWords beginnt mit einem echten Wörterbuch: vollständige Definitionen, Beispiele, Verwendungshinweise — und macht aus dem, was du speicherst, intelligente, geplante Wiederholung. Mehrere Kartenformate, nicht nur Vorder- und Rückseite — du übst genau das, was du gespeichert hast.'],
       ['Wie unterscheidet sich OpenWords von Google Übersetzer?', 'Google Übersetzer ist großartig für Texte, Sätze und Fotoübersetzung. OpenWords dient dem Wortschatzaufbau: jede Bedeutung, jedes Niveau, jede Form und Verwendung — speichere ein Wort einmal und merke es dir durch Wiederholung.']
+    ],
+    fr: [
+      ['Qu\'est-ce qu\'OpenWords ?', 'Une application de vocabulaire pour l\'anglais, le néerlandais, le polonais et le russe. Vous cherchez un mot, vous enregistrez son sens exact d\'un toucher, et l\'application vous le ramène au bon moment pour que vous le reteniez vraiment.'],
+      ['OpenWords convient-il aux débutants ?', 'OpenWords fonctionne à tous les niveaux, débutants compris. Commencez par les mots les plus courants, enregistrez ce que vous rencontrez et progressez à partir de là. Ce n\'est pas un substitut aux cours de grammaire ni à la pratique orale — OpenWords est votre partenaire de vocabulaire.'],
+      ['Est-ce vraiment gratuit ?', 'Oui. Aucun abonnement, aucun paywall, aucune offre premium cachée derrière une fonctionnalité.'],
+      ['Ai-je besoin d\'un compte ?', 'Non. Aucun e-mail, aucune inscription. Vos mots enregistrés restent sur votre téléphone.'],
+      ['Fonctionne-t-il hors ligne ?', 'La révision fonctionne hors ligne — une fois un mot enregistré, vous pouvez l\'étudier partout. La recherche de nouveaux mots nécessite Internet.'],
+      ['D\'où proviennent les données du dictionnaire ?', 'Du dictionnaire multilingue libre de Wiktionary, via kaikki.org, nettoyées et complétées par IA — pour des entrées riches, multilingues et entièrement gratuites.'],
+      ['En quoi OpenWords est-il différent d\'Anki ?', 'Anki est excellent et puissant, mais vous construisez tout vous-même — ou vous dépendez des paquets d\'autres. OpenWords s\'en charge. Cherchez un mot, touchez enregistrer, il rejoint votre file. Plusieurs formats de révision, planification FSRS, zéro configuration.'],
+      ['En quoi OpenWords est-il différent de Quizlet ?', 'Quizlet vous donne les cartes des autres. OpenWords part d\'un vrai dictionnaire : définitions complètes, exemples, notes d\'usage — puis transforme ce que vous enregistrez en révision intelligente et planifiée. Plusieurs formats de carte, pas seulement recto-verso — vous pratiquez exactement ce que vous avez enregistré.'],
+      ['En quoi OpenWords est-il différent de Google Traduction ?', 'Google Traduction est excellent pour les textes, les phrases et la traduction par photo. OpenWords sert à construire du vocabulaire : chaque sens, niveau, forme et usage — enregistrez un mot une fois et retenez-le par la répétition.']
+    ],
+    cs: [
+      ['Co je OpenWords?', 'Aplikace pro výuku slovní zásoby pro angličtinu, nizozemštinu, polštinu a ruštinu. Vyhledáte slovo, jedním ťuknutím uložíte jeho přesný význam a aplikace vám ho připomene přesně ve správnou chvíli, abyste si ho doopravdy zapamatovali.'],
+      ['Je OpenWords pro začátečníky?', 'Ano, OpenWords se hodí pro jakoukoli úroveň – včetně úplných začátečníků. Můžete začít s nejčastějšími slovy, ukládat si to, na co zrovna narazíte, a postupně se posouvat dál. Nenahrazuje sice výuku gramatiky ani konverzaci, ale je to váš ideální parťák pro budování slovní zásoby.'],
+      ['Je to opravdu zdarma?', 'Ano. Nečekají vás žádná předplatná, žádné paywally ani prémiové funkce schované za poplatky.'],
+      ['Potřebuji účet?', 'Ne. Žádný e-mail, žádná registrace. Vaše uložená slova zůstávají bezpečně ve vašem telefonu.'],
+      ['Funguje aplikace offline?', 'Opakování funguje offline – jakmile máte slovo uložené, můžete se ho učit kdekoli. Pouze vyhledávání nových slov vyžaduje připojení k internetu.'],
+      ['Odkud pocházejí slovníková data?', 'Z otevřeného vícejazyčného slovníku Wiktionary (prostřednictvím projektu kaikki.org). Data jsou následně vyčištěna a doplněna pomocí AI, takže jsou hesla podrobná, vícejazyčná a zcela zdarma.'],
+      ['Čím se OpenWords liší od Anki?', 'Anki je skvělý a mocný nástroj, ale všechno si v něm musíte stavět sami, případně se spoléhat na hotové balíčky od jiných uživatelů. OpenWords to dělá za vás. Stačí vyhledat slovo, ťuknout a okamžitě se zařadí do fronty. Získáte několik formátů procvičování, plánování pomocí prověřeného algoritmu FSRS a nulové starosti s nastavováním.'],
+      ['Čím se OpenWords liší od Quizletu?', 'Quizlet se spoléhá na sady kartiček vytvořené uživateli. OpenWords naopak vychází ze skutečného, komplexního slovníku, takže nabízí kompletní definice, příklady z praxe i poznámky k použití. Z toho, co si uložíte, pak automaticky vytváří chytré, časově naplánované opakování. Navíc nabízí několik různých formátů kartiček, nejen klasickou přední a zadní stranu, abyste procvičovali opravdu do hloubky.'],
+      ['Čím se OpenWords liší od Překladače Google?', 'Překladač Google je skvělý na rychlé překlady textů, celých vět nebo nápisů z fotek. OpenWords se ale zaměřuje na skutečné budování a dlouhodobé uchování slovní zásoby. U každého hesla vidíte všechny významy, úroveň obtížnosti, správné tvary i použití – slovo si jednoduše uložíte a díky chytrému opakování už ho nezapomenete.']
+    ],
+    tr: [
+      ['OpenWords nedir?', 'İngilizce, Felemenkçe, Lehçe ve Rusça için bir kelime uygulaması. Bir kelimeyi arar, anlamını tek dokunuşla kaydedersiniz ve uygulama onu doğru anda geri getirir, böylece gerçekten aklınızda kalır.'],
+      ['OpenWords yeni başlayanlar için uygun mu?', 'OpenWords her seviyede çalışır — yeni başlayanlar dahil. En yaygın kelimelerle başlayın, karşılaştıklarınızı kaydedin ve oradan ilerleyin. Dil bilgisi derslerinin veya konuşma pratiğinin yerini tutmaz — OpenWords kelime hazinesi ortağınızdır.'],
+      ['Gerçekten ücretsiz mi?', 'Evet. Abonelik yok, ödeme duvarı yok, bir özelliğin arkasında bekleyen premium katman yok.'],
+      ['Hesap gerekiyor mu?', 'Hayır. E-posta yok, kayıt yok. Kaydettiğiniz kelimeler telefonunuzda kalır.'],
+      ['Çevrimdışı çalışır mı?', 'Tekrar çevrimdışı çalışır — bir kelime kaydedildikten sonra onu her yerde çalışabilirsiniz. Yeni kelimeleri aramak internet gerektirir.'],
+      ['Sözlük verileri nereden geliyor?', 'Wiktionary\'nin açık çok dilli sözlüğünden, kaikki.org aracılığıyla, yapay zekâ ile temizlenip tamamlanarak — böylece maddeler kapsamlı, çok dilli ve tamamen ücretsizdir.'],
+      ['OpenWords Anki\'den nasıl farklı?', 'Anki harika ve güçlüdür, ama her şeyi kendiniz kurarsınız — ya da başkalarının destelerine güvenirsiniz. OpenWords bunu sizin için yapar. Bir kelime arayın, kaydet\'e dokunun, sıranıza eklensin. Birden çok tekrar biçimi, FSRS planlaması, sıfır kurulum.'],
+      ['OpenWords Quizlet\'ten nasıl farklı?', 'Quizlet size başkalarının kartlarını verir. OpenWords gerçek bir sözlükle başlar: tam tanımlar, örnekler, kullanım notları — sonra kaydettiklerinizi akıllı, planlı tekrara dönüştürür. Birden çok kart biçimi, yalnızca ön-arka değil — tam olarak kaydettiğiniz şeyi çalışırsınız.'],
+      ['OpenWords Google Çeviri\'den nasıl farklı?', 'Google Çeviri metinler, cümleler ve fotoğraf çevirisi için harikadır. OpenWords kelime hazinesi oluşturmak içindir: her anlam, düzey, biçim ve kullanım — bir kelimeyi bir kez kaydedin ve tekrar ederek aklınızda tutun.']
     ]
   };
 
@@ -1353,6 +1820,30 @@ export function learnFaq(locale: LocaleCode, language: LanguageSlug) {
         ['Was bedeutet CEFR?', 'Die europäische Skala für Sprachniveaus, von A1 (Anfänger) bis C2 (nahezu muttersprachlich). Jeder Eintrag in OpenWords hat eines, damit du weißt, was sich auf deinem Niveau zu lernen lohnt.'],
         ['Ist OpenWords kostenlos?', 'Ja. Keine Abos, keine Bezahlschranken. Kostenlos herunterzuladen und zu nutzen, kein Konto erforderlich.'],
         ['Wie unterscheidet sich OpenWords von Anki?', 'Anki ist mächtig, aber du baust alles selbst — Stapel, Karten, Zeitpläne. OpenWords erledigt diese Arbeit für dich. Wort nachschlagen, auf Speichern tippen, und es landet automatisch in deiner Wiederholungs-Warteschlange.']
+      ],
+      fr: [
+        ['Quelle est la meilleure façon d\'apprendre le vocabulaire anglais ?', 'Lisez et écoutez ce qui vous intéresse, enregistrez les mots inconnus dans leur sens exact et révisez-les avant de les oublier. C\'est la boucle qu\'OpenWords exécute pour vous.'],
+        ['Est-ce utile pour l\'IELTS, le TOEFL ou l\'anglais académique ?', 'Oui. Les entrées portent des niveaux CECR jusqu\'au C2 et des données de fréquence, pour que vous vous concentriez sur les mots qui comptent pour la lecture académique, la préparation aux examens ou l\'écrit professionnel.'],
+        ['Puis-je étudier le vocabulaire anglais hors ligne ?', 'La révision fonctionne hors ligne — une fois un mot enregistré, vous pouvez l\'étudier partout. La recherche de nouveaux mots nécessite Internet.'],
+        ['Que signifie CECR ?', 'L\'échelle européenne des niveaux de langue, de A1 (débutant) à C2 (quasi natif). Chaque entrée d\'OpenWords en porte un, pour que vous sachiez ce qui vaut la peine d\'être appris à votre niveau.'],
+        ['OpenWords est-il gratuit ?', 'Oui. Aucun abonnement, aucun paywall. Gratuit à télécharger, gratuit à utiliser, sans compte.'],
+        ['En quoi OpenWords est-il différent d\'Anki ?', 'Anki est puissant, mais vous construisez tout vous-même — paquets, cartes, calendriers. OpenWords fait ce travail pour vous. Cherchez un mot, touchez enregistrer, et il rejoint automatiquement votre file de révision.']
+      ],
+      cs: [
+        ['Jak se nejlépe učit slovní zásobu angličtiny?', 'Čtěte a poslouchejte to, co vás opravdu zajímá. Ukládejte si neznámá slova v jejich přesném významu a opakujte si je dřív, než je zapomenete. OpenWords se o celý tento cyklus postará za vás.'],
+        ['Funguje aplikace pro zkoušky IELTS, TOEFL nebo akademickou angličtinu?', 'Ano. U každého hesla najdete úroveň CEFR až po C2 a údaje o frekvenci slova, takže se můžete soustředit na slovíčka důležitá pro akademické čtení, přípravu na zkoušky nebo profesní psaní.'],
+        ['Mohu se učit anglickou slovní zásobu offline?', 'Opakování funguje offline – jakmile máte slovo uložené, můžete se ho učit kdekoli. Pouze vyhledávání nových slov vyžaduje připojení k internetu.'],
+        ['Co znamená zkratka CEFR?', 'Jde o společný evropský referenční rámec pro jazyky od úrovně A1 (začátečník) až po C2 (pokročilý mluvčí na úrovni rodilého mluvčího). V OpenWords najdete tuto úroveň u každého hesla, takže přesně víte, která slova se vám na vaší úrovni vyplatí učit.'],
+        ['Je OpenWords zdarma?', 'Ano. Nečekají vás žádná předplatná ani paywally. Aplikace je zcela zdarma ke stažení i používání a nepotřebujete k ní žádný účet.'],
+        ['Čím se OpenWords liší od Anki?', 'Anki je mocné, ale všechno si stavíte sami — balíčky, kartičky, plány. OpenWords tuto práci dělá za vás. Vyhledejte slovo, ťukněte na uložit a automaticky se přidá do fronty opakování.']
+      ],
+      tr: [
+        ['İngilizce kelime hazinesini öğrenmenin en iyi yolu nedir?', 'İlginizi çeken şeyleri okuyup dinleyin, bilmediğiniz kelimeleri tam anlamıyla kaydedin ve unutmadan önce tekrar edin. OpenWords bu döngüyü sizin için yürütür.'],
+        ['IELTS, TOEFL veya akademik İngilizce için işe yarar mı?', 'Evet. Maddeler C2\'ye kadar CEFR düzeyleri ve sıklık verileri içerir; böylece akademik okuma, sınav hazırlığı veya profesyonel yazım için önemli kelimelere odaklanabilirsiniz.'],
+        ['İngilizce kelime hazinesini çevrimdışı çalışabilir miyim?', 'Tekrar çevrimdışı çalışır — bir kelime kaydedildikten sonra onu her yerde çalışabilirsiniz. Yeni kelimeleri aramak internet gerektirir.'],
+        ['CEFR ne demek?', 'A1 (başlangıç) ile C2 (ana dile yakın) arasındaki Avrupa dil düzeyi ölçeği. OpenWords\'teki her madde bir düzey taşır, böylece kendi seviyenizde neyi öğrenmeye değdiğini bilirsiniz.'],
+        ['OpenWords ücretsiz mi?', 'Evet. Abonelik yok, ödeme duvarı yok. İndirmesi ücretsiz, kullanması ücretsiz, hesap gerekmez.'],
+        ['OpenWords Anki\'den nasıl farklı?', 'Anki güçlüdür, ama her şeyi kendiniz kurarsınız — desteler, kartlar, planlar. OpenWords bu işi sizin için yapar. Bir kelime arayın, kaydet\'e dokunun, otomatik olarak tekrar sıranıza eklensin.']
       ]
     },
     dutch: {
@@ -1411,6 +1902,30 @@ export function learnFaq(locale: LocaleCode, language: LanguageSlug) {
         ['Was bedeutet CEFR?', 'Die europäische Skala für Sprachniveaus, von A1 (Anfänger) bis C2 (nahezu muttersprachlich). Jeder Eintrag in OpenWords hat eines.'],
         ['Ist OpenWords kostenlos?', 'Ja. Keine Abos, keine Bezahlschranken. Kostenlos herunterzuladen und zu nutzen, kein Konto erforderlich.'],
         ['Wie unterscheidet sich OpenWords von anderen niederländischen Vokabel-Apps?', 'Die meisten Apps setzen auf feste Wortlisten. OpenWords beginnt beim Wörterbuch: Du speicherst die niederländischen Wörter, denen du wirklich begegnest, in der exakten Bedeutung, in der sie vorkamen, und wiederholst sie mit verteilter Wiederholung.']
+      ],
+      fr: [
+        ['Quelle est la meilleure façon d\'apprendre le vocabulaire néerlandais ?', 'Lisez et écoutez du néerlandais qui vous intéresse — actualités, podcasts, télévision. Enregistrez les mots inconnus dans leur sens exact et révisez-les avant de les oublier. OpenWords construit cette boucle autour de la recherche dans le dictionnaire.'],
+        ['Est-ce utile pour le NT2 et l\'examen d\'inburgering ?', 'Oui. Le vocabulaire NT2 est associé aux niveaux CECR. OpenWords affiche le niveau de chaque entrée, pour que vous vous concentriez sur les mots A2–B1 pour l\'inburgering, ou que vous visiez le B2 pour le NT2-2.'],
+        ['Puis-je étudier le vocabulaire néerlandais hors ligne ?', 'La révision fonctionne hors ligne — une fois un mot enregistré, vous pouvez l\'étudier partout. La recherche de nouveaux mots nécessite Internet.'],
+        ['Que signifie CECR ?', 'L\'échelle européenne des niveaux de langue, de A1 (débutant) à C2 (quasi natif). Chaque entrée d\'OpenWords en porte un.'],
+        ['OpenWords est-il gratuit ?', 'Oui. Aucun abonnement, aucun paywall. Gratuit à télécharger, gratuit à utiliser, sans compte.'],
+        ['En quoi OpenWords est-il différent des autres applications de vocabulaire néerlandais ?', 'La plupart des applications s\'appuient sur des listes de mots prédéfinies. OpenWords part du dictionnaire : vous enregistrez les mots néerlandais que vous rencontrez vraiment, dans le sens exact où ils sont apparus, et vous les révisez avec la répétition espacée.']
+      ],
+      cs: [
+        ['Jak se nejlépe učit slovní zásobu nizozemštiny?', 'Čtěte a poslouchejte nizozemštinu, která vás baví – zprávy, podcasty nebo televizní pořady. Ukládejte si neznámá slova v jejich přesném významu a opakujte si je dřív, než je zapomenete. OpenWords celý tento proces staví přímo kolem vyhledávání ve slovníku.'],
+        ['Pomáhá aplikace s NT2 a zkouškou inburgering?', 'Ano. Slovní zásoba pro NT2 odpovídá úrovním CEFR. OpenWords ukazuje úroveň u každého hesla, takže se můžete soustředit na slovíčka úrovně A2–B1 pro zkoušku inburgering, nebo se posunout na úroveň B2 pro NT2-2.'],
+        ['Mohu se učit nizozemskou slovní zásobu offline?', 'Opakování funguje offline – jakmile máte slovo uložené, můžete se ho učit kdekoli. Pouze vyhledávání nových slov vyžaduje připojení k internetu.'],
+        ['Co znamená zkratka CEFR?', 'Jde o společný evropský referenční rámec pro jazyky od úrovně A1 (začátečník) až po C2 (pokročilý mluvčí na úrovni rodilého mluvčího). V OpenWords najdete tuto úroveň u každého hesla.'],
+        ['Je OpenWords zdarma?', 'Ano. Nečekají vás žádná předplatná ani paywally. Aplikace je zcela zdarma ke stažení i používání a nepotřebujete k ní žádný účet.'],
+        ['Čím se OpenWords liší od jiných aplikací na nizozemštinu?', 'Většina aplikací staví na pevných seznamech slov. OpenWords vychází ze slovníku: ukládáte slova, která skutečně potkáváte, v přesném významu, v jakém se objevila, a opakujete je s rozloženým opakováním.']
+      ],
+      tr: [
+        ['Felemenkçe kelime hazinesini öğrenmenin en iyi yolu nedir?', 'İlginizi çeken Felemenkçe içeriği okuyup dinleyin — haberler, podcastler, televizyon. Bilmediğiniz kelimeleri tam anlamıyla kaydedin ve unutmadan önce tekrar edin. OpenWords bu döngüyü sözlük aramasının etrafına kurar.'],
+        ['NT2 ve inburgering sınavına yardımcı olur mu?', 'Evet. NT2 kelime hazinesi CEFR düzeyleriyle eşlenir. OpenWords her maddenin düzeyini gösterir; böylece inburgering için A2–B1 kelimelerine odaklanabilir veya NT2-2 için B2\'ye yükselebilirsiniz.'],
+        ['Felemenkçe kelime hazinesini çevrimdışı çalışabilir miyim?', 'Tekrar çevrimdışı çalışır — bir kelime kaydedildikten sonra onu her yerde çalışabilirsiniz. Yeni kelimeleri aramak internet gerektirir.'],
+        ['CEFR ne demek?', 'A1 (başlangıç) ile C2 (ana dile yakın) arasındaki Avrupa dil düzeyi ölçeği. OpenWords\'teki her madde bir düzey taşır.'],
+        ['OpenWords ücretsiz mi?', 'Evet. Abonelik yok, ödeme duvarı yok. İndirmesi ücretsiz, kullanması ücretsiz, hesap gerekmez.'],
+        ['OpenWords diğer Felemenkçe kelime uygulamalarından nasıl farklı?', 'Çoğu uygulama hazır kelime listelerine dayanır. OpenWords sözlükten başlar: gerçekten karşılaştığınız Felemenkçe kelimeleri, göründükleri tam anlamıyla kaydeder ve aralıklı tekrarla gözden geçirirsiniz.']
       ]
     },
     polish: {
@@ -1469,6 +1984,30 @@ export function learnFaq(locale: LocaleCode, language: LanguageSlug) {
         ['Ist Polnisch schwer?', 'Die Grammatik ist komplex, aber der Wortschatzaufbau ist der zeitaufwendigste Teil. Polnisch hat Tausende internationaler Lehnwörter, die du sofort erkennst, und OpenWords hilft dir, den slawischen Grundwortschatz ohne Entsprechung systematisch aufzubauen.'],
         ['Ist OpenWords kostenlos?', 'Ja. Keine Abos, keine Bezahlschranken. Kostenlos herunterzuladen und zu nutzen, kein Konto erforderlich.'],
         ['Wie unterscheidet sich OpenWords von anderen polnischen Vokabel-Apps?', 'Die meisten Apps verwenden feste Wortlisten. OpenWords beginnt beim Wörterbuch: Du speicherst die polnischen Wörter, denen du wirklich begegnest, in der exakten Bedeutung, und wiederholst sie mit verteilter Wiederholung.']
+      ],
+      fr: [
+        ['Quelle est la meilleure façon d\'apprendre le vocabulaire polonais ?', 'Plongez dans du polonais authentique — livres, podcasts, films — et enregistrez chaque mot inconnu au moment où vous le cherchez. Avec la répétition espacée, chaque mot revient au bon moment, avant que vous ne l\'oubliiez.'],
+        ['Est-ce utile pour les certificats de langue polonaise ?', 'Oui. Les entrées incluent des niveaux CECR, pour que vous cibliez précisément le vocabulaire B1 ou B2. Les examens de certification évaluent l\'usage actif du vocabulaire — OpenWords vous aide à le construire et à le retenir.'],
+        ['Puis-je étudier le vocabulaire polonais hors ligne ?', 'La révision fonctionne hors ligne — une fois un mot enregistré, vous pouvez l\'étudier partout. La recherche de nouveaux mots nécessite Internet.'],
+        ['Le polonais est-il difficile ?', 'La grammaire est complexe, mais c\'est la construction du vocabulaire qui prend le plus de temps. Le polonais compte des milliers d\'emprunts internationaux que vous reconnaîtrez immédiatement, et OpenWords vous aide à bâtir méthodiquement le vocabulaire slave de base sans équivalent.'],
+        ['OpenWords est-il gratuit ?', 'Oui. Aucun abonnement, aucun paywall. Gratuit à télécharger, gratuit à utiliser, sans compte.'],
+        ['En quoi OpenWords est-il différent des autres applications de vocabulaire polonais ?', 'La plupart des applications utilisent des listes de mots prédéfinies. OpenWords part du dictionnaire : vous enregistrez les mots polonais que vous rencontrez vraiment, dans le sens exact où ils sont apparus, et vous les révisez avec la répétition espacée.']
+      ],
+      cs: [
+        ['Jak se nejlépe učit slovní zásobu polštiny?', 'Ponořte se do živé polštiny – čtěte knihy, poslouchejte podcasty nebo sledujte filmy. Ukládejte si každé neznámé slovo hned, jakmile si ho vyhledáte. Díky rozloženému opakování vám aplikace každé slovo připomene dřív, než ho stihnete zapomenout.'],
+        ['Pomáhá aplikace s přípravou na certifikáty z polštiny?', 'Ano. U každého hesla najdete úroveň CEFR, takže můžete cíleně mířit na slovní zásobu pro úrovně B1 nebo B2. Certifikační zkoušky ověřují aktivní používání slovní zásoby a OpenWords vám ji pomůže efektivně vybudovat i dlouhodobě udržet v paměti.'],
+        ['Mohu se učit polskou slovní zásobu offline?', 'Opakování funguje offline – jakmile máte slovo uložené, můžete se ho učit kdekoli. Pouze vyhledávání nových slov vyžaduje připojení k internetu.'],
+        ['Je polština těžká?', 'Gramatika je sice složitá, ale nejvíc času zabere právě budování slovní zásoby. Polština má tisíce mezinárodních přejatých slov, která hned poznáte. OpenWords vám pak pomůže systematicky a efektivně vybudovat pevný základ slovanské slovní zásoby.'],
+        ['Je OpenWords zdarma?', 'Ano. Nečekají vás žádná předplatná ani paywally. Aplikace je zcela zdarma ke stažení i používání a nepotřebujete k ní žádný účet.'],
+        ['Čím se OpenWords liší od jiných aplikací na polštinu?', 'Většina aplikací používá pevné seznamy slov. OpenWords vychází ze slovníku: ukládáte slova, která skutečně potkáváte, v přesném významu, v jakém se objevila, a opakujete je s rozloženým opakováním.']
+      ],
+      tr: [
+        ['Lehçe kelime hazinesini öğrenmenin en iyi yolu nedir?', 'Gerçek Lehçeye dalın — kitaplar, podcastler, filmler — ve bilmediğiniz her kelimeyi aradığınız anda kaydedin. Aralıklı tekrarla her kelime, siz unutmadan önce doğru anda geri gelir.'],
+        ['Lehçe dil sertifikalarına yardımcı olur mu?', 'Evet. Maddeler CEFR düzeyleri içerir; böylece özellikle B1 veya B2 kelime hazinesini hedefleyebilirsiniz. Sertifika sınavları kelimelerin aktif kullanımını ölçer — OpenWords bunu oluşturmanıza ve akılda tutmanıza yardımcı olur.'],
+        ['Lehçe kelime hazinesini çevrimdışı çalışabilir miyim?', 'Tekrar çevrimdışı çalışır — bir kelime kaydedildikten sonra onu her yerde çalışabilirsiniz. Yeni kelimeleri aramak internet gerektirir.'],
+        ['Lehçe zor mu?', 'Dil bilgisi karmaşıktır, ama en çok zaman alan kısım kelime hazinesi oluşturmaktır. Lehçede hemen tanıyacağınız binlerce uluslararası ödünç kelime vardır ve OpenWords, karşılığı olmayan temel Slav kelime hazinesini sistemli biçimde oluşturmanıza yardımcı olur.'],
+        ['OpenWords ücretsiz mi?', 'Evet. Abonelik yok, ödeme duvarı yok. İndirmesi ücretsiz, kullanması ücretsiz, hesap gerekmez.'],
+        ['OpenWords diğer Lehçe kelime uygulamalarından nasıl farklı?', 'Çoğu uygulama hazır kelime listeleri kullanır. OpenWords sözlükten başlar: gerçekten karşılaştığınız Lehçe kelimeleri, göründükleri tam anlamıyla kaydeder ve aralıklı tekrarla gözden geçirirsiniz.']
       ]
     },
     russian: {
@@ -1527,6 +2066,30 @@ export function learnFaq(locale: LocaleCode, language: LanguageSlug) {
         ['Ist Russisch schwer?', 'Die Grammatik ist komplex, aber Kyrillisch lernst du in etwa einer Woche. Danach sind Tausende internationaler Lehnwörter (компьютер, телефон, музыка) sofort lesbar. Beim slawischen Grundwortschatz zahlt sich konsequentes Wiederholen aus.'],
         ['Ist OpenWords kostenlos?', 'Ja. Keine Abos, keine Bezahlschranken. Kostenlos herunterzuladen und zu nutzen, kein Konto erforderlich.'],
         ['Wie unterscheidet sich OpenWords von anderen russischen Vokabel-Apps?', 'Die meisten Apps verwenden feste Wortlisten. OpenWords beginnt beim Wörterbuch: Du speicherst die russischen Wörter, denen du wirklich begegnest, in der exakten Bedeutung, und wiederholst sie mit verteilter Wiederholung.']
+      ],
+      fr: [
+        ['Quelle est la meilleure façon d\'apprendre le vocabulaire russe ?', 'Lisez et écoutez du russe à votre niveau, enregistrez chaque mot inconnu au moment où vous le cherchez et révisez avec la répétition espacée. OpenWords intègre cette habitude à la recherche dans le dictionnaire elle-même.'],
+        ['Est-ce utile pour le TORFL (ТРКИ) ?', 'Oui. Les entrées incluent des niveaux CECR qui correspondent approximativement aux niveaux du TORFL. OpenWords vous aide à enregistrer et à retenir ces mots de façon systématique.'],
+        ['Puis-je étudier le vocabulaire russe hors ligne ?', 'La révision fonctionne hors ligne — une fois un mot enregistré, vous pouvez l\'étudier partout. La recherche de nouveaux mots nécessite Internet.'],
+        ['Le russe est-il difficile ?', 'La grammaire est complexe, mais le cyrillique s\'apprend en une semaine environ. Ensuite, des milliers d\'emprunts internationaux (компьютер, телефон, музыка) se lisent immédiatement. C\'est sur le vocabulaire slave de base qu\'un travail de mémorisation régulier paie.'],
+        ['OpenWords est-il gratuit ?', 'Oui. Aucun abonnement, aucun paywall. Gratuit à télécharger, gratuit à utiliser, sans compte.'],
+        ['En quoi OpenWords est-il différent des autres applications de vocabulaire russe ?', 'La plupart des applications utilisent des listes de mots prédéfinies. OpenWords part du dictionnaire : vous enregistrez les mots russes que vous rencontrez vraiment, dans le sens exact où ils sont apparus, et vous les révisez avec la répétition espacée.']
+      ],
+      cs: [
+        ['Jak se nejlépe učit slovní zásobu ruštiny?', 'Čtěte a poslouchejte ruštinu na své úrovni. Ukládejte si neznámá slova hned při vyhledávání a procvičujte je pomocí rozloženého opakování. OpenWords tento návyk propojuje přímo s vyhledáváním ve slovníku.'],
+        ['Pomáhá aplikace se zkouškou TORFL (ТРКИ)?', 'Ano. U každého hesla najdete úroveň CEFR, která zhruba odpovídá úrovním zkoušky TORFL. OpenWords vám pomůže tato slovíčka systematicky ukládat a dlouhodobě si je zapamatovat.'],
+        ['Mohu se učit ruskou slovní zásobu offline?', 'Opakování funguje offline – jakmile máte slovo uložené, můžete se ho učit kdekoli. Pouze vyhledávání nových slov vyžaduje připojení k internetu.'],
+        ['Je ruština těžká?', 'Gramatika je sice složitá, ale azbuku se naučíte zhruba za týden. Pak pro vás budou tisíce mezinárodních přejatých slov (jako компьютер, телефон, музыка) hned srozumitelné. A právě u té typické slovanské slovní zásoby se systematické opakování nejvíc vyplatí.'],
+        ['Je OpenWords zdarma?', 'Ano. Nečekají vás žádná předplatná ani paywally. Aplikace je zcela zdarma ke stažení i používání a nepotřebujete k ní žádný účet.'],
+        ['Čím se OpenWords liší od jiných aplikací na ruštinu?', 'Většina aplikací používá pevné seznamy slov. OpenWords vychází ze slovníku: ukládáte slova, která skutečně potkáváte, v přesném významu, v jakém se objevila, a opakujete je s rozloženým opakováním.']
+      ],
+      tr: [
+        ['Rusça kelime hazinesini öğrenmenin en iyi yolu nedir?', 'Seviyenize uygun Rusça okuyup dinleyin, bilmediğiniz her kelimeyi aradığınız anda kaydedin ve aralıklı tekrarla gözden geçirin. OpenWords bu alışkanlığı doğrudan sözlük aramasının içine yerleştirir.'],
+        ['TORFL (ТРКИ) sınavına yardımcı olur mu?', 'Evet. Maddeler, TORFL düzeylerine kabaca karşılık gelen CEFR düzeyleri içerir. OpenWords bu kelimeleri sistemli biçimde kaydetmenize ve akılda tutmanıza yardımcı olur.'],
+        ['Rusça kelime hazinesini çevrimdışı çalışabilir miyim?', 'Tekrar çevrimdışı çalışır — bir kelime kaydedildikten sonra onu her yerde çalışabilirsiniz. Yeni kelimeleri aramak internet gerektirir.'],
+        ['Rusça zor mu?', 'Dil bilgisi karmaşıktır, ama Kiril alfabesi yaklaşık bir haftada öğrenilir. Ardından binlerce uluslararası ödünç kelime (компьютер, телефон, музыка) hemen okunur. Asıl temel Slav kelime hazinesinde düzenli tekrar çalışması işe yarar.'],
+        ['OpenWords ücretsiz mi?', 'Evet. Abonelik yok, ödeme duvarı yok. İndirmesi ücretsiz, kullanması ücretsiz, hesap gerekmez.'],
+        ['OpenWords diğer Rusça kelime uygulamalarından nasıl farklı?', 'Çoğu uygulama hazır kelime listeleri kullanır. OpenWords sözlükten başlar: gerçekten karşılaştığınız Rusça kelimeleri, göründükleri tam anlamıyla kaydeder ve aralıklı tekrarla gözden geçirirsiniz.']
       ]
     }
   };
