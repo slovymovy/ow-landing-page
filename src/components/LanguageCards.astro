@@ -20,6 +20,13 @@ const csAccusative: Record<LanguageSlug, string> = {
 };
 const ctaName = (slug: LanguageSlug) =>
   locale === 'cs' ? csAccusative[slug] : languages[slug].localName[locale];
+
+// Turkish is verb-final: the object comes before the verb ("İngilizce Öğren",
+// not "Öğren İngilizce"), so the CTA flips word order for Turkish.
+const ctaText = (slug: LanguageSlug) =>
+  locale === 'tr'
+    ? `${ctaName(slug)} ${copy.learnVerb}`
+    : `${copy.learnVerb} ${ctaName(slug)}`;
 ---
 <div class="lang-grid">
   {languageSlugs.map((slug) => (
@@ -27,7 +34,7 @@ const ctaName = (slug: LanguageSlug) =>
       <div class="lang-card__flag" aria-hidden="true">{languages[slug].flag}</div>
       <div class="lang-card__name">{languages[slug].displayName[locale]}</div>
       <div class="lang-card__cta">
-        {copy.learnVerb} {ctaName(slug)}
+        {ctaText(slug)}
         <span aria-hidden="true">→</span>
       </div>
     </a>

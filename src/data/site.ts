@@ -130,7 +130,7 @@ export const languages = {
       de: 'englischer Wortschatz',
       fr: 'vocabulaire anglais',
       cs: 'slovní zásoba angličtiny',
-      tr: 'İngilizce kelime hazinesi'
+      tr: 'İngilizce kelime dağarcığı'
     },
     learners: {
       en: 'non-native speakers building everyday, academic, or professional English vocabulary',
@@ -142,7 +142,7 @@ export const languages = {
       de: 'alle, die ihren englischen Wortschatz für Beruf, Studium oder das tägliche Lesen aufbauen wollen',
       fr: 'les personnes qui apprennent l\'anglais pour le travail, les études ou la lecture au quotidien',
       cs: 'ty, kteří se učí anglicky kvůli práci, studiu nebo každodennímu čtení',
-      tr: 'iş, eğitim veya günlük okuma için İngilizce öğrenen herkes'
+      tr: 'iş, eğitim veya günlük okumalar için İngilizce öğrenenler'
     },
     examples: ['approach', 'reliable', 'evidence']
   },
@@ -184,7 +184,7 @@ export const languages = {
       de: 'niederländischer Wortschatz',
       fr: 'vocabulaire néerlandais',
       cs: 'slovní zásoba nizozemštiny',
-      tr: 'Felemenkçe kelime hazinesi'
+      tr: 'Felemenkçe kelime dağarcığı'
     },
     learners: {
       en: 'Dutch learners, NT2 students, and people living or working in the Netherlands or Belgium',
@@ -196,7 +196,7 @@ export const languages = {
       de: 'Niederländischlernende, NT2-Teilnehmende und alle, die in den Niederlanden oder Belgien leben oder arbeiten',
       fr: 'les apprenants de néerlandais, les étudiants en NT2 et ceux qui vivent ou travaillent aux Pays-Bas ou en Belgique',
       cs: 'ty, kteří se učí nizozemsky, připravují se na zkoušku NT2 nebo žijí a pracují v Nizozemsku či Belgii',
-      tr: 'Felemenkçe öğrenenler, NT2 öğrencileri ve Hollanda ya da Belçika\'da yaşayan veya çalışan herkes'
+      tr: 'Felemenkçe öğrenenler, NT2 sınavına hazırlananlar ve Hollanda ya da Belçika\'da yaşayıp çalışan herkes'
     },
     examples: ['afspraak', 'duidelijk', 'omgeving']
   },
@@ -238,7 +238,7 @@ export const languages = {
       de: 'polnischer Wortschatz',
       fr: 'vocabulaire polonais',
       cs: 'slovní zásoba polštiny',
-      tr: 'Lehçe kelime hazinesi'
+      tr: 'Lehçe kelime dağarcığı'
     },
     learners: {
       en: 'Polish learners, heritage speakers, and students preparing for language exams',
@@ -250,7 +250,7 @@ export const languages = {
       de: 'Polnischlernende, Herkunftssprecher und alle, die sich auf Sprachprüfungen vorbereiten',
       fr: 'les apprenants de polonais, les locuteurs d\'origine et les étudiants qui préparent un examen de langue',
       cs: 'ty, kteří se učí polsky, mají polské kořeny nebo se připravují na jazykové zkoušky',
-      tr: 'Lehçe öğrenenler, köken konuşurları ve dil sınavlarına hazırlanan öğrenciler'
+      tr: 'Lehçe öğrenenler, Lehçe köklerine sahip olanlar ve dil sınavlarına hazırlanan öğrenciler'
     },
     examples: ['znaczenie', 'wymagać', 'przykład']
   },
@@ -292,7 +292,7 @@ export const languages = {
       de: 'russischer Wortschatz',
       fr: 'vocabulaire russe',
       cs: 'slovní zásoba ruštiny',
-      tr: 'Rusça kelime hazinesi'
+      tr: 'Rusça kelime dağarcığı'
     },
     learners: {
       en: 'Russian learners and native speakers who want richer, more precise vocabulary',
@@ -304,7 +304,7 @@ export const languages = {
       de: 'Russischlernende und Muttersprachler, die einen reicheren, präziseren Wortschatz aufbauen möchten',
       fr: 'les apprenants de russe et les locuteurs natifs qui souhaitent enrichir et préciser leur vocabulaire',
       cs: 'ty, kteří se učí rusky, i rodilé mluvčí, kteří chtějí bohatší a přesnější slovní zásobu',
-      tr: 'Rusça öğrenenler ve daha zengin, daha kesin bir kelime hazinesi isteyen ana dili konuşurları'
+      tr: 'Rusça öğrenenler ve daha zengin, daha kesin bir kelime dağarcığı isteyen ana dili Rusça olanlar'
     },
     examples: ['смысл', 'пример', 'точный']
   }
