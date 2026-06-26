@@ -18,8 +18,18 @@ const csAccusative: Record<LanguageSlug, string> = {
   polish: 'polštinu',
   russian: 'ruštinu'
 };
+// French needs a definite article after "Apprendre" ("Apprendre l'anglais",
+// "Apprendre le néerlandais"), which localName (bare name) doesn't include.
+const frArticle: Record<LanguageSlug, string> = {
+  english: 'l\'anglais',
+  dutch: 'le néerlandais',
+  polish: 'le polonais',
+  russian: 'le russe'
+};
 const ctaName = (slug: LanguageSlug) =>
-  locale === 'cs' ? csAccusative[slug] : languages[slug].localName[locale];
+  locale === 'cs' ? csAccusative[slug]
+  : locale === 'fr' ? frArticle[slug]
+  : languages[slug].localName[locale];
 
 // Turkish is verb-final: the object comes before the verb ("İngilizce Öğren",
 // not "Öğren İngilizce"), so the CTA flips word order for Turkish.
