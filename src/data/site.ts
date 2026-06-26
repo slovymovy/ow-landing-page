@@ -140,7 +140,7 @@ export const languages = {
       it: 'chi studia l\'inglese per il lavoro, lo studio o la lettura quotidiana',
       es: 'quienes aprenden inglés para el trabajo, los estudios o la lectura diaria',
       de: 'alle, die ihren englischen Wortschatz für Beruf, Studium oder das tägliche Lesen aufbauen wollen',
-      fr: 'les personnes qui apprennent l\'anglais pour le travail, les études ou la lecture au quotidien',
+      fr: 'ceux qui apprennent l\'anglais pour le travail, les études ou leurs lectures quotidiennes',
       cs: 'ty, kteří se učí anglicky kvůli práci, studiu nebo každodennímu čtení',
       tr: 'iş, eğitim veya günlük okumalar için İngilizce öğrenenler'
     },
@@ -194,7 +194,7 @@ export const languages = {
       it: 'chi studia l\'olandese, gli studenti NT2 e chi vive o lavora nei Paesi Bassi o in Belgio',
       es: 'quienes aprenden neerlandés, los estudiantes de NT2 y quienes viven o trabajan en los Países Bajos o Bélgica',
       de: 'Niederländischlernende, NT2-Teilnehmende und alle, die in den Niederlanden oder Belgien leben oder arbeiten',
-      fr: 'les apprenants de néerlandais, les étudiants en NT2 et ceux qui vivent ou travaillent aux Pays-Bas ou en Belgique',
+      fr: 'les apprenants du néerlandais, les candidats à l\'examen NT2 et ceux qui vivent ou travaillent aux Pays-Bas ou en Belgique',
       cs: 'ty, kteří se učí nizozemsky, připravují se na zkoušku NT2 nebo žijí a pracují v Nizozemsku či Belgii',
       tr: 'Felemenkçe öğrenenler, NT2 sınavına hazırlananlar ve Hollanda ya da Belçika\'da yaşayıp çalışan herkes'
     },
@@ -248,7 +248,7 @@ export const languages = {
       it: 'chi studia il polacco, i parlanti di origine e gli studenti che si preparano agli esami di lingua',
       es: 'quienes aprenden polaco, los hablantes de herencia y los estudiantes que se preparan para exámenes de idioma',
       de: 'Polnischlernende, Herkunftssprecher und alle, die sich auf Sprachprüfungen vorbereiten',
-      fr: 'les apprenants de polonais, les locuteurs d\'origine et les étudiants qui préparent un examen de langue',
+      fr: 'les apprenants du polonais, les personnes d\'origine polonaise et les étudiants qui préparent un examen de langue',
       cs: 'ty, kteří se učí polsky, mají polské kořeny nebo se připravují na jazykové zkoušky',
       tr: 'Lehçe öğrenenler, Lehçe köklerine sahip olanlar ve dil sınavlarına hazırlanan öğrenciler'
     },
@@ -302,7 +302,7 @@ export const languages = {
       it: 'chi studia il russo e i madrelingua che desiderano un vocabolario più ricco e preciso',
       es: 'quienes aprenden ruso y los hablantes nativos que quieren un vocabulario más rico y preciso',
       de: 'Russischlernende und Muttersprachler, die einen reicheren, präziseren Wortschatz aufbauen möchten',
-      fr: 'les apprenants de russe et les locuteurs natifs qui souhaitent enrichir et préciser leur vocabulaire',
+      fr: 'les apprenants du russe et les locuteurs natifs qui souhaitent enrichir et préciser leur vocabulaire',
       cs: 'ty, kteří se učí rusky, i rodilé mluvčí, kteří chtějí bohatší a přesnější slovní zásobu',
       tr: 'Rusça öğrenenler ve daha zengin, daha kesin bir kelime dağarcığı isteyen ana dili Rusça olanlar'
     },
