@@ -1,6 +1,6 @@
 ---
 import { homeCopy } from '../data/copy';
-import { languageSlugs, languages, localizePath, type LocaleCode } from '../data/site';
+import { languageSlugs, languages, localizePath, type LanguageSlug, type LocaleCode } from '../data/site';
 
 interface Props {
   locale?: LocaleCode;
@@ -8,6 +8,18 @@ interface Props {
 
 const { locale = 'en' } = Astro.props;
 const copy = homeCopy[locale];
+
+// Czech "Učit se" needs the accusative case. `localName` holds the genitive
+// form the learn pages rely on (e.g. "slovní zásoba angličtiny"), so the card
+// CTA supplies its own accusative form just for Czech.
+const csAccusative: Record<LanguageSlug, string> = {
+  english: 'angličtinu',
+  dutch: 'nizozemštinu',
+  polish: 'polštinu',
+  russian: 'ruštinu'
+};
+const ctaName = (slug: LanguageSlug) =>
+  locale === 'cs' ? csAccusative[slug] : languages[slug].localName[locale];
 ---
 <div class="lang-grid">
   {languageSlugs.map((slug) => (
@@ -15,7 +27,7 @@ const copy = homeCopy[locale];
       <div class="lang-card__flag" aria-hidden="true">{languages[slug].flag}</div>
       <div class="lang-card__name">{languages[slug].displayName[locale]}</div>
       <div class="lang-card__cta">
-        {copy.learnVerb} {languages[slug].localName[locale]}
+        {copy.learnVerb} {ctaName(slug)}
         <span aria-hidden="true">→</span>
       </div>
     </a>
