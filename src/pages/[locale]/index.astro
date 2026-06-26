@@ -5,7 +5,7 @@ import Header from '../../components/Header.astro';
 import LanguageCards from '../../components/LanguageCards.astro';
 import MobileDownloadBar from '../../components/MobileDownloadBar.astro';
 import StoreButtons from '../../components/StoreButtons.astro';
-import { homeCopy, homeFaq } from '../../data/copy';
+import { cardDemo, homeCopy, homeFaq } from '../../data/copy';
 import { languageSlugs, languages, locales, type LocaleCode } from '../../data/site';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
@@ -17,6 +17,7 @@ export function getStaticPaths() {
 
 const locale = Astro.params.locale as LocaleCode;
 const copy = homeCopy[locale];
+const demo = cardDemo[locale];
 const faq = homeFaq(locale);
 ---
 <BaseLayout title={copy.title} description={copy.description} locale={locale} path="/" faq={faq}>
@@ -145,64 +146,39 @@ const faq = homeFaq(locale);
           </div>
           <div class="card-types__strip">
 
-            <div class="card-prev" role="img" aria-label="Recognition card: word shown, translate to your language">
-              <div class="card-prev__chip card-prev__chip--recog">NL → EN</div>
+            <div class="card-prev" role="img" aria-label={`${demo.targetCode} → ${demo.locCode}: ${demo.word}`}>
+              <div class="card-prev__chip card-prev__chip--recog">{demo.targetCode} → {demo.locCode}</div>
               <div class="card-prev__body">
-                <div class="card-prev__word">gezellig <span class="card-prev__speaker" aria-hidden="true">🔊</span></div>
-              </div>
-              <div class="card-prev__hint" aria-hidden="true">
-                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 15.5-6.3"/><path d="M21 4v5h-5"/><path d="M21 12a9 9 0 0 1-15.5 6.3"/><path d="M3 20v-5h5"/></svg>
-                Tap to flip
-              </div>
-            </div>
+                <div class="card-prev__word">{demo.word} <span class="card-prev__speaker" aria-hidden="true">🔊</span></div>
+              </div>            </div>
 
-            <div class="card-prev" role="img" aria-label="Production card: definition shown, recall the word">
-              <div class="card-prev__chip card-prev__chip--prod">EN → NL</div>
+            <div class="card-prev" role="img" aria-label={demo.translatePrompt}>
+              <div class="card-prev__chip card-prev__chip--prod">{demo.locCode} → {demo.targetCode}</div>
               <div class="card-prev__body">
-                <div class="card-prev__prompt">Translate to Dutch</div>
-                <div class="card-prev__word card-prev__word--sm">pleasant,<br />cozy</div>
-              </div>
-              <div class="card-prev__hint" aria-hidden="true">
-                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 15.5-6.3"/><path d="M21 4v5h-5"/><path d="M21 12a9 9 0 0 1-15.5 6.3"/><path d="M3 20v-5h5"/></svg>
-                Tap to check
-              </div>
-            </div>
+                <div class="card-prev__prompt">{demo.translatePrompt}</div>
+                <div class="card-prev__word card-prev__word--sm" set:html={demo.translation}></div>
+              </div>            </div>
 
-            <div class="card-prev" role="img" aria-label="Fill-in-the-blank card">
-              <div class="card-prev__chip card-prev__chip--cloze">Fill in</div>
+            <div class="card-prev" role="img" aria-label={demo.fillInChip}>
+              <div class="card-prev__chip card-prev__chip--cloze">{demo.fillInChip}</div>
               <div class="card-prev__body">
-                <div class="card-prev__cloze">De avond was erg <span class="card-prev__blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>.</div>
-              </div>
-              <div class="card-prev__hint" aria-hidden="true">
-                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 15.5-6.3"/><path d="M21 4v5h-5"/><path d="M21 12a9 9 0 0 1-15.5 6.3"/><path d="M3 20v-5h5"/></svg>
-                Tap to check
-              </div>
-            </div>
+                <div class="card-prev__cloze">{demo.clozeBefore} <span class="card-prev__blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>{demo.clozeAfter}</div>
+              </div>            </div>
 
-            <div class="card-prev" role="img" aria-label="Listening card: audio only">
-              <div class="card-prev__chip card-prev__chip--listen">Listen</div>
+            <div class="card-prev" role="img" aria-label={demo.listenChip}>
+              <div class="card-prev__chip card-prev__chip--listen">{demo.listenChip}</div>
               <div class="card-prev__body card-prev__body--center">
                 <div class="card-prev__disc">
                   <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M19 5.5a9 9 0 0 1 0 13"/></svg>
                 </div>
-              </div>
-              <div class="card-prev__hint" aria-hidden="true">
-                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 15.5-6.3"/><path d="M21 4v5h-5"/><path d="M21 12a9 9 0 0 1-15.5 6.3"/><path d="M3 20v-5h5"/></svg>
-                Tap to check
-              </div>
-            </div>
+              </div>            </div>
 
-            <div class="card-prev" role="img" aria-label="Monolingual card: word and definition in target language">
-              <div class="card-prev__chip card-prev__chip--mono">NL only</div>
+            <div class="card-prev" role="img" aria-label={`${demo.monoChip}: ${demo.word}`}>
+              <div class="card-prev__chip card-prev__chip--mono">{demo.monoChip}</div>
               <div class="card-prev__body">
-                <div class="card-prev__word">gezellig <span class="card-prev__speaker" aria-hidden="true">🔊</span></div>
-                <div class="card-prev__mono-note">think in Dutch</div>
-              </div>
-              <div class="card-prev__hint" aria-hidden="true">
-                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 15.5-6.3"/><path d="M21 4v5h-5"/><path d="M21 12a9 9 0 0 1-15.5 6.3"/><path d="M3 20v-5h5"/></svg>
-                Tap to flip
-              </div>
-            </div>
+                <div class="card-prev__word">{demo.word} <span class="card-prev__speaker" aria-hidden="true">🔊</span></div>
+                <div class="card-prev__mono-note">{demo.thinkIn}</div>
+              </div>            </div>
 
           </div>
         </div>
@@ -784,20 +760,6 @@ const faq = homeFaq(locale);
     justify-content: center;
     color: #b87333;
     box-shadow: 0 0 0 7px rgba(184,115,51,.05), 0 0 0 14px rgba(184,115,51,.03);
-  }
-
-  .card-prev__hint {
-    font-size: 10px;
-    color: #9b8f86;
-    text-align: center;
-    font-family: Inter, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
-    padding-top: 8px;
-    border-top: 1px solid rgba(45, 38, 32, .08);
-    flex-shrink: 0;
   }
 
   /* ── Phone wrap ── */
