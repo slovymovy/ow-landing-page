@@ -1,11 +1,18 @@
 import type { APIRoute } from 'astro';
+import { getCollection } from 'astro:content';
 import { absoluteUrl, allIndexablePaths, alternateLinks, localeCodes, standalonePaths } from '../data/site';
 
 // Matches a leading locale segment (e.g. /de, /pl) so we can derive the
 // locale-agnostic path before generating hreflang alternates.
 const localePrefix = new RegExp(`^/(${localeCodes.filter((c) => c !== 'en').join('|')})(?=/|$)`);
 
-export const GET: APIRoute = () => {
+export const GET: APIRoute = async () => {
+  // English-only blog: the hub plus each published post, no hreflang alternates.
+  const blogPaths = [
+    '/blog/',
+    ...(await getCollection('blog', ({ data }) => !data.draft)).map((post) => `/blog/${post.id}/`)
+  ];
+
   const urls = allIndexablePaths()
     .map((path) => {
       const alternates = alternateLinks(path.replace(localePrefix, '') || '/')
@@ -24,7 +31,7 @@ export const GET: APIRoute = () => {
     .join('');
 
   // English-only pages: a bare entry with no hreflang alternates.
-  const standaloneUrls = standalonePaths
+  const standaloneUrls = [...standalonePaths, ...blogPaths]
     .map((path) =>
       [
         '<url>',

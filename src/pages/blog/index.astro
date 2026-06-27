@@ -1,0 +1,408 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import MobileDownloadBar from '../../components/MobileDownloadBar.astro';
+import StoreButtons from '../../components/StoreButtons.astro';
+import BlogCard from '../../components/BlogCard.astro';
+import { absoluteUrl } from '../../data/site';
+import { blogTags, tagLabels, formatBlogDate, type BlogTag } from '../../data/blog';
+
+const locale = 'en';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort(
+  (a, b) => +new Date(b.data.date) - +new Date(a.data.date)
+);
+
+// Only show filter pills for tags that actually have posts (plus "All").
+const activeTags: BlogTag[] = blogTags.filter((tag) =>
+  posts.some((post) => post.data.tags.includes(tag))
+);
+
+const title = 'OpenWords Blog — Vocabulary, language learning & how words stick';
+const description =
+  'Practical guides on learning vocabulary that lasts — spaced repetition, language-specific tips for Dutch, English, Polish and Russian, exam prep, and how to remember the words you look up.';
+
+const structuredData = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Blog',
+    name: 'OpenWords Blog',
+    url: absoluteUrl('/blog/'),
+    description,
+    inLanguage: 'en',
+    blogPost: posts.map((post) => ({
+      '@type': 'BlogPosting',
+      headline: post.data.title,
+      url: absoluteUrl(`/blog/${post.id}/`),
+      datePublished: post.data.date,
+      author: { '@type': 'Person', name: post.data.author }
+    }))
+  }
+];
+---
+<BaseLayout
+  title={title}
+  description={description}
+  ogTitle="OpenWords Blog — Vocabulary & language learning"
+  ogDescription="Practical guides on learning vocabulary that lasts."
+  locale={locale}
+  path="/blog"
+  localized={false}
+  structuredData={structuredData}
+>
+  <link
+    slot="head"
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link slot="head" rel="alternate" type="application/rss+xml" title="OpenWords Blog" href="/blog/rss.xml" />
+
+  <Header locale={locale} path="/blog" localized={false} />
+
+  <main class="page">
+    <header class="bloghead">
+      <div class="bloghead__glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="bloghead__inner">
+          <div class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>The OpenWords Blog</div>
+          <h1 class="bloghead__h1">Words worth <em>keeping.</em></h1>
+          <p class="bloghead__sub">
+            Practical writing on how vocabulary actually sticks — the science of memory,
+            the daily habits that build a language, and honest guides from people learning
+            one themselves.
+          </p>
+        </div>
+
+        {activeTags.length > 1 && (
+          <div class="filters" id="filters" role="group" aria-label="Filter posts by tag">
+            <button class="filter is-active" type="button" data-tag="all" aria-pressed="true">All</button>
+            {activeTags.map((tag) => (
+              <button class="filter" type="button" data-tag={tag} aria-pressed="false">{tagLabels[tag]}</button>
+            ))}
+          </div>
+        )}
+      </div>
+    </header>
+
+    <div class="container"><div class="divider"></div></div>
+
+    <section class="container" aria-label="All articles">
+      <div class="grid-head">
+        <h2 class="grid-head__title">Latest articles</h2>
+        <span class="grid-head__count" id="count"></span>
+      </div>
+
+      <div class:list={['grid', { 'grid--cap': posts.length < 3 }]} id="grid">
+        {posts.map((post) => (
+          <BlogCard
+            href={`/blog/${post.id}/`}
+            title={post.data.title}
+            excerpt={post.data.excerpt}
+            pills={post.data.pills ?? post.data.tags.map((tag) => tagLabels[tag])}
+            dataTags={post.data.tags.join(' ')}
+            dateLabel={formatBlogDate(post.data.date)}
+            readMins={post.data.readMins}
+          />
+        ))}
+      </div>
+
+      <p class="empty" id="empty">No articles with that tag yet — check back soon.</p>
+    </section>
+
+    <section class="container">
+      <div class="ctastrip reveal">
+        <div>
+          <h2 class="ctastrip__title">Remember the words you usually forget by tomorrow.</h2>
+          <p class="ctastrip__sub">Look up a word, save the exact meaning in one tap, and review it until it sticks. Free, no account.</p>
+        </div>
+        <StoreButtons locale={locale} />
+      </div>
+    </section>
+  </main>
+
+  <MobileDownloadBar locale={locale} />
+  <Footer locale={locale} />
+</BaseLayout>
+
+<style>
+  .page { padding-top: 60px; }
+
+  .bloghead {
+    position: relative;
+    overflow: hidden;
+    padding: 64px 0 8px;
+  }
+
+  .bloghead__glow {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 70% 60% at 50% -20%, rgba(197, 163, 103, .08) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .bloghead__inner {
+    position: relative;
+    z-index: 1;
+    max-width: 720px;
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: .75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #C5A367;
+    margin-bottom: 16px;
+  }
+
+  .eyebrow-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #C5A367;
+    box-shadow: 0 0 8px #C5A367;
+  }
+
+  .bloghead__h1 {
+    font-family: Lora, Georgia, serif;
+    font-size: clamp(2.25rem, 6vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -.02em;
+    color: #E2E4ED;
+    margin: 0 0 18px;
+  }
+
+  .bloghead__h1 em {
+    font-style: normal;
+    color: #C5A367;
+  }
+
+  .bloghead__sub {
+    font-size: clamp(1rem, 2vw, 1.125rem);
+    line-height: 1.75;
+    color: #9499B0;
+    max-width: 600px;
+    margin: 0;
+  }
+
+  .filters {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 32px;
+    padding-bottom: 8px;
+  }
+
+  .filter {
+    font-size: .8125rem;
+    font-weight: 600;
+    color: #9499B0;
+    padding: 7px 16px;
+    border: 1px solid rgba(255, 255, 255, .07);
+    border-radius: 999px;
+    background: transparent;
+    cursor: pointer;
+    transition: color .18s, border-color .18s, background .18s;
+  }
+
+  .filter:hover {
+    color: #E2E4ED;
+    border-color: rgba(255, 255, 255, .12);
+  }
+
+  .filter.is-active {
+    color: #1c1407;
+    background: #C5A367;
+    border-color: #C5A367;
+  }
+
+  .filter:focus-visible {
+    outline: 2px solid #C5A367;
+    outline-offset: 2px;
+  }
+
+  .divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(197, 163, 103, .14), transparent);
+    margin: 40px 0;
+  }
+
+  .grid-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 22px;
+  }
+
+  .grid-head__title {
+    font-family: Lora, Georgia, serif;
+    font-size: 1.375rem;
+    font-weight: 600;
+    color: #E2E4ED;
+    letter-spacing: -.01em;
+    margin: 0;
+  }
+
+  .grid-head__count {
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: .75rem;
+    color: #555a70;
+    letter-spacing: .04em;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  @media (min-width: 600px) {
+    .grid { grid-template-columns: 1fr 1fr; }
+  }
+
+  @media (min-width: 940px) {
+    .grid { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  /* Until there are enough posts to fill a 3-up row, lay them out as
+     fixed-width cards centered in the container (no empty trailing slot). */
+  .grid.grid--cap {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 360px));
+    justify-content: center;
+  }
+
+  .empty {
+    display: none;
+    text-align: center;
+    padding: 64px 20px;
+    color: #555a70;
+    font-family: Lora, Georgia, serif;
+    font-style: italic;
+    font-size: 1.125rem;
+  }
+
+  .ctastrip {
+    margin: 64px 0 0;
+    background: linear-gradient(180deg, rgba(197, 163, 103, .10), rgba(197, 163, 103, .02));
+    border: 1px solid rgba(197, 163, 103, .20);
+    border-radius: 28px;
+    padding: 40px 32px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    align-items: center;
+    text-align: center;
+  }
+
+  @media (min-width: 760px) {
+    .ctastrip {
+      grid-template-columns: 1fr auto;
+      text-align: left;
+      padding: 44px 48px;
+    }
+  }
+
+  .ctastrip__title {
+    font-family: Lora, Georgia, serif;
+    font-size: clamp(1.4rem, 3vw, 1.875rem);
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -.01em;
+    color: #E2E4ED;
+    margin: 0 0 8px;
+  }
+
+  .ctastrip__sub {
+    font-size: 1rem;
+    color: #9499B0;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .ctastrip :global(.store-btns) { justify-content: center; }
+
+  @media (min-width: 760px) {
+    .ctastrip :global(.store-btns) { justify-content: flex-start; }
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity .6s ease, transform .6s ease;
+  }
+
+  .reveal.in {
+    opacity: 1;
+    transform: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+  }
+
+  @media (max-width: 640px) {
+    .bloghead { padding: 36px 0 4px; }
+    .divider { margin: 28px 0; }
+    .ctastrip { margin-top: 44px; }
+  }
+</style>
+
+<script>
+  // Scroll reveal (gated on reduced motion via CSS; observer just adds .in).
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const revealEls = Array.from(document.querySelectorAll<HTMLElement>('.reveal'));
+  if (reduce) {
+    revealEls.forEach((el) => el.classList.add('in'));
+  } else {
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: .1 });
+    revealEls.forEach((el) => obs.observe(el));
+  }
+
+  // Client-side tag filter (all cards render server-side; this only toggles).
+  const filters = document.getElementById('filters');
+  const cards = Array.from(document.querySelectorAll<HTMLElement>('#grid .card'));
+  const countEl = document.getElementById('count');
+  const emptyEl = document.getElementById('empty');
+
+  function applyFilter(tag: string) {
+    let shown = 0;
+    cards.forEach((c) => {
+      const tags = (c.dataset.tags || '').split(' ');
+      const match = tag === 'all' || tags.includes(tag);
+      c.style.display = match ? '' : 'none';
+      if (match) shown += 1;
+    });
+    if (countEl) countEl.textContent = `${shown} ${shown === 1 ? 'article' : 'articles'}`;
+    if (emptyEl) emptyEl.style.display = shown === 0 ? 'block' : 'none';
+  }
+
+  filters?.addEventListener('click', (e) => {
+    const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('.filter');
+    if (!btn) return;
+    filters.querySelectorAll('.filter').forEach((f) => {
+      f.classList.remove('is-active');
+      f.setAttribute('aria-pressed', 'false');
+    });
+    btn.classList.add('is-active');
+    btn.setAttribute('aria-pressed', 'true');
+    applyFilter(btn.dataset.tag || 'all');
+  });
+
+  applyFilter('all');
+</script>

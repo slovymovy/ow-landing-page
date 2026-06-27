@@ -12,6 +12,11 @@ interface Props {
   localized?: boolean;
   faq?: { question: string; answer: string }[];
   structuredData?: Record<string, unknown>[];
+  /** og:type — "website" by default, "article" for blog posts. */
+  ogType?: string;
+  /** Optional cleaner social title/description; fall back to title/description. */
+  ogTitle?: string;
+  ogDescription?: string;
 }
 
 const {
@@ -22,8 +27,14 @@ const {
   noindex = false,
   localized = true,
   faq = [],
-  structuredData = []
+  structuredData = [],
+  ogType = 'website',
+  ogTitle,
+  ogDescription
 } = Astro.props;
+
+const socialTitle = ogTitle ?? title;
+const socialDescription = ogDescription ?? description;
 
 const canonicalPath = localizePath(locale, path);
 const canonical = absoluteUrl(canonicalPath);
@@ -86,16 +97,17 @@ const jsonLd = [
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-    <meta property="og:type" content="website" />
+    <slot name="head" />
+    <meta property="og:type" content={ogType} />
     <meta property="og:url" content={canonical} />
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
+    <meta property="og:title" content={socialTitle} />
+    <meta property="og:description" content={socialDescription} />
     <meta property="og:image" content={absoluteUrl(site.ogImage)} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={description} />
+    <meta name="twitter:title" content={socialTitle} />
+    <meta name="twitter:description" content={socialDescription} />
     <meta name="twitter:image" content={absoluteUrl(site.ogImage)} />
     <meta name="theme-color" content="#10151f" />
     {jsonLd.map((schema) => (

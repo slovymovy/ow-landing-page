@@ -1,7 +1,18 @@
 import type { APIRoute } from 'astro';
+import { getCollection } from 'astro:content';
 import { languageSlugs, languages, localeCodes, locales, site } from '../data/site';
 
-export const GET: APIRoute = () => {
+export const GET: APIRoute = async () => {
+  const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort(
+    (a, b) => +new Date(b.data.date) - +new Date(a.data.date)
+  );
+  const blogPosts = posts
+    .map(
+      (post) =>
+        `- [${post.data.title}](${site.origin}/blog/${post.id}/): ${post.data.excerpt}`
+    )
+    .join('\n');
+
   const learnPages = languageSlugs
     .map(
       (slug) =>
@@ -37,6 +48,10 @@ export const GET: APIRoute = () => {
       localized,
       `- [About OpenWords](${site.origin}/about/): team, story, and licensing.`,
       `- [Privacy policy](${site.origin}/privacy/): how OpenWords handles data.`,
+      '',
+      '## Blog',
+      `- [OpenWords Blog](${site.origin}/blog/): practical guides on learning vocabulary that lasts — spaced repetition, language-specific tips, and exam prep.`,
+      blogPosts,
       '',
       '## Official links',
       `- [App Store](${site.appStoreUrl}): download OpenWords for iOS.`,
