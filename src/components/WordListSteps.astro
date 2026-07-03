@@ -1,0 +1,120 @@
+---
+import StoreButtons from './StoreButtons.astro';
+import type { StepItem } from '../data/wordLists';
+import type { LocaleCode } from '../data/site';
+
+interface Props {
+  eyebrow: string;
+  h2: string;
+  sub: string;
+  steps: StepItem[];
+  note: string;
+  locale?: LocaleCode;
+  /** Set on the list page so the nav "Download" pill anchors here. */
+  id?: string;
+}
+
+const { eyebrow, h2, sub, steps, note, locale = 'en', id } = Astro.props;
+---
+<section class="wl-steps" id={id}>
+  <div class="container">
+    <div class="wl-steps__head">
+      <div class="wl-steps__eyebrow">{eyebrow}</div>
+      <h2 class="wl-steps__h2">{h2}</h2>
+      <p class="wl-steps__sub">{sub}</p>
+    </div>
+    <div class="wl-steps__flow">
+      {steps.map((step, i) => (
+        <div class="wl-step">
+          <div class="wl-step__num" aria-hidden="true">{i + 1}</div>
+          <h3 class="wl-step__title">{step.title}</h3>
+          <p class="wl-step__desc">{step.body}</p>
+        </div>
+      ))}
+    </div>
+    <div class="wl-steps__cta">
+      <StoreButtons locale={locale} centered />
+      <p class="wl-steps__note">{note}</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .wl-steps { padding: 88px 0; background: #0f1118; }
+  .wl-steps__head { text-align: center; max-width: 640px; margin: 0 auto; }
+  .wl-steps__eyebrow {
+    font-size: .6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #C5A367;
+    margin-bottom: 10px;
+  }
+  .wl-steps__h2 {
+    font-family: Lora, Georgia, serif;
+    font-size: clamp(1.625rem, 3.5vw, 2.25rem);
+    font-weight: 600;
+    line-height: 1.18;
+    color: #E2E4ED;
+    letter-spacing: -.01em;
+    margin-bottom: 14px;
+  }
+  .wl-steps__sub { font-size: 1rem; line-height: 1.7; color: #9499B0; margin: 0; }
+
+  .wl-steps__flow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin: 44px 0 34px;
+    text-align: left;
+  }
+  @media (max-width: 860px) { .wl-steps__flow { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 480px) { .wl-steps__flow { grid-template-columns: 1fr; } }
+
+  .wl-step {
+    background: #1C1F2A;
+    border: 1px solid rgba(255, 255, 255, .07);
+    border-radius: 20px;
+    padding: 26px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: border-color .2s, transform .2s;
+  }
+  .wl-step:hover { border-color: rgba(197, 163, 103, .20); transform: translateY(-2px); }
+  .wl-step__num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: rgba(197, 163, 103, .10);
+    border: 1px solid rgba(197, 163, 103, .20);
+    font-family: Lora, Georgia, serif;
+    font-weight: 700;
+    color: #C5A367;
+  }
+  .wl-step__title {
+    font-family: Lora, Georgia, serif;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    color: #E2E4ED;
+    margin: 0;
+    letter-spacing: -.01em;
+  }
+  .wl-step__desc { font-size: .875rem; line-height: 1.6; color: #9499B0; margin: 0; }
+
+  .wl-steps__cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+  .wl-steps__note { font-size: .8125rem; color: #868ca6; margin: 0; }
+
+  @media (max-width: 640px) {
+    .wl-steps { padding: 48px 0; }
+    .wl-steps__flow { margin: 28px 0 26px; }
+  }
+</style>

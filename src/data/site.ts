@@ -355,6 +355,12 @@ export function alternateLinks(path = '/') {
 // self-canonical and a bare sitemap entry — no hreflang alternates.
 export const standalonePaths = ['/about/'];
 
+// Word-list pages: English vocabulary, but the chrome is localized, so they
+// exist in every locale with a full hreflang set (paths after the locale prefix).
+// One entry per shipped list; keep in sync with the registry in `wordLists.ts`.
+export const wordListSlugs = ['500-most-common', 'football-vocabulary', 'travel-vocabulary', 'work-vocabulary', 'harry-potter-vocabulary', 'cooking-vocabulary'];
+const wordListPaths = ['/word-lists/english', ...wordListSlugs.map((s) => `/word-lists/english/${s}`)];
+
 export function allIndexablePaths() {
   const paths = ['/'];
 
@@ -362,10 +368,17 @@ export function allIndexablePaths() {
     paths.push(`/learn/${lang}/`);
   }
 
+  for (const wl of wordListPaths) {
+    paths.push(localizePath('en', wl));
+  }
+
   for (const locale of localeCodes.filter((code) => code !== 'en')) {
     paths.push(localizePath(locale, '/'));
     for (const lang of languageSlugs) {
       paths.push(localizePath(locale, `/learn/${lang}`));
+    }
+    for (const wl of wordListPaths) {
+      paths.push(localizePath(locale, wl));
     }
   }
 

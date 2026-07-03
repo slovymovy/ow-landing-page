@@ -1,0 +1,323 @@
+---
+import Footer from '../Footer.astro';
+import Header from '../Header.astro';
+import MobileDownloadBar from '../MobileDownloadBar.astro';
+import WordListSteps from '../WordListSteps.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { absoluteUrl, type LocaleCode } from '../../data/site';
+import { listData, listStepBlock } from '../../data/wordLists';
+
+interface Props {
+  locale: LocaleCode;
+  slug: string;
+}
+
+const { locale, slug } = Astro.props;
+const d = listData(locale, slug);
+const steps = listStepBlock(locale);
+const path = `/word-lists/english/${slug}`;
+
+const structuredData = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: d.breadcrumb.map((crumb, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: crumb.label,
+      item: absoluteUrl(crumb.href ?? d.path)
+    }))
+  }
+];
+---
+<BaseLayout
+  title={d.title}
+  description={d.description}
+  locale={locale}
+  path={path}
+  structuredData={structuredData}
+>
+  <Header locale={locale} section="lists" path={path} />
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero__inner">
+          <nav class="hero__breadcrumb" aria-label="Breadcrumb">
+            {d.breadcrumb.map((crumb, i) => (
+              <>
+                {i > 0 && ' / '}
+                {crumb.href ? <a href={crumb.href}>{crumb.label}</a> : <span>{crumb.label}</span>}
+              </>
+            ))}
+          </nav>
+          <div class="hero__eyebrow">{d.eyebrow}</div>
+          <h1 class="hero__h1" set:html={d.h1Html}></h1>
+          <p class="hero__sub">{d.subhead}</p>
+          {d.metrics.length > 0 && (
+            <div class="hero__metrics">
+              {d.metrics.map((m) => (
+                <div class="hero__metric">
+                  <span class="hero__metric-num">{m.num}</span>
+                  <span class="hero__metric-label">{m.label}</span>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
+    </section>
+
+    <!-- SIBLING SWITCHER -->
+    <section class="switcher">
+      <div class="container">
+        <div class="switcher__label">{d.siblings.label}</div>
+        <div class="switcher__row">
+          {d.siblings.items.map((item) => (
+            <a
+              href={item.href}
+              class:list={['switcher__chip', { 'switcher__chip--active': item.active }]}
+              aria-current={item.active ? 'page' : undefined}
+            >
+              {item.name}
+            </a>
+          ))}
+          <a class="switcher__all" href={d.siblings.allHref}>{d.allListsText}</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- JUMP NAV -->
+    {d.groups.length >= 2 && (
+      <nav class="band-nav" aria-label="Jump to section">
+        <div class="container band-nav__inner">
+          <span class="band-nav__label">{d.jumpLabel}</span>
+          <div class="band-nav__chips">
+            {d.groups.map((g) => (
+              <a class="band-chip" href={`#${g.id}`}>{g.accent}</a>
+            ))}
+          </div>
+        </div>
+      </nav>
+    )}
+
+    <!-- WORD LIST -->
+    <section class="list-section">
+      <div class="container">
+        {d.groups.map((g) => (
+          <div class="band" id={g.id}>
+            {g.title && (
+              <div class="band__head">
+                <h2 class="band__title">{g.title} <span>{g.accent}</span></h2>
+              </div>
+            )}
+            <div class="wordgrid">
+              {g.entries.map((e) => (
+                <div class:list={['wentry', { 'wentry--norank': e.r === undefined }]}>
+                  {e.r !== undefined && <span class="wentry__rank">{e.r}</span>}
+                  <div>
+                    <div class="wentry__word">{e.w}</div>
+                    <div class="wentry__def" set:html={e.d}></div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- STEPS / IN-APP CTA -->
+    <WordListSteps
+      id="download"
+      eyebrow={steps.eyebrow}
+      h2={steps.h2}
+      sub={steps.sub}
+      steps={steps.steps}
+      note={steps.note}
+      locale={locale}
+    />
+  </main>
+
+  <MobileDownloadBar locale={locale} />
+
+  <Footer locale={locale} />
+</BaseLayout>
+
+<style>
+  /* ── HERO (left-aligned) ── */
+  .hero {
+    padding: 120px 0 40px;
+    position: relative;
+    overflow: hidden;
+    background: var(--night-900);
+  }
+  .hero__glow {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 70% 50% at 50% -10%, rgba(197,163,103,.08), transparent 60%);
+    pointer-events: none;
+  }
+  .hero__inner { position: relative; z-index: 1; max-width: 760px; }
+  .hero__breadcrumb { font-size: .8125rem; color: #868ca6; margin-bottom: 16px; }
+  .hero__breadcrumb a { color: #868ca6; transition: color .18s; }
+  .hero__breadcrumb a:hover { color: #9499B0; }
+  .hero__eyebrow {
+    font-size: .8125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    color: #C5A367;
+    margin-bottom: 20px;
+  }
+  .hero__h1 {
+    font-family: Lora, Georgia, serif;
+    font-size: clamp(2.125rem, 5vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.08;
+    letter-spacing: -.02em;
+    color: #E2E4ED;
+    margin-bottom: 20px;
+  }
+  .hero__h1 :global(em) { font-style: normal; color: #C5A367; }
+  .hero__sub {
+    font-size: clamp(1rem, 2vw, 1.125rem);
+    line-height: 1.78;
+    color: #9499B0;
+    max-width: 620px;
+    margin: 0 0 32px;
+  }
+  .hero__metrics { display: flex; flex-wrap: wrap; gap: 40px; }
+  .hero__metric { display: flex; flex-direction: column; gap: 4px; }
+  .hero__metric-num { font-family: Lora, Georgia, serif; font-size: 1.5rem; font-weight: 600; color: #E2E4ED; }
+  .hero__metric-label { font-size: .75rem; text-transform: uppercase; letter-spacing: .06em; color: #555a70; }
+
+  /* ── SIBLING SWITCHER ── */
+  .switcher { padding: 28px 0 4px; background: var(--night-900); }
+  .switcher__label {
+    font-size: .6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: #555a70;
+    margin-bottom: 12px;
+  }
+  .switcher__row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+  .switcher__chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,.07);
+    font-size: .8125rem;
+    font-weight: 600;
+    color: #9499B0;
+    transition: color .2s, background .2s, border-color .2s;
+  }
+  .switcher__chip:hover { color: #E2E4ED; border-color: rgba(197,163,103,.20); background: rgba(197,163,103,.10); }
+  .switcher__chip--active {
+    color: #C5A367;
+    border-color: rgba(197,163,103,.25);
+    background: rgba(197,163,103,.10);
+  }
+  .switcher__all { font-size: .8125rem; font-weight: 600; color: #C5A367; padding: 8px 4px; }
+  .switcher__all:hover { text-decoration: underline; }
+
+  /* ── JUMP NAV (sticky) ── */
+  .band-nav {
+    position: sticky;
+    top: 60px;
+    z-index: 150;
+    background: rgba(15,17,24,.92);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-top: 1px solid rgba(255,255,255,.07);
+    border-bottom: 1px solid rgba(255,255,255,.07);
+    margin-top: 24px;
+  }
+  .band-nav__inner { display: flex; align-items: center; gap: 14px; overflow-x: auto; scrollbar-width: none; }
+  .band-nav__inner::-webkit-scrollbar { display: none; }
+  .band-nav__label {
+    flex-shrink: 0;
+    font-size: .6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: #555a70;
+    padding: 12px 0;
+  }
+  .band-nav__chips { display: flex; gap: 8px; padding: 10px 0; }
+  .band-chip {
+    flex-shrink: 0;
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,.07);
+    font-size: .8125rem;
+    font-weight: 600;
+    color: #9499B0;
+    transition: color .2s, border-color .2s, background .2s;
+  }
+  .band-chip:hover { color: #C5A367; border-color: rgba(197,163,103,.20); background: rgba(197,163,103,.10); }
+
+  /* ── WORD LIST ── */
+  .list-section { padding: 64px 0 24px; background: var(--night-900); }
+  .band { margin-bottom: 56px; scroll-margin-top: 72px; }
+  .band:last-child { margin-bottom: 0; }
+  .band__head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    border-bottom: 1px solid rgba(255,255,255,.12);
+    padding-bottom: 14px;
+    margin-bottom: 8px;
+  }
+  .band__title {
+    font-family: Lora, Georgia, serif;
+    font-size: clamp(1.375rem, 3vw, 1.875rem);
+    font-weight: 600;
+    color: #E2E4ED;
+    letter-spacing: -.01em;
+    margin: 0;
+  }
+  .band__title span { color: #C5A367; }
+  .wordgrid { display: grid; grid-template-columns: 1fr; column-gap: 56px; }
+  @media (min-width: 720px) { .wordgrid { grid-template-columns: 1fr 1fr; } }
+  .wentry {
+    display: grid;
+    grid-template-columns: 38px 1fr;
+    gap: 14px;
+    padding: 13px 0;
+    border-top: 1px solid rgba(255,255,255,.07);
+    align-items: baseline;
+  }
+  .wentry--norank { grid-template-columns: 1fr; }
+  .wentry__rank { font-size: .75rem; font-weight: 600; color: #555a70; font-variant-numeric: tabular-nums; }
+  .wentry__word { font-family: Lora, Georgia, serif; font-size: 1.0625rem; font-weight: 600; color: #E2E4ED; }
+  .wentry__def { font-size: .875rem; line-height: 1.5; color: #9499B0; margin-top: 3px; }
+  /* referenced headword inside a definition, e.g. "Plural of person" */
+  .wentry__def :global(.wref) { font-style: italic; color: #C5A367; }
+
+  /* ── DIVIDER ── */
+  .divider { height: 1px; background: linear-gradient(90deg, transparent, rgba(197,163,103,.14), transparent); }
+
+  /* ── MOBILE SPACING ── */
+  @media (max-width: 640px) {
+    .hero { padding: 92px 0 26px; }
+    .hero__metrics { gap: 28px; }
+    .list-section { padding: 40px 0 8px; }
+    .band { margin-bottom: 44px; }
+  }
+</style>
+
+<script>
+  const nav = document.getElementById('nav');
+  if (nav) {
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 16), { passive: true });
+    nav.classList.toggle('scrolled', window.scrollY > 16);
+  }
+</script>

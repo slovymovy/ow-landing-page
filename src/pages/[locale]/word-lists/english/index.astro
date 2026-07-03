@@ -1,0 +1,11 @@
+---
+import WordListsHub from '../../../../components/pages/WordListsHub.astro';
+import { localeCodes, type LocaleCode } from '../../../../data/site';
+
+export function getStaticPaths() {
+  return localeCodes.filter((locale) => locale !== 'en').map((locale) => ({ params: { locale } }));
+}
+
+const locale = Astro.params.locale as LocaleCode;
+---
+<WordListsHub locale={locale} />
