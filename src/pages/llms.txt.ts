@@ -1,7 +1,15 @@
 import type { APIRoute } from 'astro';
 import { languageSlugs, languages, localeCodes, locales, site } from '../data/site';
+import { hubCards } from '../data/wordLists';
 
 export const GET: APIRoute = () => {
+  const wordListPages = [
+    `- [English word lists](${site.origin}/word-lists/english/): hub of curated English vocabulary lists — every word with a definition and translations.`,
+    ...hubCards('en').map(
+      (c) => `- [${c.name} (English)](${site.origin}${c.href}): ${c.desc} (${c.count})`
+    )
+  ].join('\n');
+
   const learnPages = languageSlugs
     .map(
       (slug) =>
@@ -35,6 +43,7 @@ export const GET: APIRoute = () => {
       `- [Main English homepage](${site.origin}/): the primary OpenWords landing page.`,
       learnPages,
       localized,
+      wordListPages,
       `- [About OpenWords](${site.origin}/about/): team, story, and licensing.`,
       `- [Privacy policy](${site.origin}/privacy/): how OpenWords handles data.`,
       '',

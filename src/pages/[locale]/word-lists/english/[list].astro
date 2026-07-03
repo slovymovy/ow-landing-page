@@ -1,0 +1,15 @@
+---
+import WordListPage from '../../../../components/pages/WordListPage.astro';
+import { localeCodes, type LocaleCode } from '../../../../data/site';
+import { orderedSlugs } from '../../../../data/wordLists';
+
+export function getStaticPaths() {
+  return localeCodes
+    .filter((locale) => locale !== 'en')
+    .flatMap((locale) => orderedSlugs().map((list) => ({ params: { locale, list } })));
+}
+
+const locale = Astro.params.locale as LocaleCode;
+const list = Astro.params.list as string;
+---
+<WordListPage locale={locale} slug={list} />

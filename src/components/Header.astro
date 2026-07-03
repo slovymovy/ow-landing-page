@@ -7,23 +7,58 @@ interface Props {
   locale?: LocaleCode;
   activeLanguage?: LanguageSlug;
   path?: string;
+  /** Which top dropdown is marked active (gold). */
+  section?: 'learn' | 'lists';
   /** False when the path exists only in the current locale (e.g. /about). */
   localized?: boolean;
 }
 
-const { locale = 'en', activeLanguage, path = '/', localized = true } = Astro.props;
+const { locale = 'en', activeLanguage, path = '/', section, localized = true } = Astro.props;
 const copy = homeCopy[locale];
+
+// Word-lists teach English vocabulary, but the page chrome is localized — link
+// to the hub in the current interface locale.
+const wordListsHref = localizePath(locale, '/word-lists/english');
+const englishLabel = languages.english.displayName[locale];
 ---
 <header class="nav" id="nav">
   <div class="container nav__inner">
     <a class="nav__logo" href={localizePath(locale, '/')}>OpenWords</a>
 
-    <nav class="nav__links" aria-label={copy.ui.mainNavigation}>
-      {languageSlugs.map((slug) => (
-        <a href={localizePath(locale, `/learn/${slug}`)} class:list={['nav__link', { 'nav__link--active': slug === activeLanguage }]}>
-          {languages[slug].displayName[locale]}
-        </a>
-      ))}
+    <nav class="nav__center" aria-label={copy.ui.mainNavigation}>
+      <details class:list={['navdd', { 'navdd--active': section === 'learn' }]} data-navdd>
+        <summary class="navdd__btn">
+          {copy.ui.navLearn}
+          <svg class="navdd__chev" viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6l4 4 4-4"></path></svg>
+        </summary>
+        <div class="navdd__panel">
+          {languageSlugs.map((slug) => (
+            <a
+              href={localizePath(locale, `/learn/${slug}`)}
+              class:list={['navdd__opt', { 'navdd__opt--current': section === 'learn' && slug === activeLanguage }]}
+              aria-current={section === 'learn' && slug === activeLanguage ? 'page' : undefined}
+            >
+              {languages[slug].displayName[locale]}
+            </a>
+          ))}
+        </div>
+      </details>
+
+      <details class:list={['navdd', { 'navdd--active': section === 'lists' }]} data-navdd>
+        <summary class="navdd__btn">
+          {copy.ui.navWordLists}
+          <svg class="navdd__chev" viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6l4 4 4-4"></path></svg>
+        </summary>
+        <div class="navdd__panel">
+          <a
+            href={wordListsHref}
+            class:list={['navdd__opt', { 'navdd__opt--current': section === 'lists' }]}
+            aria-current={section === 'lists' ? 'page' : undefined}
+          >
+            {englishLabel}
+          </a>
+        </div>
+      </details>
     </nav>
 
     <div class="nav__right">
@@ -63,10 +98,19 @@ const copy = homeCopy[locale];
     <div class="drawer__nav-title">{copy.ui.drawerLearnLabel}</div>
     <div class="drawer__nav-links">
       {languageSlugs.map((slug) => (
-        <a href={localizePath(locale, `/learn/${slug}`)} class:list={['drawer__nav-link', { 'drawer__nav-link--active': slug === activeLanguage }]}>
+        <a href={localizePath(locale, `/learn/${slug}`)} class:list={['drawer__nav-link', { 'drawer__nav-link--active': section === 'learn' && slug === activeLanguage }]}>
           {languages[slug].displayName[locale]}
         </a>
       ))}
+    </div>
+  </div>
+
+  <div>
+    <div class="drawer__nav-title">{copy.ui.drawerWordListsLabel}</div>
+    <div class="drawer__nav-links">
+      <a href={wordListsHref} class:list={['drawer__nav-link', { 'drawer__nav-link--active': section === 'lists' }]}>
+        {englishLabel}
+      </a>
     </div>
   </div>
 </div>
@@ -79,6 +123,11 @@ const copy = homeCopy[locale];
 
   const burger = document.getElementById('nav-burger');
   const drawer = document.getElementById('nav-drawer');
+  const dropdowns = Array.from(document.querySelectorAll<HTMLDetailsElement>('[data-navdd]'));
+
+  const closeDropdowns = (except?: HTMLDetailsElement) => {
+    dropdowns.forEach((dd) => { if (dd !== except) dd.open = false; });
+  };
 
   const closeDrawer = () => {
     burger?.classList.remove('is-open');
@@ -88,6 +137,17 @@ const copy = homeCopy[locale];
     burger?.setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
   };
+
+  // Desktop dropdowns — native <details> handle open/close + keyboard; we only
+  // enforce "one open at a time" and cross-menu coordination.
+  dropdowns.forEach((dd) => {
+    dd.addEventListener('toggle', () => {
+      if (!dd.open) return;
+      closeDropdowns(dd);
+      // Close the locale switcher + mobile drawer when a dropdown opens.
+      document.dispatchEvent(new CustomEvent('nav:menu-open', { detail: 'navdd' }));
+    });
+  });
 
   burger?.addEventListener('click', () => {
     const open = burger.classList.toggle('is-open');
@@ -101,6 +161,7 @@ const copy = homeCopy[locale];
     burger.setAttribute('aria-expanded', String(open));
     document.body.style.overflow = open ? 'hidden' : '';
     if (open) {
+      closeDropdowns();
       document.dispatchEvent(new CustomEvent('nav:menu-open', { detail: 'drawer' }));
     }
   });
@@ -109,9 +170,21 @@ const copy = homeCopy[locale];
     a.addEventListener('click', closeDrawer);
   });
 
-  // Close the drawer if the locale switcher (or any other nav menu) opens.
+  // Close the drawer/dropdowns if another nav menu (e.g. the locale switcher) opens.
   document.addEventListener('nav:menu-open', (e) => {
-    if ((e as CustomEvent).detail !== 'drawer') closeDrawer();
+    const detail = (e as CustomEvent).detail;
+    if (detail !== 'drawer') closeDrawer();
+    if (detail !== 'navdd') closeDropdowns();
+  });
+
+  // Click outside any dropdown closes them all.
+  document.addEventListener('click', (e) => {
+    if (!(e.target as Element)?.closest('[data-navdd]')) closeDropdowns();
+  });
+
+  // Escape closes dropdowns and the mobile drawer.
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') { closeDropdowns(); closeDrawer(); }
   });
 </script>
 
@@ -151,37 +224,74 @@ const copy = homeCopy[locale];
     letter-spacing: -.01em;
   }
 
-  /* desktop language links */
-  .nav__links {
+  /* ── Desktop dropdowns ── */
+  .nav__center {
     display: none;
     align-items: center;
-    gap: 6px;
+    gap: 4px;
     flex: 1;
     padding-left: 24px;
   }
 
-  @media (min-width: 960px) {
-    .nav__links { display: flex; }
+  @media (min-width: 860px) {
+    .nav__center { display: flex; }
   }
 
-  .nav__link {
+  .navdd {
+    position: relative;
+  }
+
+  .navdd__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
     font-size: .8125rem;
     font-weight: 500;
     color: #9499B0;
-    padding: 5px 10px;
+    padding: 6px 10px;
     border-radius: 8px;
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+    -webkit-user-select: none;
     transition: color .2s, background .2s;
   }
 
-  .nav__link:hover {
-    color: #E2E4ED;
-    background: rgba(255, 255, 255, .05);
+  .navdd__btn::-webkit-details-marker { display: none; }
+  .navdd__btn:hover { color: #E2E4ED; background: rgba(255, 255, 255, .05); }
+
+  .navdd--active .navdd__btn { color: #C5A367; }
+
+  .navdd__chev { opacity: .7; transition: transform .2s; }
+  .navdd[open] .navdd__chev { transform: rotate(180deg); }
+
+  .navdd__panel {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 6px;
+    background: #1C1F2A;
+    border: 1px solid rgba(255, 255, 255, .12);
+    border-radius: 14px;
+    box-shadow: 0 14px 36px rgba(0, 0, 0, .45);
+    z-index: 10;
   }
 
-  .nav__link--active {
-    color: #C5A367;
-    pointer-events: none;
+  .navdd__opt {
+    display: block;
+    padding: 9px 12px;
+    border-radius: 8px;
+    font-size: .875rem;
+    color: #9499B0;
+    transition: color .2s, background .2s;
   }
+
+  .navdd__opt:hover { color: #E2E4ED; background: rgba(255, 255, 255, .05); }
+  .navdd__opt--current { color: #C5A367; }
 
   /* right cluster */
   .nav__right {
@@ -232,7 +342,7 @@ const copy = homeCopy[locale];
     cursor: pointer;
   }
 
-  @media (min-width: 640px) {
+  @media (min-width: 860px) {
     .nav__burger { display: none; }
   }
 
@@ -268,7 +378,7 @@ const copy = homeCopy[locale];
 
   .drawer.is-open { transform: none; }
 
-  @media (min-width: 640px) {
+  @media (min-width: 860px) {
     .drawer { display: none; }
   }
 
@@ -332,4 +442,10 @@ const copy = homeCopy[locale];
 
   .drawer__nav-link:hover { color: #E2E4ED; }
   .drawer__nav-link--active { color: #C5A367; pointer-events: none; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .drawer,
+    .navdd__chev,
+    .nav__burger span { transition: none; }
+  }
 </style>
