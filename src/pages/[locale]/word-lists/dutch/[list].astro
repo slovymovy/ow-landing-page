@@ -6,10 +6,10 @@ import { orderedSlugs } from '../../../../data/wordLists';
 export function getStaticPaths() {
   return localeCodes
     .filter((locale) => locale !== 'en')
-    .flatMap((locale) => orderedSlugs('english').map((list) => ({ params: { locale, list } })));
+    .flatMap((locale) => orderedSlugs('dutch').map((list) => ({ params: { locale, list } })));
 }
 
 const locale = Astro.params.locale as LocaleCode;
 const list = Astro.params.list as string;
 ---
-<WordListPage locale={locale} language="english" slug={list} />
+<WordListPage locale={locale} language="dutch" slug={list} />

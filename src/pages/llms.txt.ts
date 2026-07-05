@@ -1,14 +1,19 @@
 import type { APIRoute } from 'astro';
-import { languageSlugs, languages, localeCodes, locales, site } from '../data/site';
+import { languageSlugs, languages, localeCodes, locales, site, wordListLanguages } from '../data/site';
 import { hubCards } from '../data/wordLists';
 
 export const GET: APIRoute = () => {
-  const wordListPages = [
-    `- [English word lists](${site.origin}/word-lists/english/): hub of curated English vocabulary lists — every word with a definition and translations.`,
-    ...hubCards('en').map(
-      (c) => `- [${c.name} (English)](${site.origin}${c.href}): ${c.desc} (${c.count})`
-    )
-  ].join('\n');
+  const wordListPages = wordListLanguages
+    .flatMap((lang) => {
+      const label = languages[lang].name;
+      return [
+        `- [${label} word lists](${site.origin}/word-lists/${lang}/): hub of curated ${label} vocabulary lists — every word with a definition and translations.`,
+        ...hubCards('en', lang).map(
+          (c) => `- [${c.name} (${label})](${site.origin}${c.href}): ${c.desc} (${c.count})`
+        )
+      ];
+    })
+    .join('\n');
 
   const learnPages = languageSlugs
     .map(

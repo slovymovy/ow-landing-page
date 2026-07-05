@@ -29,23 +29,25 @@ export interface WordListCopy {
   hubStepsSub: string;
   faq: WlFaqItem[];
 
-  // hub card (500 most common)
-  cardName: string;
-  cardDesc: string;
-  cardCount: string;
+  // hub card (frequency list only — optional; topic-only languages omit these)
+  cardName?: string;
+  cardDesc?: string;
+  cardCount?: string;
 
   // ── list ──
-  listTitle: string;
-  listDescription: string;
+  // Bespoke frequency-list copy (optional — topic-only languages omit these).
+  listTitle?: string;
+  listDescription?: string;
+  listH1Html?: string;
+  listSubhead?: string;
+  crumbCurrent?: string;
+  bandTitle?: string;
+  // Shared chrome (every language provides these).
   listEyebrow: string;
-  listH1Html: string;
-  listSubhead: string;
   metricLabel: string;
-  crumbCurrent: string;
   siblingsLabel: string;
   allLists: string;
   jumpLabel: string;
-  bandTitle: string;
   listStepsH2: string;
   listStepsSub: string;
   // Templates for topic-list SEO (title tag = "{Title} — {listTitleSuffix}";
@@ -112,7 +114,7 @@ export const wordListCopy: Record<LocaleCode, WordListCopy> = {
     bandTitle: 'Words',
     listStepsH2: 'Learn this list in 4 steps in OpenWords',
     listStepsSub: 'Every word here — and the full dictionary — is built into the app.',
-    listTitleSuffix: 'English vocabulary with translations | OpenWords',
+    listTitleSuffix: 'English words with translations | OpenWords',
     listMetaTail: 'English words with translations — learn them with one-tap flashcards in OpenWords.',
     stepDownload: { title: 'Download the app', body: 'Get OpenWords on iOS or Android — no account needed.' },
     stepFindList: { title: 'Find a list', body: 'Browse the curated lists or search for the words you need.' },
@@ -171,7 +173,7 @@ export const wordListCopy: Record<LocaleCode, WordListCopy> = {
     bandTitle: 'Слова',
     listStepsH2: 'Выучите этот список за 4 шага в OpenWords',
     listStepsSub: 'Все слова из этого списка, как и весь наш словарь, уже встроены в приложение.',
-    listTitleSuffix: 'английская лексика с переводом | OpenWords',
+    listTitleSuffix: 'английские слова с переводом | OpenWords',
     listMetaTail: 'Английская лексика с переводом — учите её карточками в одно касание в OpenWords.',
     stepDownload: { title: 'Скачайте приложение', body: 'Установите OpenWords на iOS или Android без регистрации.' },
     stepFindList: { title: 'Найдите список', body: 'Просмотрите готовые списки или найдите нужные слова.' },
@@ -230,7 +232,7 @@ export const wordListCopy: Record<LocaleCode, WordListCopy> = {
     bandTitle: 'Woorden',
     listStepsH2: 'Leer deze lijst in 4 stappen met OpenWords',
     listStepsSub: 'Elk woord uit deze lijst —en het volledige woordenboek— is ingebouwd in de app.',
-    listTitleSuffix: 'Engelse woordenschat met vertaling | OpenWords',
+    listTitleSuffix: 'Engelse woorden met vertaling | OpenWords',
     listMetaTail: 'Engelse woordenschat met vertaling — leer ze met flashcards in OpenWords.',
     stepDownload: { title: 'Download de app', body: 'Installeer OpenWords op iOS of Android, zonder account.' },
     stepFindList: { title: 'Vind een lijst', body: 'Blader door de samengestelde lijsten of zoek naar specifieke woorden.' },
@@ -289,7 +291,7 @@ export const wordListCopy: Record<LocaleCode, WordListCopy> = {
     bandTitle: 'Słowa',
     listStepsH2: 'Opanuj tę listę w 4 krokach z OpenWords',
     listStepsSub: 'Każde słowo z tej listy — oraz cały nasz słownik — są wbudowane bezpośrednio w aplikację.',
-    listTitleSuffix: 'angielskie słownictwo z tłumaczeniem | OpenWords',
+    listTitleSuffix: 'angielskie słowa z tłumaczeniem | OpenWords',
     listMetaTail: 'Angielskie słownictwo z tłumaczeniem — ucz się go z fiszkami w OpenWords.',
     stepDownload: { title: 'Pobierz aplikację', body: 'Zainstaluj OpenWords na iOS lub Androidzie — bez rejestracji.' },
     stepFindList: { title: 'Znajdź listę', body: 'Przeglądaj gotowe zestawy lub wyszukaj konkretne słowa.' },
@@ -348,7 +350,7 @@ export const wordListCopy: Record<LocaleCode, WordListCopy> = {
     bandTitle: 'Wörter',
     listStepsH2: 'Lerne diese Liste in 4 Schritten mit OpenWords',
     listStepsSub: 'Jedes Wort aus dieser Liste – und das gesamte Wörterbuch – sind direkt in die App integriert.',
-    listTitleSuffix: 'englischer Wortschatz mit Übersetzung | OpenWords',
+    listTitleSuffix: 'englische Wörter mit Übersetzung | OpenWords',
     listMetaTail: 'Englischer Wortschatz mit Übersetzung — lerne ihn mit Karteikarten in OpenWords.',
     stepDownload: { title: 'App herunterladen', body: 'Installiere OpenWords für iOS oder Android – komplett ohne Registrierung.' },
     stepFindList: { title: 'Liste finden', body: 'Stöbere durch fertige Listen oder suche gezielt nach bestimmten Wörtern.' },
@@ -407,7 +409,7 @@ export const wordListCopy: Record<LocaleCode, WordListCopy> = {
     bandTitle: 'Palabras',
     listStepsH2: 'Aprende esta lista en 4 pasos con OpenWords',
     listStepsSub: 'Cada palabra de esta lista —y el diccionario completo— están integrados en la app.',
-    listTitleSuffix: 'vocabulario inglés con traducción | OpenWords',
+    listTitleSuffix: 'palabras en inglés con traducción | OpenWords',
     listMetaTail: 'Vocabulario inglés con traducción — apréndelo con tarjetas en OpenWords.',
     stepDownload: { title: 'Descarga la app', body: 'Instala OpenWords en iOS o Android, sin necesidad de registrarte.' },
     stepFindList: { title: 'Encuentra una lista', body: 'Explora las listas seleccionadas o busca las palabras específicas que necesitas.' },
@@ -466,7 +468,7 @@ export const wordListCopy: Record<LocaleCode, WordListCopy> = {
     bandTitle: 'Mots',
     listStepsH2: 'Apprenez cette liste en 4 étapes avec OpenWords',
     listStepsSub: 'Chaque mot de cette liste — ainsi que l’intégralité du dictionnaire — est directement intégré à l’application.',
-    listTitleSuffix: 'vocabulaire anglais avec traduction | OpenWords',
+    listTitleSuffix: 'mots anglais avec traduction | OpenWords',
     listMetaTail: 'Vocabulaire anglais avec traduction — apprenez-le avec des flashcards sur OpenWords.',
     stepDownload: { title: 'Téléchargez l’application', body: 'Installez OpenWords sur iOS ou Android — sans inscription.' },
     stepFindList: { title: 'Trouvez une liste', body: 'Parcourez les listes sélectionnées ou recherchez les mots dont vous avez besoin.' },
@@ -525,7 +527,7 @@ export const wordListCopy: Record<LocaleCode, WordListCopy> = {
     bandTitle: 'Parole',
     listStepsH2: 'Impara questa lista in 4 passaggi con OpenWords',
     listStepsSub: "Ogni parola di questa lista —e l'intero dizionario— è integrata direttamente nell'app.",
-    listTitleSuffix: 'vocabolario inglese con traduzione | OpenWords',
+    listTitleSuffix: 'parole inglesi con traduzione | OpenWords',
     listMetaTail: 'Vocabolario inglese con traduzione — imparalo con le flashcard su OpenWords.',
     stepDownload: { title: "Scarica l'app", body: 'Installa OpenWords su iOS o Android, senza registrazione.' },
     stepFindList: { title: 'Trova una lista', body: 'Esplora le liste selezionate o cerca le parole specifiche di cui hai bisogno.' },
@@ -584,7 +586,7 @@ export const wordListCopy: Record<LocaleCode, WordListCopy> = {
     bandTitle: 'Slova',
     listStepsH2: 'Zvládněte tento seznam ve 4 krocích s OpenWords',
     listStepsSub: 'Každé slovo z tohoto seznamu – a dokonce i celý slovník – jsou integrované přímo v aplikaci.',
-    listTitleSuffix: 'anglická slovní zásoba s překladem | OpenWords',
+    listTitleSuffix: 'anglická slova s překladem | OpenWords',
     listMetaTail: 'Anglická slovní zásoba s překladem — učte se ji pomocí kartiček v OpenWords.',
     stepDownload: { title: 'Stáhněte si aplikaci', body: 'Nainstalujte si OpenWords pro iOS nebo Android – zcela bez registrace.' },
     stepFindList: { title: 'Najděte si seznam', body: 'Procházejte hotové seznamy nebo vyhledejte konkrétní slova, která potřebujete.' },
@@ -651,4 +653,346 @@ export const wordListCopy: Record<LocaleCode, WordListCopy> = {
     stepAddWords: { title: 'Kelimeleri listene ekle', body: 'Öğrenmek istediğin kelimeleri tek dokunuşla kişisel listene kaydet.' },
     stepLearnCards: { title: 'Akıllı kelime kartlarıyla öğren', body: 'Aralıklı tekrar algoritmasına göre planlanan farklı formatlardaki kartlarla pratik yap.' }
   }
+};
+
+// ── Dutch word-list chrome ───────────────────────────────────────────────────
+// The Dutch lists teach Dutch vocabulary. Most chrome is language-neutral, so we
+// reuse it verbatim from the (native-reviewed) English map above and only author
+// the strings that name the taught language (Dutch) plus a Dutch word-count FAQ.
+// The frequency-list-only fields are omitted — every Dutch list is thematic.
+//
+// en/nl/ru/pl are drafted directly from the source; de/es/fr/it/cs/tr are Claude
+// drafts pending the user's native-review pass (like topicListCopy).
+// Dutch-specific strings. The bespoke frequency-list fields describe the Dutch
+// core list (slug `500-most-common`, `topic:false`) — the parallel of English's
+// `500-most-common`. `bandTitle` ("Words"/"Woorden"/…) is language-neutral and
+// reused from the English map.
+type NlOverrides = Pick<
+  WordListCopy,
+  | 'hubTitle'
+  | 'hubDescription'
+  | 'hubH1Html'
+  | 'hubSub'
+  | 'listEyebrow'
+  | 'siblingsLabel'
+  | 'allLists'
+  | 'listTitleSuffix'
+  | 'listMetaTail'
+  | 'cardName'
+  | 'cardDesc'
+  | 'listTitle'
+  | 'listDescription'
+  | 'listH1Html'
+  | 'listSubhead'
+  | 'crumbCurrent'
+> & { faqWordCount: WlFaqItem };
+
+function dutchEntry(locale: LocaleCode, o: NlOverrides): WordListCopy {
+  const base = wordListCopy[locale];
+  return {
+    hubTitle: o.hubTitle,
+    hubDescription: o.hubDescription,
+    hubH1Html: o.hubH1Html,
+    hubSub: o.hubSub,
+    hubStepsH2: base.hubStepsH2,
+    hubStepsSub: base.hubStepsSub,
+    // Reuse the frequency-vs-topic (open), passive/active, memorisation and
+    // "why OpenWords" items; swap in a Dutch-specific word-count question.
+    faq: [base.faq[0], o.faqWordCount, base.faq[2], base.faq[3], base.faq[4]],
+    // Bespoke copy for the Dutch core frequency list (500-most-common).
+    cardName: o.cardName,
+    cardDesc: o.cardDesc,
+    listTitle: o.listTitle,
+    listDescription: o.listDescription,
+    listH1Html: o.listH1Html,
+    listSubhead: o.listSubhead,
+    crumbCurrent: o.crumbCurrent,
+    bandTitle: base.bandTitle,
+    listEyebrow: o.listEyebrow,
+    metricLabel: base.metricLabel,
+    siblingsLabel: o.siblingsLabel,
+    allLists: o.allLists,
+    jumpLabel: base.jumpLabel,
+    listStepsH2: base.listStepsH2,
+    listStepsSub: base.listStepsSub,
+    listTitleSuffix: o.listTitleSuffix,
+    listMetaTail: o.listMetaTail,
+    stepDownload: base.stepDownload,
+    stepFindList: base.stepFindList,
+    stepOpenList: base.stepOpenList,
+    stepAddWords: base.stepAddWords,
+    stepLearnCards: base.stepLearnCards
+  };
+}
+
+export const wordListCopyNl: Record<LocaleCode, WordListCopy> = {
+  en: dutchEntry('en', {
+    hubTitle: 'Dutch Word Lists — Free Vocabulary Lists with Translations | OpenWords',
+    hubDescription:
+      'Dutch vocabulary lists with a short definition and translation for every word — from your first survival words to the KNM exam. Pick a list and drill it with one-tap flashcards in OpenWords.',
+    hubH1Html: 'Dutch <em>Word Lists</em>',
+    hubSub:
+      'Curated Dutch vocabulary lists — every word with a translation, grouped by the situations you actually meet. Pick a list, then learn it one tap at a time with spaced-repetition flashcards in OpenWords.',
+    listEyebrow: 'Dutch word list',
+    siblingsLabel: 'Dutch word lists',
+    allLists: 'All Dutch lists →',
+    listTitleSuffix: 'Dutch words with translations | OpenWords',
+    listMetaTail: 'Dutch words with translations — learn them with one-tap flashcards in OpenWords.',
+    cardName: '500 Most Common Dutch Words',
+    cardDesc: 'The common core — the 500 most frequent Dutch words cover a huge share of everyday Dutch, each with a translation.',
+    listTitle: '500 Most Common Dutch Words — Free A1 Vocabulary List | OpenWords',
+    listDescription:
+      'The 500 most common Dutch words, ordered by frequency with a translation for each. A beginner (A1) list — drill them with one-tap flashcards in OpenWords.',
+    listH1Html: '500 Most Common <em>Dutch Words</em>',
+    listSubhead:
+      "Learn the words that do the heavy lifting first. The most frequent Dutch words are the fastest route from recognising a few words to following what's going on — each with a translation.",
+    crumbCurrent: '500 most common Dutch words',
+    faqWordCount: {
+      q: 'How many Dutch words do you need to be fluent?',
+      a: 'Around 2,000–3,000 words cover most of everyday Dutch, and the first 1,000 already carry you through about 85% of ordinary conversation. Starting with a core A1 list is the fastest way to raise how much you understand.'
+    }
+  }),
+
+  ru: dutchEntry('ru', {
+    hubTitle: 'Списки нидерландских слов: бесплатная лексика с переводом | OpenWords',
+    hubDescription:
+      'Списки нидерландских слов с краткими определениями и переводом — от первых нужных слов до экзамена KNM. Выберите подборку и учите слова по карточкам в одно касание в OpenWords.',
+    hubH1Html: 'Списки <em>нидерландских слов</em>',
+    hubSub:
+      'Тщательно составленные списки нидерландских слов — с переводом для каждого слова и группировкой по реальным жизненным ситуациям. Выберите подборку и учите слова в одно касание с помощью интервальных повторений в OpenWords.',
+    listEyebrow: 'Список нидерландских слов',
+    siblingsLabel: 'Списки нидерландских слов',
+    allLists: 'Все нидерландские списки →',
+    listTitleSuffix: 'нидерландские слова с переводом | OpenWords',
+    listMetaTail: 'Нидерландская лексика с переводом — учите её карточками в одно касание в OpenWords.',
+    cardName: '500 самых частых нидерландских слов',
+    cardDesc: 'Лексическое ядро: 500 самых частых нидерландских слов покрывают большую часть повседневной речи. У каждого слова есть перевод.',
+    listTitle: '500 самых частых нидерландских слов — бесплатный список A1 с переводом | OpenWords',
+    listDescription:
+      '500 самых частых нидерландских слов с переводом для каждого. Список для начинающих (A1) — учите слова по карточкам в одно касание в OpenWords.',
+    listH1Html: '500 самых частых <em>нидерландских слов</em>',
+    listSubhead:
+      'Начните со слов, которые составляют основу языка. Самые частые нидерландские слова — это кратчайший путь от «узнаю пару фраз» к «понимаю, о чём речь». У каждого слова есть перевод.',
+    crumbCurrent: '500 самых частых нидерландских слов',
+    faqWordCount: {
+      q: 'Сколько нидерландских слов нужно для свободного владения?',
+      a: 'Около 2000–3000 слов достаточно для уверенного повседневного общения, а уже первая 1000 покрывает около 85% обычной речи. Начать с базового списка уровня A1 — самый быстрый способ повысить понимание.'
+    }
+  }),
+
+  nl: dutchEntry('nl', {
+    hubTitle: 'Nederlandse woordenlijsten — gratis lijsten met vertaling | OpenWords',
+    hubDescription:
+      'Nederlandse woordenlijsten met een korte definitie en vertaling voor elk woord — van je eerste woorden tot het KNM-examen. Kies een lijst en oefen met flashcards in OpenWords.',
+    hubH1Html: 'Nederlandse <em>woordenlijsten</em>',
+    hubSub:
+      'Zorgvuldig samengestelde Nederlandse woordenlijsten, met een vertaling voor elk woord en geordend op de situaties die je echt tegenkomt. Kies een lijst en leer ze met één tik via spaced repetition-flashcards in OpenWords.',
+    listEyebrow: 'Nederlandse woordenlijst',
+    siblingsLabel: 'Nederlandse woordenlijsten',
+    allLists: 'Alle Nederlandse lijsten →',
+    listTitleSuffix: 'Nederlandse woorden met vertaling | OpenWords',
+    listMetaTail: 'Nederlandse woordenschat met vertaling — leer ze met flashcards in OpenWords.',
+    cardName: '500 meest voorkomende Nederlandse woorden',
+    cardDesc: 'De basis: de 500 meest voorkomende Nederlandse woorden dekken het grootste deel van het alledaagse Nederlands, elk met een korte definitie.',
+    listTitle: '500 meest voorkomende Nederlandse woorden — gratis A1-lijst | OpenWords',
+    listDescription:
+      'De 500 meest voorkomende Nederlandse woorden gesorteerd op frequentie, elk met een korte definitie. Een ideale lijst voor beginners (A1) — oefen ze met flashcards in OpenWords.',
+    listH1Html: '500 meest voorkomende <em>Nederlandse woorden</em>',
+    listSubhead:
+      'Leer eerst de woorden die het zware werk verzetten. De meest voorkomende Nederlandse woorden brengen je het snelst van het herkennen van losse woorden naar het begrijpen van hele gesprekken. Elk woord is voorzien van een korte definitie.',
+    crumbCurrent: '500 meest voorkomende woorden',
+    faqWordCount: {
+      q: 'Hoeveel Nederlandse woorden heb je nodig om de taal vloeiend te spreken?',
+      a: "Met zo'n 2.000 tot 3.000 woorden red je je prima in het dagelijks leven, en de eerste 1.000 woorden dekken al ongeveer 85% van de dagelijkse spreektaal. Beginnen met een kernlijst op A1-niveau is dan ook de snelste manier om je begrip te vergroten."
+    }
+  }),
+
+  pl: dutchEntry('pl', {
+    hubTitle: 'Listy niderlandzkich słów — darmowe zestawy słownictwa z tłumaczeniem | OpenWords',
+    hubDescription:
+      'Listy niderlandzkich słów z krótką definicją i tłumaczeniem dla każdego słówka — od pierwszych potrzebnych słów po egzamin KNM. Wybierz zestaw i ćwicz z fiszkami w OpenWords.',
+    hubH1Html: 'Listy <em>niderlandzkich słów</em>',
+    hubSub:
+      'Starannie dobrane zestawy niderlandzkiego słownictwa — każde słowo z tłumaczeniem, pogrupowane według sytuacji, które naprawdę spotkasz. Wybierz listę i opanuj ją dzięki powtórkom interwałowym w OpenWords.',
+    listEyebrow: 'Lista niderlandzkich słów',
+    siblingsLabel: 'Listy niderlandzkich słów',
+    allLists: 'Wszystkie listy niderlandzkiego →',
+    listTitleSuffix: 'niderlandzkie słowa z tłumaczeniem | OpenWords',
+    listMetaTail: 'Niderlandzkie słownictwo z tłumaczeniem — ucz się go z fiszkami w OpenWords.',
+    cardName: '500 najczęstszych niderlandzkich słów',
+    cardDesc: 'Fundament języka — 500 najczęstszych niderlandzkich słów stanowi ogromną część codziennego języka. Każde słowo z tłumaczeniem.',
+    listTitle: '500 najczęstszych niderlandzkich słów — darmowa lista A1 z tłumaczeniem | OpenWords',
+    listDescription:
+      '500 najczęstszych niderlandzkich słów uporządkowanych według częstotliwości, każde z tłumaczeniem. Idealny zestaw dla początkujących (A1) — ćwicz z fiszkami w OpenWords.',
+    listH1Html: '500 najczęstszych <em>niderlandzkich słów</em>',
+    listSubhead:
+      'Zacznij od słów, które wykonują lwią część pracy. Najczęstsze niderlandzkie słowa to najszybsza droga, by przejść od kojarzenia pojedynczych słówek do swobodnego rozumienia sensu rozmowy. Każde słowo zawiera tłumaczenie.',
+    crumbCurrent: '500 najczęstszych niderlandzkich słów',
+    faqWordCount: {
+      q: 'Ile niderlandzkich słów trzeba znać, by mówić płynnie?',
+      a: 'Około 2000–3000 słów wystarcza do swobodnej komunikacji na co dzień, a już pierwszy tysiąc pokrywa blisko 85% codziennych rozmów. Rozpoczęcie od podstawowej listy na poziomie A1 to najszybszy sposób, by zwiększyć rozumienie.'
+    }
+  }),
+
+  de: dutchEntry('de', {
+    hubTitle: 'Niederländische Wortlisten — Kostenlose Vokabellisten mit Übersetzung | OpenWords',
+    hubDescription:
+      'Niederländische Vokabellisten mit kurzer Definition und Übersetzung für jedes Wort – von den ersten Alltagswörtern bis zur KNM-Prüfung. Wähle eine Liste und übe mit Karteikarten in OpenWords.',
+    hubH1Html: 'Niederländische <em>Wortlisten</em>',
+    hubSub:
+      'Sorgfältig zusammengestellte niederländische Vokabellisten – jedes Wort mit Übersetzung, gruppiert nach den Situationen, die dir wirklich begegnen. Wähle eine Liste und lerne sie Wort für Wort mit Spaced-Repetition-Karteikarten in OpenWords.',
+    listEyebrow: 'Niederländische Wortliste',
+    siblingsLabel: 'Niederländische Wortlisten',
+    allLists: 'Alle niederländischen Listen →',
+    listTitleSuffix: 'niederländische Wörter mit Übersetzung | OpenWords',
+    listMetaTail: 'Niederländischer Wortschatz mit Übersetzung — lerne ihn mit Karteikarten in OpenWords.',
+    cardName: 'Die 500 häufigsten niederländischen Wörter',
+    cardDesc: 'Der Grundwortschatz: Die 500 häufigsten niederländischen Wörter decken einen riesigen Teil des Alltags ab, jeweils mit einer Übersetzung.',
+    listTitle: 'Die 500 häufigsten niederländischen Wörter — Kostenlose A1-Liste mit Übersetzung | OpenWords',
+    listDescription:
+      'Die 500 häufigsten niederländischen Wörter nach Häufigkeit sortiert, jeweils mit Übersetzung. Die perfekte Liste für Anfänger (A1) – übe direkt mit Karteikarten in OpenWords.',
+    listH1Html: 'Die 500 häufigsten <em>niederländischen Wörter</em>',
+    listSubhead:
+      'Lerne zuerst die Wörter, die die meiste Arbeit erledigen. Der häufigste niederländische Wortschatz ist der schnellste Weg, um von „ich schnappe ein paar Wörter auf“ zu „ich verstehe, worum es geht“ zu gelangen. Jedes Wort enthält eine Übersetzung.',
+    crumbCurrent: 'Die 500 häufigsten Wörter',
+    faqWordCount: {
+      q: 'Wie viele niederländische Wörter braucht man, um fließend zu sprechen?',
+      a: 'Rund 2.000 bis 3.000 Wörter decken den Großteil des Alltagsniederländischen ab, und schon die ersten 1.000 Wörter machen etwa 85 % der alltäglichen Kommunikation aus. Mit einer A1-Grundliste zu beginnen, ist der schnellste Weg, dein Verständnis zu steigern.'
+    }
+  }),
+
+  es: dutchEntry('es', {
+    hubTitle: 'Listas de vocabulario en neerlandés — Listas gratis con traducción | OpenWords',
+    hubDescription:
+      'Listas de vocabulario en neerlandés con una definición breve y traducción para cada palabra: desde tus primeras palabras hasta el examen KNM. Elige una lista y practícala con tarjetas en OpenWords.',
+    hubH1Html: 'Listas de <em>vocabulario en neerlandés</em>',
+    hubSub:
+      'Listas de vocabulario en neerlandés cuidadosamente seleccionadas y agrupadas según las situaciones que vivirás de verdad; cada palabra incluye su traducción. Elige una lista y aprende con un solo toque mediante repetición espaciada en OpenWords.',
+    listEyebrow: 'Lista de vocabulario en neerlandés',
+    siblingsLabel: 'Listas de vocabulario en neerlandés',
+    allLists: 'Todas las listas de neerlandés →',
+    listTitleSuffix: 'palabras en neerlandés con traducción | OpenWords',
+    listMetaTail: 'Vocabulario neerlandés con traducción — apréndelo con tarjetas en OpenWords.',
+    cardName: 'Las 500 palabras más comunes en neerlandés',
+    cardDesc: 'El núcleo esencial: las 500 palabras más frecuentes en neerlandés cubren una gran parte del día a día, cada una con su traducción.',
+    listTitle: 'Las 500 palabras más comunes en neerlandés — Lista A1 gratis con traducción | OpenWords',
+    listDescription:
+      'Las 500 palabras más comunes en neerlandés ordenadas por frecuencia, cada una con su traducción. Una lista perfecta para principiantes (A1): practícalas con tarjetas en OpenWords.',
+    listH1Html: 'Las 500 palabras más comunes <em>en neerlandés</em>',
+    listSubhead:
+      'Aprende primero las palabras que hacen el trabajo pesado. Las palabras más frecuentes en neerlandés son la vía más rápida para pasar de reconocer términos sueltos a entender de qué se habla. Cada palabra incluye su traducción.',
+    crumbCurrent: '500 palabras más comunes',
+    faqWordCount: {
+      q: '¿Cuántas palabras en neerlandés se necesitan para hablar con fluidez?',
+      a: 'Unas 2000 a 3000 palabras cubren la mayor parte del neerlandés cotidiano, y las primeras 1000 ya representan alrededor del 85 % del habla diaria. Empezar por una lista básica de nivel A1 es la forma más rápida de mejorar tu comprensión.'
+    }
+  }),
+
+  fr: dutchEntry('fr', {
+    hubTitle: 'Listes de mots en néerlandais — Vocabulaire gratuit avec traduction | OpenWords',
+    hubDescription:
+      'Listes de vocabulaire néerlandais avec une définition courte et une traduction pour chaque mot — de vos premiers mots à l’examen KNM. Choisissez une liste et étudiez-les avec des flashcards sur OpenWords.',
+    hubH1Html: 'Listes de <em>mots néerlandais</em>',
+    hubSub:
+      'Des listes de vocabulaire néerlandais soigneusement sélectionnées et regroupées selon les situations que vous rencontrerez vraiment, chaque mot accompagné de sa traduction. Choisissez une liste et maîtrisez-la mot à mot grâce à la répétition espacée sur OpenWords.',
+    listEyebrow: 'Liste de vocabulaire néerlandais',
+    siblingsLabel: 'Listes de vocabulaire néerlandais',
+    allLists: 'Toutes les listes de néerlandais →',
+    listTitleSuffix: 'mots néerlandais avec traduction | OpenWords',
+    listMetaTail: 'Vocabulaire néerlandais avec traduction — apprenez-le avec des flashcards sur OpenWords.',
+    cardName: 'Les 500 mots néerlandais les plus courants',
+    cardDesc: 'Le socle essentiel : les 500 mots néerlandais les plus fréquents couvrent une immense partie du quotidien, chacun avec sa traduction.',
+    listTitle: 'Les 500 mots néerlandais les plus courants — Liste A1 gratuite avec traduction | OpenWords',
+    listDescription:
+      'Les 500 mots néerlandais les plus courants classés par fréquence, chacun avec sa traduction. Une liste idéale pour les débutants (A1) — entraînez-vous avec des flashcards sur OpenWords.',
+    listH1Html: 'Les 500 mots néerlandais <em>les plus courants</em>',
+    listSubhead:
+      "Apprenez d'abord les mots qui font tout le gros du travail. Le vocabulaire néerlandais le plus fréquent est le moyen le plus rapide de passer de la reconnaissance de quelques mots à la compréhension globale d'une conversation. Chaque mot inclut sa traduction.",
+    crumbCurrent: '500 mots les plus courants',
+    faqWordCount: {
+      q: 'Combien de mots néerlandais faut-il connaître pour parler couramment ?',
+      a: 'Environ 2 000 à 3 000 mots couvrent l’essentiel du néerlandais du quotidien, et les 1 000 premiers représentent déjà près de 85 % d’une conversation ordinaire. Commencer par une liste de base de niveau A1 est le moyen le plus rapide d’améliorer votre compréhension.'
+    }
+  }),
+
+  it: dutchEntry('it', {
+    hubTitle: 'Liste di parole in olandese — Vocabolario gratuito con traduzione | OpenWords',
+    hubDescription:
+      'Liste di vocaboli olandesi con una breve definizione e traduzione per ogni parola: dalle prime parole utili all’esame KNM. Scegli una lista e studiala con le flashcard su OpenWords.',
+    hubH1Html: 'Liste di <em>parole in olandese</em>',
+    hubSub:
+      'Liste di vocaboli olandesi selezionate con cura e raggruppate in base alle situazioni che incontrerai davvero, ogni parola con la sua traduzione. Scegli una lista e imparala parola per parola con la ripetizione spaziata su OpenWords.',
+    listEyebrow: 'Lista di parole in olandese',
+    siblingsLabel: 'Liste di parole in olandese',
+    allLists: 'Tutte le liste di olandese →',
+    listTitleSuffix: 'parole olandesi con traduzione | OpenWords',
+    listMetaTail: 'Vocabolario olandese con traduzione — imparalo con le flashcard su OpenWords.',
+    cardName: 'Le 500 parole olandesi più comuni',
+    cardDesc: 'Il nucleo essenziale: le 500 parole olandesi più frequenti coprono gran parte della vita di tutti i giorni, ciascuna con la sua traduzione.',
+    listTitle: 'Le 500 parole olandesi più comuni — Lista A1 gratuita con traduzione | OpenWords',
+    listDescription:
+      'Le 500 parole olandesi più comuni ordinate per frequenza, ciascuna con la sua traduzione. Una lista perfetta per principianti (A1) — esercitati con le flashcard su OpenWords.',
+    listH1Html: 'Le 500 parole olandesi <em>più comuni</em>',
+    listSubhead:
+      'Impara prima le parole che fanno il lavoro pesante. I vocaboli olandesi più frequenti sono la via più rapida per passare dal riconoscere qualche termine al comprendere il senso di una conversazione. Ciascuna parola include la traduzione.',
+    crumbCurrent: '500 parole più comuni',
+    faqWordCount: {
+      q: 'Quante parole olandesi servono per parlare fluentemente?',
+      a: "Circa 2.000-3.000 parole coprono gran parte dell'olandese di tutti i giorni, e le prime 1.000 rappresentano già circa l'85% dei discorsi quotidiani. Iniziare da una lista di base di livello A1 è il modo più rapido per migliorare la comprensione."
+    }
+  }),
+
+  cs: dutchEntry('cs', {
+    hubTitle: 'Seznamy nizozemských slov — slovní zásoba zdarma s překladem | OpenWords',
+    hubDescription:
+      'Seznamy nizozemských slov s krátkou definicí a překladem u každého slova – od prvních potřebných slov až po zkoušku KNM. Vyberte si seznam a procvičujte ho pomocí kartiček v OpenWords.',
+    hubH1Html: 'Seznamy <em>nizozemských slov</em>',
+    hubSub:
+      'Pečlivě sestavené seznamy nizozemské slovní zásoby, seřazené podle situací, které skutečně potkáte – u každého slova najdete překlad. Vyberte si seznam a ovládejte ho slovíčko po slovíčku díky intervalovému opakování v aplikaci OpenWords.',
+    listEyebrow: 'Seznam nizozemských slov',
+    siblingsLabel: 'Seznamy nizozemských slov',
+    allLists: 'Všechny nizozemské seznamy →',
+    listTitleSuffix: 'nizozemská slova s překladem | OpenWords',
+    listMetaTail: 'Nizozemská slovní zásoba s překladem — učte se ji pomocí kartiček v OpenWords.',
+    cardName: '500 nejčastějších nizozemských slov',
+    cardDesc: 'Jazykové jádro: 500 nejčastějších nizozemských slov pokrývá obrovskou část každodenního života, každé s překladem.',
+    listTitle: '500 nejčastějších nizozemských slov — seznam A1 s překladem zdarma | OpenWords',
+    listDescription:
+      '500 nejčastějších nizozemských slov seřazených podle četnosti, každé s překladem. Ideální seznam pro začátečníky (A1) – procvičujte je na kartičkách v OpenWords.',
+    listH1Html: '500 nejčastějších <em>nizozemských slov</em>',
+    listSubhead:
+      'Naučte se nejprve slova, která odvedou nejvíc práce. Nejčastější nizozemská slova jsou nejrychlejší cesta, jak přejít od rozpoznávání pár výrazů k tomu, že pochopíte, o čem je řeč. U každého slova najdete překlad.',
+    crumbCurrent: '500 nejčastějších slov',
+    faqWordCount: {
+      q: 'Kolik nizozemských slov je potřeba pro plynulou komunikaci?',
+      a: 'Přibližně 2 000 až 3 000 slov pokryje většinu běžné nizozemštiny a už prvních 1 000 slov tvoří kolem 85 % běžné řeči. Začít se základním seznamem na úrovni A1 je nejrychlejší způsob, jak zlepšit porozumění.'
+    }
+  }),
+
+  tr: dutchEntry('tr', {
+    hubTitle: 'Felemenkçe Kelime Listeleri — Türkçe Çevirili Ücretsiz Kelime Setleri | OpenWords',
+    hubDescription:
+      'Her kelime için kısa tanım ve Türkçe çeviri içeren Felemenkçe kelime listeleri — ilk gerekli kelimelerden KNM sınavına kadar. Bir liste seç ve OpenWords ile kelime kartlarıyla çalış.',
+    hubH1Html: 'Felemenkçe <em>Kelime Listeleri</em>',
+    hubSub:
+      "Özenle hazırlanmış Felemenkçe kelime listeleri — her kelime çevirisiyle birlikte ve gerçekten karşılaşacağın durumlara göre gruplandırılmış. İstediğin listeyi seç ve OpenWords'ün aralıklı tekrar sistemiyle kelime kelime uzmanlaş.",
+    listEyebrow: 'Felemenkçe Kelime Listesi',
+    siblingsLabel: 'Felemenkçe Kelime Listeleri',
+    allLists: 'Tüm Felemenkçe Listeleri →',
+    listTitleSuffix: 'Türkçe çevirili Felemenkçe kelimeler | OpenWords',
+    listMetaTail: 'Türkçe çevirili Felemenkçe kelimeler — OpenWords kelime kartlarıyla öğren.',
+    cardName: 'En Sık Kullanılan 500 Felemenkçe Kelime',
+    cardDesc: 'Dilin çekirdeği: En sık kullanılan 500 Felemenkçe kelime, her biri çevirisiyle birlikte günlük hayatın çok büyük bir kısmını kapsar.',
+    listTitle: 'En Sık Kullanılan 500 Felemenkçe Kelime — Türkçe Çevirili Ücretsiz A1 Listesi | OpenWords',
+    listDescription:
+      'Kullanım sıklığına göre sıralanmış, her biri Türkçe çeviri içeren en sık 500 Felemenkçe kelime. Yeni başlayanlar (A1) için ideal olan bu listeyi OpenWords kelime kartlarıyla öğren.',
+    listH1Html: 'En Sık Kullanılan 500 <em>Felemenkçe Kelime</em>',
+    listSubhead:
+      'Önce asıl yükü sırtlayan kelimeleri öğren. En sık kullanılan Felemenkçe kelimeler, birkaç kelimeyi tanımaktan konuşulanları rahatça takip edebilmeye giden en hızlı yoldur. Her kelime çevirisiyle birlikte sunulmuştur.',
+    crumbCurrent: 'En Sık 500 Kelime',
+    faqWordCount: {
+      q: 'Akıcı şekilde Felemenkçe konuşabilmek için kaç kelime bilmek gerekir?',
+      a: "Yaklaşık 2.000-3.000 kelime günlük Felemenkçenin büyük bölümünü kapsar; ilk 1.000 kelime bile günlük konuşmaların yaklaşık %85'ini oluşturur. A1 seviyesindeki temel bir listeyle başlamak, anlama seviyeni artırmanın en hızlı yoludur."
+    }
+  })
 };

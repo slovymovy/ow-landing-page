@@ -4,16 +4,22 @@ import travelWords from './word-lists/travel-vocabulary.json';
 import workWords from './word-lists/work-vocabulary.json';
 import harryPotterWords from './word-lists/harry-potter-vocabulary.json';
 import cookingWords from './word-lists/cooking-vocabulary.json';
+import nlJustArrived from './word-lists/nl-just-arrived.json';
+import nl500Common from './word-lists/nl-500-most-common.json';
+import nlKnmExam from './word-lists/nl-knm-exam.json';
+import nlSupermarket from './word-lists/nl-supermarket.json';
+import nlAtTheDoctor from './word-lists/nl-at-the-doctor.json';
+import nlFamily from './word-lists/nl-family.json';
 import { homeCopy } from './copy';
-import { wordListCopy, type StepDef, type WlFaqItem } from './wordListCopy';
+import { wordListCopy, wordListCopyNl, type StepDef, type WlFaqItem, type WordListCopy } from './wordListCopy';
 import { topicListCopy } from './topicListCopy';
-import { languages, localizePath, type LocaleCode } from './site';
+import { languages, localizePath, type LanguageSlug, type LocaleCode } from './site';
 
 // ── Types ──────────────────────────────────────────────────────────────────
 export interface WordEntry {
   r?: number; // rank (frequency lists only)
-  w: string; // English word / lemma
-  d: string; // display text: English definition (en) or translation (other locales)
+  w: string; // headword / lemma (in the taught language)
+  d: string; // display text: definition (taught locale) or translation (other locales)
 }
 
 export interface WordGroup {
@@ -57,40 +63,80 @@ export interface StepBlock {
 interface RawWord {
   w: string;
   d: string;
-  t: Partial<Record<Exclude<LocaleCode, 'en'>, string>>;
+  // Translation per interface locale; the taught language's own locale is
+  // absent (that locale shows the definition instead).
+  t: Partial<Record<LocaleCode, string>>;
+  // Sense clarification per locale, shown only to disambiguate rows whose
+  // translation collides with another word in the same list (e.g. jouw/uw → "your").
+  c?: Partial<Record<LocaleCode, string>>;
 }
 
 // ── List registry ───────────────────────────────────────────────────────────
-// `topic: false` = the frequency list (rank bands + bespoke reviewed copy).
-// `topic: true`  = a thematic list (single ungrouped list, copy templated from
-// its title/subtitle in topicListCopy). Ordered by `order` on the hub.
+// Every list belongs to a taught `language` (the vocabulary it teaches) and is
+// either the frequency list (`topic: false` — rank bands + bespoke reviewed
+// copy) or a thematic list (`topic: true` — single ungrouped list, copy
+// templated from its title/subtitle in topicListCopy). `order` = hub order.
 interface ListDef {
+  language: LanguageSlug;
   slug: string;
   order: number;
+  // `topic` selects the COPY source: false = bespoke frequency-list copy in
+  // wordListCopy(Nl); true = templated from topicListCopy.
   topic: boolean;
+  // `ranked` selects the RENDERING: rank numbers + frequency bands vs. a single
+  // plain list. Defaults to `!topic`. Set explicitly to `false` for a list that
+  // wants bespoke copy but is NOT ordered by frequency (so no rank numbers).
+  ranked?: boolean;
   words: RawWord[];
 }
 
 const REGISTRY: ListDef[] = [
-  // `order` = hub display order, ranked by broad popularity (500 core stays first).
-  { slug: '500-most-common', order: 1, topic: false, words: english500 as RawWord[] },
-  { slug: 'travel-vocabulary', order: 2, topic: true, words: travelWords as RawWord[] },
-  { slug: 'work-vocabulary', order: 3, topic: true, words: workWords as RawWord[] },
-  { slug: 'cooking-vocabulary', order: 4, topic: true, words: cookingWords as RawWord[] },
-  { slug: 'football-vocabulary', order: 5, topic: true, words: footballWords as RawWord[] },
-  { slug: 'harry-potter-vocabulary', order: 6, topic: true, words: harryPotterWords as RawWord[] }
+  // English lists — `order` ranked by broad popularity (500 core stays first).
+  { language: 'english', slug: '500-most-common', order: 1, topic: false, words: english500 as RawWord[] },
+  { language: 'english', slug: 'travel-vocabulary', order: 2, topic: true, words: travelWords as RawWord[] },
+  { language: 'english', slug: 'work-vocabulary', order: 3, topic: true, words: workWords as RawWord[] },
+  { language: 'english', slug: 'cooking-vocabulary', order: 4, topic: true, words: cookingWords as RawWord[] },
+  { language: 'english', slug: 'football-vocabulary', order: 5, topic: true, words: footballWords as RawWord[] },
+  { language: 'english', slug: 'harry-potter-vocabulary', order: 6, topic: true, words: harryPotterWords as RawWord[] },
+
+  // Dutch lists — `order` follows the source content ordering. `500-most-common`
+  // is the Dutch core list: bespoke copy like English's, but the source words are
+  // ordered pedagogically (A1), not by corpus frequency, so `ranked: false` drops
+  // the rank numbers + frequency bands. The rest are thematic.
+  { language: 'dutch', slug: 'just-arrived', order: 1, topic: true, words: nlJustArrived as RawWord[] },
+  { language: 'dutch', slug: '500-most-common', order: 2, topic: false, ranked: false, words: nl500Common as RawWord[] },
+  { language: 'dutch', slug: 'knm-exam', order: 3, topic: true, words: nlKnmExam as RawWord[] },
+  { language: 'dutch', slug: 'supermarket', order: 4, topic: true, words: nlSupermarket as RawWord[] },
+  { language: 'dutch', slug: 'at-the-doctor', order: 5, topic: true, words: nlAtTheDoctor as RawWord[] },
+  { language: 'dutch', slug: 'family', order: 6, topic: true, words: nlFamily as RawWord[] }
 ];
 
-const byOrder = () => [...REGISTRY].sort((a, b) => a.order - b.order);
-const find = (slug: string) => REGISTRY.find((l) => l.slug === slug);
+const byOrder = (language: LanguageSlug) =>
+  REGISTRY.filter((l) => l.language === language).sort((a, b) => a.order - b.order);
+const find = (language: LanguageSlug, slug: string) =>
+  REGISTRY.find((l) => l.language === language && l.slug === slug);
 
-export const orderedSlugs = () => byOrder().map((l) => l.slug);
+export const orderedSlugs = (language: LanguageSlug) => byOrder(language).map((l) => l.slug);
+
+// The interface locale in which a list shows the definition rather than a
+// translation — i.e. the locale that matches the taught language.
+const DEF_LOCALE: Partial<Record<LanguageSlug, LocaleCode>> = { english: 'en', dutch: 'nl' };
+const defLocale = (language: LanguageSlug): LocaleCode => DEF_LOCALE[language] ?? 'en';
+
+// Per-language UI copy map (falls back to English chrome if a language has none).
+const copyFor = (language: LanguageSlug): Record<LocaleCode, WordListCopy> =>
+  language === 'dutch' ? wordListCopyNl : wordListCopy;
+
+// UI copy for a given interface locale + taught language (hub meta, labels…).
+export const wlCopy = (locale: LocaleCode, language: LanguageSlug): WordListCopy => copyFor(language)[locale];
 
 // ── Path helpers ────────────────────────────────────────────────────────────
-export const hubPath = (locale: LocaleCode) => localizePath(locale, '/word-lists/english');
-export const listPath = (locale: LocaleCode, slug: string) => localizePath(locale, `/word-lists/english/${slug}`);
+export const hubPath = (locale: LocaleCode, language: LanguageSlug) =>
+  localizePath(locale, `/word-lists/${languages[language].slug}`);
+export const listPath = (locale: LocaleCode, language: LanguageSlug, slug: string) =>
+  localizePath(locale, `/word-lists/${languages[language].slug}/${slug}`);
 
-// ── Word entries: English shows the definition, other locales the translation ──
+// ── Word entries: taught locale shows the definition, others the translation ──
 function escapeHtml(s: string): string {
   return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
@@ -101,9 +147,23 @@ function toHtml(text: string): string {
   return escapeHtml(text).replace(/&lt;w&gt;(.*?)&lt;\/w&gt;/g, '<span class="wref">$1</span>');
 }
 
-function entryText(word: RawWord, locale: LocaleCode): string {
-  const raw = locale === 'en' ? word.d : word.t[locale as Exclude<LocaleCode, 'en'>] ?? word.d;
+function entryText(word: RawWord, locale: LocaleCode, def: LocaleCode): string {
+  // The taught locale shows the definition. Other locales show the translation,
+  // falling back to the English translation (not the definition) so a reader
+  // never sees an untranslated sentence in the taught language.
+  const raw = locale === def ? word.d : word.t[locale] ?? word.t.en ?? word.d;
   return toHtml(raw);
+}
+
+function countBy<T>(items: T[], key: (t: T) => string | undefined): Set<string> {
+  const counts = new Map<string, number>();
+  for (const it of items) {
+    const k = key(it);
+    if (k) counts.set(k, (counts.get(k) ?? 0) + 1);
+  }
+  const dups = new Set<string>();
+  for (const [k, n] of counts) if (n > 1) dups.add(k);
+  return dups;
 }
 
 // The frequency list is split into rank bands; topic lists stay a single list.
@@ -114,16 +174,34 @@ const FREQ_BANDS: { id: string; from: number; to: number }[] = [
 ];
 
 function buildGroups(def: ListDef, locale: LocaleCode): WordGroup[] {
-  if (def.topic) {
-    return [{ id: 'list', entries: def.words.map((w) => ({ w: w.w, d: entryText(w, locale) })) }];
+  const dl = defLocale(def.language);
+  // A row is a "duplicate" (and so gets a sense clarification, when one exists)
+  // if either its translation OR its headword is shared with another row — the
+  // list is keyed by word-sense, so a word with several meanings repeats. The
+  // taught locale shows unique definitions, so it needs no clarifications.
+  const dupTranslations = locale === dl ? new Set<string>() : countBy(def.words, (w) => w.t[locale]);
+  const dupLemmas = locale === dl ? new Set<string>() : countBy(def.words, (w) => w.w);
+  const render = (w: RawWord): string => {
+    let html = entryText(w, locale, dl);
+    const clar = w.c?.[locale];
+    const translation = w.t[locale];
+    const isDup = (translation && dupTranslations.has(translation)) || dupLemmas.has(w.w);
+    if (clar && locale !== dl && isDup) {
+      html += ` <span class="wclar">(${escapeHtml(clar)})</span>`;
+    }
+    return html;
+  };
+  const isRanked = def.ranked ?? !def.topic;
+  if (!isRanked) {
+    return [{ id: 'list', entries: def.words.map((w) => ({ w: w.w, d: render(w) })) }];
   }
-  const bandTitle = wordListCopy[locale].bandTitle;
-  const ranked: WordEntry[] = def.words.map((w, i) => ({ r: i + 1, w: w.w, d: entryText(w, locale) }));
+  const bandTitle = copyFor(def.language)[locale].bandTitle!;
+  const rankedEntries: WordEntry[] = def.words.map((w, i) => ({ r: i + 1, w: w.w, d: render(w) }));
   return FREQ_BANDS.map(({ id, from, to }) => ({
     id,
     title: bandTitle,
     accent: `${from}–${to}`,
-    entries: ranked.filter((e) => e.r! >= from && e.r! <= to)
+    entries: rankedEntries.filter((e) => e.r! >= from && e.r! <= to)
   }));
 }
 
@@ -139,16 +217,16 @@ interface ListCopy {
 }
 
 function listCopy(def: ListDef, locale: LocaleCode): ListCopy {
-  const c = wordListCopy[locale];
+  const c = copyFor(def.language)[locale];
   if (!def.topic) {
     return {
-      metaTitle: c.listTitle,
-      metaDescription: c.listDescription,
-      h1Html: c.listH1Html,
-      subhead: c.listSubhead,
-      cardName: c.cardName,
-      cardDesc: c.cardDesc,
-      crumbCurrent: c.crumbCurrent
+      metaTitle: c.listTitle!,
+      metaDescription: c.listDescription!,
+      h1Html: c.listH1Html!,
+      subhead: c.listSubhead!,
+      cardName: c.cardName!,
+      cardDesc: c.cardDesc!,
+      crumbCurrent: c.crumbCurrent!
     };
   }
   const t = topicListCopy[def.slug];
@@ -166,8 +244,8 @@ function listCopy(def: ListDef, locale: LocaleCode): ListCopy {
 }
 
 // ── Shared "how it works" step blocks (CTA/eyebrow/note from homeCopy) ───────
-export function hubStepBlock(locale: LocaleCode): StepBlock {
-  const c = wordListCopy[locale];
+export function hubStepBlock(locale: LocaleCode, language: LanguageSlug): StepBlock {
+  const c = copyFor(language)[locale];
   return {
     eyebrow: homeCopy[locale].howItWorksEyebrow,
     h2: c.hubStepsH2,
@@ -177,8 +255,8 @@ export function hubStepBlock(locale: LocaleCode): StepBlock {
   };
 }
 
-export function listStepBlock(locale: LocaleCode): StepBlock {
-  const c = wordListCopy[locale];
+export function listStepBlock(locale: LocaleCode, language: LanguageSlug): StepBlock {
+  const c = copyFor(language)[locale];
   return {
     eyebrow: homeCopy[locale].howItWorksEyebrow,
     h2: c.listStepsH2,
@@ -188,20 +266,20 @@ export function listStepBlock(locale: LocaleCode): StepBlock {
   };
 }
 
-export function hubFaq(locale: LocaleCode): WlFaqItem[] {
-  return wordListCopy[locale].faq;
+export function hubFaq(locale: LocaleCode, language: LanguageSlug): WlFaqItem[] {
+  return copyFor(language)[locale].faq;
 }
 
-// ── Hub cards (all lists, ordered) ───────────────────────────────────────────
-export function hubCards(locale: LocaleCode): HubCard[] {
-  const metricLabel = wordListCopy[locale].metricLabel;
-  return byOrder().map((def) => {
+// ── Hub cards (all lists for a language, ordered) ─────────────────────────────
+export function hubCards(locale: LocaleCode, language: LanguageSlug): HubCard[] {
+  const metricLabel = copyFor(language)[locale].metricLabel;
+  return byOrder(language).map((def) => {
     const copy = listCopy(def, locale);
     return {
       name: copy.cardName,
       desc: copy.cardDesc,
       count: `${def.words.length} ${metricLabel}`,
-      href: listPath(locale, def.slug)
+      href: listPath(locale, language, def.slug)
     };
   });
 }
@@ -222,12 +300,12 @@ export interface WordListData {
   groups: WordGroup[];
 }
 
-export function listData(locale: LocaleCode, slug: string): WordListData {
-  const def = find(slug)!;
-  const c = wordListCopy[locale];
+export function listData(locale: LocaleCode, language: LanguageSlug, slug: string): WordListData {
+  const def = find(language, slug)!;
+  const c = copyFor(language)[locale];
   const ui = homeCopy[locale].ui;
   const copy = listCopy(def, locale);
-  const path = listPath(locale, slug);
+  const path = listPath(locale, language, slug);
   return {
     path,
     title: copy.metaTitle,
@@ -238,16 +316,16 @@ export function listData(locale: LocaleCode, slug: string): WordListData {
     metrics: [{ num: String(def.words.length), label: c.metricLabel }],
     breadcrumb: [
       { label: 'OpenWords', href: localizePath(locale, '/') },
-      { label: languages.english.displayName[locale], href: localizePath(locale, '/learn/english') },
-      { label: ui.navWordLists, href: hubPath(locale) },
+      { label: languages[language].displayName[locale], href: localizePath(locale, `/learn/${languages[language].slug}`) },
+      { label: ui.navWordLists, href: hubPath(locale, language) },
       { label: copy.crumbCurrent }
     ],
     siblings: {
       label: c.siblingsLabel,
-      allHref: hubPath(locale),
-      items: byOrder().map((d) => ({
+      allHref: hubPath(locale, language),
+      items: byOrder(language).map((d) => ({
         name: listCopy(d, locale).cardName,
-        href: listPath(locale, d.slug),
+        href: listPath(locale, language, d.slug),
         active: d.slug === slug
       }))
     },

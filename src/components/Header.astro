@@ -1,6 +1,6 @@
 ---
 import { homeCopy } from '../data/copy';
-import { languageSlugs, languages, localizePath, site, type LanguageSlug, type LocaleCode } from '../data/site';
+import { languageSlugs, languages, localizePath, site, wordListLanguages, type LanguageSlug, type LocaleCode } from '../data/site';
 import LocaleSwitcher from './LocaleSwitcher.astro';
 
 interface Props {
@@ -15,11 +15,6 @@ interface Props {
 
 const { locale = 'en', activeLanguage, path = '/', section, localized = true } = Astro.props;
 const copy = homeCopy[locale];
-
-// Word-lists teach English vocabulary, but the page chrome is localized — link
-// to the hub in the current interface locale.
-const wordListsHref = localizePath(locale, '/word-lists/english');
-const englishLabel = languages.english.displayName[locale];
 ---
 <header class="nav" id="nav">
   <div class="container nav__inner">
@@ -50,13 +45,15 @@ const englishLabel = languages.english.displayName[locale];
           <svg class="navdd__chev" viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6l4 4 4-4"></path></svg>
         </summary>
         <div class="navdd__panel">
-          <a
-            href={wordListsHref}
-            class:list={['navdd__opt', { 'navdd__opt--current': section === 'lists' }]}
-            aria-current={section === 'lists' ? 'page' : undefined}
-          >
-            {englishLabel}
-          </a>
+          {wordListLanguages.map((slug) => (
+            <a
+              href={localizePath(locale, `/word-lists/${slug}`)}
+              class:list={['navdd__opt', { 'navdd__opt--current': section === 'lists' && slug === activeLanguage }]}
+              aria-current={section === 'lists' && slug === activeLanguage ? 'page' : undefined}
+            >
+              {languages[slug].displayName[locale]}
+            </a>
+          ))}
         </div>
       </details>
     </nav>
@@ -108,9 +105,11 @@ const englishLabel = languages.english.displayName[locale];
   <div>
     <div class="drawer__nav-title">{copy.ui.drawerWordListsLabel}</div>
     <div class="drawer__nav-links">
-      <a href={wordListsHref} class:list={['drawer__nav-link', { 'drawer__nav-link--active': section === 'lists' }]}>
-        {englishLabel}
-      </a>
+      {wordListLanguages.map((slug) => (
+        <a href={localizePath(locale, `/word-lists/${slug}`)} class:list={['drawer__nav-link', { 'drawer__nav-link--active': section === 'lists' && slug === activeLanguage }]}>
+          {languages[slug].displayName[locale]}
+        </a>
+      ))}
     </div>
   </div>
 </div>

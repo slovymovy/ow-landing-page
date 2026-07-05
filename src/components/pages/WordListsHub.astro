@@ -6,23 +6,25 @@ import StoreButtons from '../StoreButtons.astro';
 import WordListSteps from '../WordListSteps.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { homeCopy } from '../../data/copy';
-import { absoluteUrl, languages, localizePath, type LocaleCode } from '../../data/site';
-import { wordListCopy } from '../../data/wordListCopy';
-import { hubCards, hubFaq, hubPath, hubStepBlock } from '../../data/wordLists';
+import { absoluteUrl, languages, localizePath, type LanguageSlug, type LocaleCode } from '../../data/site';
+import { hubCards, hubFaq, hubPath, hubStepBlock, wlCopy } from '../../data/wordLists';
 
 interface Props {
   locale: LocaleCode;
+  language?: LanguageSlug;
 }
 
-const { locale } = Astro.props;
-const c = wordListCopy[locale];
+const { locale, language = 'english' } = Astro.props;
+const c = wlCopy(locale, language);
 const home = homeCopy[locale];
-const cards = hubCards(locale);
-const faqItems = hubFaq(locale);
-const steps = hubStepBlock(locale);
+const cards = hubCards(locale, language);
+const faqItems = hubFaq(locale, language);
+const steps = hubStepBlock(locale, language);
 
-const path = '/word-lists/english';
-const englishLabel = languages.english.displayName[locale];
+const langInfo = languages[language];
+const langLabel = langInfo.displayName[locale];
+const learnHref = localizePath(locale, `/learn/${langInfo.slug}`);
+const path = `/word-lists/${langInfo.slug}`;
 
 const faq = faqItems.map((f) => ({ question: f.q, answer: f.a }));
 
@@ -32,8 +34,8 @@ const structuredData = [
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'OpenWords', item: absoluteUrl(localizePath(locale, '/')) },
-      { '@type': 'ListItem', position: 2, name: englishLabel, item: absoluteUrl(localizePath(locale, '/learn/english')) },
-      { '@type': 'ListItem', position: 3, name: home.ui.navWordLists, item: absoluteUrl(hubPath(locale)) }
+      { '@type': 'ListItem', position: 2, name: langLabel, item: absoluteUrl(learnHref) },
+      { '@type': 'ListItem', position: 3, name: home.ui.navWordLists, item: absoluteUrl(hubPath(locale, language)) }
     ]
   },
   {
@@ -57,7 +59,7 @@ const structuredData = [
   faq={faq}
   structuredData={structuredData}
 >
-  <Header locale={locale} section="lists" path={path} />
+  <Header locale={locale} activeLanguage={language} section="lists" path={path} />
 
   <main>
     <!-- HERO (centered) -->
@@ -66,7 +68,7 @@ const structuredData = [
       <div class="container">
         <div class="hero__inner">
           <nav class="hero__breadcrumb" aria-label="Breadcrumb">
-            <a href={localizePath(locale, '/')}>OpenWords</a> / <a href={localizePath(locale, '/learn/english')}>{englishLabel}</a> / <span>{home.ui.navWordLists}</span>
+            <a href={localizePath(locale, '/')}>OpenWords</a> / <a href={learnHref}>{langLabel}</a> / <span>{home.ui.navWordLists}</span>
           </nav>
           <h1 class="hero__h1" set:html={c.hubH1Html}></h1>
           <p class="hero__sub">{c.hubSub}</p>
