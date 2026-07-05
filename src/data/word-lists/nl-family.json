@@ -1,0 +1,1172 @@
+[
+{
+"w":"familie",
+"d":"Een groep mensen die door bloedverwantschap of huwelijk met elkaar verbonden zijn.",
+"t":{
+"en":"family, relatives",
+"ru":"семья, родственники",
+"pl":"rodzina, krewni",
+"de":"Familie, Verwandtschaft",
+"fr":"famille, proches",
+"it":"famiglia, parenti",
+"cs":"rodina, příbuzenstvo",
+"tr":"aile, akrabalar",
+"es":"familia, parientes"
+},
+"c":{
+"en":"group of relatives",
+"ru":"группа родственников, близкие люди",
+"pl":"grupa krewnych, najbliżsi",
+"de":"Gemeinschaft von Verwandten",
+"fr":"groupe de personnes apparentées",
+"it":"gruppo di parenti, nucleo familiare",
+"cs":"skupina příbuzných, blízcí lidé",
+"tr":"akraba grubu, yakınlar",
+"es":"grupo de parientes"
+}
+},
+{
+"w":"gezin",
+"d":"Huishouden bestaande uit een of meer ouders en hun kinderen.",
+"t":{
+"en":"family",
+"ru":"семья",
+"pl":"rodzina",
+"de":"Familie",
+"fr":"famille, foyer",
+"it":"famiglia, nucleo familiare",
+"cs":"rodina",
+"tr":"aile, çekirdek aile",
+"es":"familia"
+},
+"c":{
+"en":"nuclear family unit",
+"ru":"родители и дети",
+"pl":"najbliższa rodzina, rodzice i dzieci",
+"de":"Kernfamilie aus Eltern und Kindern",
+"fr":"cellule familiale restreinte (parents et enfants)",
+"it":"nucleo familiare ristretto",
+"cs":"nejbližší rodina, rodiče a děti",
+"tr":"çekirdek aile, anne, baba ve çocuklar",
+"es":"núcleo familiar de padres e hijos"
+}
+},
+{
+"w":"ouders",
+"d":"Meervoud van <w>ouder</w>.",
+"t":{
+"en":"parents",
+"ru":"родители",
+"pl":"rodzice",
+"de":"Eltern",
+"fr":"parents",
+"it":"genitori",
+"cs":"rodiče",
+"tr":"anne baba, ebeveynler",
+"es":"padres"
+},
+"c":{
+"en":"father and mother",
+"ru":"отец и мать",
+"pl":"ojciec i matka",
+"de":"Vater und Mutter",
+"fr":"le père et la mère",
+"it":"padre e madre",
+"cs":"otec a matka",
+"tr":"ebeveynler",
+"es":"padre y madre"
+}
+},
+{
+"w":"moeder",
+"d":"Een vrouwelijke ouder.",
+"t":{
+"en":"mother, mom",
+"ru":"мать, мама",
+"pl":"matka, mama",
+"de":"Mutter, Mama",
+"fr":"mère, maman",
+"it":"madre, mamma",
+"cs":"matka, maminka, máma",
+"tr":"anne, valide",
+"es":"madre, mamá"
+},
+"c":{
+"en":"female parent",
+"ru":"женщина по отношению к своим детям",
+"pl":"rodzic płci żeńskiej",
+"de":"weiblicher Elternteil",
+"fr":"parent féminin",
+"it":"genitore femminile",
+"cs":"rodič ženského pohlaví",
+"tr":"çocuğu olan kadın",
+"es":"progenitora de sexo femenino"
+}
+},
+{
+"w":"vader",
+"d":"Een mannelijke ouder.",
+"t":{
+"en":"father, dad",
+"ru":"отец, папа",
+"pl":"ojciec, tata",
+"de":"Vater, Papa",
+"fr":"père, papa",
+"it":"padre, papà",
+"cs":"otec, táta",
+"tr":"baba, peder",
+"es":"padre, papá"
+},
+"c":{
+"en":"male parent",
+"ru":"родитель",
+"pl":"rodzic",
+"de":"männlicher Elternteil",
+"fr":"parent",
+"it":"genitore",
+"cs":"rodič",
+"tr":"erkek ebeveyn",
+"es":"progenitor masculino"
+}
+},
+{
+"w":"kind",
+"d":"Een jong mens dat nog niet volwassen is.",
+"t":{
+"en":"child, kid",
+"ru":"ребёнок, дитя",
+"pl":"dziecko, maluch",
+"de":"Kind",
+"fr":"enfant, gamin",
+"it":"bambino, bimbo",
+"cs":"dítě",
+"tr":"çocuk, ufaklık",
+"es":"niño, nene"
+},
+"c":{
+"en":"young person",
+"ru":"маленький человек",
+"pl":"młoda osoba",
+"de":"heranwachsender Mensch",
+"fr":"jeune personne",
+"it":"persona giovane, fanciullo",
+"cs":"nedospělý člověk",
+"tr":"genç insan",
+"es":"persona de corta edad"
+}
+},
+{
+"w":"dochter",
+"d":"Een vrouwelijk kind in relatie tot haar ouders.",
+"t":{
+"en":"daughter",
+"ru":"дочь, дочка",
+"pl":"córka, córeczka",
+"de":"Tochter",
+"fr":"fille",
+"it":"figlia",
+"cs":"dcera, dcerka",
+"tr":"kız, kız evlat",
+"es":"hija"
+},
+"c":{
+"en":"female child",
+"ru":"общее значение",
+"pl":"potomek płci żeńskiej",
+"de":"weiblicher Nachkomme",
+"fr":"par rapport aux parents",
+"it":"figlia femmina",
+"cs":"ženské dítě",
+"tr":"evlat olan kız çocuk",
+"es":"hija biológica o adoptiva"
+}
+},
+{
+"w":"zoon",
+"d":"Een mannelijk kind in relatie tot zijn ouders.",
+"t":{
+"en":"son",
+"ru":"сын",
+"pl":"syn",
+"de":"Sohn",
+"fr":"fils",
+"it":"figlio",
+"cs":"syn",
+"tr":"oğul, erkek çocuk",
+"es":"hijo"
+},
+"c":{
+"en":"male offspring",
+"ru":"ребенок мужского пола",
+"pl":"dziecko płci męskiej",
+"de":"männlicher Nachkomme",
+"fr":"enfant de sexe masculin",
+"it":"discendente diretto maschile",
+"cs":"potomek mužského pohlaví",
+"tr":"erkek evlat",
+"es":"descendiente masculino"
+}
+},
+{
+"w":"zus",
+"d":"Een vrouwelijk kind van dezelfde ouders.",
+"t":{
+"en":"sister",
+"ru":"сестра",
+"pl":"siostra",
+"de":"Schwester",
+"fr":"sœur",
+"it":"sorella",
+"cs":"sestra",
+"tr":"kız kardeş, abla",
+"es":"hermana"
+},
+"c":{
+"en":"female sibling",
+"ru":"родственница",
+"pl":"rodzeństwo płci żeńskiej",
+"de":"weibliches Geschwister",
+"fr":"membre de la famille",
+"it":"membro della famiglia",
+"cs":"sourozenec ženského pohlaví",
+"tr":"aynı anne babadan olan kız çocuk",
+"es":"hija de los mismos padres"
+}
+},
+{
+"w":"broer",
+"d":"een mannelijk kind van dezelfde ouders",
+"t":{
+"en":"brother",
+"ru":"брат",
+"pl":"brat",
+"de":"Bruder",
+"fr":"frère",
+"it":"fratello",
+"cs":"bratr",
+"tr":"erkek kardeş, abi, kardeş",
+"es":"hermano"
+},
+"c":{
+"en":"male sibling",
+"ru":"родной брат",
+"pl":"rodzeństwo płci męskiej",
+"de":"männliches Geschwisterteil",
+"fr":"membre masculin d'une fratrie",
+"it":"fratello biologico o adottivo",
+"cs":"mužský sourozenec",
+"tr":"aynı anne babadan olan erkek",
+"es":"hermano varón"
+}
+},
+{
+"w":"oma",
+"d":"De moeder van een van je ouders.",
+"t":{
+"en":"grandma, grandmother, granny",
+"ru":"бабушка",
+"pl":"babcia, babunia, babka",
+"de":"Oma, Großmutter, Omi",
+"fr":"mamie, grand-mère, mémé",
+"it":"nonna",
+"cs":"babička",
+"tr":"büyükanne, nine, anneanne, babaanne",
+"es":"abuela, abuelita"
+},
+"c":{
+"en":"informal, most common",
+"ru":"член семьи",
+"pl":"najbardziej powszechne, serdeczne określenie",
+"de":"familiär, am häufigsten",
+"fr":"affectueux et familier",
+"it":"membro della famiglia",
+"cs":"člen rodiny",
+"tr":"resmi ve genel kullanım",
+"es":"término estándar"
+}
+},
+{
+"w":"opa",
+"d":"De vader van je vader of moeder.",
+"t":{
+"en":"grandpa, granddad, grandfather",
+"ru":"дедушка, дед",
+"pl":"dziadek, dziadziuś",
+"de":"Opa, Großvater",
+"fr":"papy, pépé, grand-père",
+"it":"nonno, nonnino",
+"cs":"dědeček, děda, děd",
+"tr":"dede, büyükbaba",
+"es":"abuelo, abuelito, yayo"
+},
+"c":{
+"en":"informal/affectionate",
+"ru":"ласковое или общеупотребительное",
+"pl":"standardowo i potocznie",
+"de":"familiär/Koseform",
+"fr":"affectueux et familier",
+"it":"standard e affettuoso",
+"cs":"standardní, milé označení",
+"tr":"samimi ve yaygın kullanım",
+"es":"estándar"
+}
+},
+{
+"w":"kleinzoon",
+"d":"Een zoon van iemands kind; een mannelijk kleinkind.",
+"t":{
+"en":"grandson",
+"ru":"внук",
+"pl":"wnuk, wnuczek",
+"de":"Enkel, Enkelsohn",
+"fr":"petit-fils",
+"it":"nipote",
+"cs":"vnuk",
+"tr":"erkek torun, torun",
+"es":"nieto"
+},
+"c":{
+"en":"male grandchild",
+"ru":"сын сына или дочери",
+"pl":"syn syna lub córki",
+"de":"männliches Enkelkind",
+"fr":"fils du fils ou de la fille d'une personne",
+"it":"di nonni, maschio",
+"cs":"syn syna nebo dcery",
+"tr":"bir kimsenin çocuğunun erkek çocuğu",
+"es":"hijo de un hijo o hija"
+}
+},
+{
+"w":"kleindochter",
+"d":"Een dochter van iemands kind; een vrouwelijk kleinkind.",
+"t":{
+"en":"granddaughter",
+"ru":"внучка",
+"pl":"wnuczka",
+"de":"Enkelin, Enkeltochter",
+"fr":"petite-fille",
+"it":"nipote",
+"cs":"vnučka",
+"tr":"kız torun, torun",
+"es":"nieta"
+},
+"c":{
+"en":"female grandchild",
+"ru":"дочь сына или дочери",
+"pl":"córka syna lub córki",
+"de":"weibliches Kind von Sohn oder Tochter",
+"fr":"fille de l'enfant d'une personne",
+"it":"figlia del proprio figlio o della propria figlia",
+"cs":"dcera syna nebo dcery",
+"tr":"bir kimsenin çocuğunun kız çocuğu",
+"es":"hija de un hijo o de una hija"
+}
+},
+{
+"w":"tante",
+"d":"De zus of schoonzus van iemands vader of moeder.",
+"t":{
+"en":"aunt",
+"ru":"тётя, тётка",
+"pl":"ciocia, ciotka",
+"de":"Tante",
+"fr":"tante, tatie, tata",
+"it":"zia",
+"cs":"teta",
+"tr":"teyze, hala, yenge",
+"es":"tía"
+},
+"c":{
+"en":"family member",
+"ru":"родственница",
+"pl":"sympatycznie, o członkini rodziny",
+"de":"Familienmitglied",
+"fr":"membre de la famille",
+"it":"membro della famiglia",
+"cs":"člen rodiny",
+"tr":"annenin kız kardeşi",
+"es":"miembro de la familia"
+}
+},
+{
+"w":"oom",
+"d":"de broer of zwager van iemands vader of moeder",
+"t":{
+"en":"uncle",
+"ru":"дядя",
+"pl":"wujek, stryj, wuj",
+"de":"Onkel",
+"fr":"oncle, tonton",
+"it":"zio",
+"cs":"strýc, strejda",
+"tr":"amca, dayı, enişte",
+"es":"tío"
+},
+"c":{
+"en":"the brother or brother-in-law of a parent",
+"ru":"брат родителя или муж сестры родителя",
+"pl":"brat lub szwagier rodzica (najbardziej powszechne określenie)",
+"de":"der Bruder oder Schwager eines Elternteils",
+"fr":"le frère ou le beau-frère d'un parent",
+"it":"il fratello o il cognato di un genitore",
+"cs":"bratr rodiče nebo manžel sestry rodiče",
+"tr":"babanın erkek kardeşi veya eniştesi",
+"es":"hermano o cuñado de uno de los padres"
+}
+},
+{
+"w":"nicht",
+"d":"Dochter van iemands oom of tante",
+"t":{
+"en":"cousin",
+"ru":"двоюродная сестра",
+"pl":"kuzynka",
+"de":"Cousine, Kusine",
+"fr":"cousine",
+"it":"cugina",
+"cs":"sestřenice",
+"tr":"kuzen, yeğen",
+"es":"prima"
+},
+"c":{
+"en":"female",
+"ru":"дочь дяди или тети",
+"pl":"córka wujka lub cioci",
+"de":"Tochter von Onkel oder Tante",
+"fr":"fille de l'oncle ou de la tante",
+"it":"figlia di uno zio o di una zia",
+"cs":"dcera strýce nebo tety",
+"tr":"kız kuzen",
+"es":"hija de un tío o tía"
+}
+},
+{
+"w":"neef",
+"d":"Een zoon van iemands oom of tante.",
+"t":{
+"en":"cousin, first cousin",
+"ru":"двоюродный брат, кузен",
+"pl":"kuzyn",
+"de":"Cousin, Vetter",
+"fr":"cousin, cousin germain",
+"it":"cugino",
+"cs":"bratranec, dvojitý bratranec",
+"tr":"kuzen, yeğen",
+"es":"primo, primo hermano"
+},
+"c":{
+"en":"son of uncle or aunt",
+"ru":"сын дяди или тёти",
+"pl":"syn wujka lub cioci",
+"de":"Sohn von Onkel oder Tante",
+"fr":"fils de l'oncle ou de la tante",
+"it":"figlio dello zio o della zia",
+"cs":"syn strýce nebo tety",
+"tr":"amca, hala, dayı veya teyze oğlu",
+"es":"hijo de un tío o tía"
+}
+},
+{
+"w":"baby",
+"d":"Een mens in de eerste fase van zijn leven, meestal jonger dan één jaar.",
+"t":{
+"en":"baby, infant",
+"ru":"младенец, малыш",
+"pl":"niemowlę, dzidziuś, bobas",
+"de":"Baby, Säugling",
+"fr":"bébé, nourrisson",
+"it":"neonato, bebè, bambino",
+"cs":"miminko, kojenec, nemluvně",
+"tr":"bebek",
+"es":"bebé, lactante, nene"
+},
+"c":{
+"en":"very young child",
+"ru":"ребёнок первого года жизни",
+"pl":"dziecko w pierwszym roku życia",
+"de":"Kind im ersten Lebensjahr",
+"fr":"très jeune enfant",
+"it":"bambino appena nato o di pochissimi mesi",
+"cs":"malé dítě, nejběžnější označení",
+"tr":"çok küçük çocuk",
+"es":"niño de muy corta edad"
+}
+},
+{
+"w":"peuter",
+"d":"Jong kind, meestal in de leeftijd van twee tot vier jaar, dat nog niet naar de basisschool gaat.",
+"t":{
+"en":"toddler, tot",
+"ru":"малыш, карапуз, ребёнок ясельного возраста",
+"pl":"zdziubek, brzdąc, maluch, dwulatek, trzylatek",
+"de":"Kleinkind, Kleinstkind",
+"fr":"bambin, tout-petit",
+"it":"bambino piccolo, bimbo",
+"cs":"batole, předškolák, drobeček",
+"tr":"yürümeye başlayan çocuk, ufaklık, yumurcak",
+"es":"niño pequeño, infante, bebé"
+},
+"c":{
+"en":"young child",
+"ru":"маленький ребенок",
+"pl":"potocznie o małym dziecku",
+"de":"Kind im Alter von ca. 1 bis 3 Jahren",
+"fr":"jeune enfant",
+"it":"bambino in tenera età",
+"cs":"malé dítě ve věku cca 1-3 let",
+"tr":"genellikle 2-4 yaş arası küçük çocuk",
+"es":"niño de corta edad"
+}
+},
+{
+"w":"kleuter",
+"d":"Een jong kind in de leeftijd van ongeveer vier tot zes jaar dat naar de basisschool gaat.",
+"t":{
+"en":"preschooler, kindergartner, toddler",
+"ru":"дошкольник, малыш, детсадовец",
+"pl":"przedszkolak, maluch",
+"de":"Kindergartenkind, Vorschulkind, Kleinkind",
+"fr":"enfant de maternelle, marmot, bambin, petit",
+"it":"bambino dell'asilo, bambino in età prescolare, bimbo",
+"cs":"předškolák, školkař, malé dítě",
+"tr":"anaokulu öğrencisi, küçük çocuk, kreş çocuğu",
+"es":"niño de preescolar, párvulo, niño pequeño"
+},
+"c":{
+"en":"a child who is educated at preschool",
+"ru":"ребенок дошкольного возраста",
+"pl":"dziecko uczęszczające do przedszkola",
+"de":"ein Kind, das den Kindergarten besucht",
+"fr":"un enfant qui fréquente l'école maternelle",
+"it":"un bambino che frequenta la scuola dell'infanzia",
+"cs":"dítě navštěvující mateřskou školu nebo předškolní třídu",
+"tr":"anaokuluna giden çocuk",
+"es":"un niño que asiste a la educación preescolar"
+}
+},
+{
+"w":"puber",
+"d":"iemand in de levensfase tussen kindertijd en volwassenheid",
+"t":{
+"en":"adolescent, teenager, teen",
+"ru":"подросток, тинейджер",
+"pl":"nastolatek, dorastający, młodzieniec",
+"de":"Teenager, Jugendliche, Pubertierende",
+"fr":"adolescent, ado",
+"it":"adolescente, ragazzo",
+"cs":"puberťák, dospívající, adolescent",
+"tr":"ergen, genç",
+"es":"adolescente, joven"
+},
+"c":{
+"en":"a person who has reached puberty but is not yet an adult",
+"ru":"человек в переходном возрасте от детства к юношеству",
+"pl":"osoba w wieku od 13 do 19 lat",
+"de":"eine Person im Alter zwischen 13 und 19 Jahren",
+"fr":"personne qui traverse la période de l'adolescence",
+"it":"persona che si trova nel periodo dell'adolescenza",
+"cs":"hovorové označení pro dospívajícího člověka",
+"tr":"ergenlik dönemindeki genç",
+"es":"persona que está en la etapa de la adolescencia"
+}
+},
+{
+"w":"crèche",
+"d":"Een opvangcentrum of oppascentrum waar baby's en jonge kinderen overdag worden verzorgd.",
+"t":{
+"en":"crèche, day-care centre, daycare",
+"ru":"детские ясли, детский сад, ясли-сад",
+"pl":"żłobek, przedszkole",
+"de":"Kinderkrippe, Kindertagesstätte, Kita",
+"fr":"crèche, garderie",
+"it":"asilo nido, nido d'infanzia, creche",
+"cs":"jesle, dětská skupina, mateřská škola",
+"tr":"kreş, çocuk yuvası, gündüz bakımevi",
+"es":"guardería, guardería infantil, jardín de infancia"
+},
+"c":{
+"en":"day nursery (mainly UK/Ireland)",
+"ru":"для самых маленьких детей",
+"pl":"dla najmłodszych dzieci",
+"de":"Betreuungseinrichtung für Kleinkinder unter 3 Jahren",
+"fr":"établissement d'accueil pour jeunes enfants",
+"it":"struttura educativa e di cura per bambini da 3 mesi a 3 anni",
+"cs":"pro nejmenší děti",
+"tr":"çocuk yuvası",
+"es":"establecimiento que cuida niños en edad preescolar"
+}
+},
+{
+"w":"kinderopvang",
+"d":"De verzorging van kinderen terwijl de ouders afwezig zijn, bijvoorbeeld omdat ze werken.",
+"t":{
+"en":"childcare, daycare",
+"ru":"уход за детьми, присмотр за детьми",
+"pl":"opieka nad dziećmi, opieka dziecięca",
+"de":"Kinderbetreuung",
+"fr":"garde d'enfants, accueil de la petite enfance",
+"it":"assistenza all'infanzia, cura dei bambini",
+"cs":"péče o děti, hlídání dětí",
+"tr":"çocuk bakımı, çocuk bakıcılığı",
+"es":"cuidado infantil, cuidado de niños"
+},
+"c":{
+"en":"service or general concept",
+"ru":"общий термин для услуги",
+"pl":"ogólne pojęcie lub usługa",
+"de":"allgemeines Konzept oder Dienstleistung",
+"fr":"concept général ou service de garde",
+"it":"servizio o concetto generale di cura dei bambini",
+"cs":"obecný pojem pro službu či činnost",
+"tr":"genel hizmet ve kavram",
+"es":"concepto general o servicio de cuidado"
+}
+},
+{
+"w":"kinderdagverblijf",
+"d":"Een plaats waar jonge kinderen overdag onder professioneel toezicht kunnen verblijven terwijl hun ouders werken.",
+"t":{
+"en":"daycare center, nursery, crèche, day care",
+"ru":"детский сад, ясли, центр дневного пребывания",
+"pl":"żłobek, przedszkole, klub dziecięcy",
+"de":"Kindertagesstätte, Kita, Kinderkrippe, Ganztagskindergarten",
+"fr":"crèche, garderie, halte-garderie",
+"it":"asilo nido, nido d'infanzia, creche",
+"cs":"jesle, dětská skupina, mateřská škola, školka",
+"tr":"kreş, gündüz bakımevi, çocuk yuvası",
+"es":"guardería, escuela infantil, jardín de infancia"
+},
+"c":{
+"en":"a facility for child care",
+"ru":"общее название учреждения для дошкольников",
+"pl":"dla najmłodszych dzieci, niemowląt i maluchów",
+"de":"Einrichtung zur Tagesbetreuung von Kindern",
+"fr":"structure d'accueil pour les bébés et jeunes enfants",
+"it":"struttura per la cura di neonati e bambini piccoli",
+"cs":"pro nejmenší děti, batolata",
+"tr":"küçük çocukların bakıldığı yer",
+"es":"establecimiento que cuida niños en edad preescolar"
+}
+},
+{
+"w":"kinderwagen",
+"d":"Een voertuig op wielen waarin een baby of klein kind liggend of zittend kan worden vervoerd.",
+"t":{
+"en":"pram, baby carriage, stroller, pushchair",
+"ru":"детская коляска, коляска",
+"pl":"wózek dziecięcy, gondola, spacerówka",
+"de":"Kinderwagen, Buggy, Sportwagen",
+"fr":"poussette, landau, voiture d'enfant",
+"it":"carrozzina, passeggino",
+"cs":"kočárek, dětský kočárek",
+"tr":"bebek arabası, puset",
+"es":"cochecito de bebé, carricoche, carriola, coche de niño"
+},
+"c":{
+"en":"UK/Commonwealth, typically for a baby lying down",
+"ru":"общее название для любого типа коляски",
+"pl":"ogólne określenie na wózek dla dziecka",
+"de":"allgemeiner Begriff für Babys und Kleinkinder",
+"fr":"pour un enfant assis",
+"it":"per neonati, in cui il bambino è sdraiato",
+"cs":"obecné označení pro dětský kočárek",
+"tr":"genel terim",
+"es":"término general y común"
+}
+},
+{
+"w":"huwelijk",
+"d":"De wettelijke en officiële verbintenis tussen twee personen om samen te leven.",
+"t":{
+"en":"marriage, matrimony",
+"ru":"брак, супружество",
+"pl":"małżeństwo, ślub",
+"de":"Ehe, Heirat, Hochzeit",
+"fr":"mariage",
+"it":"matrimonio",
+"cs":"manželství, sňatek",
+"tr":"evlilik, nikah",
+"es":"matrimonio, boda"
+},
+"c":{
+"en":"legal union",
+"ru":"официальный союз",
+"pl":"związek dwojga ludzi",
+"de":"Lebenspartnerschaft",
+"fr":"union légale",
+"it":"unione legale",
+"cs":"oficiální svazek",
+"tr":"yasal birliktelik",
+"es":"unión legal"
+}
+},
+{
+"w":"echtpaar",
+"d":"Twee mensen die met elkaar getrouwd zijn.",
+"t":{
+"en":"married couple, couple",
+"ru":"супружеская пара, семейная пара, супруги",
+"pl":"małżeństwo, para małżeńska",
+"de":"Ehepaar, Eheleute",
+"fr":"couple marié, époux, couple",
+"it":"coppia sposata, coniugi, coppia di sposi",
+"cs":"manželský pár, manželé",
+"tr":"evli çift, karı koca, çift",
+"es":"matrimonio, pareja de casados"
+},
+"c":{
+"en":"partners joined in marriage",
+"ru":"муж и жена",
+"pl":"związek dwojga ludzi",
+"de":"zwei miteinander verheiratete Personen",
+"fr":"deux personnes unies par le mariage",
+"it":"due persone unite in matrimonio",
+"cs":"dva lidé spojení manželstvím",
+"tr":"evlilik bağıyla birleşmiş eşler",
+"es":"pareja de casados"
+}
+},
+{
+"w":"stel",
+"d":"Twee mensen die bij elkaar horen, meestal partners in een liefdesrelatie.",
+"t":{
+"en":"couple, pair",
+"ru":"пара, чета",
+"pl":"para, związek",
+"de":"Paar, Pärchen",
+"fr":"couple, paire",
+"it":"coppia",
+"cs":"pár, dvojice",
+"tr":"çift",
+"es":"pareja"
+},
+"c":{
+"en":"romantic partners",
+"ru":"двое людей в отношениях",
+"pl":"dwie osoby w związku",
+"de":"zwei Personen in einer Beziehung",
+"fr":"partenaires amoureux",
+"it":"due persone in una relazione",
+"cs":"dva lidé ve vztahu",
+"tr":"ilişkisi olan iki kişi",
+"es":"dos personas en una relación"
+}
+},
+{
+"w":"partner",
+"d":"Iemand met wie men een vaste romantische relatie heeft of getrouwd is",
+"t":{
+"en":"partner, significant other",
+"ru":"партнёр, спутник жизни",
+"pl":"partner, partnerka, druga połówka",
+"de":"Partner, Partnerin, Ehepartner",
+"fr":"partenaire, compagnon, compagne",
+"it":"partner, compagno",
+"cs":"partner, partnerka, životní partner",
+"tr":"partner, eş, hayat arkadaşı",
+"es":"pareja, compañero"
+},
+"c":{
+"en":"romantic relationship",
+"ru":"в отношениях",
+"pl":"w związku romantycznym",
+"de":"männlich, in einer Beziehung",
+"fr":"relation amoureuse",
+"it":"relazione romantica",
+"cs":"v romantickém vztahu",
+"tr":"romantik ilişkideki kişi",
+"es":"relación sentimental"
+}
+},
+{
+"w":"relatie",
+"d":"Een persoonlijke en vaak romantische verhouding tussen twee mensen.",
+"t":{
+"en":"relationship",
+"ru":"отношения, любовная связь",
+"pl":"związek, relacja",
+"de":"Beziehung, Verhältnis",
+"fr":"relation, relation amoureuse",
+"it":"relazione, storia",
+"cs":"vztah, partnerský vztah",
+"tr":"ilişki, birliktelik",
+"es":"relación, relación sentimental"
+},
+"c":{
+"en":"romantic or personal connection",
+"ru":"романтическая или личная связь",
+"pl":"relacja romantyczna lub partnerska",
+"de":"Partnerschaft zwischen zwei Menschen",
+"fr":"lien amoureux ou personnel",
+"it":"legame sentimentale o personale",
+"cs":"romantický nebo osobní poměr",
+"tr":"romantik veya kişisel bağ",
+"es":"vínculo amoroso o personal"
+}
+},
+{
+"w":"liefde",
+"d":"Een diep gevoel van genegenheid en verbondenheid met een ander persoon.",
+"t":{
+"en":"love, affection",
+"ru":"любовь, привязанность",
+"pl":"miłość, przywiązanie",
+"de":"Liebe, Zuneigung",
+"fr":"amour, affection",
+"it":"amore, affetto",
+"cs":"láska, náklonnost",
+"tr":"sevgi, aşk",
+"es":"amor, afecto, cariño"
+},
+"c":{
+"en":"deep affection",
+"ru":"глубокое чувство",
+"pl":"głębokie uczucie do drugiej osoby",
+"de":"tiefes Gefühl der Zuneigung",
+"fr":"sentiment profond d'affection",
+"it":"sentimento profondo",
+"cs":"hluboký cit k někomu",
+"tr":"derin bağlılık ve şefkat duygusu",
+"es":"sentimiento profundo de afecto"
+}
+},
+{
+"w":"roepnaam",
+"d":"De naam die iemand in het dagelijks leven gebruikt en waarmee diegene wordt aangesproken.",
+"t":{
+"en":"first name, given name, nickname",
+"ru":"обиходное имя, уменьшительное имя, имя",
+"pl":"imię używane, imię codzienne, zdrobnienie",
+"de":"Rufname, Vorname",
+"fr":"prénom usuel, nom d'usage, petit nom",
+"it":"nome di battesimo, nome comune, soprannome",
+"cs":"oslovovací jméno, křestní jméno, domácké jméno",
+"tr":"günlük hayatta kullanılan isim, çağrılma adı, takma ad",
+"es":"nombre de pila, nombre común, nombre habitual"
+},
+"c":{
+"en":"the name used in daily life",
+"ru":"имя, используемое в повседневном общении",
+"pl":"imię, którym posługujemy się na co dzień",
+"de":"der Name, unter dem man im Alltag bekannt ist und gerufen wird",
+"fr":"le prénom utilisé au quotidien par opposition aux prénoms officiels de l'état civil",
+"it":"il nome con cui si viene comunemente chiamati",
+"cs":"jméno používané v běžném životě k oslovování",
+"tr":"resmi adın dışında günlük yaşamda hitap edilmek için tercih edilen ad",
+"es":"el nombre que se usa habitualmente en el día a día"
+}
+},
+{
+"w":"verjaardag",
+"d":"De dag waarop iemand viert dat hij of zij geboren is.",
+"t":{
+"en":"birthday",
+"ru":"день рождения",
+"pl":"urodziny",
+"de":"Geburtstag, Wiegenfest",
+"fr":"anniversaire",
+"it":"compleanno",
+"cs":"narozeniny",
+"tr":"doğum günü",
+"es":"cumpleaños"
+},
+"c":{
+"en":"of a person",
+"ru":"человека",
+"pl":"rocznica urodzenia danej osoby",
+"de":"einer Person",
+"fr":"d'une personne",
+"it":"di una persona",
+"cs":"den narození člověka",
+"tr":"bir kişinin doğduğu gün",
+"es":"de una persona"
+}
+},
+{
+"w":"leeftijd",
+"d":"De tijd dat iemand leeft of geleefd heeft, het totaal aantal levensjaren.",
+"t":{
+"en":"age",
+"ru":"возраст",
+"pl":"wiek",
+"de":"Alter",
+"fr":"âge",
+"it":"età",
+"cs":"věk",
+"tr":"yaş",
+"es":"edad"
+},
+"c":{
+"en":"number of years lived",
+"ru":"количество прожитых лет",
+"pl":"liczba przeżytych lat",
+"de":"Anzahl der Lebensjahre",
+"fr":"nombre d'années vécues",
+"it":"numero di anni vissuti",
+"cs":"počet prožitých let",
+"tr":"yaşanan yıl sayısı",
+"es":"número de años vividos"
+}
+},
+{
+"w":"groeien",
+"d":"Fysiek groter worden van levende organismen zoals mensen, dieren of planten.",
+"t":{
+"en":"grow",
+"ru":"расти, вырастать",
+"pl":"rosnąć",
+"de":"wachsen, gedeihen",
+"fr":"grandir, pousser, croître",
+"it":"crescere, svilupparsi",
+"cs":"růst, vyrůst",
+"tr":"büyümek, yetişmek",
+"es":"crecer"
+},
+"c":{
+"en":"to become physically larger",
+"ru":"о физическом росте живых существ",
+"pl":"o organizmach żywych, zwiększać swoje rozmiary",
+"de":"allmählich größer werden (von Lebewesen)",
+"fr":"devenir plus grand physiquement",
+"it":"diventare più grande fisicamente",
+"cs":"o fyzickém růstu živých organismů",
+"tr":"canlıların fiziksel olarak gelişmesi ve irileşmesi",
+"es":"hacerse más grande físicamente"
+}
+},
+{
+"w":"oppassen",
+"d":"Tijdelijk voor kinderen, huisdieren of een huis zorgen als de ouders of eigenaars weg zijn.",
+"t":{
+"en":"babysit, look after, mind",
+"ru":"сидеть с детьми, присматривать",
+"pl":"opiekować się, pilnować, przyglądać",
+"de":"aufpassen, babysitten, hüten",
+"fr":"garder, faire du baby-sitting, veiller sur",
+"it":"fare da babysitter, badare a, sorvegliare",
+"cs":"hlídat, pohlídat",
+"tr":"bakıcılık yapmak, göz kulak olmak, bakmak",
+"es":"cuidar, hacer de canguro, vigilar"
+},
+"c":{
+"en":"to care for children",
+"ru":"выполнять обязанности няни",
+"pl":"zajmować się kimś lub czymś tymczasowo",
+"de":"Kinder oder Haustiere beaufsichtigen",
+"fr":"s'occuper d'enfants ou d'animaux",
+"it":"prendersi cura di bambini",
+"cs":"starat se o děti nebo dům v nepřítomnosti majitelů",
+"tr":"çocuklara geçici olarak bakmak",
+"es":"hacerse cargo de niños o mascotas temporalmente"
+}
+},
+{
+"w":"kennen",
+"d":"Bekend of vertrouwd zijn met een persoon, zaak of begrip door ervaring of ontmoeting",
+"t":{
+"en":"know, be acquainted with",
+"ru":"знать, быть знакомым",
+"pl":"znać, być zaznajomionym",
+"de":"kennen, bekannt sein mit",
+"fr":"connaître, connaitre",
+"it":"conoscere, essere a conoscenza di",
+"cs":"znát, znát se",
+"tr":"tanımak, bilmek",
+"es":"conocer"
+},
+"c":{
+"en":"to be familiar with people, places, or things",
+"ru":"иметь представление о ком-то или чем-то",
+"pl":"być z kimś lub czymś zaznajomionym",
+"de":"mit Personen, Orten oder Dingen vertraut sein",
+"fr":"être familier avec des personnes, des lieux ou des choses",
+"it":"avere familiarità con persone, luoghi o cose",
+"cs":"být obeznámen s někým nebo něčím",
+"tr":"bir kişiyi veya yeri bilmek, aşina olmak",
+"es":"estar familiarizado con personas, lugares o cosas"
+}
+},
+{
+"w":"ontmoeten",
+"d":"met iemand kennismaken of bij elkaar komen om tijd samen door te brengen",
+"t":{
+"en":"meet, meet up",
+"ru":"встречаться, знакомиться, встретиться",
+"pl":"spotykać się, poznawać, spotkać się",
+"de":"treffen, kennenlernen, begegnen",
+"fr":"rencontrer, se retrouver, se voir",
+"it":"incontrare, conoscere, incontrarsi",
+"cs":"potkat, seznámit se, sejít se",
+"tr":"buluşmak, tanışmak",
+"es":"conocer, reunirse, quedar"
+},
+"c":{
+"en":"to get acquainted with someone",
+"ru":"собираться вместе",
+"pl":"widzieć się z kimś w celu spędzenia czasu",
+"de":"sich mit jemandem verabreden oder zusammenkommen",
+"fr":"faire la connaissance de quelqu'un",
+"it":"trovarsi con qualcuno in un luogo stabilito",
+"cs":"seznámit se s někým nebo se s ním sejít",
+"tr":"birlikte vakit geçirmek için bir araya gelmek",
+"es":"a alguien por primera vez"
+}
+},
+{
+"w":"noemen",
+"d":"Iemand of iets een naam geven of met een naam aanduiden.",
+"t":{
+"en":"call, name",
+"ru":"называть, звать",
+"pl":"nazywać, zwać",
+"de":"nennen, rufen",
+"fr":"appeler, nommer",
+"it":"chiamare, nominare",
+"cs":"nazývat, jmenovat, říkat",
+"tr":"adlandırmak, çağırmak, isim koymak",
+"es":"llamar, denominar, nombrar"
+},
+"c":{
+"en":"to address or refer to by a name",
+"ru":"давать имя или обращаться",
+"pl":"nadawać imię lub określać mianem",
+"de":"jemandem einen Namen geben oder so ansprechen",
+"fr":"désigner quelqu'un ou quelque chose par son nom",
+"it":"rivolgersi a qualcuno o definire con un nome",
+"cs":"dávat jméno nebo označovat jménem",
+"tr":"bir isim vermek",
+"es":"referirse a alguien o algo por su nombre"
+}
+},
+{
+"w":"heten",
+"d":"De naam dragen; als naam hebben.",
+"t":{
+"en":"be called, be named",
+"ru":"зваться, называться",
+"pl":"nazywać się, mieć na imię",
+"de":"heißen",
+"fr":"s'appeler",
+"it":"chiamarsi",
+"cs":"jmenovat se",
+"tr":"adı olmak, denmek",
+"es":"llamarse"
+},
+"c":{
+"en":"to have a specific name",
+"ru":"иметь имя",
+"pl":"mieć na imię lub nazwisko",
+"de":"einen Namen tragen",
+"fr":"avoir pour nom",
+"it":"avere come nome",
+"cs":"mít jméno",
+"tr":"bir isme sahip olmak",
+"es":"tener un nombre que lo identifica"
+}
+},
+{
+"w":"aardig",
+"d":"Vriendelijk en prettig in de omgang met anderen.",
+"t":{
+"en":"nice, kind, pleasant",
+"ru":"милый, приятный, добрый",
+"pl":"miły, uprzejmy, sympatyczny",
+"de":"nett, freundlich, liebenswürdig",
+"fr":"gentil, aimable, sympathique",
+"it":"gentile, simpatico, buono",
+"cs":"hodný, mily, přátelský",
+"tr":"iyi, nazik, sempatik, hoş",
+"es":"amable, simpático, bueno"
+},
+"c":{
+"en":"general friendliness",
+"ru":"приятный, располагающий к себе",
+"pl":"sympatyczny i przyjemny w obejściu",
+"de":"allgemeine Freundlichkeit",
+"fr":"aimable et bienveillant",
+"it":"cortese e disponibile",
+"cs":"mající dobré povahové vlastnosti, laskavý",
+"tr":"genel olarak iyi kalpli ve cana yakın",
+"es":"afable y complaciente"
+}
+},
+{
+"w":"ruzie",
+"d":"Een toestand van boosheid en onenigheid; een conflict tussen personen.",
+"t":{
+"en":"argument, fight, quarrel, row",
+"ru":"ссора, конфликт, размолвка",
+"pl":"kłótnia, spór, sprzeczka",
+"de":"Streit, Auseinandersetzung, Zwist",
+"fr":"dispute, querelle, conflit",
+"it":"litigio, discussione, lite",
+"cs":"hádka, spor, rozepře",
+"tr":"kavga, tartışma, anlaşmazlık, bozuşma",
+"es":"pelea, discusión, riña"
+},
+"c":{
+"en":"verbal disagreement",
+"ru":"острое разногласие, перепалка",
+"pl":"głośna wymiana zdań, spór",
+"de":"heftige Uneinigkeit oder Konflikt zwischen Personen",
+"fr":"altercation verbale ou désaccord",
+"it":"disaccordo verbale o discussione animata",
+"cs":"slovní střet, spor",
+"tr":"sözlü veya fiziksel anlaşmazlık",
+"es":"disputa o conflicto verbal o físico"
+}
+},
+{
+"w":"homoseksueel",
+"d":"Seksueel aangetrokken tot personen van hetzelfde geslacht.",
+"t":{
+"en":"gay, homosexual",
+"ru":"гомосексуальный",
+"pl":"homoseksualny",
+"de":"homosexuell, schwul, lesbisch",
+"fr":"homosexuel, gay",
+"it":"omosessuale, gay",
+"cs":"homosexuální, teplý",
+"tr":"homoseksüel, gey, eşcinsel",
+"es":"homosexual, gay"
+},
+"c":{
+"en":"common term",
+"ru":"связанный с влечением к своему полу",
+"pl":"odnoszący się do pociągu do osób tej samej płci",
+"de":"allgemeiner Begriff",
+"fr":"terme général et formel",
+"it":"formale o clinico",
+"cs":"neutrální, spisovný výraz",
+"tr":"genel ve bilimsel terim",
+"es":"término formal o clínico"
+}
+},
+{
+"w":"gepensioneerd",
+"d":"niet meer werkzaam vanwege het bereiken van de pensioengerechtigde leeftijd",
+"t":{
+"en":"retired",
+"ru":"на пенсии, пенсионный, вышедший на пенсию",
+"pl":"emerytowany, na emeryturze",
+"de":"pensioniert, im Ruhestand, berentet",
+"fr":"retraité, en retraite",
+"it":"pensionato, in pensione",
+"cs":"v důchodu, penzionovaný",
+"tr":"emekli, emekliye ayrılmış",
+"es":"jubilado, pensionado"
+},
+"c":{
+"en":"having left employment after reaching pensionable age",
+"ru":"о статусе человека",
+"pl":"będący na emeryturze",
+"de":"für Beamte oder Angestellte im Ruhestand",
+"fr":"qui a pris sa retraite",
+"it":"riferito a persona che riceve la pensione",
+"cs":"stav člověka pobírajícího starobní důchod",
+"tr":"emeklilik yaşına gelip işinden ayrılmış olan",
+"es":"que ha dejado de trabajar por edad y recibe una pensión"
+}
+}
+]

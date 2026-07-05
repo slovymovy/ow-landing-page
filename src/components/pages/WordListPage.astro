@@ -4,18 +4,19 @@ import Header from '../Header.astro';
 import MobileDownloadBar from '../MobileDownloadBar.astro';
 import WordListSteps from '../WordListSteps.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { absoluteUrl, type LocaleCode } from '../../data/site';
+import { absoluteUrl, languages, type LanguageSlug, type LocaleCode } from '../../data/site';
 import { listData, listStepBlock } from '../../data/wordLists';
 
 interface Props {
   locale: LocaleCode;
+  language?: LanguageSlug;
   slug: string;
 }
 
-const { locale, slug } = Astro.props;
-const d = listData(locale, slug);
-const steps = listStepBlock(locale);
-const path = `/word-lists/english/${slug}`;
+const { locale, language = 'english', slug } = Astro.props;
+const d = listData(locale, language, slug);
+const steps = listStepBlock(locale, language);
+const path = `/word-lists/${languages[language].slug}/${slug}`;
 
 const structuredData = [
   {
@@ -37,7 +38,7 @@ const structuredData = [
   path={path}
   structuredData={structuredData}
 >
-  <Header locale={locale} section="lists" path={path} />
+  <Header locale={locale} activeLanguage={language} section="lists" path={path} />
 
   <main>
     <!-- HERO -->
@@ -301,6 +302,8 @@ const structuredData = [
   .wentry__def { font-size: .875rem; line-height: 1.5; color: #9499B0; margin-top: 3px; }
   /* referenced headword inside a definition, e.g. "Plural of person" */
   .wentry__def :global(.wref) { font-style: italic; color: #C5A367; }
+  /* sense clarification, shown only to disambiguate duplicate translations */
+  .wentry__def :global(.wclar) { color: #6b7089; }
 
   /* ── DIVIDER ── */
   .divider { height: 1px; background: linear-gradient(90deg, transparent, rgba(197,163,103,.14), transparent); }

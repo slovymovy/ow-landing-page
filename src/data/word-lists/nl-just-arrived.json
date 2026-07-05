@@ -1,0 +1,1146 @@
+[
+{
+"w":"uitgang",
+"d":"Een opening waardoor men een ruimte of gebouw kan verlaten.",
+"t":{
+"en":"exit, way out",
+"ru":"выход",
+"pl":"wyjście",
+"de":"Ausgang",
+"fr":"sortie",
+"it":"uscita",
+"cs":"východ",
+"tr":"çıkış, çıkış kapısı",
+"es":"salida"
+},
+"c":{
+"en":"A way out of a building or room",
+"ru":"Место, через которое выходят наружу",
+"pl":"droga lub otwór, którym się wychodzi z budynku lub pomieszczenia",
+"de":"Eine Tür oder ein Weg nach draußen",
+"fr":"L'endroit par lequel on sort d'un lieu",
+"it":"Via per uscire da un edificio o locale",
+"cs":"místo, kudy se vychází ven z budovy nebo prostoru",
+"tr":"Bir binadan veya alandan dışarı çıkılan yer",
+"es":"Lugar por donde se sale de un edificio o recinto"
+}
+},
+{
+"w":"duwen",
+"d":"Iets of iemand verplaatsen door ertegen te drukken.",
+"t":{
+"en":"push, shove",
+"ru":"толкать, двигать",
+"pl":"pchać, popchnąć",
+"de":"schieben, drücken, stoßen",
+"fr":"pousser",
+"it":"spingere",
+"cs":"tlačit, strkat, tlačit před sebou",
+"tr":"itmek",
+"es":"empujar"
+},
+"c":{
+"en":"to apply force to move something away",
+"ru":"перемещать силой от себя",
+"pl":"przesuwać coś przed sobą napierając z tyłu",
+"de":"etwas durch kontinuierlichen Druck vorwärtsbewegen",
+"fr":"exercer une force pour déplacer",
+"it":"muovere qualcosa esercitando una forza per allontanarlo",
+"cs":"vyvíjet tlak k posunutí něčeho",
+"tr":"bir şeyi güç uygulayarak kendinden uzaklaştırmak veya ilerletmek",
+"es":"aplicar fuerza para mover algo hacia adelante o lejos de uno"
+}
+},
+{
+"w":"trekken",
+"d":"Kracht uitoefenen op een voorwerp om het naar zich toe te halen of in beweging te krijgen.",
+"t":{
+"en":"pull, tug, haul",
+"ru":"тянуть, тащить, дёргать",
+"pl":"ciągnąć, szarpać, targać",
+"de":"ziehen, zerren, schleppen",
+"fr":"tirer",
+"it":"tirare, trascinare",
+"cs":"táhnout, tahat, zatáhnout",
+"tr":"çekmek, sürüklemek",
+"es":"tirar, jalar, arrastrar"
+},
+"c":{
+"en":"to apply force to move something towards oneself",
+"ru":"приближать к себе или перемещать с усилием",
+"pl":"przybliżać coś do siebie lub przemieszczać z użyciem siły",
+"de":"Kraft anwenden, um etwas zu sich her oder in Bewegung zu bringen",
+"fr":"exercer une traction pour déplacer vers soi",
+"it":"portare con forza verso di sé qualcosa",
+"cs":"působit silou k sobě nebo za sebou",
+"tr":"bir şeyi tutup kendine veya başka bir yöne doğru yürütmek",
+"es":"ejercer fuerza para atraer algo hacia sí"
+}
+},
+{
+"w":"pinnen",
+"d":"Betalen met een bankpas via een elektronisch betaalsysteem.",
+"t":{
+"en":"pay by card, pay by debit card",
+"ru":"платить картой, расплачиваться",
+"pl":"płacić kartą, płacić zbliżeniowo",
+"de":"mit Karte bezahlen, mit Karte zahlen, mit EC-Karte bezahlen",
+"fr":"payer par carte bancaire, payer par carte",
+"it":"pagare con la carta, pagare con il bancomat",
+"cs":"platit kartou, zaplatit kartou",
+"tr":"kartla ödemek, kart çekmek",
+"es":"pagar con tarjeta, pagar con tarjeta de débito"
+},
+"c":{
+"en":"general action",
+"ru":"совершать оплату безналичным способом",
+"pl":"ogólne określenie płatności bezgotówkowej",
+"de":"allgemeine Kartenzahlung",
+"fr":"méthode de paiement générale",
+"it":"azione generale di pagamento elettronico",
+"cs":"provádět bezhotovostní platbu",
+"tr":"genel kartlı ödeme işlemi",
+"es":"acción general de pago electrónico"
+}
+},
+{
+"w":"ingang",
+"d":"Een opening of deur waardoor men een gebouw of ruimte binnen kan gaan.",
+"t":{
+"en":"entrance, entry",
+"ru":"вход, подъезд",
+"pl":"wejście, wstęp",
+"de":"Eingang",
+"fr":"entrée, accès",
+"it":"entrata, ingresso",
+"cs":"vchod, vstup",
+"tr":"giriş, giriş kapısı",
+"es":"entrada, acceso"
+},
+"c":{
+"en":"place of entering",
+"ru":"место для входа",
+"pl":"miejsce, przez które się wchodzi",
+"de":"Öffnung zum Betreten",
+"fr":"lieu par lequel on pénètre",
+"it":"luogo attraverso il quale si entra",
+"cs":"místo pro vstup do budovy",
+"tr":"bir yere girilen yer",
+"es":"lugar por donde se accede"
+}
+},
+{
+"w":"spoor",
+"d":"De metalen rails waarover een trein, tram of metro rijdt, of het perronnummer waar de trein vertrekt.",
+"t":{
+"en":"track, platform",
+"ru":"путь, рельсы",
+"pl":"tor, tory",
+"de":"Gleis, Schiene",
+"fr":"voie, quai, rails",
+"it":"binario, rotaia",
+"cs":"kolej, kolejiště, nástupiště",
+"tr":"ray, peron, hat",
+"es":"vía, andén, vía de tren"
+},
+"c":{
+"en":"metal rails",
+"ru":"на вокзале",
+"pl":"kolejowy",
+"de":"Schienenweg oder Bahnsteigbereich",
+"fr":"chemin de fer",
+"it":"stazione o ferrovia",
+"cs":"železniční trať",
+"tr":"metal raylar",
+"es":"raíl de ferrocarril"
+}
+},
+{
+"w":"vertrek",
+"d":"De actie van het vertrekken of weggaan.",
+"t":{
+"en":"departure",
+"ru":"отъезд, отправление, уход",
+"pl":"odjazd, odlot, odejście, wyjazd",
+"de":"Abreise, Abfahrt, Abflug",
+"fr":"départ",
+"it":"partenza, allontanamento",
+"cs":"odjezd, odchod, odlet",
+"tr":"kalkış, ayrılış, hareket",
+"es":"salida, partida"
+},
+"c":{
+"en":"act of leaving",
+"ru":"отбытие человека куда-либо",
+"pl":"rozpoczęcie podróży pojazdem",
+"de":"von Personen",
+"fr":"action de s'en aller",
+"it":"l'atto di partire",
+"cs":"opuštění místa dopravním prostředkem",
+"tr":"taşıtlar için",
+"es":"acción de salir"
+}
+},
+{
+"w":"aankomst",
+"d":"Het moment waarop iemand of iets zijn bestemming bereikt.",
+"t":{
+"en":"arrival",
+"ru":"прибытие, приезд",
+"pl":"przyjazd, przybycie, przyjście",
+"de":"Ankunft",
+"fr":"arrivée",
+"it":"arrivo",
+"cs":"příjezd, přílet, příchod",
+"tr":"varış, geliş",
+"es":"llegada, arribo"
+},
+"c":{
+"en":"act of reaching a destination",
+"ru":"общий термин, транспорт",
+"pl":"o osobach lub pojazdach",
+"de":"das Eintreffen an einem bestimmten Ziel",
+"fr":"action ou moment d'arriver",
+"it":"atto di giungere a destinazione",
+"cs":"o lidech nebo dopravních prostředcích",
+"tr":"ulaşma eylemi veya anı",
+"es":"acto de alcanzar un destino"
+}
+},
+{
+"w":"overstappen",
+"d":"Met een ander vervoermiddel de reis vervolgen.",
+"t":{
+"en":"transfer, change",
+"ru":"пересаживаться, делать пересадку",
+"pl":"przesiadać się, robić przesiadkę",
+"de":"umsteigen",
+"fr":"changer, faire une correspondance",
+"it":"cambiare, fare scalo, trasferirsi",
+"cs":"přestoupit, přestupovat",
+"tr":"aktarma yapmak, vasıta değiştirmek, geçiş yapmak",
+"es":"hacer transbordo, transbordar, cambiar"
+},
+"c":{
+"en":"transport",
+"ru":"транспорт",
+"pl":"transport",
+"de":"Verkehrsmittel wechseln",
+"fr":"train, bus, métro",
+"it":"treno, autobus, ecc.",
+"cs":"v dopravě",
+"tr":"ulaşım",
+"es":"transporte público"
+}
+},
+{
+"w":"inchecken",
+"d":"Een elektronische kaart of mobiel apparaat tegen een lezer houden om een reis in het openbaar vervoer te registreren.",
+"t":{
+"en":"check in, tap in, touch in",
+"ru":"прикладывать карту, регистрировать проезд, валидировать",
+"pl":"odbić kartę, skasować bilet",
+"de":"einchecken, anmelden",
+"fr":"valider, passer sa carte, s'enregistrer",
+"it":"convalidare, timbrare, passare",
+"cs":"označit si jízdenku, pípnout si, zaregistrovat se",
+"tr":"kart basmak, kart okutmak",
+"es":"validar, fichar, pasar la tarjeta"
+},
+"c":{
+"en":"using a smartcard or device on public transport",
+"ru":"к валидатору в общественном транспорте",
+"pl":"przy wejściu do pojazdu komunikacji miejskiej",
+"de":"mit einer Chipkarte im öffentlichen Nahverkehr",
+"fr":"son titre de transport ou sa carte",
+"it":"il biglietto o la tessera sui mezzi pubblici",
+"cs":"přiložením karty ve veřejné dopravě",
+"tr":"toplu taşımada kartı okutmak",
+"es":"el billete o tarjeta al subir al transporte público"
+}
+},
+{
+"w":"uitchecken",
+"d":"Bepaalde handelingen verrichten bij het verlaten van een hotel, informatiesysteem of transportmiddel.",
+"t":{
+"en":"to check out, to log out",
+"ru":"выписаться, зарегистрировать выход, выйти, чекнуться на выходе",
+"pl":"wymeldować się, odbić kartę przy wyjściu, wylogować się",
+"de":"auschecken, sich abmelden",
+"fr":"faire le check-out, valider sa sortie, se déconnecter",
+"it":"fare il check-out, convalidare l'uscita, disconnettersi",
+"cs":"odhlásit se, pípnout si při výstupu, provést check-out",
+"tr":"çıkış yapmak, kart basmak, oturum kapatmak",
+"es":"hacer el check-out, marcar la salida, cerrar sesión, validar la salida"
+},
+"c":{
+"en":"from a hotel, public transport, or system",
+"ru":"из отеля",
+"pl":"z hotelu",
+"de":"aus einem Hotel oder bei öffentlichen Verkehrsmitteln",
+"fr":"pour un hôtel",
+"it":"da un hotel",
+"cs":"z hotelu nebo systému",
+"tr":"otel veya sistemden",
+"es":"en un hotel"
+}
+},
+{
+"w":"open",
+"d":"Niet gesloten; zo dat er doorgang mogelijk is of de inhoud bereikbaar is.",
+"t":{
+"en":"open, unlocked",
+"ru":"открытый, раскрытый",
+"pl":"otwarty",
+"de":"offen, auf",
+"fr":"ouvert",
+"it":"aperto",
+"cs":"otevřený",
+"tr":"açık",
+"es":"abierto"
+},
+"c":{
+"en":"not closed",
+"ru":"не запертый",
+"pl":"np. drzwi, okno",
+"de":"nicht geschlossen",
+"fr":"non fermé",
+"it":"non chiuso",
+"cs":"neuzavřený",
+"tr":"kapalı olmayan",
+"es":"no cerrado"
+}
+},
+{
+"w":"gesloten",
+"d":"Niet open; in een toestand waarbij toegang of doorgang onmogelijk is.",
+"t":{
+"en":"closed, shut",
+"ru":"закрытый, запертый",
+"pl":"zamknięty",
+"de":"geschlossen, zu",
+"fr":"fermé, clos",
+"it":"chiuso, serrato",
+"cs":"zavřený, uzavřený",
+"tr":"kapalı, kilitli",
+"es":"cerrado"
+},
+"c":{
+"en":"general state of not being open",
+"ru":"преграждающий доступ или вход",
+"pl":"ogólny stan braku otwarcia, np. drzwi, sklep",
+"de":"allgemeiner Zustand des Nicht-Geöffnet-Seins",
+"fr":"état général de ce qui n'est pas ouvert",
+"it":"stato generale di non apertura",
+"cs":"obecný stav, kdy není otevřeno",
+"tr":"açık olmama durumu, genel kullanım",
+"es":"estado general de no estar abierto"
+}
+},
+{
+"w":"verboden",
+"d":"Niet toegestaan door de wet of een autoriteit.",
+"t":{
+"en":"forbidden, prohibited, banned",
+"ru":"запрещенный, запрещено, воспрещенный",
+"pl":"zabroniony, zakazany, wzbroniony",
+"de":"verboten, untersagt, unzulässig",
+"fr":"interdit, défendu, prohibé",
+"it":"vietato, proibito",
+"cs":"zakázaný, zakázáno",
+"tr":"yasak, yasaklanmış",
+"es":"prohibido, vedado"
+},
+"c":{
+"en":"not allowed",
+"ru":"недопустимый по закону",
+"pl":"niedozwolony, zakazany",
+"de":"nicht erlaubt",
+"fr":"non autorisé",
+"it":"non permesso, proibito",
+"cs":"nepovolený zákonem nebo pravidly",
+"tr":"yapılmasına izin verilmeyen",
+"es":"no permitido por ley o norma"
+}
+},
+{
+"w":"toegang",
+"d":"Een plaats waarlangs men een ruimte of gebied kan binnengaan.",
+"t":{
+"en":"entrance, access, entry",
+"ru":"вход, проход",
+"pl":"wejście, wjazd, dostęp",
+"de":"Zugang, Eingang",
+"fr":"entrée, accès",
+"it":"ingresso, entrata, accesso",
+"cs":"vchod, vstup, přístup",
+"tr":"giriş, geçit",
+"es":"entrada, acceso"
+},
+"c":{
+"en":"physical point of entry",
+"ru":"место входа",
+"pl":"fizyczne miejsce wejścia",
+"de":"Weg oder Gang, der das Betreten ermöglicht",
+"fr":"point physique de pénétration",
+"it":"punto fisico di entrata",
+"cs":"fyzické místo vstupu",
+"tr":"fiziksel giriş yeri",
+"es":"punto físico de entrada"
+}
+},
+{
+"w":"vrij",
+"d":"niet bezet door iemand of iets anders; beschikbaar voor gebruik",
+"t":{
+"en":"free, available, vacant",
+"ru":"свободный",
+"pl":"wolny, pusty",
+"de":"frei, unbesetzt, verfügbar",
+"fr":"libre, vacant, disponible",
+"it":"libero, disponibile, vacante",
+"cs":"volný, neobsazený",
+"tr":"boş, müsait",
+"es":"libre, disponible, vacante"
+},
+"c":{
+"en":"not taken (seat, space)",
+"ru":"не занятый (место, стул)",
+"pl":"niezajęty (np. miejsce, krzesło)",
+"de":"nicht besetzt (z.B. ein Sitzplatz oder Parkplatz)",
+"fr":"non occupé (place, siège)",
+"it":"non occupato (posto, sedia)",
+"cs":"neobsazený (místo, sedadlo)",
+"tr":"koltuk, yer veya alan için",
+"es":"no ocupado (asiento, lugar)"
+}
+},
+{
+"w":"bezet",
+"d":"Niet beschikbaar omdat het door iemand anders of iets anders in gebruik is.",
+"t":{
+"en":"occupied, taken, busy",
+"ru":"занятый, занято",
+"pl":"zajęty",
+"de":"besetzt, belegt",
+"fr":"occupé, pris",
+"it":"occupato, preso",
+"cs":"obsazený, obsazeno",
+"tr":"dolu, meşgul",
+"es":"ocupado"
+},
+"c":{
+"en":"general use, toilets, or spaces",
+"ru":"о месте, времени или телефонной линии",
+"pl":"o miejscu, krześle, linii telefonicznej lub toalecie",
+"de":"allgemein für Plätze, Toiletten oder Telefonleitungen",
+"fr":"pour les toilettes, les lignes téléphoniques ou les espaces",
+"it":"per posti, bagni o linee telefoniche",
+"cs":"o místě, sedadle nebo toaletě",
+"tr":"koltuk, yer veya tuvalet için",
+"es":"para asientos, lugares, baños o líneas telefónicas"
+}
+},
+{
+"w":"kassa",
+"d":"Een plaats in een winkel waar men zijn aankopen betaalt",
+"t":{
+"en":"checkout, cash desk, counter",
+"ru":"касса",
+"pl":"kasa",
+"de":"Kasse",
+"fr":"caisse",
+"it":"cassa",
+"cs":"pokladna, kasa",
+"tr":"kasa",
+"es":"caja"
+},
+"c":{
+"en":"place to pay in a supermarket or store",
+"ru":"место оплаты в магазине",
+"pl":"miejsce płatności w sklepie",
+"de":"Ort zum Bezahlen im Geschäft",
+"fr":"comptoir de paiement dans un magasin",
+"it":"punto di pagamento in un negozio o supermercato",
+"cs":"místo k placení v obchodě",
+"tr":"mağazalarda ödeme yapılan yer",
+"es":"lugar donde se paga en una tienda o supermercado"
+}
+},
+{
+"w":"korting",
+"d":"Een verlaging van de prijs van een product of dienst.",
+"t":{
+"en":"discount, rebate",
+"ru":"скидка",
+"pl":"zniżka, rabat, upust",
+"de":"Rabatt, Ermäßigung, Preisnachlass",
+"fr":"réduction, rabais, remise",
+"it":"sconto, riduzione",
+"cs":"sleva, redukce",
+"tr":"indirim, iskonto",
+"es":"descuento, rebaja"
+},
+"c":{
+"en":"A reduction in price",
+"ru":"уменьшение стоимости товара",
+"pl":"obniżenie ceny",
+"de":"Preisnachlass beim Kauf von Waren",
+"fr":"diminution générale d'un prix",
+"it":"riduzione di prezzo",
+"cs":"snížení ceny zboží nebo služby",
+"tr":"Fiyatta yapılan düşüş",
+"es":"rebaja en el precio de un producto"
+}
+},
+{
+"w":"bon",
+"d":"Een stukje papier dat je krijgt na betaling als bewijs van aankoop.",
+"t":{
+"en":"receipt",
+"ru":"чек, кассовый чек",
+"pl":"paragon, kwit",
+"de":"Kassenbon, Quittung, Beleg",
+"fr":"ticket de caisse, reçu",
+"it":"scontrino, ricevuta",
+"cs":"účtenka, paragon, pokladní stvrzenka",
+"tr":"fiş, fatura",
+"es":"ticket, recibo"
+},
+"c":{
+"en":"proof of purchase",
+"ru":"кассовый",
+"pl":"dowód zakupu",
+"de":"Kaufbeleg",
+"fr":"preuve d'achat",
+"it":"fiscale, prova d'acquisto",
+"cs":"doklad o zaplacení",
+"tr":"alışveriş kanıtı",
+"es":"comprobante de compra"
+}
+},
+{
+"w":"tas",
+"d":"Een voorwerp van flexibel materiaal, zoals leer, stof of plastic, dat gebruikt wordt om spullen in mee te nemen.",
+"t":{
+"en":"bag, handbag",
+"ru":"сумка",
+"pl":"torba, torebka",
+"de":"Tasche, Handtasche",
+"fr":"sac, sac à main",
+"it":"borsa, borsetta",
+"cs":"taška, kabelka",
+"tr":"çanta",
+"es":"bolsa, bolso, cartera"
+},
+"c":{
+"en":"general container for carrying things",
+"ru":"для переноски вещей",
+"pl":"ogólne określenie na pojemnik do noszenia rzeczy",
+"de":"allgemeines Behältnis zum Tragen von Gegenständen",
+"fr":"contenant général pour transporter des objets",
+"it":"contenitore generico per trasportare oggetti",
+"cs":"obecný předmět na nošení věcí",
+"tr":"genel olarak eşya taşımak için kullanılan kap",
+"es":"recipiente flexible en general"
+}
+},
+{
+"w":"alstublieft",
+"d":"Een beleefde toevoeging die wordt gebruikt om een verzoek of vraag vriendelijker te maken.",
+"t":{
+"en":"please",
+"ru":"пожалуйста, будьте добры",
+"pl":"proszę",
+"de":"bitte",
+"fr":"s'il vous plaît, s'il vous plait",
+"it":"per favore, per cortesia, prego",
+"cs":"prosím, buďte tak laskav",
+"tr":"lütfen",
+"es":"por favor"
+},
+"c":{
+"en":"polite request",
+"ru":"при просьбе",
+"pl":"grzeczna prośba",
+"de":"höfliche Bitte",
+"fr":"formule de politesse formelle",
+"it":"richiesta cortese generica",
+"cs":"při zdvořilé žádosti",
+"tr":"kibarca rica ederken",
+"es":"petición cortés"
+}
+},
+{
+"w":"bedankt",
+"d":"Een uitroep om dankbaarheid of waardering te tonen.",
+"t":{
+"en":"thanks, thank you",
+"ru":"спасибо, благодарю",
+"pl":"dziękuję, dzięki, dziękujemy",
+"de":"danke, vielen Dank",
+"fr":"merci",
+"it":"grazie, ti ringrazio, la ringrazio",
+"cs":"děkuji, díky",
+"tr":"teşekkürler, teşekkür ederim, sağ ol",
+"es":"gracias, muchas gracias"
+},
+"c":{
+"en":"informal, general use",
+"ru":"общеупотребительное",
+"pl":"standardowy zwrot grzecznościowy",
+"de":"allgemeiner Dank",
+"fr":"général et courant",
+"it":"uso generale, informale o formale",
+"cs":"standardní, zdvořilé poděkování",
+"tr":"genel ve yaygın kullanım",
+"es":"uso general y común"
+}
+},
+{
+"w":"voorgerecht",
+"d":"De eerste, meestal lichte gang van een maaltijd.",
+"t":{
+"en":"starter, appetizer, first course, entrée",
+"ru":"закуска, первое блюдо, аперитив",
+"pl":"przystawka, zakąska, pierwsze danie",
+"de":"Vorspeise, Appetithappen, Entrée",
+"fr":"entrée, hors-d'œuvre",
+"it":"antipasto, primo piatto, entrata",
+"cs":"předkrm, první chod",
+"tr":"başlangıç, ara sıcak, meze, ordövr",
+"es":"entrada, entrante, primer plato, aperitivo"
+},
+"c":{
+"en":"the first course of a meal",
+"ru":"легкое блюдо перед основным",
+"pl":"lekkie danie podawane przed daniem głównym",
+"de":"erster Gang einer Mahlzeit",
+"fr":"plat servi au début du repas",
+"it":"la portata servita all'inizio del pasto, prima dei primi piatti",
+"cs":"lehké jídlo podávané před hlavním chodem",
+"tr":"yemeğin ilk servisi",
+"es":"plato que se sirve al comienzo de la comida"
+}
+},
+{
+"w":"hoofdgerecht",
+"d":"De belangrijkste en vaak ook zwaarste gang van een maaltijd.",
+"t":{
+"en":"main course, main dish",
+"ru":"основное блюдо, горячее блюдо, второе блюдо",
+"pl":"danie główne, drugie danie",
+"de":"Hauptgericht, Hauptgang",
+"fr":"plat principal, plat de résistance",
+"it":"piatto principale, secondo piatto, portata principale",
+"cs":"hlavní chod, hlavní jídlo",
+"tr":"ana yemek",
+"es":"plato principal, plato fuerte, plato de fondo"
+},
+"c":{
+"en":"the primary course of a meal",
+"ru":"главное блюдо обеда или ужина",
+"pl":"główny posiłek",
+"de":"reichhaltigster Teil einer Mahlzeit",
+"fr":"le plat le plus important d'un repas",
+"it":"la portata più importante di un pasto",
+"cs":"hlavní část jídla",
+"tr":"bir öğünün en önemli ve doyurucu tabağı",
+"es":"el plato más importante de una comida"
+}
+},
+{
+"w":"nagerecht",
+"d":"Het gerecht waarmee een maaltijd wordt afgesloten.",
+"t":{
+"en":"dessert, pudding",
+"ru":"десерт, сладкое",
+"pl":"deser",
+"de":"Nachtisch, Dessert, Nachspeise",
+"fr":"dessert",
+"it":"dessert, dolce",
+"cs":"dezert, zákusek, moučník",
+"tr":"tatlı, tatlı tabağı",
+"es":"postre"
+},
+"c":{
+"en":"sweet dish at the end of a meal",
+"ru":"сладкое блюдо в конце трапезы",
+"pl":"słodkie danie na koniec posiłku",
+"de":"letzter Gang einer Mahlzeit",
+"fr":"plat sucré servi à la fin d'un repas",
+"it":"l'ultimo piatto dolce di un pasto",
+"cs":"sladký chod na konci jídla",
+"tr":"yemekten sonra yenen tatlı yiyecek",
+"es":"plato dulce al final de la comida"
+}
+},
+{
+"w":"borrel",
+"d":"Een gezellige, informele bijeenkomst waar drankjes en hapjes worden genuttigd.",
+"t":{
+"en":"drinks, get-together, meetup",
+"ru":"вечеринка, посиделки, фуршет",
+"pl":"spotkanie przy drinku, drinki, przyjęcie, posiadówka",
+"de":"Umtrunk, Feierabendbier, Get-together, Aperitif",
+"fr":"apéro, apéritif, pot",
+"it":"aperitivo, rinfresco, ritrovo",
+"cs":"posezení, večírek, párty",
+"tr":"kokteyl, içki daveti, sosyal buluşma",
+"es":"reunión informal, copas, pica-pica"
+},
+"c":{
+"en":"social gathering",
+"ru":"общее название",
+"pl":"nieformalne spotkanie towarzyskie",
+"de":"geselliges Beisammensein mit Getränken",
+"fr":"moment convivial autour d'un verre",
+"it":"incontro informale con drink e stuzzichini",
+"cs":"přátelské setkání u pití",
+"tr":"sosyal davet",
+"es":"encuentro social"
+}
+},
+{
+"w":"rekening",
+"d":"Een schriftelijk overzicht van de kosten die betaald moeten worden voor geleverde goederen of diensten.",
+"t":{
+"en":"bill, check, invoice",
+"ru":"счёт",
+"pl":"rachunek, faktura",
+"de":"Rechnung, Quittung",
+"fr":"addition, facture, note",
+"it":"conto, fattura, ricevuta",
+"cs":"účtenka, účet, faktura",
+"tr":"hesap, fatura",
+"es":"cuenta, factura"
+},
+"c":{
+"en":"request for payment",
+"ru":"документ на оплату",
+"pl":"dokument do zapłaty, np. w restauracji",
+"de":"schriftliche Kostenforderung",
+"fr":"dans un restaurant",
+"it":"al ristorante o bar",
+"cs":"doklad o zaplacení, lístek z pokladny",
+"tr":"restoranda veya kafede ödenen miktar",
+"es":"en un restaurante o comercio"
+}
+},
+{
+"w":"afrekenen",
+"d":"Betalen voor goederen of diensten, bijvoorbeeld in een winkel of restaurant.",
+"t":{
+"en":"pay, settle the bill, check out",
+"ru":"рассчитаться, расплатиться",
+"pl":"płacić, płacić rachunek, rozliczać się",
+"de":"bezahlen, zahlen, abrechnen",
+"fr":"régler, payer, passer à la caisse",
+"it":"pagare, saldare il conto, saldare",
+"cs":"zaplatit, vyrovnat účet, platit",
+"tr":"hesap ödemek, ödemek, hesap kesmek",
+"es":"pagar, pedir la cuenta, cobrar"
+},
+"c":{
+"en":"to give money for goods or services",
+"ru":"оплатить счет",
+"pl":"dawać pieniądze za towary lub usługi",
+"de":"Geld für eine Ware oder Dienstleistung geben",
+"fr":"payer une facture ou un achat",
+"it":"dare denaro per beni o servizi",
+"cs":"dát peníze za zboží či služby",
+"tr":"restoran veya kafede hesabı kapatmak",
+"es":"dar dinero por bienes o servicios"
+}
+},
+{
+"w":"betalen",
+"d":"geld geven in ruil voor goederen of diensten",
+"t":{
+"en":"pay, settle",
+"ru":"платить, оплачивать, рассчитываться",
+"pl":"płacić, zapłacić, uregulować",
+"de":"bezahlen, zahlen",
+"fr":"payer, régler",
+"it":"pagare, saldare",
+"cs":"platit, zaplatit",
+"tr":"ödemek, hesap ödemek",
+"es":"pagar, abonar"
+},
+"c":{
+"en":"to give money for goods or services",
+"ru":"отдавать деньги за что-либо",
+"pl":"dawać pieniądze za towary lub usługi",
+"de":"Geld für eine Ware, Dienstleistung oder Rechnung geben",
+"fr":"donner de l'argent pour un bien ou un service",
+"it":"dare denaro per beni o servizi",
+"cs":"vydávat peníze za věc nebo službu (nedokonavé)",
+"tr":"bir mal veya hizmetin karşılığını para ile vermek",
+"es":"dar dinero por bienes o servicios"
+}
+},
+{
+"w":"terras",
+"d":"Een gedeelte buiten bij een café of restaurant waar gasten aan tafels kunnen zitten",
+"t":{
+"en":"terrace, patio",
+"ru":"летняя веранда, терраса",
+"pl":"ogródek, ogródek letni, taras",
+"de":"Terrasse, Außenterrasse",
+"fr":"terrasse",
+"it":"dehor, terrazza, tavolini all'aperto",
+"cs":"zahrádka, terasa",
+"tr":"teras, açık alan",
+"es":"terraza"
+},
+"c":{
+"en":"outdoor seating area",
+"ru":"при кафе или ресторане",
+"pl":"gastronomiczny, przy kawiarni lub restauracji",
+"de":"Außenbereich eines Gastronomiebetriebs",
+"fr":"d'un café ou d'un restaurant",
+"it":"area esterna di un bar o ristorante",
+"cs":"venkovní posezení u restaurace či kavárny",
+"tr":"kafe veya restoranın dış oturma alanı",
+"es":"de un bar o restaurante"
+}
+},
+{
+"w":"menu",
+"d":"Een lijst met beschikbare gerechten en dranken waaruit men in een restaurant kan kiezen.",
+"t":{
+"en":"menu",
+"ru":"меню, карта блюд",
+"pl":"menu, karta dań",
+"de":"Speisekarte, Menükarte, Karte",
+"fr":"menu, carte",
+"it":"menu, carta",
+"cs":"jídelní lístek, menu",
+"tr":"menü, yemek listesi",
+"es":"menú, carta"
+},
+"c":{
+"en":"list of food options",
+"ru":"список блюд",
+"pl":"karta dań w restauracji",
+"de":"Liste der Gerichte im Restaurant",
+"fr":"liste des plats proposés",
+"it":"lista dei piatti al ristorante",
+"cs":"seznam jídel v restauraci",
+"tr":"yemek listesi",
+"es":"lista de platos y bebidas"
+}
+},
+{
+"w":"fiets",
+"d":"Tweewielig vervoermiddel dat door middel van spierkracht via pedalen wordt voortbewogen",
+"t":{
+"en":"bicycle, bike",
+"ru":"велосипед",
+"pl":"rower",
+"de":"Fahrrad, Rad, Velo",
+"fr":"vélo, bicyclette",
+"it":"bicicletta, bici",
+"cs":"kolo, jízdní kolo",
+"tr":"bisiklet",
+"es":"bicicleta, bici"
+},
+"c":{
+"en":"standard term",
+"ru":"транспортное средство",
+"pl":"standardowe określenie",
+"de":"Standardbegriff",
+"fr":"terme courant",
+"it":"termine standard",
+"cs":"běžné označení",
+"tr":"standart terim",
+"es":"término estándar"
+}
+},
+{
+"w":"fietspad",
+"d":"Een deel van de weg of een apart pad dat speciaal is bedoeld voor fietsers.",
+"t":{
+"en":"bike path, cycle path, cycle track",
+"ru":"велосипедная дорожка, велодорожка",
+"pl":"ścieżka rowerowa, droga rowerowa",
+"de":"Radweg, Fahrradweg",
+"fr":"piste cyclable, bande cyclable",
+"it":"pista ciclabile, pista per biciclette",
+"cs":"cyklostezka, stezka pro cyklisty",
+"tr":"bisiklet yolu, bisiklet şeridi",
+"es":"carril bici, ciclovía, pista de bicicletas"
+},
+"c":{
+"en":"general term",
+"ru":"специально выделенная полоса",
+"pl":"wydzielona trasa dla rowerów",
+"de":"allgemeiner Begriff für einen Weg für Radfahrer",
+"fr":"voie réservée aux cyclistes",
+"it":"percorso riservato alle biciclette",
+"cs":"běžné označení",
+"tr":"bisikletliler için ayrılmış özel yol",
+"es":"común en España"
+}
+},
+{
+"w":"gracht",
+"d":"Een door mensen gegraven waterweg die door een stad loopt, meestal met straten en huizen aan de zijkanten.",
+"t":{
+"en":"canal",
+"ru":"канал",
+"pl":"kanał",
+"de":"Gracht, Kanal",
+"fr":"canal",
+"it":"canale",
+"cs":"kanál, gracht",
+"tr":"kanal",
+"es":"canal"
+},
+"c":{
+"en":"artificial waterway in a city",
+"ru":"водный путь в городе",
+"pl":"miejski kanał wodny, np. w Amsterdamie",
+"de":"Kanal in einer Stadt, besonders in den Niederlanden",
+"fr":"voie navigable urbaine",
+"it":"via d'acqua artificiale in una città",
+"cs":"městský vodní kanál, např. v Amsterdamu",
+"tr":"şehir içindeki yapay su yolu",
+"es":"vía fluvial artificial en una ciudad"
+}
+},
+{
+"w":"brug",
+"d":"Een bouwwerk dat een weg, spoor of pad over een obstakel zoals water of een dal leidt.",
+"t":{
+"en":"bridge",
+"ru":"мост",
+"pl":"most",
+"de":"Brücke",
+"fr":"pont",
+"it":"ponte",
+"cs":"most",
+"tr":"köprü",
+"es":"puente"
+},
+"c":{
+"en":"structure",
+"ru":"сооружение",
+"pl":"budowla nad przeszkodą",
+"de":"Bauwerk",
+"fr":"ouvrage d'art",
+"it":"costruzione sopra un ostacolo",
+"cs":"stavba překonávající překážku",
+"tr":"yapı",
+"es":"construcción sobre un obstáculo"
+}
+},
+{
+"w":"tram",
+"d":"Een voertuig op rails dat meestal in steden wordt gebruikt voor het vervoer van personen.",
+"t":{
+"en":"tram, streetcar, trolley",
+"ru":"трамвай",
+"pl":"tramwaj",
+"de":"Straßenbahn, Tram",
+"fr":"tramway, tram",
+"it":"tram, tranvai",
+"cs":"tramvaj, šalina",
+"tr":"tramvay",
+"es":"tranvía"
+},
+"c":{
+"en":"British/General English",
+"ru":"городской рельсовый транспорт",
+"pl":"miejski pojazd szynowy",
+"de":"Standarddeutsch",
+"fr":"terme standard et formel",
+"it":"mezzo di trasporto pubblico urbano su rotaia",
+"cs":"městský hromadný dopravní prostředek",
+"tr":"şehir içi raylı toplu taşıma aracı",
+"es":"medio de transporte urbano sobre rieles"
+}
+},
+{
+"w":"trein",
+"d":"Een reeks spoorwagons die door een locomotief wordt voortbewogen en over rails rijdt om mensen of goederen te vervoeren.",
+"t":{
+"en":"train",
+"ru":"поезд, состав",
+"pl":"pociąg",
+"de":"Zug, Eisenbahn",
+"fr":"train",
+"it":"treno, convoglio",
+"cs":"vlak",
+"tr":"tren",
+"es":"tren"
+},
+"c":{
+"en":"railway vehicle",
+"ru":"железнодорожный состав",
+"pl":"pojazd szynowy",
+"de":"Schienenfahrzeug",
+"fr":"véhicule ferroviaire",
+"it":"veicolo ferroviario",
+"cs":"kolejové vozidlo",
+"tr":"demiryolu taşıtı",
+"es":"medio de transporte sobre rieles"
+}
+},
+{
+"w":"stoplicht",
+"d":"een installatie die middels gekleurde lichten het verkeer op een kruispunt regelt",
+"t":{
+"en":"traffic light, stoplight",
+"ru":"светофор",
+"pl":"sygnalizacja świetlna, światła, sygnalizator",
+"de":"Ampel, Verkehrsampel, Lichtzeichenanlage",
+"fr":"feu de signalisation, feu tricolore, feu",
+"it":"semaforo",
+"cs":"semafor, světelná signalizace",
+"tr":"trafik lambası, trafik ışığı",
+"es":"semáforo, luz de tráfico"
+},
+"c":{
+"en":"a signaling device at a road intersection",
+"ru":"сигнальное устройство на дорогах для регулирования движения",
+"pl":"całe urządzenie regulujące ruch",
+"de":"Verkehrsampel zur Regelung des Straßenverkehrs",
+"fr":"dispositif lumineux réglant la circulation",
+"it":"dispositivo luminoso per regolare il traffico stradale",
+"cs":"světelné signalizační zařízení na křižovatce",
+"tr":"kavşaklardaki trafik sinyalizasyon cihazı",
+"es":"dispositivo eléctrico de señalización luminosa para regular el tráfico"
+}
+},
+{
+"w":"zebra",
+"d":"Een oversteekplaats voor voetgangers die gemarkeerd is met brede witte strepen op het wegdek.",
+"t":{
+"en":"zebra crossing, crosswalk",
+"ru":"зебра, пешеходный переход",
+"pl":"zebra, przejście dla pieszych",
+"de":"Zebrastreifen, Zebra",
+"fr":"passage piéton, passage clouté",
+"it":"strisce pedonali, strisce",
+"cs":"přechod pro chodce, zebra",
+"tr":"yaya geçidi, zebra geçidi",
+"es":"paso de cebra, paso de peatones"
+},
+"c":{
+"en":"road marking",
+"ru":"пешеходный переход",
+"pl":"potocznie o przejściu dla pieszych",
+"de":"Fußgängerüberweg",
+"fr":"passage clouté",
+"it":"attraversamento stradale",
+"cs":"oficiální označení",
+"tr":"yol işareti",
+"es":"cruce peatonal"
+}
+},
+{
+"w":"station",
+"d":"Plaats waar treinen of bussen stoppen zodat reizigers kunnen in- en uitstappen.",
+"t":{
+"en":"station, stop",
+"ru":"станция, вокзал",
+"pl":"stacja, dworzec",
+"de":"Bahnhof, Station, Bahnstation",
+"fr":"gare, station",
+"it":"stazione",
+"cs":"nádraží, stanice",
+"tr":"istasyon, gar",
+"es":"estación, parada"
+},
+"c":{
+"en":"transport hub",
+"ru":"остановка транспорта",
+"pl":"kolejowa lub autobusowa",
+"de":"für Züge",
+"fr":"pour les trains",
+"it":"snodo di trasporto per treni o autobus",
+"cs":"vlakové nebo autobusové nádraží",
+"tr":"tren veya metro durağı",
+"es":"de tren o autobús"
+}
+},
+{
+"w":"winkel",
+"d":"Een gebouw of ruimte waar goederen worden verkocht aan klanten.",
+"t":{
+"en":"shop, store",
+"ru":"магазин, лавка",
+"pl":"sklep",
+"de":"Geschäft, Laden",
+"fr":"magasin, boutique",
+"it":"negozio, bottega",
+"cs":"obchod, prodejna, krám",
+"tr":"dükkan, mağaza",
+"es":"tienda, comercio"
+},
+"c":{
+"en":"general term",
+"ru":"общее название места продажи",
+"pl":"miejsce sprzedaży towarów",
+"de":"allgemeine Bezeichnung für eine Verkaufsstelle",
+"fr":"terme général pour un lieu de vente",
+"it":"termine generale",
+"cs":"obecný název pro prodejní místo",
+"tr":"genel anlamda satış yapılan yer",
+"es":"establecimiento comercial"
+}
+},
+{
+"w":"straat",
+"d":"Een verharde weg tussen huizen in een bewoonde plaats",
+"t":{
+"en":"street",
+"ru":"улица",
+"pl":"ulica",
+"de":"Straße",
+"fr":"rue",
+"it":"via, strada",
+"cs":"ulice",
+"tr":"sokak, cadde",
+"es":"calle"
+},
+"c":{
+"en":"public road in a town",
+"ru":"дорога в населенном пункте",
+"pl":"droga w mieście lub wsi",
+"de":"Verkehrsweg im Ort",
+"fr":"voie de circulation urbaine",
+"it":"strada cittadina",
+"cs":"cesta v obci",
+"tr":"yerleşim yerlerindeki yol",
+"es":"vía urbana entre edificios"
+}
+},
+{
+"w":"apotheek",
+"d":"Een winkel waar medicijnen en gezondheidsproducten worden verkocht en klaargemaakt.",
+"t":{
+"en":"pharmacy, chemist's, drugstore",
+"ru":"аптека",
+"pl":"apteka",
+"de":"Apotheke",
+"fr":"pharmacie, officine",
+"it":"farmacia",
+"cs":"lékárna",
+"tr":"eczane",
+"es":"farmacia"
+},
+"c":{
+"en":"shop",
+"ru":"учреждение",
+"pl":"sklep z lekami",
+"de":"Geschäft",
+"fr":"officine",
+"it":"negozio",
+"cs":"obchod s léky",
+"tr":"ilaç satılan dükkan",
+"es":"establecimiento comercial"
+}
+}
+]

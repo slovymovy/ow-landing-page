@@ -355,11 +355,19 @@ export function alternateLinks(path = '/') {
 // self-canonical and a bare sitemap entry — no hreflang alternates.
 export const standalonePaths = ['/about/'];
 
-// Word-list pages: English vocabulary, but the chrome is localized, so they
-// exist in every locale with a full hreflang set (paths after the locale prefix).
-// One entry per shipped list; keep in sync with the registry in `wordLists.ts`.
-export const wordListSlugs = ['500-most-common', 'football-vocabulary', 'travel-vocabulary', 'work-vocabulary', 'harry-potter-vocabulary', 'cooking-vocabulary'];
-const wordListPaths = ['/word-lists/english', ...wordListSlugs.map((s) => `/word-lists/english/${s}`)];
+// Word-list pages teach a language's vocabulary, but the chrome is localized, so
+// they exist in every locale with a full hreflang set (paths after the locale
+// prefix). Keep these slugs in sync with the registry in `wordLists.ts`.
+// (site.ts can't import wordLists.ts — that would be a circular import.)
+export const wordListLanguages = ['english', 'dutch'] as const;
+export const wordListSlugs: Record<(typeof wordListLanguages)[number], string[]> = {
+  english: ['500-most-common', 'travel-vocabulary', 'work-vocabulary', 'cooking-vocabulary', 'football-vocabulary', 'harry-potter-vocabulary'],
+  dutch: ['just-arrived', '500-most-common', 'knm-exam', 'supermarket', 'at-the-doctor', 'family']
+};
+const wordListPaths = wordListLanguages.flatMap((lang) => [
+  `/word-lists/${lang}`,
+  ...wordListSlugs[lang].map((s) => `/word-lists/${lang}/${s}`)
+]);
 
 export function allIndexablePaths() {
   const paths = ['/'];

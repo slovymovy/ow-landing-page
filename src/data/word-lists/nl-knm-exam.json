@@ -1,0 +1,1926 @@
+[
+{
+"w":"gemeente",
+"d":"Een gebied met een eigen bestuur, zoals een stad of een groep dorpen.",
+"t":{
+"en":"municipality",
+"ru":"муниципалитет, администрация",
+"pl":"gmina, urząd gminy",
+"de":"Gemeinde, Kommune",
+"fr":"commune, municipalité",
+"it":"comune, municipio",
+"cs":"obec, obecní úřad, magistrát",
+"tr":"belediye, belediye başkanlığı",
+"es":"municipio, ayuntamiento, municipalidad"
+},
+"c":{
+"en":"administrative division",
+"ru":"административная единица",
+"pl":"jednostka administracyjna",
+"de":"Verwaltungseinheit",
+"fr":"division administrative",
+"it":"ente locale amministrativo",
+"cs":"územní samosprávný celek",
+"tr":"idari birim veya kurum",
+"es":"división administrativa"
+}
+},
+{
+"w":"provincie",
+"d":"Een staatkundig onderdeel van een land, vaak met een eigen bestuur",
+"t":{
+"en":"province",
+"ru":"провинция, область",
+"pl":"prowincja, województwo",
+"de":"Provinz, Bundesland",
+"fr":"province",
+"it":"provincia",
+"cs":"provincie",
+"tr":"eyalet, il, vilayet",
+"es":"provincia"
+},
+"c":{
+"en":"administrative division",
+"ru":"административная единица",
+"pl":"jednostka administracyjna",
+"de":"Verwaltungseinheit",
+"fr":"division administrative",
+"it":"suddivisione amministrativa",
+"cs":"územní správní jednotka",
+"tr":"idari bölge",
+"es":"división administrativa"
+}
+},
+{
+"w":"parlement",
+"d":"De gekozen volksvertegenwoordiging die samen met de regering of het staatshoofd de wetgevende macht van een staat vormt.",
+"t":{
+"en":"parliament, legislature",
+"ru":"парламент",
+"pl":"parlament",
+"de":"Parlament, Volksvertretung",
+"fr":"parlement",
+"it":"parlamento",
+"cs":"parlament",
+"tr":"parlamento, meclis",
+"es":"parlamento, cortes"
+},
+"c":{
+"en":"legislative assembly",
+"ru":"законодательный орган",
+"pl":"najwyższy organ ustawodawczy",
+"de":"gesetzgebende Körperschaft",
+"fr":"assemblée législative",
+"it":"assemblea legislativa",
+"cs":"zákonodárný sbor",
+"tr":"yasama meclisi",
+"es":"asamblea legislativa"
+}
+},
+{
+"w":"democratie",
+"d":"Staatsvorm waarin de bevolking invloed heeft op het bestuur, meestal via gekozen vertegenwoordigers.",
+"t":{
+"en":"democracy",
+"ru":"демократия",
+"pl":"demokracja",
+"de":"Demokratie",
+"fr":"démocratie",
+"it":"democrazia",
+"cs":"demokracie",
+"tr":"demokrasi",
+"es":"democracia"
+},
+"c":{
+"en":"form of government",
+"ru":"форма правления",
+"pl":"forma rządów",
+"de":"Regierungsform",
+"fr":"régime politique",
+"it":"forma di governo",
+"cs":"forma vlády",
+"tr":"yönetim biçimi",
+"es":"forma de gobierno"
+}
+},
+{
+"w":"grondwet",
+"d":"De belangrijkste wet van een land waarin de rechten van burgers en de organisatie van de staat staan beschreven.",
+"t":{
+"en":"constitution",
+"ru":"конституция",
+"pl":"konstytucja, ustawa zasadnicza",
+"de":"Verfassung, Grundgesetz",
+"fr":"constitution",
+"it":"costituzione",
+"cs":"ústava",
+"tr":"anayasa",
+"es":"constitución"
+},
+"c":{
+"en":"the fundamental law of a state",
+"ru":"основной закон государства",
+"pl":"ustawa zasadnicza państwa",
+"de":"grundlegender Gesetzestext eines Staates",
+"fr":"loi fondamentale d'un État",
+"it":"la legge fondamentale di uno Stato",
+"cs":"základní zákon státu",
+"tr":"bir devletin yönetim biçimini ve temel hakları belirleyen temel yasa",
+"es":"ley fundamental de un Estado"
+}
+},
+{
+"w":"minister",
+"d":"Een lid van de regering dat meestal de leiding heeft over een ministerie.",
+"t":{
+"en":"minister, cabinet minister",
+"ru":"министр",
+"pl":"minister",
+"de":"Minister, Ministerin",
+"fr":"ministre",
+"it":"ministro",
+"cs":"ministr, ministryně",
+"tr":"bakan",
+"es":"ministro, ministra"
+},
+"c":{
+"en":"government official",
+"ru":"член правительства",
+"pl":"członek rządu",
+"de":"Regierungsmitglied",
+"fr":"membre du gouvernement",
+"it":"membro del governo",
+"cs":"člen vlády",
+"tr":"hükümet üyesi",
+"es":"miembro del gobierno"
+}
+},
+{
+"w":"premier",
+"d":"De minister die aan het hoofd van de regering staat.",
+"t":{
+"en":"prime minister",
+"ru":"премьер-министр, премьер",
+"pl":"premier, premier minister",
+"de":"Premierminister, Ministerpräsident, Premier",
+"fr":"Premier ministre, premier",
+"it":"primo ministro, premier, presidente del Consiglio",
+"cs":"premiér, předseda vlády",
+"tr":"başbakan, başbakan yardımcısı",
+"es":"primer ministro, presidente del gobierno, premier"
+},
+"c":{
+"en":"head of government",
+"ru":"глава правительства",
+"pl":"szef rządu",
+"de":"Regierungschef",
+"fr":"chef du gouvernement",
+"it":"capo del governo",
+"cs":"předseda vlády",
+"tr":"hükümet başkanı",
+"es":"jefe de gobierno"
+}
+},
+{
+"w":"ambtenaar",
+"d":"Iemand die werkt in dienst van de overheid.",
+"t":{
+"en":"civil servant, government official",
+"ru":"чиновник, госслужащий",
+"pl":"urzędnik, urzędnik państwowy",
+"de":"Beamter, Beamtin, Staatsdiener",
+"fr":"fonctionnaire, agent de l'État",
+"it":"funzionario pubblico, statale, impiegato statale",
+"cs":"úředník, státní úředník, státní zaměstnanec",
+"tr":"memur, kamu görevlisi, devlet memuru",
+"es":"funcionario, empleado público"
+},
+"c":{
+"en":"government employee",
+"ru":"должностное лицо",
+"pl":"pracownik administracji publicznej",
+"de":"männliche Person im Staatsdienst",
+"fr":"employé de l'État",
+"it":"impiegato dello Stato",
+"cs":"státní zaměstnanec",
+"tr":"devlet dairesinde çalışan görevli",
+"es":"empleado público"
+}
+},
+{
+"w":"stemmen",
+"d":"Je voorkeur uitspreken voor een persoon of partij tijdens een verkiezing.",
+"t":{
+"en":"vote, cast a vote",
+"ru":"голосовать, отдавать голос",
+"pl":"głosować, oddać głos",
+"de":"wählen, stimmen, abstimmen",
+"fr":"voter",
+"it":"votare, esprimere il voto",
+"cs":"volit, hlasovat",
+"tr":"oy kullanmak, oy vermek",
+"es":"votar"
+},
+"c":{
+"en":"in an election",
+"ru":"на выборах",
+"pl":"w wyborach",
+"de":"bei einer Wahl",
+"fr":"lors d'une élection",
+"it":"esprimere un voto in un'elezione",
+"cs":"ve volbách",
+"tr":"seçimde",
+"es":"en una elección"
+}
+},
+{
+"w":"verkiezing",
+"d":"Het proces waarbij personen door middel van stemming worden gekozen voor een bepaalde functie, post of titel.",
+"t":{
+"en":"election, poll",
+"ru":"выборы, избрание",
+"pl":"wybory",
+"de":"Wahl",
+"fr":"élection, scrutin",
+"it":"elezione, votazione",
+"cs":"volby, volba",
+"tr":"seçim",
+"es":"elección, comicios"
+},
+"c":{
+"en":"political voting process",
+"ru":"политический процесс голосования",
+"pl":"proces głosowania politycznego lub społecznego",
+"de":"Abstimmung über Personen oder Ämter",
+"fr":"processus de vote politique",
+"it":"processo di voto politico",
+"cs":"politické hlasování",
+"tr":"siyasi veya resmi oylama süreci",
+"es":"proceso de votación política"
+}
+},
+{
+"w":"partij",
+"d":"Een politieke organisatie van mensen met dezelfde ideeën die proberen invloed uit te oefenen op het bestuur.",
+"t":{
+"en":"party",
+"ru":"партия",
+"pl":"partia",
+"de":"Partei",
+"fr":"parti",
+"it":"partito",
+"cs":"strana",
+"tr":"parti",
+"es":"partido"
+},
+"c":{
+"en":"political organization",
+"ru":"политическая организация",
+"pl":"organizacja polityczna",
+"de":"politische Organisation",
+"fr":"organisation politique",
+"it":"organizzazione politica",
+"cs":"politická strana",
+"tr":"siyasi kuruluş",
+"es":"organización política"
+}
+},
+{
+"w":"wetgeving",
+"d":"Het geheel van wetten en regels die in een land of voor een bepaald onderwerp gelden.",
+"t":{
+"en":"legislation",
+"ru":"законодательство",
+"pl":"ustawodawstwo, prawodawstwo, przepisy",
+"de":"Gesetzgebung, Rechtsprechung",
+"fr":"législation, réglementation",
+"it":"legislazione, normativa",
+"cs":"legislativa, zákonodárství, právní předpisy",
+"tr":"mevzuat, yasalar, yasa koyma",
+"es":"legislación, normativa"
+},
+"c":{
+"en":"laws considered collectively",
+"ru":"система законов",
+"pl":"proces tworzenia prawa lub zbiór przepisów prawnych",
+"de":"Gesamtheit der geltenden Gesetze",
+"fr":"ensemble des lois",
+"it":"insieme delle leggi di uno Stato o di un settore",
+"cs":"soubor zákonů a právních norem",
+"tr":"yürürlükteki yasalar ve kurallar bütünü",
+"es":"conjunto de leyes de un Estado o materia"
+}
+},
+{
+"w":"beleid",
+"d":"een vastgesteld plan van aanpak of een strategie van een organisatie of overheid",
+"t":{
+"en":"policy, strategy",
+"ru":"политика, курс, стратегия",
+"pl":"polityka, strategia",
+"de":"Politik, Strategie, Richtlinie",
+"fr":"politique, stratégie",
+"it":"politica, strategia",
+"cs":"politika, koncepce, strategie",
+"tr":"politika, strateji",
+"es":"política, estrategia"
+},
+"c":{
+"en":"a formal plan or principle of action",
+"ru":"официальный курс, стратегия действий организации или государства",
+"pl":"oficjalna linia działania, strategia rządu lub organizacji",
+"de":"Gesamtheit der Leitideen und Maßnahmen beim Handeln einer Regierung oder Organisation",
+"fr":"ligne de conduite déterminant les mesures prises par une organisation ou un gouvernement",
+"it":"linea di condotta o strategia di un governo o di un'azienda",
+"cs":"oficiální strategie nebo soubor opatření organizace či státu",
+"tr":"bir devletin veya kuruluşun izlediği resmi yol veya ilkeler bütünü",
+"es":"conjunto de directrices o normas que rigen una organización o gobierno"
+}
+},
+{
+"w":"coalitie",
+"d":"Een samenwerkingsverband tussen verschillende politieke partijen om een regering te vormen",
+"t":{
+"en":"coalition",
+"ru":"коалиция",
+"pl":"koalicja, koalicja rządowa",
+"de":"Koalition, Regierungsbündnis",
+"fr":"coalition",
+"it":"coalizione",
+"cs":"koalice, vládní koalice",
+"tr":"koalisyon, hükümet ortaklığı",
+"es":"coalición"
+},
+"c":{
+"en":"political alliance",
+"ru":"политический союз",
+"pl":"porozumienie partii politycznych w celu utworzenia rządu",
+"de":"politisches Bündnis zur Regierungsbildung",
+"fr":"alliance politique gouvernementale",
+"it":"alleanza politica",
+"cs":"politické spojenectví",
+"tr":"siyasi ittifak",
+"es":"alianza de partidos políticos para gobernar"
+}
+},
+{
+"w":"rechten",
+"d":"Meervoud van <w>recht</w>.",
+"t":{
+"en":"rights",
+"ru":"права",
+"pl":"prawa",
+"de":"Rechte",
+"fr":"droits",
+"it":"diritti",
+"cs":"práva",
+"tr":"haklar",
+"es":"derechos"
+},
+"c":{
+"en":"entitlements/privileges",
+"ru":"юридические или моральные возможности",
+"pl":"uprawnienia lub przywileje obywatelskie/ludzkie",
+"de":"Plural von Recht",
+"fr":"privilèges ou libertés garantis par la loi",
+"it":"privilegi o facoltà garantite dalla legge",
+"cs":"oprávnění nebo nároky",
+"tr":"yasal veya ahlaki yetkiler",
+"es":"privilegios o facultades legales"
+}
+},
+{
+"w":"plicht",
+"d":"Een taak of verantwoordelijkheid die je moet uitvoeren omdat het van je verwacht wordt of verplicht is.",
+"t":{
+"en":"duty, obligation",
+"ru":"долг, обязанность",
+"pl":"obowiązek, powinność",
+"de":"Pflicht, Verpflichtung",
+"fr":"devoir, obligation",
+"it":"dovere, obbligo, compito",
+"cs":"povinnost",
+"tr":"görev, ödev, yükümlülük, borç",
+"es":"deber, obligación"
+},
+"c":{
+"en":"moral or legal requirement",
+"ru":"моральное или служебное обязательство",
+"pl":"to, co należy zrobić ze względu na nakaz prawny lub moralny",
+"de":"etwas, das getan werden muss; moralische oder rechtliche Verpflichtung",
+"fr":"obligation morale ou civique",
+"it":"obbligo morale o giuridico",
+"cs":"závazek nebo úkol, který je nutné splnit",
+"tr":"yapılması gereken iş veya sorumluluk",
+"es":"obligación moral o legal"
+}
+},
+{
+"w":"burger",
+"d":"Een inwoner van een land of stad die bepaalde officiële rechten en plichten heeft.",
+"t":{
+"en":"citizen",
+"ru":"гражданин",
+"pl":"obywatel",
+"de":"Bürger, Staatsbürger",
+"fr":"citoyen",
+"it":"cittadino",
+"cs":"občan",
+"tr":"vatandaş, yurttaş",
+"es":"ciudadano"
+},
+"c":{
+"en":"legal member of a state",
+"ru":"житель государства",
+"pl":"członek państwa lub społeczności",
+"de":"Staatsbürger",
+"fr":"membre légal d'un État",
+"it":"membro di uno stato o comune",
+"cs":"příslušník státu",
+"tr":"yurttaş",
+"es":"miembro legal de un estado"
+}
+},
+{
+"w":"vrijheid",
+"d":"De toestand waarin iemand zelf kan beslissen wat hij of zij doet, zonder gevangen te zitten of onderdrukt te worden.",
+"t":{
+"en":"freedom, liberty",
+"ru":"свобода, воля",
+"pl":"wolność",
+"de":"Freiheit",
+"fr":"liberté",
+"it":"libertà",
+"cs":"svoboda, volnost",
+"tr":"özgürlük, hürriyet",
+"es":"libertad"
+},
+"c":{
+"en":"state of being free",
+"ru":"независимость, отсутствие ограничений",
+"pl":"brak ograniczeń, niezależność osobista",
+"de":"Zustand, frei von Zwängen und Unterdrückung zu sein",
+"fr":"état d'une personne libre",
+"it":"condizione di chi è libero e non sottomesso",
+"cs":"stav nezávislosti a absence omezení",
+"tr":"kendi kararlarını verebilme durumu",
+"es":"estado de no estar encarcelado o bajo opresión"
+}
+},
+{
+"w":"gelijkheid",
+"d":"De toestand waarin mensen, groepen of zaken in waarde, rechten of status hetzelfde zijn.",
+"t":{
+"en":"equality",
+"ru":"равенство, равноправие",
+"pl":"równość, równouprawnienie",
+"de":"Gleichheit, Gleichberechtigung",
+"fr":"égalité",
+"it":"uguaglianza, parità",
+"cs":"rovnost, rovnoprávnost",
+"tr":"eşitlik, eşit haklılık",
+"es":"igualdad, equidad"
+},
+"c":{
+"en":"social or legal status",
+"ru":"общее понятие",
+"pl":"ogólne pojęcie społeczne",
+"de":"allgemeiner Zustand der Gleichwertigkeit",
+"fr":"statut social ou juridique",
+"it":"stato sociale o giuridico",
+"cs":"obecná, sociální nebo právní rovnost",
+"tr":"genel ve sosyal eşitlik",
+"es":"estatus social o legal"
+}
+},
+{
+"w":"inburgering",
+"d":"Het proces waarbij iemand uit een ander land of een andere cultuur volledig deel gaat uitmaken van de nieuwe samenleving.",
+"t":{
+"en":"integration, civic integration, assimilation",
+"ru":"интеграция, адаптация, вхождение в общество",
+"pl":"integracja, integracja obywatelska, asymilacja",
+"de":"Integration, Einbürgerung, Akkulturation",
+"fr":"intégration, intégration civique, assimilation",
+"it":"integrazione civica, integrazione, assimilazione",
+"cs":"integrace, občanská integrace, asimilace",
+"tr":"entegrasyon, toplumsal uyum, uyum süreci",
+"es":"integración social, integración cívica, asimilación"
+},
+"c":{
+"en":"the process of becoming part of a community",
+"ru":"в новое общество",
+"pl":"proces włączania się w nowe społeczeństwo",
+"de":"gesellschaftliche Eingliederung",
+"fr":"le processus de devenir membre d'une communauté",
+"it":"il processo formale di apprendimento della lingua e dei costumi di un nuovo paese",
+"cs":"začlenění cizinců do společnosti",
+"tr":"yeni bir topluma uyum sağlama süreci",
+"es":"proceso de formar parte de una nueva sociedad"
+}
+},
+{
+"w":"verblijfsvergunning",
+"d":"De officiële toestemming voor iemand die geen staatsburger is om voor langere tijd in een land te verblijven.",
+"t":{
+"en":"residence permit",
+"ru":"вид на жительство, разрешение на проживание",
+"pl":"zezwolenie na pobyt, karta pobytu",
+"de":"Aufenthaltstitel, Aufenthaltserlaubnis, Aufenthaltsgenehmigung",
+"fr":"titre de séjour, permis de séjour, carte de séjour",
+"it":"permesso di soggiorno, carta di soggiorno",
+"cs":"povolení k pobytu",
+"tr":"oturum izni, ikamet izni",
+"es":"permiso de residencia, autorización de residencia, visado de residencia"
+},
+"c":{
+"en":"document authorizing residency",
+"ru":"документ, разрешающий проживание",
+"pl":"oficjalny dokument uprawniający do pobytu",
+"de":"offizielles Dokument für den Aufenthalt",
+"fr":"document officiel de résidence",
+"it":"documento ufficiale che autorizza la residenza temporanea o permanente",
+"cs":"oficiální dokument opravňující k pobytu v zemi",
+"tr":"bir ülkede yasal olarak kalma hakkı veren belge",
+"es":"documento oficial que autoriza a residir en un país"
+}
+},
+{
+"w":"naturalisatie",
+"d":"het verlenen van de nationaliteit van een land aan een persoon die daar niet is geboren",
+"t":{
+"en":"naturalization, acquisition of citizenship",
+"ru":"натурализация, принятие в гражданство",
+"pl":"naturalizacja, nadanie obywatelstwa",
+"de":"Einbürgerung, Naturalisation",
+"fr":"naturalisation, acquisition de la nationalité",
+"it":"naturalizzazione, concessione della cittadinanza",
+"cs":"naturalizace, udělení státního občanství",
+"tr":"vatandaşlığa kabul, tabiiyete geçirme, natüralizasyon",
+"es":"naturalización, adquisición de la nacionalidad"
+},
+"c":{
+"en":"the legal process of becoming a citizen",
+"ru":"официальный процесс получения гражданства",
+"pl":"proces nadania obywatelstwa",
+"de":"der rechtliche Prozess des Erwerbs der Staatsangehörigkeit",
+"fr":"processus légal d'acquisition de la nationalité",
+"it":"il processo legale per ottenere la cittadinanza",
+"cs":"přijetí cizince za státního občana",
+"tr":"bir yabancının devlet kararıyla vatandaşlığa alınması",
+"es":"proceso legal para adquirir la nacionalidad"
+}
+},
+{
+"w":"digid",
+"d":"Een digitale identificatiecode waarmee burgers in Nederland kunnen inloggen op websites van de overheid en de zorg.",
+"t":{
+"en":"DigiD, digital ID",
+"ru":"DigiD, цифровой идентификатор",
+"pl":"DigiD, profil zaufany",
+"de":"DigiD, digitale Identität",
+"fr":"DigiD, identité numérique",
+"it":"DigiD, identità digitale",
+"cs":"DigiD, digitální identita",
+"tr":"DigiD, dijital kimlik",
+"es":"DigiD, identidad digital"
+},
+"c":{
+"en":"Dutch digital identity login",
+"ru":"название системы цифровой идентификации",
+"pl":"holenderski cyfrowy identyfikator",
+"de":"niederländische digitale Identität",
+"fr":"identifiant numérique néerlandais",
+"it":"il sistema di identità digitale olandese",
+"cs":"nizozemská digitální identita",
+"tr":"Hollanda dijital kimlik giriş sistemi",
+"es":"sistema de identidad digital neerlandés"
+}
+},
+{
+"w":"bsn",
+"d":"Een uniek persoonsgebonden nummer voor iedereen die is ingeschreven in de Basisregistratie Personen.",
+"t":{
+"en":"citizen service number, BSN, social security number",
+"ru":"BSN, индивидуальный номер гражданина, номер социального страхования",
+"pl":"BSN, numer identyfikacji obywatelskiej, holenderski odpowiednik PESEL",
+"de":"Bürgerservicenummer, BSN, Sozialversicherungsnummer",
+"fr":"numéro de service citoyen, BSN, numéro de sécurité sociale",
+"it":"codice fiscale olandese, BSN, numero di servizio del cittadino",
+"cs":"BSN, občanské služební číslo, rodné číslo",
+"tr":"vatandaşlık numarası, BSN, sosyal güvenlik numarası",
+"es":"BSN, número de servicio al ciudadano, número de la seguridad social"
+},
+"c":{
+"en":"The official English translation of the Dutch BSN",
+"ru":"аббревиатура от burgerservicenummer",
+"pl":"skrót od burgerservicenummer, powszechnie używany w Holandii",
+"de":"Die offizielle deutsche Übersetzung für BSN",
+"fr":"Traduction littérale du burgerservicenummer néerlandais",
+"it":"equivalente funzionale per il sistema italiano",
+"cs":"zkratka pro burgerservicenummer, běžně používaná i v cizojazyčném kontextu",
+"tr":"Hollanda'daki resmi kimlik numarası",
+"es":"Abreviatura de burgerservicenummer, el número de identificación personal en los Países Bajos"
+}
+},
+{
+"w":"aangifte",
+"d":"Het officieel melden van inkomsten, goederen of vermogen bij de belastingdienst of de douane.",
+"t":{
+"en":"tax return, customs declaration, declaration",
+"ru":"декларация, налоговая декларация",
+"pl":"deklaracja podatkowa, deklaracja celna, zeznanie podatkowe",
+"de":"Steuererklärung, Zollerklärung, Anmeldung",
+"fr":"déclaration de revenus, déclaration en douane, déclaration d'impôts",
+"it":"dichiarazione dei redditi, dichiarazione doganale, dichiarazione",
+"cs":"daňové přiznání, celní prohlášení, přiznání",
+"tr":"vergi beyannamesi, gümrük beyannamesi, beyan",
+"es":"declaración de impuestos, declaración de aduana, declaración de ingresos"
+},
+"c":{
+"en":"specifically for income tax",
+"ru":"общий термин или таможенная",
+"pl":"w odniesieniu do podatku dochodowego",
+"de":"für Einkommen und Vermögen",
+"fr":"pour les impôts sur le revenu",
+"it":"specificamente per le tasse sul reddito",
+"cs":"pro hlášení příjmů",
+"tr":"gelir vergisi için",
+"es":"para la declaración de ingresos o patrimonio"
+}
+},
+{
+"w":"paspoort",
+"d":"Een officieel document dat de identiteit en nationaliteit van de houder bewijst en nodig is voor reizen naar het buitenland.",
+"t":{
+"en":"passport",
+"ru":"паспорт, загранпаспорт",
+"pl":"paszport",
+"de":"Reisepass, Pass",
+"fr":"passeport",
+"it":"passaporto",
+"cs":"cestovní pas, pas",
+"tr":"pasaport",
+"es":"pasaporte"
+},
+"c":{
+"en":"travel document",
+"ru":"документ, удостоверяющий личность",
+"pl":"dokument tożsamości uprawniający do przekraczania granic",
+"de":"Reisedokument",
+"fr":"document de voyage",
+"it":"documento di viaggio",
+"cs":"oficiální cestovní doklad",
+"tr":"seyahat belgesi",
+"es":"documento de viaje"
+}
+},
+{
+"w":"werkgever",
+"d":"Een persoon of bedrijf dat werk verschaft aan anderen.",
+"t":{
+"en":"employer",
+"ru":"работодатель, наниматель",
+"pl":"pracodawca",
+"de":"Arbeitgeber",
+"fr":"employeur",
+"it":"datore di lavoro",
+"cs":"zaměstnavatel",
+"tr":"işveren, patron",
+"es":"empleador, patrono, jefe"
+},
+"c":{
+"en":"person or company providing work",
+"ru":"лицо или компания, нанимающие сотрудников",
+"pl":"osoba lub przedsiębiorstwo zatrudniające pracowników",
+"de":"Person oder Firma, die Arbeitskräfte beschäftigt",
+"fr":"personne ou entreprise qui emploie des salariés",
+"it":"persona o azienda che assume dipendenti",
+"cs":"osoba nebo firma poskytující práci",
+"tr":"çalışanlara iş ve maaş sağlayan kişi veya kuruluş",
+"es":"persona o empresa que contrata trabajadores"
+}
+},
+{
+"w":"werknemer",
+"d":"Iemand die voor een ander werkt en daarvoor betaald wordt.",
+"t":{
+"en":"employee, worker",
+"ru":"работник, сотрудник, наёмный работник",
+"pl":"pracownik, pracownik najemny",
+"de":"Arbeitnehmer, Mitarbeiter, Angestellter, Beschäftigter",
+"fr":"salarié, employé, collaborateur",
+"it":"dipendente, impiegato, lavoratore, collaboratore",
+"cs":"zaměstnanec, pracovník",
+"tr":"çalışan, işçi, personel",
+"es":"empleado, trabajador, obrero"
+},
+"c":{
+"en":"person employed for wages or salary",
+"ru":"общее понятие",
+"pl":"ogólne określenie osoby zatrudnionej",
+"de":"formeller Begriff im Arbeitsrecht",
+"fr":"personne liée par un contrat de travail et recevant un salaire",
+"it":"lavoratore subordinato",
+"cs":"osoba v pracovním poměru",
+"tr":"genel anlamda bir işte ücret karşılığı çalışan kimse",
+"es":"persona que trabaja para un empleador a cambio de un salario"
+}
+},
+{
+"w":"loon",
+"d":"Financiële vergoeding die men ontvangt voor geleverde arbeid",
+"t":{
+"en":"wage, pay, salary",
+"ru":"зарплата, заработная плата, жалованье",
+"pl":"wynagrodzenie, pensja, płaca, wypłata",
+"de":"Lohn, Gehalt, Verdienst",
+"fr":"salaire, paie, rémunération",
+"it":"stipendio, salario, paga",
+"cs":"mzda, plat, výplata",
+"tr":"ücret, maaş, aylık",
+"es":"sueldo, salario, paga"
+},
+"c":{
+"en":"payment for work, often calculated hourly or weekly",
+"ru":"разговорное, общеупотребительное",
+"pl":"ogólne określenie zapłaty za pracę",
+"de":"Vergütung für geleistete Arbeit, oft stundenweise berechnet",
+"fr":"rémunération régulière, généralement mensuelle",
+"it":"compenso fisso mensile",
+"cs":"odměna za práci v soukromém sektoru, často hodinová nebo úkolová",
+"tr":"yapılan iş karşılığı ödenen para",
+"es":"remuneración regular por un trabajo, generalmente mensual"
+}
+},
+{
+"w":"contract",
+"d":"Een officiële, schriftelijk vastgelegde overeenkomst tussen twee of meer partijen waarin afspraken, rechten en plichten staan.",
+"t":{
+"en":"contract",
+"ru":"договор, контракт",
+"pl":"umowa, kontrakt",
+"de":"Vertrag, Kontrakt",
+"fr":"contrat",
+"it":"contratto, accordo",
+"cs":"smlouva, kontrakt",
+"tr":"sözleşme, kontrat",
+"es":"contrato, acuerdo"
+},
+"c":{
+"en":"legal agreement",
+"ru":"письменное соглашение",
+"pl":"pisemne porozumienie stron",
+"de":"rechtlich bindende Vereinbarung",
+"fr":"accord juridique écrit",
+"it":"accordo legale scritto",
+"cs":"písemná dohoda",
+"tr":"hukuki veya resmi anlaşma",
+"es":"acuerdo legal escrito"
+}
+},
+{
+"w":"cao",
+"d":"Afkorting van 'collectieve arbeidsovereenkomst': afspraken tussen werkgevers en vakbonden over beloning en werkomstandigheden voor werknemers in een bedrijf of sector.",
+"t":{
+"en":"collective labour agreement, collective bargaining agreement, CLA",
+"ru":"коллективный договор, коллдоговор",
+"pl":"układ zbiorowy pracy, zbiorowy układ pracy, UZP",
+"de":"Tarifvertrag, Kollektivvertrag, Gesamtarbeitsvertrag",
+"fr":"convention collective de travail, CCT, convention collective",
+"it":"contratto collettivo di lavoro, contratto collettivo nazionale di lavoro, CCNL",
+"cs":"kolektivní smlouva, kolektivní dohoda",
+"tr":"toplu iş sözleşmesi, TİS, toplu sözleşme",
+"es":"convenio colectivo, convenio colectivo de trabajo, contrato colectivo de trabajo"
+},
+"c":{
+"en":"standard term",
+"ru":"официальный термин",
+"pl":"oficjalny termin prawny",
+"de":"Standardbegriff",
+"fr":"terme officiel",
+"it":"termine standard",
+"cs":"standardní termín",
+"tr":"standart terim",
+"es":"término estándar y más común"
+}
+},
+{
+"w":"vakbond",
+"d":"Een organisatie van werknemers die de collectieve belangen van haar leden behartigt, vaak binnen een specifieke sector.",
+"t":{
+"en":"trade union, labor union, union",
+"ru":"профсоюз, профессиональный союз",
+"pl":"związek zawodowy",
+"de":"Gewerkschaft, Fachgewerkschaft, Arbeitnehmervereinigung",
+"fr":"syndicat, syndicat professionnel",
+"it":"sindacato",
+"cs":"odbory, odborová organizace, odborový svaz",
+"tr":"sendika, işçi sendikası",
+"es":"sindicato"
+},
+"c":{
+"en":"British English",
+"ru":"профессиональный союз работников",
+"pl":"organizacja reprezentująca interesy pracowników",
+"de":"allgemeiner Begriff",
+"fr":"terme général",
+"it":"associazione di lavoratori",
+"cs":"organizace na ochranu práv zaměstnanců",
+"tr":"işçi veya memur sendikası",
+"es":"asociación de trabajadores"
+}
+},
+{
+"w":"ontslag",
+"d":"Het beëindigen van een arbeidscontract door de werkgever",
+"t":{
+"en":"dismissal, firing, sacking",
+"ru":"увольнение, расчёт",
+"pl":"zwolnienie, dymisja",
+"de":"Entlassung, Kündigung",
+"fr":"licenciement, renvoi",
+"it":"licenziamento",
+"cs":"výpověď, propuštění",
+"tr":"işten çıkarma, kovulma, fesih",
+"es":"despido, destitución"
+},
+"c":{
+"en":"formal termination of employment",
+"ru":"расторжение контракта",
+"pl":"rozwiązanie umowy o pracę przez pracodawcę",
+"de":"Beendigung des Arbeitsverhältnisses durch den Arbeitgeber",
+"fr":"rupture du contrat de travail par l'employeur",
+"it":"interruzione del rapporto di lavoro da parte del datore",
+"cs":"ze strany zaměstnavatele",
+"tr":"işverenin iş akdini feshetmesi",
+"es":"destitución o expulsión de una persona de su trabajo"
+}
+},
+{
+"w":"pensioen",
+"d":"Een regelmatige uitkering die iemand ontvangt na het beëindigen van het werkzame leven, meestal vanwege het bereiken van een bepaalde leeftijd.",
+"t":{
+"en":"pension, retirement",
+"ru":"пенсия",
+"pl":"emerytura",
+"de":"Rente, Pension, Ruhestand",
+"fr":"retraite, pension de retraite",
+"it":"pensione",
+"cs":"důchod, penze",
+"tr":"emeklilik, emekli maaşı",
+"es":"pensión, jubilación, pensión de jubilación"
+},
+"c":{
+"en":"retirement payment",
+"ru":"денежное пособие по старости",
+"pl":"świadczenie pieniężne po zakończeniu pracy",
+"de":"regelmäßige Geldzahlung im Alter für Arbeitnehmer",
+"fr":"pension ou état de celui qui a cessé son activité professionnelle",
+"it":"somma di denaro periodica o stato di riposo dal lavoro",
+"cs":"pravidelná peněžitá částka po skončení pracovní kariéry",
+"tr":"çalışma hayatı sonrasındaki dönem veya durum",
+"es":"pago regular por retiro"
+}
+},
+{
+"w":"aow",
+"d":"De maandelijkse financiële uitkering die ouderen ontvangen van de overheid als basispensioen.",
+"t":{
+"en":"state pension, old-age pension",
+"ru":"пенсия по старости, базовая пенсия",
+"pl":"państwowa emerytura, emerytura państwowa, AOW",
+"de":"staatliche Rente, Grundrente, Altersrente",
+"fr":"pension de retraite de base, retraite de base de l'État, pension de vieillesse",
+"it":"pensione statale, pensione di vecchiaia",
+"cs":"státní starobní důchod, základní důchod",
+"tr":"devlet emeklilik maaşı, yaşlılık aylığı",
+"es":"pensión estatal de jubilación, pensión de vejez"
+},
+"c":{
+"en":"financial benefit",
+"ru":"выплата",
+"pl":"podstawowe świadczenie emerytalne w Holandii",
+"de":"finanzielle Leistung",
+"fr":"allocation financière de l'État",
+"it":"sussidio finanziario di base",
+"cs":"finanční dávka",
+"tr":"devlet tarafından ödenen temel maaş",
+"es":"prestación económica básica"
+}
+},
+{
+"w":"zzp",
+"d":"Afkorting voor <w>zelfstandige</w> zonder personeel; iemand die voor eigen rekening werkt zonder anderen in dienst te hebben.",
+"t":{
+"en":"self-employment, freelancing, independent contractor",
+"ru":"самозанятость, ИП, фриланс",
+"pl":"jednoosobowa działalność gospodarcza, samozatrudnienie, freelancer, samozatrudniony",
+"de":"Solo-Selbstständigkeit, Freiberuflichkeit, freier Mitarbeiter",
+"fr":"travail indépendant, freelance, auto-entrepreneur, travailleur indépendant",
+"it":"lavoro autonomo, libero professionista, lavoratore autonomo",
+"cs":"OSVČ, práce na volné noze, živnostník, freelancer",
+"tr":"serbest çalışan, şahıs şirketi, freelance",
+"es":"trabajo por cuenta propia, autoempleo, autónomo, freelance"
+},
+"c":{
+"en":"work status",
+"ru":"статус или форма занятости",
+"pl":"forma prawna",
+"de":"Arbeitsstatus",
+"fr":"statut professionnel",
+"it":"stato lavorativo",
+"cs":"osoba samostatně výdělečně činná",
+"tr":"çalışma durumu",
+"es":"estado laboral"
+}
+},
+{
+"w":"uwv",
+"d":"Overheidsinstelling die zorgt voor de uitkeringen aan mensen in loondienst die werkloos of arbeidsongeschikt worden.",
+"t":{
+"en":"Employee Insurance Agency, UWV",
+"ru":"UWV",
+"pl":"UWV, Instytut Ubezpieczeń Pracowniczych",
+"de":"UWV, Agentur für Arbeit",
+"fr":"UWV, Agence pour l'assurance des salariés, Pôle Emploi néerlandais",
+"it":"UWV, Istituto di previdenza sociale olandese",
+"cs":"UWV, Úřad pro pojištění zaměstnanců",
+"tr":"UWV, Hollanda İşçi Sigortaları Kurumu",
+"es":"UWV, Agencia de Seguros para Empleados"
+},
+"c":{
+"en":"official English name",
+"ru":"Агентство по страхованию работников (голландская организация)",
+"pl":"nazwa własna holenderskiego urzędu pracy i ubezpieczeń społecznych",
+"de":"niederländische Behörde für Arbeitnehmerversicherungen",
+"fr":"nom de l'organisme néerlandais",
+"it":"nome proprio dell'ente previdenziale olandese",
+"cs":"nizozemský úřad práce a sociálního zabezpečení",
+"tr":"Hollanda İşçi Sigortaları Kurumu",
+"es":"organismo público de empleo y seguridad social en los Países Bajos"
+}
+},
+{
+"w":"solliciteren",
+"d":"Zich officieel kandidaat stellen voor een baan of functie.",
+"t":{
+"en":"apply",
+"ru":"подавать заявление, претендовать, откликаться",
+"pl":"ubiegać się, aplikować, składać podanie o pracę",
+"de":"sich bewerben",
+"fr":"postuler, poser sa candidature, solliciter",
+"it":"candidarsi, fare domanda, presentare la propria candidatura",
+"cs":"ucházet se, žádat, přihlásit se",
+"tr":"başvurmak, iş başvurusunda bulunmak",
+"es":"solicitar, postularse, presentarse"
+},
+"c":{
+"en":"for a job or position",
+"ru":"о приеме на работу",
+"pl":"o pracę lub stanowisko",
+"de":"um eine Stelle",
+"fr":"pour un emploi ou un poste",
+"it":"per un posto di lavoro",
+"cs":"o zaměstnání nebo pozici",
+"tr":"iş veya pozisyon için",
+"es":"un puesto de trabajo"
+}
+},
+{
+"w":"arbeidsmarkt",
+"d":"De interactie tussen vraag naar en aanbod van arbeid.",
+"t":{
+"en":"labour market, job market",
+"ru":"рынок труда",
+"pl":"rynek pracy",
+"de":"Arbeitsmarkt",
+"fr":"marché du travail, marché de l'emploi",
+"it":"mercato del lavoro",
+"cs":"trh práce",
+"tr":"iş gücü piyasası, iş piyasası",
+"es":"mercado de trabajo, mercado laboral"
+},
+"c":{
+"en":"economic system of employment",
+"ru":"экономическая среда обмена труда на заработную плату",
+"pl":"całokształt zagadnień związanych z podażą pracy i popytem na pracę",
+"de":"Gesamtheit von Arbeitsplatzangebot und -nachfrage",
+"fr":"système économique de l'emploi",
+"it":"il sistema economico dell'occupazione",
+"cs":"ekonomické prostředí nabídky a poptávky po práci",
+"tr":"istihdamın ekonomik sistemi",
+"es":"sistema económico de empleo"
+}
+},
+{
+"w":"huurwoning",
+"d":"een woning waarvoor de bewoner periodiek een bedrag aan de eigenaar betaalt om er te mogen verblijven",
+"t":{
+"en":"rental home, rented house, rental property",
+"ru":"арендованное жилье, съемная квартира, арендный дом",
+"pl":"mieszkanie na wynajem, dom na wynajem, wynajmowane mieszkanie",
+"de":"Mietwohnung, Mietshaus, Mietobjekt",
+"fr":"logement de location, logement en location, maison de location",
+"it":"casa in affitto, appartamento in affitto, immobile in affitto",
+"cs":"nájemní byt, nájemní dům, pronajatý byt, podnájem",
+"tr":"kiralık ev, kiralık konut",
+"es":"vivienda de alquiler, casa de alquiler, piso de alquiler"
+},
+"c":{
+"en":"a house or apartment that is rented",
+"ru":"общее понятие для жилья в аренде",
+"pl":"lokal mieszkalny wynajmowany od właściciela",
+"de":"eine gemietete Wohnung",
+"fr":"terme général pour une habitation louée",
+"it":"un'abitazione per la quale si paga un canone di locazione",
+"cs":"byt užívaný na základě nájemní smlouvy",
+"tr":"kiralanan müstakil ev veya daire",
+"es":"término general para cualquier propiedad residencial alquilada"
+}
+},
+{
+"w":"koopwoning",
+"d":"een woning die door de bewoner is gekocht en waarvan deze de eigenaar is",
+"t":{
+"en":"owner-occupied home, purchased home, private home",
+"ru":"собственное жилье, купленный дом, приватизированная квартира",
+"pl":"mieszkanie własnościowe, dom własnościowy, nieruchomość własnościowa",
+"de":"Eigentumswohnung, Eigenheim, Kaufimmobilie",
+"fr":"logement en propriété, maison individuelle achetée, propriété immobilière",
+"it":"casa di proprietà, casa acquistata, immobile di proprietà",
+"cs":"vlastní bydlení, byt v osobním vlastnictví, vlastní dům",
+"tr":"satılık ev, mülk ev, sahibinden konut",
+"es":"vivienda en propiedad, casa propia, vivienda de compra"
+},
+"c":{
+"en":"a residence owned by the person living in it",
+"ru":"недвижимость в собственности",
+"pl":"mieszkanie zakupione na własność, w przeciwieństwie do wynajmowanego",
+"de":"eine gekaufte Wohnung im Unterschied zur Mietwohnung",
+"fr":"habitation dont l'occupant est propriétaire",
+"it":"abitazione posseduta da chi vi risiede",
+"cs":"nemovitost v osobním vlastnictví",
+"tr":"satın alınmak üzere olan veya satın alınmış konut",
+"es":"vivienda que pertenece a la persona que reside en ella"
+}
+},
+{
+"w":"hypotheek",
+"d":"Een lening waarbij een onroerend goed, zoals een huis, als onderpand dient voor de terugbetaling.",
+"t":{
+"en":"mortgage",
+"ru":"ипотека, ипотечный кредит",
+"pl":"hipoteka, kredyt hipoteczny",
+"de":"Hypothek, Hypothekendarlehen",
+"fr":"hypothèque, prêt hypothécaire, crédit immobilier",
+"it":"ipoteca, mutuo ipotecario, mutuo",
+"cs":"hypotéka, hypoteční úvěr",
+"tr":"ipotek, konut kredisi, ipotekli konut kredisi",
+"es":"hipoteca, crédito hipotecario"
+},
+"c":{
+"en":"loan for property",
+"ru":"долгосрочная ссуда под залог недвижимости",
+"pl":"zabezpieczenie długu na nieruchomości",
+"de":"Kredit mit einer Immobilie als Sicherheit",
+"fr":"garantie sur un bien immobilier",
+"it":"garanzia reale su un immobile",
+"cs":"úvěr na nemovitost se zástavním právem",
+"tr":"gayrimenkul teminatlı borç",
+"es":"préstamo para la compra de un inmueble"
+}
+},
+{
+"w":"huurcontract",
+"d":"Een schriftelijke overeenkomst waarin de afspraken over de huur van een woning of object zijn vastgelegd.",
+"t":{
+"en":"rental agreement, lease, tenancy agreement",
+"ru":"договор аренды, контракт на аренду, договор найма",
+"pl":"umowa najmu, umowa dzierżawy, kontrakt najmu",
+"de":"Mietvertrag, Mietvereinbarung",
+"fr":"contrat de bail, bail de location, contrat de location",
+"it":"contratto di locazione, contratto d'affitto",
+"cs":"nájemní smlouva, smlouva o nájmu",
+"tr":"kira sözleşmesi, kira kontratı",
+"es":"contrato de alquiler, contrato de arrendamiento"
+},
+"c":{
+"en":"a contract for renting property",
+"ru":"официальный документ",
+"pl":"oficjalny dokument określający warunki wynajmu lokalu lub rzeczy",
+"de":"schriftliche Vereinbarung über die Miete einer Wohnung oder eines Objekts",
+"fr":"document officiel de location",
+"it":"termine formale e giuridico per l'affitto di immobili",
+"cs":"oficiální písemná dohoda o pronájmu",
+"tr":"konut veya mülk kiralama anlaşması",
+"es":"documento de arrendamiento de vivienda o local"
+}
+},
+{
+"w":"huurtoeslag",
+"d":"een financiële bijdrage van de overheid voor mensen met een lager inkomen om de kosten van de huurwoning te kunnen betalen",
+"t":{
+"en":"housing benefit, rent subsidy, rent allowance",
+"ru":"субсидия на аренду жилья, жилищное пособие",
+"pl":"dofinansowanie do czynszu, dodatek mieszkaniowy, zasiłek mieszkaniowy",
+"de":"Wohngeld, Mietzuschuss",
+"fr":"aide personnelle au logement, APL, allocation de logement",
+"it":"sussidio per l'affitto, indennità di alloggio, contributo affitto",
+"cs":"příspěvek na bydlení, doplatek na bydlení",
+"tr":"kira yardımı, kira ödeneği",
+"es":"subsidio de alquiler, ayuda para el alquiler, subvención de alquiler"
+},
+"c":{
+"en":"government financial aid for rent",
+"ru":"государственная выплата для покрытия расходов на аренду",
+"pl":"pomoc finansowa na pokrycie kosztów wynajmu",
+"de":"staatliche Unterstützung zu den Mietkosten",
+"fr":"aide financière de l'État pour le loyer",
+"it":"contributo statale per le spese di locazione",
+"cs":"státní sociální podpora na úhradu nákladů na bydlení",
+"tr":"devlet tarafından düşük gelirlilere verilen kira desteği",
+"es":"ayuda financiera del gobierno para pagar el alquiler"
+}
+},
+{
+"w":"woningcorporatie",
+"d":"Een organisatie zonder winstoogmerk die zich richt op het bouwen, beheren en verhuren van betaalbare woonruimte, vaak sociale huurwoningen.",
+"t":{
+"en":"housing association, housing corporation",
+"ru":"жилищная корпорация, жилищная ассоциация",
+"pl":"spółdzielnia mieszkaniowa, towarzystwo budownictwa społecznego",
+"de":"Wohnungsbaugesellschaft, Wohnungsbaugenossenschaft, Wohnungsgesellschaft",
+"fr":"office de HLM, bailleur social, société de logement social",
+"it":"ente per l'edilizia sociale, cooperativa edilizia, istituto per le case popolari",
+"cs":"bytové družstvo, bytová korporace, správa bytového fondu",
+"tr":"konut kooperatifi, konut derneği, toplu konut idaresi",
+"es":"asociación de vivienda, corporación de vivienda, empresa de vivienda social"
+},
+"c":{
+"en":"organization providing social housing",
+"ru":"организация, управляющая социальным жильем",
+"pl":"organizacja zarządzająca i wynajmująca mieszkania",
+"de":"Unternehmen, das Wohnungen baut und verwaltet",
+"fr":"organisme public ou privé gérant des logements sociaux en France",
+"it":"organizzazione che gestisce alloggi popolari",
+"cs":"organizace spravující a pronajímající byty",
+"tr":"sosyal konut sağlayan ve yöneten kuruluş",
+"es":"organización que gestiona viviendas sociales"
+}
+},
+{
+"w":"huurder",
+"d":"Iemand die tegen betaling in een huis, kamer of gebouw woont of werkt dat eigendom is van een ander",
+"t":{
+"en":"tenant, renter",
+"ru":"арендатор, квартиросъёмщик, жилец",
+"pl":"najemca, lokator, kierownik",
+"de":"Mieter, Mieterin",
+"fr":"locataire, preneur",
+"it":"inquilino, locatario, affittuario",
+"cs":"nájemce, nájemník, podnájemník",
+"tr":"kiracı",
+"es":"inquilino, arrendatario"
+},
+"c":{
+"en":"occupant of rented property",
+"ru":"недвижимости",
+"pl":"osoba wynajmująca lokal",
+"de":"männliche oder neutrale Person, die Wohn- oder Gewerberaum mietet",
+"fr":"personne qui loue un logement ou un local",
+"it":"di un immobile residenziale o commerciale",
+"cs":"osoba v nájmu",
+"tr":"ev veya iş yeri kiralayan kimse",
+"es":"persona que alquila una vivienda o local"
+}
+},
+{
+"w":"eigenaar",
+"d":"Iemand die iets in eigendom heeft.",
+"t":{
+"en":"owner, proprietor",
+"ru":"владелец, собственник, хозяин",
+"pl":"właściciel, posiadacz",
+"de":"Eigentümer, Besitzer, Inhaber",
+"fr":"propriétaire, possesseur",
+"it":"proprietario, padrone",
+"cs":"majitel, vlastník",
+"tr":"sahip, mal sahibi, işletme sahibi",
+"es":"dueño, propietario"
+},
+"c":{
+"en":"person who has legal title to something",
+"ru":"общее название для того, кто чем-то владеет",
+"pl":"osoba posiadająca coś na własność, np. dom, sklep",
+"de":"Person, die die rechtliche Herrschaft über eine Sache hat",
+"fr":"personne qui possède un bien, une maison ou un commerce",
+"it":"persona che possiede legalmente qualcosa, come una casa o un'attività",
+"cs":"osoba, která něco vlastní",
+"tr":"bir mülkün veya nesnenin sahibi olan kişi",
+"es":"persona que posee o controla algo"
+}
+},
+{
+"w":"huisarts",
+"d":"Een arts die de eerste medische zorg verleent aan patiënten in de buurt en doorverwijst naar specialisten indien nodig.",
+"t":{
+"en":"GP, family doctor, general practitioner",
+"ru":"семейный врач, терапевт",
+"pl":"lekarz rodzinny, lekarz pierwszego kontaktu, internista",
+"de":"Hausarzt, Hausärztin, Allgemeinmediziner",
+"fr":"médecin de famille, généraliste, médecin généraliste",
+"it":"medico di base, medico di famiglia, medico generico",
+"cs":"praktický lékař, obvodní lékař, praktik",
+"tr":"aile hekimi, aile doktoru, pratisyen hekim",
+"es":"médico de cabecera, médico de familia, médico general"
+},
+"c":{
+"en":"abbreviation for General Practitioner, very common",
+"ru":"врач общей практики",
+"pl":"lekarz zapewniający podstawową opiekę medyczną dla całej rodziny",
+"de":"allgemeiner Arzt für die Erstversorgung",
+"fr":"médecin généraliste habituel",
+"it":"il medico di medicina generale a cui si è iscritti",
+"cs":"oficiální označení pro dospělé i děti",
+"tr":"birinci basamak sağlık hizmeti sunan doktor",
+"es":"término común para el médico de atención primaria"
+}
+},
+{
+"w":"ziekenhuis",
+"d":"Instelling voor onderzoek, behandeling en verpleging van zieken.",
+"t":{
+"en":"hospital",
+"ru":"больница",
+"pl":"szpital, klinika",
+"de":"Krankenhaus, Klinik, Hospital",
+"fr":"hôpital, clinique",
+"it":"ospedale, clinica",
+"cs":"nemocnice, špitál",
+"tr":"hastane",
+"es":"hospital, clínica"
+},
+"c":{
+"en":"medical facility",
+"ru":"медицинское учреждение",
+"pl":"placówka medyczna",
+"de":"allgemeine medizinische Einrichtung",
+"fr":"établissement médical général",
+"it":"struttura medica generale",
+"cs":"zdravotnické zařízení",
+"tr":"hastaların tedavi edildiği sağlık kurumu",
+"es":"establecimiento médico"
+}
+},
+{
+"w":"apotheek",
+"d":"Een winkel waar medicijnen en gezondheidsproducten worden verkocht en klaargemaakt.",
+"t":{
+"en":"pharmacy, chemist's, drugstore",
+"ru":"аптека",
+"pl":"apteka",
+"de":"Apotheke",
+"fr":"pharmacie, officine",
+"it":"farmacia",
+"cs":"lékárna",
+"tr":"eczane",
+"es":"farmacia"
+},
+"c":{
+"en":"shop",
+"ru":"учреждение",
+"pl":"sklep z lekami",
+"de":"Geschäft",
+"fr":"officine",
+"it":"negozio",
+"cs":"obchod s léky",
+"tr":"ilaç satılan dükkan",
+"es":"establecimiento comercial"
+}
+},
+{
+"w":"zorgverzekering",
+"d":"een verzekering die de medische kosten en zorgkosten van een persoon dekt",
+"t":{
+"en":"health insurance, medical insurance, healthcare insurance",
+"ru":"медицинская страховка, медицинское страхование, полис медицинского страхования",
+"pl":"ubezpieczenie zdrowotne, ubezpieczenie medyczne",
+"de":"Krankenversicherung, Krankenkasse",
+"fr":"assurance maladie, assurance santé, mutuelle",
+"it":"assicurazione sanitaria, assicurazione medica, cassa malati",
+"cs":"zdravotní pojištění",
+"tr":"sağlık sigortası",
+"es":"seguro médico, seguro de salud, seguro de enfermedad"
+},
+"c":{
+"en":"general term for medical coverage",
+"ru":"разговорное и общеупотребительное обозначение медицинского страхования",
+"pl":"ogólne określenie na pokrycie kosztów leczenia",
+"de":"allgemeiner Begriff für die Absicherung von Krankheitskosten",
+"fr":"terme général pour la couverture des frais de santé",
+"it":"termine generale per la copertura delle spese mediche",
+"cs":"obecný termín pro krytí léčebných výloh",
+"tr":"tıbbi masrafları karşılayan genel sigorta",
+"es":"término general para la cobertura de gastos de salud"
+}
+},
+{
+"w":"specialist",
+"d":"Een arts die gespecialiseerd is in een bepaald deel van de geneeskunde.",
+"t":{
+"en":"specialist",
+"ru":"врач-специалист, специалист",
+"pl":"lekarz specjalista, specjalista",
+"de":"Facharzt, Fachärztin, Spezialist, Spezialistin",
+"fr":"spécialiste, médecin spécialiste",
+"it":"specialista",
+"cs":"specialista, odborný lékař",
+"tr":"uzman doktor, uzman hekim, mütehassıs",
+"es":"especialista, médico especialista"
+},
+"c":{
+"en":"medical doctor",
+"ru":"узкопрофильный врач",
+"pl":"lekarz o konkretnej specjalizacji",
+"de":"männlicher Arzt mit Spezialisierung",
+"fr":"médecin spécialiste",
+"it":"medico specializzato",
+"cs":"odborný lékař",
+"tr":"tıpta uzmanlık eğitimini tamamlamış hekim",
+"es":"médico especialista"
+}
+},
+{
+"w":"tandarts",
+"d":"Een arts die gespecialiseerd is in de controle en behandeling van het gebit.",
+"t":{
+"en":"dentist",
+"ru":"стоматолог, зубной врач, дантист",
+"pl":"dentysta, stomatolog",
+"de":"Zahnarzt, Zahnärztin",
+"fr":"dentiste",
+"it":"dentista, odontoiatra",
+"cs":"zubař, zubní lékař, stomatolog",
+"tr":"diş hekimi, diş doktoru, dişçi",
+"es":"dentista, odontólogo"
+},
+"c":{
+"en":"medical professional for teeth",
+"ru":"медицинский термин",
+"pl":"lekarz leczący zęby",
+"de":"männlich oder allgemein",
+"fr":"professionnel de la santé bucco-dentaire",
+"it":"professionista medico per la cura dei denti",
+"cs":"běžné označení",
+"tr":"resmî ve mesleki unvan",
+"es":"profesional de la salud dental"
+}
+},
+{
+"w":"verloskundige",
+"d":"iemand die medisch geschoold is om vrouwen te begeleiden bij de zwangerschap en de bevalling",
+"t":{
+"en":"midwife, obstetrician",
+"ru":"акушерка, акушер",
+"pl":"położna, położnik",
+"de":"Hebamme, Entbindungspfleger, Geburtshelfer",
+"fr":"sage-femme, obstétricien, maïeuticien",
+"it":"ostetrica, levatrice",
+"cs":"porodní asistentka, porodní bába",
+"tr":"ebe, doğum uzmanı",
+"es":"partera, comadrona, obstetra, matrona"
+},
+"c":{
+"en":"a professional who assists in childbirth",
+"ru":"женщина-специалист",
+"pl":"kobieta pomagająca przy porodzie",
+"de":"weibliche Berufsbezeichnung für Geburtshelfer",
+"fr":"professionnelle de santé qui accompagne les femmes enceintes",
+"it":"professionista sanitaria che assiste la donna durante la gravidanza e il parto",
+"cs":"odbornice doprovázející ženu při těhotenství a porodu",
+"tr":"doğuma yardımcı olan sağlık çalışanı",
+"es":"profesional que asiste en el parto"
+}
+},
+{
+"w":"ggz",
+"d":"Geestelijke gezondheidszorg; de sector die professionele hulp biedt aan mensen met psychische problemen.",
+"t":{
+"en":"mental health care, mental health services",
+"ru":"охрана психического здоровья, психиатрическая помощь",
+"pl":"opieka psychiatryczna, ochrona zdrowia psychicznego",
+"de":"psychische Gesundheitsversorgung, psychiatrische Versorgung",
+"fr":"soins de santé mentale, santé mentale",
+"it":"salute mentale, servizi di salute mentale, assistenza psichiatrica",
+"cs":"péče o duševní zdraví, psychiatrická péče",
+"tr":"ruh sağlığı hizmetleri, ruh sağlığı sektörü",
+"es":"salud mental, atención a la salud mental, servicios de salud mental"
+},
+"c":{
+"en":"general sector",
+"ru":"общая сфера",
+"pl":"system opieki i leczenia",
+"de":"allgemeiner Sektor",
+"fr":"secteur général",
+"it":"settore generale",
+"cs":"obecný sektor",
+"tr":"genel sektör",
+"es":"sector general"
+}
+},
+{
+"w":"kraamzorg",
+"d":"De professionele hulp en ondersteuning die aan een moeder en haar pasgeboren baby wordt gegeven tijdens de eerste week na de bevalling.",
+"t":{
+"en":"maternity care, postnatal care, postpartum care",
+"ru":"послеродовой уход, патронаж, уход за роженицей и младенцем",
+"pl":"opieka poporodowa, opieka połogowa, patronaż",
+"de":"Wochenbettbetreuung, Mütterpflege, Nachsorge",
+"fr":"soins postnatals, aide à la maternité, soins du post-partum",
+"it":"assistenza post-partum, assistenza neonatale a domicilio, cure postnatali",
+"cs":"poporodní péče, poporodní asistence, péče o matku a dítě",
+"tr":"lohusa bakımı, doğum sonrası bakım, bebek ve anne bakım hizmeti",
+"es":"atención posparto, asistencia posparto a domicilio, cuidados posparto"
+},
+"c":{
+"en":"general term for care during and after pregnancy",
+"ru":"медицинская и бытовая помощь на дому",
+"pl":"medyczna i praktyczna pomoc w domu po porodzie",
+"de":"häusliche Pflege und Unterstützung für Mutter und Kind nach der Geburt",
+"fr":"soins médicaux et de soutien après l'accouchement",
+"it":"cura e supporto per madre e neonato dopo il parto",
+"cs":"péče o matku a novorozence po porodu",
+"tr":"doğum sonrası anne ve bebek için evde sağlanan bakım hizmeti",
+"es":"asistencia médica y de apoyo tras el parto"
+}
+},
+{
+"w":"basisschool",
+"d":"Een school voor kinderen van ongeveer vier tot twaalf jaar, waar het eerste deel van het verplichte onderwijs wordt gegeven.",
+"t":{
+"en":"primary school, elementary school",
+"ru":"начальная школа",
+"pl":"szkoła podstawowa, podstawówka",
+"de":"Grundschule, Primarschule, Volksschule",
+"fr":"école primaire, école élémentaire",
+"it":"scuola elementare, scuola primaria",
+"cs":"základní škola, obecná škola",
+"tr":"ilkokul, ilköğretim okulu",
+"es":"escuela primaria, colegio de educación primaria, escuela elemental"
+},
+"c":{
+"en":"UK/General",
+"ru":"первая ступень школьного образования",
+"pl":"pierwszy etap edukacji szkolnej",
+"de":"erste Stufe der schulischen Ausbildung",
+"fr":"enseignement pour les enfants de 6 à 11 ans",
+"it":"termine comune e tradizionale in Italia",
+"cs":"první stupeň vzdělávání pro děti",
+"tr":"genel olarak 4-12 yaş arası çocukların gittiği temel eğitim kurumu",
+"es":"educación básica para niños"
+}
+},
+{
+"w":"middelbare",
+"d":"Verkorting van <w>middelbare school</w>.",
+"t":{
+"en":"high school, secondary school",
+"ru":"средняя школа",
+"pl":"szkoła średnia, średnia",
+"de":"weiterführende Schule, Oberschule",
+"fr":"lycée, collège, secondaire",
+"it":"scuola media, scuola superiore",
+"cs":"střední škola, střední",
+"tr":"ortaokul, lise",
+"es":"secundaria, instituto"
+},
+"c":{
+"en":"educational institution",
+"ru":"учебное заведение",
+"pl":"potoczne określenie szkoły średniej",
+"de":"Schule nach der Grundschule",
+"fr":"établissement scolaire",
+"it":"istituto scolastico",
+"cs":"vzdělávací instituce",
+"tr":"eğitim kurumu",
+"es":"escuela de educación secundaria"
+}
+},
+{
+"w":"mbo",
+"d":"Afkorting van <w>middelbaar beroepsonderwijs</w>; onderwijsniveau dat opleidt voor praktische beroepen en vakmanschap.",
+"t":{
+"en":"secondary vocational education, vocational education, vocational school",
+"ru":"среднее профессиональное образование, колледж, техникум",
+"pl":"średnie szkolnictwo zawodowe, szkoła zawodowa, technikum, szkoła branżowa",
+"de":"Berufsschule, Berufsausbildung, mittlere Berufsbildung",
+"fr":"enseignement professionnel secondaire, lycée professionnel, formation professionnelle",
+"it":"istruzione professionale secondaria, scuola professionale, formazione professionale",
+"cs":"střední odborné vzdělání, střední odborná škola, odborné učiliště",
+"tr":"orta düzey mesleki eğitim, meslek yüksekokulu, meslek lisesi",
+"es":"educación profesional de grado medio, formación profesional, escuela profesional"
+},
+"c":{
+"en":"literal translation of the acronym",
+"ru":"уровень образования",
+"pl":"dosłowne tłumaczenie poziomu edukacji",
+"de":"Bezug auf die Bildungseinrichtung",
+"fr":"traduction littérale du système éducatif",
+"it":"riferito al livello di istruzione",
+"cs":"úroveň vzdělání",
+"tr":"eğitim düzeyi anlamında",
+"es":"nivel educativo"
+}
+},
+{
+"w":"hbo",
+"d":"Afkorting van <w>hoger beroepsonderwijs</w>; een praktijkgerichte vorm van hoger onderwijs die volgt op de havo, het vwo of het mbo.",
+"t":{
+"en":"higher professional education, university of applied sciences",
+"ru":"высшее профессиональное образование, университет прикладных наук",
+"pl":"wyższe szkolnictwo zawodowe, wyższa szkoła zawodowa",
+"de":"Fachhochschule, höhere Berufsbildung, Fachhochschulstudium",
+"fr":"enseignement professionnel supérieur, université des sciences appliquées",
+"it":"istruzione professionale superiore, università di scienze applicate",
+"cs":"vyšší odborné vzdělávání, vysoká škola odborná, univerzita aplikovaných věd",
+"tr":"yüksek mesleki eğitim, uygulamalı bilimler üniversitesi",
+"es":"educación superior profesional, universidad de ciencias aplicadas"
+},
+"c":{
+"en":"educational level",
+"ru":"тип образования",
+"pl":"typ edukacji",
+"de":"Institutionstyp",
+"fr":"le système ou niveau d'études",
+"it":"livello di istruzione",
+"cs":"typ vzdělání",
+"tr":"eğitim düzeyi",
+"es":"nivel educativo"
+}
+},
+{
+"w":"universiteit",
+"d":"Een instelling voor hoger onderwijs en wetenschappelijk onderzoek.",
+"t":{
+"en":"university",
+"ru":"университет",
+"pl":"uniwersytet, uczelnia",
+"de":"Universität, Uni",
+"fr":"université, fac",
+"it":"università",
+"cs":"univerzita, vysoká škola",
+"tr":"üniversite",
+"es":"universidad"
+},
+"c":{
+"en":"higher education institution",
+"ru":"высшее учебное заведение",
+"pl":"wyższa uczelnia",
+"de":"Hochschuleinrichtung",
+"fr":"établissement d'enseignement supérieur",
+"it":"istituto di istruzione superiore",
+"cs":"vysoká škola",
+"tr":"yükseköğretim kurumu",
+"es":"institución de enseñanza superior"
+}
+},
+{
+"w":"diploma",
+"d":"Een officieel bewijs dat je een examen met succes hebt afgerond of over bepaalde vaardigheden beschikt.",
+"t":{
+"en":"diploma, certificate, degree",
+"ru":"диплом, аттестат, свидетельство",
+"pl":"dyplom, świadectwo, certyfikat",
+"de":"Diplom, Zeugnis, Zertifikat, Urkunde",
+"fr":"diplôme, certificat, brevet",
+"it":"diploma, certificato, laurea",
+"cs":"diplom, vysvědčení, osvědčení, certifikát",
+"tr":"diploma, sertifika, belge",
+"es":"diploma, título, certificado"
+},
+"c":{
+"en":"for educational degrees",
+"ru":"об окончании учебного заведения",
+"pl":"ukończenia szkoły wyższej lub kursu",
+"de":"für Hochschulabschlüsse oder bestimmte Qualifikationen",
+"fr":"pour les diplômes d'études ou professionnels",
+"it":"per il completamento degli studi scolastici o superiori",
+"cs":"pro ukončení studia nebo kurzu",
+"tr":"okul veya üniversite mezuniyeti için",
+"es":"para títulos educativos o de cursos"
+}
+},
+{
+"w":"duo",
+"d":"Dienst Uitvoering Onderwijs; de Nederlandse overheidsinstantie voor studiefinanciering en onderwijsregels",
+"t":{
+"en":"DUO",
+"ru":"DUO",
+"pl":"DUO",
+"de":"DUO",
+"fr":"DUO",
+"it":"DUO",
+"cs":"DUO",
+"tr":"DUO",
+"es":"DUO"
+},
+"c":{
+"en":"the Dutch education executive agency",
+"ru":"название организации",
+"pl":"nazwa holenderskiej agencji rządowej",
+"de":"niederländische Behörde für Studienfinanzierung",
+"fr":"organisme public néerlandais pour l'éducation",
+"it":"nome dell'ente pubblico olandese per l'istruzione",
+"cs":"nizozemský úřad pro záležitosti vzdělávání",
+"tr":"Hollanda eğitim yürütme kurumu",
+"es":"organismo oficial de educación en los Países Bajos"
+}
+},
+{
+"w":"leerplicht",
+"d":"De wettelijke verplichting voor kinderen om onderwijs te volgen.",
+"t":{
+"en":"compulsory education, compulsory schooling, mandatory education",
+"ru":"обязательное обучение, обязательное школьное образование",
+"pl":"obowiązek szkolny, obowiązek nauki",
+"de":"Schulpflicht, Unterrichtspflicht",
+"fr":"scolarité obligatoire, obligation scolaire, instruction obligatoire",
+"it":"obbligo scolastico, istruzione obbligatoria",
+"cs":"povinná školní docházka, povinné vzdělávání",
+"tr":"zorunlu eğitim, okul mecburiyeti",
+"es":"escolaridad obligatoria, educación obligatoria, escolarización obligatoria"
+},
+"c":{
+"en":"the legal requirement to attend school",
+"ru":"законодательное требование посещать школу",
+"pl":"prawny wymóg uczęszczania do szkoły",
+"de":"gesetzliche Pflicht zum Schulbesuch",
+"fr":"l'obligation légale de suivre une instruction",
+"it":"il dovere stabilito dalla legge di frequentare la scuola",
+"cs":"zákonem stanovená povinnost dětí navštěvovat školu",
+"tr":"yasalarca belirlenmiş eğitim alma yükümlülüğü",
+"es":"período de educación exigido por la ley"
+}
+},
+{
+"w":"inschrijven",
+"d":"Zich officieel aanmelden als deelnemer of lid van een organisatie of evenement.",
+"t":{
+"en":"register, sign up, enroll",
+"ru":"записаться, зарегистрироваться",
+"pl":"zapisać się, zarejestrować się",
+"de":"sich anmelden, sich einschreiben, sich registrieren",
+"fr":"s'inscrire, se faire inscrire",
+"it":"iscriversi, registrarsi",
+"cs":"přihlásit se, zaregistrovat se, zapsat se",
+"tr":"kaydolmak, kayıt yaptırmak, yazılmak",
+"es":"inscribirse, registrarse, apuntarse"
+},
+"c":{
+"en":"general / official",
+"ru":"стать участником, внести свое имя в список",
+"pl":"na kurs, do szkoły, na wydarzenie",
+"de":"allgemein für Kurse, Events oder Organisationen",
+"fr":"général / s'enregistrer comme membre ou participant",
+"it":"generale, per corsi, scuole o eventi",
+"cs":"na kurz, zkoušku, do klubu",
+"tr":"genel / resmi veya gayriresmi üyelik",
+"es":"para un curso, evento o club"
+}
+},
+{
+"w":"studiefinanciering",
+"d":"financiële ondersteuning voor studenten vanuit de overheid in de vorm van een lening of beurs",
+"t":{
+"en":"student finance, student grant, student loan, study grant",
+"ru":"студенческое финансирование, образовательный грант, студенческий заем",
+"pl":"stypendium socjalne i kredyt studencki, dofinansowanie studiów, stypendium studenckie, kredyt studencki",
+"de":"Studienfinanzierung, BAföG, Studienstipendium, Studienkredit",
+"fr":"bourse d'études, prêt étudiant, aide financière aux étudiants, subvention d'études",
+"it":"finanziamento agli studi, borsa di studio, prestito d'onore",
+"cs":"studentské financování, státní podpora studia, studentský grant, studentská půjčka",
+"tr":"öğrenim kredisi, öğrenci bursu, eğitim desteği",
+"es":"financiación de estudios, beca de estudios, crédito de estudios, ayuda estudiantil"
+},
+"c":{
+"en":"general term for government financial support for students",
+"ru":"государственная поддержка",
+"pl":"ogólne rządowe wsparcie finansowe dla studentów",
+"de":"allgemeiner Begriff für die finanzielle Unterstützung von Studenten",
+"fr":"aide financière non remboursable octroyée aux étudiants",
+"it":"termine generale per il supporto finanziario statale agli studenti",
+"cs":"obecný termín pro státní finanční podporu studentů",
+"tr":"geri ödemeli devlet desteği",
+"es":"término general para el apoyo financiero gubernamental"
+}
+},
+{
+"w":"uitkering",
+"d":"Een geldbedrag dat iemand ontvangt van de overheid of een instantie als financiële ondersteuning, bijvoorbeeld bij werkloosheid, ziekte of pensioen.",
+"t":{
+"en":"benefit, allowance",
+"ru":"пособие, выплата",
+"pl":"zasiłek, świadczenie, zapomoga",
+"de":"Leistung, Unterstützung, Beihilfe",
+"fr":"allocation, indemnité, prestation sociale",
+"it":"sussidio, indennità, prestazione sociale",
+"cs":"dávka, podpora, příspěvek",
+"tr":"ödenek, sosyal yardım, işsizlik maaşı",
+"es":"prestación, subsidio, ayuda"
+},
+"c":{
+"en":"social security payment",
+"ru":"социальная помощь",
+"pl":"pomoc socjalna dla bezrobotnych lub chorych",
+"de":"Zahlung vom Staat oder einer Versicherung",
+"fr":"aide financière de l'État",
+"it":"assistenza finanziaria statale",
+"cs":"sociální podpora",
+"tr":"devlet veya kurum tarafından sağlanan maddi destek",
+"es":"ayuda económica de la seguridad social"
+}
+},
+{
+"w":"bijstand",
+"d":"Een financiële uitkering van de overheid voor mensen die geen of onvoldoende inkomen hebben om van te leven.",
+"t":{
+"en":"welfare, social assistance",
+"ru":"социальное пособие, социальная помощь",
+"pl":"zasiłek socjalny, pomoc społeczna",
+"de":"Sozialhilfe, Arbeitslosengeld II",
+"fr":"aide sociale, allocation d'assistance",
+"it":"sussidio di disoccupazione, assistenza sociale, reddito di cittadinanza",
+"cs":"sociální podpora, podpora v hmotné nouzi, sociální dávky",
+"tr":"sosyal yardım, işsizlik yardımı",
+"es":"asistencia social, subsidio de desempleo"
+},
+"c":{
+"en":"government financial support",
+"ru":"финансовая выплата",
+"pl":"świadczenie pieniężne dla potrzebujących",
+"de":"staatliche finanzielle Unterstützung zur Sicherung des Lebensunterhalts",
+"fr":"soutien financier de l'État",
+"it":"sostegno finanziario statale",
+"cs":"státní finanční pomoc",
+"tr":"devlet tarafından sağlanan maddi destek",
+"es":"ayuda económica del gobierno"
+}
+},
+{
+"w":"toeslag",
+"d":"een financiële tegemoetkoming of uitkering van de overheid of werkgever voor specifieke kosten of situaties",
+"t":{
+"en":"benefit, allowance, subsidy",
+"ru":"пособие, субсидия, надбавка",
+"pl":"zasiłek, dodatek, dofinansowanie",
+"de":"Zuschuss, Zulage, Beihilfe",
+"fr":"allocation, subvention, indemnité",
+"it":"sussidio, indennità, assegno",
+"cs":"příspěvek, dávka, příplatek",
+"tr":"ödenek, yardım, destek",
+"es":"subsidio, prestación, complemento"
+},
+"c":{
+"en":"government or insurance payment",
+"ru":"государственная социальная выплата",
+"pl":"regularne wsparcie finansowe od państwa",
+"de":"finanzielle Unterstützung vom Staat oder Arbeitgeber",
+"fr":"aide financière régulière de l'État",
+"it":"aiuto economico statale per spese specifiche",
+"cs":"státní nebo sociální podpora na konkrétní účel",
+"tr":"belirli bir amaç için ayrılan para",
+"es":"ayuda económica del Estado para gastos concretos"
+}
+},
+{
+"w":"kinderbijslag",
+"d":"Een financiële bijdrage van de overheid om de kosten voor de opvoeding en verzorging van kinderen te dekken.",
+"t":{
+"en":"child benefit, family allowance",
+"ru":"детское пособие, пособие на детей",
+"pl":"zasiłek rodzinny, zasiłek na dziecko",
+"de":"Kindergeld, Familienbeihilfe",
+"fr":"allocations familiales, allocation familiale",
+"it":"assegno familiare, assegno per i figli",
+"cs":"přídavek na dítě, přídavky na děti",
+"tr":"çocuk yardımı, çocuk parası, aile yardımı",
+"es":"subsidio familiar por hijo, prestación por hijo a cargo, ayuda familiar"
+},
+"c":{
+"en":"regular government payment to parents",
+"ru":"государственная выплата на ребенка",
+"pl":"regularne świadczenie pieniężne dla rodzin z dziećmi",
+"de":"staatliche finanzielle Unterstützung für Eltern",
+"fr":"aide financière versée aux familles pour l'entretien des enfants",
+"it":"sostegno economico statale per le famiglie con figli",
+"cs":"pravidelná státní sociální dávka na nezaopatřené dítě",
+"tr":"devletin çocuklu ailelere yaptığı düzenli ödeme",
+"es":"ayuda económica estatal para la crianza"
+}
+},
+{
+"w":"zorgtoeslag",
+"d":"een financiële bijdrage van de overheid om mensen met een lager inkomen te helpen bij het betalen van hun zorgverzekering",
+"t":{
+"en":"healthcare allowance, healthcare benefit",
+"ru":"пособие на медицинское страхование, субсидия на медстраховку",
+"pl":"dofinansowanie do ubezpieczenia zdrowotnego, dodatek do ubezpieczenia zdrowotnego",
+"de":"Krankenversicherungszuschuss, Zuschuss zur Krankenversicherung",
+"fr":"allocation de soins de santé, aide à la complémentaire santé",
+"it":"sussidio per l'assicurazione sanitaria, indennità sanitaria",
+"cs":"příspěvek na zdravotní pojištění, subvence na zdravotní pojištění",
+"tr":"sağlık sigortası yardımı, sağlık sigortası ödeneği, zorgtoeslag",
+"es":"subsidio para el seguro médico, ayuda para el seguro de salud, subsidio de salud"
+},
+"c":{
+"en":"government subsidy for health insurance costs",
+"ru":"государственная субсидия для оплаты полиса",
+"pl":"dodatek socjalny na pokrycie kosztów ubezpieczenia",
+"de":"staatlicher Zuschuss zu den Krankenversicherungsbeiträgen",
+"fr":"subvention gouvernementale pour payer l'assurance maladie",
+"it":"contributo statale per le spese mediche",
+"cs":"státní sociální podpora v Nizozemsku",
+"tr":"devlet tarafından ödenen prim desteği",
+"es":"ayuda financiera del gobierno para pagar la prima del seguro de salud"
+}
+},
+{
+"w":"belastingdienst",
+"d":"Overheidsdienst die verantwoordelijk is voor het heffen en innen van belastingen.",
+"t":{
+"en":"tax authorities, Tax and Customs Administration, tax office",
+"ru":"налоговая служба, налоговая инспекция",
+"pl":"urząd skarbowy, fiskus, administracja skarbowa",
+"de":"Finanzamt, Steuerbehörde",
+"fr":"fisc, administration fiscale, service des impôts",
+"it":"fisco, autorità fiscale, Agenzia delle Entrate, ufficio delle imposte",
+"cs":"finanční úřad, berňák, daňová správa",
+"tr":"vergi dairesi, gelir idaresi, maliye",
+"es":"hacienda, fisco, agencia tributaria"
+},
+"c":{
+"en":"general term for the organization",
+"ru":"государственный орган",
+"pl":"powszechna nazwa instytucji podatkowej w Polsce",
+"de":"örtliche Behörde für Steuerverwaltung",
+"fr":"terme courant pour désigner l'administration fiscale",
+"it":"termine generale per l'amministrazione finanziaria dello Stato",
+"cs":"státní instituce pro správu daní",
+"tr":"genel ve yaygın kullanım",
+"es":"término común para la administración fiscal"
+}
+},
+{
+"w":"schuldhulp",
+"d":"een traject of ondersteuning waarbij mensen met financiële problemen geholpen worden om hun schulden af te lossen of te beheren",
+"t":{
+"en":"debt relief, debt counseling, debt management",
+"ru":"помощь в погашении долгов, консультирование по задолженностям, урегулирование долгов",
+"pl":"pomoc w wyjściu z długów, doradztwo dłużne, oddłużanie",
+"de":"Schuldnerberatung, Schuldenregulierung, Schuldenhilfe",
+"fr":"aide au surendettement, médiation de dettes, accompagnement budgétaire",
+"it":"assistenza per il sovraindebitamento, consulenza sul debito, ristrutturazione del debito",
+"cs":"oddlužení, dluhové poradenství, pomoc s dluhy",
+"tr":"borç yapılandırma desteği, borç danışmanlığı, borç ödeme yardımı",
+"es":"asesoramiento de deudas, mediación de deudas, ayuda para el sobreendeudamiento"
+},
+"c":{
+"en":"general assistance or programs to reduce or eliminate debt",
+"ru":"общий термин для поддержки должников",
+"pl":"ogólne wsparcie dla osób zadłużonych",
+"de":"Beratung und Unterstützung für Personen mit Schuldenproblemen",
+"fr":"assistance publique ou sociale pour les personnes en situation de surendettement",
+"it":"supporto professionale per gestire e risolvere situazioni di grave indebitamento",
+"cs":"proces zbavování se dluhů, často formou osobního bankrotu",
+"tr":"borçların yönetilmesi ve ödenmesi için sağlanan profesyonel yardım",
+"es":"orientación profesional para gestionar y resolver deudas"
+}
+},
+{
+"w":"belasting",
+"d":"Een door de wet verplichte betaling aan de overheid, zonder dat daar direct een specifieke tegenprestatie tegenover staat.",
+"t":{
+"en":"tax",
+"ru":"налог, пошлина",
+"pl":"podatek",
+"de":"Steuer, Abgabe",
+"fr":"impôt, taxe",
+"it":"tassa, imposta",
+"cs":"daň, poplatek",
+"tr":"vergi, harç",
+"es":"impuesto, tasa, gravamen"
+},
+"c":{
+"en":"financial contribution to the state",
+"ru":"финансовый сбор",
+"pl":"obowiązkowe świadczenie pieniężne na rzecz państwa",
+"de":"Abgabe an den Staat",
+"fr":"prélèvement obligatoire sur les ressources des personnes",
+"it":"tributo dovuto allo Stato",
+"cs":"finanční odvod státu",
+"tr":"devlete ödenen zorunlu mali yükümlülük",
+"es":"contribución financiera obligatoria al Estado"
+}
+}
+]

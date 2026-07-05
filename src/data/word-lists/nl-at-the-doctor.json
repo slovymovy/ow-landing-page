@@ -1,0 +1,2081 @@
+[
+{
+"w":"huisarts",
+"d":"Een arts die de eerste medische zorg verleent aan patiënten in de buurt en doorverwijst naar specialisten indien nodig.",
+"t":{
+"en":"GP, family doctor, general practitioner",
+"ru":"семейный врач, терапевт",
+"pl":"lekarz rodzinny, lekarz pierwszego kontaktu, internista",
+"de":"Hausarzt, Hausärztin, Allgemeinmediziner",
+"fr":"médecin de famille, généraliste, médecin généraliste",
+"it":"medico di base, medico di famiglia, medico generico",
+"cs":"praktický lékař, obvodní lékař, praktik",
+"tr":"aile hekimi, aile doktoru, pratisyen hekim",
+"es":"médico de cabecera, médico de familia, médico general"
+},
+"c":{
+"en":"abbreviation for General Practitioner, very common",
+"ru":"врач общей практики",
+"pl":"lekarz zapewniający podstawową opiekę medyczną dla całej rodziny",
+"de":"allgemeiner Arzt für die Erstversorgung",
+"fr":"médecin généraliste habituel",
+"it":"il medico di medicina generale a cui si è iscritti",
+"cs":"oficiální označení pro dospělé i děti",
+"tr":"birinci basamak sağlık hizmeti sunan doktor",
+"es":"término común para el médico de atención primaria"
+}
+},
+{
+"w":"specialist",
+"d":"Een arts die gespecialiseerd is in een bepaald deel van de geneeskunde.",
+"t":{
+"en":"specialist",
+"ru":"врач-специалист, специалист",
+"pl":"lekarz specjalista, specjalista",
+"de":"Facharzt, Fachärztin, Spezialist, Spezialistin",
+"fr":"spécialiste, médecin spécialiste",
+"it":"specialista",
+"cs":"specialista, odborný lékař",
+"tr":"uzman doktor, uzman hekim, mütehassıs",
+"es":"especialista, médico especialista"
+},
+"c":{
+"en":"medical doctor",
+"ru":"узкопрофильный врач",
+"pl":"lekarz o konkretnej specjalizacji",
+"de":"männlicher Arzt mit Spezialisierung",
+"fr":"médecin spécialiste",
+"it":"medico specializzato",
+"cs":"odborný lékař",
+"tr":"tıpta uzmanlık eğitimini tamamlamış hekim",
+"es":"médico especialista"
+}
+},
+{
+"w":"apotheek",
+"d":"Een winkel waar medicijnen en gezondheidsproducten worden verkocht en klaargemaakt.",
+"t":{
+"en":"pharmacy, chemist's, drugstore",
+"ru":"аптека",
+"pl":"apteka",
+"de":"Apotheke",
+"fr":"pharmacie, officine",
+"it":"farmacia",
+"cs":"lékárna",
+"tr":"eczane",
+"es":"farmacia"
+},
+"c":{
+"en":"shop",
+"ru":"учреждение",
+"pl":"sklep z lekami",
+"de":"Geschäft",
+"fr":"officine",
+"it":"negozio",
+"cs":"obchod s léky",
+"tr":"ilaç satılan dükkan",
+"es":"establecimiento comercial"
+}
+},
+{
+"w":"ziekenhuis",
+"d":"Instelling voor onderzoek, behandeling en verpleging van zieken.",
+"t":{
+"en":"hospital",
+"ru":"больница",
+"pl":"szpital, klinika",
+"de":"Krankenhaus, Klinik, Hospital",
+"fr":"hôpital, clinique",
+"it":"ospedale, clinica",
+"cs":"nemocnice, špitál",
+"tr":"hastane",
+"es":"hospital, clínica"
+},
+"c":{
+"en":"medical facility",
+"ru":"медицинское учреждение",
+"pl":"placówka medyczna",
+"de":"allgemeine medizinische Einrichtung",
+"fr":"établissement médical général",
+"it":"struttura medica generale",
+"cs":"zdravotnické zařízení",
+"tr":"hastaların tedavi edildiği sağlık kurumu",
+"es":"establecimiento médico"
+}
+},
+{
+"w":"ggz",
+"d":"Geestelijke gezondheidszorg; de sector die professionele hulp biedt aan mensen met psychische problemen.",
+"t":{
+"en":"mental health care, mental health services",
+"ru":"охрана психического здоровья, психиатрическая помощь",
+"pl":"opieka psychiatryczna, ochrona zdrowia psychicznego",
+"de":"psychische Gesundheitsversorgung, psychiatrische Versorgung",
+"fr":"soins de santé mentale, santé mentale",
+"it":"salute mentale, servizi di salute mentale, assistenza psichiatrica",
+"cs":"péče o duševní zdraví, psychiatrická péče",
+"tr":"ruh sağlığı hizmetleri, ruh sağlığı sektörü",
+"es":"salud mental, atención a la salud mental, servicios de salud mental"
+},
+"c":{
+"en":"general sector",
+"ru":"общая сфера",
+"pl":"system opieki i leczenia",
+"de":"allgemeiner Sektor",
+"fr":"secteur général",
+"it":"settore generale",
+"cs":"obecný sektor",
+"tr":"genel sektör",
+"es":"sector general"
+}
+},
+{
+"w":"psycholoog",
+"d":"Een hulpverlener die mensen professioneel helpt en behandelt bij psychische problemen.",
+"t":{
+"en":"psychologist",
+"ru":"психолог",
+"pl":"psycholog",
+"de":"Psychologe, Psychologin",
+"fr":"psychologue, thérapeute",
+"it":"psicologo, terapeuta",
+"cs":"psycholog",
+"tr":"psikolog",
+"es":"psicólogo, terapeuta"
+},
+"c":{
+"en":"mental health professional",
+"ru":"специалист, оказывающий помощь",
+"pl":"terapeuta, specjalista udzielający pomocy",
+"de":"männlicher Therapeut",
+"fr":"professionnel de la santé mentale",
+"it":"professionista della salute mentale",
+"cs":"odborník poskytující pomoc a terapii",
+"tr":"ruh sağlığı uzmanı",
+"es":"profesional de la salud mental"
+}
+},
+{
+"w":"wachtkamer",
+"d":"Een ruimte of vertrek dat speciaal is ingericht voor mensen die ergens op moeten wachten, bijvoorbeeld bij een arts of op een station.",
+"t":{
+"en":"waiting room, waiting area",
+"ru":"зал ожидания, приемная, комната ожидания",
+"pl":"poczekalnia",
+"de":"Wartezimmer, Warteraum, Wartebereich",
+"fr":"salle d'attente",
+"it":"sala d'attesa, sala d'aspetto",
+"cs":"čekárna",
+"tr":"bekleme odası, bekleme salonu",
+"es":"sala de espera"
+},
+"c":{
+"en":"a room in a public place or office for people to wait",
+"ru":"на вокзале или в аэропорту",
+"pl":"pomieszczenie przeznaczone do czekania",
+"de":"besonders in einer Arztpraxis",
+"fr":"pièce aménagée pour faire patienter le public",
+"it":"stanza in un luogo pubblico o ufficio destinata all'attesa",
+"cs":"místnost pro čekající lidi",
+"tr":"doktor, istasyon vb. yerlerde beklemek için ayrılmış oda",
+"es":"habitación en un lugar público o consulta para esperar"
+}
+},
+{
+"w":"zorgverzekering",
+"d":"een verzekering die de medische kosten en zorgkosten van een persoon dekt",
+"t":{
+"en":"health insurance, medical insurance, healthcare insurance",
+"ru":"медицинская страховка, медицинское страхование, полис медицинского страхования",
+"pl":"ubezpieczenie zdrowotne, ubezpieczenie medyczne",
+"de":"Krankenversicherung, Krankenkasse",
+"fr":"assurance maladie, assurance santé, mutuelle",
+"it":"assicurazione sanitaria, assicurazione medica, cassa malati",
+"cs":"zdravotní pojištění",
+"tr":"sağlık sigortası",
+"es":"seguro médico, seguro de salud, seguro de enfermedad"
+},
+"c":{
+"en":"general term for medical coverage",
+"ru":"разговорное и общеупотребительное обозначение медицинского страхования",
+"pl":"ogólne określenie na pokrycie kosztów leczenia",
+"de":"allgemeiner Begriff für die Absicherung von Krankheitskosten",
+"fr":"terme général pour la couverture des frais de santé",
+"it":"termine generale per la copertura delle spese mediche",
+"cs":"obecný termín pro krytí léčebných výloh",
+"tr":"tıbbi masrafları karşılayan genel sigorta",
+"es":"término general para la cobertura de gastos de salud"
+}
+},
+{
+"w":"pijn",
+"d":"Een onaangenaam lichamelijk gevoel veroorzaakt door ziekte of verwonding.",
+"t":{
+"en":"pain, ache",
+"ru":"боль",
+"pl":"ból",
+"de":"Schmerz",
+"fr":"douleur, mal",
+"it":"dolore, male",
+"cs":"bolest",
+"tr":"acı, ağrı",
+"es":"dolor"
+},
+"c":{
+"en":"physical suffering",
+"ru":"физическое ощущение",
+"pl":"cierpienie fizyczne",
+"de":"körperliches Leiden",
+"fr":"souffrance physique",
+"it":"sofferenza fisica",
+"cs":"fyzické utrpení",
+"tr":"fiziksel ıstırap",
+"es":"sufrimiento físico"
+}
+},
+{
+"w":"koorts",
+"d":"Een abnormale verhoging van de lichaamstemperatuur, meestal veroorzaakt door een ziekte.",
+"t":{
+"en":"fever, temperature",
+"ru":"температура, жар, лихорадка",
+"pl":"gorączka",
+"de":"Fieber",
+"fr":"fièvre, température",
+"it":"febbre, alterazione",
+"cs":"horečka, teplota",
+"tr":"ateş, hararet",
+"es":"fiebre, calentura"
+},
+"c":{
+"en":"medical condition",
+"ru":"разг. повышенная температура",
+"pl":"podwyższona temperatura ciała",
+"de":"Erhöhung der Körpertemperatur",
+"fr":"état médical d'élévation de la température",
+"it":"condizione medica di temperatura corporea elevata",
+"cs":"vysoká tělesná teplota",
+"tr":"vücut sıcaklığının yükselmesi",
+"es":"condición médica"
+}
+},
+{
+"w":"moe",
+"d":"behoefte hebben aan rust of slaap na inspanning",
+"t":{
+"en":"tired, exhausted, sleepy",
+"ru":"усталый, утомлённый, сонный",
+"pl":"zmęczony, śpiący, wykończony",
+"de":"müde, erschöpft, schläfrig",
+"fr":"fatigué, épuisé, somnolent",
+"it":"stanco, affaticato, esausto",
+"cs":"unavený, ospalý, vyčerpaný",
+"tr":"yorgun, uykulu, bitkin",
+"es":"cansado, fatigado, agotado"
+},
+"c":{
+"en":"in need of rest or sleep",
+"ru":"испытывающий слабость после работы или усилий",
+"pl":"odczuwający zmęczenie fizyczne lub psychiczne",
+"de":"schläfrig oder erschöpft nach Anstrengung",
+"fr":"qui a besoin de repos",
+"it":"che ha bisogno di riposo o sonno",
+"cs":"potřebující odpočinek nebo spánek",
+"tr":"dinlenmeye ihtiyacı olan",
+"es":"que necesita descansar o dormir"
+}
+},
+{
+"w":"duizelig",
+"d":"een gevoel waarbij alles lijkt rond te draaien en het evenwicht verstoord is",
+"t":{
+"en":"dizzy, giddy, lightheaded",
+"ru":"чувствующий головокружение, головокружительный",
+"pl":"mający zawroty głowy, oszołomiony",
+"de":"schwindelig, benommen",
+"fr":"vertigineux, pris de vertige, étourdi",
+"it":"avere le vertigini, stordito, capogiro",
+"cs":"mít závrať, točit se hlava, omámený",
+"tr":"başı dönen, sersemlemiş",
+"es":"mareado"
+},
+"c":{
+"en":"feeling a sensation of spinning or being unbalanced",
+"ru":"о человеке, у которого кружится голова",
+"pl":"odczuwający kręcenie się w głowie",
+"de":"das Gefühl habend, dass sich alles dreht",
+"fr":"qui provoque le vertige ou qui en est atteint",
+"it":"provare una sensazione di instabilità e rotazione",
+"cs":"pocit, že se točí hlava",
+"tr":"baş dönmesi hisseden kişi",
+"es":"que sufre de mareo o pérdida de equilibrio"
+}
+},
+{
+"w":"misselijk",
+"d":"Het gevoel hebben dat je moet overgeven.",
+"t":{
+"en":"nauseous, sick, nauseated",
+"ru":"тошнить, дурно",
+"pl":"niedobrze, mdlić, mający mdłości",
+"de":"übel, schlecht",
+"fr":"avoir mal au cœur, nauséeux, avoir la nausée",
+"it":"avere la nausea, nauseato",
+"cs":"špatně, nevolno",
+"tr":"midesi bulanmış, bulanık",
+"es":"mareado, con náuseas"
+},
+"c":{
+"en":"feeling the urge to vomit",
+"ru":"безличный глагол (меня тошнит)",
+"pl":"w wyrażeniu 'jest mi niedobrze'",
+"de":"schlecht, unwohl (z.B. mir ist übel)",
+"fr":"ressentir de la nausée",
+"it":"provare una sensazione di vomito",
+"cs":"od žaludku (je mi špatně)",
+"tr":"kusma hissi yaşayan kişi için",
+"es":"sentirse con ganas de vomitar o con malestar de viaje"
+}
+},
+{
+"w":"hoofdpijn",
+"d":"Pijn in het hoofd.",
+"t":{
+"en":"headache",
+"ru":"головная боль",
+"pl":"ból głowy",
+"de":"Kopfschmerzen, Kopfweh",
+"fr":"mal de tête, céphalée, migraine",
+"it":"mal di testa, cefalea",
+"cs":"bolest hlavy",
+"tr":"baş ağrısı",
+"es":"dolor de cabeza, jaqueca"
+},
+"c":{
+"en":"pain in the head",
+"ru":"физическое недомогание",
+"pl":"dolegliwość fizyczna",
+"de":"Schmerzen im Kopfbereich (meist im Plural verwendet)",
+"fr":"douleur physique",
+"it":"dolore alla testa",
+"cs":"fyzická bolest v hlavě",
+"tr":"başta oluşan fiziksel ağrı",
+"es":"dolor físico en la cabeza"
+}
+},
+{
+"w":"buikpijn",
+"d":"Pijn in de buik of maagstreek",
+"t":{
+"en":"stomach ache, abdominal pain, bellyache",
+"ru":"боль в животе, боль в желудке, резь в животе",
+"pl":"ból brzucha, ból żołądka",
+"de":"Bauchschmerzen, Bauchschmerz, Magenschmerzen",
+"fr":"mal de ventre, mal à l'estomac, douleur abdominale",
+"it":"mal di pancia, mal di stomaco, dolore addominale",
+"cs":"bolest břicha, bolení břicha, bolest žaludku",
+"tr":"karın ağrısı, mide ağrısı",
+"es":"dolor de estómago, dolor de barriga, dolor abdominal, dolor de vientre"
+},
+"c":{
+"en":"general pain in the stomach area",
+"ru":"общее обозначение боли в области живота",
+"pl":"ogólny ból w okolicy brzucha",
+"de":"allgemeine Schmerzen im Bauchbereich (meist im Plural verwendet)",
+"fr":"douleur générale dans la région abdominale",
+"it":"termine comune e colloquiale per indicare dolore all'addome",
+"cs":"obecná bolest v břišní krajině",
+"tr":"karın bölgesinde duyulan genel ağrı",
+"es":"término común para el dolor en la zona estomacal"
+}
+},
+{
+"w":"rugpijn",
+"d":"pijn in de rug",
+"t":{
+"en":"backache, back pain",
+"ru":"боль в спине, боли в спине",
+"pl":"ból pleców, ból krzyża",
+"de":"Rückenschmerzen, Rückenschmerz",
+"fr":"mal de dos, douleur dorsale",
+"it":"mal di schiena, dolore alla schiena",
+"cs":"bolest zad",
+"tr":"sırt ağrısı",
+"es":"dolor de espalda, dorsalgia"
+},
+"c":{
+"en":"pain in the back",
+"ru":"физическая боль в области спины",
+"pl":"ból w okolicy pleców",
+"de":"Schmerzen im Rückenbereich",
+"fr":"douleur au niveau du dos",
+"it":"dolore generico alla schiena",
+"cs":"fyzická bolest v oblasti zad",
+"tr":"sırtta hissedilen fiziksel ağrı",
+"es":"dolor general en la zona posterior del cuerpo"
+}
+},
+{
+"w":"jeuk",
+"d":"Een kriebelend gevoel op de huid dat de neiging geeft om te krabben.",
+"t":{
+"en":"itch",
+"ru":"зуд",
+"pl":"świąd, swędzenie",
+"de":"Juckreiz, Jucken",
+"fr":"démangeaison, prurit",
+"it":"prurito",
+"cs":"svědění, svrbění",
+"tr":"kaşıntı",
+"es":"picor, comezón, picazón"
+},
+"c":{
+"en":"sensation on the skin",
+"ru":"ощущение",
+"pl":"uczucie swędzenia skóry",
+"de":"unangenehmer Hautreiz",
+"fr":"sensation sur la peau",
+"it":"sensazione sulla pelle",
+"cs":"pocit na kůži",
+"tr":"ciltteki his",
+"es":"sensación molesta en la piel"
+}
+},
+{
+"w":"uitslag",
+"d":"zichtbare vlekken of bultjes op de huid als gevolg van een allergie of ziekte",
+"t":{
+"en":"rash, breakout",
+"ru":"сыпь, высыпание",
+"pl":"wysypka, wykwit",
+"de":"Ausschlag, Hautausschlag",
+"fr":"éruption cutanée, boutons, plaques",
+"it":"sfogo, eruzione cutanea, orticaria",
+"cs":"vyrážka, výsev",
+"tr":"döküntü, kaşıntı, isilik",
+"es":"erupción, sarpullido, eccema"
+},
+"c":{
+"en":"skin irritation",
+"ru":"раздражение на коже",
+"pl":"podrażnienie i zmiany na skórze",
+"de":"Hautirritation",
+"fr":"irritation de la peau avec rougeurs",
+"it":"irritazione cutanea improvvisa",
+"cs":"podráždění kůže",
+"tr":"ciltteki tahriş veya kızarıklık",
+"es":"irritación en la piel"
+}
+},
+{
+"w":"zwelling",
+"d":"Een plaatselijke verdikking op of in het lichaam, vaak veroorzaakt door een ontsteking, vochtophoping of letsel.",
+"t":{
+"en":"swelling, bump, tumor",
+"ru":"отёк, припухлость, опухоль, шишка",
+"pl":"opuchlizna, obrzęk, guz",
+"de":"Schwellung, Beule, Geschwulst",
+"fr":"gonflement, enflure, bosse, tumeur",
+"it":"gonfiore, tumefazione, bernoccolo",
+"cs":"otok, opuchlina, boule",
+"tr":"şişlik, şiş, tümör",
+"es":"hinchazón, inflamación, bulto"
+},
+"c":{
+"en":"abnormal enlargement of a body part",
+"ru":"припухлость из-за скопления жидкости",
+"pl":"obrzęk ciała spowodowany urazem lub stanem zapalnym",
+"de":"krankhafte oder verletzungsbedingte Verdickung eines Körperteils",
+"fr":"augmentation de volume d'un tissu",
+"it":"ingrossamento anomalo di una parte del corpo",
+"cs":"nahromadění tekutiny v tkáni",
+"tr":"vücuttaki anormal büyüme veya kabarıklık",
+"es":"aumento de volumen de una parte del cuerpo por inflamación o líquido"
+}
+},
+{
+"w":"bloed",
+"d":"Rode vloeistof die door de aderen van mensen en dieren stroomt en zuurstof vervoert",
+"t":{
+"en":"blood",
+"ru":"кровь",
+"pl":"krew",
+"de":"Blut",
+"fr":"sang",
+"it":"sangue",
+"cs":"krev",
+"tr":"kan",
+"es":"sangre"
+},
+"c":{
+"en":"biological fluid",
+"ru":"биологическая жидкость",
+"pl":"płyn ustrojowy",
+"de":"biologische Flüssigkeit",
+"fr":"fluide biologique",
+"it":"fluido biologico",
+"cs":"tělesná tekutina",
+"tr":"biyolojik sıvı",
+"es":"fluido biológico"
+}
+},
+{
+"w":"hoesten",
+"d":"Lucht met kracht en geluid uit de longen stoten, vaak als reflex op irritatie in de keel of door ziekte.",
+"t":{
+"en":"to cough",
+"ru":"кашлять",
+"pl":"kasłać, zakasłać",
+"de":"husten",
+"fr":"tousser",
+"it":"tossire",
+"cs":"kašlat",
+"tr":"öksürmek",
+"es":"toser"
+},
+"c":{
+"en":"reflex action",
+"ru":"рефлекторное действие",
+"pl":"czynność ciągła lub powtarzająca się",
+"de":"Reflexbewegung",
+"fr":"action réflexe",
+"it":"azione riflessa dovuta a irritazione o malattia",
+"cs":"reflexivní nebo chorobný děj",
+"tr":"refleks eylemi",
+"es":"acción refleja"
+}
+},
+{
+"w":"niezen",
+"d":"plotselinge, krachtige uitademing om de neus te reinigen van prikkelende stoffen",
+"t":{
+"en":"sneeze",
+"ru":"чихать, чихнуть",
+"pl":"kichać, kichnąć",
+"de":"niesen",
+"fr":"éternuer",
+"it":"starnutire",
+"cs":"kýchnout, kýchat",
+"tr":"hapşırmak, aksırmak",
+"es":"estornudar"
+},
+"c":{
+"en":"verb",
+"ru":"глагол, несовершенный вид",
+"pl":"czasownik, czynność fizjologiczna",
+"de":"Verb",
+"fr":"verbe",
+"it":"verbo",
+"cs":"jednorázový děj",
+"tr":"fiil",
+"es":"verbo"
+}
+},
+{
+"w":"verkouden",
+"d":"last hebbend van een virusinfectie aan de luchtwegen, zoals een loopneus of hoesten",
+"t":{
+"en":"having a cold, congested",
+"ru":"простуженный, простужен",
+"pl":"przeziębiony",
+"de":"erkältet, einen Schnupfen haben",
+"fr":"enrhumé, avoir un rhume",
+"it":"raffreddato, avere il raffreddore",
+"cs":"nachlazený, prochladlý",
+"tr":"üşütmüş, nezle, soğuk almış",
+"es":"resfriado, resfriada, constipado"
+},
+"c":{
+"en":"suffering from a common cold",
+"ru":"имеющий симптомы простуды",
+"pl":"mający objawy przeziębienia",
+"de":"von einer Erkältung betroffen sein",
+"fr":"qui a attrapé un rhume",
+"it":"riferito a persona che ha il raffreddore",
+"cs":"mající rýmu nebo kašel",
+"tr":"soğuk algınlığına yakalanmış kişi için",
+"es":"que tiene un resfriado (masculino)"
+}
+},
+{
+"w":"griep",
+"d":"Een besmettelijke virusziekte die gepaard gaat met koorts en spierpijn.",
+"t":{
+"en":"flu, influenza",
+"ru":"грипп, инфлюэнца",
+"pl":"grypa, influenza",
+"de":"Grippe, Influenza",
+"fr":"grippe, influenza",
+"it":"influenza, febbre",
+"cs":"chřipka, influenza",
+"tr":"grip, influenza",
+"es":"gripe, gripa, influenza"
+},
+"c":{
+"en":"the most common term for influenza",
+"ru":"наиболее распространенное название болезни",
+"pl":"najbardziej powszechne określenie tej choroby",
+"de":"die häufigste Bezeichnung für die Virusinfektion",
+"fr":"le terme le plus courant pour désigner cette maladie",
+"it":"il termine comune e medico per questa malattia",
+"cs":"nejběžnější označení pro toto virové onemocnění",
+"tr":"hastalığın en yaygın adı",
+"es":"el término más común para referirse a la enfermedad"
+}
+},
+{
+"w":"allergie",
+"d":"Een overgevoelige reactie van het immuunsysteem op bepaalde stoffen van buitenaf.",
+"t":{
+"en":"allergy, hypersensitivity",
+"ru":"аллергия, гиперчувствительность",
+"pl":"alergia, uczulenie",
+"de":"Allergie, Überempfindlichkeit",
+"fr":"allergie, hypersensibilité",
+"it":"allergia, ipersensibilità",
+"cs":"alergie, přecitlivělost",
+"tr":"alerji, aşırı duyarlılık",
+"es":"alergia, hipersensibilidad"
+},
+"c":{
+"en":"medical condition of hypersensitivity",
+"ru":"медицинское состояние повышенной чувствительности",
+"pl":"nadmierna reakcja układu odpornościowego na alergen",
+"de":"medizinische Überempfindlichkeitsreaktion",
+"fr":"réaction anormale du système immunitaire",
+"it":"reazione immunitaria eccessiva",
+"cs":"přecitlivělost imunitního systému",
+"tr":"bağışıklık sisteminin aşırı duyarlılık reaksiyonu",
+"es":"reacción inmunitaria exagerada"
+}
+},
+{
+"w":"diabetes",
+"d":"Een stofwisselingsziekte waarbij het lichaam de bloedsuikerspiegel niet goed kan regelen, meestal door een tekort aan insuline of verminderde gevoeligheid hiervoor.",
+"t":{
+"en":"diabetes, diabetes mellitus",
+"ru":"диабет, сахарный диабет",
+"pl":"cukrzyca, cukrzyca metaboliczna",
+"de":"Diabetes, Zuckerkrankheit, Diabetes mellitus",
+"fr":"diabète, diabète sucré",
+"it":"diabete, diabete mellito",
+"cs":"cukrovka, diabetes, cukrovka (diabetes mellitus)",
+"tr":"şeker hastalığı, diyabet",
+"es":"diabetes, diabetes mellitus"
+},
+"c":{
+"en":"common metabolic disease",
+"ru":"общее название заболевания",
+"pl":"powszechna choroba metaboliczna",
+"de":"allgemeine Bezeichnung für die Erkrankung",
+"fr":"nom commun de la maladie",
+"it":"nome comune della malattia",
+"cs":"běžný název pro onemocnění",
+"tr":"hastalığın halk arasındaki yaygın adı",
+"es":"nombre común de la enfermedad"
+}
+},
+{
+"w":"astma",
+"d":"Een ziekte die door vernauwing van de luchtwegen benauwdheid en hoestbuien veroorzaakt.",
+"t":{
+"en":"asthma",
+"ru":"астма",
+"pl":"astma",
+"de":"Asthma",
+"fr":"asthme",
+"it":"asma",
+"cs":"astma",
+"tr":"astım",
+"es":"asma"
+},
+"c":{
+"en":"respiratory condition",
+"ru":"заболевание дыхательных путей",
+"pl":"choroba układu oddechowego",
+"de":"chronische Entzündung der Atemwege",
+"fr":"maladie respiratoire",
+"it":"patologia respiratoria",
+"cs":"chronické onemocnění dýchacích cest",
+"tr":"solunum yolu hastalığı",
+"es":"enfermedad respiratoria"
+}
+},
+{
+"w":"depressie",
+"d":"Een toestand van langdurige en ziekelijke neerslachtigheid waarbij men het plezier in het leven verliest.",
+"t":{
+"en":"depression, major depressive disorder",
+"ru":"депрессия",
+"pl":"depresja, zaburzenia depresyjne",
+"de":"Depression",
+"fr":"dépression",
+"it":"depressione, disturbo depressivo",
+"cs":"deprese",
+"tr":"depresyon, majör depresif bozukluk, çökkünlük",
+"es":"depresión"
+},
+"c":{
+"en":"mental state",
+"ru":"психологическое состояние",
+"pl":"stan psychiczny",
+"de":"psychische Erkrankung",
+"fr":"état psychologique",
+"it":"stato mentale",
+"cs":"psychický stav",
+"tr":"psikolojik durum",
+"es":"estado psicológico"
+}
+},
+{
+"w":"infectie",
+"d":"Een toestand waarbij ziekteverwekkers zoals bacteriën of virussen het lichaam binnendringen en een ontsteking veroorzaken.",
+"t":{
+"en":"infection",
+"ru":"инфекция, заражение",
+"pl":"infekcja, zakażenie",
+"de":"Infektion, Ansteckung",
+"fr":"infection",
+"it":"infezione",
+"cs":"infekce, nákaza",
+"tr":"enfeksiyon, bulaşma",
+"es":"infección, contagio"
+},
+"c":{
+"en":"disease caused by pathogens",
+"ru":"болезнь, вызванная микробами",
+"pl":"proces chorobowy wywołany przez drobnoustroje",
+"de":"Eindringen und Vermehren von Krankheitserregern",
+"fr":"contamination par un agent pathogène",
+"it":"reazione patologica alla penetrazione di microbi",
+"cs":"nakažení organismu choroboplodnými zárodky",
+"tr":"hastalık yapıcı mikropların vücuda girmesiyle oluşan durum",
+"es":"invasión de gérmenes nocivos en el organismo"
+}
+},
+{
+"w":"wond",
+"d":"een beschadiging van het levende weefsel van een lichaam",
+"t":{
+"en":"wound, injury, sore",
+"ru":"рана, ранение",
+"pl":"rana, obrażenie",
+"de":"Wunde, Verletzung",
+"fr":"plaie, blessure",
+"it":"ferita, lesione",
+"cs":"rána, zranění",
+"tr":"yara, yaralanma",
+"es":"herida, lesión"
+},
+"c":{
+"en":"a physical injury, especially one where the skin is broken",
+"ru":"физическое повреждение тканей с нарушением целостности кожи",
+"pl":"fizyczne uszkodzenie skóry i głębszych tkanek",
+"de":"eine offene Verletzung der Haut oder des Gewebes",
+"fr":"lésion de la peau ou des tissus",
+"it":"lesione traumatica della pelle o dei tessuti",
+"cs":"fyzické poškození tkáně, zejména s porušením kůže",
+"tr":"vücutta oluşan fiziksel hasar veya kesik",
+"es":"lesión física en el cuerpo que rompe la piel"
+}
+},
+{
+"w":"onderzoek",
+"d":"Het iets bekijken en waarnemen met als doel iets beter te begrijpen.",
+"t":{
+"en":"research, investigation, examination",
+"ru":"исследование, расследование, обследование",
+"pl":"badanie, śledztwo, badanie naukowe, dochodzenie",
+"de":"Untersuchung, Forschung, Nachforschung",
+"fr":"recherche, enquête, examen",
+"it":"ricerca, indagine, esame",
+"cs":"výzkum, vyšetřování, průzkum, vyšetření",
+"tr":"araştırma, soruşturma, muayene",
+"es":"investigación, análisis, examen"
+},
+"c":{
+"en":"scientific or academic study",
+"ru":"научное или академическое",
+"pl":"naukowe, medyczne lub ogólne analizowanie czegoś",
+"de":"genauere Betrachtung, Analyse oder medizinische Abklärung",
+"fr":"étude scientifique ou académique",
+"it":"studio scientifico o accademico",
+"cs":"vědecké nebo akademické bádání",
+"tr":"bilimsel veya akademik çalışma",
+"es":"estudio científico, académico o policial"
+}
+},
+{
+"w":"bloeddruk",
+"d":"De druk die het bloed uitoefent op de wanden van de bloedvaten.",
+"t":{
+"en":"blood pressure",
+"ru":"кровяное давление, артериальное давление, давление",
+"pl":"ciśnienie krwi, ciśnienie tętnicze, ciśnienie",
+"de":"Blutdruck",
+"fr":"tension artérielle, pression artérielle, tension",
+"it":"pressione sanguigna, pressione arteriosa, pressione",
+"cs":"krevní tlak, tlak",
+"tr":"tansiyon, kan basıncı",
+"es":"presión arterial, tensión arterial, presión sanguínea"
+},
+"c":{
+"en":"medical measurement",
+"ru":"общее понятие",
+"pl":"ogólne pojęcie medyczne",
+"de":"medizinischer Messwert",
+"fr":"terme médical courant",
+"it":"termine medico generale",
+"cs":"obecný i lékařský termín",
+"tr":"günlük kullanım ve tıp",
+"es":"término médico común"
+}
+},
+{
+"w":"meten",
+"d":"De afmeting, grootte, hoeveelheid of waarde van iets bepalen, vaak met behulp van een instrument.",
+"t":{
+"en":"measure",
+"ru":"измерять, мерить",
+"pl":"mierzyć, dokonywać pomiaru",
+"de":"messen",
+"fr":"mesurer, prendre la mesure de",
+"it":"misurare",
+"cs":"měřit, změřit",
+"tr":"ölçmek",
+"es":"medir, tomar la medida"
+},
+"c":{
+"en":"determine size or quantity",
+"ru":"определять величину",
+"pl":"określać wymiar lub wielkość",
+"de":"eine Größe bestimmen",
+"fr":"déterminer une grandeur",
+"it":"determinare la grandezza o quantità",
+"cs":"zjišťovat rozměry či hodnotu",
+"tr":"boyut, miktar veya değeri belirlemek",
+"es":"determinar dimensiones o cantidad"
+}
+},
+{
+"w":"prikken",
+"d":"Een injectie geven of bloed afnemen met een naald.",
+"t":{
+"en":"draw, stick, inject",
+"ru":"делать укол, брать кровь",
+"pl":"pobierać krew, robić zastrzyk, ukłuć",
+"de":"Blut abnehmen, stechen, spritzen",
+"fr":"piquer, faire une prise de sang, faire une piqûre",
+"it":"fare un prelievo, pungere, fare un'iniezione",
+"cs":"píchnout, odebrat krev",
+"tr":"iğne yapmak, kan aldırmak, aşı vurmak",
+"es":"pinchar, sacar sangre"
+},
+"c":{
+"en":"specifically for taking blood",
+"ru":"вводить лекарство",
+"pl":"procedura medyczna",
+"de":"medizinische Prozedur",
+"fr":"introduire une aiguille médicale",
+"it":"riferito al sangue",
+"cs":"dát injekci",
+"tr":"enjeksiyon uygulamak",
+"es":"poner una inyección o extraer sangre"
+}
+},
+{
+"w":"röntgen",
+"d":"De afdeling in een ziekenhuis of de plaats waar röntgenfoto's worden gemaakt.",
+"t":{
+"en":"X-ray department, radiology department, X-ray",
+"ru":"рентген-кабинет, рентгеновское отделение, рентген",
+"pl":"pracownia rentgenowska, rentgen, zakład radiologii",
+"de":"Röntgenabteilung, Radiologie, Röntgen",
+"fr":"service de radiologie, radiologie",
+"it":"reparto di radiologia, radiologia",
+"cs":"rentgen, rentgenové oddělení, radiologie",
+"tr":"röntgen bölümü, radyoloji bölümü, röntgen",
+"es":"departamento de radiología, servicio de radiología, radiología"
+},
+"c":{
+"en":"hospital department",
+"ru":"кабинет, где делают снимки",
+"pl":"miejsce wykonywania prześwietleń",
+"de":"Abteilung im Krankenhaus",
+"fr":"département hospitalier",
+"it":"reparto ospedaliero",
+"cs":"oddělení v nemocnici",
+"tr":"hastanedeki departman",
+"es":"departamento del hospital"
+}
+},
+{
+"w":"echo",
+"d":"Een medisch onderzoek waarbij met geluidsgolven een beeld van de binnenkant van het lichaam wordt gemaakt; kort voor echografie.",
+"t":{
+"en":"ultrasound, sonogram, echo",
+"ru":"УЗИ, ультразвук",
+"pl":"USG, ultrasonografia, echo",
+"de":"Ultraschall, Ultraschalluntersuchung, Sonografie",
+"fr":"échographie, écho",
+"it":"ecografia, eco",
+"cs":"ultrazvuk, echo",
+"tr":"ultrason, eko",
+"es":"ecografía, eco, ultrasonido"
+},
+"c":{
+"en":"medical scan",
+"ru":"ультразвуковое исследование",
+"pl":"badanie ultrasonograficzne",
+"de":"medizinische Untersuchung",
+"fr":"examen médical",
+"it":"esame medico",
+"cs":"lékařské vyšetření",
+"tr":"tıbbi görüntüleme yöntemi",
+"es":"examen médico por ultrasonido"
+}
+},
+{
+"w":"doorverwijzen",
+"d":"iemand (meestal een patiënt) naar een specialist of een andere instantie sturen voor verdere hulp",
+"t":{
+"en":"refer, send through",
+"ru":"направлять, дать направление",
+"pl":"skierować, dać skierowanie",
+"de":"überweisen, weiterleiten",
+"fr":"orienter, adresser, renvoyer",
+"it":"indirizzare, mandare, inviare",
+"cs":"odeslat, doporučit, předat",
+"tr":"sevk etmek, yönlendirmek",
+"es":"derivar, remitir"
+},
+"c":{
+"en":"medical or professional context",
+"ru":"к врачу или специалисту",
+"pl":"do lekarza specjalisty lub szpitala",
+"de":"im medizinischen Kontext",
+"fr":"un patient vers un spécialiste",
+"it":"un paziente a uno specialista",
+"cs":"pacienta k lékaři či specialistovi",
+"tr":"tıbbi veya resmi bağlamda",
+"es":"en el ámbito médico o profesional"
+}
+},
+{
+"w":"recept",
+"d":"Een officieel briefje van een arts waarmee je medicijnen bij de apotheek kunt krijgen.",
+"t":{
+"en":"prescription",
+"ru":"рецепт",
+"pl":"recepta",
+"de":"Rezept, Verordnung",
+"fr":"ordonnance",
+"it":"ricetta, ricetta medica",
+"cs":"recept, lékařský předpis",
+"tr":"reçete",
+"es":"receta, receta médica, prescripción"
+},
+"c":{
+"en":"medical authorization",
+"ru":"медицинский",
+"pl":"medyczna",
+"de":"medizinisch",
+"fr":"autorisation médicale",
+"it":"prescrizione medica",
+"cs":"lékařský předpis",
+"tr":"tıbbi ilaç belgesi",
+"es":"autorización médica"
+}
+},
+{
+"w":"medicijn",
+"d":"Een middel of stof die wordt gebruikt om ziektes te genezen, pijn te verlichten of aandoeningen te voorkomen.",
+"t":{
+"en":"medicine, medication, drug",
+"ru":"лекарство, медикамент, препарат",
+"pl":"lekarstwo, lek, medykament, farmaceutyk",
+"de":"Medikament, Medizin, Arznei",
+"fr":"médicament, remède",
+"it":"medicina, farmaco, medicinale",
+"cs":"lék, léčivo, medicína",
+"tr":"ilaç, deva",
+"es":"medicamento, medicina, fármaco"
+},
+"c":{
+"en":"substance for healing",
+"ru":"общее значение",
+"pl":"ogólne określenie",
+"de":"Arzneimittel zur Heilung oder Linderung",
+"fr":"substance curative ou préventive",
+"it":"preparato terapeutico",
+"cs":"prostředek k léčbě",
+"tr":"hastalıkları iyileştiren madde",
+"es":"sustancia para curar o prevenir enfermedades"
+}
+},
+{
+"w":"tablet",
+"d":"Een vaste, gedoseerde hoeveelheid medicijn in de vorm van een pil.",
+"t":{
+"en":"tablet, pill",
+"ru":"таблетка",
+"pl":"tabletka, pigułka",
+"de":"Tablette, Pille",
+"fr":"comprimé, pastille, pilule",
+"it":"compressa, pastiglia, pillola",
+"cs":"tableta, prášek, pilulka",
+"tr":"tablet, hap",
+"es":"pastilla, comprimido, tableta"
+},
+"c":{
+"en":"medicine",
+"ru":"лекарство",
+"pl":"lek",
+"de":"Medikament",
+"fr":"médicament",
+"it":"medicina",
+"cs":"lék",
+"tr":"ilaç",
+"es":"medicamento"
+}
+},
+{
+"w":"zalf",
+"d":"Een smeerbare substantie die op de huid wordt aangebracht voor medische of verzorgende doeleinden.",
+"t":{
+"en":"ointment, salve, cream",
+"ru":"мазь, крем, бальзам",
+"pl":"maść, krem, balsam",
+"de":"Salbe, Creme",
+"fr":"pommade, onguent, crème",
+"it":"pomata, unguento, crema",
+"cs":"mast, krém, balzám",
+"tr":"merhem, krem, pomat",
+"es":"pomada, ungüento, crema"
+},
+"c":{
+"en":"medical cream",
+"ru":"лекарственное средство мягкой консистенции",
+"pl":"lecznicza substancja do smarowania skóry",
+"de":"medizinische oder pflegende Creme",
+"fr":"substance grasse à usage médical ou cosmétique",
+"it":"crema medica o curativa",
+"cs":"léčivý nebo kosmetický přípravek",
+"tr":"tıbbi krem",
+"es":"preparado graso para uso externo"
+}
+},
+{
+"w":"dosering",
+"d":"De afgemeten hoeveelheid van een geneesmiddel of stof die per keer of per tijdseenheid moet worden ingenomen of toegediend.",
+"t":{
+"en":"dosage, dose",
+"ru":"дозировка, доза",
+"pl":"dawkowanie, dawka",
+"de":"Dosierung, Dosis",
+"fr":"dosage, dose, posologie",
+"it":"dosaggio, dose",
+"cs":"dávkování, dávka",
+"tr":"doz, dozaj",
+"es":"dosificación, dosis"
+},
+"c":{
+"en":"amount and frequency of medicine",
+"ru":"количество и частота приема лекарства",
+"pl":"schemat podawania leku",
+"de":"Menge und Häufigkeit der Verabreichung eines Medikaments",
+"fr":"quantité et fréquence d'un médicament",
+"it":"quantità e frequenza di un farmaco",
+"cs":"množství a frekvence užívání léků",
+"tr":"bir seferde alınan ilaç miktarı",
+"es":"cantidad y frecuencia de un medicamento"
+}
+},
+{
+"w":"gezondheid",
+"d":"De toestand van lichamelijk en geestelijk welzijn; de mate waarin iemand vrij is van ziekte.",
+"t":{
+"en":"health",
+"ru":"здоровье",
+"pl":"zdrowie",
+"de":"Gesundheit",
+"fr":"santé",
+"it":"salute",
+"cs":"zdraví",
+"tr":"sağlık, sıhhat",
+"es":"salud, sanidad"
+},
+"c":{
+"en":"general physical or mental condition",
+"ru":"общее состояние организма",
+"pl":"ogólny stan organizmu",
+"de":"körperliches und geistiges Wohlbefinden",
+"fr":"état de bien-être physique et mental",
+"it":"stato di benessere fisico e mentale",
+"cs":"celkový stav organismu",
+"tr":"vücut ve ruh esenliği",
+"es":"estado general del organismo"
+}
+},
+{
+"w":"drogist",
+"d":"Een winkelier die verzorgingsproducten, schoonmaakartikelen en geneesmiddelen zonder recept verkoopt.",
+"t":{
+"en":"chemist, drugstore, druggist",
+"ru":"продавец в магазине дрогери, продавец косметики и бытовой химии",
+"pl":"drogista, sprzedawca w drogerii, drogeria",
+"de":"Drogist, Drogerie, Drogeriemarkt",
+"fr":"droguiste, pharmacien",
+"it":"droghiere, drogheria, farmacista",
+"cs":"drogista, drogerie",
+"tr":"eczane benzeri kozmetik ve kişisel bakım marketi, drogist, kişisel bakım marketi işletmecisi",
+"es":"droguero, dependiente de droguería"
+},
+"c":{
+"en":"UK - person or shop selling medicines and toiletries",
+"ru":"сотрудник магазина косметики и бытовой химии",
+"pl":"mężczyzna prowadzący drogerię lub w niej pracujący",
+"de":"Berufsbezeichnung für eine Person, die in einer Drogerie arbeitet",
+"fr":"commerçant vendant des produits d'entretien et d'hygiène",
+"it":"persona che gestisce o lavora in una drogheria",
+"cs":"majitel nebo zaměstnanec drogerie",
+"tr":"reçetesiz ilaç ve bakım ürünleri satan dükkan",
+"es":"propietario o dependiente de una tienda de productos de higiene y limpieza"
+}
+},
+{
+"w":"pil",
+"d":"Een medicijn in de vorm van een klein bolletje of schijfje dat je met water moet doorslikken.",
+"t":{
+"en":"pill, tablet",
+"ru":"таблетка, пилюля",
+"pl":"tabletka, pigułka",
+"de":"Pille, Tablette",
+"fr":"pilule, comprimé",
+"it":"pillola, compressa, pastiglia",
+"cs":"pilulka, tableta, prášek",
+"tr":"hap, tablet, pilül",
+"es":"pastilla, píldora, comprimido"
+},
+"c":{
+"en":"general medication",
+"ru":"самый распространенный перевод",
+"pl":"najczęstsze określenie leku w stałej formie",
+"de":"allgemeines Medikament",
+"fr":"médicament de forme ronde",
+"it":"termine generale",
+"cs":"lék",
+"tr":"genel ilaç formu",
+"es":"medicamento sólido"
+}
+},
+{
+"w":"anticonceptie",
+"d":"technieken voor het voorkomen van zwangerschap na geslachtsgemeenschap",
+"t":{
+"en":"contraception, birth control",
+"ru":"контрацепция, противозачаточные средства",
+"pl":"antykoncepcja, kontrola urodzeń",
+"de":"Empfängnisverhütung, Verhütung",
+"fr":"contraception, contrôle des naissances",
+"it":"contraccezione, controllo delle nascite",
+"cs":"antikoncepce, ochrana",
+"tr":"doğum kontrolü, kontrasepsiyon",
+"es":"anticoncepción, método anticonceptivo"
+},
+"c":{
+"en":"the prevention of pregnancy",
+"ru":"предотвращение нежелательной беременности",
+"pl":"zapobieganie ciąży",
+"de":"Verhinderung einer Schwangerschaft",
+"fr":"méthode pour éviter une grossesse",
+"it":"prevenzione della gravidanza",
+"cs":"metody zabránění otěhotnění",
+"tr":"gebelikten korunma yöntemleri",
+"es":"prevención del embarazo"
+}
+},
+{
+"w":"kanker",
+"d":"Een ernstige ziekte waarbij lichaamscellen zich ongecontroleerd delen en gezonde weefsels aantasten",
+"t":{
+"en":"cancer, malignancy",
+"ru":"рак, онкология",
+"pl":"rak, nowotwór",
+"de":"Krebs, Krebserkrankung",
+"fr":"cancer",
+"it":"cancro, tumore",
+"cs":"rakovina, karcinom",
+"tr":"kanser",
+"es":"cáncer"
+},
+"c":{
+"en":"disease",
+"ru":"болезнь",
+"pl":"choroba nowotworowa",
+"de":"Krankheit",
+"fr":"maladie",
+"it":"malattia",
+"cs":"nemoc",
+"tr":"hastalık",
+"es":"enfermedad"
+}
+},
+{
+"w":"patiënt",
+"d":"Iemand die medische hulp of verzorging ontvangt van een arts of in een ziekenhuis.",
+"t":{
+"en":"patient",
+"ru":"пациент, больной",
+"pl":"pacjent, chory",
+"de":"Patient, Patientin",
+"fr":"patient, malade",
+"it":"paziente, malato",
+"cs":"pacient, nemocný",
+"tr":"hasta",
+"es":"paciente, enfermo"
+},
+"c":{
+"en":"person receiving medical care",
+"ru":"человек, получающий лечение",
+"pl":"osoba leczona przez lekarza lub w szpitalu",
+"de":"Person, die medizinisch behandelt wird",
+"fr":"personne recevant des soins médicaux",
+"it":"persona che riceve cure mediche",
+"cs":"osoba v lékařské péči",
+"tr":"tıbbi bakım alan kişi",
+"es":"persona que recibe atención médica"
+}
+},
+{
+"w":"zorg",
+"d":"De handeling van het helpen of verplegen van iemand of iets dat hulp nodig heeft.",
+"t":{
+"en":"care, nursing",
+"ru":"забота, уход, попечение",
+"pl":"opieka, troska",
+"de":"Pflege, Fürsorge",
+"fr":"soin, garde, assistance",
+"it":"cura, assistenza",
+"cs":"péče, starost",
+"tr":"bakım, özen",
+"es":"cuidado, atención"
+},
+"c":{
+"en":"the provision of what is necessary for health and welfare",
+"ru":"внимание и уход за кем-то",
+"pl":"dbanie o kogoś lub coś, kto tego potrzebuje",
+"de":"Betreuung und Versorgung von hilfsbedürftigen Personen",
+"fr":"action de veiller au bien-être ou à la santé de quelqu'un",
+"it":"l'atto di assistere e accudire qualcuno",
+"cs":"starostlivost o někoho nebo o něco",
+"tr":"birinin sağlık ve refahı için gerekenleri sağlama",
+"es":"atención y asistencia que se presta a alguien o algo"
+}
+},
+{
+"w":"ziekte",
+"d":"Een lichamelijk of geestelijk gezondheidsprobleem.",
+"t":{
+"en":"disease, illness, sickness",
+"ru":"болезнь, заболевание, недуг",
+"pl":"choroba, schorzenie",
+"de":"Krankheit, Erkrankung",
+"fr":"maladie, affection",
+"it":"malattia, patologia",
+"cs":"nemoc, choroba, onemocnění",
+"tr":"hastalık, rahatsızlık, maraz",
+"es":"enfermedad, dolencia, afección"
+},
+"c":{
+"en":"specific medical condition",
+"ru":"общее понятие",
+"pl":"ogólne pojęcie medyczne",
+"de":"allgemeiner Begriff für eine gesundheitliche Störung",
+"fr":"terme général pour un problème de santé",
+"it":"termine generale per una condizione patologica",
+"cs":"obecný pojem pro onemocnění",
+"tr":"genel sağlık sorunu",
+"es":"condición médica o alteración de la salud"
+}
+},
+{
+"w":"verzekering",
+"d":"Een overeenkomst waarbij men tegen betaling van een premie recht heeft op vergoeding van schade of verlies.",
+"t":{
+"en":"insurance, insurance policy",
+"ru":"страхование, страховка, страховой полис",
+"pl":"ubezpieczenie, polisa ubezpieczeniowa",
+"de":"Versicherung, Versicherungspolice",
+"fr":"assurance, police d'assurance",
+"it":"assicurazione, polizza",
+"cs":"pojištění, pojistka",
+"tr":"sigorta, sigorta poliçesi",
+"es":"seguro, póliza de seguro"
+},
+"c":{
+"en":"financial protection against loss",
+"ru":"процесс или система защиты от рисков",
+"pl":"ochrona finansowa przed stratami lub szkodami",
+"de":"Schutz gegen finanzielle Risiken oder Schäden",
+"fr":"contrat de protection financière contre les risques",
+"it":"contratto o sistema di protezione finanziaria contro i rischi",
+"cs":"finanční ochrana proti ztrátám nebo škodám",
+"tr":"maddi kayıplara karşı güvence sağlayan sözleşme",
+"es":"contrato de cobertura financiera contra riesgos"
+}
+},
+{
+"w":"spreekuur",
+"d":"De vastgestelde tijd waarin een deskundige, zoals een arts of advocaat, beschikbaar is om mensen te spreken.",
+"t":{
+"en":"consultation hours, surgery hours, office hours",
+"ru":"приемные часы, часы приема, консультация",
+"pl":"godziny przyjęć, godziny konsultacji, dyżur",
+"de":"Sprechstunde, Sprechzeiten",
+"fr":"heures de consultation, heures de réception",
+"it":"orario di ricevimento, orario di visita, ore di ricevimento",
+"cs":"ordinační hodiny, úřední hodiny, konzultační hodiny",
+"tr":"muayene saatleri, görüşme saatleri, kabul saatleri",
+"es":"horas de consulta, horario de consulta, hora de consulta"
+},
+"c":{
+"en":"medical or professional",
+"ru":"официальное время приема",
+"pl":"u lekarza lub specjalisty",
+"de":"beim Arzt oder Anwalt",
+"fr":"médical ou professionnel",
+"it":"generico per professionisti o docenti",
+"cs":"u lékaře",
+"tr":"doktorlar için",
+"es":"médico o profesional"
+}
+},
+{
+"w":"controle",
+"d":"Het nakijken of inspecteren van iets om te zien of het in orde is en aan de regels voldoet.",
+"t":{
+"en":"check, inspection, check-up",
+"ru":"проверка, осмотр, контроль",
+"pl":"kontrola, badanie, przegląd",
+"de":"Kontrolle, Überprüfung, Untersuchung",
+"fr":"contrôle, inspection, visite de contrôle",
+"it":"controllo, ispezione, visita di controllo",
+"cs":"kontrola, prohlídka, inspekce",
+"tr":"kontrol, denetim, muayene",
+"es":"control, inspección, chequeo"
+},
+"c":{
+"en":"general verification",
+"ru":"инспекция, ревизия",
+"pl":"sprawdzanie zgodności z przepisami lub normami",
+"de":"allgemeine Überprüfung oder Inspektion",
+"fr":"vérification générale ou inspection",
+"it":"verifica generale o ispezione",
+"cs":"ověření stavu či dodržování pravidel",
+"tr":"genel denetleme veya inceleme",
+"es":"comprobación o inspección general"
+}
+},
+{
+"w":"operatie",
+"d":"Een medische ingreep waarbij een chirurg het lichaam opent om een aandoening te verhelpen.",
+"t":{
+"en":"operation, surgery",
+"ru":"операция",
+"pl":"operacja, zabieg",
+"de":"Operation, OP, Eingriff",
+"fr":"opération, intervention",
+"it":"operazione, intervento",
+"cs":"operace, zákrok",
+"tr":"ameliyat, operasyon",
+"es":"operación, cirugía"
+},
+"c":{
+"en":"surgical procedure",
+"ru":"медицинская",
+"pl":"zabieg chirurgiczny",
+"de":"medizinischer Eingriff",
+"fr":"intervention chirurgicale",
+"it":"procedura chirurgica",
+"cs":"chirurgický zákrok",
+"tr":"tıbbi cerrahi müdahale",
+"es":"procedimiento quirúrgico"
+}
+},
+{
+"w":"ambulance",
+"d":"Een voertuig dat speciaal is uitgerust om zieken en gewonden naar een ziekenhuis te vervoeren.",
+"t":{
+"en":"ambulance",
+"ru":"скорая помощь, машина скорой помощи, неотложка",
+"pl":"karetka, ambulans, karetka pogotowia",
+"de":"Krankenwagen, Rettungswagen, Ambulanz",
+"fr":"ambulance",
+"it":"ambulanza",
+"cs":"sanitka, ambulance, sanitní vůz",
+"tr":"ambulans, cankurtaran",
+"es":"ambulancia"
+},
+"c":{
+"en":"emergency vehicle",
+"ru":"служба или автомобиль",
+"pl":"samochód pogotowia",
+"de":"Fahrzeug zum Transport von Kranken",
+"fr":"véhicule de secours",
+"it":"veicolo di soccorso",
+"cs":"běžné označení pro sanitní vůz",
+"tr":"acil yardım aracı",
+"es":"vehículo de emergencia"
+}
+},
+{
+"w":"hulp",
+"d":"de handeling van het ondersteunen of bijstaan van iemand in een moeilijke situatie",
+"t":{
+"en":"help, assistance, aid",
+"ru":"помощь, содействие, поддержка",
+"pl":"pomoc, wsparcie",
+"de":"Hilfe, Unterstützung, Beistand",
+"fr":"aide, assistance, secours",
+"it":"aiuto, assistenza, soccorso",
+"cs":"pomoc, podpora, asistence",
+"tr":"yardım, destek",
+"es":"ayuda, asistencia, auxilio, socorro"
+},
+"c":{
+"en":"general assistance or aid",
+"ru":"общее содействие или поддержка",
+"pl":"ogólne wsparcie lub asysta",
+"de":"allgemeine Unterstützung oder Beistand",
+"fr":"action d'apporter son soutien ou secours",
+"it":"assistenza o soccorso generale",
+"cs":"obecná podpora nebo asistence",
+"tr":"genel destek veya yardım etme eylemi",
+"es":"asistencia o auxilio general"
+}
+},
+{
+"w":"ehbo",
+"d":"Afkorting van <w>eerste hulp bij ongelukken</w>; de noodzakelijke eerste zorg die direct aan een slachtoffer wordt verleend in afwachting van professionele medische hulp.",
+"t":{
+"en":"first aid",
+"ru":"первая помощь, ПМП",
+"pl":"pierwsza pomoc, pierwsza pomoc przedmedyczna",
+"de":"Erste Hilfe, Erstversorgung",
+"fr":"premiers secours, premiers soins",
+"it":"pronto soccorso, primo soccorso",
+"cs":"první pomoc, první předlékařská pomoc",
+"tr":"ilk yardım, acil yardım",
+"es":"primeros auxilios, primeros auxilios médicos"
+},
+"c":{
+"en":"emergency care given immediately to an injured person",
+"ru":"комплекс срочных мер для спасения жизни",
+"pl":"podstawowe zabiegi ratujące życie i zdrowie",
+"de":"Sofortmaßnahmen bei Unfällen",
+"fr":"soins d'urgence prodigués à une victime",
+"it":"assistenza immediata prestata a un ferito o ammalato",
+"cs":"okamžitá péče poskytnutá zraněnému",
+"tr":"tıbbi yardım öncesi yapılan acil müdahale",
+"es":"atención inmediata que se le da a una persona enferma o lesionada"
+}
+},
+{
+"w":"afdeling",
+"d":"Een specifiek onderdeel van een bedrijf, organisatie of instelling dat verantwoordelijk is voor een bepaalde taak of functie.",
+"t":{
+"en":"department, division",
+"ru":"отдел, департамент",
+"pl":"dział, wydział, departament",
+"de":"Abteilung, Dezernat, Referat, Ressort",
+"fr":"département, service",
+"it":"reparto, dipartimento, divisione",
+"cs":"oddělení, odbor",
+"tr":"departman, bölüm, şube",
+"es":"departamento, división"
+},
+"c":{
+"en":"subdivision of an organization",
+"ru":"подразделение организации",
+"pl":"część firmy lub organizacji",
+"de":"Teil eines Unternehmens oder einer Organisation",
+"fr":"subdivision d'une entreprise ou organisation",
+"it":"suddivisione di un'azienda o ufficio",
+"cs":"část firmy nebo organizace",
+"tr":"bir şirketin veya kurumun ana bölümlerinden biri",
+"es":"unidad administrativa de una organización"
+}
+},
+{
+"w":"behandeling",
+"d":"Een medische ingreep, verzorging of therapie die bedoeld is om een ziekte te genezen of klachten te verminderen.",
+"t":{
+"en":"treatment, therapy",
+"ru":"лечение, терапия",
+"pl":"leczenie, kuracja, terapia",
+"de":"Behandlung, Therapie",
+"fr":"traitement, thérapie",
+"it":"trattamento, terapia, cura",
+"cs":"léčba, ošetření, terapie",
+"tr":"tedavi, terapi",
+"es":"tratamiento, terapia"
+},
+"c":{
+"en":"medical care",
+"ru":"медицинский уход",
+"pl":"opieka medyczna",
+"de":"medizinische Versorgung",
+"fr":"soins médicaux",
+"it":"cura medica",
+"cs":"lékařská péče",
+"tr":"tıbbi bakım ve iyileştirme süreci",
+"es":"cuidado médico"
+}
+},
+{
+"w":"verpleegkundige",
+"d":"Iemand die voor zijn beroep zieken en gewonden verzorgt.",
+"t":{
+"en":"nurse",
+"ru":"медсестра, медбрат",
+"pl":"pielęgniarka, pielęgniarz",
+"de":"Pflegekraft, Krankenpfleger, Krankenschwester",
+"fr":"infirmier, infirmière",
+"it":"infermiere, infermiera",
+"cs":"zdravotní sestra, všeobecná sestra, zdravotní bratr, ošetřovatel",
+"tr":"hemşire, sağlık memuru",
+"es":"enfermero, enfermera"
+},
+"c":{
+"en":"medical professional",
+"ru":"женщина",
+"pl":"kobieta",
+"de":"geschlechtsneutral",
+"fr":"homme",
+"it":"maschile",
+"cs":"žena",
+"tr":"genel terim",
+"es":"masculino"
+}
+},
+{
+"w":"zieke",
+"d":"Iemand die aan een ziekte lijdt.",
+"t":{
+"en":"patient, sick person",
+"ru":"больной, пациент",
+"pl":"chory, pacjent",
+"de":"Kranke, Patient",
+"fr":"malade, patient",
+"it":"malato, paziente",
+"cs":"nemocný, pacient, chorý",
+"tr":"hasta, hasta kişi",
+"es":"enfermo, paciente"
+},
+"c":{
+"en":"person receiving medical treatment",
+"ru":"существительное",
+"pl":"osoba chora",
+"de":"eine kranke Person (substantiviertes Adjektiv)",
+"fr":"personne souffrant d'une maladie",
+"it":"persona affetta da una malattia",
+"cs":"člověk trpící nemocí",
+"tr":"sağlığı bozuk olan kimse",
+"es":"persona que padece una enfermedad"
+}
+},
+{
+"w":"ouderdom",
+"d":"De laatste levensfase van een mens of dier, gekenmerkt door het oud zijn.",
+"t":{
+"en":"old age",
+"ru":"старость",
+"pl":"starość, podeszły wiek",
+"de":"Alter, Greisenalter",
+"fr":"vieillesse, grand âge",
+"it":"vecchiaia",
+"cs":"stáří, vysoký věk",
+"tr":"yaşlılık, ihtiyarlık",
+"es":"vejez, ancianidad"
+},
+"c":{
+"en":"phase of life",
+"ru":"период жизни",
+"pl":"okres życia",
+"de":"Lebensphase",
+"fr":"dernière période de la vie",
+"it":"fase della vita",
+"cs":"životní období",
+"tr":"hayatın son dönemi",
+"es":"etapa de la vida"
+}
+},
+{
+"w":"bril",
+"d":"Een optisch instrument dat voor de ogen wordt gedragen om het gezichtsvermogen te corrigeren of de ogen te beschermen.",
+"t":{
+"en":"glasses, spectacles, pair of glasses",
+"ru":"очки",
+"pl":"okulary",
+"de":"Brille",
+"fr":"lunettes, paire de lunettes",
+"it":"occhiali, paio di occhiali",
+"cs":"brýle",
+"tr":"gözlük",
+"es":"gafas, lentes, anteojos"
+},
+"c":{
+"en":"eyewear",
+"ru":"для зрения",
+"pl":"do korekcji wzroku lub ochrony",
+"de":"Sehhilfe",
+"fr":"pour la vue",
+"it":"per la vista o protezione",
+"cs":"optická pomůcka",
+"tr":"görme veya koruma amaçlı",
+"es":"corrección visual o protección"
+}
+},
+{
+"w":"gehoorapparaat",
+"d":"Een klein elektronisch toestel dat door slechthorenden in of achter het oor wordt gedragen om geluiden te versterken.",
+"t":{
+"en":"hearing aid",
+"ru":"слуховой аппарат",
+"pl":"aparat słuchowy",
+"de":"Hörgerät, Hörapparat",
+"fr":"appareil auditif, prothèse auditive, audioprothèse",
+"it":"apparecchio acustico, protesi acustica",
+"cs":"naslouchátko, sluchadlo",
+"tr":"işitme cihazı",
+"es":"audífono, aparato auditivo"
+},
+"c":{
+"en":"a device to help a person hear better",
+"ru":"прибор для улучшения слуха",
+"pl":"urządzenie medyczne wzmacniające słuch",
+"de":"ein Gerät für Hörgeschädigte zur Verbesserung des Gehörs",
+"fr":"terme courant pour un dispositif d'aide à l'audition",
+"it":"dispositivo per migliorare l'udito",
+"cs":"přístroj pro nedoslýchavé",
+"tr":"sesleri yükselterek duymayı kolaylaştıran alet",
+"es":"dispositivo para mejorar la audición"
+}
+},
+{
+"w":"gehandicapte",
+"d":"Iemand met een beperking van lichamelijke, verstandelijke, psychische of sociale aard.",
+"t":{
+"en":"disabled person, the disabled",
+"ru":"инвалид, человек с ограниченными возможностями",
+"pl":"osoba niepełnosprawna, niepełnosprawny",
+"de":"Behinderte, Behinderter, Mensch mit Behinderung",
+"fr":"personne handicapée, les personnes handicapées, handicapé",
+"it":"disabile, portatore di handicap, persona con disabilità",
+"cs":"handicapovaný člověk, invalida, osoba se zdravotním postižením",
+"tr":"engelli, engelli kişi, engelliler",
+"es":"persona con discapacidad, discapacitado"
+},
+"c":{
+"en":"individual",
+"ru":"общеупотребительное, стандартное",
+"pl":"określenie osoby",
+"de":"Sowohl als weibliche Einzelperson als auch als Plural für Menschen mit Behinderung",
+"fr":"terme individuel et respectueux",
+"it":"persona con disabilità",
+"cs":"jednotlivec s postižením",
+"tr":"genel ve saygılı terim",
+"es":"término respetuoso e inclusivo"
+}
+},
+{
+"w":"verzorgen",
+"d":"erop toezien dat een persoon of een dier het nodige verkrijgt",
+"t":{
+"en":"look after, take care of, nurse, tend to",
+"ru":"ухаживать, заботиться, выхаживать",
+"pl":"opiekować się, troszczyć się, pielęgnować, doglądać",
+"de":"pflegen, versorgen, sich kümmern um",
+"fr":"soigner, s'occuper de, prendre soin de",
+"it":"prendersi cura di, accudire, curare",
+"cs":"starat se o, pečovat o, ošetřovat",
+"tr":"bakmak, bakımını yapmak, ilgilenmek",
+"es":"cuidar, atender, asistir"
+},
+"c":{
+"en":"to care for or keep safe",
+"ru":"за больными, животными или растениями",
+"pl":"dbać o kogoś lub o zwierzę",
+"de":"sich sorgend um jemanden oder etwas kümmern",
+"fr":"apporter des soins à un malade, un animal ou une plante",
+"it":"fornire assistenza a persone o animali",
+"cs":"zajišťovat potřeby člověka, zvířete nebo rostliny",
+"tr":"birinin veya bir hayvanın ihtiyaçlarını karşılamak",
+"es":"proteger o atender a personas, animales o plantas"
+}
+},
+{
+"w":"verplegen",
+"d":"het medisch of fysiek verzorgen van een zieke of gewonde persoon",
+"t":{
+"en":"nurse, care for, tend to",
+"ru":"ухаживать, выхаживать, сидеть",
+"pl":"pielęgnować, opiekować się",
+"de":"pflegen, versorgen",
+"fr":"soigner, garder",
+"it":"curare, assistere, accudire",
+"cs":"ošetřovat, pečovat o",
+"tr":"bakmak, bakımını yapmak, tedavi etmek",
+"es":"cuidar, asistir, atender"
+},
+"c":{
+"en":"to care for someone in sickness",
+"ru":"за больным или раненым",
+"pl":"opiekować się chorym",
+"de":"sich sorgend um einen kranken Menschen kümmern",
+"fr":"donner des soins à un malade",
+"it":"assistere dal punto di vista medico e fisico",
+"cs":"poskytovat péči nemocnému",
+"tr":"hasta veya yaralı birine bakım sağlamak",
+"es":"atender a un enfermo o persona dependiente"
+}
+},
+{
+"w":"innemen",
+"d":"Medicijnen of voedsel inslikken of tot zich nemen",
+"t":{
+"en":"take, ingest, swallow",
+"ru":"принимать, пить",
+"pl":"zażywać, przyjmować, połykać",
+"de":"einnehmen, schlucken, zu sich nehmen",
+"fr":"prendre, avaler, ingérer",
+"it":"assumere, prendere, ingerire",
+"cs":"užívat, vzít si, polykat",
+"tr":"almak, yutmak, içmek",
+"es":"tomar, ingerir"
+},
+"c":{
+"en":"medicine",
+"ru":"лекарство",
+"pl":"leki",
+"de":"Medikamente",
+"fr":"un médicament",
+"it":"riferito a farmaci o sostanze",
+"cs":"léky",
+"tr":"ilaç",
+"es":"medicamentos o alimentos"
+}
+},
+{
+"w":"behandelen",
+"d":"Op een bepaalde manier met een persoon of dier omgaan.",
+"t":{
+"en":"treat, handle",
+"ru":"обращаться, относиться",
+"pl":"traktować, obchodzić się z",
+"de":"behandeln, umgehen mit",
+"fr":"traiter, se comporter avec",
+"it":"trattare, comportarsi con",
+"tr":"davranmak, muamele etmek",
+"es":"tratar, tratar a",
+"cs":"zacházet, jednat s"
+},
+"c":{
+"en":"behave towards",
+"ru":"вести себя с кем-то",
+"pl":"odnosić się do kogoś w określony sposób",
+"de":"mit jemandem oder etwas umgehen",
+"fr":"agir d'une certaine manière envers quelqu'un",
+"it":"comportarsi verso qualcuno",
+"tr":"birine karşı tutum sergilemek",
+"es":"comportarse con alguien"
+}
+},
+{
+"w":"bewegen",
+"d":"Van plaats of houding veranderen; niet stilstaan.",
+"t":{
+"en":"move",
+"ru":"двигаться, шевелиться",
+"pl":"ruszać się, poruszać się",
+"de":"sich bewegen, bewegen",
+"fr":"bouger, se mouvoir",
+"it":"muoversi",
+"cs":"hýbat se, pohybovat se",
+"tr":"hareket etmek, kımıldamak",
+"es":"moverse"
+},
+"c":{
+"en":"general physical motion",
+"ru":"совершать движения, перемещаться",
+"pl":"wykonywać ruchy, nie stać w miejscu",
+"de":"die eigene Position verändern",
+"fr":"changer de position ou faire de l'exercice",
+"it":"fare movimento fisico o esercizio",
+"cs":"měnit polohu těla nebo polohu obecně",
+"tr":"genel fiziksel hareket",
+"es":"cambiar de posición o realizar actividad física"
+}
+},
+{
+"w":"ontspannen",
+"d":"Tot rust komen en lichamelijke of geestelijke spanning verminderen.",
+"t":{
+"en":"relax, unwind",
+"ru":"расслабляться, отдыхать",
+"pl":"relaksować się, odprężać się, odpoczywać",
+"de":"sich entspannen, relaxen, abschalten",
+"fr":"se détendre, se relaxer, se décompresser",
+"it":"rilassarsi, distendersi",
+"cs":"uvolnit se, odreagovat se, relaxovat",
+"tr":"rahatlamak, gevşemek, dinlenmek",
+"es":"relajarse, despejarse"
+},
+"c":{
+"en":"to rest and become calm",
+"ru":"снимать напряжение, отдыхать",
+"pl":"odpoczywać i uwalniać się od stresu",
+"de":"körperlich oder geistig zur Ruhe kommen",
+"fr":"relâcher la tension physique ou mentale",
+"it":"riposarsi e allentare la tensione",
+"cs":"zbavit se napětí a odpočívat",
+"tr":"zihinsel veya fiziksel gerginlikten kurtulmak",
+"es":"disminuir la tensión física o mental"
+}
+},
+{
+"w":"herstellen",
+"d":"Iets wat kapot of beschadigd is weer in goede staat brengen.",
+"t":{
+"en":"repair, fix",
+"ru":"чинить, исправлять, восстанавливать",
+"pl":"naprawiać, naprawić, naprawiać błędy",
+"de":"reparieren, beheben, wiederherstellen",
+"fr":"réparer, corriger",
+"it":"riparare, rimediare a, correggere",
+"cs":"opravit, napravit, dát do pořádku",
+"tr":"tamir etmek, onarmak, düzeltmek",
+"es":"reparar, corregir, arreglar"
+},
+"c":{
+"en":"physical objects",
+"ru":"ремонтировать предметы",
+"pl":"fizyczne przedmioty",
+"de":"Gegenstände",
+"fr":"objets physiques ou erreurs",
+"it":"oggetti fisici",
+"cs":"fyzické předměty",
+"tr":"fiziksel nesneler",
+"es":"objetos físicos"
+}
+},
+{
+"w":"redden",
+"d":"actie ondernemen om iets of iemand uit een gevaarlijke situatie of uit de moeilijkheden te halen",
+"t":{
+"en":"save, rescue",
+"ru":"спасать, выручать, избавлять",
+"pl":"ratować, ocalić",
+"de":"retten, bergen",
+"fr":"sauver, secourir",
+"it":"salvare, soccorrere, trarre in salvo",
+"cs":"zachránit, vyprostit, spasit",
+"tr":"kurtarmak",
+"es":"salvar, rescatar"
+},
+"c":{
+"en":"to help someone survive or prevent harm",
+"ru":"помочь кому-то выжить или избежать вреда",
+"pl":"pomagać komuś przeżyć lub uniknąć niebezpieczeństwa",
+"de":"jemanden oder etwas aus einer bedrohlichen Lage befreien",
+"fr":"tirer d'un danger de mort ou d'une situation critique",
+"it":"aiutare qualcuno a sopravvivere o evitare un danno",
+"cs":"pomoci někomu přežít nebo zabránit újmě",
+"tr":"birini tehlikeden veya kötü bir durumdan uzaklaştırmak",
+"es":"librar de un peligro o evitar la muerte"
+}
+},
+{
+"w":"doodgaan",
+"d":"ophouden met leven",
+"t":{
+"en":"die, perish, pass away",
+"ru":"умереть, погибнуть, засохнуть",
+"pl":"umierać, usychać, zdychać",
+"de":"sterben, eingehen, versterben",
+"fr":"mourir, décéder, s'éteindre",
+"it":"morire, perire, mancare",
+"cs":"zemřít, umřít, zahynout, pojit",
+"tr":"ölmek, vefat etmek, hayatını kaybetmek",
+"es":"morir, morirse, fallecer"
+},
+"c":{
+"en":"to stop living",
+"ru":"прекратить жить",
+"pl":"przestawać żyć (o ludziach, zwierzętach, roślinach)",
+"de":"aufhören zu leben",
+"fr":"cesser de vivre",
+"it":"cessare di vivere",
+"cs":"přestat žít",
+"tr":"yaşamın sona ermesi",
+"es":"dejar de estar vivo"
+}
+},
+{
+"w":"overlijden",
+"d":"Ophouden met leven; sterven (meestal gebruikt voor mensen en vaak formeler of respectvoller dan 'doodgaan').",
+"t":{
+"en":"pass away, die",
+"ru":"скончаться, умереть, уйти из жизни",
+"pl":"odejść, umrzeć, zemrzeć, skonać",
+"de":"versterben, sterben, verscheiden",
+"fr":"décéder, mourir, s'éteindre",
+"it":"venire a mancare, decedere, morire, spegnersi",
+"cs":"zemřít, skonat, zesnout, odejít",
+"tr":"vefat etmek, hayatını kaybetmek, yaşamını yitirmek, ölmek",
+"es":"fallecer, morir, fenecer"
+},
+"c":{
+"en":"formal, respectful",
+"ru":"официально или уважительно",
+"pl":"eufemistycznie o śmierci",
+"de":"formell, respektvoll",
+"fr":"formel et respectueux",
+"it":"formale, rispettoso",
+"cs":"obecné, neutrální",
+"tr":"resmi ve saygılı",
+"es":"formal, respetuoso"
+}
+},
+{
+"w":"gezond",
+"d":"Vrij van ziektes en in goede lichamelijke en geestelijke conditie.",
+"t":{
+"en":"healthy, well, fit",
+"ru":"здоровый, здравый",
+"pl":"zdrowy, zdroworozsądkowy",
+"de":"gesund",
+"fr":"sain, en bonne santé, bon",
+"it":"sano, in salute, buon",
+"cs":"zdravý",
+"tr":"sağlıklı, sağlam, sağduyulu",
+"es":"sano, saludable, común"
+},
+"c":{
+"en":"enjoying good health",
+"ru":"о физическом состоянии",
+"pl":"o stanie fizycznym i psychicznym",
+"de":"frei von Krankheiten, sich wohlbefindend",
+"fr":"en bonne santé physique ou mentale",
+"it":"riferito a salute fisica o mentale",
+"cs":"o tělesném a duševním stavu",
+"tr":"fiziksel ve zihinsel olarak iyi durumda olan",
+"es":"que goza de buena salud"
+}
+},
+{
+"w":"ziek",
+"d":"Lichamelijk of geestelijk niet in orde; niet gezond.",
+"t":{
+"en":"sick, ill",
+"ru":"больной, нездоровый",
+"pl":"chory, niezdrowy",
+"de":"krank, unwohl",
+"fr":"malade, souffrant",
+"it":"malato, indisposto",
+"cs":"nemocný, churavý, nezdravý",
+"tr":"hasta, rahatsız",
+"es":"enfermo, malo"
+},
+"c":{
+"en":"general term for being unwell",
+"ru":"о состоянии здоровья",
+"pl":"o stanie zdrowia",
+"de":"allgemeiner Begriff für gesundheitlich beeinträchtigt",
+"fr":"terme général pour désigner une personne en mauvaise santé",
+"it":"riferito a una persona che non sta bene",
+"cs":"obecný výraz pro špatný zdravotní stav",
+"tr":"sağlığı yerinde olmayan kişi veya durum",
+"es":"afectado por una enfermedad o indisposición"
+}
+},
+{
+"w":"levend",
+"d":"In leven; met biologische functies; niet dood.",
+"t":{
+"en":"alive, living",
+"ru":"живой, в живых",
+"pl":"żywy, przy życiu",
+"de":"lebend, lebendig, am Leben",
+"fr":"vivant, en vie",
+"it":"vivo, in vita",
+"cs":"živý, naživu",
+"tr":"canlı, sağ, diri",
+"es":"vivo"
+},
+"c":{
+"en":"not dead",
+"ru":"о живых существах",
+"pl":"o organizmach mających życie",
+"de":"nicht tot",
+"fr":"qui a de la vie, non mort",
+"it":"non morto",
+"cs":"ne mrtvý, mající život",
+"tr":"yaşayan, ölü olmayan",
+"es":"que tiene vida, no muerto"
+}
+},
+{
+"w":"lichamelijk",
+"d":"Met betrekking tot het lichaam.",
+"t":{
+"en":"physical, bodily",
+"ru":"физический, телесный",
+"pl":"fizyczny, cielesny",
+"de":"körperlich, physisch",
+"fr":"physique, corporel",
+"it":"fisico, corporeo",
+"cs":"tělesný, fyzický",
+"tr":"fiziksel, bedensel, fiziki",
+"es":"físico, corporal"
+},
+"c":{
+"en":"relating to the body as opposed to the mind",
+"ru":"относящийся к организму и его функциям (в отличие от умственного или духовного)",
+"pl":"odnoszący się do ciała w przeciwieństwie do umysłu",
+"de":"den menschlichen Körper betreffend, im Gegensatz zum Geistigen",
+"fr":"relatif au corps",
+"it":"riferito al corpo o alle sue funzioni",
+"cs":"týkající se lidského těla",
+"tr":"zihinsel veya ruhsal olanın karşıtı olarak bedenle ilgili",
+"es":"relativo al cuerpo en oposición a lo mental o espiritual"
+}
+},
+{
+"w":"geestelijk",
+"d":"Met betrekking tot het verstand, het denken of de psyche.",
+"t":{
+"en":"mental, psychological",
+"ru":"умственный, психический",
+"pl":"psychiczny, umysłowy",
+"de":"geistig, psychisch, mental",
+"fr":"mental, psychique",
+"it":"mentale, psichico",
+"cs":"duševní, mentální, psychický",
+"tr":"zihinsel, ruhsal, akli",
+"es":"mental, psíquico"
+},
+"c":{
+"en":"relating to the mind",
+"ru":"относящийся к интеллекту или мышлению",
+"pl":"odnoszący się do psychiki i zdrowia psychicznego",
+"de":"den Verstand oder das Denken betreffend",
+"fr":"relatif aux fonctions intellectuelles ou psychiques",
+"it":"relativo alla mente",
+"cs":"týkající se mysli a psychiky",
+"tr":"zihin ve düşünce ile ilgili",
+"es":"relacionado con la mente"
+}
+}
+]

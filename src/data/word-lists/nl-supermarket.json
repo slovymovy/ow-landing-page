@@ -1,0 +1,3850 @@
+[
+{
+"w":"supermarkt",
+"d":"Een grote zelfbedieningswinkel waar voedingsmiddelen en huishoudelijke artikelen worden verkocht.",
+"t":{
+"en":"supermarket, grocery store",
+"ru":"супермаркет",
+"pl":"supermarket, sklep spożywczy",
+"de":"Supermarkt",
+"fr":"supermarché",
+"it":"supermercato",
+"cs":"supermarket",
+"tr":"süpermarket, market",
+"es":"supermercado, súper"
+},
+"c":{
+"en":"large grocery store",
+"ru":"магазин самообслуживания",
+"pl":"duży sklep samoobsługowy",
+"de":"großes Selbstbedienungsgeschäft für Lebensmittel",
+"fr":"grand magasin d'alimentation en libre-service",
+"it":"grande negozio di alimentari e prodotti per la casa",
+"cs":"velká samoobslužná prodejna potravin",
+"tr":"büyük gıda ve ev gereçleri mağazası",
+"es":"establecimiento de autoservicio"
+}
+},
+{
+"w":"winkel",
+"d":"Een gebouw of ruimte waar goederen worden verkocht aan klanten.",
+"t":{
+"en":"shop, store",
+"ru":"магазин, лавка",
+"pl":"sklep",
+"de":"Geschäft, Laden",
+"fr":"magasin, boutique",
+"it":"negozio, bottega",
+"cs":"obchod, prodejna, krám",
+"tr":"dükkan, mağaza",
+"es":"tienda, comercio"
+},
+"c":{
+"en":"general term",
+"ru":"общее название места продажи",
+"pl":"miejsce sprzedaży towarów",
+"de":"allgemeine Bezeichnung für eine Verkaufsstelle",
+"fr":"terme général pour un lieu de vente",
+"it":"termine generale",
+"cs":"obecný název pro prodejní místo",
+"tr":"genel anlamda satış yapılan yer",
+"es":"establecimiento comercial"
+}
+},
+{
+"w":"winkelcentrum",
+"d":"Een groot gebouw of gebied waar veel verschillende winkels en restaurants bij elkaar zijn gevestigd.",
+"t":{
+"en":"shopping center, mall",
+"ru":"торговый центр, молл",
+"pl":"centrum handlowe, galeria handlowa",
+"de":"Einkaufszentrum, Shoppingcenter, Einkaufsmeile",
+"fr":"centre commercial, galerie marchande",
+"it":"centro commerciale",
+"cs":"nákupní centrum, obchodní centrum, obchoďák",
+"tr":"alışveriş merkezi, AVM",
+"es":"centro comercial"
+},
+"c":{
+"en":"complex with shops",
+"ru":"комплекс с магазинами",
+"pl":"duży kompleks ze sklepami",
+"de":"großes Gebäude mit vielen Geschäften",
+"fr":"complexe regroupant des magasins",
+"it":"complesso di negozi",
+"cs":"komplex s obchody",
+"tr":"mağazaların bulunduğu kompleks",
+"es":"complejo con tiendas y restaurantes"
+}
+},
+{
+"w":"apotheek",
+"d":"Een winkel waar medicijnen en gezondheidsproducten worden verkocht en klaargemaakt.",
+"t":{
+"en":"pharmacy, chemist's, drugstore",
+"ru":"аптека",
+"pl":"apteka",
+"de":"Apotheke",
+"fr":"pharmacie, officine",
+"it":"farmacia",
+"cs":"lékárna",
+"tr":"eczane",
+"es":"farmacia"
+},
+"c":{
+"en":"shop",
+"ru":"учреждение",
+"pl":"sklep z lekami",
+"de":"Geschäft",
+"fr":"officine",
+"it":"negozio",
+"cs":"obchod s léky",
+"tr":"ilaç satılan dükkan",
+"es":"establecimiento comercial"
+}
+},
+{
+"w":"bakker",
+"d":"Een winkel of bedrijf waar men brood en banket kan kopen.",
+"t":{
+"en":"bakery, baker's",
+"ru":"пекарня, булочная, хлебный магазин",
+"pl":"piekarnia",
+"de":"Bäckerei, Bäcker",
+"fr":"boulangerie, boulangerie-pâtisserie",
+"it":"panetteria, panificio, pasticceria",
+"cs":"pekařství, pekárna",
+"tr":"fırın, pastane",
+"es":"panadería, pastelería"
+},
+"c":{
+"en":"the shop itself",
+"ru":"заведение",
+"pl":"sklep lub zakład",
+"de":"Geschäft",
+"fr":"le commerce ou magasin",
+"it":"il negozio di pane",
+"cs":"obchod",
+"tr":"ekmek ve unlu mamullerin satıldığı dükkan",
+"es":"establecimiento comercial"
+}
+},
+{
+"w":"slager",
+"d":"Iemand die voor zijn beroep vlees snijdt, bereidt en verkoopt in een winkel.",
+"t":{
+"en":"butcher",
+"ru":"мясник",
+"pl":"rzeźnik, masarz",
+"de":"Metzger, Fleischer, Schlachter",
+"fr":"boucher",
+"it":"macellaio",
+"cs":"řezník",
+"tr":"kasap",
+"es":"carnicero"
+},
+"c":{
+"en":"shopkeeper",
+"ru":"продавец мяса",
+"pl":"sprzedawca mięsa",
+"de":"Beruf, Geschäftsinhaber",
+"fr":"commerçant",
+"it":"negoziante",
+"cs":"profese a prodejce",
+"tr":"et satan esnaf",
+"es":"vendedor de carne"
+}
+},
+{
+"w":"winkelier",
+"d":"Een detailhandelaar die een winkel houdt of heeft",
+"t":{
+"en":"shopkeeper, storekeeper, retailer",
+"ru":"владелец магазина, торговец, лавочник, ритейлер",
+"pl":"sklepikarz, sprzedawca, detalista",
+"de":"Ladenbesitzer, Geschäftsinhaber, Einzelhändler",
+"fr":"commerçant, boutiquier, marchand",
+"it":"negoziante, commerciante, bottegaio",
+"cs":"obchodník, kramář, maloobchodník",
+"tr":"esnaf, dükkancı, mağazacı",
+"es":"tendero, comerciante, dueño de la tienda"
+},
+"c":{
+"en":"owner or manager of a shop",
+"ru":"хозяин торговой точки",
+"pl":"właściciel lub osoba prowadząca mały sklep",
+"de":"jemand, der einen Laden besitzt",
+"fr":"personne qui tient un commerce",
+"it":"chi gestisce o possiede un negozio",
+"cs":"majitel nebo provozovatel obchodu",
+"tr":"küçük dükkan sahibi",
+"es":"propietario o dependiente de una tienda"
+}
+},
+{
+"w":"verkoper",
+"d":"Iemand die goederen of diensten verkoopt.",
+"t":{
+"en":"salesman, seller, salesperson",
+"ru":"продавец, торговец",
+"pl":"sprzedawca, handlowiec",
+"de":"Verkäufer",
+"fr":"vendeur",
+"it":"venditore, commesso",
+"cs":"prodavač, prodejce",
+"tr":"satıcı, tezgahtar, pazarlamacı",
+"es":"vendedor, dependiente"
+},
+"c":{
+"en":"a man whose job is to sell things",
+"ru":"человек, работающий в торговле",
+"pl":"osoba sprzedająca towary w sklepie lub handlowiec",
+"de":"jemand, der etwas verkauft (allgemein oder gewerbsmäßig)",
+"fr":"personne qui vend quelque chose ou dont c'est le métier",
+"it":"persona che vende merci o servizi",
+"cs":"člověk prodávající zboží v obchodě",
+"tr":"genel olarak satış yapan kişi",
+"es":"persona que se dedica a la venta de productos o mercancías"
+}
+},
+{
+"w":"klant",
+"d":"Iemand die een product koopt of een dienst afneemt van een leverancier.",
+"t":{
+"en":"customer, client",
+"ru":"клиент, покупатель, заказчик",
+"pl":"klient, kupujący",
+"de":"Kunde, Klient",
+"fr":"client, acheteur",
+"it":"cliente, acquirente",
+"cs":"zákazník, klient",
+"tr":"müşteri, alıcı",
+"es":"cliente, comprador"
+},
+"c":{
+"en":"buyer of goods or services",
+"ru":"общее значение",
+"pl":"osoba kupująca towary lub korzystająca z usług",
+"de":"Käufer von Waren oder Dienstleistungen",
+"fr":"acheteur de biens ou de services",
+"it":"chi acquista beni o servizi",
+"cs":"kupující zboží nebo služeb",
+"tr":"mal veya hizmet satın alan kişi",
+"es":"comprador de bienes o servicios"
+}
+},
+{
+"w":"openingstijden",
+"d":"De uren of perioden waarin een winkel, bedrijf of openbare instelling geopend is voor het publiek.",
+"t":{
+"en":"opening hours, business hours, hours of operation",
+"ru":"часы работы, время работы, режим работы",
+"pl":"godziny otwarcia, godziny pracy",
+"de":"Öffnungszeiten, Geschäftszeiten",
+"fr":"heures d'ouverture, horaires d'ouverture",
+"it":"orari di apertura, orario di apertura",
+"cs":"otevírací doba, provozní doba, otevírací hodiny",
+"tr":"açılış saatleri, çalışma saatleri, mesai saatleri",
+"es":"horario de apertura, horas de apertura, horario comercial"
+},
+"c":{
+"en":"the hours a business is open",
+"ru":"время работы заведения",
+"pl":"czas, w którym placówka jest czynna",
+"de":"die Zeiten, zu denen ein Geschäft geöffnet ist",
+"fr":"les heures où un établissement est ouvert",
+"it":"le ore in cui un'attività è aperta",
+"cs":"doba, kdy je otevřeno pro veřejnost",
+"tr":"bir işletmenin açık olduğu saatler",
+"es":"horas en las que un establecimiento abre al público"
+}
+},
+{
+"w":"wachtrij",
+"d":"een rij mensen of zaken die op hun beurt wachten",
+"t":{
+"en":"queue, line, waiting list",
+"ru":"очередь",
+"pl":"kolejka",
+"de":"Warteschlange, Schlange",
+"fr":"file d'attente, queue, file",
+"it":"coda, fila",
+"cs":"fronta, řada",
+"tr":"kuyruk, sıra, bekleme listesi",
+"es":"cola, fila"
+},
+"c":{
+"en":"a line of people or vehicles waiting for something",
+"ru":"группа людей или список задач",
+"pl":"uporządkowana grupa ludzi czekających na coś",
+"de":"eine Reihe wartender Personen oder Daten",
+"fr":"une suite de personnes attendant leur tour",
+"it":"fila di persone o veicoli in attesa",
+"cs":"řada lidí čekajících na odbavení nebo obsluhu",
+"tr":"bir şey için bekleyen insanların oluşturduğu sıra",
+"es":"hilera de personas que esperan turno"
+}
+},
+{
+"w":"klacht",
+"d":"een formele uiting van ontevredenheid over een product, dienst of behandeling",
+"t":{
+"en":"complaint, grievance, objection",
+"ru":"жалоба, претензия, рекламация",
+"pl":"reklamacja, skarga, zażalenie",
+"de":"Beschwerde, Reklamation, Klage",
+"fr":"plainte, réclamation",
+"it":"reclamo, lamentela, denuncia",
+"cs":"stížnost, reklamace",
+"tr":"şikayet, itiraz, reklamasyon",
+"es":"queja, reclamación, denuncia"
+},
+"c":{
+"en":"the act of expressing dissatisfaction",
+"ru":"официальное заявление о недовольстве",
+"pl":"oficjalne zgłoszenie wad towaru lub usługi",
+"de":"eine formelle Äußerung von Unzufriedenheit",
+"fr":"expression formelle de mécontentement ou démarche juridique",
+"it":"espressione formale di insoddisfazione per un servizio o prodotto",
+"cs":"formální vyjádření nespokojenosti",
+"tr":"memnuniyetsizliği bildirme eylemi",
+"es":"expresión de disgusto o disconformidad"
+}
+},
+{
+"w":"boodschappen",
+"d":"De dagelijkse inkopen die men doet voor het huishouden, zoals eten en drinken.",
+"t":{
+"en":"groceries, shopping",
+"ru":"продукты, покупки",
+"pl":"zakupy, sprawunki",
+"de":"Einkäufe, Lebensmittel",
+"fr":"courses, provisions, commissions",
+"it":"spesa, generi alimentari",
+"cs":"nákup, potraviny",
+"tr":"mutfak alışverişi, market alışverişi, erzak",
+"es":"compras, mandados, comestibles"
+},
+"c":{
+"en":"food and household supplies",
+"ru":"еда и товары для дома",
+"pl":"artykuły spożywcze i domowe",
+"de":"für den Haushalt",
+"fr":"achats de nourriture et de produits ménagers",
+"it":"acquisti di alimentari e beni per la casa",
+"cs":"potraviny a věci pro domácnost",
+"tr":"yiyecek ve içecek alışverişi",
+"es":"artículos adquiridos para el hogar"
+}
+},
+{
+"w":"winkelwagen",
+"d":"een wagentje dat in winkels wordt gebruikt om tijdens het winkelen producten in te verzamelen",
+"t":{
+"en":"shopping cart, shopping trolley, cart",
+"ru":"тележка для покупок, продуктовая тележка, тележка",
+"pl":"wózek sklepowy, wózek na zakupy",
+"de":"Einkaufswagen, Einkaufskorb",
+"fr":"chariot de supermarché, caddie, chariot",
+"it":"carrello della spesa, carrello",
+"cs":"nákupní vozík, nákupní košík",
+"tr":"alışveriş arabası, market arabası",
+"es":"carrito de la compra, carrito de supermercado, carro de la compra"
+},
+"c":{
+"en":"US/Canada/Philippines",
+"ru":"в супермаркете",
+"pl":"standardowe określenie",
+"de":"Standardbegriff für den Wagen im Supermarkt",
+"fr":"terme formel et courant",
+"it":"termine comune",
+"cs":"standardní označení pro vozík v supermarketu",
+"tr":"genel kullanım",
+"es":"España"
+}
+},
+{
+"w":"mand",
+"d":"Een bak of korf, meestal gemaakt van vlechtwerk zoals riet of kunststof, gebruikt om voorwerpen in te vervoeren of te bewaren.",
+"t":{
+"en":"basket",
+"ru":"корзина",
+"pl":"kosz, koszyk",
+"de":"Korb",
+"fr":"panier, corbeille",
+"it":"cestino, cesta, canestro",
+"cs":"koš, košík, pelíšek",
+"tr":"sepet",
+"es":"cesta, cesto, canasta"
+},
+"c":{
+"en":"woven container",
+"ru":"плетёная ёмкость",
+"pl":"pleciony pojemnik",
+"de":"geflochtener Behälter",
+"fr":"récipient tressé",
+"it":"contenitore intrecciato di piccole o medie dimensioni",
+"cs":"pletená nádoba",
+"tr":"örülerek yapılmış kap",
+"es":"recipiente tejido"
+}
+},
+{
+"w":"kassa",
+"d":"Een plaats in een winkel waar men zijn aankopen betaalt",
+"t":{
+"en":"checkout, cash desk, counter",
+"ru":"касса",
+"pl":"kasa",
+"de":"Kasse",
+"fr":"caisse",
+"it":"cassa",
+"cs":"pokladna, kasa",
+"tr":"kasa",
+"es":"caja"
+},
+"c":{
+"en":"place to pay in a supermarket or store",
+"ru":"место оплаты в магазине",
+"pl":"miejsce płatności w sklepie",
+"de":"Ort zum Bezahlen im Geschäft",
+"fr":"comptoir de paiement dans un magasin",
+"it":"punto di pagamento in un negozio o supermercato",
+"cs":"místo k placení v obchodě",
+"tr":"mağazalarda ödeme yapılan yer",
+"es":"lugar donde se paga en una tienda o supermercado"
+}
+},
+{
+"w":"bon",
+"d":"Een stukje papier dat je krijgt na betaling als bewijs van aankoop.",
+"t":{
+"en":"receipt",
+"ru":"чек, кассовый чек",
+"pl":"paragon, kwit",
+"de":"Kassenbon, Quittung, Beleg",
+"fr":"ticket de caisse, reçu",
+"it":"scontrino, ricevuta",
+"cs":"účtenka, paragon, pokladní stvrzenka",
+"tr":"fiş, fatura",
+"es":"ticket, recibo"
+},
+"c":{
+"en":"proof of purchase",
+"ru":"кассовый",
+"pl":"dowód zakupu",
+"de":"Kaufbeleg",
+"fr":"preuve d'achat",
+"it":"fiscale, prova d'acquisto",
+"cs":"doklad o zaplacení",
+"tr":"alışveriş kanıtı",
+"es":"comprobante de compra"
+}
+},
+{
+"w":"kassabon",
+"d":"Een papieren bewijs van betaling dat men ontvangt bij een aankoop in een winkel.",
+"t":{
+"en":"receipt, sales receipt",
+"ru":"кассовый чек, чек",
+"pl":"paragon, paragon fiskalny",
+"de":"Kassenbon, Kassenzettel, Beleg",
+"fr":"ticket de caisse, reçu",
+"it":"scontrino, ricevuta fiscale",
+"cs":"účtenka, pokladní stvrzenka, paragon",
+"tr":"fiş, kasa fişi",
+"es":"ticket de compra, recibo, comprobante de pago"
+},
+"c":{
+"en":"proof of purchase",
+"ru":"документ об оплате в магазине",
+"pl":"dowód zakupu ze sklepu",
+"de":"Beleg über einen Einkauf im Geschäft",
+"fr":"preuve d'achat imprimée par la caisse",
+"it":"documento commerciale di acquisto",
+"cs":"doklad o zaplacení v obchodě",
+"tr":"alışveriş kanıtı",
+"es":"comprobante de pago en una tienda"
+}
+},
+{
+"w":"tas",
+"d":"Een voorwerp van flexibel materiaal, zoals leer, stof of plastic, dat gebruikt wordt om spullen in mee te nemen.",
+"t":{
+"en":"bag, handbag",
+"ru":"сумка",
+"pl":"torba, torebka",
+"de":"Tasche, Handtasche",
+"fr":"sac, sac à main",
+"it":"borsa, borsetta",
+"cs":"taška, kabelka",
+"tr":"çanta",
+"es":"bolsa, bolso, cartera"
+},
+"c":{
+"en":"general container for carrying things",
+"ru":"для переноски вещей",
+"pl":"ogólne określenie na pojemnik do noszenia rzeczy",
+"de":"allgemeines Behältnis zum Tragen von Gegenständen",
+"fr":"contenant général pour transporter des objets",
+"it":"contenitore generico per trasportare oggetti",
+"cs":"obecný předmět na nošení věcí",
+"tr":"genel olarak eşya taşımak için kullanılan kap",
+"es":"recipiente flexible en general"
+}
+},
+{
+"w":"artikel",
+"d":"Een voorwerp dat te koop wordt aangeboden in een winkel.",
+"t":{
+"en":"item, article, product",
+"ru":"товар, изделие",
+"pl":"artykuł, towar, produkt",
+"de":"Artikel, Ware",
+"fr":"article, produit",
+"it":"articolo, prodotto, oggetto",
+"cs":"zboží, artikl, položka",
+"tr":"ürün, madde, eşya",
+"es":"artículo, producto"
+},
+"c":{
+"en":"object for sale",
+"ru":"предмет торговли",
+"pl":"towar w sklepie",
+"de":"Ware im Handel",
+"fr":"objet en vente",
+"it":"prodotto in vendita",
+"cs":"předměty k prodeji",
+"tr":"satışa sunulan mal",
+"es":"objeto comercial"
+}
+},
+{
+"w":"prijs",
+"d":"Het bedrag dat men moet betalen voor een goed of een dienst",
+"t":{
+"en":"price, cost",
+"ru":"цена, стоимость",
+"pl":"cena, koszt",
+"de":"Preis",
+"fr":"prix, tarif, coût",
+"it":"prezzo, costo",
+"cs":"cena",
+"tr":"fiyat, bedel, ücret",
+"es":"precio"
+},
+"c":{
+"en":"monetary value",
+"ru":"денежная стоимость",
+"pl":"wartość pieniężna",
+"de":"Geldbetrag für eine Ware",
+"fr":"valeur monétaire d'un bien",
+"it":"valore monetario di un bene o servizio",
+"cs":"peněžní hodnota",
+"tr":"bir şeyin parasal değeri",
+"es":"valor monetario de un bien o servicio"
+}
+},
+{
+"w":"aanbieding",
+"d":"Een product dat tijdelijk voor een lagere prijs wordt verkocht.",
+"t":{
+"en":"special offer, sale, deal",
+"ru":"акция, спецпредложение, скидка",
+"pl":"promocja, oferta specjalna, okazja",
+"de":"Sonderangebot, Angebot",
+"fr":"promotion, offre spéciale, solde",
+"it":"offerta, promozione",
+"cs":"akční nabídka, sleva, akce",
+"tr":"kampanya, indirim, fırsat",
+"es":"oferta, promoción, rebaja"
+},
+"c":{
+"en":"item sold at a reduced price",
+"ru":"временное снижение цен",
+"pl":"tymczasowa obniżka ceny",
+"de":"günstigerer Preis für ein Produkt",
+"fr":"réduction temporaire de prix",
+"it":"prodotto a prezzo ridotto",
+"cs":"dočasné snížení ceny",
+"tr":"indirimli satış dönemi",
+"es":"precio rebajado temporalmente"
+}
+},
+{
+"w":"kortingskaart",
+"d":"Een kaart die de houder het recht geeft op een prijsverlaging bij de aankoop van goederen of diensten.",
+"t":{
+"en":"discount card, reduction card, loyalty card",
+"ru":"дисконтная карта, скидочная карта, карта лояльности",
+"pl":"karta rabatowa, karta zniżkowa, karta lojalnościowa",
+"de":"Rabattkarte, Ermäßigungskarte, Vorteilskarte",
+"fr":"carte de réduction, carte de fidélité, carte de réduction commerciale",
+"it":"carta sconto, tessera sconto, carta fedeltà",
+"cs":"slevová karta, zákaznická karta, slevový průkaz",
+"tr":"indirim kartı, iskonto kartı",
+"es":"tarjeta de descuento, tarjeta de fidelidad, tarjeta de rebajas"
+},
+"c":{
+"en":"a card used to get a lower price",
+"ru":"карта, предоставляющая скидку",
+"pl":"karta uprawniająca do zniżek przy zakupach",
+"de":"eine Karte, mit der man beim Einkauf Preisnachlässe erhält",
+"fr":"carte permettant d'obtenir un tarif réduit, souvent pour les transports",
+"it":"tessera che dà diritto a una riduzione di prezzo",
+"cs":"karta poskytující slevu na zboží či služby",
+"tr":"alışverişlerde indirim sağlayan kart",
+"es":"tarjeta para obtener un precio más bajo"
+}
+},
+{
+"w":"btw",
+"d":"Afkorting voor 'belasting over de toegevoegde waarde'; een belasting die wordt geheven op de verkoop van producten en diensten.",
+"t":{
+"en":"VAT, sales tax",
+"ru":"НДС, налог на добавленную стоимость",
+"pl":"VAT, podatek VAT",
+"de":"MwSt., Mehrwertsteuer",
+"fr":"TVA, taxe sur la valeur ajoutée",
+"it":"IVA",
+"cs":"DPH, daň z přidané hodnoty",
+"tr":"KDV, katma değer vergisi",
+"es":"IVA"
+},
+"c":{
+"en":"tax on goods and services",
+"ru":"налог",
+"pl":"podatek od towarów i usług",
+"de":"Abkürzung für Mehrwertsteuer",
+"fr":"taxe sur la valeur ajoutée",
+"it":"imposta sul valore aggiunto",
+"cs":"zkratka pro daň z přidané hodnoty",
+"tr":"katma değer vergisi kısaltması",
+"es":"impuesto sobre el valor añadido / agregado"
+}
+},
+{
+"w":"statiegeld",
+"d":"Een klein bedrag dat je extra betaalt voor de verpakking van een product en dat je terugkrijgt als je de verpakking weer inlevert.",
+"t":{
+"en":"deposit, bottle deposit, deposit-refund",
+"ru":"залоговая стоимость, залог за тару",
+"pl":"kaucja, kaucja za butelkę",
+"de":"Pfand, Flaschenpfand, Einsatz, Depot",
+"fr":"consigne, caution",
+"it":"deposito cauzionale, cauzione, vuoto a rendere",
+"cs":"záloha, vratná záloha",
+"tr":"depozito, şişe depozitosu",
+"es":"depósito, fianza, sistema de depósito, devolución y retorno"
+},
+"c":{
+"en":"on bottles or containers",
+"ru":"сумма, возвращаемая при сдаче тары",
+"pl":"za butelki lub opakowania zwrotne",
+"de":"allgemein für Flaschen oder Behälter",
+"fr":"somme remboursable pour un emballage",
+"it":"per bottiglie o contenitori vuoti",
+"cs":"na lahve nebo obaly",
+"tr":"şişe veya ambalaj için ödenen geri alınabilir ücret",
+"es":"dinero reembolsable por envases"
+}
+},
+{
+"w":"pinnen",
+"d":"Betalen met een bankpas via een elektronisch betaalsysteem.",
+"t":{
+"en":"pay by card, pay by debit card",
+"ru":"платить картой, расплачиваться",
+"pl":"płacić kartą, płacić zbliżeniowo",
+"de":"mit Karte bezahlen, mit Karte zahlen, mit EC-Karte bezahlen",
+"fr":"payer par carte bancaire, payer par carte",
+"it":"pagare con la carta, pagare con il bancomat",
+"cs":"platit kartou, zaplatit kartou",
+"tr":"kartla ödemek, kart çekmek",
+"es":"pagar con tarjeta, pagar con tarjeta de débito"
+},
+"c":{
+"en":"general action",
+"ru":"совершать оплату безналичным способом",
+"pl":"ogólne określenie płatności bezgotówkowej",
+"de":"allgemeine Kartenzahlung",
+"fr":"méthode de paiement générale",
+"it":"azione generale di pagamento elettronico",
+"cs":"provádět bezhotovostní platbu",
+"tr":"genel kartlı ödeme işlemi",
+"es":"acción general de pago electrónico"
+}
+},
+{
+"w":"contant",
+"d":"In de vorm van munten en bankbiljetten.",
+"t":{
+"en":"cash",
+"ru":"наличный",
+"pl":"gotówkowy, w gotówce",
+"de":"bar",
+"fr":"en espèces, comptant, liquide",
+"it":"in contanti, contante",
+"cs":"hotovostní, v hotovosti",
+"tr":"nakit, peşin",
+"es":"en efectivo, en metálico, contante"
+},
+"c":{
+"en":"money in physical form",
+"ru":"прилагательное (напр. наличные деньги)",
+"pl":"przymiotnik, np. płatność gotówkowa",
+"de":"Adjektiv (z. B. bares Geld)",
+"fr":"sous forme de pièces et billets",
+"it":"riferito a denaro o pagamento",
+"cs":"přídavné jméno (např. hotovostní platba)",
+"tr":"fiziksel para biçiminde olan",
+"es":"dinero físico"
+}
+},
+{
+"w":"afrekenen",
+"d":"Betalen voor goederen of diensten, bijvoorbeeld in een winkel of restaurant.",
+"t":{
+"en":"pay, settle the bill, check out",
+"ru":"рассчитаться, расплатиться",
+"pl":"płacić, płacić rachunek, rozliczać się",
+"de":"bezahlen, zahlen, abrechnen",
+"fr":"régler, payer, passer à la caisse",
+"it":"pagare, saldare il conto, saldare",
+"cs":"zaplatit, vyrovnat účet, platit",
+"tr":"hesap ödemek, ödemek, hesap kesmek",
+"es":"pagar, pedir la cuenta, cobrar"
+},
+"c":{
+"en":"to give money for goods or services",
+"ru":"оплатить счет",
+"pl":"dawać pieniądze za towary lub usługi",
+"de":"Geld für eine Ware oder Dienstleistung geben",
+"fr":"payer une facture ou un achat",
+"it":"dare denaro per beni o servizi",
+"cs":"dát peníze za zboží či služby",
+"tr":"restoran veya kafede hesabı kapatmak",
+"es":"dar dinero por bienes o servicios"
+}
+},
+{
+"w":"uitgeven",
+"d":"Geld betalen voor goederen of diensten.",
+"t":{
+"en":"spend",
+"ru":"тратить, расходовать",
+"pl":"wydawać, przeznaczać",
+"de":"ausgeben",
+"fr":"dépenser",
+"it":"spendere",
+"cs":"utrácet, vydat, vynaložit",
+"tr":"harcamak, sarf etmek",
+"es":"gastar"
+},
+"c":{
+"en":"money",
+"ru":"расходовать деньги",
+"pl":"pieniądze",
+"de":"Geld für etwas verbrauchen",
+"fr":"de l'argent",
+"it":"denaro",
+"cs":"peníze za něco",
+"tr":"para harcamak",
+"es":"dinero"
+}
+},
+{
+"w":"scannen",
+"d":"Met een elektronisch apparaat (zoals een scanner) een digitale afbeelding of gegevens maken van een document of barcode.",
+"t":{
+"en":"scan",
+"ru":"сканировать, отсканировать",
+"pl":"skanować, zeskanować",
+"de":"scannen, einlesen",
+"fr":"scanner, numériser",
+"it":"scansionare, scannerizzare",
+"cs":"skenovat, naskenovat",
+"tr":"taramak, scan etmek",
+"es":"escanear"
+},
+"c":{
+"en":"to digitize a document or barcode",
+"ru":"документ или штрихкод",
+"pl":"tworzyć cyfrową kopię dokumentu lub kodu",
+"de":"Dokumente oder Barcodes digital erfassen",
+"fr":"numériser un document ou un code-barres",
+"it":"digitalizzare un documento",
+"cs":"digitalizovat dokument nebo kód",
+"tr":"belge veya barkodu dijitalleştirmek",
+"es":"digitalizar un documento o código de barras"
+}
+},
+{
+"w":"inpakken",
+"d":"Spullen in een tas, koffer of doos doen om ze mee te nemen of te bewaren",
+"t":{
+"en":"pack, pack up",
+"ru":"упаковывать, собирать",
+"pl":"pakować, spakować, pakować się",
+"de":"einpacken, packen",
+"fr":"faire ses bagages, emballer, empaqueter",
+"it":"fare le valigie, imballare, preparare",
+"cs":"balit, zabalit",
+"tr":"toplamak, paketlemek, hazırlamak",
+"es":"hacer la maleta, empacar, embalar"
+},
+"c":{
+"en":"general term for putting things into containers",
+"ru":"складывать вещи в коробки или тару",
+"pl":"wkładać rzeczy do walizki lub torby",
+"de":"Gegenstände in Koffer, Taschen oder Kisten legen",
+"fr":"préparer ses valises pour un voyage",
+"it":"riferito specificamente al prepararsi per un viaggio",
+"cs":"ukládat věci do zavazadel či krabic",
+"tr":"bavul veya çanta hazırlamak",
+"es":"preparar el equipaje para un viaje"
+}
+},
+{
+"w":"uitpakken",
+"d":"Iets uit een verpakking, doos of koffer halen.",
+"t":{
+"en":"unpack, unwrap",
+"ru":"распаковывать, разбирать",
+"pl":"rozpakowywać, odpakowywać",
+"de":"auspacken",
+"fr":"déballer, défaire, ouvrir",
+"it":"disfare, scartare, spacchettare",
+"cs":"vybalit, rozbalit",
+"tr":"açmak, boşaltmak",
+"es":"deshacer las maletas, desenvolver, desempaquetar"
+},
+"c":{
+"en":"for suitcases, boxes, or general containers",
+"ru":"доставать из упаковки",
+"pl":"wyjmować rzeczy z walizek, pudełek lub paczek",
+"de":"für Koffer, Kisten oder Geschenke",
+"fr":"pour des cadeaux, des paquets ou des marchandises",
+"it":"per valigie o bagagli",
+"cs":"pro dárky, kufry nebo krabice",
+"tr":"hediye veya paketler için",
+"es":"para equipaje o maletas"
+}
+},
+{
+"w":"levensmiddel",
+"d":"Producten die bedoeld zijn voor menselijke consumptie, zoals eten en drinken, om in het levensonderhoud te voorzien.",
+"t":{
+"en":"groceries, foodstuffs, provisions",
+"ru":"продукты питания, продовольствие, продовольственные товары",
+"pl":"artykuły spożywcze, środki spożywcze, prowiant",
+"de":"Lebensmittel, Nahrungsmittel",
+"fr":"denrées alimentaires, produits alimentaires, provisions, vivres",
+"it":"generi alimentari, alimentari, provviste",
+"cs":"potraviny, poživatiny, zásoby jídla",
+"tr":"gıda maddesi, besin maddesi, erzak",
+"es":"comestibles, víveres, alimentos"
+},
+"c":{
+"en":"food and other household items bought at a store",
+"ru":"еда и напитки, покупаемые в магазине",
+"pl":"produkty przeznaczone do jedzenia i picia kupowane w sklepie",
+"de":"Waren zum Essen oder Trinken für den täglichen Bedarf",
+"fr":"produits servant à l'alimentation humaine",
+"it":"prodotti destinati all'alimentazione acquistati nei negozi",
+"cs":"jídlo a pití kupované v obchodě",
+"tr":"insan tüketimi için hazırlanan yiyecek ve içecekler",
+"es":"alimentos y otros artículos de primera necesidad comprados en una tienda"
+}
+},
+{
+"w":"melk",
+"d":"Witte, voedzame vloeistof die door vrouwelijke zoogdieren wordt geproduceerd als voeding voor hun jongen, vaak van koeien voor menselijke consumptie",
+"t":{
+"en":"milk",
+"ru":"молоко",
+"pl":"mleko",
+"de":"Milch",
+"fr":"lait",
+"it":"latte",
+"cs":"mléko",
+"tr":"süt",
+"es":"leche"
+},
+"c":{
+"en":"dairy liquid",
+"ru":"продукт питания",
+"pl":"napój pochodzenia zwierzęcego",
+"de":"Nahrungsmittel tierischen Ursprungs",
+"fr":"liquide d'origine animale",
+"it":"bevanda di origine animale",
+"cs":"živočišný produkt",
+"tr":"hayvansal gıda",
+"es":"bebida de origen animal"
+}
+},
+{
+"w":"brood",
+"d":"Een voedingsmiddel gemaakt van gebakken deeg, meestal bestaande uit meel, water en gist.",
+"t":{
+"en":"bread",
+"ru":"хлеб",
+"pl":"chleb",
+"de":"Brot",
+"fr":"pain",
+"it":"pane",
+"cs":"chléb, chleba",
+"tr":"ekmek",
+"es":"pan"
+},
+"c":{
+"en":"foodstuff",
+"ru":"продукт питания",
+"pl":"produkt spożywczy",
+"de":"Nahrungsmittel",
+"fr":"aliment",
+"it":"prodotto alimentare",
+"cs":"potravina",
+"tr":"gıda maddesi",
+"es":"alimento básico"
+}
+},
+{
+"w":"boter",
+"d":"Een smeerbaar vetproduct gemaakt van gekarnde en geknede room van melk.",
+"t":{
+"en":"butter",
+"ru":"сливочное масло, масло",
+"pl":"masło",
+"de":"Butter",
+"fr":"beurre",
+"it":"burro",
+"cs":"máslo",
+"tr":"tereyağı",
+"es":"mantequilla"
+},
+"c":{
+"en":"dairy product",
+"ru":"молочный продукт",
+"pl":"produkt mleczny",
+"de":"Milchprodukt",
+"fr":"produit laitier",
+"it":"prodotto lattiero-caseario",
+"cs":"mléčný výrobek",
+"tr":"süt ürünü",
+"es":"producto lácteo"
+}
+},
+{
+"w":"ei",
+"d":"dierlijk voedingsmiddel voor de mens in een schaal",
+"t":{
+"en":"egg",
+"ru":"яйцо",
+"pl":"jajko, jajo",
+"de":"Ei",
+"fr":"œuf",
+"it":"uovo",
+"cs":"vejce, vajíčko",
+"tr":"yumurta",
+"es":"huevo"
+},
+"c":{
+"en":"food",
+"ru":"пища",
+"pl":"produkt spożywczy",
+"de":"Nahrungsmittel",
+"fr":"aliment",
+"it":"alimento",
+"cs":"potravina",
+"tr":"yiyecek",
+"es":"alimento"
+}
+},
+{
+"w":"yoghurt",
+"d":"Een lichtzuur en enigszins dikvloeibaar zuivelproduct, gemaakt door het toevoegen van melkzuurbacteriën aan gewone melk.",
+"t":{
+"en":"yoghurt, yogurt",
+"ru":"йогурт",
+"pl":"jogurt",
+"de":"Joghurt",
+"fr":"yaourt, yogourt",
+"it":"yogurt",
+"cs":"jogurt",
+"tr":"yoğurt",
+"es":"yogur"
+},
+"c":{
+"en":"dairy product",
+"ru":"кисломолочный продукт",
+"pl":"produkt mleczarski",
+"de":"Milchprodukt",
+"fr":"produit laitier",
+"it":"alimento ottenuto dal latte coagulato",
+"cs":"mléčný výrobek",
+"tr":"süt ürünü",
+"es":"producto lácteo"
+}
+},
+{
+"w":"kaas",
+"d":"Voedingsproduct gemaakt van gestremde melk",
+"t":{
+"en":"cheese",
+"ru":"сыр",
+"pl":"ser",
+"de":"Käse",
+"fr":"fromage",
+"it":"formaggio",
+"cs":"sýr",
+"tr":"peynir",
+"es":"queso"
+},
+"c":{
+"en":"dairy product",
+"ru":"молочный продукт",
+"pl":"produkt mleczny",
+"de":"Milchprodukt",
+"fr":"produit laitier",
+"it":"prodotto lattiero-caseario",
+"cs":"mléčný výrobek",
+"tr":"süt ürünü",
+"es":"producto lácteo"
+}
+},
+{
+"w":"vlees",
+"d":"Spierweefsel van dieren dat gegeten wordt als voedsel.",
+"t":{
+"en":"meat",
+"ru":"мясо",
+"pl":"mięso",
+"de":"Fleisch",
+"fr":"viande",
+"it":"carne",
+"cs":"maso",
+"tr":"et",
+"es":"carne"
+},
+"c":{
+"en":"animal tissue used as food",
+"ru":"продукт питания",
+"pl":"jadalne części zabitego zwierzęcia",
+"de":"Nahrungsmittel",
+"fr":"chair d'un animal utilisée pour la nourriture",
+"it":"alimento di origine animale",
+"cs":"potrava",
+"tr":"yiyecek olarak tüketilen hayvan kası",
+"es":"alimento de origen animal"
+}
+},
+{
+"w":"kip",
+"d":"het vlees van een kip dat als voedsel wordt gegeten",
+"t":{
+"en":"chicken, poultry",
+"ru":"курица, курятина",
+"pl":"kurczak, drób",
+"de":"Hühnerfleisch, Huhn, Hühnchen",
+"fr":"poulet, volaille",
+"it":"pollo, carne di pollo",
+"cs":"kuřecí maso, kuře",
+"tr":"tavuk, tavuk eti",
+"es":"pollo, carne de pollo"
+},
+"c":{
+"en":"meat",
+"ru":"блюдо или мясо",
+"pl":"mięso lub potrawa",
+"de":"Fleisch vom Huhn",
+"fr":"viande",
+"it":"carne o piatto",
+"cs":"druh masa",
+"tr":"tavuk eti",
+"es":"carne"
+}
+},
+{
+"w":"gehakt",
+"d":"Fijn gemalen vlees, vaak van rund of varken, gebruikt in diverse gerechten.",
+"t":{
+"en":"minced meat, ground meat, mince",
+"ru":"фарш, мясной фарш",
+"pl":"mięso mielone, mielone",
+"de":"Hackfleisch, Gehacktes, Mett",
+"fr":"viande hachée, hachis",
+"it":"carne macinata, macinato",
+"cs":"mleté maso, sekaná",
+"tr":"kıyma",
+"es":"carne picada, carne molida"
+},
+"c":{
+"en":"culinary",
+"ru":"кулинария",
+"pl":"kulinarne",
+"de":"allgemein",
+"fr":"culinaire",
+"it":"culinario",
+"cs":"kulinářství",
+"tr":"yemeklik çekilmiş et",
+"es":"culinario"
+}
+},
+{
+"w":"worst",
+"d":"Een toegebonden stuk darm of vlies dat gevuld is met vleeswaar.",
+"t":{
+"en":"sausage",
+"ru":"колбаса, сосиска",
+"pl":"kiełbasa, kiełbaska, parówka",
+"de":"Wurst, Würstchen",
+"fr":"saucisse, saucisson",
+"it":"salsiccia, salame",
+"cs":"klobása, párek, salám",
+"tr":"sosis, sucuk, jambon",
+"es":"salchicha, embutido"
+},
+"c":{
+"en":"food made of ground meat in a casing",
+"ru":"общий термин",
+"pl":"ogólne określenie wyrobu wędliniarskiego w osłonce",
+"de":"allgemeiner Begriff für Fleischprodukt im Darm",
+"fr":"généralement de petite ou moyenne taille, à cuire",
+"it":"insaccato di carne fresca o stagionata",
+"cs":"větší uzenina, často k opékání",
+"tr":"genellikle ince ve sıcak tüketilen et ürünü",
+"es":"embutido de carne picada, generalmente para cocinar o freír"
+}
+},
+{
+"w":"vis",
+"d":"Het vlees van een vis, bereid of gegeten als voedsel.",
+"t":{
+"en":"fish",
+"ru":"рыба",
+"pl":"ryba",
+"de":"Fisch",
+"fr":"poisson",
+"it":"pesce",
+"cs":"ryba, rybí maso",
+"tr":"balık",
+"es":"pescado"
+},
+"c":{
+"en":"food",
+"ru":"еда",
+"pl":"jedzenie",
+"de":"Lebensmittel",
+"fr":"nourriture",
+"it":"cibo",
+"cs":"jídlo",
+"tr":"yiyecek",
+"es":"alimento"
+}
+},
+{
+"w":"groente",
+"d":"Eetbare planten of delen daarvan die door mensen als voedsel worden gegeten.",
+"t":{
+"en":"vegetables, vegetable",
+"ru":"овощи",
+"pl":"warzywa, jarzyny",
+"de":"Gemüse",
+"fr":"légumes",
+"it":"verdura, ortaggi",
+"cs":"zelenina",
+"tr":"sebze, sebzeler",
+"es":"verdura, hortaliza"
+},
+"c":{
+"en":"collective, usually plural in English",
+"ru":"собирательное значение, обычно во множественном числе",
+"pl":"znaczenie zbiorowe, zwykle w liczbie mnogiej",
+"de":"Sammelbegriff, meist als Singular verwendet",
+"fr":"au pluriel, sens collectif",
+"it":"termine collettivo, usato specialmente in ambito culinario",
+"cs":"jedlé části rostlin jako potravina",
+"tr":"genel anlamda, gıda maddesi olarak",
+"es":"generalmente en plural, plantas comestibles de hojas verdes o cultivadas en huertos"
+}
+},
+{
+"w":"aardappel",
+"d":"De eetbare knol van de aardappelplant, die wereldwijd als belangrijk voedingsmiddel wordt gebruikt.",
+"t":{
+"en":"potato, spud",
+"ru":"картофель, картошка",
+"pl":"ziemniak, kartofel, pyra",
+"de":"Kartoffel, Erdapfel",
+"fr":"pomme de terre, patate",
+"it":"patata",
+"cs":"brambor, brambora",
+"tr":"patates",
+"es":"patata, papa"
+},
+"c":{
+"en":"vegetable",
+"ru":"овощ",
+"pl":"warzywo",
+"de":"Gemüse",
+"fr":"légume",
+"it":"tubero",
+"cs":"zelenina",
+"tr":"sebze",
+"es":"tubérculo comestible (España)"
+}
+},
+{
+"w":"ui",
+"d":"Een eetbaar bolgewas met een sterke geur en smaak, dat uit verschillende lagen bestaat en veel in de keuken wordt gebruikt.",
+"t":{
+"en":"onion",
+"ru":"лук, репчатый лук",
+"pl":"cebula",
+"de":"Zwiebel",
+"fr":"oignon, ognon",
+"it":"cipolla",
+"cs":"cibule",
+"tr":"soğan, kuru soğan",
+"es":"cebolla"
+},
+"c":{
+"en":"vegetable",
+"ru":"овощ",
+"pl":"warzywo",
+"de":"Gemüse",
+"fr":"légume",
+"it":"verdura",
+"cs":"zelenina",
+"tr":"sebze",
+"es":"verdura"
+}
+},
+{
+"w":"tomaat",
+"d":"een eetbare rode vrucht die meestal als groente wordt gegeten",
+"t":{
+"en":"tomato",
+"ru":"помидор, томат",
+"pl":"pomidor",
+"de":"Tomate",
+"fr":"tomate",
+"it":"pomodoro",
+"cs":"rajče, rajské jablíčko",
+"tr":"domates",
+"es":"tomate"
+},
+"c":{
+"en":"the fruit used in cooking",
+"ru":"наиболее распространенное название плода",
+"pl":"owoc używany w kuchni",
+"de":"die Frucht, die beim Kochen verwendet wird",
+"fr":"le fruit utilisé en cuisine",
+"it":"il frutto utilizzato in cucina",
+"cs":"plod používaný v kuchyni",
+"tr":"yemeklerde ve salatalarda kullanılan kırmızı meyve",
+"es":"el fruto comestible"
+}
+},
+{
+"w":"sla",
+"d":"Een plant met groene bladeren die vaak rauw gegeten wordt.",
+"t":{
+"en":"lettuce",
+"ru":"салат, латук",
+"pl":"sałata",
+"de":"Salat, Gartensalat, Lattich",
+"fr":"laitue, salade",
+"it":"lattuga, insalata",
+"cs":"salát, locika",
+"tr":"marul, kıvırcık",
+"es":"lechuga"
+},
+"c":{
+"en":"vegetable",
+"ru":"растение",
+"pl":"warzywo liściaste",
+"de":"Pflanze",
+"fr":"la plante potagère",
+"it":"pianta",
+"cs":"hlávkový salát, rostlina",
+"tr":"bitki",
+"es":"planta"
+}
+},
+{
+"w":"komkommer",
+"d":"Een langwerpige, groene vrucht met sappig vruchtvlees die meestal rauw als groente in salades wordt gegeten.",
+"t":{
+"en":"cucumber",
+"ru":"огурец",
+"pl":"ogórek",
+"de":"Gurke",
+"fr":"concombre",
+"it":"cetriolo",
+"cs":"okurka, okurka setá",
+"tr":"salatalık, hıyar",
+"es":"pepino"
+},
+"c":{
+"en":"the green vegetable",
+"ru":"овощ",
+"pl":"zielone warzywo",
+"de":"das grüne Gemüse",
+"fr":"le légume vert",
+"it":"l'ortaggio verde",
+"cs":"zelenina",
+"tr":"yeşil sebze",
+"es":"la hortaliza verde"
+}
+},
+{
+"w":"wortel",
+"d":"Een oranje, langwerpige en eetbare groente die onder de grond groeit.",
+"t":{
+"en":"carrot",
+"ru":"морковь",
+"pl":"marchewka, marchew",
+"de":"Karotte, Möhre, Mohrrübe",
+"fr":"carotte",
+"it":"carota",
+"cs":"mrkev, karotka",
+"tr":"havuç",
+"es":"zanahoria"
+},
+"c":{
+"en":"vegetable",
+"ru":"овощ",
+"pl":"warzywo",
+"de":"Gemüse",
+"fr":"légume",
+"it":"ortaggio",
+"cs":"zelenina",
+"tr":"sebze",
+"es":"verdura"
+}
+},
+{
+"w":"bloemkool",
+"d":"Een koolsoort met vlezige, bleekgele of witte bloemstengels die als groente gegeten wordt.",
+"t":{
+"en":"cauliflower",
+"ru":"цветная капуста",
+"pl":"kalafior",
+"de":"Blumenkohl",
+"fr":"chou-fleur",
+"it":"cavolfiore",
+"cs":"květák, karfiol",
+"tr":"karnabahar",
+"es":"coliflor"
+},
+"c":{
+"en":"the vegetable",
+"ru":"овощ",
+"pl":"warzywo",
+"de":"das Gemüse",
+"fr":"le légume",
+"it":"la verdura",
+"cs":"zelenina",
+"tr":"sebze",
+"es":"la verdura"
+}
+},
+{
+"w":"spinazie",
+"d":"Een snelgroeiende, eenjarige bladgroente (Spinacia oleracea) die veel gegeten wordt.",
+"t":{
+"en":"spinach",
+"ru":"шпинат",
+"pl":"szpinak, szpinak warzywny",
+"de":"Spinat",
+"fr":"épinard",
+"it":"spinaci, spinacio",
+"cs":"špenát, špenát setý",
+"tr":"ıspanak",
+"es":"espinaca"
+},
+"c":{
+"en":"the common leafy green vegetable",
+"ru":"обыкновенный листовой овощ",
+"pl":"popularne warzywo liściaste",
+"de":"das bekannte grüne Blattgemüse",
+"fr":"le légume vert à feuilles comestibles",
+"it":"la comune verdura a foglia verde (spesso usata al plurale)",
+"cs":"běžná listová zelenina",
+"tr":"yaygın olarak tüketilen yeşil yapraklı sebze",
+"es":"la verdura de hoja verde común"
+}
+},
+{
+"w":"witlof",
+"d":"Een witte bladgroente met een bittere smaak die in het donker wordt geteeld.",
+"t":{
+"en":"chicory, Belgian endive, endive",
+"ru":"цикорий, витлуф, цикорный салат",
+"pl":"cykoria, cykoria sałatkowa",
+"de":"Chicorée",
+"fr":"endive, chicon, witloof",
+"it":"insalata belga, indivia belga, cicoria belga",
+"cs":"čekanka, čekankové pukviny, čekankový puk",
+"tr":"hindiba, belçika hindibası, gömeç",
+"es":"endibia, endivia"
+},
+"c":{
+"en":"British English",
+"ru":"салатный сорт",
+"pl":"warzywo liściaste",
+"de":"als Gemüse verwendete Blattknospe",
+"fr":"nom standard en France",
+"it":"varietà di cicoria a foglia bianca",
+"cs":"listová zelenina",
+"tr":"salata olarak tüketilen beyaz yapraklı sebze",
+"es":"variedad de hojas blancas y compactas"
+}
+},
+{
+"w":"andijvie",
+"d":"Een eetbare bladgroente met een licht bittere smaak, nauw verwant aan witlof",
+"t":{
+"en":"endive, escarole",
+"ru":"эндивий, салат эндивий",
+"pl":"endywia",
+"de":"Endivie, Endiviensalat",
+"fr":"scarole, chicorée frisée, endive",
+"it":"indivia, scarola",
+"cs":"štěrbák, endivie",
+"tr":"endivyen, frenk salatası, hindiba",
+"es":"escarola, endibia"
+},
+"c":{
+"en":"leafy salad vegetable",
+"ru":"салатный цикорий",
+"pl":"warzywo liściaste",
+"de":"Blattgemüse",
+"fr":"variété de chicorée à larges feuilles",
+"it":"verdura a foglia",
+"cs":"druh listové zeleniny, endivie",
+"tr":"salata sebzesi",
+"es":"verdura de hoja verde"
+}
+},
+{
+"w":"spruit",
+"d":"Een kleine, groene, bolvormige koolsoort die als groente wordt gegeten",
+"t":{
+"en":"Brussels sprout, sprout",
+"ru":"брюссельская капуста",
+"pl":"kapusta brukselska, brukselka",
+"de":"Rosenkohl, Sprossenkohl",
+"fr":"chou de Bruxelles",
+"it":"cavolini di Bruxelles, cavoletti di Bruxelles",
+"cs":"růžičková kapusta, kapustička",
+"tr":"brüksel lahanası",
+"es":"col de Bruselas, repollo de Bruselas"
+},
+"c":{
+"en":"full name of the vegetable",
+"ru":"овощ",
+"pl":"pełna nazwa warzywa",
+"de":"Gemüse",
+"fr":"le légume",
+"it":"ortaggio",
+"cs":"zelenina",
+"tr":"sebze",
+"es":"nombre completo de la verdura"
+}
+},
+{
+"w":"paprika",
+"d":"De vrucht van de plant Capsicum annuum, veelal gegeten als groente in diverse kleuren zoals rood, geel en groen.",
+"t":{
+"en":"bell pepper, sweet pepper, capsicum",
+"ru":"болгарский перец, сладкий перец, паприка",
+"pl":"papryka",
+"de":"Paprika, Paprikaschote, Gemüsepaprika",
+"fr":"poivron",
+"it":"peperone",
+"cs":"paprika",
+"tr":"biber, dolmalık biber, kapya biber",
+"es":"pimiento, pimiento morrón, morrón, pimiento dulce"
+},
+"c":{
+"en":"US, Canada, Philippines",
+"ru":"овощ",
+"pl":"warzywo",
+"de":"die Frucht als Gemüse",
+"fr":"le légume",
+"it":"l'ortaggio fresco",
+"cs":"zelenina",
+"tr":"genel sebze türü",
+"es":"término general"
+}
+},
+{
+"w":"peper",
+"d":"Een vrucht met een hete smaak, vaak rood of groen, die als groente of specerij wordt gebruikt.",
+"t":{
+"en":"chili pepper, hot pepper, pepper",
+"ru":"перец, чили, стручковый перец",
+"pl":"papryczka, papryka chili, pieprz",
+"de":"Chili, Chilischote, Pfefferschote",
+"fr":"piment, poivron",
+"it":"peperoncino, peperone",
+"cs":"chilli paprička, feferonka, paprika",
+"tr":"biber, acı biber, kırmızı biber",
+"es":"guindilla, chile, pimiento"
+},
+"c":{
+"en":"hot variety",
+"ru":"овощ/стручок",
+"pl":"ostra papryka, np. chili",
+"de":"scharfe Schote",
+"fr":"variété piquante",
+"it":"varietà piccante",
+"cs":"pálivý druh",
+"tr":"sebze veya taze acı biber",
+"es":"pimiento picante pequeño"
+}
+},
+{
+"w":"broccoli",
+"d":"De nog gesloten bloemknoppen van de broccoliplant die als groente worden gegeten.",
+"t":{
+"en":"broccoli",
+"ru":"брокколи",
+"pl":"brokuł, brokuły",
+"de":"Brokkoli",
+"fr":"brocoli",
+"it":"broccoli, broccolo",
+"cs":"brokolice",
+"tr":"brokoli",
+"es":"brócoli, brécol"
+},
+"c":{
+"en":"the vegetable",
+"ru":"овощ",
+"pl":"warzywo",
+"de":"das Gemüse",
+"fr":"le légume",
+"it":"la verdura (plurale)",
+"cs":"zelenina",
+"tr":"sebze olan",
+"es":"la verdura"
+}
+},
+{
+"w":"fruit",
+"d":"Verzamelnaam voor eetbare vruchten, meestal zoet van smaak.",
+"t":{
+"en":"fruit",
+"ru":"фрукты, фрукт, плод",
+"pl":"owoce, owoc",
+"de":"Obst, Frucht",
+"fr":"fruit, fruits",
+"it":"frutta, frutto",
+"cs":"ovoce, plod",
+"tr":"meyve",
+"es":"fruta, fruto"
+},
+"c":{
+"en":"edible produce",
+"ru":"собирательное",
+"pl":"zbiorczo, jako kategoria żywności",
+"de":"Sammelbegriff für essbare Früchte",
+"fr":"un fruit individuel ou au sens botanique",
+"it":"nome collettivo",
+"cs":"jedlé plody",
+"tr":"yenilebilir bitki ürünü",
+"es":"alimento comestible"
+}
+},
+{
+"w":"banaan",
+"d":"Een langwerpige, kromme, gele vrucht met zacht, zoet vruchtvlees.",
+"t":{
+"en":"banana",
+"ru":"банан",
+"pl":"banan",
+"de":"Banane",
+"fr":"banane",
+"it":"banana",
+"cs":"banán",
+"tr":"muz",
+"es":"plátano, banana"
+},
+"c":{
+"en":"yellow fruit",
+"ru":"фрукт",
+"pl":"owoc",
+"de":"Frucht",
+"fr":"fruit jaune",
+"it":"frutto giallo",
+"cs":"žluté ovoce",
+"tr":"sarı meyve",
+"es":"fruta amarilla"
+}
+},
+{
+"w":"appel",
+"d":"Een ronde, eetbare vrucht met een rode, groene of gele schil en wit vruchtvlees (Malus domestica).",
+"t":{
+"en":"apple",
+"ru":"яблоко",
+"pl":"jabłko",
+"de":"Apfel",
+"fr":"pomme",
+"it":"mela",
+"cs":"jablko",
+"tr":"elma",
+"es":"manzana"
+},
+"c":{
+"en":"fruit",
+"ru":"фрукт",
+"pl":"owoc",
+"de":"Frucht",
+"fr":"fruit",
+"it":"frutto",
+"cs":"ovoce",
+"tr":"meyve",
+"es":"fruta"
+}
+},
+{
+"w":"sinaasappel",
+"d":"een ronde, oranje vrucht met een dikke schil en sappig vruchtvlees",
+"t":{
+"en":"orange",
+"ru":"апельсин",
+"pl":"pomarańcza",
+"de":"Orange, Apfelsine",
+"fr":"orange",
+"it":"arancia",
+"cs":"pomeranč",
+"tr":"portakal",
+"es":"naranja"
+},
+"c":{
+"en":"the citrus fruit",
+"ru":"цитрусовый фрукт",
+"pl":"owoc cytrusowy",
+"de":"süßliche Zitrusfrucht",
+"fr":"le fruit",
+"it":"il frutto dell'arancio",
+"cs":"citrusový plod",
+"tr":"turunçgillerden turuncu renkli meyve",
+"es":"la fruta cítrica"
+}
+},
+{
+"w":"peer",
+"d":"Een eetbare vrucht met een kenmerkende vorm die van boven smal is en van onderen breed.",
+"t":{
+"en":"pear",
+"ru":"груша",
+"pl":"gruszka",
+"de":"Birne",
+"fr":"poire",
+"it":"pera",
+"cs":"hruška",
+"tr":"armut",
+"es":"pera"
+},
+"c":{
+"en":"fruit",
+"ru":"фрукт",
+"pl":"owoc",
+"de":"Frucht",
+"fr":"fruit",
+"it":"frutto",
+"cs":"ovoce",
+"tr":"meyve",
+"es":"fruta"
+}
+},
+{
+"w":"druif",
+"d":"De kleine, ronde of ovale vrucht van een wijnstok die vaak in trossen groeit en gegeten wordt of gebruikt wordt om wijn te maken.",
+"t":{
+"en":"grape",
+"ru":"виноградина, виноград",
+"pl":"winogrono",
+"de":"Weintraube, Traube, Weinbeere",
+"fr":"raisin, grain de raisin",
+"it":"uva, acino d'uva",
+"cs":"hrozen, kulička vína, bobule vína",
+"tr":"üzüm",
+"es":"uva"
+},
+"c":{
+"en":"the edible fruit",
+"ru":"одна ягода винограда",
+"pl":"jako pojedynczy owoc lub zbiorczo",
+"de":"die essbare Frucht",
+"fr":"le fruit comestible",
+"it":"il frutto commestibile (collettivo o singolo acino)",
+"cs":"plod vinné révy",
+"tr":"yenen meyve",
+"es":"el fruto comestible"
+}
+},
+{
+"w":"kiwi",
+"d":"Een harige, bruine vrucht met groen of geel vruchtvlees en kleine zwarte pitjes.",
+"t":{
+"en":"kiwi, kiwi fruit",
+"ru":"киви",
+"pl":"kiwi",
+"de":"Kiwi, Kiwifrucht",
+"fr":"kiwi",
+"it":"kiwi",
+"cs":"kiwi",
+"tr":"kivi",
+"es":"kiwi"
+},
+"c":{
+"en":"the fruit",
+"ru":"фрукт",
+"pl":"owoc",
+"de":"die Frucht",
+"fr":"le fruit",
+"it":"il frutto",
+"cs":"ovoce",
+"tr":"meyve",
+"es":"la fruta"
+}
+},
+{
+"w":"citroen",
+"d":"Een gele, zure vrucht met een dikke schil, die groeit aan een citroenboom.",
+"t":{
+"en":"lemon",
+"ru":"лимон",
+"pl":"cytryna",
+"de":"Zitrone",
+"fr":"citron",
+"it":"limone",
+"cs":"citron",
+"tr":"limon",
+"es":"limón"
+},
+"c":{
+"en":"fruit",
+"ru":"фрукт",
+"pl":"owoc",
+"de":"Frucht",
+"fr":"fruit",
+"it":"frutto",
+"cs":"ovoce",
+"tr":"meyve",
+"es":"fruta"
+}
+},
+{
+"w":"aardbei",
+"d":"De eetbare, rode en zoete schijnvrucht van de aardbeienplant.",
+"t":{
+"en":"strawberry",
+"ru":"клубника, земляника",
+"pl":"truskawka",
+"de":"Erdbeere",
+"fr":"fraise",
+"it":"fragola",
+"cs":"jahoda",
+"tr":"çilek",
+"es":"fresa, frutilla"
+},
+"c":{
+"en":"the fruit",
+"ru":"крупная садовая ягода",
+"pl":"owoc",
+"de":"die Frucht",
+"fr":"le fruit",
+"it":"il frutto",
+"cs":"plod",
+"tr":"meyve",
+"es":"la fruta"
+}
+},
+{
+"w":"ananas",
+"d":"De grote, kegelvormige en tropische vrucht van de ananasplant, met zoetgeurend geel vruchtvlees.",
+"t":{
+"en":"pineapple",
+"ru":"ананас",
+"pl":"ananas",
+"de":"Ananas",
+"fr":"ananas",
+"it":"ananas",
+"cs":"ananas",
+"tr":"ananas",
+"es":"piña, ananá"
+},
+"c":{
+"en":"the tropical fruit",
+"ru":"тропический плод",
+"pl":"owoc",
+"de":"die tropische Frucht",
+"fr":"le fruit tropical",
+"it":"il frutto tropicale",
+"cs":"tropické ovoce",
+"tr":"meyve",
+"es":"la fruta tropical"
+}
+},
+{
+"w":"sap",
+"d":"Vloeistof die uit vruchten of groenten wordt geperst en vaak als drank wordt gebruikt",
+"t":{
+"en":"juice",
+"ru":"сок",
+"pl":"sok",
+"de":"Saft, Fruchtsaft",
+"fr":"jus",
+"it":"succo, spremuta",
+"cs":"šťáva, džus",
+"tr":"meyve suyu, su",
+"es":"zumo, jugo"
+},
+"c":{
+"en":"beverage",
+"ru":"напиток",
+"pl":"napój owocowy lub warzywny",
+"de":"Getränk aus Obst oder Gemüse",
+"fr":"boisson",
+"it":"bevanda a base di frutta o verdura",
+"cs":"nápoj z ovoce či zeleniny",
+"tr":"içecek",
+"es":"bebida de frutas o verduras"
+}
+},
+{
+"w":"koffie",
+"d":"Een warme, donkere drank gemaakt van heet water en gemalen koffiebonen.",
+"t":{
+"en":"coffee",
+"ru":"кофе",
+"pl":"kawa",
+"de":"Kaffee",
+"fr":"café",
+"it":"caffè",
+"cs":"káva, kafe",
+"tr":"kahve",
+"es":"café"
+},
+"c":{
+"en":"beverage",
+"ru":"напиток",
+"pl":"napój",
+"de":"Getränk",
+"fr":"boisson",
+"it":"bevanda",
+"cs":"nápoj",
+"tr":"içecek",
+"es":"bebida"
+}
+},
+{
+"w":"thee",
+"d":"Een warme drank bereid met heet water en de bladeren van de theeplant.",
+"t":{
+"en":"tea",
+"ru":"чай",
+"pl":"herbata",
+"de":"Tee",
+"fr":"thé",
+"it":"tè",
+"cs":"čaj",
+"tr":"çay",
+"es":"té"
+},
+"c":{
+"en":"drink",
+"ru":"напиток",
+"pl":"napój",
+"de":"Getränk",
+"fr":"boisson",
+"it":"bevanda",
+"cs":"nápoj",
+"tr":"içecek",
+"es":"bebida"
+}
+},
+{
+"w":"bier",
+"d":"Een alcoholische drank die wordt gebrouwen uit water, gefermenteerde mout, hop en gist.",
+"t":{
+"en":"beer",
+"ru":"пиво",
+"pl":"piwo",
+"de":"Bier",
+"fr":"bière",
+"it":"birra",
+"cs":"pivo",
+"tr":"bira, arpa suyu",
+"es":"cerveza"
+},
+"c":{
+"en":"alcoholic beverage",
+"ru":"алкогольный напиток",
+"pl":"napój alkoholowy",
+"de":"alkoholisches Getränk",
+"fr":"boisson alcoolisée",
+"it":"bevanda alcolica",
+"cs":"alkoholický nápoj",
+"tr":"alkollü içki",
+"es":"bebida alcohólica"
+}
+},
+{
+"w":"wijn",
+"d":"Een alcoholische drank die wordt gemaakt door het gisten van druivensap.",
+"t":{
+"en":"wine",
+"ru":"вино",
+"pl":"wino",
+"de":"Wein",
+"fr":"vin",
+"it":"vino",
+"cs":"víno",
+"tr":"şarap",
+"es":"vino"
+},
+"c":{
+"en":"beverage",
+"ru":"напиток",
+"pl":"napój",
+"de":"Getränk",
+"fr":"boisson",
+"it":"bevanda",
+"cs":"nápoj",
+"tr":"alkollü içki",
+"es":"bebida"
+}
+},
+{
+"w":"frisdrank",
+"d":"Een verfrissende drank zonder alcohol, vaak met koolzuur.",
+"t":{
+"en":"soft drink, soda, fizzy drink",
+"ru":"газировка, прохладительный напиток, безалкогольный напиток",
+"pl":"napój bezalkoholowy, napój gazowany, oranżada",
+"de":"Erfrischungsgetränk, Softdrink, Limonade",
+"fr":"boisson gazeuse, soda, boisson rafraîchissante sans alcool",
+"it":"bibita gassata, bibita analcolica, bibita",
+"cs":"limonáda, nealkoholický nápoj, limo",
+"tr":"gazlı içecek, alkolsüz içecek, meşrubat",
+"es":"refresco, bebida refrescante, gaseosa"
+},
+"c":{
+"en":"general term",
+"ru":"разговорное, газированный напиток",
+"pl":"ogólne określenie na napój bez procentów",
+"de":"formeller Begriff für alkoholfreie Getränke",
+"fr":"terme général pour une boisson avec des bulles",
+"it":"bevanda analcolica con bollicine",
+"cs":"běžný hovorový výraz pro sladký sycený nápoj",
+"tr":"kola, gazoz gibi karbonatlı içecekler için genel terim",
+"es":"término general y común"
+}
+},
+{
+"w":"alcohol",
+"d":"Alcoholhoudende drank, zoals bier, wijn of sterke drank.",
+"t":{
+"en":"alcohol",
+"ru":"алкоголь, спиртное",
+"pl":"alkohol, trunek",
+"de":"Alkohol",
+"fr":"alcool",
+"it":"alcol, alcool, alcolici",
+"cs":"alkohol",
+"tr":"alkol, içki",
+"es":"alcohol, bebida"
+},
+"c":{
+"en":"beverage",
+"ru":"напитки",
+"pl":"napój",
+"de":"Getränk",
+"fr":"boisson",
+"it":"bevanda",
+"cs":"nápoj",
+"tr":"içecek",
+"es":"bebida"
+}
+},
+{
+"w":"chips",
+"d":"Dunne aardappelschijfjes, gebakken in vet of olie, die als hartige snack worden gegeten.",
+"t":{
+"en":"potato chips, crisps",
+"ru":"чипсы",
+"pl":"czipsy, chipsy",
+"de":"Chips, Kartoffelchips",
+"fr":"chips",
+"it":"patatine, patatine fritte",
+"cs":"brambůrky, čipsy",
+"tr":"cips, patates cipsi",
+"es":"patatas fritas, papas fritas, patatas de churrería"
+},
+"c":{
+"en":"US English",
+"ru":"картофельные",
+"pl":"przekąska ziemniaczana",
+"de":"Kartoffelchips",
+"fr":"fines tranches de pomme de terre frites",
+"it":"snack salato",
+"cs":"bramborové lupínky",
+"tr":"patates cipsi",
+"es":"de bolsa"
+}
+},
+{
+"w":"koekje",
+"d":"Een klein, plat en zoet gebakje dat vaak als tussendoortje of bij de koffie wordt gegeten.",
+"t":{
+"en":"cookie, biscuit",
+"ru":"печенье",
+"pl":"ciasteczko, ciastko",
+"de":"Keks, Plätzchen",
+"fr":"biscuit, gâteau sec, cookie",
+"it":"biscotto",
+"cs":"sušenka, keks",
+"tr":"kurabiye, bisküvi",
+"es":"galleta, pastita"
+},
+"c":{
+"en":"American English / General",
+"ru":"кондитерское изделие",
+"pl":"mały, słodki wypiek",
+"de":"süßes Kleingebäck",
+"fr":"gâteau sec",
+"it":"dolce cotto al forno",
+"cs":"malý křupavý zákusek",
+"tr":"tatlı, fırınlanmış küçük çörek",
+"es":"pasta dulce horneada"
+}
+},
+{
+"w":"snoep",
+"d":"Een lekkernij die grotendeels uit suiker bestaat.",
+"t":{
+"en":"candy, sweets",
+"ru":"сладости, конфеты",
+"pl":"słodycze, cukierki",
+"de":"Süßigkeiten, Süßes, Bonbon, Naschkram",
+"fr":"bonbon, sucrerie, friandise",
+"it":"caramella, dolciumi, caramelle",
+"cs":"sladkost, bonbón, cukrovinka",
+"tr":"şeker, şekerleme, tatlı",
+"es":"caramelo, dulces, golosinas"
+},
+"c":{
+"en":"US English / general term",
+"ru":"общее название",
+"pl":"ogólne określenie na słodkie rzeczy",
+"de":"allgemeiner Begriff für Naschwerk",
+"fr":"friandise sucrée",
+"it":"singolo dolcetto",
+"cs":"obecné označení pro cukrovinky",
+"tr":"genel anlamda şekerleme",
+"es":"golosina individual"
+}
+},
+{
+"w":"erwtensoep",
+"d":"Een dikke, groene soep gemaakt van gedroogde spliterwten, vaak geserveerd met rookworst.",
+"t":{
+"en":"pea soup, split pea soup",
+"ru":"гороховый суп, эртенсуп",
+"pl":"grochówka, zupa grochowa",
+"de":"Erbsensuppe",
+"fr":"soupe aux pois, potage aux pois cassés",
+"it":"zuppa di piselli, passato di piselli",
+"cs":"hrachová polévka, hrachovka",
+"tr":"bezelye çorbası",
+"es":"sopa de guisantes, sopa de arvejas"
+},
+"c":{
+"en":"a thick soup made with dried peas",
+"ru":"густой суп из сухого гороха",
+"pl":"tradycyjna gęsta zupa grochowa",
+"de":"eine dicke Suppe aus Erbsen",
+"fr":"terme général pour une soupe à base de pois",
+"it":"termine generale per zuppa a base di piselli",
+"cs":"tradiční hustá polévka z hrachu",
+"tr":"genellikle kurutulmuş bezelyeden yapılan koyu kıvamlı çorba",
+"es":"sopa espesa hecha de guisantes secos"
+}
+},
+{
+"w":"toiletpapier",
+"d":"zacht papier op een rol dat wordt gebruikt voor persoonlijke hygiëne na het gebruik van het toilet",
+"t":{
+"en":"toilet paper, toilet tissue, loo roll, bath tissue",
+"ru":"туалетная бумага",
+"pl":"papier toaletowy",
+"de":"Toilettenpapier, Klopapier, WC-Papier",
+"fr":"papier toilette, papier hygiénique, PQ",
+"it":"carta igienica",
+"cs":"toaletní papír, toaleťák",
+"tr":"tuvalet kağıdı",
+"es":"papel higiénico, papel de baño, papel de váter"
+},
+"c":{
+"en":"standard term for hygiene paper",
+"ru":"общее название средства гигиены",
+"pl":"standardowe określenie środka higienicznego",
+"de":"Standardbegriff für das Hygienepapier",
+"fr":"terme le plus courant et standard",
+"it":"termine standard per la carta da bagno",
+"cs":"standardní označení pro hygienický papír",
+"tr":"hijyen amaçlı kullanılan rulo kağıt",
+"es":"término estándar y formal"
+}
+},
+{
+"w":"wc-papier",
+"d":"Zacht papier op een rol dat gebruikt wordt op het toilet om zich te reinigen na de stoelgang of het plassen.",
+"t":{
+"en":"toilet paper, toilet roll",
+"ru":"туалетная бумага",
+"pl":"papier toaletowy",
+"de":"Toilettenpapier, Klopapier",
+"fr":"papier toilette, papier hygiénique",
+"it":"carta igienica",
+"cs":"toaletní papír, toaleťák",
+"tr":"tuvalet kağıdı",
+"es":"papel higiénico, papel de baño"
+},
+"c":{
+"en":"paper on a roll used in the restroom",
+"ru":"бумага в рулоне для использования в туалете",
+"pl":"chłonny papier przeznaczony do utrzymywania higieny po wypróżnieniu",
+"de":"weiches Papier zur Reinigung auf der Toilette",
+"fr":"papier en rouleau pour l'hygiène intime",
+"it":"rotolo di carta per pulirsi in bagno",
+"cs":"papír na roli určený pro hygienu na toaletě",
+"tr":"temizlik için kullanılan rulo kağıt",
+"es":"papel en rollo para el aseo personal en el baño"
+}
+},
+{
+"w":"shampoo",
+"d":"Een vloeibaar product dat speciaal bedoeld is om het haar te wassen en te verzorgen.",
+"t":{
+"en":"shampoo",
+"ru":"шампунь",
+"pl":"szampon",
+"de":"Shampoo, Haarwaschmittel",
+"fr":"shampooing, shampoing",
+"it":"shampoo, sciampo",
+"cs":"šampon",
+"tr":"şampuan",
+"es":"champú"
+},
+"c":{
+"en":"hair care product",
+"ru":"средство для мытья волос",
+"pl":"środek do mycia włosów",
+"de":"Haarpflegeprodukt",
+"fr":"produit pour laver les cheveux",
+"it":"prodotto per capelli",
+"cs":"přípravek na mytí vlasů",
+"tr":"saç bakım ürünü",
+"es":"producto para el cuidado del cabello"
+}
+},
+{
+"w":"waspoeder",
+"d":"Wasmiddel in de vorm van poeder voor het wassen van kleding en ander textiel.",
+"t":{
+"en":"washing powder, powder detergent, laundry powder",
+"ru":"стиральный порошок, сухой стиральный порошок",
+"pl":"proszek do prania",
+"de":"Waschpulver, Wäschepulver",
+"fr":"lessive en poudre, poudre à laver",
+"it":"detersivo in polvere, sapone in polvere",
+"cs":"prací prášek, prášek na praní",
+"tr":"toz deterjan, çamaşır deterjanı, toz sabun",
+"es":"detergente en polvo, jabón en polvo"
+},
+"c":{
+"en":"powdered laundry detergent",
+"ru":"порошкообразное средство для стирки",
+"pl":"detergent w proszku do prania ubrań",
+"de":"Pulverförmiges Waschmittel",
+"fr":"détergent en poudre pour le linge",
+"it":"sapone in polvere per lavatrice",
+"cs":"prášek na praní prádla",
+"tr":"çamaşır yıkamak için kullanılan toz temizleyici",
+"es":"jabón en polvo para lavar ropa"
+}
+},
+{
+"w":"afwasmiddel",
+"d":"Een vloeibaar schoonmaakmiddel dat speciaal bedoeld is voor het handmatig afwassen van servies en bestek.",
+"t":{
+"en":"dishwashing liquid, dish soap, washing-up liquid, dishwashing detergent",
+"ru":"средство для мытья посуды, жидкость для мытья посуды",
+"pl":"płyn do naczyń, płyn do zmywania naczyń",
+"de":"Geschirrspülmittel, Spülmittel, Spüli",
+"fr":"liquide vaisselle, produit vaisselle, détergent à vaisselle",
+"it":"detersivo per piatti, sapone per i piatti",
+"cs":"přípravek na mytí nádobí, saponát na nádobí, jar",
+"tr":"bulaşık deterjanı, sıvı bulaşık deterjanı",
+"es":"lavavajillas, detergente lavavajillas, detergente para platos, lavatrastes"
+},
+"c":{
+"en":"liquid soap used for washing dishes by hand",
+"ru":"жидкое мыло для ручного мытья посуды",
+"pl":"najpopularniejsze określenie na płyn do ręcznego zmywania naczyń",
+"de":"flüssiges Reinigungsmittel für das manuelle Spülen von Geschirr",
+"fr":"le terme le plus courant pour le savon liquide utilisé pour faire la vaisselle à la main",
+"it":"sapone liquido usato per lavare i piatti a mano",
+"cs":"tekutý prostředek na ruční mytí nádobí",
+"tr":"elde bulaşık yıkamak için kullanılan sıvı temizleyici",
+"es":"jabón líquido para lavar los platos a mano"
+}
+},
+{
+"w":"tandpasta",
+"d":"Een pasta of poetsmiddel dat wordt gebruikt om de tanden te reinigen en te verzorgen.",
+"t":{
+"en":"toothpaste",
+"ru":"зубная паста",
+"pl":"pasta do zębów",
+"de":"Zahnpasta, Zahncreme",
+"fr":"dentifrice",
+"it":"dentifricio",
+"cs":"zubní pasta",
+"tr":"diş macunu",
+"es":"pasta de dientes, dentífrico, crema dental"
+},
+"c":{
+"en":"paste used for cleaning teeth",
+"ru":"средство для чистки зубов",
+"pl":"środek do czyszczenia zębów",
+"de":"Paste zur Reinigung der Zähne",
+"fr":"pâte pour nettoyer les dents",
+"it":"prodotto per la pulizia dei denti",
+"cs":"přípravek na čištění zubů",
+"tr":"diş temizliği için kullanılan macun",
+"es":"crema dental para la higiene de la boca"
+}
+},
+{
+"w":"zeep",
+"d":"Substantie met een desinfecterende of reinigende werking, gebruikt als schoonmaakmiddel of voor de persoonlijke hygiëne.",
+"t":{
+"en":"soap",
+"ru":"мыло",
+"pl":"mydło",
+"de":"Seife",
+"fr":"savon",
+"it":"sapone",
+"cs":"mýdlo",
+"tr":"sabun",
+"es":"jabón"
+},
+"c":{
+"en":"cleaning substance",
+"ru":"чистящее вещество",
+"pl":"substancja do mycia",
+"de":"Reinigungsmittel",
+"fr":"substance nettoyante",
+"it":"sostanza detergente",
+"cs":"čisticí prostředek",
+"tr":"temizleyici madde",
+"es":"sustancia limpiadora"
+}
+},
+{
+"w":"vers",
+"d":"Niet geconserveerd, ingeblikt of diepgevroren; in natuurlijke toestand.",
+"t":{
+"en":"fresh",
+"ru":"свежий",
+"pl":"świeży",
+"de":"frisch",
+"fr":"frais",
+"it":"fresco",
+"cs":"čerstvý",
+"tr":"taze, doğal",
+"es":"fresco"
+},
+"c":{
+"en":"not preserved or frozen (food)",
+"ru":"натуральный, не обработанный",
+"pl":"o żywności: nieprzetworzony, niemrożony",
+"de":"nicht konserviert oder tiefgekühlt (Lebensmittel)",
+"fr":"non conservé ou congelé (nourriture)",
+"it":"non conservato o congelato (cibo)",
+"cs":"nekonzervovaný nebo nezmrazený (o jídle)",
+"tr":"işlenmemiş, dondurulmamış gıda",
+"es":"alimento no procesado ni congelado"
+}
+},
+{
+"w":"diepvries",
+"d":"geconserveerd door middel van bevriezing bij een zeer lage temperatuur",
+"t":{
+"en":"frozen, deep-frozen",
+"ru":"замороженный, быстрозамороженный",
+"pl":"mrożony, głęboko mrożony",
+"de":"Tiefkühl-, tiefgekühlt, gefroren",
+"fr":"surgelé, congelé",
+"it":"surgelato, congelato",
+"cs":"mražený, hluboce zmrazený",
+"tr":"dondurulmuş, derin dondurulmuş",
+"es":"congelado, ultracongelado"
+},
+"c":{
+"en":"referring to food that has been frozen",
+"ru":"о продуктах питания",
+"pl":"odnoszący się do żywności poddanej niskiej temperaturze",
+"de":"als Erstglied in Zusammensetzungen wie Tiefkühlkost",
+"fr":"congelé rapidement de manière industrielle",
+"it":"riferito a cibo sottoposto a surgelazione rapida",
+"cs":"o potravinách uchovávaných v chladu",
+"tr":"gıda ürünleri için",
+"es":"referido a alimentos sometidos a congelación"
+}
+},
+{
+"w":"biologisch",
+"d":"Geproduceerd op een natuurlijke manier, zonder gebruik van kunstmest of chemische bestrijdingsmiddelen.",
+"t":{
+"en":"organic",
+"ru":"органический, экологически чистый",
+"pl":"ekologiczny, organiczny, bio",
+"de":"biologisch, ökologisch, Bio-",
+"fr":"biologique, bio",
+"it":"biologico, bio",
+"cs":"biologický, bio, ekologický",
+"tr":"organik, biyolojik",
+"es":"ecológico, biológico, orgánico"
+},
+"c":{
+"en":"food and farming",
+"ru":"о продуктах питания и земледелии",
+"pl":"o żywności i rolnictwie",
+"de":"aus ökologischem Anbau",
+"fr":"produit issu de l'agriculture biologique",
+"it":"riferito a cibo e agricoltura",
+"cs":"o potravinách a zemědělství",
+"tr":"gıda ve tarım ürünleri için",
+"es":"referido a alimentos y agricultura"
+}
+},
+{
+"w":"huismerk",
+"d":"een merk van producten dat in opdracht van een winkelier of supermarkt wordt geproduceerd onder een eigen naam",
+"t":{
+"en":"store brand, private label, own brand, generic brand",
+"ru":"собственная торговая марка, частная марка, домашний бренд",
+"pl":"marka własna, marka handlowa",
+"de":"Eigenmarke, Hausmarke, Handelsmarke",
+"fr":"marque de distributeur, marque propre, marque maison",
+"it":"marchio del distributore, marca del supermercato, marca privata",
+"cs":"vlastní značka, privátní značka",
+"tr":"market markası, özel marka, kendi markası",
+"es":"marca blanca, marca propia, marca del distribuidor"
+},
+"c":{
+"en":"a product sold under the retailer's own name",
+"ru":"СТМ, бренд розничной сети",
+"pl":"produkty sprzedawane pod marką należącą do sieci handlowej",
+"de":"eine Marke, die einem Handelsunternehmen gehört",
+"fr":"MDD, marque propre d'un supermarché ou d'un magasin",
+"it":"termine formale per indicare i prodotti venduti con il marchio del supermercato",
+"cs":"značka prodávaná pod jménem prodejce či supermarketu",
+"tr":"süpermarketin kendi adıyla sattığı ürün grubu",
+"es":"término común para productos de la marca del propio supermercado"
+}
+},
+{
+"w":"houdbaarheidsdatum",
+"d":"de uiterste datum waarop een levensmiddel veilig kan worden geconsumeerd of hoe lang het kan worden bewaard",
+"t":{
+"en":"expiry date, expiration date, best-before date, shelf life",
+"ru":"срок годности, дата истечения срока годности",
+"pl":"termin ważności, data ważności, termin przydatności do spożycia",
+"de":"Haltbarkeitsdatum, Mindesthaltbarkeitsdatum, Ablaufdatum",
+"fr":"date de péremption, date limite de consommation, date de durabilité minimale",
+"it":"data di scadenza, termine minimo di conservazione",
+"cs":"datum spotřeby, minimální trvanlivost, trvanlivost, datum minimální trvanlivosti",
+"tr":"son kullanma tarihi, tavsiye edilen tüketim tarihi, raf ömrü",
+"es":"fecha de caducidad, fecha de vencimiento, fecha de consumo preferente"
+},
+"c":{
+"en":"the date after which food or products should not be used (UK)",
+"ru":"период или дата, до которой продукт пригоден",
+"pl":"data, do której produkt nadaje się do spożycia lub użycia",
+"de":"das Datum, bis zu dem ein Produkt mindestens haltbar ist",
+"fr":"date à partir de laquelle un produit ne doit plus être consommé",
+"it":"la data limite per consumare un prodotto in sicurezza",
+"cs":"datum, do kterého je nutné potravinu spotřebovat",
+"tr":"bir ürünün güvenle tüketilebileceği son gün",
+"es":"fecha límite para consumir un alimento de forma segura"
+}
+},
+{
+"w":"duur",
+"d":"Met een hoge prijs; waarvoor veel geld betaald moet worden.",
+"t":{
+"en":"expensive, pricey",
+"ru":"дорогой, дорогостоящий",
+"pl":"drogi, kosztowny",
+"de":"teuer, kostspielig",
+"fr":"cher, coûteux",
+"it":"costoso, caro",
+"cs":"drahý, nákladný",
+"tr":"pahalı, maliyetli",
+"es":"caro, costoso"
+},
+"c":{
+"en":"costing a lot of money",
+"ru":"о цене",
+"pl":"posiadający wysoką cenę",
+"de":"einen hohen Preis aufweisend",
+"fr":"qui a un prix élevé",
+"it":"che costa molto",
+"cs":"o ceně",
+"tr":"fiyatı yüksek olan",
+"es":"que cuesta mucho dinero"
+}
+},
+{
+"w":"goedkoop",
+"d":"Te verkrijgen voor een lage prijs; niet duur.",
+"t":{
+"en":"cheap, inexpensive",
+"ru":"дешёвый, недорогой",
+"pl":"tani, niedrogi",
+"de":"billig, günstig, preiswert, preisgünstig",
+"fr":"bon marché, pas cher",
+"it":"economico, a buon mercato",
+"cs":"levný, laciný",
+"tr":"ucuz, uygun fiyatlı",
+"es":"barato, económico"
+},
+"c":{
+"en":"costing little money",
+"ru":"о цене",
+"pl":"o niskiej cenie",
+"de":"einen niedrigen Preis habend",
+"fr":"d'un prix peu élevé",
+"it":"riferito al prezzo basso",
+"cs":"o ceně",
+"tr":"fiyatı düşük olan",
+"es":"de bajo precio"
+}
+},
+{
+"w":"gezond",
+"d":"Bevorderlijk voor de gezondheid; goed voor het lichaam.",
+"t":{
+"en":"healthy, wholesome",
+"ru":"полезный, здоровый",
+"pl":"zdrowy, zdrowo",
+"de":"gesund, heilsam",
+"fr":"sain, bon pour la santé, salutaire",
+"it":"salutare, sano",
+"cs":"zdravý, zdravě",
+"tr":"sağlıklı, faydalı, yararlı",
+"es":"saludable, sano"
+},
+"c":{
+"en":"conducive to health",
+"ru":"благотворный для организма",
+"pl":"służący zdrowiu, np. jedzenie",
+"de":"gut für die Gesundheit (z.B. Essen, Lebensweise)",
+"fr":"bénéfique pour la santé, salubre",
+"it":"che fa bene alla salute",
+"cs":"prospěšný zdraví (např. strava)",
+"tr":"sağlığa faydalı olan yiyecek, yaşam tarzı vb.",
+"es":"bueno para la salud"
+}
+},
+{
+"w":"ongezond",
+"d":"Schadelijk voor de gezondheid; niet goed voor het lichaam of de geest.",
+"t":{
+"en":"unhealthy",
+"ru":"нездоровый, вредный",
+"pl":"niezdrowy, szkodliwy",
+"de":"ungesund, krankhaft",
+"fr":"malsain, mauvais pour la santé, insalubre",
+"it":"malsano, insalubre, poco sano, nocivo",
+"cs":"nezdravý, škodlivý",
+"tr":"sağlıksız, zararlı",
+"es":"poco saludable, insalubre, malsano"
+},
+"c":{
+"en":"detrimental to physical or mental well-being",
+"ru":"плохо влияющий на самочувствие или состояние организма",
+"pl":"szkodliwy dla organizmu lub psychiki",
+"de":"schädlich für die körperliche oder geistige Gesundheit",
+"fr":"qui nuit à la santé physique ou mentale",
+"it":"riferito a stile di vita, abitudini o ambienti nocivi alla salute",
+"cs":"nepříznivý pro tělesné či duševní zdraví",
+"tr":"beden veya ruh sağlığına iyi gelmeyen",
+"es":"que no es bueno para la salud física o mental"
+}
+},
+{
+"w":"olie",
+"d":"Een vette vloeistof die niet met water mengt, vaak gebruikt om in te bakken, als brandstof of als smeermiddel.",
+"t":{
+"en":"oil",
+"ru":"масло",
+"pl":"olej",
+"de":"Öl",
+"fr":"huile",
+"it":"olio",
+"cs":"olej",
+"tr":"yağ",
+"es":"aceite"
+},
+"c":{
+"en":"liquid fat / lubricant",
+"ru":"растительное или машинное",
+"pl":"płynny tłuszcz roślinny lub smar",
+"de":"fettige Flüssigkeit / Schmiermittel",
+"fr":"matière grasse liquide ou lubrifiant",
+"it":"grasso liquido o lubrificante",
+"cs":"rostlinný nebo motorový",
+"tr":"sıvı yağ veya motor yağı",
+"es":"líquido graso o lubricante"
+}
+},
+{
+"w":"azijn",
+"d":"Een zure vloeistof die wordt gebruikt om voedsel op smaak te brengen of te conserveren.",
+"t":{
+"en":"vinegar",
+"ru":"уксус, столовый уксус",
+"pl":"ocet",
+"de":"Essig",
+"fr":"vinaigre",
+"it":"aceto",
+"cs":"ocet",
+"tr":"sirke",
+"es":"vinagre"
+},
+"c":{
+"en":"the sour liquid used in cooking",
+"ru":"приправа и консервант",
+"pl":"kwaśny płyn używany w kuchni",
+"de":"sauer schmeckendes Würz- und Konservierungsmittel",
+"fr":"le liquide acide utilisé en cuisine",
+"it":"il liquido acido usato in cucina",
+"cs":"kyselá tekutina používaná v kuchyni",
+"tr":"yemeklerde kullanılan ekşi sıvı",
+"es":"líquido agrio usado en la cocina"
+}
+},
+{
+"w":"pakje",
+"d":"Verkleinwoord van <w>pak</w>: een kleine verpakking, doosje of bundel met inhoud.",
+"t":{
+"en":"pack, packet, package",
+"ru":"пачка, пакетик",
+"pl":"paczka, paczuszka, opakowanie",
+"de":"Packung, Päckchen, Schachtel",
+"fr":"paquet, sachet",
+"it":"pacchetto, confezione, panetto",
+"cs":"balíček, krabička, kostka",
+"tr":"paket, paketçik",
+"es":"paquete, paquetito, cajetilla"
+},
+"c":{
+"en":"container (e.g. cigarettes, gum)",
+"ru":"упаковка (масла, сигарет, жвачки)",
+"pl":"małe opakowanie, np. masła lub papierosów",
+"de":"kleine Verpackung, z. B. von Butter oder Kaugummi",
+"fr":"un petit emballage, par exemple de cigarettes ou de beurre",
+"it":"confezione di sigarette, gomma da masticare, ecc.",
+"cs":"malé balení",
+"tr":"küçük ambalaj veya kutu",
+"es":"envoltorio o caja pequeña"
+}
+},
+{
+"w":"blik",
+"d":"een metalen verpakking voor voedsel of drank",
+"t":{
+"en":"can, tin",
+"ru":"консервная банка, жестяная банка, банка",
+"pl":"puszka, konserwa",
+"de":"Dose, Blechdose, Konservendose, Büchse",
+"fr":"boîte de conserve, canette, boîte",
+"it":"lattina, barattolo, scatola",
+"cs":"plechovka, konzerva",
+"tr":"konserve kutusu, kutu, teneke kutu",
+"es":"lata"
+},
+"c":{
+"en":"a sealed metal container for food or drink",
+"ru":"герметичная емкость для еды",
+"pl":"metalowy pojemnik na napoje lub jedzenie",
+"de":"ein kleiner Behälter mit Deckel zur Aufbewahrung",
+"fr":"récipient métallique pour aliments",
+"it":"piccolo contenitore metallico per bibite o cibo",
+"cs":"kovová nádoba na nápoje či jídlo",
+"tr":"yiyeceklerin saklandığı metal kap",
+"es":"envase metálico hermético"
+}
+},
+{
+"w":"pot",
+"d":"Een cilindervormig voorwerp van glas, aardewerk of metaal dat meestal dient om iets in te bewaren.",
+"t":{
+"en":"jar, pot",
+"ru":"банка, горшок",
+"pl":"słoik, doniczka, naczynie",
+"de":"Glas, Topf, Töpfchen",
+"fr":"pot, bocal",
+"it":"barattolo, vasetto, vaso",
+"cs":"sklenice, kelímek, květináč, nádoba",
+"tr":"kavanoz, saksı, kutu",
+"es":"tarro, bote, frasco, maceta"
+},
+"c":{
+"en":"glass container, e.g., for jam or food",
+"ru":"стеклянная, например, для варенья",
+"pl":"szklany pojemnik, np. na dżem",
+"de":"für Marmelade oder Lebensmittel",
+"fr":"contenant général, p. ex. pour de la peinture, de la confiture ou des fleurs",
+"it":"contenitore di vetro o metallo, ad esempio per marmellata",
+"cs":"skleněná nádoba, např. na džem",
+"tr":"reçel veya yiyecek için cam kap",
+"es":"recipiente de vidrio o cerámica, p. ej. para mermelada"
+}
+},
+{
+"w":"tube",
+"d":"Een kokervormige verpakking van metaal of plastic waaruit men een halfvloeibare stof kan knijpen.",
+"t":{
+"en":"tube",
+"ru":"тюбик",
+"pl":"tubka, tuba",
+"de":"Tube",
+"fr":"tube",
+"it":"tubetto, tubo",
+"cs":"tuba, tubička",
+"tr":"tüp",
+"es":"tubo"
+},
+"c":{
+"en":"container for paste or gel",
+"ru":"упаковка",
+"pl":"opakowanie na pastę lub krem",
+"de":"Behälter für Zahnpasta, Creme oder Farbe",
+"fr":"contenant pour pâte ou gel",
+"it":"contenitore per pasta o gel",
+"cs":"obal na pastu, krém apod.",
+"tr":"diş macunu, krem vb. için ambalaj",
+"es":"envase para pasta o gel"
+}
+},
+{
+"w":"kilo",
+"d":"Eenheid van gewicht of massa, gelijk aan duizend gram; verkorting van <w>kilogram</w>.",
+"t":{
+"en":"kilo, kilogram",
+"ru":"килограмм, кило",
+"pl":"kilo, kilogram",
+"de":"Kilo, Kilogramm",
+"fr":"kilo, kilogramme",
+"it":"chilo, chilogrammo",
+"cs":"kilo, kilogram",
+"tr":"kilo, kilogram",
+"es":"kilo, kilogramo"
+},
+"c":{
+"en":"unit of mass",
+"ru":"единица измерения",
+"pl":"potoczne określenie jednostki masy",
+"de":"Umgangssprachliche Abkürzung",
+"fr":"abréviation courante",
+"it":"forma abbreviata comune",
+"cs":"hovorové označení pro kilogram",
+"tr":"günlük kullanımda ağırlık birimi",
+"es":"abreviatura común"
+}
+},
+{
+"w":"gram",
+"d":"Een eenheid van massa die gelijk is aan één duizendste van een kilogram.",
+"t":{
+"en":"gram",
+"ru":"грамм",
+"pl":"gram",
+"de":"Gramm",
+"fr":"gramme",
+"it":"grammo",
+"cs":"gram",
+"tr":"gram",
+"es":"gramo"
+},
+"c":{
+"en":"unit of mass",
+"ru":"единица массы",
+"pl":"jednostka masy",
+"de":"Maßeinheit der Masse",
+"fr":"unité de mesure de masse",
+"it":"unità di misura della massa",
+"cs":"jednotka hmotnosti",
+"tr":"kütle birimi",
+"es":"unidad de masa"
+}
+},
+{
+"w":"wegen",
+"d":"Het gewicht of de massa van iets of iemand bepalen, meestal met een weegschaal.",
+"t":{
+"en":"weigh",
+"ru":"взвешивать, вешать",
+"pl":"ważyć, zważyć",
+"de":"wiegen, abwiegen",
+"fr":"peser",
+"it":"pesare",
+"cs":"vážit, zvážit",
+"tr":"tartmak",
+"es":"pesar"
+},
+"c":{
+"en":"to measure weight",
+"ru":"определять вес",
+"pl":"mierzyć ciężar czegoś",
+"de":"das Gewicht von etwas messen",
+"fr":"mesurer le poids",
+"it":"misurare il peso di qualcosa",
+"cs":"zjišťovat hmotnost",
+"tr":"ağırlığını ölçmek",
+"es":"determinar el peso de algo"
+}
+},
+{
+"w":"rood",
+"d":"De kleur hebbend van bloed, vuur of aardbeien.",
+"t":{
+"en":"red",
+"ru":"красный",
+"pl":"czerwony",
+"de":"rot",
+"fr":"rouge",
+"it":"rosso",
+"cs":"červený",
+"tr":"kırmızı, al",
+"es":"rojo"
+},
+"c":{
+"en":"color",
+"ru":"цвет",
+"pl":"kolor",
+"de":"Farbe",
+"fr":"couleur",
+"it":"colore",
+"cs":"barva",
+"tr":"renk",
+"es":"color"
+}
+},
+{
+"w":"groen",
+"d":"Met de kleur van gras en bladeren in de lente; gelegen tussen geel en blauw in het spectrum.",
+"t":{
+"en":"green",
+"ru":"зелёный, травяной",
+"pl":"zielony",
+"de":"grün",
+"fr":"vert",
+"it":"verde",
+"cs":"zelený",
+"tr":"yeşil",
+"es":"verde"
+},
+"c":{
+"en":"color",
+"ru":"цвет",
+"pl":"kolor",
+"de":"Farbe",
+"fr":"couleur",
+"it":"colore",
+"cs":"barva",
+"tr":"renk",
+"es":"color"
+}
+},
+{
+"w":"wit",
+"d":"De kleur hebbend van sneeuw of melk; de lichtste kleur van het spectrum.",
+"t":{
+"en":"white",
+"ru":"белый, белоснежный",
+"pl":"biały, śnieżnobiały",
+"de":"weiß, schneeweiß",
+"fr":"blanc",
+"it":"bianco",
+"cs":"bílý",
+"tr":"beyaz, ak",
+"es":"blanco"
+},
+"c":{
+"en":"color",
+"ru":"цвет",
+"pl":"kolor",
+"de":"Farbe",
+"fr":"couleur",
+"it":"colore",
+"cs":"barva",
+"tr":"renk",
+"es":"color"
+}
+},
+{
+"w":"zwart",
+"d":"Met de donkerste kleur, zoals roet of steenkool; zonder lichtweerkaatsing",
+"t":{
+"en":"black",
+"ru":"чёрный",
+"pl":"czarny",
+"de":"schwarz",
+"fr":"noir",
+"it":"nero",
+"cs":"černý",
+"tr":"siyah, kara",
+"es":"negro"
+},
+"c":{
+"en":"color",
+"ru":"цвет",
+"pl":"kolor",
+"de":"Farbe",
+"fr":"couleur",
+"it":"colore",
+"cs":"barva",
+"tr":"renk",
+"es":"color"
+}
+},
+{
+"w":"oranje",
+"d":"Met de kleur van een sinaasappel, gelegen in het spectrum tussen rood en geel.",
+"t":{
+"en":"orange",
+"ru":"оранжевый",
+"pl":"pomarańczowy",
+"de":"orange, orangefarben",
+"fr":"orange",
+"it":"arancione, arancio",
+"cs":"oranžový",
+"tr":"turuncu, portakal rengi",
+"es":"naranja, anaranjado"
+},
+"c":{
+"en":"color",
+"ru":"цвет",
+"pl":"kolor",
+"de":"Farbe",
+"fr":"couleur",
+"it":"colore",
+"cs":"barva",
+"tr":"renk sıfatı",
+"es":"color"
+}
+},
+{
+"w":"geel",
+"d":"Met de kleur van een citroen, een eierdooier of de zon.",
+"t":{
+"en":"yellow",
+"ru":"жёлтый",
+"pl":"żółty",
+"de":"gelb",
+"fr":"jaune",
+"it":"giallo",
+"cs":"žlutý",
+"tr":"sarı",
+"es":"amarillo"
+},
+"c":{
+"en":"color",
+"ru":"цвет",
+"pl":"kolor",
+"de":"Farbe",
+"fr":"couleur",
+"it":"colore",
+"cs":"přídavné jméno",
+"tr":"renk",
+"es":"color"
+}
+},
+{
+"w":"blauw",
+"d":"Met de kleur van een onbewolkte lucht; een van de primaire kleuren.",
+"t":{
+"en":"blue, azure",
+"ru":"синий, голубой",
+"pl":"niebieski, błękitny",
+"de":"blau",
+"fr":"bleu, azur",
+"it":"blu, azzurro",
+"cs":"modrý, blankytný",
+"tr":"mavi",
+"es":"azul, celeste"
+},
+"c":{
+"en":"color",
+"ru":"основной цвет",
+"pl":"podstawowy kolor",
+"de":"Farbe",
+"fr":"couleur",
+"it":"colore primario scuro",
+"cs":"základní barva",
+"tr":"ana renk",
+"es":"color primario"
+}
+},
+{
+"w":"grijs",
+"d":"met een kleur tussen zwart en wit in",
+"t":{
+"en":"grey, gray",
+"ru":"серый, пасмурный",
+"pl":"szary, pochmurny",
+"de":"grau",
+"fr":"gris",
+"it":"grigio",
+"cs":"šedý, šedivý",
+"tr":"gri, kapalı",
+"es":"gris"
+},
+"c":{
+"en":"color",
+"ru":"цвет",
+"pl":"kolor",
+"de":"Farbe",
+"fr":"couleur",
+"it":"colore",
+"cs":"barva",
+"tr":"renk",
+"es":"color"
+}
+},
+{
+"w":"bruin",
+"d":"Met de kleur van aarde, koffie of chocolade.",
+"t":{
+"en":"brown",
+"ru":"коричневый, карий, каштановый",
+"pl":"brązowy, piwny, brązowowłosy",
+"de":"braun",
+"fr":"brun, marron, châtain",
+"it":"marrone, bruno, castano",
+"cs":"hnědý, hnědooký, kaštanový",
+"tr":"kahverengi, ela, kumral",
+"es":"marrón, castaño, pardo"
+},
+"c":{
+"en":"colour",
+"ru":"основной цвет",
+"pl":"kolor",
+"de":"Farbe",
+"fr":"couleur générale",
+"it":"colore generale",
+"cs":"základní barva",
+"tr":"renk",
+"es":"color general"
+}
+},
+{
+"w":"paars",
+"d":"Met een kleur die een mengsel is van rood en blauw, zoals die van viooltjes of lavendel.",
+"t":{
+"en":"purple, violet",
+"ru":"фиолетовый, лиловый",
+"pl":"fioletowy, fiołkowy",
+"de":"lila, violett, purpurrot",
+"fr":"violet, mauve, pourpre",
+"it":"viola, porpora",
+"cs":"fialový, purpurový",
+"tr":"mor, eflatun, menekşe",
+"es":"morado, violeta, púrpura"
+},
+"c":{
+"en":"primary color",
+"ru":"основной цвет",
+"pl":"podstawowy kolor",
+"de":"Hauptfarbe, umgangssprachlich am häufigsten",
+"fr":"couleur principale",
+"it":"colore principale",
+"cs":"základní barva",
+"tr":"ana renk",
+"es":"color principal"
+}
+},
+{
+"w":"krom",
+"d":"niet recht, maar met een bocht of hoek",
+"t":{
+"en":"crooked, curved, bent",
+"ru":"кривой, изогнутый, сгорбленный",
+"pl":"krzywy, wygięty, zgarbiony",
+"de":"krumm, gebogen, schief",
+"fr":"courbe, tordu, voûté",
+"it":"curvo, storto, piegato",
+"cs":"křivý, ohnutý, zahnutý",
+"tr":"eğri, bükük, çarpık, yamuk",
+"es":"curvo, torcido, encorvado"
+},
+"c":{
+"en":"not straight or bent",
+"ru":"неровный или изогнутый",
+"pl":"nieprosty, np. o linii, bananie",
+"de":"nicht gerade, gebogen",
+"fr":"qui a une forme arrondie",
+"it":"che ha una forma arrotondata o piegata",
+"cs":"ne rovný, mající nepravidelný tvar",
+"tr":"düz veya doğru olmayan",
+"es":"que tiene forma de curva"
+}
+},
+{
+"w":"recht",
+"d":"Zonder bochten of krommingen; in een lineaire lijn.",
+"t":{
+"en":"straight",
+"ru":"прямой",
+"pl":"prosty",
+"de":"gerade",
+"fr":"droit",
+"it":"diritto, retto",
+"cs":"přímý, rovný",
+"tr":"düz, doğru",
+"es":"recto, derecho"
+},
+"c":{
+"en":"of a line or shape",
+"ru":"о линии или форме",
+"pl":"o linii lub drodze",
+"de":"von einer Linie oder Form",
+"fr":"rectiligne, sans courbe",
+"it":"di una linea o percorso",
+"cs":"o čáře nebo směru",
+"tr":"çizgi veya şekil için",
+"es":"de una línea o forma"
+}
+},
+{
+"w":"rond",
+"d":"Met de vorm van een cirkel, bol of cilinder.",
+"t":{
+"en":"round, circular",
+"ru":"круглый",
+"pl":"okrągły",
+"de":"rund",
+"fr":"rond, ronde, circulaire",
+"it":"rotondo, circolare",
+"cs":"kulatý, okrouhlý",
+"tr":"yuvarlak, daire şeklinde",
+"es":"redondo, circular"
+},
+"c":{
+"en":"shape",
+"ru":"форма",
+"pl":"kształt",
+"de":"Form",
+"fr":"forme",
+"it":"forma",
+"cs":"tvar",
+"tr":"şekil",
+"es":"forma"
+}
+},
+{
+"w":"vierkant",
+"d":"Met de vorm van een vierkant; met vier gelijke zijden en rechte hoeken.",
+"t":{
+"en":"square",
+"ru":"квадратный",
+"pl":"kwadratowy",
+"de":"quadratisch, viereckig",
+"fr":"carré",
+"it":"quadrato",
+"cs":"čtvercový, čtvereční",
+"tr":"kare",
+"es":"cuadrado"
+},
+"c":{
+"en":"shape or measurement",
+"ru":"о форме или измерении площади",
+"pl":"o kształcie lub jednostkach powierzchni",
+"de":"Form oder Flächenmaß",
+"fr":"forme ou mesure",
+"it":"riferito a forma o misura di superficie",
+"cs":"mající tvar čtverce",
+"tr":"şekil veya alan ölçümü için",
+"es":"referido a la forma o medida de superficie"
+}
+},
+{
+"w":"drank",
+"d":"Een vloeistof die bedoeld is om te drinken.",
+"t":{
+"en":"drink, beverage",
+"ru":"напиток, питьё",
+"pl":"napój, picie",
+"de":"Getränk, Trunk",
+"fr":"boisson, breuvage",
+"it":"bevanda, bibita",
+"cs":"nápoj, pití",
+"tr":"içecek, meşrubat",
+"es":"bebida"
+},
+"c":{
+"en":"general term",
+"ru":"общее значение",
+"pl":"ogólne określenie płynu do picia",
+"de":"allgemeiner Begriff",
+"fr":"terme général",
+"it":"termine generale",
+"cs":"obecný výraz",
+"tr":"genel terim",
+"es":"término general"
+}
+},
+{
+"w":"cola",
+"d":"Een bruine, koolzuurhoudende frisdrank die oorspronkelijk uit kolanoten werd vervaardigd.",
+"t":{
+"en":"cola, Coke",
+"ru":"кола, кока-кола",
+"pl":"cola, koka-kola",
+"de":"Cola, Koka-Kola",
+"fr":"coca, cola, coca-cola",
+"it":"cola, coca-cola, coca",
+"cs":"kola, cola, kofola",
+"tr":"kola, koka kola",
+"es":"cola, refresco de cola, coca-cola"
+},
+"c":{
+"en":"carbonated soft drink",
+"ru":"газированный напиток",
+"pl":"napój gazowany",
+"de":"kohlensäurehaltiges Erfrischungsgetränk",
+"fr":"boisson gazeuse",
+"it":"bevanda gassata analcolica",
+"cs":"sycený nealkoholický nápoj",
+"tr":"gazlı içecek",
+"es":"bebida refrescante carbonatada"
+}
+},
+{
+"w":"boterham",
+"d":"Een afgesneden plak van een brood.",
+"t":{
+"en":"slice of bread, slice",
+"ru":"кусок хлеба, ломтик хлеба, ломоть",
+"pl":"kromka chleba, kromka, skiba",
+"de":"Scheibe Brot, Brotschnitte, Brot",
+"fr":"tranche de pain, tartine",
+"it":"fetta di pane",
+"cs":"krajíc chleba, plátek chleba",
+"tr":"ekmek dilimi, dilim ekmek",
+"es":"rebanada de pan, rebanada"
+},
+"c":{
+"en":"a single piece cut from a loaf",
+"ru":"отрезанная часть буханки",
+"pl":"pojedynczy ukrojony kawałek chleba",
+"de":"ein einzelnes abgeschnittenes Stück Brot",
+"fr":"un morceau de pain coupé",
+"it":"un singolo pezzo tagliato da una pagnotta",
+"cs":"jeden ukrojený kus z bochníku",
+"tr":"somundan kesilmiş tek bir parça ekmek",
+"es":"un trozo individual cortado de una barra de pan"
+}
+},
+{
+"w":"hagelslag",
+"d":"Een soort broodbeleg bestaande uit kleine korrels van chocolade of gekleurde suiker.",
+"t":{
+"en":"chocolate sprinkles, sprinkles",
+"ru":"шоколадная крошка, шоколадная посыпка",
+"pl":"czekoladowa posypka, posypka",
+"de":"Schokoladenstreusel, Hagelzucker",
+"fr":"granulés de chocolat, vermicelles en chocolat, granulés de sucre",
+"it":"scaglie di cioccolato, codette di cioccolato, grandine di cioccolato",
+"cs":"čokoládové sypání, čokoládová rýže",
+"tr":"çikolata parçacıkları, pasta süsü",
+"es":"fideos de chocolate, virutas de chocolate"
+},
+"c":{
+"en":"the most common term for this Dutch topping",
+"ru":"посыпка для хлеба",
+"pl":"najpopularniejsza forma tego holenderskiego dodatku do chleba",
+"de":"die häufigste Bezeichnung für diesen niederländischen Brotaufstrich",
+"fr":"le terme le plus courant pour cette garniture néerlandaise",
+"it":"termine comune per indicare i pezzetti di cioccolato da spargere sul pane o sui dolci",
+"cs":"čokoládové kousky na chléb nebo pečivo",
+"tr":"ekmek üstü süslemesi",
+"es":"el término más común para este acompañamiento holandés"
+}
+},
+{
+"w":"patat",
+"d":"Gefrituurde aardappelstaafjes, vooral in Noord-Nederland zo genoemd.",
+"t":{
+"en":"French fries, chips, fries",
+"ru":"картофель фри, картошка фри",
+"pl":"frytki",
+"de":"Pommes frites, Pommes, Fritten",
+"fr":"frite, frites",
+"it":"patatine fritte, patatine",
+"cs":"hranolky",
+"tr":"patates kızartması, patates",
+"es":"patatas fritas, papas fritas"
+},
+"c":{
+"en":"deep-fried potato strips, US English",
+"ru":"обжаренный во фритюре",
+"pl":"smażone słupki ziemniaczane",
+"de":"in Fett geröstete Kartoffelstäbchen",
+"fr":"bâtonnet de pomme de terre cuit dans l'huile",
+"it":"bastoncini di patate fritti",
+"cs":"smažené bramborové hranolky",
+"tr":"kızgın yağda kızartılmış patates dilimleri",
+"es":"tiras de patata fritas en aceite, España"
+}
+},
+{
+"w":"rijst",
+"d":"Een graangewas dat als belangrijk voedingsmiddel wordt gegeten, of de korrels van deze plant.",
+"t":{
+"en":"rice",
+"ru":"рис",
+"pl":"ryż",
+"de":"Reis",
+"fr":"riz",
+"it":"riso",
+"cs":"rýže",
+"tr":"pirinç",
+"es":"arroz"
+},
+"c":{
+"en":"cereal grain / food",
+"ru":"растение или крупа",
+"pl":"roślina zbożowa lub jej ziarna",
+"de":"Getreide / Nahrungsmittel",
+"fr":"céréale ou grain alimentaire",
+"it":"cereale o alimento",
+"cs":"obilovina nebo zrna",
+"tr":"tahıl bitkisi veya gıda maddesi",
+"es":"grano de cereal o alimento"
+}
+},
+{
+"w":"chocolade",
+"d":"Een lekkernij gemaakt van cacao, suiker en cacaoboter",
+"t":{
+"en":"chocolate",
+"ru":"шоколад",
+"pl":"czekolada",
+"de":"Schokolade",
+"fr":"chocolat",
+"it":"cioccolato",
+"cs":"čokoláda",
+"tr":"çikolata",
+"es":"chocolate"
+},
+"c":{
+"en":"sweet food made from cocoa",
+"ru":"кондитерское изделие",
+"pl":"wyrób cukierniczy lub napój",
+"de":"Süßware aus Kakao",
+"fr":"aliment sucré à base de cacao",
+"it":"alimento dolce a base di cacao",
+"cs":"sladkost z kakaových bobů",
+"tr":"kakaodan yapılan tatlı yiyecek",
+"es":"alimento dulce hecho con cacao"
+}
+},
+{
+"w":"suiker",
+"d":"Een zoete, kristalvormige stof die wordt gebruikt om voedsel en dranken zoeter te maken, meestal gewonnen uit suikerbieten of suikerriet",
+"t":{
+"en":"sugar",
+"ru":"сахар",
+"pl":"cukier",
+"de":"Zucker",
+"fr":"sucre",
+"it":"zucchero",
+"cs":"cukr",
+"tr":"şeker",
+"es":"azúcar"
+},
+"c":{
+"en":"food substance",
+"ru":"пищевой продукт",
+"pl":"substancja spożywcza",
+"de":"Nahrungsmittel",
+"fr":"substance alimentaire",
+"it":"sostanza alimentare dolce",
+"cs":"potravina",
+"tr":"tatlandırıcı gıda maddesi",
+"es":"sustancia alimenticia"
+}
+},
+{
+"w":"soep",
+"d":"Vloeibaar gerecht dat bereid wordt door ingrediënten zoals groenten en vlees in water of bouillon te koken.",
+"t":{
+"en":"soup",
+"ru":"суп",
+"pl":"zupa",
+"de":"Suppe",
+"fr":"soupe, potage",
+"it":"zuppa, minestra",
+"cs":"polévka",
+"tr":"çorba",
+"es":"sopa, potaje"
+},
+"c":{
+"en":"liquid food",
+"ru":"первое блюдо",
+"pl":"płynna potrawa",
+"de":"flüssige Speise",
+"fr":"plat liquide",
+"it":"piatto liquido a base di verdure, carne o pesce",
+"cs":"tekutý pokrm",
+"tr":"sıcak, sulu yemek",
+"es":"plato líquido"
+}
+},
+{
+"w":"spaghetti",
+"d":"Italiaanse pasta in de vorm van lange, dunne, ronde slierten.",
+"t":{
+"en":"spaghetti",
+"ru":"спагетти",
+"pl":"spaghetti",
+"de":"Spaghetti",
+"fr":"spaghetti",
+"it":"spaghetti",
+"cs":"špagety",
+"tr":"spagetti",
+"es":"espaguetis, espagueti"
+},
+"c":{
+"en":"pasta",
+"ru":"вид пасты",
+"pl":"rodzaj makaronu",
+"de":"Nudelsorte",
+"fr":"pâtes",
+"it":"tipo di pasta",
+"cs":"těstoviny",
+"tr":"makarna türü",
+"es":"pasta"
+}
+},
+{
+"w":"pizza",
+"d":"Een gerecht van Italiaanse oorsprong, bestaande uit een ronde bodem van deeg die wordt belegd met ingrediënten zoals tomatensaus, kaas, vlees of groenten en in de oven wordt gebakken.",
+"t":{
+"en":"pizza",
+"ru":"пицца",
+"pl":"pizza",
+"de":"Pizza",
+"fr":"pizza",
+"it":"pizza",
+"cs":"pizza",
+"tr":"pizza",
+"es":"pizza"
+},
+"c":{
+"en":"Italian dish",
+"ru":"блюдо",
+"pl":"danie o włoskim rodowodzie",
+"de":"italienisches Gericht",
+"fr":"plat italien",
+"it":"piatto tipico italiano",
+"cs":"italský pokrm",
+"tr":"İtalyan yemeği",
+"es":"plato italiano"
+}
+},
+{
+"w":"ijs",
+"d":"Een bevroren lekkernij, meestal op basis van zuivel en suiker.",
+"t":{
+"en":"ice cream, ice",
+"ru":"мороженое",
+"pl":"lody, lód",
+"de":"Eis, Speiseeis, Eiscreme",
+"fr":"glace, crème glacée",
+"it":"gelato",
+"cs":"zmrzlina",
+"tr":"dondurma",
+"es":"helado"
+},
+"c":{
+"en":"frozen dessert made from cream",
+"ru":"десерт",
+"pl":"mrożony deser",
+"de":"Speiseeis",
+"fr":"dessert glacé",
+"it":"dolce freddo",
+"cs":"mražený dezert",
+"tr":"soğuk tatlı",
+"es":"postre congelado"
+}
+},
+{
+"w":"taart",
+"d":"Een meestal rond, zoet gebak dat vaak bij feestelijke gelegenheden wordt gegeten, gemaakt van deeg en belegd of gevuld met bijvoorbeeld slagroom, fruit of crème.",
+"t":{
+"en":"cake, pie, tart",
+"ru":"торт, пирог",
+"pl":"tort, ciasto, tarta",
+"de":"Kuchen, Torte",
+"fr":"gâteau, tarte",
+"it":"torta, crostata",
+"cs":"dort, koláč",
+"tr":"pasta, turta, kek",
+"es":"tarta, pastel, torta"
+},
+"c":{
+"en":"sweet, sponge-based or layered, often for birthdays",
+"ru":"сладкое кондитерское изделие с кремом",
+"pl":"słodkie ciasto z kremem, często na urodziny",
+"de":"allgemeines süßes Gebäck aus Teig",
+"fr":"pâtisserie sucrée, souvent pour les anniversaires",
+"it":"dolce lievitato o farcito, tipico dei compleanni",
+"cs":"sladký pečený dezert, často k narozeninám",
+"tr":"doğum günü veya kutlamalar için yapılan kremalı tatlı",
+"es":"pastel dulce y redondo, a menudo para cumpleaños"
+}
+},
+{
+"w":"vegetariër",
+"d":"Iemand die geen vlees of vis eet.",
+"t":{
+"en":"vegetarian",
+"ru":"вегетарианец",
+"pl":"wegetarianin, wegetarianka",
+"de":"Vegetarier, Vegetarierin",
+"fr":"végétarien, végétarienne",
+"it":"vegetariano",
+"cs":"vegetarián, vegetariánka",
+"tr":"vejetaryen",
+"es":"vegetariano, vegetariana"
+},
+"c":{
+"en":"person who does not eat meat",
+"ru":"человек, исключивший из рациона мясо",
+"pl":"mężczyzna niejedzący mięsa i ryb",
+"de":"männliche oder allgemeine Form",
+"fr":"homme ou personne en général",
+"it":"persona che non mangia carne o pesce",
+"cs":"člověk, který nejí maso",
+"tr":"et ve balık yemeyen kişi",
+"es":"persona que no come carne ni pescado"
+}
+},
+{
+"w":"eten",
+"d":"voedsel via de mond tot zich nemen en doorslikken",
+"t":{
+"en":"eat, consume",
+"ru":"есть, кушать, питаться",
+"pl":"jeść, zjadać",
+"de":"essen, speisen, verzehren",
+"fr":"manger, consommer",
+"it":"mangiare, consumare",
+"cs":"jíst, konzumovat",
+"tr":"yemek, tüketmek",
+"es":"comer, alimentarse"
+},
+"c":{
+"en":"to consume food",
+"ru":"принимать пищу",
+"pl":"spożywać pokarm",
+"de":"Nahrung zu sich nehmen",
+"fr":"consommer un aliment",
+"it":"nutrirsi di alimenti solidi o semisolidi",
+"cs":"přijímat potravu ústy",
+"tr":"yiyecek tüketmek",
+"es":"ingerir alimentos"
+}
+},
+{
+"w":"drinken",
+"d":"Een vloeistof via de mond innemen en doorslikken.",
+"t":{
+"en":"drink, consume",
+"ru":"пить, выпить",
+"pl":"pić, napić się",
+"de":"trinken",
+"fr":"boire",
+"it":"bere",
+"cs":"pít, napít se",
+"tr":"içmek",
+"es":"beber, tomar"
+},
+"c":{
+"en":"consume liquid",
+"ru":"употреблять жидкость",
+"pl":"spożywać płyny",
+"de":"Flüssigkeit zu sich nehmen",
+"fr":"consommer un liquide",
+"it":"ingerire liquidi",
+"cs":"přijímat tekutinu",
+"tr":"sıvı tüketmek",
+"es":"ingerir líquidos"
+}
+},
+{
+"w":"lusten",
+"d":"Lekker vinden (van eten of drinken) of trek hebben in iets.",
+"t":{
+"en":"like, fancy, care for",
+"ru":"любить, хотеть",
+"pl":"lubić, mieć ochotę na, smakować",
+"de":"mögen, Lust haben auf, schmecken",
+"fr":"aimer, avoir envie de, vouloir",
+"it":"andare di, piacere, volere",
+"cs":"mít chuť na, mít rád, jíst",
+"tr":"sevmek, canı çekmek, yemek istemek",
+"es":"gustar, apetecer, comer"
+},
+"c":{
+"en":"general preference for a specific food or drink",
+"ru":"о еде",
+"pl":"mieć upodobanie do określonego jedzenia lub picia",
+"de":"eine allgemeine Vorliebe für ein bestimmtes Essen oder Getränk haben",
+"fr":"avoir du goût pour un aliment ou une boisson",
+"it":"avere voglia di mangiare o bere qualcosa in un dato momento",
+"cs":"chtít konkrétní jídlo nebo pití v daný moment",
+"tr":"belirli bir yiyecek veya içeceği genel olarak beğenmek",
+"es":"preferencia general por una comida o bebida"
+}
+},
+{
+"w":"proeven",
+"d":"De smaak van eten of drinken testen door er een klein beetje van te nemen.",
+"t":{
+"en":"taste, sample, try",
+"ru":"пробовать, дегустировать",
+"pl":"próbować, kosztować, degustować",
+"de":"probieren, kosten",
+"fr":"goûter, déguster",
+"it":"assaggiare, gustare",
+"cs":"ochutnat, ochutnávat, degustovat",
+"tr":"tatmak, tadına bakmak",
+"es":"probar, degustar, saborear"
+},
+"c":{
+"en":"action of testing flavor",
+"ru":"тестировать вкус",
+"pl":"testować smak potrawy",
+"de":"eine kleine Menge essen oder trinken, um den Geschmack zu testen",
+"fr":"tester la saveur",
+"it":"provare un cibo o una bevanda",
+"cs":"zkusit malé množství jídla či pití",
+"tr":"lezzetini kontrol etmek",
+"es":"acción de testar el sabor de comida o bebida"
+}
+},
+{
+"w":"mager",
+"d":"met weinig lichaamsvet, vaak op een manier die ongezond of tenger oogt",
+"t":{
+"en":"thin, skinny, lean, slender",
+"ru":"худой, тощий, худощавый",
+"pl":"chudy, wychudzony, szczupły",
+"de":"mager, dünn, dürr, hager",
+"fr":"maigre, mince, squelettique",
+"it":"magro, scheletrico, esile",
+"cs":"hubený, vyzáblý, štíhlý",
+"tr":"zayıf, sıska, çelimsiz",
+"es":"flaco, delgado, enjuto"
+},
+"c":{
+"en":"general term for having little fat",
+"ru":"общий термин для человека с малым весом",
+"pl":"ogólne określenie osoby o niskiej wadze",
+"de":"sehr dünn, oft mit sichtbaren Knochen",
+"fr":"qui manque de chair ou de graisse",
+"it":"con poco grasso corporeo, esile",
+"cs":"obecný výraz pro člověka s nízkou váhou",
+"tr":"vücudunda az yağ olan kişi için genel terim",
+"es":"término general para alguien con poca grasa o carne"
+}
+},
+{
+"w":"vet",
+"d":"bedekt met of bevattend veel olie of vet",
+"t":{
+"en":"greasy, oily, fatty",
+"ru":"жирный, засаленный",
+"pl":"tłusty, zatłuszczony",
+"de":"fettig, ölig",
+"fr":"gras, huileux",
+"it":"grasso, unto, oleoso",
+"cs":"mastný",
+"tr":"yağlı",
+"es":"graso, aceitoso, grasiento"
+},
+"c":{
+"en":"covered in or containing grease",
+"ru":"содержащий много жира или испачканный им",
+"pl":"pokryty tłuszczem lub zawierający go dużo, np. włosy, palce, jedzenie",
+"de":"mit Fett bedeckt oder viel Fett enthaltend",
+"fr":"imbu de graisse ou huileux",
+"it":"che contiene molto grasso o olio",
+"cs":"pokrytý tukem nebo olejem",
+"tr":"yağla kaplanmış veya çok yağ içeren",
+"es":"que tiene grasa o es propio de ella"
+}
+},
+{
+"w":"flauw",
+"d":"Zonder veel smaak, meestal door een gebrek aan zout of kruiden.",
+"t":{
+"en":"bland, tasteless",
+"ru":"пресный, безвкусный",
+"pl":"mdły, bezsmakowy, jałowy",
+"de":"fade, fad, geschmacklos",
+"fr":"fade, insipide",
+"it":"insipido, sciapo",
+"cs":"fádní, neslaný, bez chuti",
+"tr":"tatsız, yavan, tatsız tuzsuz",
+"es":"soso, insípido"
+},
+"c":{
+"en":"lacking flavor or zest",
+"ru":"безвкусный, недосоленный (о еде)",
+"pl":"bez wyrazu, niedosolony (o jedzeniu)",
+"de":"geschmacklos oder wenig gewürzt",
+"fr":"sans saveur ou de peu de goût",
+"it":"privo di sapore o di sale",
+"cs":"bez chuti, nevýrazný (o jídle)",
+"tr":"lezzeti veya tuzu olmayan yiyecekler için",
+"es":"que no tiene suficiente sal o sabor"
+}
+},
+{
+"w":"bitter",
+"d":"Met een scherpe, niet zoete smaak die men vaak achter in de mond proeft; één van de vijf basissmaken.",
+"t":{
+"en":"bitter",
+"ru":"горький",
+"pl":"gorzki",
+"de":"bitter, herb",
+"fr":"amer",
+"it":"amaro",
+"cs":"hořký",
+"tr":"acı",
+"es":"amargo"
+},
+"c":{
+"en":"taste",
+"ru":"вкус",
+"pl":"o smaku",
+"de":"Geschmack",
+"fr":"goût",
+"it":"riferito al sapore",
+"cs":"o chuti",
+"tr":"tat",
+"es":"sabor"
+}
+},
+{
+"w":"zout",
+"d":"Met de smaak van zout of zout bevattend.",
+"t":{
+"en":"salty, salt",
+"ru":"солёный",
+"pl":"słony",
+"de":"salzig, salzartig",
+"fr":"salé",
+"it":"salato",
+"cs":"slaný",
+"tr":"tuzlu",
+"es":"salado, salino"
+},
+"c":{
+"en":"taste",
+"ru":"вкус",
+"pl":"smak",
+"de":"Geschmack",
+"fr":"goût",
+"it":"sapore",
+"cs":"chuť",
+"tr":"tat",
+"es":"sabor"
+}
+},
+{
+"w":"zuur",
+"d":"Met een smaak zoals die van citroen, azijn of onrijp fruit.",
+"t":{
+"en":"sour, tart",
+"ru":"кислый",
+"pl":"kwaśny",
+"de":"sauer",
+"fr":"acide, sur, aigre",
+"it":"acido, aspro",
+"cs":"kyselý",
+"tr":"ekşi",
+"es":"ácido, agrio"
+},
+"c":{
+"en":"taste",
+"ru":"о вкусе",
+"pl":"o smaku",
+"de":"Geschmack",
+"fr":"saveur",
+"it":"di sapore",
+"cs":"o chuti",
+"tr":"tat",
+"es":"sabor"
+}
+},
+{
+"w":"zoet",
+"d":"met een smaak zoals die van suiker; een van de vijf basissmaken",
+"t":{
+"en":"sweet, sugary",
+"ru":"сладкий",
+"pl":"słodki",
+"de":"süß",
+"fr":"sucré, doux",
+"it":"dolce, zuccherato",
+"cs":"sladký",
+"tr":"tatlı",
+"es":"dulce"
+},
+"c":{
+"en":"taste",
+"ru":"о вкусе",
+"pl":"o smaku",
+"de":"Geschmack",
+"fr":"qui a le goût du sucre",
+"it":"gusto",
+"cs":"o chuti",
+"tr":"tat olarak",
+"es":"sabor"
+}
+},
+{
+"w":"lekker",
+"d":"met een aangename smaak",
+"t":{
+"en":"tasty, delicious, yummy",
+"ru":"вкусный, аппетитный, лакомый",
+"pl":"smaczny, pyszny, apetyczny",
+"de":"lecker, köstlich, schmackhaft",
+"fr":"bon, délicieux, savoureux",
+"it":"buono, delizioso, gustoso",
+"cs":"chutný, dobrý, lahodný",
+"tr":"lezzetli, nefis, tatlı",
+"es":"rico, sabroso, delicioso"
+},
+"c":{
+"en":"having a pleasant flavor",
+"ru":"имеющий приятный вкус",
+"pl":"mający dobry smak",
+"de":"gut schmeckend",
+"fr":"agréable au goût",
+"it":"riferito a cibo dal sapore gradevole",
+"cs":"mající dobrou chuť",
+"tr":"tadı güzel olan yiyecekler için",
+"es":"delicioso o sabroso al gusto"
+}
+},
+{
+"w":"heerlijk",
+"d":"Erg smakelijk; met een heel goede smaak.",
+"t":{
+"en":"delicious, tasty",
+"ru":"восхитительный, вкуснейший",
+"pl":"pyszny, wyśmienity, pysznie",
+"de":"köstlich, lecker, schmackhaft",
+"fr":"délicieux, excellent, savoureux",
+"it":"delizioso, squisito, buonissimo",
+"cs":"lahodný, vynikající, výborný",
+"tr":"lezzetli, nefis, enfes",
+"es":"delicioso, rico, exquisito"
+},
+"c":{
+"en":"highly pleasant to the taste",
+"ru":"о еде или напитках",
+"pl":"o jedzeniu lub napojach",
+"de":"von hervorragendem Geschmack",
+"fr":"très agréable au goût",
+"it":"riferito a cibo o bevande dal gusto eccellente",
+"cs":"o jídle nebo pití",
+"tr":"yiyecek veya içecekler için",
+"es":"referido a la comida o bebida"
+}
+},
+{
+"w":"vies",
+"d":"Met een onaangename smaak of geur; niet lekker.",
+"t":{
+"en":"nasty, gross, foul",
+"ru":"противный, невкусный, неприятный",
+"pl":"niesmaczny, obrzydliwy, nieprzyjemny",
+"de":"eklig, unangenehm, widerlich",
+"fr":"mauvais, dégoûtant",
+"it":"cattivo, disgustoso, schifoso",
+"cs":"odporný, nechutný, nepříjemný",
+"tr":"kötü, iğrenç, pis",
+"es":"malo, desagradable, asqueroso"
+},
+"c":{
+"en":"unpleasant to taste or smell",
+"ru":"вызывающий отвращение",
+"pl":"o jedzeniu lub piciu",
+"de":"Ekel erregend in Geschmack oder Geruch",
+"fr":"pour le goût ou l'odeur",
+"it":"riferito a sapore o odore",
+"cs":"způsobující odpor, o chuti či zápachu",
+"tr":"tat veya koku için",
+"es":"con mal sabor u olor"
+}
+},
+{
+"w":"vegetarisch",
+"d":"Zonder vlees of vis, of geschikt voor mensen die geen dieren eten.",
+"t":{
+"en":"vegetarian",
+"ru":"вегетарианский",
+"pl":"wegetariański",
+"de":"vegetarisch",
+"fr":"végétarien",
+"it":"vegetariano",
+"cs":"vegetariánský",
+"tr":"vejetaryen, etsiz",
+"es":"vegetariano"
+},
+"c":{
+"en":"containing no meat or fish",
+"ru":"не содержащий мяса",
+"pl":"pozbawiony mięsa i ryb",
+"de":"ohne Fleisch und Fisch",
+"fr":"sans viande ni poisson",
+"it":"riferito a cibo o stile di vita senza carne o pesce",
+"cs":"bez masa a ryb",
+"tr":"et veya balık içermeyen yiyecek veya beslenme tarzı",
+"es":"referido a la comida o régimen alimentario sin carne ni pescado"
+}
+}
+]

@@ -3,9 +3,9 @@ import WordListPage from '../../../components/pages/WordListPage.astro';
 import { orderedSlugs } from '../../../data/wordLists';
 
 export function getStaticPaths() {
-  return orderedSlugs('english').map((list) => ({ params: { list } }));
+  return orderedSlugs('dutch').map((list) => ({ params: { list } }));
 }
 
 const list = Astro.params.list as string;
 ---
-<WordListPage locale="en" language="english" slug={list} />
+<WordListPage locale="en" language="dutch" slug={list} />
