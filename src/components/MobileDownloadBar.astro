@@ -117,4 +117,15 @@ void locale;
     }
     syncCta();
   }
+
+  document.querySelectorAll<HTMLAnchorElement>('.mobile-cta__btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const platform = btn.classList.contains('mobile-cta__btn--gold') ? 'ios' : 'android';
+      window.gtag?.('event', 'download_click', {
+        platform,
+        location: 'mobile_bar',
+        page_path: window.location.pathname
+      });
+    });
+  });
 </script>

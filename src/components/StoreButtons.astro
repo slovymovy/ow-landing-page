@@ -136,6 +136,7 @@ const labels = {
       const platform = btn.classList.contains('store-btn--gold') ? 'ios' : 'android';
       window.gtag?.('event', 'download_click', {
         platform,
+        location: 'store_buttons',
         page_path: window.location.pathname
       });
     });

@@ -185,6 +185,17 @@ const copy = homeCopy[locale];
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') { closeDropdowns(); closeDrawer(); }
   });
+
+  document.querySelectorAll<HTMLAnchorElement>('.drawer__btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const platform = btn.classList.contains('drawer__btn--gold') ? 'ios' : 'android';
+      window.gtag?.('event', 'download_click', {
+        platform,
+        location: 'nav_drawer',
+        page_path: window.location.pathname
+      });
+    });
+  });
 </script>
 
 <style>
