@@ -1,0 +1,347 @@
+[
+{
+"w":"ogłoszenie",
+"d":"pisemny komunikat umieszczony w miejscu publicznym lub wiadomość rozpowszechniona przez media, często o charakterze reklamowym lub informacyjnym",
+"t":{
+"en":"advertisement, notice, ad, advert",
+"nl":"advertentie, aankondiging, mededeling",
+"ru":"объявление",
+"de":"Anzeige, Annonce, Inserat, Aushang",
+"fr":"annonce, avis",
+"it":"annuncio, avviso, inserzione",
+"cs":"inzerát, oznámení, vyhláška",
+"tr":"ilan, duyuru",
+"es":"anuncio, aviso"
+}
+},
+{
+"w":"wolny",
+"d":"Taki, z którego nikt w danej chwili nie korzysta; dostępny do użycia.",
+"t":{
+"en":"free, vacant, available",
+"nl":"vrij, onbezet",
+"ru":"свободный",
+"de":"frei",
+"fr":"libre, vacant",
+"it":"libero, sfitto",
+"cs":"volný",
+"tr":"boş, serbest",
+"es":"libre, vacante"
+}
+},
+{
+"w":"czynsz",
+"d":"regularna opłata uiszczana właścicielowi za wynajem mieszkania, lokalu lub innego pomieszczenia",
+"t":{
+"en":"rent",
+"nl":"huur, huurprijs",
+"ru":"арендная плата, квартплата",
+"de":"Miete, Mietzins",
+"fr":"loyer",
+"it":"affitto, canone, pigione, fitto",
+"cs":"nájemné, činže, nájem",
+"tr":"kira, kira bedeli",
+"es":"alquiler, arriendo"
+}
+},
+{
+"w":"opłata",
+"d":"Kwota pieniężna, którą należy zapłacić za wykonanie określonej usługi, świadczenie lub prawo do korzystania z czegoś.",
+"t":{
+"en":"fee, charge, payment",
+"nl":"vergoeding, tarief, kosten, toeslag",
+"ru":"плата, сбор",
+"de":"Gebühr, Abgabe, Entgelt",
+"fr":"frais, taxe, redevance, paiement",
+"it":"tassa, tariffa, pagamento, quota",
+"cs":"poplatek, poplatky",
+"tr":"ücret, harç, bedel",
+"es":"tarifa, tasa, comisión, cuota"
+}
+},
+{
+"w":"prąd",
+"d":"Energia elektryczna zasilająca urządzenia, budynki i oświetlenie lub fizyczny przepływ ładunków elektrycznych.",
+"t":{
+"en":"electricity, current, power",
+"nl":"stroom, elektriciteit",
+"ru":"электричество, ток, электроэнергия",
+"de":"Strom, Elektrizität",
+"fr":"courant, électricité",
+"it":"corrente, elettricità",
+"cs":"proud, elektřina",
+"tr":"elektrik, akım, elektrik enerjisi",
+"es":"corriente, luz, electricidad"
+}
+},
+{
+"w":"miesięcznie",
+"d":"w każdym miesiącu lub w przeliczeniu na okres jednego miesiąca",
+"t":{
+"en":"monthly, a month, per month",
+"nl":"per maand, maandelijks",
+"ru":"в месяц, ежемесячно",
+"de":"monatlich, pro Monat",
+"fr":"par mois, mensuellement, chaque mois",
+"it":"al mese, mensilmente",
+"cs":"měsíčně, za měsíc, každý měsíc",
+"tr":"ayda, aylık, her ay",
+"es":"al mes, mensualmente"
+}
+},
+{
+"w":"gaz",
+"d":"Substancja lotna używana powszechnie jako paliwo do ogrzewania domów, gotowania na kuchenkach lub napędzania samochodów.",
+"t":{
+"en":"gas, natural gas",
+"nl":"gas",
+"ru":"газ",
+"de":"Gas, Erdgas",
+"fr":"gaz, gaz naturel",
+"it":"gas, metano",
+"cs":"plyn, zemní plyn",
+"tr":"gaz, doğal gaz",
+"es":"gas"
+}
+},
+{
+"w":"zwrotny",
+"d":"Związany z oddawaniem czegoś, przeznaczony do odesłania lub umożliwiający zwrot.",
+"t":{
+"en":"return, returnable, refundable",
+"nl":"retour-, restitueerbaar, statiegeld-",
+"ru":"обратный, возвратный",
+"de":"Rück-, erstattbar, Mehrweg-",
+"fr":"de retour, remboursable, consigné",
+"it":"di ritorno, rimborsabile, vuoto a rendere",
+"cs":"zpáteční, vratný",
+"tr":"iade, geri",
+"es":"de devolución, reembolsable, retornable"
+}
+},
+{
+"w":"odpowiadać",
+"d":"Być dla kogoś właściwym, dogodnym lub podobać się komuś",
+"t":{
+"en":"suit, be convenient",
+"nl":"schikken, bevallen, passen",
+"ru":"подходить, устраивать",
+"de":"passen, entsprechen, zusagen",
+"fr":"convenir, aller",
+"it":"andare bene, soddisfare",
+"cs":"vyhovovat, hodit se",
+"tr":"uymak, uygun olmak, hitap etmek",
+"es":"venir bien, parecer bien, convenir"
+}
+},
+{
+"w":"blok",
+"d":"Duży, wielopiętrowy budynek mieszkalny, typowy dla miejskich osiedli.",
+"t":{
+"en":"block of flats, apartment building, tower block",
+"nl":"flatgebouw, flat, woonblok",
+"ru":"многоэтажка, многоквартирный дом, панельный дом",
+"de":"Wohnblock, Block, Hochhaus",
+"fr":"immeuble, barre d'immeubles, bloc",
+"it":"condominio, palazzina, palazzo",
+"cs":"panelák, činžák, bytovka, blok",
+"tr":"blok, apartman, site",
+"es":"bloque de pisos, bloque de viviendas, edificio de apartamentos"
+}
+},
+{
+"w":"standard",
+"d":"Powszechnie przyjęta norma, wzorzec lub poziom jakości, który muszą spełniać towary lub usługi.",
+"t":{
+"en":"standard, norm",
+"nl":"standaard, norm",
+"ru":"стандарт, норма, уровень",
+"de":"Standard, Norm, Maßstab",
+"fr":"standard, norme, standing",
+"it":"standard, norma, livello",
+"cs":"standard, norma",
+"tr":"standart, norm, ölçüt",
+"es":"estándar, norma, nivel"
+}
+},
+{
+"w":"połączony",
+"d":"Imiesłów przymiotnikowy bierny od czasownika <w>połączyć</w>; oznaczający, że elementy zostały ze sobą zintegrowane, zestawione lub tworzą całość.",
+"t":{
+"en":"connected, linked, combined",
+"nl":"verbonden, samengevoegd, gekoppeld",
+"ru":"соединённый, связанный, объединённый",
+"de":"verbunden, vereinigt",
+"fr":"relié, lié, uni, connecté",
+"it":"collegato, connesso, unito",
+"cs":"spojený, propojený, související",
+"tr":"bağlı, birleşik, bağlantılı",
+"es":"conectado, unido, vinculado"
+}
+},
+{
+"w":"umowa",
+"d":"Wzajemne zobowiązanie dwóch lub więcej osób do zrobienia czegoś lub zachowywania się w określony sposób; dokument potwierdzający to zobowiązanie.",
+"t":{
+"en":"agreement, contract, deal",
+"nl":"overeenkomst, contract",
+"ru":"договор, контракт",
+"de":"Vertrag, Abkommen, Vereinbarung",
+"fr":"contrat, accord, convention",
+"it":"contratto, accordo",
+"cs":"smlouva, dohoda, kontrakt, úmluva",
+"tr":"sözleşme, anlaşma, kontrat",
+"es":"contrato, acuerdo, convenio"
+}
+},
+{
+"w":"zabezpieczenie",
+"d":"Gwarancja finansowa lub prawna, która zapewnia spłatę długu w przypadku niewypłacalności dłużnika.",
+"t":{
+"en":"collateral, security, guarantee",
+"nl":"onderpand, zekerheid, garantie",
+"ru":"обеспечение, залог, гарантия",
+"de":"Sicherheit, Absicherung, Sicherstellung",
+"fr":"garantie, sûreté, caution",
+"it":"garanzia, collaterale, fideiussione",
+"cs":"zajištění, zástava, ručení",
+"tr":"teminat, güvence, rehin",
+"es":"garantía, aval, fianza, colateral"
+}
+},
+{
+"w":"protokół",
+"d":"Pisemne sprawozdanie z przebiegu zebrania, rozprawy sądowej lub czynności urzędowej, zawierające opis wydarzeń, wnioski i decyzje.",
+"t":{
+"en":"minutes, protocol, record, report",
+"nl":"notulen, proces-verbaal, protocol",
+"ru":"протокол",
+"de":"Protokoll, Niederschrift",
+"fr":"procès-verbal, compte-rendu, protocole",
+"it":"verbale, protocollo",
+"cs":"protokol, zápis",
+"tr":"tutanak, protokol",
+"es":"acta, atestado, protocolo"
+}
+},
+{
+"w":"klucz",
+"d":"przyrząd służący do zamykania i otwierania zamka w drzwiach, kłódkach lub sejfach",
+"t":{
+"en":"key",
+"nl":"sleutel",
+"ru":"ключ",
+"de":"Schlüssel",
+"fr":"clé, clef",
+"it":"chiave",
+"cs":"klíč",
+"tr":"anahtar",
+"es":"llave"
+}
+},
+{
+"w":"przeprowadzka",
+"d":"Zmiana miejsca zamieszkania lub siedziby.",
+"t":{
+"en":"move, relocation, removal",
+"nl":"verhuizing, verhuizing",
+"ru":"переезд",
+"de":"Umzug, Wohnungswechsel",
+"fr":"déménagement",
+"it":"trasloco, trasferimento",
+"cs":"stěhování",
+"tr":"taşınma, nakil",
+"es":"mudanza, traslado"
+}
+},
+{
+"w":"zużycie",
+"d":"Ilość wykorzystanych zasobów, takich jak woda, prąd, gaz czy paliwo.",
+"t":{
+"en":"consumption, usage",
+"nl":"verbruik, consumptie",
+"ru":"потребление, расход",
+"de":"Verbrauch, Konsum",
+"fr":"consommation",
+"it":"consumo",
+"cs":"spotřeba",
+"tr":"tüketim, sarfiyat",
+"es":"consumo, gasto"
+}
+},
+{
+"w":"ogrzewanie",
+"d":"urządzenie lub instalacja techniczna, która zapewnia ciepło w budynku lub pomieszczeniu",
+"t":{
+"en":"heating, heating system",
+"nl":"verwarming, verwarmingssysteem",
+"ru":"отопление, система отопления",
+"de":"Heizung, Heizungsanlage, Heizsystem",
+"fr":"chauffage, système de chauffage",
+"it":"riscaldamento, impianto di riscaldamento",
+"cs":"topení, vytápění",
+"tr":"ısıtma sistemi, kalorifer, ısıtma",
+"es":"calefacción, sistema de calefacción"
+}
+},
+{
+"w":"koszt",
+"d":"Suma pieniędzy, którą trzeba zapłacić za towar, usługę lub w związku z prowadzeniem jakiejś działalności.",
+"t":{
+"en":"cost, expense, charge, price",
+"nl":"kosten, kostprijs, uitgave",
+"ru":"расходы, стоимость, затраты",
+"de":"Kosten, Aufwand, Ausgabe",
+"fr":"coût, frais, dépense",
+"it":"costo, spesa, importo",
+"cs":"náklad, cena, výdaj",
+"tr":"maliyet, masraf, gider",
+"es":"costo, coste, gasto"
+}
+},
+{
+"w":"posprzątać",
+"d":"Doprowadzić miejsce lub pomieszczenie do porządku i czystości, układając rzeczy i usuwając brud.",
+"t":{
+"en":"clean up, tidy up, clean",
+"nl":"opruimen, schoonmaken",
+"ru":"убрать, убраться, прибраться",
+"de":"aufräumen, saubermachen, reinigen",
+"fr":"nettoyer, ranger, faire le ménage",
+"it":"pulire, mettere in ordine, ordinare, sistemare",
+"cs":"uklidit, uklidit si",
+"tr":"temizlemek, toplamak, çekip çevirmek",
+"es":"limpiar, ordenar, recoger"
+}
+},
+{
+"w":"dodatek",
+"d":"Rzecz dołączona do czegoś innego w celu uzupełnienia, ulepszenia lub ozdobienia całości; także coś, co występuje oprócz czegoś głównego.",
+"t":{
+"en":"addition, accessory, in addition",
+"nl":"accessoire, toevoeging, bovendien",
+"ru":"дополнение, аксессуар, вдобавок",
+"de":"Accessoire, Zusatz, Ergänzung",
+"fr":"accessoire, complément, en plus",
+"it":"accessorio, aggiunta, inoltre",
+"cs":"doplněk, přídavek, navíc",
+"tr":"aksesuar, ek, üstelik",
+"es":"accesorio, complemento, añadidura"
+}
+},
+{
+"w":"wezwanie",
+"d":"Oficjalne pismo lub polecenie nakazujące stawienie się w urzędzie, sądzie lub innym miejscu, albo nakazujące wykonanie określonej czynności.",
+"t":{
+"en":"summons, subpoena, citation",
+"nl":"dagvaarding, aanmaning, oproep",
+"ru":"повестка, требование, вызов",
+"de":"Vorladung, Ladung, Mahnung",
+"fr":"convocation, sommation, ajournement",
+"it":"ingiunzione, citazione, convocazione, diffida",
+"cs":"předvolání, výzva",
+"tr":"tebligat, çağrı, ihtarname, davetiye",
+"es":"citación, requerimiento, emplazamiento"
+}
+}
+]

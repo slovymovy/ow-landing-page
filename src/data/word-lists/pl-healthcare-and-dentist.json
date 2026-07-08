@@ -1,0 +1,1595 @@
+[
+{
+"w":"katar",
+"d":"dolegliwość zdrowotna polegająca na zapaleniu błony śluzowej nosa, objawiająca się wyciekiem wydzieliny i zatkaniem nosa",
+"t":{
+"en":"runny nose, cold, catarrh",
+"nl":"neusverkoudheid, loopneus, verkoudheid",
+"ru":"насморк, ринит",
+"de":"Schnupfen, Rhinitis",
+"fr":"rhume, rhinite",
+"it":"raffreddore, rinite",
+"cs":"rýma, katar",
+"tr":"nezle, grip, rinit",
+"es":"resfriado, catarro, rinitis"
+}
+},
+{
+"w":"gorączka",
+"d":"Stan chorobowy, w którym temperatura ciała jest wyższa niż normalna (zwykle powyżej 38°C).",
+"t":{
+"en":"fever, temperature",
+"nl":"koorts, verhoging",
+"ru":"температура, жар, лихорадка",
+"de":"Fieber, erhöhte Temperatur",
+"fr":"fièvre, température",
+"it":"febbre",
+"cs":"horečka, teplota",
+"tr":"ateş, humma",
+"es":"fiebre, temperatura"
+}
+},
+{
+"w":"ból",
+"d":"Przykre doznanie zmysłowe spowodowane urazem, chorobą lub uszkodzeniem organizmu.",
+"t":{
+"en":"pain, ache",
+"nl":"pijn",
+"ru":"боль",
+"de":"Schmerz",
+"fr":"douleur, mal",
+"it":"dolore, male",
+"cs":"bolest",
+"tr":"ağrı, acı, sancı",
+"es":"dolor"
+}
+},
+{
+"w":"nudności",
+"d":"Nieprzyjemne uczucie w żołądku i gardle, objawiające się potrzebą zwymiotowania.",
+"t":{
+"en":"nausea, queasiness",
+"nl":"misselijkheid, nausea",
+"ru":"тошнота, дурнота",
+"de":"Übelkeit, Brechreiz",
+"fr":"nausées, mal au cœur",
+"it":"nausea, controstomaco",
+"cs":"nevolnost, nauzea",
+"tr":"bulantı, mide bulantısı",
+"es":"náuseas, ganas de vomitar"
+},
+"c":{
+"nl":"de gebruikelijke medische term",
+"de":"der übliche medizinische Begriff",
+"es":"el término médico habitual"
+}
+},
+{
+"w":"mdłości",
+"d":"uczucie dyskomfortu w żołądku i potrzeby zwymiotowania",
+"t":{
+"en":"nausea, sickness",
+"nl":"misselijkheid, nausea",
+"ru":"тошнота",
+"de":"Übelkeit, Brechreiz",
+"fr":"nausée, mal au cœur",
+"it":"nausea",
+"cs":"nevolnost, žaludeční nevolnost",
+"tr":"mide bulantısı, bulantı",
+"es":"náuseas, ganas de vomitar"
+},
+"c":{
+"nl":"alledaags synoniem",
+"de":"alltägliches Synonym",
+"es":"sinónimo más coloquial"
+}
+},
+{
+"w":"zmęczenie",
+"d":"Stan braku energii i osłabienia organizmu spowodowany wysiłkiem fizycznym lub umysłowym.",
+"t":{
+"en":"tiredness, fatigue, weariness",
+"nl":"vermoeidheid, moeheid",
+"ru":"усталость, утомление",
+"de":"Müdigkeit, Ermüdung, Erschöpfung",
+"fr":"fatigue, épuisement",
+"it":"stanchezza, affaticamento",
+"cs":"únava, vyčerpání",
+"tr":"yorgunluk, bitkinlik",
+"es":"cansancio, fatiga"
+}
+},
+{
+"w":"biegunka",
+"d":"Częste wypróżnianie stolcem o rzadkiej konsystencji, będące zwykle objawem zatrucia lub choroby.",
+"t":{
+"en":"diarrhea, diarrhoea",
+"nl":"diarree, buikloop",
+"ru":"понос, диарея",
+"de":"Durchfall, Diarrhö",
+"fr":"diarrhée, colique",
+"it":"diarrea, sciolta",
+"cs":"průjem",
+"tr":"ishal, amel, cır cır",
+"es":"diarrea, cagalera"
+}
+},
+{
+"w":"wymioty",
+"d":"Gwałtowny wyrzut treści pokarmowej z żołądka przez usta, będący często objawem choroby lub zatrucia.",
+"t":{
+"en":"vomiting, throwing up",
+"nl":"braken, overgeven, vomeren",
+"ru":"рвота",
+"de":"Erbrechen",
+"fr":"vomissement, vomissements",
+"it":"vomito",
+"cs":"zvracení, vomitus",
+"tr":"kusma, istifra",
+"es":"vómito, vómitos"
+}
+},
+{
+"w":"złamanie",
+"d":"miejsce, w którym złamała się kość; uszkodzenie kości",
+"t":{
+"en":"fracture, break",
+"nl":"breuk, fractuur",
+"ru":"перелом",
+"de":"Bruch, Fraktur",
+"fr":"fracture",
+"it":"frattura",
+"cs":"zlomenina, fraktura",
+"tr":"kırık",
+"es":"fractura, rotura"
+}
+},
+{
+"w":"ciśnienie",
+"d":"Parametr medyczny określający siłę, z jaką krew napiera na ściany tętnic.",
+"t":{
+"en":"blood pressure, pressure",
+"nl":"bloeddruk",
+"ru":"давление, артериальное давление",
+"de":"Blutdruck",
+"fr":"tension artérielle, tension, pression artérielle",
+"it":"pressione, pressione del sangue, pressione arteriosa",
+"cs":"tlak, krevní tlak",
+"tr":"tansiyon, kan basıncı",
+"es":"presión arterial, tensión sanguínea, presión"
+}
+},
+{
+"w":"temperatura",
+"d":"Podwyższona ciepłota ciała będąca objawem choroby lub infekcji.",
+"t":{
+"en":"temperature, fever",
+"nl":"koorts, temperatuur",
+"ru":"температура",
+"de":"Temperatur, Fieber",
+"fr":"température, fièvre",
+"it":"temperatura, febbre",
+"cs":"teplota, horečka",
+"tr":"ateş, vücut sıcaklığı",
+"es":"temperatura, fiebre"
+}
+},
+{
+"w":"znieczulenie",
+"d":"Medyczne wprowadzenie pacjenta w stan braku odczuwania bólu, zazwyczaj przed zabiegiem lub operacją",
+"t":{
+"en":"anesthesia, anaesthetic, painkiller",
+"nl":"anesthesie, verdoving, narcose",
+"ru":"анестезия, обезболивание, наркоз",
+"de":"Betäubung, Anästhesie, Narkose",
+"fr":"anesthésie, insensibilisation",
+"it":"anestesia, narcosi",
+"cs":"anestezie, znecitlivění, narkóza",
+"tr":"anestezi, narkoz, lokal anestezi",
+"es":"anestesia"
+}
+},
+{
+"w":"przytomność",
+"d":"stan fizjologiczny, w którym człowiek jest świadomy, czuwa i reaguje na bodźce zewnętrzne",
+"t":{
+"en":"consciousness, senses",
+"nl":"bewustzijn, kennis",
+"ru":"сознание, чувства",
+"de":"Bewusstsein",
+"fr":"conscience, connaissance",
+"it":"coscienza, sensi",
+"cs":"vědomí, smysly",
+"tr":"bilinç, şuur",
+"es":"conocimiento, conciencia, sentido"
+},
+"c":{
+"it":"coscienza fisica: essere svegli e vigili",
+"tr":"baygın olmama, uyanıklık"
+}
+},
+{
+"w":"świadomość",
+"d":"Stan fizjologiczny, w którym człowiek jest przytomny, reaguje na bodźce i ma kontakt z otoczeniem.",
+"t":{
+"en":"consciousness",
+"nl":"bewustzijn",
+"ru":"сознание",
+"de":"Bewusstsein, Besinnung",
+"fr":"connaissance, conscience",
+"it":"coscienza, sensi",
+"cs":"vědomí",
+"tr":"bilinç, şuur",
+"es":"conocimiento, conciencia"
+},
+"c":{
+"it":"consapevolezza mentale",
+"tr":"farkındalık, bilinçli olma"
+}
+},
+{
+"w":"ostry",
+"d":"O chorobie lub bólu: pojawiający się nagle, mający gwałtowny przebieg i duże nasilenie",
+"t":{
+"en":"acute, sharp",
+"nl":"acuut, hevig, scherp",
+"ru":"острый, сильный",
+"de":"akut, heftig, stark",
+"fr":"aigu, vif, intense",
+"it":"acuto, forte",
+"cs":"ostrý, akutní, prudký",
+"tr":"akut, şiddetli, keskin",
+"es":"agudo"
+}
+},
+{
+"w":"tępy",
+"d":"O bólu, dźwięku lub uczuciu: przytłumiony, niezbyt silny, ale dokuczliwy i długotrwały; niebędący ostrym ani przenikliwym.",
+"t":{
+"en":"dull",
+"nl":"doof, zeurend, dof",
+"ru":"тупой",
+"de":"stumpf, dumpf",
+"fr":"sourd, sourde",
+"it":"sordo, ottuso",
+"cs":"tupý",
+"tr":"künt, boğuk",
+"es":"sordo, vago"
+}
+},
+{
+"w":"choroba",
+"d":"Stan organizmu polegający na nieprawidłowym funkcjonowaniu narządów lub układów, będący przeciwieństwem zdrowia.",
+"t":{
+"en":"disease, illness, sickness",
+"nl":"ziekte, aandoening, kwaal",
+"ru":"болезнь, заболевание, недуг",
+"de":"Krankheit, Erkrankung, Leiden",
+"fr":"maladie, affection, pathologie",
+"it":"malattia, patologia, infermità",
+"cs":"nemoc, onemocnění, choroba",
+"tr":"hastalık, rahatsızlık, maraz",
+"es":"enfermedad, dolencia, afección"
+}
+},
+{
+"w":"wada",
+"d":"Nieprawidłowa budowa lub złe funkcjonowanie jakiegoś narządu w organizmie żywej istoty",
+"t":{
+"en":"defect, impairment",
+"nl":"afwijking, defect, gebrek",
+"ru":"порок, нарушение, дефект",
+"de":"Fehler, Defekt, Schwäche",
+"fr":"malformation, défaut, trouble",
+"it":"difetto, vizio, malformazione",
+"cs":"vada, porucha, defekt",
+"tr":"kusur, bozukluk, anomali",
+"es":"defecto, anomalía, malformación"
+}
+},
+{
+"w":"nowotwór",
+"d":"Choroba polegająca na niekontrolowanym podziale komórek organizmu, prowadząca do powstania chorobowej tkanki (guza).",
+"t":{
+"en":"tumor, neoplasm, cancer",
+"nl":"tumor, gezwel, kanker, nieuwvorming",
+"ru":"опухоль, новообразование, рак",
+"de":"Tumor, Neubildung, Krebs",
+"fr":"tumeur, néoplasme, cancer, néoplasie",
+"it":"tumore, neoplasia, cancro",
+"cs":"nádor, novotvar, rakovina",
+"tr":"tümör, kanser, ur",
+"es":"tumor, neoplasia, cáncer"
+}
+},
+{
+"w":"guz",
+"d":"Chorobowa narośl tkanki, która może być nowotworem łagodnym lub złośliwym.",
+"t":{
+"en":"tumor, tumour",
+"nl":"tumor, gezwel",
+"ru":"опухоль, новообразование",
+"de":"Tumor, Geschwulst",
+"fr":"tumeur",
+"it":"tumore, nodulo",
+"cs":"nádor, tumor",
+"tr":"tümör, ur",
+"es":"tumor, bulto"
+}
+},
+{
+"w":"rak",
+"d":"Poważna choroba, nowotwór złośliwy, który niszczy tkanki organizmu.",
+"t":{
+"en":"cancer",
+"nl":"kanker",
+"ru":"рак",
+"de":"Krebs, Krebserkrankung",
+"fr":"cancer",
+"it":"cancro, tumore",
+"cs":"rakovina, rak",
+"tr":"kanser",
+"es":"cáncer"
+}
+},
+{
+"w":"zawał",
+"d":"Miejscowa martwica tkanek serca lub innego narządu wskutek braku dopływu krwi.",
+"t":{
+"en":"heart attack, infarction, infarct",
+"nl":"infarct, hartaanval",
+"ru":"инфаркт",
+"de":"Infarkt, Herzinfarkt",
+"fr":"infarctus",
+"it":"infarto",
+"cs":"infarkt",
+"tr":"enfarktüs, kriz",
+"es":"infarto"
+}
+},
+{
+"w":"udar",
+"d":"Nagły stan chorobowy zagrażający życiu, spowodowany zatrzymaniem dopływu krwi do mózgu lub pęknięciem naczynia krwionośnego; termin ten określa również skutki silnego przegrzania organizmu.",
+"t":{
+"en":"stroke, heatstroke, sunstroke",
+"nl":"beroerte, herseninfarct, slag",
+"ru":"инсульт, удар",
+"de":"Schlaganfall, Schlag, Hirninfarkt",
+"fr":"accident vasculaire cérébral, AVC, insolation, coup de chaleur",
+"it":"ictus, colpo, insolazione",
+"cs":"mrtvice, úder, porážka",
+"tr":"inme, felç, çarpma",
+"es":"derrame cerebral, ictus, insolación, golpe de calor"
+}
+},
+{
+"w":"padaczka",
+"d":"Przewlekła choroba neurologiczna, która objawia się powtarzającymi się napadami drgawek i zaburzeniami świadomości.",
+"t":{
+"en":"epilepsy",
+"nl":"epilepsie, vallende ziekte",
+"ru":"эпилепсия",
+"de":"Epilepsie",
+"fr":"épilepsie",
+"it":"epilessia",
+"cs":"epilepsie, padoucnice",
+"tr":"epilepsi, sara",
+"es":"epilepsia"
+}
+},
+{
+"w":"torbiel",
+"d":"patologiczna przestrzeń w ciele wypełniona płynem, stanowiąca miękki guz w kształcie błoniastego woreczka",
+"t":{
+"en":"cyst",
+"nl":"cyste",
+"ru":"киста",
+"de":"Zyste",
+"fr":"kyste",
+"it":"cisti",
+"cs":"cysta",
+"tr":"kist",
+"es":"quiste"
+}
+},
+{
+"w":"ciąża",
+"d":"Stan fizjologiczny kobiety lub samicy ssaka trwający od zapłodnienia do porodu.",
+"t":{
+"en":"pregnancy",
+"nl":"zwangerschap",
+"ru":"беременность",
+"de":"Schwangerschaft, Trächtigkeit",
+"fr":"grossesse",
+"it":"gravidanza, gestazione, stato interessante",
+"cs":"těhotenství, březost",
+"tr":"gebelik, hamilelik",
+"es":"embarazo, gestación"
+}
+},
+{
+"w":"termin",
+"d":"Data lub przedział czasu wyznaczony na wykonanie jakiejś czynności albo moment, w którym coś ma nastąpić.",
+"t":{
+"en":"deadline, date, expiry date, term",
+"nl":"termijn, datum, uiterste datum, vervaldatum",
+"ru":"срок, дата",
+"de":"Termin, Frist, Ablaufdatum",
+"fr":"date, délai, échéance, date de péremption",
+"it":"scadenza, termine, data",
+"cs":"termín, lhůta, datum",
+"tr":"süre, tarih, vade, randevu",
+"es":"plazo, término, fecha"
+}
+},
+{
+"w":"wizyta",
+"d":"Umówione spotkanie z lekarzem lub innym specjalistą w celu badania albo konsultacji.",
+"t":{
+"en":"appointment, visit",
+"nl":"afspraak, consult, bezoek",
+"ru":"приём, визит",
+"de":"Termin, Arztbesuch, Besuch",
+"fr":"consultation, rendez-vous, visite",
+"it":"visita, appuntamento",
+"cs":"návštěva, objednání",
+"tr":"randevu, muayene, ziyaret",
+"es":"consulta, cita, visita"
+}
+},
+{
+"w":"wolny",
+"d":"Taki, z którego nikt w danej chwili nie korzysta; dostępny do użycia.",
+"t":{
+"en":"free, vacant, available",
+"nl":"vrij, onbezet",
+"ru":"свободный",
+"de":"frei",
+"fr":"libre, vacant",
+"it":"libero, sfitto",
+"cs":"volný",
+"tr":"boş, serbest",
+"es":"libre, vacante"
+}
+},
+{
+"w":"zajęty",
+"d":"Taki, z którego ktoś już korzysta lub który jest zarezerwowany (o miejscu, przedmiocie lub linii telefonicznej).",
+"t":{
+"en":"occupied, busy, taken",
+"nl":"bezet, ingesprek",
+"ru":"занятый",
+"de":"besetzt",
+"fr":"occupé, pris",
+"it":"occupato",
+"cs":"obsazený",
+"tr":"dolu, meşgul",
+"es":"ocupado"
+}
+},
+{
+"w":"dostępny",
+"d":"taki, z którego można w danej chwili skorzystać (o zasobach, opcjach)",
+"t":{
+"en":"available",
+"nl":"beschikbaar",
+"ru":"доступный",
+"de":"verfügbar, vorhanden",
+"fr":"disponible, accessible",
+"it":"disponibile",
+"cs":"dostupný, k dispozici",
+"tr":"mevcut, kullanılabilir",
+"es":"disponible"
+}
+},
+{
+"w":"oczekiwanie",
+"d":"Rzeczownik odczasownikowy od słowa <w>oczekiwać</w>; czynność czekania na kogoś lub na coś, często z nadzieją lub niecierpliwością.",
+"t":{
+"en":"waiting, anticipation, expectation",
+"nl":"het wachten, de verwachting",
+"ru":"ожидание",
+"de":"Warten, Erwartung",
+"fr":"attente",
+"it":"attesa, aspettativa",
+"cs":"čekání, očekávání",
+"tr":"bekleyiş, bekleme",
+"es":"espera"
+}
+},
+{
+"w":"poczekalnia",
+"d":"Pomieszczenie lub wyznaczone miejsce przeznaczone dla osób oczekujących na coś, na przykład na pociąg, autobus lub wizytę lekarską.",
+"t":{
+"en":"waiting room, waiting area, lounge",
+"nl":"wachtkamer, wachtzaal, wachtruimte",
+"ru":"зал ожидания, приёмная, ожидальня",
+"de":"Wartezimmer, Wartesaal, Wartebereich",
+"fr":"salle d'attente",
+"it":"sala d'attesa, sala d'aspetto",
+"cs":"čekárna",
+"tr":"bekleme salonu, bekleme odası",
+"es":"sala de espera"
+}
+},
+{
+"w":"ubezpieczenie",
+"d":"System lub umowa gwarantująca wypłatę odszkodowania w przypadku poniesienia szkody materialnej, wypadku, choroby lub innego zdarzenia losowego.",
+"t":{
+"en":"insurance",
+"nl":"verzekering, polis",
+"ru":"страхование, страховка",
+"de":"Versicherung",
+"fr":"assurance",
+"it":"assicurazione, polizza",
+"cs":"pojištění, pojistka",
+"tr":"sigorta",
+"es":"seguro"
+}
+},
+{
+"w":"skierowanie",
+"d":"Pisemne polecenie lekarskie lub urzędowe, uprawniające do wizyty u specjalisty, wykonania badań lub przyjęcia do placówki (np. szpitala, sanatorium).",
+"t":{
+"en":"referral",
+"nl":"verwijzing, verwijsbrief",
+"ru":"направление",
+"de":"Überweisung, Einweisung",
+"fr":"lettre d'orientation, ordonnance, recommandation",
+"it":"impegnativa, richiesta medica, invio",
+"cs":"žádanka, doporučení, poukaz",
+"tr":"sevk belgesi, sevk",
+"es":"volante, derivación, orden de remisión"
+}
+},
+{
+"w":"recepta",
+"d":"Pisemne polecenie wystawione przez lekarza, upoważniające pacjenta do zakupu określonych leków w aptece.",
+"t":{
+"en":"prescription",
+"nl":"recept",
+"ru":"рецепт",
+"de":"Rezept",
+"fr":"ordonnance",
+"it":"ricetta, ricetta medica",
+"cs":"recept",
+"tr":"reçete",
+"es":"receta, prescripción"
+}
+},
+{
+"w":"badanie",
+"d":"Sprawdzenie stanu zdrowia pacjenta przez lekarza lub za pomocą specjalistycznej aparatury.",
+"t":{
+"en":"examination, test",
+"nl":"onderzoek, test",
+"ru":"обследование, анализ, осмотр",
+"de":"Untersuchung, Analyse, Test",
+"fr":"examen, analyse, auscultation",
+"it":"esame, analisi, visita",
+"cs":"vyšetření, odběr, prohlídka",
+"tr":"muayene, tahlil, tetkik",
+"es":"análisis, examen, exploración"
+}
+},
+{
+"w":"wynik",
+"d":"Dane i informacje uzyskane w trakcie badań laboratoryjnych, medycznych lub naukowych.",
+"t":{
+"en":"results, findings",
+"nl":"resultaten, uitslag",
+"ru":"результат",
+"de":"Ergebnis, Befund",
+"fr":"résultat",
+"it":"risultato, esito",
+"cs":"výsledek, výsledky",
+"tr":"sonuç, bulgu",
+"es":"resultado"
+}
+},
+{
+"w":"kontrola",
+"d":"Działanie polegające na sprawdzeniu stanu faktycznego, jakości czegoś lub zgodności z określonymi przepisami i normami.",
+"t":{
+"en":"inspection, check, control",
+"nl":"controle, inspectie, keuring",
+"ru":"проверка, контроль, инспекция",
+"de":"Kontrolle, Überprüfung, Inspektion",
+"fr":"contrôle, inspection, vérification",
+"it":"controllo, ispezione, verifica",
+"cs":"kontrola, prohlídka, inspekce",
+"tr":"kontrol, denetim, muayene",
+"es":"control, inspección, chequeo"
+}
+},
+{
+"w":"wywiad",
+"d":"Część badania lekarskiego polegająca na rozmowie z pacjentem w celu ustalenia historii jego chorób i dolegliwości.",
+"t":{
+"en":"medical history, anamnesis, interview",
+"nl":"anamnese, medische voorgeschiedenis",
+"ru":"анамнез, опрос",
+"de":"Anamnese, Krankengeschichte",
+"fr":"anamnèse, interrogatoire, enquête",
+"it":"anamnesi",
+"cs":"anamnéza, lékařské vyšetření",
+"tr":"anamnez, hasta öyküsü",
+"es":"anamnesis, historial clínico"
+}
+},
+{
+"w":"karta",
+"d":"Dokument, formularz lub legitymacja zawierająca dane osobowe i uprawnienia do korzystania z określonych usług.",
+"t":{
+"en":"card, pass",
+"nl":"kaart, pas, ticket",
+"ru":"билет, талон, карта",
+"de":"Karte, Ausweis, Ticket",
+"fr":"carte, carte d'accès, carte d'embarquement",
+"it":"tessera, carta",
+"cs":"karta, průkazka, palubní lístek",
+"tr":"kart, kartı",
+"es":"carné, carnet, tarjeta"
+}
+},
+{
+"w":"szpital",
+"d":"zakład lecznictwa zamkniętego służący badaniu i leczeniu pacjentów wymagających hospitalizacji",
+"t":{
+"en":"hospital",
+"nl":"ziekenhuis, hospitaal, kliniek",
+"ru":"больница, госпиталь",
+"de":"Krankenhaus, Spital, Hospital",
+"fr":"hôpital, clinique",
+"it":"ospedale, nosocomio",
+"cs":"nemocnice, špitál",
+"tr":"hastane",
+"es":"hospital, clínica"
+}
+},
+{
+"w":"apteka",
+"d":"Placówka handlowa lub instytucja zajmująca się przygotowywaniem, przechowywaniem i sprzedażą leków oraz materiałów medycznych.",
+"t":{
+"en":"pharmacy, chemist's, drugstore",
+"nl":"apotheek",
+"ru":"аптека",
+"de":"Apotheke",
+"fr":"pharmacie",
+"it":"farmacia",
+"cs":"lékárna",
+"tr":"eczane",
+"es":"farmacia"
+}
+},
+{
+"w":"lekarz",
+"d":"Osoba posiadająca wykształcenie medyczne, która zawodowo zajmuje się rozpoznawaniem i leczeniem chorób.",
+"t":{
+"en":"doctor, physician",
+"nl":"arts, dokter, geneesheer",
+"ru":"врач, доктор",
+"de":"Arzt, Mediziner, Doktor",
+"fr":"médecin, docteur",
+"it":"medico, dottore",
+"cs":"lékař, doktor",
+"tr":"doktor, hekim, tabip",
+"es":"médico, doctor"
+}
+},
+{
+"w":"pielęgniarka",
+"d":"Kobieta sprawująca podstawową opiekę medyczną nad pacjentami",
+"t":{
+"en":"nurse",
+"nl":"verpleegster, verpleegkundige",
+"ru":"медсестра",
+"de":"Krankenschwester, Pflegekraft",
+"fr":"infirmière",
+"it":"infermiera",
+"cs":"zdravotní sestra, sestra",
+"tr":"hemşire",
+"es":"enfermera"
+}
+},
+{
+"w":"karetka",
+"d":"Specjalny samochód wyposażony w sprzęt medyczny, służący do przewozu chorych lub rannych do szpitala.",
+"t":{
+"en":"ambulance",
+"nl":"ambulance, ziekenauto",
+"ru":"скорая помощь, машина скорой помощи, неотложка",
+"de":"Krankenwagen, Rettungswagen, Ambulanz",
+"fr":"ambulance",
+"it":"ambulanza, autoambulanza",
+"cs":"sanitka, ambulance",
+"tr":"ambulans, cankurtaran",
+"es":"ambulancia"
+}
+},
+{
+"w":"pogotowie",
+"d":"Instytucja lub służba udzielająca natychmiastowej pomocy w nagłych wypadkach, zwłaszcza medycznych.",
+"t":{
+"en":"ambulance service, emergency service, ambulance, emergency",
+"nl":"spoedgevallendienst, ambulance, ziekenwagen",
+"ru":"скорая помощь, скорая, аварийная служба",
+"de":"Rettungsdienst, Notdienst, Bereitschaftsdienst",
+"fr":"les urgences, le SAMU, les secours, service de dépannage",
+"it":"pronto soccorso, ambulanza, servizio di emergenza",
+"cs":"pohotovost, záchranka",
+"tr":"ambulans, acil servis, acil yardım",
+"es":"servicio de urgencias, urgencias, ambulancia"
+}
+},
+{
+"w":"głowa",
+"d":"Część ciała człowieka lub zwierzęcia, zazwyczaj znajdująca się na górze lub z przodu, zawierająca mózg oraz główne narządy zmysłów.",
+"t":{
+"en":"head",
+"nl":"hoofd, kop",
+"ru":"голова",
+"de":"Kopf, Haupt",
+"fr":"tête",
+"it":"testa, capo",
+"cs":"hlava",
+"tr":"baş, kafa",
+"es":"cabeza"
+}
+},
+{
+"w":"gardło",
+"d":"Odcinek szyi łączący jamę ustną z przełykiem i krtanią, przez który przechodzi powietrze i pokarm.",
+"t":{
+"en":"throat, pharynx",
+"nl":"keel",
+"ru":"горло",
+"de":"Hals, Rachen, Kehle, Gurgel",
+"fr":"gorge, gosier",
+"it":"gola",
+"cs":"krk, hrdlo",
+"tr":"boğaz",
+"es":"garganta"
+}
+},
+{
+"w":"brzuch",
+"d":"Dolna część tułowia człowieka lub zwierzęcia, w której znajdują się narządy trawienne.",
+"t":{
+"en":"stomach, belly, abdomen",
+"nl":"buik",
+"ru":"живот, брюхо",
+"de":"Bauch, Leib",
+"fr":"ventre, abdomen",
+"it":"pancia, addome, ventre",
+"cs":"břicho, bříško",
+"tr":"karın",
+"es":"barriga, vientre, estómago"
+}
+},
+{
+"w":"plecy",
+"d":"Tylna część tułowia człowieka lub zwierzęcia, rozciągająca się od ramion do pasa",
+"t":{
+"en":"back",
+"nl":"rug",
+"ru":"спина",
+"de":"Rücken",
+"fr":"dos",
+"it":"schiena, dorso",
+"cs":"záda, hřbet",
+"tr":"sırt",
+"es":"espalda"
+}
+},
+{
+"w":"klatka",
+"d":"Górna część tułowia chroniąca serce i płuca; potoczne określenie klatki piersiowej.",
+"t":{
+"en":"chest, rib cage",
+"nl":"borstkas, borst",
+"ru":"грудная клетка, грудь",
+"de":"Brustkorb, Brust",
+"fr":"cage thoracique, poitrine",
+"it":"gabbia toracica, cassa toracica, petto",
+"cs":"hrudník, hruď",
+"tr":"göğüs kafesi, göğüs",
+"es":"caja torácica, pecho"
+}
+},
+{
+"w":"noga",
+"d":"Kończyna dolna człowieka lub zwierzęcia, służąca do stania i chodzenia.",
+"t":{
+"en":"leg, paw",
+"nl":"been, poot",
+"ru":"нога, лапа",
+"de":"Bein, Pfote, Lauf",
+"fr":"jambe, patte, pied",
+"it":"gamba, zampa",
+"cs":"noha, tlapa",
+"tr":"bacak, ayak, pati",
+"es":"pierna, pata"
+}
+},
+{
+"w":"ręka",
+"d":"Cała kończyna górna od barku do palców.",
+"t":{
+"en":"arm",
+"nl":"arm",
+"ru":"рука",
+"de":"Arm, Hand",
+"fr":"bras, main",
+"it":"braccio, mano",
+"cs":"ruka, paže",
+"tr":"kol, el",
+"es":"brazo, brazos"
+}
+},
+{
+"w":"ramię",
+"d":"Cała kończyna górna, często używane w liczbie mnogiej w kontekście obejmowania.",
+"t":{
+"en":"arms, arm",
+"nl":"arm, armen",
+"ru":"рука, объятия",
+"de":"Arm, Arme",
+"fr":"bras",
+"it":"braccio, braccia",
+"cs":"náruč, paže, náručí",
+"tr":"kol, kucak",
+"es":"brazos"
+}
+},
+{
+"w":"ucho",
+"d":"Zewnętrzny narząd słuchu u ludzi i zwierząt, znajdujący się po obu stronach głowy.",
+"t":{
+"en":"ear",
+"nl":"oor",
+"ru":"ухо",
+"de":"Ohr",
+"fr":"oreille",
+"it":"orecchio",
+"cs":"ucho",
+"tr":"kulak",
+"es":"oreja, oído"
+}
+},
+{
+"w":"oko",
+"d":"Narząd wzroku u ludzi i zwierząt, służący do odbierania bodźców świetlnych",
+"t":{
+"en":"eye",
+"nl":"oog",
+"ru":"глаз, око",
+"de":"Auge",
+"fr":"œil",
+"it":"occhio",
+"cs":"oko",
+"tr":"göz",
+"es":"ojo"
+}
+},
+{
+"w":"nos",
+"d":"Wystająca część twarzy człowieka lub pyska zwierzęcia, w której znajdują się nozdrza; narząd służący do oddychania i wąchania.",
+"t":{
+"en":"nose, snout",
+"nl":"neus",
+"ru":"нос",
+"de":"Nase",
+"fr":"nez",
+"it":"naso",
+"cs":"nos, čumák",
+"tr":"burun",
+"es":"nariz, hocico, morro"
+}
+},
+{
+"w":"usta",
+"d":"Część twarzy służąca do jedzenia, oddychania i mówienia; otwór gębowy.",
+"t":{
+"en":"mouth",
+"nl":"mond",
+"ru":"рот, уста",
+"de":"Mund",
+"fr":"bouche",
+"it":"bocca",
+"cs":"ústa, pusa",
+"tr":"ağız",
+"es":"boca"
+}
+},
+{
+"w":"policzek",
+"d":"Każda z dwóch bocznych części twarzy, znajdująca się poniżej oka i obok nosa.",
+"t":{
+"en":"cheek",
+"nl":"wang",
+"ru":"щека",
+"de":"Wange, Backe",
+"fr":"joue",
+"it":"guancia, gota",
+"cs":"tvář, líce",
+"tr":"yanak",
+"es":"mejilla, cachete"
+}
+},
+{
+"w":"nadgarstek",
+"d":"część ręki pomiędzy przedramieniem a dłonią",
+"t":{
+"en":"wrist",
+"nl":"pols",
+"ru":"запястье",
+"de":"Handgelenk, Handwurzel",
+"fr":"poignet",
+"it":"polso",
+"cs":"zápěstí",
+"tr":"bilek, el bileği",
+"es":"muñeca"
+}
+},
+{
+"w":"szyja",
+"d":"Część ciała łącząca głowę z tułowiem.",
+"t":{
+"en":"neck",
+"nl":"nek, hals",
+"ru":"шея",
+"de":"Hals",
+"fr":"cou",
+"it":"collo",
+"cs":"krk, šíje",
+"tr":"boyun",
+"es":"cuello"
+}
+},
+{
+"w":"serce",
+"d":"Centralny narząd układu krwionośnego, który pompuje krew w organizmie.",
+"t":{
+"en":"heart",
+"nl":"hart",
+"ru":"сердце",
+"de":"Herz",
+"fr":"cœur",
+"it":"cuore",
+"cs":"srdce",
+"tr":"kalp, yürek",
+"es":"corazón"
+}
+},
+{
+"w":"płuco",
+"d":"Narząd oddechowy u ludzi i zwierząt kręgowych, znajdujący się w klatce piersiowej, służący do wymiany gazowej.",
+"t":{
+"en":"lung",
+"nl":"long",
+"ru":"лёгкое",
+"de":"Lunge",
+"fr":"poumon",
+"it":"polmone",
+"cs":"plíce",
+"tr":"akciğer",
+"es":"pulmón"
+}
+},
+{
+"w":"żołądek",
+"d":"część układu pokarmowego, w której gromadzi się i trawi pokarm",
+"t":{
+"en":"stomach, belly",
+"nl":"maag",
+"ru":"желудок",
+"de":"Magen",
+"fr":"estomac",
+"it":"stomaco",
+"cs":"žaludek",
+"tr":"mide",
+"es":"estómago"
+}
+},
+{
+"w":"wątroba",
+"d":"Duży, wielofunkcyjny gruczoł występujący u kręgowców, pełniący kluczową rolę w metabolizmie i oczyszczaniu krwi.",
+"t":{
+"en":"liver",
+"nl":"lever",
+"ru":"печень",
+"de":"Leber",
+"fr":"foie",
+"it":"fegato",
+"cs":"játra",
+"tr":"karaciğer",
+"es":"hígado"
+}
+},
+{
+"w":"trzustka",
+"d":"Gruczoł położony w jamie brzusznej, który produkuje enzymy trawienne oraz hormony, takie jak insulina.",
+"t":{
+"en":"pancreas",
+"nl":"alvleesklier, pancreas",
+"ru":"поджелудочная железа",
+"de":"Bauchspeicheldrüse, Pankreas",
+"fr":"pancréas",
+"it":"pancreas",
+"cs":"slinivka břišní, slinivka, pankreas",
+"tr":"pankreas",
+"es":"páncreas"
+}
+},
+{
+"w":"oskrzele",
+"d":"Część dolnych dróg oddechowych; parzysty przewód w kształcie rury, który doprowadza powietrze z tchawicy do płuc.",
+"t":{
+"en":"bronchus, bronchi",
+"nl":"bronchus, luchtwegvertakking",
+"ru":"бронх",
+"de":"Bronchie",
+"fr":"bronche",
+"it":"bronco",
+"cs":"průduška",
+"tr":"bronş",
+"es":"bronquio"
+}
+},
+{
+"w":"pęcherz",
+"d":"Elastyczny narząd wewnętrzny gromadzący mocz przed jego wydaleniem z organizmu",
+"t":{
+"en":"bladder",
+"nl":"blaas, urineblaas",
+"ru":"мочевой пузырь",
+"de":"Harnblase, Blase",
+"fr":"vessie",
+"it":"vescica, vescica urinaria",
+"cs":"močový měchýř, měchýř",
+"tr":"mesane, idrar torbası",
+"es":"vejiga, vejiga urinaria"
+}
+},
+{
+"w":"zatoka",
+"d":"Pusta przestrzeń w kościach czaszki wypełniona powietrzem, połączona z jamą nosową.",
+"t":{
+"en":"sinus",
+"nl":"bijholte, sinus",
+"ru":"пазуха",
+"de":"Nebenhöhle, Sinus",
+"fr":"sinus",
+"it":"seno",
+"cs":"dutina, sinus",
+"tr":"sinüs",
+"es":"seno"
+}
+},
+{
+"w":"mocz",
+"d":"Płynna wydzielina nerek wydalana z organizmu, zawierająca zbędne produkty przemiany materii.",
+"t":{
+"en":"urine",
+"nl":"urine, plas",
+"ru":"моча",
+"de":"Urin, Harn",
+"fr":"urine",
+"it":"urina, orina",
+"cs":"moč",
+"tr":"idrar, sidik",
+"es":"orina"
+}
+},
+{
+"w":"naczynie",
+"d":"Przewód w organizmie ludzi, zwierząt lub roślin transportujący płyny ustrojowe, takie jak krew lub limfa.",
+"t":{
+"en":"vessel",
+"nl":"vat, ader",
+"ru":"сосуд",
+"de":"Gefäß, Blutgefäß, Lymphgefäß",
+"fr":"vaisseau",
+"it":"vaso",
+"cs":"céva",
+"tr":"damar",
+"es":"vaso"
+}
+},
+{
+"w":"kostka",
+"d":"Wypukła kość po obu stronach nogi, łącząca stopę z łydką.",
+"t":{
+"en":"ankle",
+"nl":"enkel",
+"ru":"щиколотка, лодыжка",
+"de":"Knöchel, Fußknöchel",
+"fr":"cheville",
+"it":"caviglia",
+"cs":"kotník",
+"tr":"ayak bileği, aşılık kemiği",
+"es":"tobillo"
+}
+},
+{
+"w":"lek",
+"d":"Substancja lub preparat stosowany do leczenia chorób, łagodzenia dolegliwości lub profilaktyki zdrowotnej.",
+"t":{
+"en":"medicine, medication, drug",
+"nl":"medicijn, geneesmiddel, medicament",
+"ru":"лекарство, препарат, медикамент",
+"de":"Medikament, Arzneimittel, Medizin",
+"fr":"médicament, remède",
+"it":"farmaco, medicina, medicinale",
+"cs":"lék, léčivo, medikament",
+"tr":"ilaç, medikaman",
+"es":"medicamento, medicina, fármaco"
+}
+},
+{
+"w":"tabletka",
+"d":"Mała porcja leku lub innej substancji w formie sprasowanego krążka, przeznaczona do połknięcia.",
+"t":{
+"en":"tablet, pill",
+"nl":"tablet, pil",
+"ru":"таблетка, пилюля",
+"de":"Tablette, Pille",
+"fr":"comprimé, pilule, pastille",
+"it":"compressa, pillola, pasticca",
+"cs":"tableta, pilulka, prášek",
+"tr":"hap, tablet",
+"es":"pastilla, comprimido, tableta"
+}
+},
+{
+"w":"dawka",
+"d":"Określona ilość lekarstwa, substancji chemicznej lub promieniowania podawana lub przyjmowana przez organizm jednorazowo lub w określonym czasie.",
+"t":{
+"en":"dose, dosage",
+"nl":"dosis, dosering",
+"ru":"доза, порция",
+"de":"Dosis, Portion",
+"fr":"dose",
+"it":"dose, dosaggio",
+"cs":"dávka",
+"tr":"doz, ölçek",
+"es":"dosis, toma"
+}
+},
+{
+"w":"stosować",
+"d":"Używać czegoś, np. metody, środka, leku lub przepisu, w konkretnym celu lub w określonej sytuacji.",
+"t":{
+"en":"apply, use",
+"nl":"toepassen, gebruiken",
+"ru":"применять, использовать",
+"de":"anwenden, verwenden, benutzen",
+"fr":"appliquer, utiliser, employer",
+"it":"applicare, usare, impiegare",
+"cs":"používat, aplikovat, uplatňovat",
+"tr":"uygulamak, kullanmak",
+"es":"aplicar, utilizar, emplear"
+}
+},
+{
+"w":"regularnie",
+"d":"W powtarzających się, stałych odstępach czasu; systematycznie.",
+"t":{
+"en":"regularly, systematically",
+"nl":"regelmatig, systematisch",
+"ru":"регулярно, систематически",
+"de":"regelmäßig, systematisch",
+"fr":"régulièrement, systématiquement",
+"it":"regolarmente, sistematicamente",
+"cs":"pravidelně, systematicky",
+"tr":"düzenli olarak, düzenli, periyodik olarak",
+"es":"regularmente, sistemáticamente"
+}
+},
+{
+"w":"płyn",
+"d":"Substancja w stanie ciekłym, która nie ma własnego kształtu i przybiera formę naczynia; w życiu codziennym często oznacza napój lub płynny środek czystości.",
+"t":{
+"en":"liquid, fluid",
+"nl":"vloeistof, vocht",
+"ru":"жидкость",
+"de":"Flüssigkeit",
+"fr":"liquide",
+"it":"liquido, fluido",
+"cs":"tekutina, kapalina, přípravek",
+"tr":"sıvı, sıvı içecek",
+"es":"líquido"
+}
+},
+{
+"w":"plaster",
+"d":"Kawałek materiału z warstwą klejącą i opatrunkiem, naklejany na drobne rany lub skaleczenia w celu ich ochrony.",
+"t":{
+"en":"plaster, sticking plaster, adhesive bandage, Band-Aid",
+"nl":"pleister, kleefpleister",
+"ru":"пластырь, лейкопластырь",
+"de":"Pflaster, Wundschnellverband, Verbandpflaster",
+"fr":"pansement, sparadrap, emplâtre",
+"it":"cerotto",
+"cs":"náplast",
+"tr":"yara bandı, plaster",
+"es":"tirita, curita, esparadrapo, emplasto"
+}
+},
+{
+"w":"witamina",
+"d":"związek organiczny niezbędny dla prawidłowego funkcjonowania organizmu żywego",
+"t":{
+"en":"vitamin",
+"nl":"vitamine",
+"ru":"витамин",
+"de":"Vitamin",
+"fr":"vitamine",
+"it":"vitamina",
+"cs":"vitamin, vitamín",
+"tr":"vitamin",
+"es":"vitamina"
+}
+},
+{
+"w":"żel",
+"d":"Kosmetyk lub środek leczniczy o konsystencji galaretowatej substancji",
+"t":{
+"en":"gel",
+"nl":"gel",
+"ru":"гель",
+"de":"Gel",
+"fr":"gel",
+"it":"gel",
+"cs":"gel",
+"tr":"jel",
+"es":"gel"
+}
+},
+{
+"w":"operacja",
+"d":"Zabieg medyczny polegający na ingerencji chirurgicznej w organizm pacjenta w celu leczenia lub poprawy funkcjonowania narządów.",
+"t":{
+"en":"operation, surgery",
+"nl":"operatie, ingreep",
+"ru":"операция, хирургическое вмешательство",
+"de":"Operation, Eingriff",
+"fr":"opération, intervention chirurgicale",
+"it":"operazione, intervento chirurgico",
+"cs":"operace, zákrok",
+"tr":"ameliyat, operasyon",
+"es":"operación, intervención quirúrgica"
+}
+},
+{
+"w":"zabieg",
+"d":"Czynność lecznicza, diagnostyczna, pielęgnacyjna lub kosmetyczna wykonywana na ciele pacjenta.",
+"t":{
+"en":"procedure, treatment, operation",
+"nl":"behandeling, ingreep, procedure",
+"ru":"процедура, операция, вмешательство",
+"de":"Behandlung, Eingriff, Prozedur",
+"fr":"intervention, procédure, soin, opération",
+"it":"trattamento, intervento, procedura",
+"cs":"zákrok, procedura, operace",
+"tr":"prosedür, operasyon, müdahale, işlem",
+"es":"tratamiento, intervención, operación, procedimiento"
+}
+},
+{
+"w":"przeszczep",
+"d":"Zabieg medyczny polegający na przeniesieniu narządu lub tkanki w całości lub w części z jednego organizmu do drugiego.",
+"t":{
+"en":"transplant, transplantation",
+"nl":"transplantatie, overplanting",
+"ru":"пересадка, трансплантация",
+"de":"Transplantation, Übertragung",
+"fr":"greffe, transplantation",
+"it":"trapianto",
+"cs":"transplantace, transplantování, přesazení",
+"tr":"nakil, transplantasyon",
+"es":"trasplante, injerto"
+}
+},
+{
+"w":"usunięcie",
+"d":"rzeczownik odczasownikowy od <w>usunąć</w>; czynność polegająca na sprawieniu, że kogoś lub czegoś nie ma w danym miejscu, zbiorze lub systemie",
+"t":{
+"en":"removal, deletion, extraction",
+"nl":"verwijdering, eliminatie, extractie",
+"ru":"удаление, устранение",
+"de":"Entfernung, Beseitigung, Löschung",
+"fr":"suppression, extraction, élimination, retrait",
+"it":"rimozione, eliminazione, estrazione",
+"cs":"odstranění, smazání, vymazání, eliminace",
+"tr":"çıkarma, silme, giderme, uzaklaştırma",
+"es":"eliminación, extracción, retirada"
+}
+},
+{
+"w":"założyć",
+"d":"Zamontować urządzenie techniczne, instalację lub umieścić element medyczny w odpowiednim miejscu, aby spełniał swoją funkcję.",
+"t":{
+"en":"install, put on, apply",
+"nl":"aanbrengen, installeren, zetten",
+"ru":"установить, наложить, поставить",
+"de":"anbringen, anlegen, installieren",
+"fr":"poser, installer, mettre",
+"it":"installare, mettere, applicare",
+"cs":"nasadit, dát, nainstalovat",
+"tr":"takmak, alçıya almak, atmak, kurmak",
+"es":"poner, instalar, colocar"
+}
+},
+{
+"w":"reagować",
+"d":"Odpowiadać zachowaniem, słowem lub czynem na jakiś bodziec, sytuację lub czyjeś działanie.",
+"t":{
+"en":"react, respond",
+"nl":"reageren, antwoorden",
+"ru":"реагировать, отзываться",
+"de":"reagieren, ansprechen",
+"fr":"réagir",
+"it":"reagire, rispondere",
+"cs":"reagovat, odpovídat",
+"tr":"tepki vermek, reaksiyon göstermek, tepki göstermek",
+"es":"reaccionar, responder"
+}
+},
+{
+"w":"skutek",
+"d":"Wynik jakiegoś działania, zdarzenia lub procesu; to, co nastąpiło jako następstwo czegoś.",
+"t":{
+"en":"effect, consequence, result",
+"nl":"gevolg, effect, consequentie",
+"ru":"последствие, результат, следствие",
+"de":"Folge, Auswirkung, Ergebnis, Konsequenz",
+"fr":"conséquence, effet, résultat, corollaire",
+"it":"effetto, conseguenza, risultato",
+"cs":"následek, důsledek, výsledek",
+"tr":"sonuç, etki, sonraki durum",
+"es":"consecuencia, efecto, resultado"
+}
+},
+{
+"w":"schudnąć",
+"d":"stać się chudszym, zmniejszyć masę ciała",
+"t":{
+"en":"lose weight, slim down, get thin",
+"nl":"afvallen, vermageren, gewicht verliezen",
+"ru":"похудеть, сбросить вес",
+"de":"abnehmen, Gewicht verlieren",
+"fr":"maigrir, perdre du poids, mincir",
+"it":"dimagrire, perdere peso",
+"cs":"zhubnout, shodit",
+"tr":"zayıflamak, kilo vermek",
+"es":"adelgazar, perder peso, bajar de peso"
+}
+},
+{
+"w":"palenie",
+"d":"zwyczaj lub czynność wdychania dymu z wyrobów tytoniowych, np. papierosów",
+"t":{
+"en":"smoking",
+"nl":"roken",
+"ru":"курение, табакокурение",
+"de":"Rauchen",
+"fr":"tabagisme, fait de fumer",
+"it":"fumo, fumare",
+"cs":"kouření",
+"tr":"sigara içme, tütün kullanımı",
+"es":"fumar, tabaquismo"
+}
+},
+{
+"w":"wzrost",
+"d":"Wysokość ciała człowieka lub zwierzęcia mierzona w pozycji stojącej od stóp do czubka głowy.",
+"t":{
+"en":"height, stature",
+"nl":"lengte, lichaamslengte",
+"ru":"рост",
+"de":"Größe, Körpergröße, Wuchs",
+"fr":"taille, stature",
+"it":"altezza, statura",
+"cs":"výška, vzrůst",
+"tr":"boy",
+"es":"estatura, talla"
+}
+},
+{
+"w":"waga",
+"d":"Ciężar ciała lub przedmiotu; wielkość fizyczna określająca, jak ciężki jest dany obiekt.",
+"t":{
+"en":"weight, mass",
+"nl":"gewicht",
+"ru":"вес, масса",
+"de":"Gewicht, Körpergewicht",
+"fr":"poids, masse",
+"it":"peso",
+"cs":"váha, hmotnost",
+"tr":"ağırlık, kilo",
+"es":"peso"
+}
+},
+{
+"w":"higiena",
+"d":"Dbanie o czystość, zwłaszcza ciała, w celu zachowania zdrowia i zapobiegania chorobom.",
+"t":{
+"en":"hygiene, cleanliness",
+"nl":"hygiëne",
+"ru":"гигиена",
+"de":"Hygiene, Körperpflege",
+"fr":"hygiène",
+"it":"igiene",
+"cs":"hygiena",
+"tr":"hijyen, temizlik",
+"es":"higiene"
+}
+},
+{
+"w":"ząb",
+"d":"Twardy, wapienny twór w jamie ustnej, służący do gryzienia i żucia pokarmu.",
+"t":{
+"en":"tooth",
+"nl":"tand, kies",
+"ru":"зуб",
+"de":"Zahn",
+"fr":"dent",
+"it":"dente",
+"cs":"zub",
+"tr":"diş",
+"es":"diente"
+}
+},
+{
+"w":"korona",
+"d":"Sztuczne uzupełnienie zęba, nakładane na jego zniszczoną część w celu odbudowy kształtu i funkcji.",
+"t":{
+"en":"crown, cap",
+"nl":"kroon",
+"ru":"коронка",
+"de":"Krone, Zahnkrone",
+"fr":"couronne",
+"it":"capsula dentaria, corona",
+"cs":"korunka",
+"tr":"kron, kuron",
+"es":"corona, funda"
+}
+},
+{
+"w":"wypełnienie",
+"d":"materiał stomatologiczny umieszczany w ubytku zęba w celu jego odbudowy",
+"t":{
+"en":"filling",
+"nl":"vulling",
+"ru":"пломба",
+"de":"Füllung, Zahnfüllung",
+"fr":"plombage, obturation",
+"it":"otturazione",
+"cs":"výplň, plomba",
+"tr":"dolgu",
+"es":"empaste, obturación"
+}
+},
+{
+"w":"kompozyt",
+"d":"Materiał utworzony z co najmniej dwóch różnych składników, który dzięki temu zyskuje nowe, lepsze właściwości fizyczne lub chemiczne.",
+"t":{
+"en":"composite, composite material",
+"nl":"composiet, composietmateriaal",
+"ru":"композит, композитный материал",
+"de":"Verbundwerkstoff, Komposit, Kompositwerkstoff",
+"fr":"composite, matériau composite",
+"it":"composito, materiale composito",
+"cs":"kompozit, kompozitní materiál",
+"tr":"kompozit, kompozit malzeme",
+"es":"composite, material compuesto, resina compuesta"
+}
+},
+{
+"w":"materiał",
+"d":"Substancja, surowiec lub tworzywo, z którego wytwarza się przedmioty lub buduje obiekty.",
+"t":{
+"en":"material",
+"nl":"materiaal, grondstof",
+"ru":"материал, сырьё",
+"de":"Material, Werkstoff, Rohstoff",
+"fr":"matériau, matière",
+"it":"materiale, materia prima",
+"cs":"materiál, surovina",
+"tr":"malzeme, hammadde, materyal",
+"es":"material, materia prima"
+}
+},
+{
+"w":"fotel",
+"d":"Specjalistyczne urządzenie do siedzenia przeznaczone dla pacjenta lub klienta w gabinetach usługowych.",
+"t":{
+"en":"chair",
+"nl":"stoel, behandelstoel",
+"ru":"кресло",
+"de":"Stuhl, Sessel",
+"fr":"fauteuil",
+"it":"poltrona",
+"cs":"křeslo",
+"tr":"koltuk",
+"es":"sillón"
+}
+},
+{
+"w":"okulary",
+"d":"Przyrząd optyczny noszony na nosie, służący do korygowania wad wzroku lub ochrony oczu.",
+"t":{
+"en":"glasses, eyeglasses, spectacles",
+"nl":"bril",
+"ru":"очки",
+"de":"Brille",
+"fr":"lunettes",
+"it":"occhiali",
+"cs":"brýle",
+"tr":"gözlük",
+"es":"gafas, lentes, anteojos"
+}
+},
+{
+"w":"kolor",
+"d":"Cecha przedmiotu wynikająca z tego, w jaki sposób odbija on światło; barwa.",
+"t":{
+"en":"color, colour, hue",
+"nl":"kleur",
+"ru":"цвет, краска",
+"de":"Farbe",
+"fr":"couleur",
+"it":"colore",
+"cs":"barva",
+"tr":"renk",
+"es":"color"
+}
+},
+{
+"w":"wrażliwość",
+"d":"Zdolność organizmu, narządu lub zmysłu do reagowania na bodźce zewnętrzne, takie jak dotyk, światło czy temperatura.",
+"t":{
+"en":"sensitivity",
+"nl":"gevoeligheid, sensibiliteit",
+"ru":"чувствительность",
+"de":"Empfindlichkeit, Sensibilität",
+"fr":"sensibilité",
+"it":"sensibilità",
+"cs":"citlivost, senzitivita",
+"tr":"hassasiyet, duyarlılık",
+"es":"sensibilidad"
+}
+},
+{
+"w":"tymczasowy",
+"d":"Taki, który trwa, istnieje lub obowiązuje tylko przez pewien, ograniczony czas; nie jest stały.",
+"t":{
+"en":"temporary, provisional, interim",
+"nl":"tijdelijk, provisorisch",
+"ru":"временный",
+"de":"vorübergehend, provisorisch, vorläufig, temporär",
+"fr":"temporaire, provisoire",
+"it":"temporaneo, provvisorio, interinale",
+"cs":"dočasný, prozatímní",
+"tr":"geçici",
+"es":"temporal, provisional"
+}
+},
+{
+"w":"przegląd",
+"d":"Czynność sprawdzania stanu technicznego urządzenia, pojazdu lub zdrowia w celu wykrycia usterek lub oceny kondycji.",
+"t":{
+"en":"inspection, check-up, service, survey",
+"nl":"keuring, inspectie, controle",
+"ru":"техосмотр, осмотр, проверка",
+"de":"Inspektion, Untersuchung, Durchsicht, TÜV-Prüfung",
+"fr":"contrôle technique, révision, bilan, inspection",
+"it":"revisione, controllo, ispezione",
+"cs":"prohlídka, revize, kontrola",
+"tr":"muayene, bakım, kontrol, revizyon",
+"es":"revisión, inspección, chequeo"
+}
+}
+]

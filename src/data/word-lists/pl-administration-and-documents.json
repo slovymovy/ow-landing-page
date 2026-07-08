@@ -1,0 +1,857 @@
+[
+{
+"w":"wniosek",
+"d":"Oficjalny dokument składany w urzędzie, instytucji lub firmie w celu załatwienia jakiejś sprawy.",
+"t":{
+"en":"application, request, claim",
+"nl":"aanvraag, aanmeldingsformulier, verzoekschrift",
+"ru":"заявление, заявка, ходатайство",
+"de":"Antrag, Gesuch",
+"fr":"demande, formulaire de demande, dossier de candidature",
+"it":"domanda, richiesta, istanza",
+"cs":"žádost, přihláška, návrh",
+"tr":"başvuru, dilekçe, başvuru formu",
+"es":"solicitud, petición, instancia"
+}
+},
+{
+"w":"zaświadczenie",
+"d":"Dokument, który oficjalnie potwierdza jakiś fakt lub stan rzeczy, na przykład stan zdrowia lub zatrudnienie",
+"t":{
+"en":"certificate, written proof, statement",
+"nl":"verklaring, attest, bewijs",
+"ru":"справка, свидетельство",
+"de":"Bescheinigung, Nachweis, Attest, Zertifikat",
+"fr":"certificat, attestation, justificatif",
+"it":"certificato, attestato",
+"cs":"potvrzení, osvědčení, doklad",
+"tr":"belge, sertifika, rapor",
+"es":"certificado, constancia, justificante"
+}
+},
+{
+"w":"tożsamość",
+"d":"Zbiór danych personalnych, które pozwalają jednoznacznie rozpoznać i zidentyfikować konkretną osobę (np. w urzędzie lub banku).",
+"t":{
+"en":"identity",
+"nl":"identiteit",
+"ru":"личность",
+"de":"Identität",
+"fr":"identité",
+"it":"identità",
+"cs":"totožnost, identita",
+"tr":"kimlik, hüviyet",
+"es":"identidad"
+}
+},
+{
+"w":"paszport",
+"d":"dokument tożsamości uprawniający do przekraczania granic państwowych",
+"t":{
+"en":"passport",
+"nl":"paspoort, pas",
+"ru":"паспорт",
+"de":"Reisepass, Pass",
+"fr":"passeport",
+"it":"passaporto",
+"cs":"cestovní pas, pas",
+"tr":"pasaport",
+"es":"pasaporte"
+}
+},
+{
+"w":"urzędnik",
+"d":"Osoba zatrudniona w instytucji administracji publicznej (państwowej lub samorządowej), zajmująca się sprawami biurowymi i urzędowymi.",
+"t":{
+"en":"official, civil servant, clerk, officer",
+"nl":"ambtenaar, functionaris",
+"ru":"чиновник, служащий",
+"de":"Beamter, Beamte, Verwaltungsangestellter",
+"fr":"fonctionnaire, employé de bureau, agent de l'administration",
+"it":"funzionario, impiegato",
+"cs":"úředník, státní úředník",
+"tr":"memur, kamu görevlisi, bürokrat",
+"es":"funcionario, empleado público, oficinista"
+}
+},
+{
+"w":"decyzja",
+"d":"Rozstrzygnięcie dokonywane po namyśle; świadomy wybór jednej z możliwości.",
+"t":{
+"en":"decision, choice",
+"nl":"beslissing, besluit",
+"ru":"решение",
+"de":"Entscheidung, Entschluss, Beschluss",
+"fr":"décision",
+"it":"decisione, scelta",
+"cs":"rozhodnutí",
+"tr":"karar",
+"es":"decisión"
+}
+},
+{
+"w":"kolejka",
+"d":"Grupa ludzi czekających jeden za drugim na załatwienie jakiejś sprawy, wejście gdzieś lub kupno czegoś.",
+"t":{
+"en":"queue, line",
+"nl":"rij, wachtrij",
+"ru":"очередь",
+"de":"Warteschlange, Schlange",
+"fr":"queue, file d'attente",
+"it":"coda, fila",
+"cs":"fronta, řada",
+"tr":"kuyruk, sıra",
+"es":"cola, fila"
+}
+},
+{
+"w":"bilet",
+"d":"Dokument potwierdzający opłatę za przejazd środkami transportu lub uprawniający do wstępu do kina, teatru, muzeum itp.",
+"t":{
+"en":"ticket",
+"nl":"ticket, kaartje, plaatsbewijs",
+"ru":"билет",
+"de":"Fahrkarte, Ticket, Eintrittskarte, Fahrschein",
+"fr":"billet, ticket, place",
+"it":"biglietto",
+"cs":"jízdenka, vstupenka, lístek",
+"tr":"bilet",
+"es":"billete, boleto, entrada, tique"
+}
+},
+{
+"w":"okienko",
+"d":"Miejsce, stoisko lub przeszklony otwór w urzędzie, banku lub na poczcie, przy którym obsługiwani są klienci.",
+"t":{
+"en":"counter, window, service desk",
+"nl":"loket, balie",
+"ru":"окошко",
+"de":"Schalter",
+"fr":"guichet",
+"it":"sportello",
+"cs":"přepážka, okénko",
+"tr":"gişe",
+"es":"ventanilla, mostrador"
+}
+},
+{
+"w":"poczekalnia",
+"d":"Pomieszczenie lub wyznaczone miejsce przeznaczone dla osób oczekujących na coś, na przykład na pociąg, autobus lub wizytę lekarską.",
+"t":{
+"en":"waiting room, waiting area, lounge",
+"nl":"wachtkamer, wachtzaal, wachtruimte",
+"ru":"зал ожидания, приёмная, ожидальня",
+"de":"Wartezimmer, Wartesaal, Wartebereich",
+"fr":"salle d'attente",
+"it":"sala d'attesa, sala d'aspetto",
+"cs":"čekárna",
+"tr":"bekleme salonu, bekleme odası",
+"es":"sala de espera"
+}
+},
+{
+"w":"kasa",
+"d":"Wyznaczone miejsce w sklepie, urzędzie, kinie lub na dworcu, gdzie dokonuje się płatności lub kupuje bilety.",
+"t":{
+"en":"cash desk, checkout, ticket office, box office",
+"nl":"kassa, loket",
+"ru":"касса, окошко",
+"de":"Kasse, Schalter",
+"fr":"caisse, guichet",
+"it":"cassa, biglietteria, botteghino",
+"cs":"pokladna, kasa",
+"tr":"kasa, gişe",
+"es":"caja, taquilla"
+}
+},
+{
+"w":"skarbowy",
+"d":"związany ze Skarbem Państwa, finansami publicznymi, a zwłaszcza podatkami",
+"t":{
+"en":"tax, fiscal, treasury",
+"nl":"fiscaal, belasting-",
+"ru":"налоговый, фискальный",
+"de":"Steuer-, Finanz-, fiskalisch",
+"fr":"fiscal, d'impôts, du Trésor",
+"it":"fiscale, tributario",
+"cs":"finanční, daňový, fiskální",
+"tr":"mali, vergi, hazine",
+"es":"fiscal, tributario, de hacienda"
+}
+},
+{
+"w":"opłata",
+"d":"Kwota pieniężna, którą należy zapłacić za wykonanie określonej usługi, świadczenie lub prawo do korzystania z czegoś.",
+"t":{
+"en":"fee, charge, payment",
+"nl":"vergoeding, tarief, kosten, toeslag",
+"ru":"плата, сбор",
+"de":"Gebühr, Abgabe, Entgelt",
+"fr":"frais, taxe, redevance, paiement",
+"it":"tassa, tariffa, pagamento, quota",
+"cs":"poplatek, poplatky",
+"tr":"ücret, harç, bedel",
+"es":"tarifa, tasa, comisión, cuota"
+}
+},
+{
+"w":"złożenie",
+"d":"Rzeczownik odczasownikowy od <w>złożyć</w>; czynność polegająca na zmontowaniu czegoś z części, zgięciu czegoś, oficjalnym przekazaniu czegoś (np. dokumentów) lub wyrażeniu czegoś (np. życzeń).",
+"t":{
+"en":"submission, assembly, assemblage, offering",
+"nl":"indiening, montage, overhandiging, het overbrengen",
+"ru":"подача, сборка, сложение, принесение",
+"de":"Einreichung, Zusammenbau, Zusammensetzen, Überbringung",
+"fr":"dépôt, soumission, assemblage, présentation",
+"it":"presentazione, montaggio, assemblaggio, porgere",
+"cs":"podání, sestavení, složení, přání",
+"tr":"sunma, teslim etme, kurulum, sunulması",
+"es":"presentación, montaje, felicitación, entrega"
+}
+},
+{
+"w":"wypełnić",
+"d":"Wpisać wymagane informacje w puste pola na dokumencie, formularzu lub ankiecie.",
+"t":{
+"en":"fill out, fill in, complete",
+"nl":"invullen",
+"ru":"заполнить",
+"de":"ausfüllen",
+"fr":"remplir, compléter",
+"it":"compilare, riempire",
+"cs":"vyplnit",
+"tr":"doldurmak",
+"es":"rellenar, completar"
+}
+},
+{
+"w":"zgoda",
+"d":"Pozwolenie na zrobienie czegoś, akceptacja prośby lub wniosku.",
+"t":{
+"en":"consent, permission, agreement",
+"nl":"toestemming, akkoord",
+"ru":"согласие, разрешение",
+"de":"Einverständnis, Zustimmung, Erlaubnis",
+"fr":"accord, autorisation, consentement",
+"it":"consenso, permesso, accordo",
+"cs":"souhlas, svolení",
+"tr":"izin, onay, rıza",
+"es":"permiso, consentimiento, aprobación"
+}
+},
+{
+"w":"wezwanie",
+"d":"Oficjalne pismo lub polecenie nakazujące stawienie się w urzędzie, sądzie lub innym miejscu, albo nakazujące wykonanie określonej czynności.",
+"t":{
+"en":"summons, subpoena, citation",
+"nl":"dagvaarding, aanmaning, oproep",
+"ru":"повестка, требование, вызов",
+"de":"Vorladung, Ladung, Mahnung",
+"fr":"convocation, sommation, ajournement",
+"it":"ingiunzione, citazione, convocazione, diffida",
+"cs":"předvolání, výzva",
+"tr":"tebligat, çağrı, ihtarname, davetiye",
+"es":"citación, requerimiento, emplazamiento"
+}
+},
+{
+"w":"uzupełnienie",
+"d":"czynność polegająca na dodaniu brakujących elementów do czegoś, aby stało się to kompletne",
+"t":{
+"en":"completion, replenishment, supplementation",
+"nl":"aanvulling, invulling, aanvullen",
+"ru":"пополнение, заполнение, восполнение",
+"de":"Ergänzung, Auffüllung, Vervollständigung",
+"fr":"complètement, remplissage, réapprovisionnement",
+"it":"completamento, rifornimento, integrazione",
+"cs":"doplnění, doplnění, vyplnění",
+"tr":"tamamlama, doldurma, takviye etme",
+"es":"completado, reposición, rellenado"
+}
+},
+{
+"w":"termin",
+"d":"Data lub przedział czasu wyznaczony na wykonanie jakiejś czynności albo moment, w którym coś ma nastąpić.",
+"t":{
+"en":"deadline, date, expiry date, term",
+"nl":"termijn, datum, uiterste datum, vervaldatum",
+"ru":"срок, дата",
+"de":"Termin, Frist, Ablaufdatum",
+"fr":"date, délai, échéance, date de péremption",
+"it":"scadenza, termine, data",
+"cs":"termín, lhůta, datum",
+"tr":"süre, tarih, vade, randevu",
+"es":"plazo, término, fecha"
+}
+},
+{
+"w":"odmowa",
+"d":"Wyrażenie braku zgody na spełnienie czyjejś prośby, żądania lub propozycji.",
+"t":{
+"en":"refusal, rejection, denial",
+"nl":"weigering, afwijzing",
+"ru":"отказ",
+"de":"Ablehnung, Absage, Weigerung",
+"fr":"refus",
+"it":"rifiuto, diniego",
+"cs":"odmítnutí, zamítnutí",
+"tr":"red, reddetme",
+"es":"negativa, denegación, rechazo"
+}
+},
+{
+"w":"formularz",
+"d":"Drukowany dokument zawierający puste miejsca przeznaczone do wpisania określonych informacji, używany w sprawach urzędowych lub administracyjnych.",
+"t":{
+"en":"form, blank",
+"nl":"formulier",
+"ru":"бланк, анкета, форма",
+"de":"Formular, Formblatt",
+"fr":"formulaire, fiche",
+"it":"modulo, formulario",
+"cs":"formulář, tiskopis",
+"tr":"form, belge",
+"es":"formulario, impreso"
+}
+},
+{
+"w":"pobrać",
+"d":"Wziąć lub otrzymać coś, często w sposób oficjalny, systematyczny lub medyczny (np. pieniądze, próbki).",
+"t":{
+"en":"take, charge, withdraw, collect",
+"nl":"afnemen, afschrijven, innen",
+"ru":"взять, снять, взыскать",
+"de":"entnehmen, abbuchen, erheben",
+"fr":"prélever, retirer, percevoir",
+"it":"prelevare, addebitare, riscuotere",
+"cs":"odebrat, strhnout, vybrat, naúčtovat",
+"tr":"almak, tahsil etmek, kesmek",
+"es":"extraer, cobrar, retirar, tomar"
+}
+},
+{
+"w":"zezwolenie",
+"d":"Dokument urzędowy poświadczający prawo do wykonywania określonej działalności lub posiadania czegoś",
+"t":{
+"en":"permit, license, authorization",
+"nl":"vergunning, licentie, toelatingsbewijs",
+"ru":"разрешение, лицензия",
+"de":"Genehmigung, Erlaubnis, Bewilligung",
+"fr":"permis, autorisation, licence",
+"it":"licenza, permesso, autorizzazione",
+"cs":"povolení, licence, koncese",
+"tr":"izin belgesi, ruhsat, lisans",
+"es":"permiso, licencia, autorización"
+}
+},
+{
+"w":"sprawa",
+"d":"Konkretny interes do załatwienia, zadanie lub cel, z którym ktoś się do kogoś zwraca.",
+"t":{
+"en":"matter, business, favor",
+"nl":"zaak, ding",
+"ru":"дело",
+"de":"Angelegenheit, Sache, Anliegen",
+"fr":"affaire, chose",
+"it":"affare, faccenda, cosa",
+"cs":"záležitost, věc",
+"tr":"iş, maruzat",
+"es":"asunto, cosa, trámite"
+}
+},
+{
+"w":"podmiot",
+"d":"Osoba, instytucja lub organizacja posiadająca zdolność prawną, mogąca podejmować działania i zaciągać zobowiązania.",
+"t":{
+"en":"entity, subject",
+"nl":"entiteit, subject, rechtssubject",
+"ru":"субъект",
+"de":"Subjekt, Rechtssubjekt, Akteur",
+"fr":"entité, sujet",
+"it":"soggetto, ente",
+"cs":"subjekt",
+"tr":"özne, tüzel kişi, aktör, birim",
+"es":"entidad, sujeto"
+}
+},
+{
+"w":"rejestracja",
+"d":"Czynność polegająca na wpisaniu kogoś lub czegoś do oficjalnego spisu, bazy danych lub wykazu w celu uzyskania uprawnień lub potwierdzenia obecności.",
+"t":{
+"en":"registration",
+"nl":"registratie, inschrijving, aanmelding",
+"ru":"регистрация",
+"de":"Anmeldung, Registrierung, Eintragung",
+"fr":"inscription, enregistrement, immatriculation",
+"it":"registrazione, iscrizione, immatricolazione",
+"cs":"registrace, přihlášení, evidence",
+"tr":"kayıt, tescil, kaydolma",
+"es":"registro, inscripción, matrícula"
+}
+},
+{
+"w":"osobiście",
+"d":"bezpośrednio, we własnej osobie, bez udziału pośredników",
+"t":{
+"en":"in person, personally",
+"nl":"persoonlijk, in persoon",
+"ru":"лично, персонально",
+"de":"persönlich, selbst",
+"fr":"en personne, personnellement",
+"it":"di persona, personalmente",
+"cs":"osobně",
+"tr":"bizzat, şahsen",
+"es":"en persona, personalmente"
+}
+},
+{
+"w":"przedłużenie",
+"d":"Dodatkowy czas ważności dokumentu, umowy lub innego zobowiązania; odnowienie ważności.",
+"t":{
+"en":"extension, prolongation, renewal",
+"nl":"verlenging, prolongatie",
+"ru":"продление, пролонгация",
+"de":"Verlängerung, Prolongation",
+"fr":"prolongation, prorogation, renouvellement",
+"it":"proroga, prolungamento, rinnovo",
+"cs":"prodloužení, prolongace",
+"tr":"uzatma, süre uzatımı, prolongasyon",
+"es":"prórroga, prolongación, extensión"
+}
+},
+{
+"w":"obywatel",
+"d":"Członek społeczeństwa danego państwa, mający określone uprawnienia i obowiązki zastrzeżone przez prawo i konstytucję.",
+"t":{
+"en":"citizen",
+"nl":"burger, staatsburger",
+"ru":"гражданин",
+"de":"Bürger, Staatsbürger",
+"fr":"citoyen",
+"it":"cittadino",
+"cs":"občan",
+"tr":"vatandaş, yurttaş",
+"es":"ciudadano"
+}
+},
+{
+"w":"wymiana",
+"d":"Zastąpienie zużytego, zepsutego lub nieaktualnego elementu nowym egzemplarzem, albo zmiana osoby na danym stanowisku.",
+"t":{
+"en":"replacement, substitution, change",
+"nl":"vervanging, verversing, wissel",
+"ru":"замена, смена",
+"de":"Austausch, Wechsel, Ersatz",
+"fr":"remplacement, vidange, changement",
+"it":"sostituzione, cambio",
+"cs":"výměna, výměna",
+"tr":"değişim, değiştirme, oyuncu değişikliği",
+"es":"cambio, sustitución, reemplazo, recambio"
+}
+},
+{
+"w":"prawo",
+"d":"Uprawnienie do robienia czegoś, posiadania czegoś lub żądania czegoś, gwarantowane przez przepisy lub normy moralne.",
+"t":{
+"en":"right",
+"nl":"recht",
+"ru":"право",
+"de":"Recht, Anspruch",
+"fr":"droit",
+"it":"diritto",
+"cs":"právo",
+"tr":"hak",
+"es":"derecho"
+}
+},
+{
+"w":"wykonywanie",
+"d":"rzeczownik odczasownikowy od <w>wykonywać</w>",
+"t":{
+"en":"execution, performance, carrying out, practice",
+"nl":"uitvoering, uitoefening, verrichting",
+"ru":"выполнение, исполнение, осуществление",
+"de":"Ausübung, Ausführung, Erfüllung",
+"fr":"exécution, exercice, réalisation, accomplissement",
+"it":"esecuzione, svolgimento, esercizio, adempimento",
+"cs":"vykonávání, provádění, plnění, výkon",
+"tr":"yerine getirme, yapma, icra etme, uygulama",
+"es":"ejecución, cumplimiento, ejercicio, realización"
+}
+},
+{
+"w":"zaproszenie",
+"d":"kartka papieru lub list zawierający prośbę o przybycie na uroczystość",
+"t":{
+"en":"invitation, invitation card",
+"nl":"uitnodiging, uitnodigingskaart",
+"ru":"приглашение, пригласительный",
+"de":"Einladung, Einladungskarte",
+"fr":"invitation, faire-part",
+"it":"biglietto d'invito, invito",
+"cs":"pozvánka",
+"tr":"davetiye",
+"es":"invitación"
+}
+},
+{
+"w":"skarga",
+"d":"Oficjalne pismo procesowe lub urzędowe, służące do zgłoszenia naruszenia prawa, interesu lub zaniedbania organów władzy.",
+"t":{
+"en":"complaint, appeal",
+"nl":"klagschrift, beroepschrift, klacht",
+"ru":"жалоба",
+"de":"Klage, Beschwerde, Rüge",
+"fr":"plainte, recours",
+"it":"ricorso, querela, esposto",
+"cs":"žaloba, stížnost",
+"tr":"şikayet dilekçesi, itiraz",
+"es":"recurso, querella, denuncia"
+}
+},
+{
+"w":"zalogować",
+"d":"Uzyskać dostęp do systemu komputerowego, aplikacji lub strony internetowej, zazwyczaj poprzez podanie nazwy użytkownika i hasła.",
+"t":{
+"en":"log in, sign in, log on",
+"nl":"inloggen, zich aanmelden",
+"ru":"войти, залогиниться, авторизоваться",
+"de":"einloggen, anmelden",
+"fr":"se connecter, s'identifier, se loguer",
+"it":"accedere, effettuare l'accesso, loggarsi",
+"cs":"přihlásit se, přihlásit, nalogovat se",
+"tr":"giriş yapmak, oturum açmak, giriş yap",
+"es":"iniciar sesión, loguearse, entrar"
+}
+},
+{
+"w":"działalność",
+"d":"Zorganizowany zespół działań lub czynności podejmowanych przez osobę, grupę lub instytucję w określonym celu.",
+"t":{
+"en":"activity, operation, business",
+"nl":"activiteit, bedrijfsvoering",
+"ru":"деятельность",
+"de":"Tätigkeit, Aktivität, Geschäftstätigkeit",
+"fr":"activité",
+"it":"attività",
+"cs":"činnost, působení, podnikání",
+"tr":"faaliyet, etkinlik",
+"es":"actividad, labor"
+}
+},
+{
+"w":"stan",
+"d":"Sytuacja, w jakiej znajduje się ktoś lub coś w danym momencie; ogół cech, okoliczności i warunków.",
+"t":{
+"en":"condition, state",
+"nl":"toestand, staat",
+"ru":"состояние",
+"de":"Zustand",
+"fr":"état",
+"it":"stato, condizione",
+"cs":"stav",
+"tr":"durum, hal",
+"es":"estado"
+}
+},
+{
+"w":"cywilny",
+"d":"niezwiązany z wojskiem, dotyczący życia codziennego zwykłych obywateli",
+"t":{
+"en":"civilian, civil",
+"nl":"civiel, burger-, burgerlijk",
+"ru":"гражданский, штатский",
+"de":"zivil, Zivil-",
+"fr":"civil",
+"it":"civile",
+"cs":"civilní, civilista",
+"tr":"sivil",
+"es":"civil, de paisano"
+}
+},
+{
+"w":"dowód",
+"d":"Dokument potwierdzający tożsamość osoby, zazwyczaj dowód osobisty.",
+"t":{
+"en":"ID, identity card, ID card",
+"nl":"identiteitsbewijs, ID-kaart, paspoort",
+"ru":"удостоверение личности, паспорт",
+"de":"Ausweis, Personalausweis",
+"fr":"carte d'identité, papiers d'identité, pièce d'identité",
+"it":"carta d'identità, documento",
+"cs":"občanka, občanský průkaz, doklad totožnosti",
+"tr":"kimlik, kimlik kartı",
+"es":"carné de identidad, documento de identidad, DNI"
+}
+},
+{
+"w":"gospodarczy",
+"d":"Dotyczący gospodarki państwa lub regionu, związany z produkcją, handlem i finansami.",
+"t":{
+"en":"economic, business",
+"nl":"economisch, bedrijfs-",
+"ru":"экономический, хозяйственный",
+"de":"wirtschaftlich, ökonomisch",
+"fr":"économique",
+"it":"economico",
+"cs":"hospodářský, ekonomický, podnikatelský",
+"tr":"ekonomik, iktisadi, ticari",
+"es":"económico, comercial"
+}
+},
+{
+"w":"podatek",
+"d":"Obowiązkowa opłata pieniężna pobierana przez państwo lub samorząd na finansowanie celów publicznych.",
+"t":{
+"en":"tax",
+"nl":"belasting, taks",
+"ru":"налог",
+"de":"Steuer",
+"fr":"impôt, taxe",
+"it":"tassa, imposta",
+"cs":"daň",
+"tr":"vergi",
+"es":"impuesto, tributo"
+}
+},
+{
+"w":"toczyć",
+"d":"Odbywać się, trwać lub mieć miejsce w określonym czasie i okolicznościach (używane z zaimkiem „się”).",
+"t":{
+"en":"go on, run, be under way",
+"nl":"zich afspelen, lopen, gaande zijn",
+"ru":"происходи́ть, развора́чиваться, идти́",
+"de":"spielen, laufen, stattfinden",
+"fr":"se dérouler, suivre son cours, être en cours",
+"it":"svolgersi, andare avanti, essere in corso",
+"cs":"odehrávat se, probíhat, konat se",
+"tr":"geçmek, sürmek, cereyan etmek",
+"es":"desarrollarse, transcurrir, estar en curso"
+}
+},
+{
+"w":"skrzynka",
+"d":"Miejsce w systemie informatycznym służące do odbierania, wysyłania i przechowywania wiadomości e-mail.",
+"t":{
+"en":"mailbox, inbox",
+"nl":"mailbox, postvak",
+"ru":"электронный ящик, почта",
+"de":"Postfach, Mailbox, E-Mail-Postfach",
+"fr":"boîte de réception, boîte mail",
+"it":"casella di posta, casella e-mail",
+"cs":"schránka, e-mailová schránka",
+"tr":"posta kutusu, e-posta kutusu",
+"es":"bandeja de entrada, buzón de correo"
+}
+},
+{
+"w":"jednostka",
+"d":"Wyodrębniona organizacyjnie część instytucji, urzędu lub struktury administracyjnej.",
+"t":{
+"en":"unit, entity",
+"nl":"eenheid, afdeling",
+"ru":"единица, подразделение",
+"de":"Einheit, Abteilung",
+"fr":"unité, entité",
+"it":"unità, ente",
+"cs":"jednotka",
+"tr":"birim, departman",
+"es":"unidad"
+}
+},
+{
+"w":"placówka",
+"d":"Instytucja, zakład lub oddział pełniący określone funkcje publiczne, usługowe lub handlowe (np. szkoła, szpital, bank).",
+"t":{
+"en":"facility, institution, establishment, branch",
+"nl":"instelling, vestiging, filiaal",
+"ru":"учреждение, отделение",
+"de":"Einrichtung, Filiale, Stelle",
+"fr":"établissement, institution, succursale",
+"it":"istituto, struttura, filiale, sede",
+"cs":"instituce, zařízení, pobočka, pracoviště",
+"tr":"kurum, kuruluş, şube",
+"es":"establecimiento, centro, sucursal, institución"
+}
+},
+{
+"w":"dochodzenie",
+"d":"Ogół czynności urzędowych, prowadzonych zazwyczaj przez policję lub prokuraturę, mających na celu wyjaśnienie okoliczności przestępstwa i zebranie dowodów.",
+"t":{
+"en":"investigation, inquiry",
+"nl":"onderzoek, recherche, strafrechtelijk onderzoek",
+"ru":"расследование, следствие, дознание",
+"de":"Ermittlung, Untersuchung, Ermittlungsverfahren",
+"fr":"enquête, instruction, investigation",
+"it":"indagine, inchiesta, istruttoria",
+"cs":"vyšetřování, pátrání",
+"tr":"soruşturma, tahkikat, kovuşturma",
+"es":"investigación, indagación, pesquisa"
+}
+},
+{
+"w":"postępowanie",
+"d":"określony prawem, uporządkowany ciąg czynności urzędowych podejmowanych przez organ władzy (np. sąd, urząd) w celu rozstrzygnięcia sprawy",
+"t":{
+"en":"proceedings, procedure",
+"nl":"procedure, proces, rechtspleging",
+"ru":"производство, процесс, судопроизводство, процедура",
+"de":"Verfahren, Prozess",
+"fr":"procédure, procès",
+"it":"procedimento, processo, procedura",
+"cs":"řízení, postup, proces",
+"tr":"soruşturma, kovuşturma, yargılama, prosedür",
+"es":"procedimiento, proceso, actuación"
+}
+},
+{
+"w":"uzasadnienie",
+"d":"Zbiór argumentów, powodów, motywów i dowodów wyjaśniających jakieś działanie lub pogląd",
+"t":{
+"en":"justification, rationale, explanation, grounds",
+"nl":"rechtvaardiging, onderbouwing, motivering",
+"ru":"обоснование, аргументация, мотивировка",
+"de":"Begründung, Rechtfertigung, Argumentation",
+"fr":"justification, motivation, argumentation",
+"it":"giustificazione, motivazione, fondamento",
+"cs":"odůvodnění, opodstatnění, zdůvodnění",
+"tr":"gerekçe, gerekçelendirme, açıklama",
+"es":"justificación, fundamentación, argumentación"
+}
+},
+{
+"w":"przyspieszenie",
+"d":"Zwiększenie prędkości, tempa działania lub częstotliwości występowania czegoś; rzeczownik odczasownikowy od <w>przyspieszyć</w>.",
+"t":{
+"en":"acceleration, speed-up, expedition",
+"nl":"versnelling, bespoediging",
+"ru":"ускорение, убыстрение, разгон",
+"de":"Beschleunigung, Vergünstigung",
+"fr":"accélération",
+"it":"accelerazione, acceleramento",
+"cs":"zrychlení, akcelerace",
+"tr":"hızlanma, ivmelenme, hızlandırma",
+"es":"aceleración, aceleramiento"
+}
+},
+{
+"w":"akt",
+"d":"Oficjalny dokument prawny lub urzędowy, stwierdzający jakiś fakt, stan prawny lub wolę władzy.",
+"t":{
+"en":"act, document, deed, certificate",
+"nl":"akte, document",
+"ru":"акт, документ",
+"de":"Urkunde, Dokument, Akt",
+"fr":"acte, document",
+"it":"atto, certificato",
+"cs":"listina, akt",
+"tr":"senet, belge, akt",
+"es":"acta, partida, escritura"
+}
+},
+{
+"w":"małżeństwo",
+"d":"Związek dwóch osób usankcjonowany prawnie i społecznie.",
+"t":{
+"en":"marriage, matrimony",
+"nl":"huwelijk",
+"ru":"брак, супружество",
+"de":"Ehe",
+"fr":"mariage",
+"it":"matrimonio",
+"cs":"manželství",
+"tr":"evlilik, nikah",
+"es":"matrimonio"
+}
+},
+{
+"w":"urodzenie",
+"d":"Fakt przyjścia na świat; początek życia człowieka lub zwierzęcia.",
+"t":{
+"en":"birth",
+"nl":"geboorte",
+"ru":"рождение",
+"de":"Geburt",
+"fr":"naissance",
+"it":"nascita",
+"cs":"narození",
+"tr":"doğum",
+"es":"nacimiento"
+}
+},
+{
+"w":"oryginał",
+"d":"Rzecz powstała jako pierwsza, będąca wzorem dla kopii; autentyczny dokument lub dzieło sztuki.",
+"t":{
+"en":"original",
+"nl":"origineel",
+"ru":"оригинал, подлинник",
+"de":"Original",
+"fr":"original, original",
+"it":"originale",
+"cs":"originál",
+"tr":"orijinal, asıl",
+"es":"original"
+}
+},
+{
+"w":"tłumaczenie",
+"d":"Tekst, słowo lub wypowiedź, które zostały już przełożone na inny język; rezultat procesu tłumaczenia.",
+"t":{
+"en":"translation",
+"nl":"vertaling",
+"ru":"перевод",
+"de":"Übersetzung",
+"fr":"traduction, version",
+"it":"traduzione",
+"cs":"překlad",
+"tr":"çeviri, tercüme",
+"es":"traducción"
+}
+},
+{
+"w":"apostille",
+"d":"specjalne poświadczenie na dokumencie urzędowym, które umożliwia legalne posługiwanie się nim w innych państwach będących stroną konwencji haskiej",
+"t":{
+"en":"apostille",
+"nl":"apostille",
+"ru":"апостиль",
+"de":"Apostille, Haager Apostille",
+"fr":"apostille",
+"it":"apostille, postilla",
+"cs":"apostila, apostilní doložka",
+"tr":"apostil, apostil şerhi",
+"es":"apostilla, apostilla de La Haya"
+}
+},
+{
+"w":"pieczęć",
+"d":"Znak rozpoznawczy wyciskany na dokumencie, nadający mu moc prawną lub potwierdzający wiarygodność.",
+"t":{
+"en":"stamp, seal",
+"nl":"stempel, zegel",
+"ru":"печать, штамп",
+"de":"Stempel, Siegel",
+"fr":"sceau, cachet, tampon",
+"it":"timbro, sigillo, bollo",
+"cs":"razítko, pečeť",
+"tr":"mühür, kaşe, damga",
+"es":"sello, timbre"
+}
+},
+{
+"w":"pracodawca",
+"d":"Osoba lub przedsiębiorstwo zatrudniające pracowników.",
+"t":{
+"en":"employer",
+"nl":"werkgever",
+"ru":"работодатель, наниматель",
+"de":"Arbeitgeber",
+"fr":"employeur",
+"it":"datore di lavoro",
+"cs":"zaměstnavatel",
+"tr":"işveren, patron",
+"es":"empleador, patrono, contratante"
+}
+}
+]

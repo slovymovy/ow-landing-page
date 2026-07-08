@@ -1,0 +1,687 @@
+[
+{
+"w":"kanapa",
+"d":"Podłużny mebel z oparciem, przeznaczony do siedzenia lub leżenia dla kilku osób.",
+"t":{
+"en":"sofa, couch",
+"nl":"bank, sofa",
+"ru":"диван, софа",
+"de":"Sofa, Couch, Kanapee",
+"fr":"canapé, sofa",
+"it":"divano, sofà, canapè",
+"cs":"pohovka, gauč, sedačka, kanape",
+"tr":"koltuk, kanepe, çekyat, sofa",
+"es":"sofá, sillón"
+}
+},
+{
+"w":"fotel",
+"d":"Wygodny mebel do siedzenia dla jednej osoby, posiadający oparcie na plecy oraz podłokietniki.",
+"t":{
+"en":"armchair",
+"nl":"fauteuil, leunstoel",
+"ru":"кресло",
+"de":"Sessel",
+"fr":"fauteuil",
+"it":"poltrona",
+"cs":"křeslo",
+"tr":"koltuk",
+"es":"sillón, butaca"
+}
+},
+{
+"w":"stół",
+"d":"Mebel składający się z płaskiego blatu wspartego na nogach, służący do spożywania posiłków, pracy lub stawiania przedmiotów",
+"t":{
+"en":"table",
+"nl":"tafel",
+"ru":"стол",
+"de":"Tisch",
+"fr":"table",
+"it":"tavolo, tavola",
+"cs":"stůl",
+"tr":"masa",
+"es":"mesa"
+}
+},
+{
+"w":"krzesło",
+"d":"Mebel przeznaczony do siedzenia dla jednej osoby, posiadający oparcie, zazwyczaj bez podłokietników.",
+"t":{
+"en":"chair",
+"nl":"stoel",
+"ru":"стул",
+"de":"Stuhl",
+"fr":"chaise",
+"it":"sedia, seggiola",
+"cs":"židle",
+"tr":"sandalye, iskemle",
+"es":"silla"
+}
+},
+{
+"w":"łóżko",
+"d":"Podstawowy mebel w sypialni służący do spania i odpoczynku, zazwyczaj składający się z materaca na stelażu.",
+"t":{
+"en":"bed",
+"nl":"bed",
+"ru":"кровать, постель",
+"de":"Bett",
+"fr":"lit",
+"it":"letto",
+"cs":"postel, lůžko",
+"tr":"yatak, karyola",
+"es":"cama"
+}
+},
+{
+"w":"szafa",
+"d":"Duży, stojący mebel z drzwiami, służący do przechowywania ubrań lub innych przedmiotów.",
+"t":{
+"en":"wardrobe, closet, cupboard, cabinet",
+"nl":"kast, kleerkast, garderobekast",
+"ru":"шкаф, гардероб",
+"de":"Schrank, Kleiderschrank",
+"fr":"armoire, penderie, garde-robe",
+"it":"armadio, guardaroba",
+"cs":"skříň, šatník, šatní skříň",
+"tr":"dolap, gardırop",
+"es":"armario, ropero"
+}
+},
+{
+"w":"stolik",
+"d":"Niewielki stół, często pełniący funkcję pomocniczą lub ozdobną; zdrobnienie od słowa <w>stół</w>.",
+"t":{
+"en":"small table, coffee table, side table",
+"nl":"tafeltje, bijzettafel",
+"ru":"столик",
+"de":"Tischchen, Tischlein, kleiner Tisch",
+"fr":"petite table, table basse, table de chevet",
+"it":"tavolino",
+"cs":"stolek, stoleček",
+"tr":"sehpa, küçük masa",
+"es":"mesita, mesa auxiliar"
+}
+},
+{
+"w":"czajnik",
+"d":"Zamknięte od góry naczynie z dziobkiem służące do podgrzewania i gotowania wody.",
+"t":{
+"en":"kettle",
+"nl":"waterkoker, fluitketel, ketel",
+"ru":"чайник",
+"de":"Wasserkocher, Wasserkessel, Teekessel",
+"fr":"bouilloire",
+"it":"bollitore",
+"cs":"konvice, rychlovarná konvice",
+"tr":"çaydanlık, kettle, su ısıtıcısı",
+"es":"hervidor, tetera"
+}
+},
+{
+"w":"telewizor",
+"d":"Urządzenie wyposażone w ekran, umożliwiające odbiór i oglądanie sygnału telewizyjnego.",
+"t":{
+"en":"television, TV, TV set",
+"nl":"televisie, televisietoestel, tv",
+"ru":"телевизор",
+"de":"Fernseher, Fernsehgerät, Fernsehapparat",
+"fr":"téléviseur, télévision, télé, poste de télévision",
+"it":"televisore, televisione",
+"cs":"televizor, televize",
+"tr":"televizyon, TV",
+"es":"televisor, televisión, tele"
+}
+},
+{
+"w":"komputer",
+"d":"Maszyna licząca służąca do przetwarzania informacji, które da się zakodować w formie ciągu cyfr; urządzenie elektroniczne do pracy, nauki i rozrywki.",
+"t":{
+"en":"computer",
+"nl":"computer",
+"ru":"компьютер",
+"de":"Computer, Rechner",
+"fr":"ordinateur",
+"it":"computer, elaboratore",
+"cs":"počítač",
+"tr":"bilgisayar",
+"es":"ordenador, computadora, computador"
+}
+},
+{
+"w":"głośnik",
+"d":"Urządzenie elektroniczne, które przetwarza sygnał elektryczny na falę dźwiękową, umożliwiając głośne odtwarzanie muzyki lub mowy.",
+"t":{
+"en":"speaker, loudspeaker",
+"nl":"luidspreker, speaker, box",
+"ru":"колонка, динамик, громкоговоритель",
+"de":"Lautsprecher, Box",
+"fr":"haut-parleur, enceinte",
+"it":"altoparlante, cassa, diffusore",
+"cs":"reproduktor, reprák",
+"tr":"hoparlör",
+"es":"altavoz, parlante"
+}
+},
+{
+"w":"odkurzacz",
+"d":"Urządzenie elektryczne służące do zbierania kurzu i drobnych śmieci z powierzchni poprzez wsysanie ich do specjalnego zbiornika lub worka.",
+"t":{
+"en":"vacuum cleaner, vacuum, hoover",
+"nl":"stofzuiger",
+"ru":"пылесос",
+"de":"Staubsauger",
+"fr":"aspirateur",
+"it":"aspirapolvere",
+"cs":"vysavač, lux",
+"tr":"elektrikli süpürge, süpürge",
+"es":"aspiradora, aspirador"
+}
+},
+{
+"w":"lustro",
+"d":"Gładka powierzchnia, najczęściej szklana, odbijająca obraz przedmiotów znajdujących się przed nią.",
+"t":{
+"en":"mirror, looking glass",
+"nl":"spiegel",
+"ru":"зеркало",
+"de":"Spiegel",
+"fr":"miroir, glace",
+"it":"specchio",
+"cs":"zrcadlo",
+"tr":"ayna",
+"es":"espejo"
+}
+},
+{
+"w":"dywan",
+"d":"Gruba, wzorzysta tkanina służąca do przykrywania podłogi, pełniąca funkcję ozdobną i izolacyjną.",
+"t":{
+"en":"carpet, rug",
+"nl":"tapijt, kleed",
+"ru":"ковёр",
+"de":"Teppich",
+"fr":"tapis",
+"it":"tappeto",
+"cs":"koberec",
+"tr":"halı, kilim, keçe",
+"es":"alfombra"
+}
+},
+{
+"w":"poduszka",
+"d":"Worek wypełniony miękkim materiałem (np. pierzem, gąbką), używany jako podparcie głowy podczas snu lub w celach dekoracyjnych.",
+"t":{
+"en":"pillow, cushion",
+"nl":"kussen, hoofdkussen",
+"ru":"подушка",
+"de":"Kissen, Kopfkissen",
+"fr":"oreiller, coussin",
+"it":"cuscino, guanciale",
+"cs":"polštář, poduška",
+"tr":"yastık",
+"es":"almohada, cojín"
+}
+},
+{
+"w":"zlew",
+"d":"Urządzenie sanitarne w kształcie misy z odpływem, zwykle montowane w kuchni, służące do mycia naczyń i produktów spożywczych.",
+"t":{
+"en":"sink, kitchen sink",
+"nl":"gootsteen, wasbak",
+"ru":"раковина, мойка",
+"de":"Spülbecken, Spüle, Ausguss, Waschbecken",
+"fr":"évier",
+"it":"lavandino, lavello, acquaio",
+"cs":"dřez",
+"tr":"lavabo, evye",
+"es":"fregadero, pila, fregadero de cocina"
+}
+},
+{
+"w":"śmietnik",
+"d":"Pojemnik lub kubeł przeznaczony do gromadzenia odpadów, zazwyczaj znajdujący się w domu lub biurze.",
+"t":{
+"en":"trash can, rubbish bin, dustbin",
+"nl":"vuilnisbak, prullenbak, afvalbak",
+"ru":"мусорное ведро, мусорка, мусорная корзина",
+"de":"Mülleimer, Abfalleimer, Müllkorb",
+"fr":"poubelle, corbeille à papier",
+"it":"pattumiera, cestino, secchio della spazzatura",
+"cs":"odpadkový koš, koš, popelnice",
+"tr":"çöp kutusu, çöp kovası",
+"es":"cubo de basura, basura, papelera"
+}
+},
+{
+"w":"garnek",
+"d":"Naczynie kuchenne, zwykle metalowe i z dwoma uchwytami, służące do gotowania potraw na ogniu lub płycie grzewczej.",
+"t":{
+"en":"pot, saucepan",
+"nl":"pan, kookpot, pot",
+"ru":"кастрюля",
+"de":"Topf, Kochtopf",
+"fr":"marmite, casserole, faitout, cocotte",
+"it":"pentola, tegame",
+"cs":"hrnec",
+"tr":"tencere, çömlek",
+"es":"olla, cacerola, puchero"
+}
+},
+{
+"w":"talerz",
+"d":"Płaskie, zazwyczaj okrągłe naczynie, którego używa się do podawania i jedzenia posiłków.",
+"t":{
+"en":"plate",
+"nl":"bord",
+"ru":"тарелка",
+"de":"Teller",
+"fr":"assiette",
+"it":"piatto",
+"cs":"talíř",
+"tr":"tabak",
+"es":"plato"
+}
+},
+{
+"w":"szklanka",
+"d":"Szklane naczynie bez ucha, zwykle o pojemności około 250 ml, służące do picia napojów",
+"t":{
+"en":"glass, tumbler",
+"nl":"glas, drinkglas",
+"ru":"стакан",
+"de":"Glas, Trinkglas",
+"fr":"verre",
+"it":"bicchiere",
+"cs":"sklenice, sklenička",
+"tr":"bardak, su bardağı",
+"es":"vaso"
+}
+},
+{
+"w":"kieliszek",
+"d":"Szklane naczynie, zazwyczaj na nóżce i z podstawką, służące do picia napojów alkoholowych, takich jak wino, szampan czy koktajle.",
+"t":{
+"en":"wine glass, cocktail glass, champagne flute, glass",
+"nl":"glas, wijnglas, bokaal",
+"ru":"бокал, фужер",
+"de":"Glas, Kelch, Weinglas",
+"fr":"verre, coupe, flûte",
+"it":"bicchiere, calice, flûte",
+"cs":"sklenička, sklenice, pohár",
+"tr":"kadeh",
+"es":"copa"
+}
+},
+{
+"w":"nóż",
+"d":"Krótkie narzędzie ręczne składające się z ostrza i rękojeści, służące do krojenia lub cięcia.",
+"t":{
+"en":"knife",
+"nl":"mes",
+"ru":"нож",
+"de":"Messer",
+"fr":"couteau",
+"it":"coltello",
+"cs":"nůž",
+"tr":"bıçak",
+"es":"cuchillo, navaja"
+}
+},
+{
+"w":"deska",
+"d":"Płaski przedmiot codziennego użytku w domu, służący do wykonywania określonych czynności, takich jak krojenie żywności, prasowanie lub jako element toalety.",
+"t":{
+"en":"board, seat",
+"nl":"plank, bril",
+"ru":"доска, стульчак",
+"de":"Brett, Bügelbrett, Klobrille",
+"fr":"planche, lunette, abattant",
+"it":"tagliere, asse, tavoletta",
+"cs":"prkénko, prkno, sedátko",
+"tr":"tahta, ütü masası, klozet kapağı",
+"es":"tabla, tapa"
+}
+},
+{
+"w":"gąbka",
+"d":"Miękki, porowaty przedmiot wchłaniający wodę, używany do mycia ciała lub czyszczenia różnych powierzchni.",
+"t":{
+"en":"sponge",
+"nl":"spons",
+"ru":"губка, мочалка",
+"de":"Schwamm, Badeschwamm",
+"fr":"éponge",
+"it":"spugna",
+"cs":"houba, houbička",
+"tr":"sünger",
+"es":"esponja"
+}
+},
+{
+"w":"płyn",
+"d":"Substancja w stanie ciekłym, która nie ma własnego kształtu i przybiera formę naczynia; w życiu codziennym często oznacza napój lub płynny środek czystości.",
+"t":{
+"en":"liquid, fluid",
+"nl":"vloeistof, vocht",
+"ru":"жидкость",
+"de":"Flüssigkeit",
+"fr":"liquide",
+"it":"liquido, fluido",
+"cs":"tekutina, kapalina, přípravek",
+"tr":"sıvı, sıvı içecek",
+"es":"líquido"
+}
+},
+{
+"w":"ręcznik",
+"d":"Kawałek chłonnej tkaniny lub papieru służący do wycierania i osuszania ciała lub przedmiotów.",
+"t":{
+"en":"towel",
+"nl":"handdoek",
+"ru":"полотенце",
+"de":"Handtuch, Papiertuch",
+"fr":"serviette, essuie-main",
+"it":"asciugamano",
+"cs":"ručník",
+"tr":"havlu",
+"es":"toalla, toalla de papel"
+}
+},
+{
+"w":"szmata",
+"d":"Kawałek starej, zniszczonej tkaniny używany do sprzątania, mycia lub wycierania kurzu.",
+"t":{
+"en":"rag",
+"nl":"vod, lap, poetslap, dweil",
+"ru":"тряпка, ветошь",
+"de":"Lappen, Putzlappen, Lumpen",
+"fr":"chiffon, serpillière",
+"it":"straccio, cencio",
+"cs":"hadr, hadra",
+"tr":"paçavra, bez, çaput",
+"es":"trapo, bayeta, jirón"
+}
+},
+{
+"w":"naczynie",
+"d":"Przedmiot służący do przechowywania, przyrządzania lub podawania jedzenia i napojów.",
+"t":{
+"en":"dish, vessel, utensil",
+"nl":"vaat, servies, schaal",
+"ru":"посуда, сосуд",
+"de":"Geschirr, Gefäß",
+"fr":"récipient, vaisselle, plat",
+"it":"piatto, stoviglie, recipiente, vaso",
+"cs":"nádobí, nádoba",
+"tr":"kap, bulaşık, çanak çömlek",
+"es":"vajilla, recipiente, vasija"
+}
+},
+{
+"w":"sztućce",
+"d":"Przybory kuchenne służące do jedzenia i przygotowywania potraw, takie jak łyżki, widelce i noże; zastawa stołowa.",
+"t":{
+"en":"cutlery, silverware, flatware",
+"nl":"bestek, eetgerei",
+"ru":"столовые приборы, приборы",
+"de":"Besteck, Essbesteck",
+"fr":"couverts",
+"it":"posate, servizio di posate",
+"cs":"příbory, příbor",
+"tr":"çatal bıçak takımı, çatal bıçak",
+"es":"cubiertos, cubertería"
+}
+},
+{
+"w":"wanna",
+"d":"Duże, podłużne naczynie sanitarne służące do kąpieli całego ciała, znajdujące się zazwyczaj w łazience.",
+"t":{
+"en":"bathtub, bath",
+"nl":"badkuip, bad",
+"ru":"ванна",
+"de":"Badewanne, Wanne",
+"fr":"baignoire",
+"it":"vasca da bagno, vasca",
+"cs":"vana",
+"tr":"küvet, banyo küveti",
+"es":"bañera, tina"
+}
+},
+{
+"w":"toaleta",
+"d":"Pomieszczenie wyposażone w urządzenia sanitarne, służące do załatwiania potrzeb fizjologicznych.",
+"t":{
+"en":"toilet, restroom, lavatory",
+"nl":"toilet, wc",
+"ru":"туалет, уборная",
+"de":"Toilette, WC, Klo",
+"fr":"toilettes, cabinet, WC",
+"it":"bagno, toilette, gabinetto",
+"cs":"toaleta, záchod, WC",
+"tr":"tuvalet, wc, lavabo",
+"es":"baño, servicio, aseo, inodoro"
+},
+"c":{
+"nl":"het gangbare woord",
+"ru":"нейтральное слово",
+"it":"la parola standard"
+}
+},
+{
+"w":"ubikacja",
+"d":"Pomieszczenie sanitarne wyposażone w urządzenia do załatwiania potrzeb fizjologicznych.",
+"t":{
+"en":"toilet, restroom, bathroom, lavatory",
+"nl":"toilet, wc",
+"ru":"туалет, уборная",
+"de":"Toilette, Klosett, Klo",
+"fr":"toilettes, WC, cabinet",
+"it":"bagno, toilette, gabinetto",
+"cs":"záchod, toaleta",
+"tr":"tuvalet, hela, wc",
+"es":"baño, servicio, aseo, retrete"
+},
+"c":{
+"nl":"informeel woord",
+"ru":"разговорное слово",
+"it":"parola colloquiale"
+}
+},
+{
+"w":"golenie",
+"d":"usuwanie zarostu lub włosów tuż przy powierzchni skóry",
+"t":{
+"en":"shaving, shave",
+"nl":"scheren, scheerbeurt",
+"ru":"бритьё",
+"de":"Rasieren, Rasur",
+"fr":"rasage",
+"it":"rasatura, sbarbatura",
+"cs":"holení",
+"tr":"tıraş, tıraş olma",
+"es":"afeitado, rasurado"
+}
+},
+{
+"w":"kibel",
+"d":"Potoczne określenie toalety, ubikacji lub samej muszli klozetowej.",
+"t":{
+"en":"loo, can, john, bog",
+"nl":"plee, wc, schijthuis",
+"ru":"толчок, сортир, унитаз",
+"de":"Klo, Scheißhaus, Klosett",
+"fr":"chiottes, chiotte, cabinet, trône",
+"it":"cesso, water, cesso pubblico",
+"cs":"hajzl, záchod, klop",
+"tr":"hela, kenef, klozet, tuvalet",
+"es":"váter, retrete, baño, cagadero"
+}
+},
+{
+"w":"koszyk",
+"d":"Mały pojemnik z uchwytem, często pleciony, służący do przenoszenia drobnych przedmiotów lub zakupów.",
+"t":{
+"en":"basket",
+"nl":"mandje, mand, boodschappenmandje",
+"ru":"корзина, корзинка",
+"de":"Korb, Körbchen",
+"fr":"panier, corbeille",
+"it":"cestino, cesto",
+"cs":"košík, košíček",
+"tr":"sepet, sepetçik",
+"es":"cesta, canasta, cestilla"
+}
+},
+{
+"w":"mydło",
+"d":"Substancja używana do mycia i prania.",
+"t":{
+"en":"soap",
+"nl":"zeep",
+"ru":"мыло",
+"de":"Seife",
+"fr":"savon",
+"it":"sapone",
+"cs":"mýdlo",
+"tr":"sabun",
+"es":"jabón"
+}
+},
+{
+"w":"szampon",
+"d":"Płynny środek do mycia włosów lub sierści.",
+"t":{
+"en":"shampoo",
+"nl":"shampoo",
+"ru":"шампунь",
+"de":"Shampoo, Haarwaschmittel",
+"fr":"shampooing, shampoing",
+"it":"shampoo, sciampo",
+"cs":"šampon",
+"tr":"şampuan",
+"es":"champú"
+}
+},
+{
+"w":"krem",
+"d":"Gęsta substancja kosmetyczna lub lecznicza nakładana na skórę w celu jej pielęgnacji, nawilżenia lub ochrony.",
+"t":{
+"en":"cream, lotion",
+"nl":"crème, zalf",
+"ru":"крем",
+"de":"Creme, Crème",
+"fr":"crème",
+"it":"crema",
+"cs":"krém",
+"tr":"krem",
+"es":"crema"
+}
+},
+{
+"w":"papier",
+"d":"Cienki materiał wytwarzany z włókien roślinnych, służący do pisania, drukowania lub pakowania.",
+"t":{
+"en":"paper",
+"nl":"papier",
+"ru":"бумага",
+"de":"Papier",
+"fr":"papier",
+"it":"carta",
+"cs":"papír",
+"tr":"kâğıt",
+"es":"papel"
+}
+},
+{
+"w":"sprzęt",
+"d":"Pojedynczy przedmiot użytkowy, urządzenie lub mebel, stanowiący element wyposażenia domu lub innego miejsca.",
+"t":{
+"en":"appliance, implement, furnishings",
+"nl":"apparaten, huisraad, toestel",
+"ru":"техника, утварь, предметы обстановки",
+"de":"Gerät, Gegenstand",
+"fr":"appareil, équipement, mobilier",
+"it":"elettrodomestico, apparecchio, arredo",
+"cs":"spotřebič, zařízení, náčiní",
+"tr":"cihaz, eşya, alet",
+"es":"electrodomésticos, aparatos, enseres"
+}
+},
+{
+"w":"pościel",
+"d":"Wyposażenie łóżka służące do spania, obejmujące poduszki, kołdrę i prześcieradło.",
+"t":{
+"en":"bedding, bedclothes",
+"nl":"beddengoed, beddengoedset",
+"ru":"постель, постельные принадлежности",
+"de":"das Bettzeug, das Bettwaren",
+"fr":"literie, couette et oreillers",
+"it":"biancheria da letto, letto",
+"cs":"lůžkoviny, ložní prádlo, peřiny",
+"tr":"yatak takımı, yatak gereçleri",
+"es":"ropa de cama"
+}
+},
+{
+"w":"prześcieradło",
+"d":"Duży kawałek materiału, którym przykrywa się materac łóżka, aby na nim spać.",
+"t":{
+"en":"sheet, bedsheet",
+"nl":"laken, hoeslaken",
+"ru":"простыня",
+"de":"Bettlaken, Laken, Betttuch",
+"fr":"drap, drap de lit, drap-housse",
+"it":"lenzuolo",
+"cs":"prostěradlo",
+"tr":"çarşaf",
+"es":"sábana"
+}
+},
+{
+"w":"obraz",
+"d":"Dzieło plastyczne, najczęściej malarskie, wykonane na płótnie, desce lub papierze, przedstawiające osoby, widoki lub kompozycje abstrakcyjne.",
+"t":{
+"en":"painting, picture",
+"nl":"schilderij, afbeelding",
+"ru":"картина, полотно, икона",
+"de":"Gemälde, Bild",
+"fr":"tableau, peinture, toile",
+"it":"quadro, dipinto, tela",
+"cs":"obraz, malba",
+"tr":"tablo, resim",
+"es":"cuadro, pintura, lienzo"
+}
+},
+{
+"w":"budzik",
+"d":"Zegar, który dzwonkiem lub innym sygnałem dźwiękowym wskazuje nadejście określonej godziny, służący najczęściej do budzenia ze snu.",
+"t":{
+"en":"alarm clock, alarm",
+"nl":"wekker",
+"ru":"будильник",
+"de":"Wecker",
+"fr":"réveil, réveille-matin",
+"it":"sveglia",
+"cs":"budík",
+"tr":"çalar saat, çalar saat uygulaması, alarm",
+"es":"despertador"
+}
+},
+{
+"w":"ogrzewanie",
+"d":"urządzenie lub instalacja techniczna, która zapewnia ciepło w budynku lub pomieszczeniu",
+"t":{
+"en":"heating, heating system",
+"nl":"verwarming, verwarmingssysteem",
+"ru":"отопление, система отопления",
+"de":"Heizung, Heizungsanlage, Heizsystem",
+"fr":"chauffage, système de chauffage",
+"it":"riscaldamento, impianto di riscaldamento",
+"cs":"topení, vytápění",
+"tr":"ısıtma sistemi, kalorifer, ısıtma",
+"es":"calefacción, sistema de calefacción"
+}
+}
+]

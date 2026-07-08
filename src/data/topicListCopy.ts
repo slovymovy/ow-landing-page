@@ -500,5 +500,114 @@ export const topicListCopy: Record<string, TopicListCopy> = {
       cs: 'Ruská slova pro roční období, počasí, rostliny a přírodní krajinu – slovní zásoba, abyste mluvili o světě venku.',
       tr: 'Mevsimler, hava koşulları, bitkiler ve doğal manzaralar için Rusça kelimeler — dışarıdaki dünya hakkında konuşmak için kelimeler.'
     }
+  },
+
+  // ── Polish lists ─────────────────────────────────────────────────────────
+  'administration-and-documents': {
+    title: {
+      en: 'Paperwork & Bureaucracy Vocabulary',
+      pl: 'Słownictwo urzędowe i dokumenty',
+      ru: 'Лексика для документов и бюрократии',
+      nl: 'Woordenschat voor papierwerk en bureaucratie',
+      de: 'Wortschatz für Ämter und Dokumente',
+      es: 'Vocabulario de trámites y burocracia',
+      fr: 'Vocabulaire des démarches administratives',
+      it: 'Vocabolario della burocrazia e dei documenti',
+      cs: 'Slovní zásoba pro úřady a dokumenty',
+      tr: 'Resmî İşlemler ve Belgeler Kelimeleri'
+    },
+    subtitle: {
+      en: 'The Polish words for official forms, permits, IDs, and dealing with government offices — vocabulary for handling paperwork in Poland.',
+      pl: 'Polskie słowa dotyczące oficjalnych formularzy, pozwoleń, dokumentów tożsamości i spraw urzędowych — słownictwo, by załatwić sprawy w urzędzie.',
+      ru: 'Польские слова для официальных форм, разрешений, документов и походов в учреждения — лексика, чтобы разобраться с бумагами в Польше.',
+      nl: 'De Poolse woorden voor officiële formulieren, vergunningen, documenten en overheidsinstanties — woordenschat om je papierwerk in Polen te regelen.',
+      de: 'Die polnischen Wörter für offizielle Formulare, Genehmigungen, Ausweise und Behördengänge – Wortschatz, um deinen Papierkram in Polen zu erledigen.',
+      es: 'Las palabras polacas para los formularios oficiales, los permisos, los documentos de identidad y las gestiones administrativas: vocabulario para resolver el papeleo en Polonia.',
+      fr: "Les mots polonais pour les formulaires officiels, les permis, les pièces d'identité et les démarches administratives : le vocabulaire pour gérer la paperasse en Pologne.",
+      it: 'Le parole polacche per i moduli ufficiali, i permessi, i documenti e le pratiche negli uffici: vocabolario per sbrigare la burocrazia in Polonia.',
+      cs: 'Polská slova pro oficiální formuláře, povolení, doklady a jednání na úřadech – slovní zásoba, abyste si v Polsku vyřídili papírování.',
+      tr: "Resmî formlar, izinler, kimlik belgeleri ve devlet daireleri için Lehçe kelimeler — Polonya'da evrak işlerini halletmek için kelimeler."
+    }
+  },
+
+  'healthcare-and-dentist': {
+    title: {
+      en: 'Doctor & Dentist Vocabulary',
+      pl: 'Słownictwo u lekarza i dentysty',
+      ru: 'Лексика для врача и стоматолога',
+      nl: 'Woordenschat voor de dokter en de tandarts',
+      de: 'Wortschatz für Arzt und Zahnarzt',
+      es: 'Vocabulario del médico y el dentista',
+      fr: 'Vocabulaire du médecin et du dentiste',
+      it: 'Vocabolario del medico e del dentista',
+      cs: 'Slovní zásoba u lékaře a zubaře',
+      tr: 'Doktor ve Diş Hekimi Kelimeleri'
+    },
+    subtitle: {
+      en: 'The Polish words for symptoms, appointments, body parts, and treatments — how to describe how you feel at the doctor or dentist.',
+      pl: 'Polskie słowa dotyczące objawów, wizyt, części ciała i leczenia — jak opisać samopoczucie u lekarza lub dentysty.',
+      ru: 'Польские слова для симптомов, записи на приём, частей тела и лечения — как объяснить самочувствие у врача или стоматолога.',
+      nl: 'De Poolse woorden voor klachten, afspraken, lichaamsdelen en behandelingen — hoe je bij de dokter of tandarts omschrijft hoe je je voelt.',
+      de: 'Die polnischen Wörter für Symptome, Termine, Körperteile und Behandlungen – wie du beim Arzt oder Zahnarzt beschreibst, wie du dich fühlst.',
+      es: 'Las palabras polacas para los síntomas, las citas, las partes del cuerpo y los tratamientos: cómo describir cómo te sientes en el médico o el dentista.',
+      fr: 'Les mots polonais pour les symptômes, les rendez-vous, les parties du corps et les traitements : comment décrire ce que vous ressentez chez le médecin ou le dentiste.',
+      it: 'Le parole polacche per i sintomi, gli appuntamenti, le parti del corpo e le cure: come descrivere come ti senti dal medico o dal dentista.',
+      cs: 'Polská slova pro příznaky, objednání, části těla a léčbu – jak u lékaře nebo zubaře popsat, jak se cítíte.',
+      tr: 'Belirtiler, randevular, vücudun bölümleri ve tedaviler için Lehçe kelimeler — doktorda veya diş hekiminde kendini nasıl hissettiğini anlatmak için.'
+    }
+  },
+
+  'renting-and-housing': {
+    title: {
+      en: 'Renting & Housing Vocabulary',
+      pl: 'Słownictwo o wynajmie mieszkania',
+      ru: 'Лексика для аренды жилья',
+      nl: 'Woordenschat voor huren en wonen',
+      de: 'Wortschatz für Miete und Wohnen',
+      es: 'Vocabulario del alquiler y la vivienda',
+      fr: 'Vocabulaire de la location et du logement',
+      it: "Vocabolario dell'affitto e della casa",
+      cs: 'Slovní zásoba o pronájmu a bydlení',
+      tr: 'Kiralama ve Konut Kelimeleri'
+    },
+    subtitle: {
+      en: 'The Polish words for rental ads, contracts, utilities, deposits, and moving — vocabulary for finding and renting a place in Poland.',
+      pl: 'Polskie słowa dotyczące ogłoszeń o wynajmie, umów, opłat, kaucji i przeprowadzki — słownictwo, by znaleźć i wynająć mieszkanie.',
+      ru: 'Польские слова для объявлений об аренде, договоров, коммунальных платежей, залога и переезда — лексика, чтобы найти и снять жильё в Польше.',
+      nl: 'De Poolse woorden voor huuradvertenties, contracten, vaste lasten, de borg en verhuizen — woordenschat om in Polen een woning te vinden en te huren.',
+      de: 'Die polnischen Wörter für Mietanzeigen, Verträge, Nebenkosten, Kaution und Umzug – Wortschatz, um in Polen eine Wohnung zu finden und zu mieten.',
+      es: 'Las palabras polacas para los anuncios de alquiler, los contratos, los suministros, la fianza y la mudanza: vocabulario para encontrar y alquilar un piso en Polonia.',
+      fr: 'Les mots polonais pour les annonces de location, les contrats, les charges, la caution et le déménagement : le vocabulaire pour trouver et louer un logement en Pologne.',
+      it: 'Le parole polacche per gli annunci di affitto, i contratti, le utenze, la cauzione e il trasloco: vocabolario per trovare e affittare casa in Polonia.',
+      cs: 'Polská slova pro inzeráty na pronájem, smlouvy, poplatky za energie, kauci a stěhování – slovní zásoba, abyste v Polsku našli a pronajali bydlení.',
+      tr: "Kiralık ilanları, sözleşmeler, faturalar, depozito ve taşınma için Lehçe kelimeler — Polonya'da ev bulmak ve kiralamak için kelimeler."
+    }
+  },
+
+  'home-and-household': {
+    title: {
+      en: 'Home & Household Vocabulary',
+      pl: 'Słownictwo domowe',
+      ru: 'Лексика для дома и быта',
+      nl: 'Woordenschat voor huis en huishouden',
+      de: 'Wortschatz für Haus und Haushalt',
+      es: 'Vocabulario del hogar y los objetos domésticos',
+      fr: 'Vocabulaire de la maison et du ménage',
+      it: 'Vocabolario della casa e degli oggetti domestici',
+      cs: 'Slovní zásoba o domácnosti',
+      tr: 'Ev ve Ev Eşyaları Kelimeleri'
+    },
+    subtitle: {
+      en: 'The Polish words for furniture, appliances, cleaning supplies, and everyday household items — vocabulary for daily life at home.',
+      pl: 'Polskie słowa dotyczące mebli, sprzętów AGD, środków czystości i codziennych przedmiotów domowych — słownictwo na co dzień w domu.',
+      ru: 'Польские слова для мебели, бытовой техники, средств для уборки и повседневных домашних вещей — лексика для быта.',
+      nl: 'De Poolse woorden voor meubels, apparaten, schoonmaakspullen en alledaagse huishoudelijke spullen — woordenschat voor het dagelijks leven thuis.',
+      de: 'Die polnischen Wörter für Möbel, Haushaltsgeräte, Putzmittel und alltägliche Haushaltsgegenstände – Wortschatz für den Alltag zu Hause.',
+      es: 'Las palabras polacas para los muebles, los electrodomésticos, los productos de limpieza y los objetos cotidianos del hogar: vocabulario para el día a día en casa.',
+      fr: "Les mots polonais pour les meubles, les appareils électroménagers, les produits d'entretien et les objets du quotidien : le vocabulaire de la vie à la maison.",
+      it: 'Le parole polacche per i mobili, gli elettrodomestici, i prodotti per le pulizie e gli oggetti di uso quotidiano: vocabolario per la vita di tutti i giorni in casa.',
+      cs: 'Polská slova pro nábytek, spotřebiče, úklidové prostředky a každodenní věci v domácnosti – slovní zásoba pro běžný život doma.',
+      tr: 'Mobilyalar, ev aletleri, temizlik malzemeleri ve günlük ev eşyaları için Lehçe kelimeler — evdeki günlük hayat için kelimeler.'
+    }
   }
 };
