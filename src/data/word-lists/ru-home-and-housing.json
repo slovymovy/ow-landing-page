@@ -1,0 +1,527 @@
+[
+{
+"w":"дом",
+"d":"Архитектурное сооружение, здание, предназначенное для жилья или размещения учреждений.",
+"t":{
+"en":"house, building",
+"nl":"huis, gebouw",
+"pl":"dom, budynek",
+"de":"Haus, Gebäude",
+"fr":"maison, immeuble, bâtiment",
+"it":"casa, edificio, palazzo",
+"cs":"dům, budova",
+"tr":"ev, bina, apartman",
+"es":"casa, edificio"
+}
+},
+{
+"w":"квартира",
+"d":"Отдельное жилое помещение в доме, имеющее отдельный вход и состоящее из одной или нескольких комнат, кухни и других удобств.",
+"t":{
+"en":"apartment, flat",
+"nl":"appartement, flat, woning",
+"pl":"mieszkanie, apartament",
+"de":"Wohnung, Appartement",
+"fr":"appartement, logement",
+"it":"appartamento, alloggio, casa",
+"cs":"byt, kvartýr",
+"tr":"daire, apartman dairesi, ev",
+"es":"piso, apartamento, departamento"
+}
+},
+{
+"w":"этаж",
+"d":"Часть здания, включающая все помещения, расположенные на одном уровне.",
+"t":{
+"en":"floor, storey, story",
+"nl":"verdieping, etage",
+"pl":"piętro, kondygnacja",
+"de":"Stockwerk, Stock, Etage, Geschoss",
+"fr":"étage",
+"it":"piano",
+"cs":"patro, poschodí, podlaží",
+"tr":"kat",
+"es":"piso, planta"
+}
+},
+{
+"w":"подъезд",
+"d":"Общий вход в многоквартирный дом, а также внутреннее пространство здания с лестницей и площадками перед квартирами.",
+"t":{
+"en":"entrance, stairwell, lobby, porch",
+"nl":"portaal, trappenhuis, ingang, hal",
+"pl":"klatka schodowa, klatka, wejście",
+"de":"Hauseingang, Treppenhaus, Aufgang",
+"fr":"entrée, hall d'entrée, cage d'escalier",
+"it":"portone, androne, ingresso, scala",
+"cs":"vchod, vchodové dveře, chodba",
+"tr":"bina girişi, apartman girişi, merdiven boşluğu",
+"es":"portal, entrada, portería"
+}
+},
+{
+"w":"адрес",
+"d":"Местожительство лица или местонахождение учреждения, а также надпись на конверте или посылке, указывающая это место.",
+"t":{
+"en":"address",
+"nl":"adres",
+"pl":"adres",
+"de":"Adresse, Anschrift",
+"fr":"adresse",
+"it":"indirizzo",
+"cs":"adresa",
+"tr":"adres",
+"es":"dirección, señas"
+}
+},
+{
+"w":"кухня",
+"d":"Помещение в доме, квартире или другом здании, предназначенное для приготовления пищи.",
+"t":{
+"en":"kitchen",
+"nl":"keuken",
+"pl":"kuchnia",
+"de":"Küche",
+"fr":"cuisine",
+"it":"cucina",
+"cs":"kuchyně, kuchyň",
+"tr":"mutfak",
+"es":"cocina"
+}
+},
+{
+"w":"туалет",
+"d":"Помещение для отправления естественных надобностей",
+"t":{
+"en":"toilet, bathroom, loo",
+"nl":"toilet, wc",
+"pl":"toaleta, ubikacja, WC",
+"de":"Toilette, WC, Klo",
+"fr":"toilettes, WC, cabinet",
+"it":"bagno, toilette, servizi",
+"cs":"záchod, toaleta, WC",
+"tr":"tuvalet, wc, lavabo",
+"es":"baño, servicio, aseo, inodoro"
+}
+},
+{
+"w":"столовая",
+"d":"Комната в квартире или доме, специально предназначенная для приёма пищи.",
+"t":{
+"en":"dining room",
+"nl":"eetkamer, eethoek",
+"pl":"jadalnia, pokój stołowy",
+"de":"Esszimmer, Speisezimmer",
+"fr":"salle à manger",
+"it":"sala da pranzo, tinello",
+"cs":"jídelna",
+"tr":"yemek odası",
+"es":"comedor"
+}
+},
+{
+"w":"кровать",
+"d":"Предмет мебели, предназначенный для сна и отдыха; обычно состоит из рамы на ножках, на которую кладут матрас.",
+"t":{
+"en":"bed",
+"nl":"bed",
+"pl":"łóżko",
+"de":"Bett",
+"fr":"lit",
+"it":"letto",
+"cs":"postel, lůžko",
+"tr":"yatak, karyola",
+"es":"cama"
+}
+},
+{
+"w":"диван",
+"d":"Вид мягкой мебели с длинной спинкой и ручками, предназначенный для сидения и лежания.",
+"t":{
+"en":"sofa, couch",
+"nl":"bank, bankstel, sofa, couch",
+"pl":"kanapa, sofa, tapczan",
+"de":"Sofa, Couch, Diwan",
+"fr":"canapé, divan, sofa",
+"it":"divano, sofà",
+"cs":"pohovka, gauč, divan",
+"tr":"koltuk, kanepe, divan, çekyat",
+"es":"sofá, diván"
+}
+},
+{
+"w":"стол",
+"d":"Предмет мебели, состоящий из горизонтальной поверхности (крышки) на одной или нескольких ножках, предназначенный для размещения различных предметов, выполнения работ или приёма пищи.",
+"t":{
+"en":"table, desk",
+"nl":"tafel, bureau",
+"pl":"stół, biurko",
+"de":"Tisch, Schreibtisch",
+"fr":"table, bureau",
+"it":"tavolo, tavola, scrivania",
+"cs":"stůl, psací stůl",
+"tr":"masa, sıra",
+"es":"mesa, escritorio"
+}
+},
+{
+"w":"стул",
+"d":"Предмет мебели для сидения одного человека, имеющий ножки и спинку, но без подлокотников.",
+"t":{
+"en":"chair",
+"nl":"stoel",
+"pl":"krzesło",
+"de":"Stuhl",
+"fr":"chaise",
+"it":"sedia, seggiola",
+"cs":"židle",
+"tr":"sandalye, iskemle",
+"es":"silla"
+}
+},
+{
+"w":"шкаф",
+"d":"Предмет мебели в виде большого стоячего ящика с дверцами и полками для хранения вещей, одежды или книг.",
+"t":{
+"en":"wardrobe, closet, cupboard, bookcase",
+"nl":"kast, kledingkast, boekenkast, kabinet",
+"pl":"szafa, regał",
+"de":"Schrank, Kleiderschrank, Bücherschrank",
+"fr":"armoire, placard, buffet, bibliothèque",
+"it":"armadio, credenza, libreria",
+"cs":"skříň, skříňka, knihovna",
+"tr":"dolap, gardırop, kitaplık",
+"es":"armario, ropero, estantería"
+}
+},
+{
+"w":"кресло",
+"d":"Широкий и удобный стул с подлокотниками и мягкой спинкой.",
+"t":{
+"en":"armchair, easy chair",
+"nl":"fauteuil, leunstoel",
+"pl":"fotel",
+"de":"Sessel, Lehnstuhl",
+"fr":"fauteuil",
+"it":"poltrona",
+"cs":"křeslo",
+"tr":"koltuk, tekli koltuk",
+"es":"sillón, butaca, poltrona"
+}
+},
+{
+"w":"полка",
+"d":"Прикреплённая к стене или находящаяся в шкафу горизонтальная доска для размещения книг, посуды и других предметов.",
+"t":{
+"en":"shelf",
+"nl":"plank, schap",
+"pl":"półka",
+"de":"Regalbrett, Ablage, Fach, Regal",
+"fr":"étagère, rayon, planche",
+"it":"mensola, scaffale, ripiano",
+"cs":"police, polička",
+"tr":"raf",
+"es":"estante, balda, anaquel"
+}
+},
+{
+"w":"дверь",
+"d":"Проём в стене для входа и выхода из помещения, а также створка, закрывающая этот проём.",
+"t":{
+"en":"door",
+"nl":"deur",
+"pl":"drzwi",
+"de":"Tür",
+"fr":"porte",
+"it":"porta",
+"cs":"dveře",
+"tr":"kapı",
+"es":"puerta"
+}
+},
+{
+"w":"окно",
+"d":"Проём в стене здания или транспортного средства для поступления света и воздуха, обычно закрытый рамой со стеклом.",
+"t":{
+"en":"window",
+"nl":"raam, venster",
+"pl":"okno",
+"de":"Fenster",
+"fr":"fenêtre",
+"it":"finestra",
+"cs":"okno",
+"tr":"pencere",
+"es":"ventana"
+}
+},
+{
+"w":"пол",
+"d":"Нижнее покрытие, настил в помещении, по которому ходят.",
+"t":{
+"en":"floor",
+"nl":"vloer",
+"pl":"podłoga",
+"de":"Fußboden, Boden",
+"fr":"sol, plancher",
+"it":"pavimento",
+"cs":"podlaha",
+"tr":"yer, zemin, taban",
+"es":"suelo, piso"
+}
+},
+{
+"w":"стена",
+"d":"Вертикальная конструкция, которая служит преградой, ограничивает здание или разделяет помещения внутри него.",
+"t":{
+"en":"wall",
+"nl":"muur, wand",
+"pl":"ściana, mur",
+"de":"Wand, Mauer",
+"fr":"mur, cloison",
+"it":"parete, muro",
+"cs":"stěna, zeď",
+"tr":"duvar",
+"es":"pared, muro"
+}
+},
+{
+"w":"ключ",
+"d":"Металлический предмет особой формы для запирания и отпирания замка",
+"t":{
+"en":"key",
+"nl":"sleutel",
+"pl":"klucz",
+"de":"Schlüssel",
+"fr":"clé, clef",
+"it":"chiave",
+"cs":"klíč",
+"tr":"anahtar",
+"es":"llave"
+}
+},
+{
+"w":"замок",
+"d":"Устройство для запирания дверей, ящиков и других предметов, которое обычно открывается ключом или набором кода.",
+"t":{
+"en":"lock, padlock",
+"nl":"slot, hangslot",
+"pl":"zamek, kłódka",
+"de":"Schloss, Vorhängeschloss",
+"fr":"serrure, cadenas",
+"it":"serratura, lucchetto",
+"cs":"zámek, visací zámek",
+"tr":"kilit, asma kilit",
+"es":"cerradura, candado"
+}
+},
+{
+"w":"холодильник",
+"d":"Бытовой электроприбор в виде шкафа для хранения пищевых продуктов при низкой температуре.",
+"t":{
+"en":"fridge, refrigerator",
+"nl":"koelkast, ijskast, frigo",
+"pl":"lodówka, chłodziarka",
+"de":"Kühlschrank",
+"fr":"réfrigérateur, frigo, frigidaire",
+"it":"frigorifero, frigo",
+"cs":"lednice, lednička, chladnička",
+"tr":"buzdolabı, soğutucu",
+"es":"nevera, frigorífico, refrigerador"
+}
+},
+{
+"w":"мебель",
+"d":"Предметы обстановки помещения, такие как столы, стулья, шкафы и кровати.",
+"t":{
+"en":"furniture, furnishings",
+"nl":"meubels, meubilair, inboedel",
+"pl":"meble",
+"de":"Möbel, Möbelstücke",
+"fr":"meubles, mobilier",
+"it":"mobili, arredamento, arredi",
+"cs":"nábytek",
+"tr":"mobilya, döşeme",
+"es":"muebles, mobiliario"
+}
+},
+{
+"w":"одеяло",
+"d":"Постельная принадлежность из плотной ткани или с наполнителем, которой укрываются для тепла.",
+"t":{
+"en":"blanket, quilt",
+"nl":"deken, dekbed",
+"pl":"kołdra, koc",
+"de":"Bettdecke, Decke",
+"fr":"couverture, couette, courtepointe",
+"it":"coperta, piumone, trapunta",
+"cs":"přikrývka, deka, peřina",
+"tr":"yorgan, battaniye",
+"es":"manta, edredón, colcha, cobertor"
+}
+},
+{
+"w":"подушка",
+"d":"Постельная принадлежность в виде зашитого со всех сторон тканевого мешка с мягким наполнителем (пухом, пером, синтепоном), используемая как опора для головы во время сна или отдыха.",
+"t":{
+"en":"pillow, cushion",
+"nl":"kussen, hoofdkussen",
+"pl":"poduszka",
+"de":"Kopfkissen, Kissen, Sofakissen",
+"fr":"oreiller, coussin",
+"it":"cuscino, guanciale",
+"cs":"polštář, polštářek",
+"tr":"yastık, minder",
+"es":"almohada, cojín"
+}
+},
+{
+"w":"жить",
+"d":"Использовать дом, квартиру или другое место как постоянное жилище; проживать где-либо.",
+"t":{
+"en":"live, reside, dwell",
+"nl":"wonen, leven",
+"pl":"mieszkać, żyć",
+"de":"wohnen, leben",
+"fr":"habiter, vivre, résider",
+"it":"vivere, abitare, risiedere",
+"cs":"bydlet, žít",
+"tr":"yaşamak, oturmak, ikamet etmek",
+"es":"vivir, habitar, residir"
+}
+},
+{
+"w":"снимать",
+"d":"Арендовать жильё или помещение за плату",
+"t":{
+"en":"rent, lease",
+"nl":"huren",
+"pl":"wynajmować",
+"de":"mieten, anmieten",
+"fr":"louer",
+"it":"affittare, prendere in affitto",
+"cs":"pronajímat si, mít v nájmu",
+"tr":"kiralamak, tutmak",
+"es":"alquilar, arrendar"
+}
+},
+{
+"w":"убирать",
+"d":"Наводить чистоту и порядок в помещении или на определённой территории.",
+"t":{
+"en":"clean, tidy up",
+"nl":"schoonmaken, opruimen",
+"pl":"sprzątać, porządkować",
+"de":"aufräumen, putzen, saubermachen",
+"fr":"nettoyer, ranger, faire le ménage",
+"it":"pulire, riordinare, fare le pulizie",
+"cs":"uklízet, uklidit",
+"tr":"temizlemek, toplamak",
+"es":"limpiar, ordenar, recoger"
+}
+},
+{
+"w":"открывать",
+"d":"Распахивать, отворять или снимать крышку с чего-либо, чтобы получить доступ внутрь или устранить преграду.",
+"t":{
+"en":"open",
+"nl":"openen, opendoen, openmaken",
+"pl":"otwierać",
+"de":"öffnen, aufmachen",
+"fr":"ouvrir",
+"it":"aprire",
+"cs":"otevírat",
+"tr":"açmak",
+"es":"abrir"
+}
+},
+{
+"w":"закрывать",
+"d":"Затворять, задвигать двери, окна или надевать крышку на что-либо, чтобы преградить доступ внутрь.",
+"t":{
+"en":"close, shut, lock",
+"nl":"sluiten, dichtdoen, op slot doen",
+"pl":"zamykać",
+"de":"schließen, zumachen, abschließen",
+"fr":"fermer, fermer à clé",
+"it":"chiudere, chiudere a chiave",
+"cs":"zavírat, zamykat, přikrývat",
+"tr":"kapatmak, kilitlemek, kapamak",
+"es":"cerrar, cerrar con llave"
+}
+},
+{
+"w":"мыть",
+"d":"Делать чистым, удаляя грязь с помощью воды или другой жидкости.",
+"t":{
+"en":"wash, clean",
+"nl":"wassen, schoonmaken",
+"pl":"myć",
+"de":"waschen, abwaschen, scheuern",
+"fr":"laver, nettoyer",
+"it":"lavare, pulire",
+"cs":"mýt, umývat",
+"tr":"yıkamak",
+"es":"lavar, limpiar"
+}
+},
+{
+"w":"чистый",
+"d":"Свободный от грязи, пыли и пятен; не загрязнённый.",
+"t":{
+"en":"clean, tidy",
+"nl":"schoon, proper",
+"pl":"czysty",
+"de":"sauber, rein",
+"fr":"propre",
+"it":"pulito, lindo",
+"cs":"čistý",
+"tr":"temiz",
+"es":"limpio, aseado"
+}
+},
+{
+"w":"грязный",
+"d":"Покрытый грязью, запачканный, нечистый.",
+"t":{
+"en":"dirty, filthy, unclean",
+"nl":"vuil, smerig, smoezelig",
+"pl":"brudny, ubłocony, nieczysty",
+"de":"schmutzig, dreckig",
+"fr":"sale, malpropre",
+"it":"sporco, sudicio",
+"cs":"špinavý, nečistý, ušpiněný",
+"tr":"kirli, pis",
+"es":"sucio, mugriento"
+}
+},
+{
+"w":"большой",
+"d":"имеющий крупный, значительный размер, превосходящий среднее значение",
+"t":{
+"en":"big, large",
+"nl":"groot",
+"pl":"duży, wielki",
+"de":"groß",
+"fr":"grand, gros",
+"it":"grande, grosso",
+"cs":"velký",
+"tr":"büyük, iri, kocaman",
+"es":"grande"
+}
+},
+{
+"w":"маленький",
+"d":"Имеющий небольшие физические размеры, занимающий мало места.",
+"t":{
+"en":"small, little",
+"nl":"klein",
+"pl":"mały, nieduży",
+"de":"klein, winzig",
+"fr":"petit, exigu",
+"it":"piccolo",
+"cs":"malý, drobný",
+"tr":"küçük, ufak",
+"es":"pequeño, chiquito"
+}
+}
+]

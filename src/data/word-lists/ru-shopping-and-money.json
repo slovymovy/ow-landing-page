@@ -1,0 +1,357 @@
+[
+{
+"w":"магазин",
+"d":"Специально оборудованное здание или помещение, предназначенное для розничной продажи товаров.",
+"t":{
+"en":"shop, store",
+"nl":"winkel, magazijn",
+"pl":"sklep",
+"de":"Geschäft, Laden, Kaufhaus",
+"fr":"magasin, boutique",
+"it":"negozio, bottega",
+"cs":"obchod, prodejna, krám",
+"tr":"mağaza, dükkân",
+"es":"tienda, almacén"
+}
+},
+{
+"w":"рынок",
+"d":"Место для торговли продуктами питания и другими товарами, часто расположенное под открытым небом или в торговых рядах.",
+"t":{
+"en":"market, marketplace",
+"nl":"markt",
+"pl":"rynek, targowisko, bazar",
+"de":"Markt, Marktplatz",
+"fr":"marché, halles",
+"it":"mercato",
+"cs":"trh, tržnice",
+"tr":"pazar, pazar yeri",
+"es":"mercado, plaza"
+}
+},
+{
+"w":"касса",
+"d":"Специально оборудованное место в магазине или другом учреждении, где производят расчёт за покупки или услуги.",
+"t":{
+"en":"checkout, cash desk",
+"nl":"kassa",
+"pl":"kasa",
+"de":"Kasse",
+"fr":"caisse",
+"it":"cassa",
+"cs":"pokladna, kasa",
+"tr":"kasa",
+"es":"caja, mostrador de pago"
+}
+},
+{
+"w":"банк",
+"d":"Финансовая организация, которая хранит деньги клиентов, выдает кредиты и проводит денежные переводы.",
+"t":{
+"en":"bank",
+"nl":"bank",
+"pl":"bank",
+"de":"Bank, Kreditinstitut",
+"fr":"banque",
+"it":"banca",
+"cs":"banka",
+"tr":"banka",
+"es":"banco"
+}
+},
+{
+"w":"супермаркет",
+"d":"Магазин самообслуживания с широким ассортиментом продуктов питания и хозяйственных товаров.",
+"t":{
+"en":"supermarket",
+"nl":"supermarkt",
+"pl":"supermarket",
+"de":"Supermarkt, Kaufhalle",
+"fr":"supermarché",
+"it":"supermercato",
+"cs":"supermarket",
+"tr":"süpermarket",
+"es":"supermercado"
+}
+},
+{
+"w":"деньги",
+"d":"Металлические монеты и бумажные знаки, являющиеся мерой стоимости товаров и средством платежа",
+"t":{
+"en":"money, cash",
+"nl":"geld, poen, contanten",
+"pl":"pieniądze, gotówka",
+"de":"Geld, Bargeld",
+"fr":"argent, monnaie",
+"it":"soldi, denaro",
+"cs":"peníze, hotovost",
+"tr":"para, nakit",
+"es":"dinero, plata, pasta"
+}
+},
+{
+"w":"рубль",
+"d":"Основная денежная единица России, Беларуси и ряда других стран, равная 100 копейкам.",
+"t":{
+"en":"ruble, rouble",
+"nl":"roebel",
+"pl":"rubel",
+"de":"Rubel",
+"fr":"rouble",
+"it":"rublo",
+"cs":"rubl",
+"tr":"ruble",
+"es":"rublo"
+}
+},
+{
+"w":"доллар",
+"d":"Название денежной единицы США и ряда других стран.",
+"t":{
+"en":"dollar",
+"nl":"dollar",
+"pl":"dolar",
+"de":"Dollar",
+"fr":"dollar",
+"it":"dollaro",
+"cs":"dolar",
+"tr":"dolar",
+"es":"dólar"
+}
+},
+{
+"w":"цена",
+"d":"Денежная стоимость товара или услуги, которую необходимо заплатить при покупке.",
+"t":{
+"en":"price, cost",
+"nl":"prijs, kosten",
+"pl":"cena, koszt",
+"de":"Preis, Kaufpreis",
+"fr":"prix, coût",
+"it":"prezzo, costo",
+"cs":"cena",
+"tr":"fiyat, eder, paha",
+"es":"precio, costo"
+}
+},
+{
+"w":"сдача",
+"d":"Деньги, которые возвращают покупателю, если он дал сумму больше стоимости покупки.",
+"t":{
+"en":"change",
+"nl":"wisselgeld",
+"pl":"reszta",
+"de":"Wechselgeld, Rückgeld",
+"fr":"monnaie, reste",
+"it":"resto",
+"cs":"drobné, nazpět",
+"tr":"para üstü",
+"es":"cambio, vuelta, vuelto"
+}
+},
+{
+"w":"скидка",
+"d":"Уменьшение установленной цены на товар или услугу.",
+"t":{
+"en":"discount, reduction",
+"nl":"korting, reductie",
+"pl":"zniżka, rabat, upust",
+"de":"Rabatt, Preisnachlass, Preisermäßigung",
+"fr":"remise, rabais, réduction",
+"it":"sconto, riduzione, abbuono",
+"cs":"sleva",
+"tr":"indirim, iskonto, tenzilat",
+"es":"descuento, rebaja"
+}
+},
+{
+"w":"штраф",
+"d":"Денежное взыскание, налагаемое в качестве наказания за нарушение закона, правил или договора.",
+"t":{
+"en":"fine, penalty",
+"nl":"boete, geldboete",
+"pl":"mandat, grzywna, kara",
+"de":"Geldstrafe, Bußgeld, Strafe",
+"fr":"amende, contravention",
+"it":"multa, ammenda, penale",
+"cs":"pokuta, penále",
+"tr":"para cezası, ceza",
+"es":"multa, sanción"
+}
+},
+{
+"w":"кредит",
+"d":"Предоставление денег, товаров или услуг в долг на условиях возврата, обычно с уплатой процентов.",
+"t":{
+"en":"loan, credit",
+"nl":"lening, krediet",
+"pl":"kredyt, pożyczka",
+"de":"Kredit, Darlehen",
+"fr":"crédit, prêt, emprunt",
+"it":"credito, prestito, mutuo",
+"cs":"úvěr, kredit, půjčka",
+"tr":"kredi, borç",
+"es":"crédito, préstamo"
+}
+},
+{
+"w":"покупка",
+"d":"Купленная вещь, приобретённый товар",
+"t":{
+"en":"purchase, buy, shopping",
+"nl":"aankoop, boodschappen",
+"pl":"zakup, sprawunek",
+"de":"Einkauf, Kauf, Anschaffung",
+"fr":"achat, acquisition, courses",
+"it":"acquisto, compera, spesa",
+"cs":"nákup, koupě",
+"tr":"alışveriş, alınan şey",
+"es":"compra, adquisición"
+}
+},
+{
+"w":"карточка",
+"d":"Пластиковая карта, привязанная к банковскому счёту, используемая для безналичной оплаты и снятия наличных.",
+"t":{
+"en":"card, bank card",
+"nl":"bankpas, pinpas, kaart",
+"pl":"karta, karta płatnicza, karta bankomatowa",
+"de":"Karte, Bankkarte, Kreditkarte",
+"fr":"carte bancaire, carte, carte de crédit",
+"it":"carta, carta di credito, tessera",
+"cs":"karta, platební karta, bankovní karta",
+"tr":"kart, banka kartı, kredi kartı",
+"es":"tarjeta, tarjeta bancaria"
+}
+},
+{
+"w":"чек",
+"d":"Талон из кассы, подтверждающий, что товар или услуга были оплачены.",
+"t":{
+"en":"receipt",
+"nl":"bon, kassabon, reçu",
+"pl":"paragon, rachunek",
+"de":"Kassenbon, Quittung, Kassenzettel",
+"fr":"ticket de caisse, reçu, facture",
+"it":"scontrino, ricevuta",
+"cs":"účtenka, paragon, pokladní stvrzenka",
+"tr":"fiş, fatura",
+"es":"ticket, recibo, factura"
+}
+},
+{
+"w":"сумка",
+"d":"Сравнительно небольшое вместилище из ткани, кожи или другого мягкого материала с ручками или ремнями для переноски предметов",
+"t":{
+"en":"bag, handbag",
+"nl":"tas, handtas",
+"pl":"torba, torebka",
+"de":"Tasche, Handtasche",
+"fr":"sac, sac à main, sacoche, cabas",
+"it":"borsa",
+"cs":"taška, kabelka",
+"tr":"çanta, file",
+"es":"bolsa, bolso, cartera"
+}
+},
+{
+"w":"продавец",
+"d":"Работник магазина или торговой точки, который отпускает товары покупателям и принимает оплату.",
+"t":{
+"en":"shop assistant, sales clerk, salesperson",
+"nl":"verkoper, winkelbediende",
+"pl":"sprzedawca, ekspedient",
+"de":"Verkäufer, Verkäuferin",
+"fr":"vendeur, vendeuse, conseiller de vente",
+"it":"commesso, venditore",
+"cs":"prodavač",
+"tr":"satıcı, tezgahtar, satış danışmanı",
+"es":"dependiente, vendedor"
+}
+},
+{
+"w":"платить",
+"d":"Отдавать деньги или другие ценности в обмен на товары, услуги или в качестве исполнения обязательств.",
+"t":{
+"en":"pay",
+"nl":"betalen",
+"pl":"płacić",
+"de":"zahlen, bezahlen",
+"fr":"payer, régler",
+"it":"pagare",
+"cs":"platit, proplácet",
+"tr":"ödemek",
+"es":"pagar, abonar"
+},
+"c":{
+"en":"imperfective: to pay (in general, repeatedly)",
+"fr":"imperfectif : payer (en général)",
+"it":"imperfettivo: pagare (in generale)"
+}
+},
+{
+"w":"заплатить",
+"d":"Отдать деньги или другие ценности в обмен на товар, услугу или в качестве возмещения.",
+"t":{
+"en":"pay",
+"nl":"betalen, afrekenen",
+"pl":"zapłacić",
+"de":"bezahlen, zahlen",
+"fr":"payer, régler",
+"it":"pagare",
+"cs":"zaplatit",
+"tr":"ödemek, parasını vermek",
+"es":"pagar"
+},
+"c":{
+"en":"perfective: to pay (once, completed)",
+"fr":"perfectif : payer (une seule fois)",
+"it":"perfettivo: pagare (azione compiuta)"
+}
+},
+{
+"w":"тратить",
+"d":"Расходовать, использовать какой-либо ресурс (деньги, время, силы) для определенной цели.",
+"t":{
+"en":"spend, expend",
+"nl":"uitgeven, besteden, verbruiken",
+"pl":"wydawać, poświęcać, zużywać",
+"de":"ausgeben, verbringen, aufwenden",
+"fr":"dépenser, passer, consacrer",
+"it":"spendere, impiegare",
+"cs":"utrácet, trávit, vynakládat",
+"tr":"harcamak, tüketmek",
+"es":"gastar, emplear"
+}
+},
+{
+"w":"дорогой",
+"d":"Стоящий больших денег, продаваемый или покупаемый по высокой цене.",
+"t":{
+"en":"expensive, costly, dear",
+"nl":"duur, kostbaar",
+"pl":"drogi, kosztowny",
+"de":"teuer, kostspielig, kostbar",
+"fr":"cher, coûteux",
+"it":"caro, costoso",
+"cs":"drahý, nákladný",
+"tr":"pahalı",
+"es":"caro, costoso"
+}
+},
+{
+"w":"бесплатный",
+"d":"Такой, за который не нужно платить деньги; предоставляемый безвозмездно.",
+"t":{
+"en":"free, complimentary, free of charge",
+"nl":"gratis, kosteloos",
+"pl":"bezpłatny, darmowy, gratisowy",
+"de":"kostenlos, gratis, unentgeltlich, frei",
+"fr":"gratuit, à titre gracieux",
+"it":"gratuito, gratis",
+"cs":"bezplatný, zdarma",
+"tr":"ücretsiz, bedava, parasız",
+"es":"gratis, gratuito, de balde"
+}
+}
+]

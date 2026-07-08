@@ -10,8 +10,16 @@ import nlKnmExam from './word-lists/nl-knm-exam.json';
 import nlSupermarket from './word-lists/nl-supermarket.json';
 import nlAtTheDoctor from './word-lists/nl-at-the-doctor.json';
 import nlFamily from './word-lists/nl-family.json';
+import ruFamilyAndPeople from './word-lists/ru-family-and-people.json';
+import ruFoodAndKitchen from './word-lists/ru-food-and-kitchen.json';
+import ruCityAndTransport from './word-lists/ru-city-and-transport.json';
+import ruHomeAndHousing from './word-lists/ru-home-and-housing.json';
+import ruShoppingAndMoney from './word-lists/ru-shopping-and-money.json';
+import ruHealthAndBody from './word-lists/ru-health-and-body.json';
+import ruClothesAndAppearance from './word-lists/ru-clothes-and-appearance.json';
+import ruWeatherAndNature from './word-lists/ru-weather-and-nature.json';
 import { homeCopy } from './copy';
-import { wordListCopy, wordListCopyNl, type StepDef, type WlFaqItem, type WordListCopy } from './wordListCopy';
+import { wordListCopy, wordListCopyNl, wordListCopyRu, type StepDef, type WlFaqItem, type WordListCopy } from './wordListCopy';
 import { topicListCopy } from './topicListCopy';
 import { languages, localizePath, type LanguageSlug, type LocaleCode } from './site';
 
@@ -108,7 +116,18 @@ const REGISTRY: ListDef[] = [
   { language: 'dutch', slug: 'knm-exam', order: 3, topic: true, words: nlKnmExam as RawWord[] },
   { language: 'dutch', slug: 'supermarket', order: 4, topic: true, words: nlSupermarket as RawWord[] },
   { language: 'dutch', slug: 'at-the-doctor', order: 5, topic: true, words: nlAtTheDoctor as RawWord[] },
-  { language: 'dutch', slug: 'family', order: 6, topic: true, words: nlFamily as RawWord[] }
+  { language: 'dutch', slug: 'family', order: 6, topic: true, words: nlFamily as RawWord[] },
+
+  // Russian lists — all thematic (no frequency/core list), ordered by everyday
+  // usefulness. Source: ru_lists_export.csv via gen_ru.py.
+  { language: 'russian', slug: 'family-and-people', order: 1, topic: true, words: ruFamilyAndPeople as RawWord[] },
+  { language: 'russian', slug: 'food-and-kitchen', order: 2, topic: true, words: ruFoodAndKitchen as RawWord[] },
+  { language: 'russian', slug: 'city-and-transport', order: 3, topic: true, words: ruCityAndTransport as RawWord[] },
+  { language: 'russian', slug: 'home-and-housing', order: 4, topic: true, words: ruHomeAndHousing as RawWord[] },
+  { language: 'russian', slug: 'shopping-and-money', order: 5, topic: true, words: ruShoppingAndMoney as RawWord[] },
+  { language: 'russian', slug: 'health-and-body', order: 6, topic: true, words: ruHealthAndBody as RawWord[] },
+  { language: 'russian', slug: 'clothes-and-appearance', order: 7, topic: true, words: ruClothesAndAppearance as RawWord[] },
+  { language: 'russian', slug: 'weather-and-nature', order: 8, topic: true, words: ruWeatherAndNature as RawWord[] }
 ];
 
 const byOrder = (language: LanguageSlug) =>
@@ -120,12 +139,12 @@ export const orderedSlugs = (language: LanguageSlug) => byOrder(language).map((l
 
 // The interface locale in which a list shows the definition rather than a
 // translation — i.e. the locale that matches the taught language.
-const DEF_LOCALE: Partial<Record<LanguageSlug, LocaleCode>> = { english: 'en', dutch: 'nl' };
+const DEF_LOCALE: Partial<Record<LanguageSlug, LocaleCode>> = { english: 'en', dutch: 'nl', russian: 'ru' };
 const defLocale = (language: LanguageSlug): LocaleCode => DEF_LOCALE[language] ?? 'en';
 
 // Per-language UI copy map (falls back to English chrome if a language has none).
 const copyFor = (language: LanguageSlug): Record<LocaleCode, WordListCopy> =>
-  language === 'dutch' ? wordListCopyNl : wordListCopy;
+  language === 'dutch' ? wordListCopyNl : language === 'russian' ? wordListCopyRu : wordListCopy;
 
 // UI copy for a given interface locale + taught language (hub meta, labels…).
 export const wlCopy = (locale: LocaleCode, language: LanguageSlug): WordListCopy => copyFor(language)[locale];

@@ -1,0 +1,467 @@
+[
+{
+"w":"погода",
+"d":"Состояние атмосферы в определённом месте в определённое время (температура, влажность, осадки, ветер).",
+"t":{
+"en":"weather",
+"nl":"weer",
+"pl":"pogoda",
+"de":"Wetter",
+"fr":"temps, météo",
+"it":"tempo, tempo meteorologico",
+"cs":"počasí",
+"tr":"hava, hava durumu",
+"es":"tiempo, clima"
+}
+},
+{
+"w":"солнце",
+"d":"Небесное светило шарообразной формы, которое мы видим на небе днем и которое освещает Землю.",
+"t":{
+"en":"sun",
+"nl":"zon",
+"pl":"słońce",
+"de":"Sonne",
+"fr":"soleil",
+"it":"sole",
+"cs":"slunce",
+"tr":"güneş",
+"es":"sol"
+}
+},
+{
+"w":"дождь",
+"d":"Атмосферные осадки, выпадающие из облаков в виде капель воды.",
+"t":{
+"en":"rain",
+"nl":"regen",
+"pl":"deszcz",
+"de":"Regen",
+"fr":"pluie",
+"it":"pioggia",
+"cs":"déšť",
+"tr":"yağmur",
+"es":"lluvia"
+}
+},
+{
+"w":"снег",
+"d":"Атмосферные осадки в виде белых хлопьев, состоящих из кристалликов льда, а также сплошная масса таких осадков, покрывающая землю.",
+"t":{
+"en":"snow",
+"nl":"sneeuw",
+"pl":"śnieg",
+"de":"Schnee, Schneedecke",
+"fr":"neige",
+"it":"neve",
+"cs":"sníh",
+"tr":"kar",
+"es":"nieve"
+}
+},
+{
+"w":"ветер",
+"d":"Движение потока воздуха в горизонтальном направлении относительно земной поверхности.",
+"t":{
+"en":"wind",
+"nl":"wind",
+"pl":"wiatr",
+"de":"Wind",
+"fr":"vent, air",
+"it":"vento",
+"cs":"vítr",
+"tr":"rüzgâr, yel",
+"es":"viento, aire"
+}
+},
+{
+"w":"гроза",
+"d":"Атмосферное явление, при котором между облаками и землёй возникают электрические разряды — молнии, сопровождаемые громом и дождём.",
+"t":{
+"en":"thunderstorm, storm",
+"nl":"onweer, onweersbui",
+"pl":"burza",
+"de":"Gewitter, Unwetter",
+"fr":"orage, tempête",
+"it":"temporale, tempesta",
+"cs":"bouřka, bouře",
+"tr":"fırtına, gök gürültülü fırtına, boran",
+"es":"tormenta, tempestad, borrasca"
+}
+},
+{
+"w":"туман",
+"d":"Атмосферное явление: скопление мелких капель воды в воздухе, которое делает воздух непрозрачным и ухудшает видимость.",
+"t":{
+"en":"fog, mist, haze",
+"nl":"mist, nevel",
+"pl":"mgła, zamglenie",
+"de":"Nebel, Dunst",
+"fr":"brouillard, brume",
+"it":"nebbia, foschia",
+"cs":"mlha, opar",
+"tr":"sis, pus",
+"es":"niebla, neblina, bruma"
+}
+},
+{
+"w":"мороз",
+"d":"Очень сильный холод, холодная зимняя погода.",
+"t":{
+"en":"frost, bitter cold, freezing weather",
+"nl":"vorst, vrieskou, strenge kou",
+"pl":"mróz, zimno",
+"de":"Frost, Kälte, Eiseskälte",
+"fr":"gelée, grand froid, givre",
+"it":"gelo, freddo intenso, morsa del freddo",
+"cs":"mráz, zima",
+"tr":"ayaz, dondurucu soğuk, soğuk",
+"es":"helada, frío intenso, frío"
+}
+},
+{
+"w":"облако",
+"d":"Скопление сгустившихся водяных паров или ледяных кристаллов в атмосфере.",
+"t":{
+"en":"cloud",
+"nl":"wolk",
+"pl":"chmura, obłok",
+"de":"Wolke",
+"fr":"nuage",
+"it":"nuvola, nube",
+"cs":"mrak, oblak",
+"tr":"bulut",
+"es":"nube"
+}
+},
+{
+"w":"тепло",
+"d":"В значении сказуемого: о состоянии погоды или окружающей среды, когда температура воздуха высокая или комфортная; также об ощущении тепла человеком.",
+"t":{
+"en":"warm, it is warm",
+"nl":"warm, behaaglijk",
+"pl":"ciepło",
+"de":"warm, es ist warm",
+"fr":"faire chaud, avoir chaud, chaud",
+"it":"caldo, caldo",
+"cs":"teplo",
+"tr":"sıcak, ılık",
+"es":"hace calor, hace una temperatura agradable, sentir calor"
+}
+},
+{
+"w":"температура",
+"d":"Степень тепла или холода чего-либо (воздуха, воды, тела и т. д.); физическая величина.",
+"t":{
+"en":"temperature",
+"nl":"temperatuur",
+"pl":"temperatura",
+"de":"Temperatur",
+"fr":"température",
+"it":"temperatura",
+"cs":"teplota",
+"tr":"sıcaklık, ısı",
+"es":"temperatura"
+}
+},
+{
+"w":"зима",
+"d":"Самое холодное время года, сезон между осенью и весной",
+"t":{
+"en":"winter",
+"nl":"winter",
+"pl":"zima",
+"de":"Winter",
+"fr":"hiver",
+"it":"inverno",
+"cs":"zima",
+"tr":"kış",
+"es":"invierno"
+}
+},
+{
+"w":"весна",
+"d":"Одно из четырёх времён года между зимой и летом.",
+"t":{
+"en":"spring, springtime",
+"nl":"lente, voorjaar",
+"pl":"wiosna",
+"de":"Frühling, Frühjahr, Lenz",
+"fr":"printemps",
+"it":"primavera",
+"cs":"jaro",
+"tr":"ilkbahar, bahar",
+"es":"primavera"
+}
+},
+{
+"w":"лето",
+"d":"Самое тёплое время года, сезон между весной и осенью.",
+"t":{
+"en":"summer",
+"nl":"zomer",
+"pl":"lato",
+"de":"Sommer",
+"fr":"été",
+"it":"estate",
+"cs":"léto",
+"tr":"yaz",
+"es":"verano"
+}
+},
+{
+"w":"осень",
+"d":"Время года между летом и зимой.",
+"t":{
+"en":"autumn, fall",
+"nl":"herfst, najaar",
+"pl":"jesień",
+"de":"Herbst",
+"fr":"automne",
+"it":"autunno",
+"cs":"podzim, jeseň",
+"tr":"sonbahar, güz",
+"es":"otoño"
+}
+},
+{
+"w":"сезон",
+"d":"Одно из четырёх времён года (весна, лето, осень, зима).",
+"t":{
+"en":"season",
+"nl":"seizoen, jaargetijde",
+"pl":"pora roku, sezon",
+"de":"Jahreszeit",
+"fr":"saison",
+"it":"stagione",
+"cs":"roční období, sezóna",
+"tr":"mevsim, sezon",
+"es":"estación, estación del año"
+}
+},
+{
+"w":"климат",
+"d":"Многолетний статистический режим погоды, характерный для данной местности.",
+"t":{
+"en":"climate",
+"nl":"klimaat",
+"pl":"klimat",
+"de":"Klima",
+"fr":"climat",
+"it":"clima",
+"cs":"klima, podnebí",
+"tr":"iklim",
+"es":"clima"
+}
+},
+{
+"w":"небо",
+"d":"Пространство над поверхностью Земли, где видны облака, солнце, луна и звёзды.",
+"t":{
+"en":"sky, firmament",
+"nl":"hemel, lucht",
+"pl":"niebo, firmament",
+"de":"Himmel, Firmament, Himmelszelt",
+"fr":"ciel, firmament",
+"it":"cielo, firmamento",
+"cs":"nebe, obloha",
+"tr":"gökyüzü, gök, sema",
+"es":"cielo, firmamento"
+}
+},
+{
+"w":"природа",
+"d":"Естественный мир, всё, что не создано человеком (растения, животные, ландшафты, климат).",
+"t":{
+"en":"nature",
+"nl":"natuur",
+"pl":"przyroda, natura",
+"de":"Natur",
+"fr":"nature",
+"it":"natura",
+"cs":"příroda",
+"tr":"doğa, tabiat",
+"es":"naturaleza"
+}
+},
+{
+"w":"море",
+"d":"Часть Мирового океана, обособленная сушей или возвышениями подводного рельефа.",
+"t":{
+"en":"sea, ocean",
+"nl":"zee, oceaan",
+"pl":"morze",
+"de":"Meer, See",
+"fr":"mer, océan",
+"it":"mare",
+"cs":"moře",
+"tr":"deniz, derya",
+"es":"mar"
+}
+},
+{
+"w":"поле",
+"d":"Безлесная равнина, обширный участок земли, часто используемый для сельскохозяйственных посевов.",
+"t":{
+"en":"field",
+"nl":"veld, akker",
+"pl":"pole",
+"de":"Feld",
+"fr":"champ",
+"it":"campo",
+"cs":"pole",
+"tr":"tarla, alan, kır",
+"es":"campo"
+}
+},
+{
+"w":"парк",
+"d":"Большая озеленённая территория в городе, предназначенная для отдыха и прогулок.",
+"t":{
+"en":"park, gardens",
+"nl":"park",
+"pl":"park",
+"de":"Park, Parkanlage",
+"fr":"parc, jardin",
+"it":"parco, giardino",
+"cs":"park, sady",
+"tr":"park",
+"es":"parque"
+}
+},
+{
+"w":"озеро",
+"d":"Большой естественный водоём, окружённый сушей.",
+"t":{
+"en":"lake",
+"nl":"meer",
+"pl":"jezioro",
+"de":"See",
+"fr":"lac",
+"it":"lago",
+"cs":"jezero",
+"tr":"göl",
+"es":"lago"
+}
+},
+{
+"w":"трава",
+"d":"Зелёный покров земли, состоящий из растений с тонкими листьями.",
+"t":{
+"en":"grass",
+"nl":"gras",
+"pl":"trawa",
+"de":"Gras",
+"fr":"herbe, pelouse",
+"it":"erba",
+"cs":"tráva, trávník",
+"tr":"çim, ot",
+"es":"hierba, césped, pasto"
+}
+},
+{
+"w":"цветок",
+"d":"Травянистое растение, которое цветёт; часто выращивается в горшках или садах для красоты.",
+"t":{
+"en":"flower",
+"nl":"bloem, kamerplant",
+"pl":"kwiat, kwiatek",
+"de":"Blume, Zimmerpflanze",
+"fr":"fleur, plante à fleurs",
+"it":"fiore, pianta fiorita",
+"cs":"květina, květináčová rostlina",
+"tr":"çiçek",
+"es":"flor, planta"
+}
+},
+{
+"w":"дерево",
+"d":"Многолетнее растение с твёрдым стволом и ветвями, образующими крону.",
+"t":{
+"en":"tree",
+"nl":"boom",
+"pl":"drzewo",
+"de":"Baum",
+"fr":"arbre",
+"it":"albero",
+"cs":"strom",
+"tr":"ağaç",
+"es":"árbol"
+}
+},
+{
+"w":"лист",
+"d":"Орган растения в виде тонкой пластинки, обычно зелёного цвета, служащий для дыхания и питания",
+"t":{
+"en":"leaf",
+"nl":"blad",
+"pl":"liść",
+"de":"Blatt",
+"fr":"feuille",
+"it":"foglia",
+"cs":"list",
+"tr":"yaprak",
+"es":"hoja"
+}
+},
+{
+"w":"холодный",
+"d":"Имеющий низкую температуру (о воздухе, воде, предметах, погоде).",
+"t":{
+"en":"cold, chilly",
+"nl":"koud, koel, fris",
+"pl":"zimny, chłodny",
+"de":"kalt, kühl",
+"fr":"froid, frais",
+"it":"freddo, gelido",
+"cs":"studený, chladný",
+"tr":"soğuk",
+"es":"frío"
+}
+},
+{
+"w":"тёплый",
+"d":"Имеющий умеренно высокую температуру (выше комнатной или температуры тела), но не горячий.",
+"t":{
+"en":"warm",
+"nl":"warm",
+"pl":"ciepły",
+"de":"warm",
+"fr":"chaud, tiède",
+"it":"caldo, tiepido",
+"cs":"teplý",
+"tr":"ılık, sıcak",
+"es":"cálido, tibio"
+}
+},
+{
+"w":"снежный",
+"d":"Связанный со снегом, состоящий из снега или покрытый им.",
+"t":{
+"en":"snow, snowy, snow-covered",
+"nl":"sneeuw-, besneeuwd, sneeuwachtig",
+"pl":"śnieżny, śniegowy, zaśnieżony",
+"de":"Schnee-, schneebedeckt, verschneit",
+"fr":"de neige, neigeux, enneigé",
+"it":"di neve, nevoso, innevato",
+"cs":"sněžný, sněhový, zasněžený",
+"tr":"karlı, kar",
+"es":"de nieve, nevado"
+}
+},
+{
+"w":"свежий",
+"d":"Чистый, прохладный, приятный для дыхания (о воздухе, ветре).",
+"t":{
+"en":"fresh, clean, crisp",
+"nl":"fris, schoon",
+"pl":"świeży, rześki",
+"de":"frisch, rein",
+"fr":"frais, pur",
+"it":"fresco, pulito",
+"cs":"čerstvý, svěží",
+"tr":"temiz, serin, taze",
+"es":"fresco, puro"
+}
+}
+]

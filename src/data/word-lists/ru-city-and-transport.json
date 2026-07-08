@@ -1,0 +1,542 @@
+[
+{
+"w":"город",
+"d":"Крупный населённый пункт, который является административным, промышленным и культурным центром.",
+"t":{
+"en":"city, town",
+"nl":"stad",
+"pl":"miasto",
+"de":"Stadt, Großstadt",
+"fr":"ville, cité",
+"it":"città",
+"cs":"město",
+"tr":"şehir, kent",
+"es":"ciudad, pueblo"
+}
+},
+{
+"w":"улица",
+"d":"Часть населённого пункта, дорога с рядами домов по обеим сторонам.",
+"t":{
+"en":"street, road",
+"nl":"straat, weg",
+"pl":"ulica",
+"de":"Straße",
+"fr":"rue, route",
+"it":"via, strada",
+"cs":"ulice",
+"tr":"sokak, cadde",
+"es":"calle"
+}
+},
+{
+"w":"площадь",
+"d":"Незастроенное ровное место в городе или другом населённом пункте, обычно окружённое зданиями.",
+"t":{
+"en":"square",
+"nl":"plein, plaats",
+"pl":"plac, rynek",
+"de":"Platz",
+"fr":"place",
+"it":"piazza",
+"cs":"náměstí",
+"tr":"meydan",
+"es":"plaza"
+}
+},
+{
+"w":"проспект",
+"d":"Большая, широкая и прямая улица в городе, часто обсаженная деревьями.",
+"t":{
+"en":"avenue, street",
+"nl":"laan, avenue",
+"pl":"aleja, prospekt",
+"de":"Prospekt, Prachtstraße, Allee, Boulevard",
+"fr":"avenue, boulevard",
+"it":"viale, corso",
+"cs":"třída, bulvár, prospekt",
+"tr":"bulvar, cadde",
+"es":"avenida, bulevar, gran vía"
+}
+},
+{
+"w":"переулок",
+"d":"Небольшая улица, обычно служащая поперечным соединением двух других улиц.",
+"t":{
+"en":"lane, side street, alleyway",
+"nl":"zijstraat, dwarsstraat, steeg",
+"pl":"zaułek, uliczka, przecznica",
+"de":"Gasse, Querstraße, Seitenstraße",
+"fr":"ruelle, petite rue",
+"it":"vicolo, stradina, traversa",
+"cs":"ulička, postranní ulice, průchod",
+"tr":"ara sokak, yan sokak, dar sokak",
+"es":"callejón, callejuela, bocacalle"
+}
+},
+{
+"w":"магазин",
+"d":"Специально оборудованное здание или помещение, предназначенное для розничной продажи товаров.",
+"t":{
+"en":"shop, store",
+"nl":"winkel, magazijn",
+"pl":"sklep",
+"de":"Geschäft, Laden, Kaufhaus",
+"fr":"magasin, boutique",
+"it":"negozio, bottega",
+"cs":"obchod, prodejna, krám",
+"tr":"mağaza, dükkân",
+"es":"tienda, almacén"
+}
+},
+{
+"w":"ресторан",
+"d":"Предприятие общественного питания, где можно заказать еду и напитки, часто с музыкой и обслуживанием.",
+"t":{
+"en":"restaurant",
+"nl":"restaurant",
+"pl":"restauracja",
+"de":"Restaurant, Gaststätte",
+"fr":"restaurant",
+"it":"ristorante",
+"cs":"restaurace",
+"tr":"restoran, lokanta",
+"es":"restaurante, restorán"
+}
+},
+{
+"w":"кафе",
+"d":"Заведение общественного питания и отдыха, похожее на небольшой ресторан, но с ограниченным ассортиментом продукции.",
+"t":{
+"en":"café, cafe, coffee shop",
+"nl":"café, koffiehuis, eetcafé",
+"pl":"kawiarnia, kawiarenka",
+"de":"Café, Kaffeehaus",
+"fr":"café, bistrot, cafétéria",
+"it":"caffè, bar, caffetteria",
+"cs":"kavárna, kavárnička, café",
+"tr":"kafe, kahvehane, kafeterya",
+"es":"café, cafetería"
+}
+},
+{
+"w":"банк",
+"d":"Здание или офис, в котором располагается это финансовое учреждение.",
+"t":{
+"en":"bank",
+"nl":"bank",
+"pl":"bank",
+"de":"Bank, Bankgebäude",
+"fr":"banque",
+"it":"banca",
+"cs":"banka",
+"tr":"banka",
+"es":"banco"
+}
+},
+{
+"w":"больница",
+"d":"Медицинское учреждение для стационарного лечения больных.",
+"t":{
+"en":"hospital",
+"nl":"ziekenhuis, hospitaal",
+"pl":"szpital",
+"de":"Krankenhaus, Klinik, Spital",
+"fr":"hôpital, clinique",
+"it":"ospedale, clinica",
+"cs":"nemocnice",
+"tr":"hastane",
+"es":"hospital, clínica"
+}
+},
+{
+"w":"школа",
+"d":"Здание, в котором располагается учебное заведение",
+"t":{
+"en":"school",
+"nl":"school, schoolgebouw",
+"pl":"szkoła",
+"de":"Schule",
+"fr":"école",
+"it":"scuola",
+"cs":"škola",
+"tr":"okul",
+"es":"escuela, colegio"
+}
+},
+{
+"w":"университет",
+"d":"Здание, занимаемое высшим учебным заведением.",
+"t":{
+"en":"university",
+"nl":"universiteit",
+"pl":"uniwersytet",
+"de":"Universität, Universitätsgebäude, Uni",
+"fr":"université, fac",
+"it":"università",
+"cs":"univerzita",
+"tr":"üniversite",
+"es":"universidad"
+}
+},
+{
+"w":"театр",
+"d":"Здание или помещение, специально оборудованное для показа спектаклей и представлений.",
+"t":{
+"en":"theater, theatre",
+"nl":"theater, schouwburg",
+"pl":"teatr",
+"de":"Theater, Theatergebäude",
+"fr":"théâtre, salle de spectacle",
+"it":"teatro",
+"cs":"divadlo",
+"tr":"tiyatro, tiyatro binası",
+"es":"teatro"
+}
+},
+{
+"w":"музей",
+"d":"Здание или помещение, в котором располагается такое учреждение.",
+"t":{
+"en":"museum",
+"nl":"museum",
+"pl":"muzeum",
+"de":"Museum",
+"fr":"musée",
+"it":"museo",
+"cs":"muzeum",
+"tr":"müze",
+"es":"museo"
+}
+},
+{
+"w":"кино",
+"d":"Здание или помещение, оборудованное для публичного показа фильмов.",
+"t":{
+"en":"cinema, movie theater, the movies",
+"nl":"bioscoop, filmtheater",
+"pl":"kino",
+"de":"Kino, Lichtspielhaus",
+"fr":"cinéma, ciné",
+"it":"cinema",
+"cs":"kino",
+"tr":"sinema, sinema salonu",
+"es":"cine"
+}
+},
+{
+"w":"библиотека",
+"d":"Учреждение, собирающее и хранящее книги, журналы и другие издания для общественного пользования",
+"t":{
+"en":"library",
+"nl":"bibliotheek",
+"pl":"biblioteka",
+"de":"Bibliothek, Bücherei",
+"fr":"bibliothèque",
+"it":"biblioteca",
+"cs":"knihovna",
+"tr":"kütüphane",
+"es":"biblioteca"
+}
+},
+{
+"w":"почта",
+"d":"Здание или помещение, где находится отделение связи и обслуживают клиентов.",
+"t":{
+"en":"post office",
+"nl":"postkantoor",
+"pl":"poczta, urząd pocztowy",
+"de":"Post, Postamt, Postfiliale",
+"fr":"bureau de poste, poste",
+"it":"ufficio postale, posta",
+"cs":"pošta",
+"tr":"postane, postahane, PTT",
+"es":"oficina de correos, correos"
+}
+},
+{
+"w":"аптека",
+"d":"Учреждение или магазин, где продаются лекарства и медицинские товары.",
+"t":{
+"en":"pharmacy, drugstore, chemist's shop",
+"nl":"apotheek",
+"pl":"apteka",
+"de":"Apotheke",
+"fr":"pharmacie",
+"it":"farmacia",
+"cs":"lékárna",
+"tr":"eczane",
+"es":"farmacia, botica"
+}
+},
+{
+"w":"парк",
+"d":"Большая озеленённая территория в городе, предназначенная для отдыха и прогулок.",
+"t":{
+"en":"park, gardens",
+"nl":"park",
+"pl":"park",
+"de":"Park, Parkanlage",
+"fr":"parc, jardin",
+"it":"parco, giardino",
+"cs":"park, sady",
+"tr":"park",
+"es":"parque"
+}
+},
+{
+"w":"станция",
+"d":"Место остановки поездов, метро или других транспортных средств для посадки и высадки пассажиров.",
+"t":{
+"en":"station",
+"nl":"station, halte",
+"pl":"stacja, dworzec",
+"de":"Station, Bahnhof",
+"fr":"station, gare, arrêt",
+"it":"stazione",
+"cs":"stanice",
+"tr":"istasyon, durak",
+"es":"estación, apeadero"
+}
+},
+{
+"w":"остановка",
+"d":"Место, специально отведенное для посадки и высадки пассажиров общественного транспорта (автобуса, трамвая и т. п.).",
+"t":{
+"en":"stop, bus stop",
+"nl":"halte, bushalte",
+"pl":"przystanek",
+"de":"Haltestelle, Station",
+"fr":"arrêt, arrêt de bus, station",
+"it":"fermata",
+"cs":"zastávka, stanice",
+"tr":"durak",
+"es":"parada, parada de autobús"
+}
+},
+{
+"w":"аэропорт",
+"d":"Комплекс сооружений и оборудования для приёма и отправки самолётов, а также для обслуживания пассажиров и грузов.",
+"t":{
+"en":"airport",
+"nl":"luchthaven, vliegveld",
+"pl":"lotnisko, port lotniczy",
+"de":"Flughafen, Airport",
+"fr":"aéroport",
+"it":"aeroporto",
+"cs":"letiště",
+"tr":"havalimanı, havaalanı",
+"es":"aeropuerto"
+}
+},
+{
+"w":"метро",
+"d":"Городская электрическая железная дорога для скоростной перевозки пассажиров, обычно проложенная в подземных тоннелях.",
+"t":{
+"en":"subway, metro, underground, tube",
+"nl":"metro, ondergrondse",
+"pl":"metro",
+"de":"U-Bahn, Metro, Untergrundbahn",
+"fr":"métro, métropolitain",
+"it":"metropolitana, metrò",
+"cs":"metro",
+"tr":"metro",
+"es":"metro, subterráneo, subte"
+}
+},
+{
+"w":"трамвай",
+"d":"Городской наземный электрический транспорт, движущийся по рельсам, а также отдельный вагон этого транспорта.",
+"t":{
+"en":"tram, streetcar, trolley",
+"nl":"tram",
+"pl":"tramwaj",
+"de":"Straßenbahn, Tram, Trambahn",
+"fr":"tramway, tram",
+"it":"tram, tranvai",
+"cs":"tramvaj, šalina, pouliční dráha",
+"tr":"tramvay",
+"es":"tranvía"
+}
+},
+{
+"w":"такси",
+"d":"Автомобиль для перевозки пассажиров и грузов в указанное место с оплатой проезда по счётчику.",
+"t":{
+"en":"taxi, cab, taxicab",
+"nl":"taxi",
+"pl":"taksówka, taxi",
+"de":"Taxi",
+"fr":"taxi",
+"it":"taxi, tassì",
+"cs":"taxi, taxík",
+"tr":"taksi",
+"es":"taxi"
+}
+},
+{
+"w":"троллейбус",
+"d":"Городское электрическое транспортное средство для перевозки пассажиров, которое движется без рельсов и получает энергию от проводов.",
+"t":{
+"en":"trolleybus, trolley bus",
+"nl":"trolleybus",
+"pl":"trolejbus",
+"de":"Oberleitungsbus, Obus, Oberleitungsomnibus, Trolleybus",
+"fr":"trolleybus, trolley",
+"it":"filobus",
+"cs":"trolejbus",
+"tr":"troleybüs",
+"es":"trolebús, trole"
+}
+},
+{
+"w":"поезд",
+"d":"Железнодорожный состав из сцепленных вагонов, который тянет локомотив.",
+"t":{
+"en":"train",
+"nl":"trein",
+"pl":"pociąg",
+"de":"Zug, Eisenbahn",
+"fr":"train",
+"it":"treno, convoglio",
+"cs":"vlak",
+"tr":"tren, katar",
+"es":"tren"
+}
+},
+{
+"w":"автомобиль",
+"d":"Транспортное средство на колёсах с собственным двигателем, предназначенное для перевозки пассажиров и грузов.",
+"t":{
+"en":"car, automobile",
+"nl":"auto, automobiel",
+"pl":"samochód, auto",
+"de":"Auto, Wagen, Automobil, PKW",
+"fr":"voiture, automobile, auto",
+"it":"macchina, automobile, auto",
+"cs":"auto, automobil",
+"tr":"araba, otomobil",
+"es":"coche, carro, auto, automóvil"
+}
+},
+{
+"w":"велосипед",
+"d":"Транспортное средство с двумя (реже тремя) колёсами, приводимое в движение мускульной силой человека через педали.",
+"t":{
+"en":"bicycle, bike",
+"nl":"fiets, rijwiel",
+"pl":"rower, bicykl",
+"de":"Fahrrad, Rad",
+"fr":"vélo, bicyclette, bécane",
+"it":"bicicletta, bici",
+"cs":"kolo, jízdní kolo, bicykl",
+"tr":"bisiklet",
+"es":"bicicleta, bici"
+}
+},
+{
+"w":"мотоцикл",
+"d":"Двухколёсное или трёхколёсное транспортное средство с механическим двигателем.",
+"t":{
+"en":"motorcycle, motorbike, bike",
+"nl":"motorfiets, motor",
+"pl":"motocykl, motor",
+"de":"Motorrad, Kraftrad, Bike",
+"fr":"moto, motocyclette, motocycle",
+"it":"motocicletta, moto, motociclo",
+"cs":"motocykl, motorka",
+"tr":"motosiklet, motor",
+"es":"motocicleta, moto"
+}
+},
+{
+"w":"дорога",
+"d":"Полоса земли, предназначенная для передвижения, путь сообщения.",
+"t":{
+"en":"road",
+"nl":"weg, rijweg",
+"pl":"droga",
+"de":"Straße, Weg",
+"fr":"route, chemin, voie",
+"it":"strada, via, ferrovia",
+"cs":"cesta, silnice, dráha",
+"tr":"yol",
+"es":"carretera, camino, vía"
+}
+},
+{
+"w":"мост",
+"d":"Сооружение для перехода или переезда через реку, овраг, дорогу или другое препятствие.",
+"t":{
+"en":"bridge",
+"nl":"brug",
+"pl":"most",
+"de":"Brücke",
+"fr":"pont",
+"it":"ponte",
+"cs":"most",
+"tr":"köprü",
+"es":"puente"
+}
+},
+{
+"w":"водитель",
+"d":"Тот, кто управляет автомобилем или другим наземным транспортным средством.",
+"t":{
+"en":"driver",
+"nl":"bestuurder, chauffeur",
+"pl":"kierowca",
+"de":"Fahrer, Chauffeur, Kraftfahrer",
+"fr":"conducteur, chauffeur",
+"it":"autista, conducente",
+"cs":"řidič, šofér",
+"tr":"şoför, sürücü",
+"es":"conductor, chófer"
+}
+},
+{
+"w":"ехать",
+"d":"Перемещаться в определённом направлении с помощью транспортного средства (автомобиля, автобуса, поезда, велосипеда и т. п.).",
+"t":{
+"en":"go, drive, ride",
+"nl":"rijden, gaan, reizen",
+"pl":"jechać",
+"de":"fahren",
+"fr":"aller, rouler, conduire",
+"it":"andare, viaggiare, guidare",
+"cs":"jet, jezdit",
+"tr":"gitmek, binmek, sürmek",
+"es":"ir, viajar, conducir"
+}
+},
+{
+"w":"лететь",
+"d":"Путешествовать на самолёте или другом летательном аппарате в качестве пассажира.",
+"t":{
+"en":"fly",
+"nl":"vliegen",
+"pl":"lecieć",
+"de":"fliegen",
+"fr":"voler, prendre l'avion",
+"it":"volare, andare in aereo",
+"cs":"letět",
+"tr":"uçmak, uçakla gitmek",
+"es":"volar, ir en avión"
+}
+},
+{
+"w":"далёкий",
+"d":"Находящийся на большом расстоянии; не близкий.",
+"t":{
+"en":"far, distant, remote",
+"nl":"ver, vergelegen, afgelegen",
+"pl":"daleki, odległy",
+"de":"fern, weit, weit entfernt",
+"fr":"lointain, éloigné, distant",
+"it":"lontano, distante, remoto",
+"cs":"daleký, vzdálený",
+"tr":"uzak, ırak",
+"es":"lejano, distante"
+}
+}
+]

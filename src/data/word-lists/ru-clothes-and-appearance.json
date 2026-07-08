@@ -1,0 +1,347 @@
+[
+{
+"w":"одежда",
+"d":"Совокупность предметов из ткани, меха или кожи, которыми покрывают тело.",
+"t":{
+"en":"clothes, clothing, apparel",
+"nl":"kleding, kleren, kledij",
+"pl":"odzież, ubranie, ciuchy",
+"de":"Kleidung, Kleider, Bekleidung",
+"fr":"vêtements, habillement, habits",
+"it":"abbigliamento, vestiti, vestiario",
+"cs":"oblečení, oděv, šaty",
+"tr":"giysi, elbise, giyim, giyecek",
+"es":"ropa, vestimenta, prendas de vestir"
+}
+},
+{
+"w":"платье",
+"d":"Женская одежда, состоящая из верхней части и юбки, соединённых вместе.",
+"t":{
+"en":"dress, gown",
+"nl":"jurk, japon",
+"pl":"sukienka, suknia",
+"de":"Kleid",
+"fr":"robe",
+"it":"vestito, abito",
+"cs":"šaty",
+"tr":"elbise, entari, rop",
+"es":"vestido"
+}
+},
+{
+"w":"рубашка",
+"d":"Одежда из лёгкой ткани для верхней части тела, обычно с воротником и пуговицами.",
+"t":{
+"en":"shirt",
+"nl":"overhemd, hemd",
+"pl":"koszula",
+"de":"Hemd",
+"fr":"chemise",
+"it":"camicia",
+"cs":"košile",
+"tr":"gömlek",
+"es":"camisa"
+}
+},
+{
+"w":"брюки",
+"d":"Предмет верхней одежды, покрывающий нижнюю часть тела и каждую ногу отдельно.",
+"t":{
+"en":"trousers, pants",
+"nl":"broek, pantalon",
+"pl":"spodnie",
+"de":"Hose",
+"fr":"pantalon",
+"it":"pantaloni, calzoni",
+"cs":"kalhoty",
+"tr":"pantolon",
+"es":"pantalones, pantalón"
+}
+},
+{
+"w":"куртка",
+"d":"Короткая верхняя одежда, часто утеплённая, застёгивающаяся наглухо.",
+"t":{
+"en":"jacket",
+"nl":"jas, jack",
+"pl":"kurtka",
+"de":"Jacke, Anorak",
+"fr":"blouson, veste",
+"it":"giacca, giubbotto, giubbino",
+"cs":"bunda, větrovka",
+"tr":"ceket, mont, kaban",
+"es":"chaqueta, cazadora, chamarra, campera"
+}
+},
+{
+"w":"пальто",
+"d":"Верхняя одежда для улицы, обычно ниже колен, с рукавами и застёжкой спереди, которую носят в прохладную или холодную погоду.",
+"t":{
+"en":"coat, overcoat",
+"nl":"jas, mantel, overjas",
+"pl":"płaszcz, palto",
+"de":"Mantel",
+"fr":"manteau, pardessus",
+"it":"cappotto, soprabito",
+"cs":"kabát, svrchník",
+"tr":"palto, kaban",
+"es":"abrigo, gabán"
+}
+},
+{
+"w":"пиджак",
+"d":"Верхняя часть мужского костюма с рукавами, открытым отложным воротником и застёгивающимися полами.",
+"t":{
+"en":"jacket, suit jacket, coat",
+"nl":"kolbert, jasje, colbert",
+"pl":"marynarka",
+"de":"Sakko, Jackett, Anzugjacke",
+"fr":"veston, veste, veste de costume",
+"it":"giacca, giacca da abito",
+"cs":"sako",
+"tr":"ceket, takım elbise ceketi",
+"es":"chaqueta, americana, saco"
+}
+},
+{
+"w":"трусы",
+"d":"Предмет мужского и женского нижнего белья, закрывающий нижнюю часть туловища.",
+"t":{
+"en":"underpants, underwear, briefs",
+"nl":"onderbroek, slip, boxershort",
+"pl":"majtki, majtki męskie, bokserki",
+"de":"Unterhose, Slip, Höschen, Boxershorts",
+"fr":"slip, caleçon, culotte",
+"it":"mutande, mutandine",
+"cs":"trenýrky, trenky, slipy, kalhotky",
+"tr":"külot, don, boksör",
+"es":"calzoncillos, bragas, calzones"
+}
+},
+{
+"w":"шапка",
+"d":"Тёплый мягкий головной убор, обычно без полей, плотно облегающий голову.",
+"t":{
+"en":"hat, cap",
+"nl":"muts, hoed",
+"pl":"czapka",
+"de":"Mütze, Kappe",
+"fr":"bonnet, toque, chapeau",
+"it":"berretto, cappello",
+"cs":"čepice, kulich",
+"tr":"bere, şapka",
+"es":"gorro, gorra"
+}
+},
+{
+"w":"джинсы",
+"d":"Брюки из плотной хлопчатобумажной ткани, обычно окрашенной в цвет индиго.",
+"t":{
+"en":"jeans",
+"nl":"spijkerbroek, jeans",
+"pl":"dżinsy, jeansy",
+"de":"Jeans, Jeanshose",
+"fr":"jean, jeans",
+"it":"jeans",
+"cs":"džíny, rifle, džínsy",
+"tr":"kot pantolon, kot, jean",
+"es":"vaqueros, tejanos, jeans"
+}
+},
+{
+"w":"свитер",
+"d":"Тёплая вязаная одежда для верхней части тела без застёжек и с высоким воротником, которую надевают через голову.",
+"t":{
+"en":"sweater, jumper, pullover",
+"nl":"trui, pullover",
+"pl":"sweter",
+"de":"Pullover, Pulli, Strickpullover",
+"fr":"pull, pull-over, chandail, tricot",
+"it":"maglione, pullover, maglia",
+"cs":"svetr, pulovr",
+"tr":"kazak, süveter",
+"es":"suéter, jersey, saco, pulóver"
+}
+},
+{
+"w":"обувь",
+"d":"Предмет одежды, надеваемый на ноги (сапоги, ботинки, туфли и т. п.).",
+"t":{
+"en":"footwear, shoes",
+"nl":"schoeisel, schoenen",
+"pl":"obuwie, buty",
+"de":"Schuhe, Schuhwerk, Schuhwaren",
+"fr":"chaussures, chaussure",
+"it":"scarpe, calzature",
+"cs":"obuv, boty",
+"tr":"ayakkabı, kundura",
+"es":"calzado, zapatos"
+}
+},
+{
+"w":"сапог",
+"d":"Высокая обувь, закрывающая стопу и голень (иногда до колена или выше).",
+"t":{
+"en":"boot",
+"nl":"laars",
+"pl":"but, kozak, oficerek",
+"de":"Stiefel",
+"fr":"botte",
+"it":"stivale",
+"cs":"holínka, vysoká bota",
+"tr":"çizme, bot",
+"es":"bota"
+}
+},
+{
+"w":"сумка",
+"d":"Сравнительно небольшое вместилище из ткани, кожи или другого мягкого материала с ручками или ремнями для переноски предметов",
+"t":{
+"en":"bag, handbag",
+"nl":"tas, handtas",
+"pl":"torba, torebka",
+"de":"Tasche, Handtasche",
+"fr":"sac, sac à main, sacoche, cabas",
+"it":"borsa",
+"cs":"taška, kabelka",
+"tr":"çanta, file",
+"es":"bolsa, bolso, cartera"
+}
+},
+{
+"w":"пояс",
+"d":"Лента, шнур или ремень, который завязывают или застегивают на талии поверх одежды.",
+"t":{
+"en":"belt, sash",
+"nl":"riem, gordel, ceintuur",
+"pl":"pasek, pas",
+"de":"Gürtel, Gurt",
+"fr":"ceinture",
+"it":"cintura, cintola",
+"cs":"pásek, pás",
+"tr":"kemer, kuşak",
+"es":"cinturón, cinto, ceñidor"
+}
+},
+{
+"w":"очки",
+"d":"Оптический прибор из двух стёкол или линз на дужках, предназначенный для улучшения зрения или защиты глаз.",
+"t":{
+"en":"glasses, eyeglasses, spectacles",
+"nl":"bril",
+"pl":"okulary",
+"de":"Brille",
+"fr":"lunettes, besicles",
+"it":"occhiali",
+"cs":"brýle",
+"tr":"gözlük",
+"es":"gafas, lentes, anteojos"
+}
+},
+{
+"w":"шарф",
+"d":"Предмет одежды в виде длинной полосы ткани или вязания, который носят на шее для тепла или красоты.",
+"t":{
+"en":"scarf",
+"nl":"sjaal, das",
+"pl":"szalik, szal",
+"de":"Schal, Halstuch",
+"fr":"écharpe, cache-nez",
+"it":"sciarpa",
+"cs":"šála, šál",
+"tr":"atkı, boyun atkısı, şal",
+"es":"bufanda, echarpe"
+}
+},
+{
+"w":"носить",
+"d":"Быть одетым во что-либо или иметь что-либо на себе (одежду, обувь, аксессуары, прическу)",
+"t":{
+"en":"wear",
+"nl":"dragen",
+"pl":"nosić",
+"de":"tragen, anhaben",
+"fr":"porter",
+"it":"portare, indossare, avere addosso",
+"cs":"nosit, mít na sobě",
+"tr":"giymek, takmak, taşımak",
+"es":"llevar, usar, llevar puesto"
+}
+},
+{
+"w":"снимать",
+"d":"Снимать с себя одежду, обувь или аксессуары",
+"t":{
+"en":"take off, remove",
+"nl":"uitdoen, uittrekken, afzetten",
+"pl":"zdejmować, ściągać",
+"de":"ausziehen, abnehmen, ablegen",
+"fr":"enlever, ôter, retirer",
+"it":"togliersi, togliere",
+"cs":"svlékat, zouvat, sundávat",
+"tr":"çıkarmak",
+"es":"quitarse, retirar"
+}
+},
+{
+"w":"красивый",
+"d":"Приятный на вид, отличающийся гармонией линий и красок, доставляющий наслаждение взору.",
+"t":{
+"en":"beautiful, pretty, handsome, good-looking",
+"nl":"mooi, prachtig, schoon, knap",
+"pl":"piękny, ładny, urodziwy, przystojny",
+"de":"schön, hübsch, gut aussehend, attraktiv",
+"fr":"beau, joli",
+"it":"bello, carino, avvenente",
+"cs":"krásný, hezký, pěkný",
+"tr":"güzel, hoş, yakışıklı",
+"es":"hermoso, bello, bonito, lindo"
+}
+},
+{
+"w":"модный",
+"d":"Соответствующий новейшим вкусам и требованиям моды; сделанный по моде (об одежде, причёске, вещах).",
+"t":{
+"en":"fashionable, stylish, trendy",
+"nl":"modieus, hip, trendy",
+"pl":"modny, stylowy",
+"de":"modisch, schick, modern",
+"fr":"à la mode, branché, tendance",
+"it":"alla moda, di moda, alla moda",
+"cs":"módní, stylový",
+"tr":"moda, şık, modaya uygun",
+"es":"de moda, moderno, elegante"
+}
+},
+{
+"w":"удобный",
+"d":"Такой, которым легко и приятно пользоваться; комфортный, уютный.",
+"t":{
+"en":"comfortable, comfy",
+"nl":"comfortabel, handig, gemakkelijk",
+"pl":"wygodny, komfortowy",
+"de":"bequem, gemütlich, komfortabel",
+"fr":"confortable, commode",
+"it":"comodo, confortevole",
+"cs":"pohodlný, komfortní",
+"tr":"rahat, konforlu, kullanışlı",
+"es":"cómodo, confortable"
+}
+},
+{
+"w":"тёплый",
+"d":"Хорошо сохраняющий тепло, защищающий от холода (об одежде, обуви, одеялах).",
+"t":{
+"en":"warm",
+"nl":"warm",
+"pl":"ciepły",
+"de":"warm",
+"fr":"chaud",
+"it":"caldo, pesante",
+"cs":"teplý",
+"tr":"sıcak, kalın",
+"es":"abrigado, caliente, cálido"
+}
+}
+]

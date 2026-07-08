@@ -1,0 +1,554 @@
+[
+{
+"w":"глаз",
+"d":"Орган зрения человека или животного.",
+"t":{
+"en":"eye",
+"nl":"oog",
+"pl":"oko",
+"de":"Auge",
+"fr":"œil",
+"it":"occhio",
+"cs":"oko",
+"tr":"göz",
+"es":"ojo"
+}
+},
+{
+"w":"ухо",
+"d":"Орган слуха и равновесия у человека и животных, а также его наружная часть.",
+"t":{
+"en":"ear",
+"nl":"oor",
+"pl":"ucho",
+"de":"Ohr",
+"fr":"oreille",
+"it":"orecchio",
+"cs":"ucho",
+"tr":"kulak",
+"es":"oreja, oído"
+}
+},
+{
+"w":"нос",
+"d":"Часть лица человека или морды животного, служащая для дыхания и обоняния.",
+"t":{
+"en":"nose",
+"nl":"neus",
+"pl":"nos",
+"de":"Nase",
+"fr":"nez",
+"it":"naso",
+"cs":"nos",
+"tr":"burun",
+"es":"nariz"
+}
+},
+{
+"w":"рот",
+"d":"Часть лица человека, отверстие между губами, через которое принимают пищу, дышат и говорят, а также полость за этим отверстием.",
+"t":{
+"en":"mouth",
+"nl":"mond",
+"pl":"usta, jama ustna",
+"de":"Mund",
+"fr":"bouche",
+"it":"bocca",
+"cs":"ústa, pusa",
+"tr":"ağız",
+"es":"boca"
+}
+},
+{
+"w":"зуб",
+"d":"Костное образование в ротовой полости, служащее для откусывания и разжёвывания пищи",
+"t":{
+"en":"tooth",
+"nl":"tand, kies",
+"pl":"ząb",
+"de":"Zahn",
+"fr":"dent",
+"it":"dente",
+"cs":"zub",
+"tr":"diş",
+"es":"diente"
+}
+},
+{
+"w":"горло",
+"d":"Внутренняя часть шеи, соединяющая полость рта с пищеводом и дыхательными путями.",
+"t":{
+"en":"throat, gullet",
+"nl":"keel",
+"pl":"gardło, krtań",
+"de":"Hals, Rachen, Kehle, Gurgel",
+"fr":"gorge",
+"it":"gola",
+"cs":"krk, hrdlo, jícen",
+"tr":"boğaz",
+"es":"garganta, gaznate"
+}
+},
+{
+"w":"волос",
+"d":"Растительность на голове человека, совокупность всех волос причёски.",
+"t":{
+"en":"hair",
+"nl":"haar",
+"pl":"włosy",
+"de":"Haar, Haare",
+"fr":"cheveux",
+"it":"capelli, chioma",
+"cs":"vlasy",
+"tr":"saç",
+"es":"pelo, cabello"
+}
+},
+{
+"w":"рука",
+"d":"Вся верхняя конечность человека от плеча до пальцев.",
+"t":{
+"en":"arm",
+"nl":"arm",
+"pl":"ręka, ramię",
+"de":"Arm",
+"fr":"bras",
+"it":"braccio",
+"cs":"ruka, paže",
+"tr":"kol",
+"es":"brazo"
+}
+},
+{
+"w":"нога",
+"d":"Одна из двух нижних конечностей человека, которая служит для опоры и передвижения.",
+"t":{
+"en":"leg",
+"nl":"been",
+"pl":"noga",
+"de":"Bein",
+"fr":"jambe",
+"it":"gamba",
+"cs":"noha",
+"tr":"bacak",
+"es":"pierna"
+}
+},
+{
+"w":"палец",
+"d":"Одна из пяти подвижных конечных частей кисти руки или ступни ноги у человека",
+"t":{
+"en":"finger, toe, thumb",
+"nl":"vinger, teen, duim",
+"pl":"palec, palec u ręki, palec u nogi",
+"de":"Finger, Zeh",
+"fr":"doigt, orteil, doigt de pied, pouce",
+"it":"dito, dito del piede",
+"cs":"prst, palec",
+"tr":"parmak",
+"es":"dedo, dedo de la mano, dedo del pie"
+}
+},
+{
+"w":"живот",
+"d":"Нижняя передняя часть туловища человека или животного.",
+"t":{
+"en":"stomach, belly",
+"nl":"buik",
+"pl":"brzuch",
+"de":"Bauch",
+"fr":"ventre, abdomen",
+"it":"pancia, ventre, addome",
+"cs":"břicho, bříško",
+"tr":"karın",
+"es":"barriga, abdomen, vientre"
+}
+},
+{
+"w":"спина",
+"d":"Задняя часть туловища человека от шеи до поясницы или верхняя часть тела животного.",
+"t":{
+"en":"back",
+"nl":"rug",
+"pl":"plecy, grzbiet",
+"de":"Rücken",
+"fr":"dos",
+"it":"schiena, dorso, spalle",
+"cs":"záda, hřbet",
+"tr":"sırt",
+"es":"espalda, lomo"
+}
+},
+{
+"w":"грудь",
+"d":"Верхняя передняя часть туловища человека или животного, вмещающая сердце и лёгкие.",
+"t":{
+"en":"chest",
+"nl":"borst, borstkas",
+"pl":"klatka piersiowa, pierś",
+"de":"Brust, Brustkorb",
+"fr":"poitrine, thorax",
+"it":"petto, torace",
+"cs":"hrudník, hruď, prsa",
+"tr":"göğüs, bağır",
+"es":"pecho"
+}
+},
+{
+"w":"плечо",
+"d":"Часть тела человека, соединяющая шею с рукой.",
+"t":{
+"en":"shoulder",
+"nl":"schouder",
+"pl":"ramię, bark",
+"de":"Schulter, Achsel",
+"fr":"épaule",
+"it":"spalla",
+"cs":"rameno",
+"tr":"omuz",
+"es":"hombro"
+}
+},
+{
+"w":"колено",
+"d":"Сустав ноги, соединяющий бедренную кость с берцовыми, а также часть ноги от этого сустава до таза.",
+"t":{
+"en":"knee",
+"nl":"knie",
+"pl":"kolano",
+"de":"Knie",
+"fr":"genou",
+"it":"ginocchio",
+"cs":"koleno",
+"tr":"diz",
+"es":"rodilla"
+}
+},
+{
+"w":"шея",
+"d":"Часть тела, соединяющая голову с туловищем.",
+"t":{
+"en":"neck",
+"nl":"nek, hals",
+"pl":"szyja, kark",
+"de":"Hals",
+"fr":"cou",
+"it":"collo",
+"cs":"krk, šíje",
+"tr":"boyun",
+"es":"cuello"
+}
+},
+{
+"w":"кожа",
+"d":"Наружный покров тела человека и животных, защищающий организм от внешних воздействий.",
+"t":{
+"en":"skin",
+"nl":"huid, vel",
+"pl":"skóra",
+"de":"Haut",
+"fr":"peau",
+"it":"pelle, cute",
+"cs":"kůže",
+"tr":"deri, cilt, ten",
+"es":"piel"
+}
+},
+{
+"w":"сердце",
+"d":"Центральный мышечный орган кровеносной системы, который перекачивает кровь.",
+"t":{
+"en":"heart",
+"nl":"hart",
+"pl":"serce",
+"de":"Herz",
+"fr":"cœur",
+"it":"cuore",
+"cs":"srdce",
+"tr":"kalp, yürek",
+"es":"corazón"
+}
+},
+{
+"w":"врач",
+"d":"Специалист с высшим медицинским образованием, который лечит больных людей.",
+"t":{
+"en":"doctor, physician",
+"nl":"arts, dokter, geneesheer",
+"pl":"lekarz, doktor",
+"de":"Arzt, Mediziner, Doktor",
+"fr":"médecin, docteur",
+"it":"medico, dottore",
+"cs":"lékař, doktor",
+"tr":"doktor, hekim, tabip",
+"es":"médico, doctor, facultativo"
+},
+"c":{
+"en":"the standard, official term",
+"pl":"neutralne, oficjalne określenie",
+"fr":"terme standard et officiel",
+"it":"termine standard e ufficiale"
+}
+},
+{
+"w":"доктор",
+"d":"Специалист с высшим медицинским образованием, занимающийся лечением больных; то же, что врач.",
+"t":{
+"en":"doctor, physician",
+"nl":"dokter, arts",
+"pl":"lekarz, doktor",
+"de":"Arzt, Doktor",
+"fr":"médecin, docteur",
+"it":"medico, dottore",
+"cs":"doktor, lékař",
+"tr":"doktor, hekim",
+"es":"médico, doctor"
+},
+"c":{
+"en":"more informal; also used to address a doctor",
+"pl":"potocznie; także jako zwrot do lekarza",
+"fr":"plus familier ; aussi pour s'adresser au médecin",
+"it":"più colloquiale; anche per rivolgersi al medico"
+}
+},
+{
+"w":"больница",
+"d":"Медицинское учреждение для стационарного лечения больных.",
+"t":{
+"en":"hospital",
+"nl":"ziekenhuis, hospitaal",
+"pl":"szpital",
+"de":"Krankenhaus, Klinik, Spital",
+"fr":"hôpital, clinique",
+"it":"ospedale, clinica",
+"cs":"nemocnice",
+"tr":"hastane",
+"es":"hospital, clínica"
+}
+},
+{
+"w":"аптека",
+"d":"Учреждение или магазин, где продаются лекарства и медицинские товары.",
+"t":{
+"en":"pharmacy, drugstore, chemist's shop",
+"nl":"apotheek",
+"pl":"apteka",
+"de":"Apotheke",
+"fr":"pharmacie",
+"it":"farmacia",
+"cs":"lékárna",
+"tr":"eczane",
+"es":"farmacia, botica"
+}
+},
+{
+"w":"боль",
+"d":"Физическое ощущение страдания или сильного дискомфорта в теле, вызванное болезнью или травмой.",
+"t":{
+"en":"pain, ache",
+"nl":"pijn",
+"pl":"ból",
+"de":"Schmerz, Weh",
+"fr":"douleur, mal",
+"it":"dolore, male",
+"cs":"bolest, bolení",
+"tr":"ağrı, acı, sızı, sancı",
+"es":"dolor"
+}
+},
+{
+"w":"болезнь",
+"d":"Расстройство здоровья живого организма, нарушение его нормальной деятельности.",
+"t":{
+"en":"disease, illness, sickness",
+"nl":"ziekte, aandoening, kwaal",
+"pl":"choroba, schorzenie",
+"de":"Krankheit, Erkrankung, Leiden",
+"fr":"maladie, affection",
+"it":"malattia, patologia, male",
+"cs":"nemoc, choroba, onemocnění",
+"tr":"hastalık, rahatsızlık",
+"es":"enfermedad, mal"
+}
+},
+{
+"w":"температура",
+"d":"Повышенная температура тела как признак болезни.",
+"t":{
+"en":"fever, temperature",
+"nl":"koorts, verhoging, temperatuur",
+"pl":"gorączka, temperatura",
+"de":"Fieber, Temperatur",
+"fr":"fièvre, température",
+"it":"febbre, temperatura",
+"cs":"teplota, horečka",
+"tr":"ateş, hararet",
+"es":"fiebre, temperatura"
+}
+},
+{
+"w":"кровь",
+"d":"Красная жидкость, циркулирующая в организме человека и животных, обеспечивающая питание клеток и обмен веществ.",
+"t":{
+"en":"blood",
+"nl":"bloed",
+"pl":"krew",
+"de":"Blut",
+"fr":"sang",
+"it":"sangue",
+"cs":"krev",
+"tr":"kan",
+"es":"sangre"
+}
+},
+{
+"w":"лекарство",
+"d":"Вещество или средство, используемое для лечения или предупреждения болезни.",
+"t":{
+"en":"medicine, medication, drug, remedy",
+"nl":"medicijn, geneesmiddel, medicatie",
+"pl":"lekarstwo, lek, medykament",
+"de":"Medikament, Medizin, Arznei, Heilmittel",
+"fr":"médicament, remède",
+"it":"medicina, farmaco, medicamento",
+"cs":"lék, léčivo, medicína",
+"tr":"ilaç, deva",
+"es":"medicamento, medicina, remedio, fármaco"
+}
+},
+{
+"w":"рецепт",
+"d":"Письменное распоряжение врача аптеке об изготовлении и выдаче лекарства больному.",
+"t":{
+"en":"prescription",
+"nl":"recept, voorschrift",
+"pl":"recepta",
+"de":"Rezept, Verschreibung",
+"fr":"ordonnance",
+"it":"ricetta, prescrizione",
+"cs":"recept",
+"tr":"reçete",
+"es":"receta, prescripción"
+}
+},
+{
+"w":"операция",
+"d":"Хирургическое вмешательство, лечебная помощь, оказываемая врачом путём механического воздействия инструментами на ткани и органы организма.",
+"t":{
+"en":"operation, surgery",
+"nl":"operatie, ingreep",
+"pl":"operacja, zabieg",
+"de":"Operation, OP",
+"fr":"opération, chirurgie",
+"it":"operazione, intervento",
+"cs":"operace",
+"tr":"ameliyat, operasyon",
+"es":"operación, cirugía"
+}
+},
+{
+"w":"болеть",
+"d":"Быть больным, иметь проблемы со здоровьем, плохо себя чувствовать.",
+"t":{
+"en":"be sick, be ill, get sick",
+"nl":"ziek zijn, ziek worden",
+"pl":"chorować, być chorym",
+"de":"krank sein, erkranken",
+"fr":"être malade, tomber malade",
+"it":"essere malato, ammalarsi, stare male",
+"cs":"být nemocný, stonat, marodit",
+"tr":"hasta olmak, hastalanmak",
+"es":"estar enfermo, enfermar"
+}
+},
+{
+"w":"лечить",
+"d":"Применять медицинские средства и методы для восстановления здоровья, борьбы с болезнью или устранения последствий травм.",
+"t":{
+"en":"treat, heal, cure",
+"nl":"behandelen, genezen",
+"pl":"leczyć, kurować",
+"de":"behandeln, kurieren, heilen",
+"fr":"soigner, traiter, guérir",
+"it":"curare, trattare",
+"cs":"léčit, kurýrovat",
+"tr":"tedavi etmek, iyileştirmek, bakmak",
+"es":"tratar, curar"
+}
+},
+{
+"w":"дышать",
+"d":"Втягивать и выпускать воздух лёгкими (или другими органами) для получения кислорода; совершать дыхание.",
+"t":{
+"en":"breathe, respire",
+"nl":"ademen, ademhalen",
+"pl":"oddychać",
+"de":"atmen",
+"fr":"respirer",
+"it":"respirare",
+"cs":"dýchat",
+"tr":"nefes almak, solumak",
+"es":"respirar"
+}
+},
+{
+"w":"чувствовать",
+"d":"Находиться в определённом состоянии здоровья или духа (всегда используется с возвратным местоимением «себя»).",
+"t":{
+"en":"feel",
+"nl":"zich voelen",
+"pl":"czuć się",
+"de":"sich fühlen",
+"fr":"se sentir",
+"it":"sentirsi",
+"cs":"cítit se",
+"tr":"hissetmek",
+"es":"sentirse"
+}
+},
+{
+"w":"больной",
+"d":"Страдающий какой-либо болезнью, имеющий расстроенное здоровье (о человеке или животном).",
+"t":{
+"en":"sick, ill",
+"nl":"ziek",
+"pl":"chory",
+"de":"krank",
+"fr":"malade",
+"it":"malato",
+"cs":"nemocný, chorý",
+"tr":"hasta, rahatsız",
+"es":"enfermo"
+}
+},
+{
+"w":"здоровый",
+"d":"Обладающий хорошим здоровьем, не больной; с правильно функционирующим организмом",
+"t":{
+"en":"healthy, well",
+"nl":"gezond",
+"pl":"zdrowy",
+"de":"gesund",
+"fr":"sain, en bonne santé",
+"it":"sano, in salute",
+"cs":"zdravý",
+"tr":"sağlıklı, sağlam, sıhhatli",
+"es":"sano, saludable"
+}
+},
+{
+"w":"слабый",
+"d":"Не имеющий большой физической силы, быстро устающий; неспособный выдерживать тяжёлые нагрузки.",
+"t":{
+"en":"weak, feeble",
+"nl":"zwak, krachteloos",
+"pl":"słaby, wątły",
+"de":"schwach, kraftlos",
+"fr":"faible, faiblard",
+"it":"debole, fragile",
+"cs":"slabý, zesláblý",
+"tr":"güçsüz, zayıf, halsiz",
+"es":"débil, flojo"
+}
+}
+]
