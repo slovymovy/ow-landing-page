@@ -997,16 +997,16 @@ export const wordListCopyNl: Record<LocaleCode, WordListCopy> = {
   })
 };
 
-// ── Russian word-list chrome ─────────────────────────────────────────────────
-// The Russian lists teach Russian vocabulary. Like the Dutch map, the
-// language-neutral chrome is reused verbatim from the (native-reviewed) English
-// map and only the strings that name the taught language are authored, plus a
-// Russian word-count FAQ. Every Russian list is thematic (no frequency/core
-// list), so the bespoke frequency-list fields are omitted entirely.
+// ── Topic-only language chrome (Russian, Polish) ─────────────────────────────
+// These languages' lists are all thematic (no frequency/core list). Like the
+// Dutch map, the language-neutral chrome is reused verbatim from the
+// (native-reviewed) English map and only the strings that name the taught
+// language are authored, plus a language-specific word-count FAQ. The bespoke
+// frequency-list fields are omitted entirely.
 //
 // en/ru/nl/pl are drafted for the user's review; de/es/fr/it/cs/tr are Claude
 // drafts pending the native-review pass (like topicListCopy).
-type RuOverrides = Pick<
+type TopicOverrides = Pick<
   WordListCopy,
   | 'hubTitle'
   | 'hubDescription'
@@ -1019,7 +1019,7 @@ type RuOverrides = Pick<
   | 'listMetaTail'
 > & { faqWordCount: WlFaqItem };
 
-function russianEntry(locale: LocaleCode, o: RuOverrides): WordListCopy {
+function topicEntry(locale: LocaleCode, o: TopicOverrides): WordListCopy {
   const base = wordListCopy[locale];
   return {
     hubTitle: o.hubTitle,
@@ -1029,7 +1029,7 @@ function russianEntry(locale: LocaleCode, o: RuOverrides): WordListCopy {
     hubStepsH2: base.hubStepsH2,
     hubStepsSub: base.hubStepsSub,
     // Reuse the frequency-vs-topic (open), passive/active, memorisation and
-    // "why OpenWords" items; swap in a Russian-specific word-count question.
+    // "why OpenWords" items; swap in a language-specific word-count question.
     faq: [base.faq[0], o.faqWordCount, base.faq[2], base.faq[3], base.faq[4]],
     listEyebrow: o.listEyebrow,
     metricLabel: base.metricLabel,
@@ -1049,7 +1049,7 @@ function russianEntry(locale: LocaleCode, o: RuOverrides): WordListCopy {
 }
 
 export const wordListCopyRu: Record<LocaleCode, WordListCopy> = {
-  en: russianEntry('en', {
+  en: topicEntry('en', {
     hubTitle: 'Russian Word Lists — Free Vocabulary Lists with Translations | OpenWords',
     hubDescription:
       'Russian vocabulary lists with a translation for every word — family, food, the city, and more everyday topics. Pick a list and drill it with one-tap flashcards in OpenWords.',
@@ -1067,7 +1067,7 @@ export const wordListCopyRu: Record<LocaleCode, WordListCopy> = {
     }
   }),
 
-  ru: russianEntry('ru', {
+  ru: topicEntry('ru', {
     hubTitle: 'Списки русских слов: бесплатная лексика с переводом | OpenWords',
     hubDescription:
       'Списки русских слов с переводом для каждого слова — семья, еда, город и другие повседневные темы. Выберите подборку и учите слова по карточкам в одно касание в OpenWords.',
@@ -1085,7 +1085,7 @@ export const wordListCopyRu: Record<LocaleCode, WordListCopy> = {
     }
   }),
 
-  nl: russianEntry('nl', {
+  nl: topicEntry('nl', {
     hubTitle: 'Russische woordenlijsten — gratis lijsten met vertaling | OpenWords',
     hubDescription:
       "Russische woordenlijsten met een vertaling voor elk woord — familie, eten, de stad en meer alledaagse thema's. Kies een lijst en oefen met flashcards in OpenWords.",
@@ -1103,7 +1103,7 @@ export const wordListCopyRu: Record<LocaleCode, WordListCopy> = {
     }
   }),
 
-  pl: russianEntry('pl', {
+  pl: topicEntry('pl', {
     hubTitle: 'Listy rosyjskich słów — darmowe zestawy słownictwa z tłumaczeniem | OpenWords',
     hubDescription:
       'Listy rosyjskich słów z tłumaczeniem dla każdego słówka — rodzina, jedzenie, miasto i inne codzienne tematy. Wybierz zestaw i ćwicz z fiszkami w OpenWords.',
@@ -1121,7 +1121,7 @@ export const wordListCopyRu: Record<LocaleCode, WordListCopy> = {
     }
   }),
 
-  de: russianEntry('de', {
+  de: topicEntry('de', {
     hubTitle: 'Russische Wortlisten — Kostenlose Vokabellisten mit Übersetzung | OpenWords',
     hubDescription:
       'Russische Vokabellisten mit Übersetzung für jedes Wort – Familie, Essen, Stadt und weitere Alltagsthemen. Wähle eine Liste und übe mit Karteikarten in OpenWords.',
@@ -1139,7 +1139,7 @@ export const wordListCopyRu: Record<LocaleCode, WordListCopy> = {
     }
   }),
 
-  es: russianEntry('es', {
+  es: topicEntry('es', {
     hubTitle: 'Listas de vocabulario en ruso — Listas gratis con traducción | OpenWords',
     hubDescription:
       'Listas de vocabulario en ruso con traducción para cada palabra: la familia, la comida, la ciudad y otros temas cotidianos. Elige una lista y practícala con tarjetas en OpenWords.',
@@ -1157,7 +1157,7 @@ export const wordListCopyRu: Record<LocaleCode, WordListCopy> = {
     }
   }),
 
-  fr: russianEntry('fr', {
+  fr: topicEntry('fr', {
     hubTitle: 'Listes de mots en russe — Vocabulaire gratuit avec traduction | OpenWords',
     hubDescription:
       "Listes de vocabulaire russe avec une traduction pour chaque mot — la famille, la nourriture, la ville et d'autres thèmes du quotidien. Choisissez une liste et étudiez-les avec des flashcards sur OpenWords.",
@@ -1175,7 +1175,7 @@ export const wordListCopyRu: Record<LocaleCode, WordListCopy> = {
     }
   }),
 
-  it: russianEntry('it', {
+  it: topicEntry('it', {
     hubTitle: 'Liste di parole in russo — Vocabolario gratuito con traduzione | OpenWords',
     hubDescription:
       'Liste di vocaboli russi con una traduzione per ogni parola: la famiglia, il cibo, la città e altri temi di tutti i giorni. Scegli una lista e studiala con le flashcard su OpenWords.',
@@ -1193,7 +1193,7 @@ export const wordListCopyRu: Record<LocaleCode, WordListCopy> = {
     }
   }),
 
-  cs: russianEntry('cs', {
+  cs: topicEntry('cs', {
     hubTitle: 'Seznamy ruských slov — slovní zásoba zdarma s překladem | OpenWords',
     hubDescription:
       'Seznamy ruských slov s překladem u každého slova – rodina, jídlo, město a další každodenní témata. Vyberte si seznam a procvičujte ho pomocí kartiček v OpenWords.',
@@ -1211,7 +1211,7 @@ export const wordListCopyRu: Record<LocaleCode, WordListCopy> = {
     }
   }),
 
-  tr: russianEntry('tr', {
+  tr: topicEntry('tr', {
     hubTitle: 'Rusça Kelime Listeleri — Türkçe Çevirili Ücretsiz Kelime Setleri | OpenWords',
     hubDescription:
       'Her kelime için Türkçe çeviri içeren Rusça kelime listeleri — aile, yemek, şehir ve diğer günlük konular. Bir liste seç ve OpenWords ile kelime kartlarıyla çalış.',
@@ -1226,6 +1226,188 @@ export const wordListCopyRu: Record<LocaleCode, WordListCopy> = {
     faqWordCount: {
       q: 'Akıcı şekilde Rusça konuşabilmek için kaç kelime bilmek gerekir?',
       a: "Yaklaşık 3.000 kelime günlük Rusçanın büyük bölümünü kapsar; ilk 1.000 kelime bile günlük konuşmaların yaklaşık %85'ini oluşturur. Aile, yemek, şehir gibi günlük konularla başlamak, anlama seviyeni artırmanın en hızlı yoludur."
+    }
+  })
+};
+
+export const wordListCopyPl: Record<LocaleCode, WordListCopy> = {
+  en: topicEntry('en', {
+    hubTitle: 'Polish Word Lists — Free Vocabulary Lists with Translations | OpenWords',
+    hubDescription:
+      'Polish vocabulary lists with a translation for every word — the doctor, paperwork, renting a flat, and more everyday life in Poland. Pick a list and drill it with one-tap flashcards in OpenWords.',
+    hubH1Html: 'Polish <em>Word Lists</em>',
+    hubSub:
+      'Curated Polish vocabulary lists — every word with a translation, grouped by the situations you actually meet. Pick a list, then learn it one tap at a time with spaced-repetition flashcards in OpenWords.',
+    listEyebrow: 'Polish word list',
+    siblingsLabel: 'Polish word lists',
+    allLists: 'All Polish lists →',
+    listTitleSuffix: 'Polish words with translations | OpenWords',
+    listMetaTail: 'Polish words with translations — learn them with one-tap flashcards in OpenWords.',
+    faqWordCount: {
+      q: 'How many Polish words do you need to be fluent?',
+      a: 'Around 3,000 word families cover most everyday Polish, and the first 1,000 already carry you through about 85% of ordinary conversation. Starting with the situations you actually live — the doctor, the office, your flat — is the fastest way to raise how much you understand.'
+    }
+  }),
+
+  ru: topicEntry('ru', {
+    hubTitle: 'Списки польских слов: бесплатная лексика с переводом | OpenWords',
+    hubDescription:
+      'Списки польских слов с переводом для каждого слова — врач, документы, аренда жилья и другие будни в Польше. Выберите подборку и учите слова по карточкам в одно касание в OpenWords.',
+    hubH1Html: 'Списки <em>польских слов</em>',
+    hubSub:
+      'Тщательно составленные списки польских слов — с переводом для каждого слова и группировкой по реальным жизненным ситуациям. Выберите подборку и учите слова в одно касание с помощью интервальных повторений в OpenWords.',
+    listEyebrow: 'Список польских слов',
+    siblingsLabel: 'Списки польских слов',
+    allLists: 'Все польские списки →',
+    listTitleSuffix: 'польские слова с переводом | OpenWords',
+    listMetaTail: 'Польская лексика с переводом — учите её карточками в одно касание в OpenWords.',
+    faqWordCount: {
+      q: 'Сколько польских слов нужно для свободного владения?',
+      a: 'Около 3000 базовых слов достаточно для уверенного повседневного общения, а уже первая 1000 покрывает около 85% обычной речи. Начать с реальных ситуаций — врач, документы, жильё — самый быстрый способ повысить понимание.'
+    }
+  }),
+
+  nl: topicEntry('nl', {
+    hubTitle: 'Poolse woordenlijsten — gratis lijsten met vertaling | OpenWords',
+    hubDescription:
+      'Poolse woordenlijsten met een vertaling voor elk woord — de dokter, papierwerk, een woning huren en meer dagelijks leven in Polen. Kies een lijst en oefen met flashcards in OpenWords.',
+    hubH1Html: 'Poolse <em>woordenlijsten</em>',
+    hubSub:
+      'Zorgvuldig samengestelde Poolse woordenlijsten, met een vertaling voor elk woord en geordend op de situaties die je echt tegenkomt. Kies een lijst en leer ze met één tik via spaced repetition-flashcards in OpenWords.',
+    listEyebrow: 'Poolse woordenlijst',
+    siblingsLabel: 'Poolse woordenlijsten',
+    allLists: 'Alle Poolse lijsten →',
+    listTitleSuffix: 'Poolse woorden met vertaling | OpenWords',
+    listMetaTail: 'Poolse woordenschat met vertaling — leer ze met flashcards in OpenWords.',
+    faqWordCount: {
+      q: 'Hoeveel Poolse woorden heb je nodig om de taal vloeiend te spreken?',
+      a: "Met zo'n 3.000 woorden red je je prima in het dagelijks leven, en de eerste 1.000 woorden dekken al ongeveer 85% van de dagelijkse spreektaal. Beginnen met echte situaties — de dokter, het loket, je woning — is de snelste manier om je begrip te vergroten."
+    }
+  }),
+
+  pl: topicEntry('pl', {
+    hubTitle: 'Listy polskich słów — darmowe zestawy słownictwa z tłumaczeniem | OpenWords',
+    hubDescription:
+      'Listy polskich słów z tłumaczeniem dla każdego słówka — lekarz, urzędy, wynajem mieszkania i inne codzienne sytuacje w Polsce. Wybierz zestaw i ćwicz z fiszkami w OpenWords.',
+    hubH1Html: 'Listy <em>polskich słów</em>',
+    hubSub:
+      'Starannie dobrane zestawy polskiego słownictwa — każde słowo z tłumaczeniem, pogrupowane według sytuacji, które naprawdę spotkasz. Wybierz listę i opanuj ją dzięki powtórkom interwałowym w OpenWords.',
+    listEyebrow: 'Lista polskich słów',
+    siblingsLabel: 'Listy polskich słów',
+    allLists: 'Wszystkie listy polskiego →',
+    listTitleSuffix: 'polskie słowa z tłumaczeniem | OpenWords',
+    listMetaTail: 'Polskie słownictwo z tłumaczeniem — ucz się go z fiszkami w OpenWords.',
+    faqWordCount: {
+      q: 'Ile polskich słów trzeba znać, by mówić płynnie?',
+      a: 'Około 3000 słów wystarcza do swobodnej komunikacji na co dzień, a już pierwszy tysiąc pokrywa blisko 85% codziennych rozmów. Rozpoczęcie od prawdziwych sytuacji — lekarz, urząd, mieszkanie — to najszybszy sposób, by zwiększyć rozumienie.'
+    }
+  }),
+
+  de: topicEntry('de', {
+    hubTitle: 'Polnische Wortlisten — Kostenlose Vokabellisten mit Übersetzung | OpenWords',
+    hubDescription:
+      'Polnische Vokabellisten mit Übersetzung für jedes Wort – Arztbesuch, Behördengänge, Wohnungssuche und mehr Alltag in Polen. Wähle eine Liste und übe mit Karteikarten in OpenWords.',
+    hubH1Html: 'Polnische <em>Wortlisten</em>',
+    hubSub:
+      'Sorgfältig zusammengestellte polnische Vokabellisten – jedes Wort mit Übersetzung, gruppiert nach Situationen, die dir wirklich begegnen. Wähle eine Liste und lerne sie Wort für Wort mit Spaced-Repetition-Karteikarten in OpenWords.',
+    listEyebrow: 'Polnische Wortliste',
+    siblingsLabel: 'Polnische Wortlisten',
+    allLists: 'Alle polnischen Listen →',
+    listTitleSuffix: 'polnische Wörter mit Übersetzung | OpenWords',
+    listMetaTail: 'Polnischer Wortschatz mit Übersetzung — lerne ihn mit Karteikarten in OpenWords.',
+    faqWordCount: {
+      q: 'Wie viele polnische Wörter braucht man, um fließend zu sprechen?',
+      a: 'Rund 3.000 Wörter decken den Großteil des Alltagspolnischen ab, und schon die ersten 1.000 Wörter machen etwa 85 % der alltäglichen Kommunikation aus. Mit echten Situationen zu beginnen – Arzt, Amt, Wohnung – ist der schnellste Weg, dein Verständnis zu steigern.'
+    }
+  }),
+
+  es: topicEntry('es', {
+    hubTitle: 'Listas de vocabulario en polaco — Listas gratis con traducción | OpenWords',
+    hubDescription:
+      'Listas de vocabulario en polaco con traducción para cada palabra: el médico, los trámites, alquilar un piso y más vida cotidiana en Polonia. Elige una lista y practícala con tarjetas en OpenWords.',
+    hubH1Html: 'Listas de <em>vocabulario en polaco</em>',
+    hubSub:
+      'Listas de vocabulario en polaco cuidadosamente seleccionadas y agrupadas según las situaciones que vivirás de verdad; cada palabra incluye su traducción. Elige una lista y aprende con un solo toque mediante repetición espaciada en OpenWords.',
+    listEyebrow: 'Lista de vocabulario en polaco',
+    siblingsLabel: 'Listas de vocabulario en polaco',
+    allLists: 'Todas las listas de polaco →',
+    listTitleSuffix: 'palabras en polaco con traducción | OpenWords',
+    listMetaTail: 'Vocabulario polaco con traducción — apréndelo con tarjetas en OpenWords.',
+    faqWordCount: {
+      q: '¿Cuántas palabras en polaco se necesitan para hablar con fluidez?',
+      a: 'Unas 3000 palabras cubren la mayor parte del polaco cotidiano, y las primeras 1000 ya representan alrededor del 85 % del habla diaria. Empezar por situaciones reales —el médico, la oficina, el piso— es la forma más rápida de mejorar tu comprensión.'
+    }
+  }),
+
+  fr: topicEntry('fr', {
+    hubTitle: 'Listes de mots en polonais — Vocabulaire gratuit avec traduction | OpenWords',
+    hubDescription:
+      "Listes de vocabulaire polonais avec une traduction pour chaque mot — le médecin, les démarches administratives, la location d'un logement et plus encore. Choisissez une liste et étudiez-les avec des flashcards sur OpenWords.",
+    hubH1Html: 'Listes de <em>mots polonais</em>',
+    hubSub:
+      'Des listes de vocabulaire polonais soigneusement sélectionnées et regroupées selon les situations que vous rencontrerez vraiment, chaque mot accompagné de sa traduction. Choisissez une liste et maîtrisez-la mot à mot grâce à la répétition espacée sur OpenWords.',
+    listEyebrow: 'Liste de vocabulaire polonais',
+    siblingsLabel: 'Listes de vocabulaire polonais',
+    allLists: 'Toutes les listes de polonais →',
+    listTitleSuffix: 'mots polonais avec traduction | OpenWords',
+    listMetaTail: 'Vocabulaire polonais avec traduction — apprenez-le avec des flashcards sur OpenWords.',
+    faqWordCount: {
+      q: 'Combien de mots polonais faut-il connaître pour parler couramment ?',
+      a: "Environ 3 000 mots couvrent l'essentiel du polonais du quotidien, et les 1 000 premiers représentent déjà près de 85 % d'une conversation ordinaire. Commencer par des situations réelles — le médecin, l'administration, le logement — est le moyen le plus rapide d'améliorer votre compréhension."
+    }
+  }),
+
+  it: topicEntry('it', {
+    hubTitle: 'Liste di parole in polacco — Vocabolario gratuito con traduzione | OpenWords',
+    hubDescription:
+      "Liste di vocaboli polacchi con una traduzione per ogni parola: il medico, le pratiche burocratiche, l'affitto di casa e altra vita quotidiana in Polonia. Scegli una lista e studiala con le flashcard su OpenWords.",
+    hubH1Html: 'Liste di <em>parole in polacco</em>',
+    hubSub:
+      'Liste di vocaboli polacchi selezionate con cura e raggruppate in base alle situazioni che incontrerai davvero, ogni parola con la sua traduzione. Scegli una lista e imparala parola per parola con la ripetizione spaziata su OpenWords.',
+    listEyebrow: 'Lista di parole in polacco',
+    siblingsLabel: 'Liste di parole in polacco',
+    allLists: 'Tutte le liste di polacco →',
+    listTitleSuffix: 'parole polacche con traduzione | OpenWords',
+    listMetaTail: 'Vocabolario polacco con traduzione — imparalo con le flashcard su OpenWords.',
+    faqWordCount: {
+      q: 'Quante parole polacche servono per parlare fluentemente?',
+      a: "Circa 3.000 parole coprono gran parte del polacco di tutti i giorni, e le prime 1.000 rappresentano già circa l'85% dei discorsi quotidiani. Iniziare dalle situazioni reali — il medico, gli uffici, la casa — è il modo più rapido per migliorare la comprensione."
+    }
+  }),
+
+  cs: topicEntry('cs', {
+    hubTitle: 'Seznamy polských slov — slovní zásoba zdarma s překladem | OpenWords',
+    hubDescription:
+      'Seznamy polských slov s překladem u každého slova – lékař, úřady, pronájem bydlení a další každodenní situace v Polsku. Vyberte si seznam a procvičujte ho pomocí kartiček v OpenWords.',
+    hubH1Html: 'Seznamy <em>polských slov</em>',
+    hubSub:
+      'Pečlivě sestavené seznamy polské slovní zásoby, seřazené podle situací, které skutečně potkáte – u každého slova najdete překlad. Vyberte si seznam a ovládejte ho slovíčko po slovíčku díky intervalovému opakování v aplikaci OpenWords.',
+    listEyebrow: 'Seznam polských slov',
+    siblingsLabel: 'Seznamy polských slov',
+    allLists: 'Všechny polské seznamy →',
+    listTitleSuffix: 'polská slova s překladem | OpenWords',
+    listMetaTail: 'Polská slovní zásoba s překladem — učte se ji pomocí kartiček v OpenWords.',
+    faqWordCount: {
+      q: 'Kolik polských slov je potřeba pro plynulou komunikaci?',
+      a: 'Přibližně 3 000 slov pokryje většinu běžné polštiny a už prvních 1 000 slov tvoří kolem 85 % běžné řeči. Začít se skutečnými situacemi – lékař, úřad, bydlení – je nejrychlejší způsob, jak zlepšit porozumění.'
+    }
+  }),
+
+  tr: topicEntry('tr', {
+    hubTitle: 'Lehçe Kelime Listeleri — Türkçe Çevirili Ücretsiz Kelime Setleri | OpenWords',
+    hubDescription:
+      "Her kelime için Türkçe çeviri içeren Lehçe kelime listeleri — doktor, resmî işlemler, ev kiralama ve Polonya'daki günlük hayat. Bir liste seç ve OpenWords ile kelime kartlarıyla çalış.",
+    hubH1Html: 'Lehçe <em>Kelime Listeleri</em>',
+    hubSub:
+      "Özenle hazırlanmış Lehçe kelime listeleri — her kelime çevirisiyle birlikte ve gerçekten karşılaşacağın durumlara göre gruplandırılmış. İstediğin listeyi seç ve OpenWords'ün aralıklı tekrar sistemiyle kelime kelime uzmanlaş.",
+    listEyebrow: 'Lehçe Kelime Listesi',
+    siblingsLabel: 'Lehçe Kelime Listeleri',
+    allLists: 'Tüm Lehçe Listeleri →',
+    listTitleSuffix: 'Türkçe çevirili Lehçe kelimeler | OpenWords',
+    listMetaTail: 'Türkçe çevirili Lehçe kelimeler — OpenWords kelime kartlarıyla öğren.',
+    faqWordCount: {
+      q: 'Akıcı şekilde Lehçe konuşabilmek için kaç kelime bilmek gerekir?',
+      a: "Yaklaşık 3.000 kelime günlük Lehçenin büyük bölümünü kapsar; ilk 1.000 kelime bile günlük konuşmaların yaklaşık %85'ini oluşturur. Doktor, resmî daireler, ev gibi gerçek durumlarla başlamak, anlama seviyeni artırmanın en hızlı yoludur."
     }
   })
 };

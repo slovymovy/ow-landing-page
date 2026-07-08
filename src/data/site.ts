@@ -359,7 +359,7 @@ export const standalonePaths = ['/about/'];
 // they exist in every locale with a full hreflang set (paths after the locale
 // prefix). Keep these slugs in sync with the registry in `wordLists.ts`.
 // (site.ts can't import wordLists.ts — that would be a circular import.)
-export const wordListLanguages = ['english', 'dutch', 'russian'] as const;
+export const wordListLanguages = ['english', 'dutch', 'russian', 'polish'] as const;
 export const wordListSlugs: Record<(typeof wordListLanguages)[number], string[]> = {
   english: ['500-most-common', 'travel-vocabulary', 'work-vocabulary', 'cooking-vocabulary', 'football-vocabulary', 'harry-potter-vocabulary'],
   dutch: ['just-arrived', '500-most-common', 'knm-exam', 'supermarket', 'at-the-doctor', 'family'],
@@ -372,7 +372,8 @@ export const wordListSlugs: Record<(typeof wordListLanguages)[number], string[]>
     'health-and-body',
     'clothes-and-appearance',
     'weather-and-nature'
-  ]
+  ],
+  polish: ['administration-and-documents', 'healthcare-and-dentist', 'renting-and-housing', 'home-and-household']
 };
 const wordListPaths = wordListLanguages.flatMap((lang) => [
   `/word-lists/${lang}`,
