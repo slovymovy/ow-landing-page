@@ -1,0 +1,548 @@
+[
+{
+"w":"мама",
+"d":"Женщина по отношению к своим детям; самое распространённое обращение к матери.",
+"t":{
+"en":"mom, mum, mother, mommy",
+"nl":"mama, mam, moeder, mammie",
+"pl":"mama, matka, mamusia",
+"de":"Mama, Mutti, Mami, Mutter",
+"fr":"maman, mère",
+"it":"mamma, madre",
+"cs":"máma, maminka, matka",
+"tr":"anne, anneciğim",
+"es":"mamá, madre, mami"
+}
+},
+{
+"w":"папа",
+"d":"Отец; ласковое или привычное обращение к отцу в семье.",
+"t":{
+"en":"dad, father, daddy",
+"nl":"papa, vader, pappie",
+"pl":"tata, tato, tatuś, tatko",
+"de":"Papa, Papi, Vati",
+"fr":"papa, père",
+"it":"papà, padre, babbo",
+"cs":"táta, tatínek, otec",
+"tr":"baba, babacığım",
+"es":"papá, padre, papi"
+}
+},
+{
+"w":"брат",
+"d":"Каждый из сыновей в отношении к другим детям тех же родителей или одного из них.",
+"t":{
+"en":"brother",
+"nl":"broer",
+"pl":"brat",
+"de":"Bruder",
+"fr":"frère",
+"it":"fratello",
+"cs":"bratr",
+"tr":"erkek kardeş, kardeş, birader",
+"es":"hermano"
+}
+},
+{
+"w":"муж",
+"d":"Мужчина по отношению к женщине, с которой он состоит в браке.",
+"t":{
+"en":"husband",
+"nl":"man, echtgenoot",
+"pl":"mąż, małżonek",
+"de":"Ehemann, Mann, Gatte, Gemahl",
+"fr":"mari, époux, homme",
+"it":"marito, consorte",
+"cs":"manžel, muž",
+"tr":"koca, eş",
+"es":"marido, esposo"
+}
+},
+{
+"w":"жена",
+"d":"Женщина по отношению к мужчине, с которым она состоит в браке.",
+"t":{
+"en":"wife, spouse",
+"nl":"vrouw, echtgenote, gade",
+"pl":"żona, małżonka",
+"de":"Ehefrau, Frau",
+"fr":"femme, épouse",
+"it":"moglie, sposa, consorte",
+"cs":"manželka, žena, chot'",
+"tr":"eş, karı, hanım, refika",
+"es":"esposa, mujer, cónyuge"
+}
+},
+{
+"w":"сын",
+"d":"Лицо мужского пола по отношению к своим родителям.",
+"t":{
+"en":"son",
+"nl":"zoon",
+"pl":"syn",
+"de":"Sohn",
+"fr":"fils",
+"it":"figlio",
+"cs":"syn",
+"tr":"oğul, erkek çocuk",
+"es":"hijo"
+}
+},
+{
+"w":"дочь",
+"d":"Лицо женского пола по отношению к своим отцу и матери.",
+"t":{
+"en":"daughter",
+"nl":"dochter",
+"pl":"córka",
+"de":"Tochter",
+"fr":"fille",
+"it":"figlia",
+"cs":"dcera",
+"tr":"kız, kız evlat, kız çocuk",
+"es":"hija"
+}
+},
+{
+"w":"ребёнок",
+"d":"Мальчик или девочка в раннем возрасте (до отрочества).",
+"t":{
+"en":"child, kid, baby",
+"nl":"kind, peuter, baby",
+"pl":"dziecko, dzieciak, maluch",
+"de":"Kind, Baby, Kleinkind",
+"fr":"enfant, gamin, bébé",
+"it":"bambino, bambina, bimbo, pargolo",
+"cs":"dítě, miminko, mrně",
+"tr":"çocuk, bebek, ufaklık",
+"es":"niño, nene, bebé"
+}
+},
+{
+"w":"семья",
+"d":"Группа людей, состоящая из родителей, детей и других близких родственников, обычно живущих вместе.",
+"t":{
+"en":"family",
+"nl":"gezin, familie",
+"pl":"rodzina",
+"de":"Familie",
+"fr":"famille",
+"it":"famiglia",
+"cs":"rodina, famílie",
+"tr":"aile",
+"es":"familia"
+}
+},
+{
+"w":"дедушка",
+"d":"Отец отца или матери.",
+"t":{
+"en":"grandfather, grandpa",
+"nl":"opa, grootvader",
+"pl":"dziadek, dziadziuś",
+"de":"Großvater, Opa",
+"fr":"grand-père, papy, grand-papa",
+"it":"nonno, nonnino",
+"cs":"dědeček, děda",
+"tr":"dede, büyükbaba",
+"es":"abuelo, abuelito"
+}
+},
+{
+"w":"бабушка",
+"d":"Мать одного из родителей (отца или матери).",
+"t":{
+"en":"grandmother, grandma, granny",
+"nl":"oma, grootmoeder",
+"pl":"babcia, babka, babunia",
+"de":"Großmutter, Oma, Omi",
+"fr":"grand-mère, mamie, aïeule",
+"it":"nonna",
+"cs":"babička",
+"tr":"büyükanne, nine, anneanne, babaanne",
+"es":"abuela, abuelita"
+}
+},
+{
+"w":"дядя",
+"d":"Брат отца или матери, а также муж тёти.",
+"t":{
+"en":"uncle",
+"nl":"oom",
+"pl":"wujek, stryj",
+"de":"Onkel",
+"fr":"oncle, tonton",
+"it":"zio",
+"cs":"strýc, strejda",
+"tr":"amca, dayı, enişte",
+"es":"tío"
+}
+},
+{
+"w":"тётя",
+"d":"Сестра отца или матери, а также жена дяди.",
+"t":{
+"en":"aunt",
+"nl":"tante",
+"pl":"ciocia, ciotka",
+"de":"Tante",
+"fr":"tante, tata",
+"it":"zia",
+"cs":"teta",
+"tr":"teyze, hala, yenge",
+"es":"tía"
+}
+},
+{
+"w":"внук",
+"d":"Сын сына или дочери.",
+"t":{
+"en":"grandson",
+"nl":"kleinzoon",
+"pl":"wnuk",
+"de":"Enkel, Enkelsohn",
+"fr":"petit-fils",
+"it":"nipote",
+"cs":"vnuk",
+"tr":"erkek torun, torun",
+"es":"nieto"
+}
+},
+{
+"w":"внучка",
+"d":"Дочь сына или дочери",
+"t":{
+"en":"granddaughter",
+"nl":"kleindochter",
+"pl":"wnuczka",
+"de":"Enkelin, Enkeltochter",
+"fr":"petite-fille",
+"it":"nipote, nipotina",
+"cs":"vnučka",
+"tr":"kız torun, torun",
+"es":"nieta"
+}
+},
+{
+"w":"родитель",
+"d":"Отец или мать по отношению к своим детям.",
+"t":{
+"en":"parent",
+"nl":"ouder",
+"pl":"rodzic",
+"de":"Elternteil, Eltern, Elter",
+"fr":"parent",
+"it":"genitore",
+"cs":"rodič",
+"tr":"ebeveyn, anne baba",
+"es":"padre, madre, progenitor"
+}
+},
+{
+"w":"друг",
+"d":"Человек, который связан с кем-либо дружбой, доверием и общими интересами.",
+"t":{
+"en":"friend",
+"nl":"vriend",
+"pl":"przyjaciel, kolega, druh",
+"de":"Freund, Kumpel",
+"fr":"ami, copain",
+"it":"amico",
+"cs":"přítel, kamarád",
+"tr":"arkadaş, dost",
+"es":"amigo"
+}
+},
+{
+"w":"подруга",
+"d":"Женщина или девочка, с которой кто-либо состоит в дружеских отношениях; женская форма слова <w>друг</w>.",
+"t":{
+"en":"friend, girlfriend",
+"nl":"vriendin, vriendinnetje",
+"pl":"przyjaciółka, koleżanka",
+"de":"Freundin, Kollegin",
+"fr":"amie, copine",
+"it":"amica",
+"cs":"kamarádka, přítelkyně",
+"tr":"arkadaş, kız arkadaş, dost",
+"es":"amiga"
+}
+},
+{
+"w":"партнёр",
+"d":"Участник совместной деятельности (в игре, танце, бизнесе, на сцене и т. п.)",
+"t":{
+"en":"partner",
+"nl":"partner, zakenpartner, compagnon",
+"pl":"partner, wspólnik, kontrahent",
+"de":"Partner, Geschäftspartner, Tanzpartner",
+"fr":"partenaire, associé",
+"it":"partner, socio, compagno",
+"cs":"partner, partnerka, společník",
+"tr":"ortak, partner, eş",
+"es":"socio, compañero, pareja"
+}
+},
+{
+"w":"сосед",
+"d":"Человек, который живёт вблизи, рядом с кем-либо (в одном доме, на одной лестничной клетке, на одной улице).",
+"t":{
+"en":"neighbor, neighbour",
+"nl":"buurman, buur",
+"pl":"sąsiad",
+"de":"Nachbar",
+"fr":"voisin",
+"it":"vicino, vicino di casa",
+"cs":"soused",
+"tr":"komşu",
+"es":"vecino"
+},
+"c":{
+"en":"male neighbour"
+}
+},
+{
+"w":"соседка",
+"d":"Женский род к слову <w>сосед</w>; женщина, которая живёт рядом или находится поблизости (в доме, купе, за партой и т. д.).",
+"t":{
+"en":"neighbor, neighbour",
+"nl":"buurvrouw, buurgenoot",
+"pl":"sąsiadka, współlokatorka",
+"de":"Nachbarin",
+"fr":"voisine",
+"it":"vicina, vicina di casa",
+"cs":"sousedka",
+"tr":"komşu, kadın komşu",
+"es":"vecina, compañera"
+},
+"c":{
+"en":"female neighbour"
+}
+},
+{
+"w":"знакомый",
+"d":"Человек, которого кто-либо знает, с которым установлено знакомство, но не близкая дружба.",
+"t":{
+"en":"acquaintance",
+"nl":"kennis, bekende",
+"pl":"znajomy",
+"de":"Bekannte, Bekannter",
+"fr":"connaissance",
+"it":"conoscente",
+"cs":"známý",
+"tr":"tanıdık, tanış",
+"es":"conocido"
+}
+},
+{
+"w":"человек",
+"d":"Живое разумное существо, обладающее даром речи, мышления и способностью создавать орудия труда; представитель рода Homo sapiens.",
+"t":{
+"en":"person, man, human",
+"nl":"mens, persoon, man",
+"pl":"człowiek, osoba",
+"de":"Mensch, Person",
+"fr":"personne, homme, humain",
+"it":"persona, uomo, essere umano",
+"cs":"člověk, osoba",
+"tr":"insan, kişi, adam",
+"es":"persona, hombre, ser humano"
+}
+},
+{
+"w":"женщина",
+"d":"Взрослый человек женского пола.",
+"t":{
+"en":"woman, lady",
+"nl":"vrouw, dame",
+"pl":"kobieta, pani",
+"de":"Frau, Dame",
+"fr":"femme, dame",
+"it":"donna, signora",
+"cs":"žena, paní",
+"tr":"kadın, bayan",
+"es":"mujer, señora"
+}
+},
+{
+"w":"мужчина",
+"d":"Взрослый человек мужского пола (в отличие от женщины или ребёнка).",
+"t":{
+"en":"man, male",
+"nl":"man",
+"pl":"mężczyzna",
+"de":"Mann",
+"fr":"homme",
+"it":"uomo, maschio",
+"cs":"muž",
+"tr":"adam, erkek",
+"es":"hombre, varón"
+}
+},
+{
+"w":"девушка",
+"d":"Лицо женского пола в возрасте, переходном от отрочества к юности; молодая женщина, ещё не вступившая в брак.",
+"t":{
+"en":"girl, young woman",
+"nl":"meisje, jonge vrouw",
+"pl":"dziewczyna, panna",
+"de":"Mädchen, junge Frau",
+"fr":"jeune fille, fille, jeune femme",
+"it":"ragazza, giovane",
+"cs":"dívka, děvče, slečna",
+"tr":"kız, genç kız",
+"es":"chica, muchacha, joven"
+}
+},
+{
+"w":"девочка",
+"d":"Ребёнок женского пола.",
+"t":{
+"en":"girl, little girl",
+"nl":"meisje, meiske",
+"pl":"dziewczynka",
+"de":"Mädchen, kleines Mädchen",
+"fr":"fille, fillette, petite fille",
+"it":"bambina, ragazzina",
+"cs":"holčička, děvče, holka",
+"tr":"kız, kız çocuğu",
+"es":"niña, nena"
+}
+},
+{
+"w":"взрослый",
+"d":"Человек, достигший зрелого возраста.",
+"t":{
+"en":"adult, grown-up",
+"nl":"volwassene",
+"pl":"dorosły",
+"de":"Erwachsene",
+"fr":"adulte, majeur",
+"it":"adulto, grande",
+"cs":"dospělý",
+"tr":"yetişkin, büyük",
+"es":"adulto, mayor de edad"
+}
+},
+{
+"w":"любить",
+"d":"Чувствовать глубокую привязанность, преданность и сильное влечение к человеку, семье или родине.",
+"t":{
+"en":"love, adore, cherish",
+"nl":"houden van, liefhebben",
+"pl":"kochać, uwielbiać",
+"de":"lieben",
+"fr":"aimer, adorer, chérir",
+"it":"amare, voler bene a",
+"cs":"milovat, mít rád",
+"tr":"sevmek, gönül vermek",
+"es":"amar, querer, adorar"
+}
+},
+{
+"w":"жениться",
+"d":"Вступать в брак с женщиной, брать кого-либо в жёны (о мужчине).",
+"t":{
+"en":"marry, get married",
+"nl":"trouwen met, in het huwelijk treden met",
+"pl":"żenić się, ożenić się",
+"de":"heiraten, sich verheiraten",
+"fr":"épouser, se marier avec",
+"it":"sposare, sposarsi con",
+"cs":"oženit se, ženit se",
+"tr":"evlenmek, dünya evine girmek",
+"es":"casarse con, contraer matrimonio con"
+}
+},
+{
+"w":"родиться",
+"d":"Появиться на свет (о человеке или животном)",
+"t":{
+"en":"be born",
+"nl":"geboren worden",
+"pl":"urodzić się, narodzić się",
+"de":"geboren werden",
+"fr":"naître",
+"it":"nascere",
+"cs":"narodit se, rodit se",
+"tr":"doğmak",
+"es":"nacer"
+}
+},
+{
+"w":"встречаться",
+"d":"Состоять в романтических отношениях, ходить на свидания.",
+"t":{
+"en":"date, go out, see",
+"nl":"daten, verkering hebben, gaan met",
+"pl":"chodzić ze sobą, spotykać się",
+"de":"zusammen sein, gehen mit, sich treffen",
+"fr":"sortir ensemble, fréquenter, se voir",
+"it":"stare insieme, frequentarsi, uscire insieme",
+"cs":"chodit, randit, scházet se",
+"tr":"çıkmak, görüşmek, flört etmek",
+"es":"salir, ser novios, estar saliendo"
+}
+},
+{
+"w":"молодой",
+"d":"Находящийся в начале жизни, проживший мало лет (о людях, животных, деревьях).",
+"t":{
+"en":"young",
+"nl":"jong",
+"pl":"młody",
+"de":"jung",
+"fr":"jeune",
+"it":"giovane",
+"cs":"mladý",
+"tr":"genç",
+"es":"joven"
+}
+},
+{
+"w":"старый",
+"d":"Проживший много лет, достигший старости (о живых существах).",
+"t":{
+"en":"old, elderly, aged",
+"nl":"oud, bejaard, op leeftijd",
+"pl":"stary, starszy, sędziwy",
+"de":"alt, betagt",
+"fr":"vieux, âgé",
+"it":"vecchio, anziano",
+"cs":"starý, letitý",
+"tr":"yaşlı, ihtiyar",
+"es":"viejo, anciano, mayor"
+}
+},
+{
+"w":"родной",
+"d":"Связанный прямым кровным родством (о членах семьи).",
+"t":{
+"en":"biological, own",
+"nl":"biologisch, eigen",
+"pl":"rodzony, własny",
+"de":"leiblich, eigen",
+"fr":"de sang, propre, biologique",
+"it":"di sangue, proprio, carnale",
+"cs":"vlastní, rodný",
+"tr":"öz, öz be öz",
+"es":"de sangre, carnal"
+}
+},
+{
+"w":"замужем",
+"d":"О женщине: состоящая в браке, имеющая мужа",
+"t":{
+"en":"married",
+"nl":"getrouwd, gehuwd",
+"pl":"zamężna, mężatka",
+"de":"verheiratet",
+"fr":"mariée",
+"it":"sposata, coniugata",
+"cs":"vdaná",
+"tr":"evli",
+"es":"casada, estar casada"
+}
+}
+]

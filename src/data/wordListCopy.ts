@@ -996,3 +996,236 @@ export const wordListCopyNl: Record<LocaleCode, WordListCopy> = {
     }
   })
 };
+
+// ── Russian word-list chrome ─────────────────────────────────────────────────
+// The Russian lists teach Russian vocabulary. Like the Dutch map, the
+// language-neutral chrome is reused verbatim from the (native-reviewed) English
+// map and only the strings that name the taught language are authored, plus a
+// Russian word-count FAQ. Every Russian list is thematic (no frequency/core
+// list), so the bespoke frequency-list fields are omitted entirely.
+//
+// en/ru/nl/pl are drafted for the user's review; de/es/fr/it/cs/tr are Claude
+// drafts pending the native-review pass (like topicListCopy).
+type RuOverrides = Pick<
+  WordListCopy,
+  | 'hubTitle'
+  | 'hubDescription'
+  | 'hubH1Html'
+  | 'hubSub'
+  | 'listEyebrow'
+  | 'siblingsLabel'
+  | 'allLists'
+  | 'listTitleSuffix'
+  | 'listMetaTail'
+> & { faqWordCount: WlFaqItem };
+
+function russianEntry(locale: LocaleCode, o: RuOverrides): WordListCopy {
+  const base = wordListCopy[locale];
+  return {
+    hubTitle: o.hubTitle,
+    hubDescription: o.hubDescription,
+    hubH1Html: o.hubH1Html,
+    hubSub: o.hubSub,
+    hubStepsH2: base.hubStepsH2,
+    hubStepsSub: base.hubStepsSub,
+    // Reuse the frequency-vs-topic (open), passive/active, memorisation and
+    // "why OpenWords" items; swap in a Russian-specific word-count question.
+    faq: [base.faq[0], o.faqWordCount, base.faq[2], base.faq[3], base.faq[4]],
+    listEyebrow: o.listEyebrow,
+    metricLabel: base.metricLabel,
+    siblingsLabel: o.siblingsLabel,
+    allLists: o.allLists,
+    jumpLabel: base.jumpLabel,
+    listStepsH2: base.listStepsH2,
+    listStepsSub: base.listStepsSub,
+    listTitleSuffix: o.listTitleSuffix,
+    listMetaTail: o.listMetaTail,
+    stepDownload: base.stepDownload,
+    stepFindList: base.stepFindList,
+    stepOpenList: base.stepOpenList,
+    stepAddWords: base.stepAddWords,
+    stepLearnCards: base.stepLearnCards
+  };
+}
+
+export const wordListCopyRu: Record<LocaleCode, WordListCopy> = {
+  en: russianEntry('en', {
+    hubTitle: 'Russian Word Lists — Free Vocabulary Lists with Translations | OpenWords',
+    hubDescription:
+      'Russian vocabulary lists with a translation for every word — family, food, the city, and more everyday topics. Pick a list and drill it with one-tap flashcards in OpenWords.',
+    hubH1Html: 'Russian <em>Word Lists</em>',
+    hubSub:
+      'Curated Russian vocabulary lists — every word with a translation, grouped by everyday topics. Pick a list, then learn it one tap at a time with spaced-repetition flashcards in OpenWords.',
+    listEyebrow: 'Russian word list',
+    siblingsLabel: 'Russian word lists',
+    allLists: 'All Russian lists →',
+    listTitleSuffix: 'Russian words with translations | OpenWords',
+    listMetaTail: 'Russian words with translations — learn them with one-tap flashcards in OpenWords.',
+    faqWordCount: {
+      q: 'How many Russian words do you need to be fluent?',
+      a: 'Around 3,000 word families cover most everyday Russian, and the first 1,000 already carry you through about 85% of ordinary conversation. Starting with high-frequency everyday topics — family, food, the city — is the fastest way to raise how much you understand.'
+    }
+  }),
+
+  ru: russianEntry('ru', {
+    hubTitle: 'Списки русских слов: бесплатная лексика с переводом | OpenWords',
+    hubDescription:
+      'Списки русских слов с переводом для каждого слова — семья, еда, город и другие повседневные темы. Выберите подборку и учите слова по карточкам в одно касание в OpenWords.',
+    hubH1Html: 'Списки <em>русских слов</em>',
+    hubSub:
+      'Тщательно составленные списки русских слов — с переводом для каждого слова и группировкой по повседневным темам. Выберите подборку и учите слова в одно касание с помощью интервальных повторений в OpenWords.',
+    listEyebrow: 'Список русских слов',
+    siblingsLabel: 'Списки русских слов',
+    allLists: 'Все русские списки →',
+    listTitleSuffix: 'русские слова с переводом | OpenWords',
+    listMetaTail: 'Русская лексика с переводом — учите её карточками в одно касание в OpenWords.',
+    faqWordCount: {
+      q: 'Сколько русских слов нужно для свободного владения?',
+      a: 'Около 3000 базовых слов достаточно для уверенного повседневного общения, а уже первая 1000 покрывает около 85% обычной речи. Начать с повседневных тем — семья, еда, город — самый быстрый способ повысить понимание.'
+    }
+  }),
+
+  nl: russianEntry('nl', {
+    hubTitle: 'Russische woordenlijsten — gratis lijsten met vertaling | OpenWords',
+    hubDescription:
+      "Russische woordenlijsten met een vertaling voor elk woord — familie, eten, de stad en meer alledaagse thema's. Kies een lijst en oefen met flashcards in OpenWords.",
+    hubH1Html: 'Russische <em>woordenlijsten</em>',
+    hubSub:
+      "Zorgvuldig samengestelde Russische woordenlijsten, met een vertaling voor elk woord en geordend op alledaagse thema's. Kies een lijst en leer ze met één tik via spaced repetition-flashcards in OpenWords.",
+    listEyebrow: 'Russische woordenlijst',
+    siblingsLabel: 'Russische woordenlijsten',
+    allLists: 'Alle Russische lijsten →',
+    listTitleSuffix: 'Russische woorden met vertaling | OpenWords',
+    listMetaTail: 'Russische woordenschat met vertaling — leer ze met flashcards in OpenWords.',
+    faqWordCount: {
+      q: 'Hoeveel Russische woorden heb je nodig om de taal vloeiend te spreken?',
+      a: "Met zo'n 3.000 woorden red je je prima in het dagelijks leven, en de eerste 1.000 woorden dekken al ongeveer 85% van de dagelijkse spreektaal. Beginnen met alledaagse thema's — familie, eten, de stad — is de snelste manier om je begrip te vergroten."
+    }
+  }),
+
+  pl: russianEntry('pl', {
+    hubTitle: 'Listy rosyjskich słów — darmowe zestawy słownictwa z tłumaczeniem | OpenWords',
+    hubDescription:
+      'Listy rosyjskich słów z tłumaczeniem dla każdego słówka — rodzina, jedzenie, miasto i inne codzienne tematy. Wybierz zestaw i ćwicz z fiszkami w OpenWords.',
+    hubH1Html: 'Listy <em>rosyjskich słów</em>',
+    hubSub:
+      'Starannie dobrane zestawy rosyjskiego słownictwa — każde słowo z tłumaczeniem, pogrupowane według codziennych tematów. Wybierz listę i opanuj ją dzięki powtórkom interwałowym w OpenWords.',
+    listEyebrow: 'Lista rosyjskich słów',
+    siblingsLabel: 'Listy rosyjskich słów',
+    allLists: 'Wszystkie listy rosyjskiego →',
+    listTitleSuffix: 'rosyjskie słowa z tłumaczeniem | OpenWords',
+    listMetaTail: 'Rosyjskie słownictwo z tłumaczeniem — ucz się go z fiszkami w OpenWords.',
+    faqWordCount: {
+      q: 'Ile rosyjskich słów trzeba znać, by mówić płynnie?',
+      a: 'Około 3000 słów wystarcza do swobodnej komunikacji na co dzień, a już pierwszy tysiąc pokrywa blisko 85% codziennych rozmów. Rozpoczęcie od codziennych tematów — rodzina, jedzenie, miasto — to najszybszy sposób, by zwiększyć rozumienie.'
+    }
+  }),
+
+  de: russianEntry('de', {
+    hubTitle: 'Russische Wortlisten — Kostenlose Vokabellisten mit Übersetzung | OpenWords',
+    hubDescription:
+      'Russische Vokabellisten mit Übersetzung für jedes Wort – Familie, Essen, Stadt und weitere Alltagsthemen. Wähle eine Liste und übe mit Karteikarten in OpenWords.',
+    hubH1Html: 'Russische <em>Wortlisten</em>',
+    hubSub:
+      'Sorgfältig zusammengestellte russische Vokabellisten – jedes Wort mit Übersetzung, gruppiert nach Alltagsthemen. Wähle eine Liste und lerne sie Wort für Wort mit Spaced-Repetition-Karteikarten in OpenWords.',
+    listEyebrow: 'Russische Wortliste',
+    siblingsLabel: 'Russische Wortlisten',
+    allLists: 'Alle russischen Listen →',
+    listTitleSuffix: 'russische Wörter mit Übersetzung | OpenWords',
+    listMetaTail: 'Russischer Wortschatz mit Übersetzung — lerne ihn mit Karteikarten in OpenWords.',
+    faqWordCount: {
+      q: 'Wie viele russische Wörter braucht man, um fließend zu sprechen?',
+      a: 'Rund 3.000 Wörter decken den Großteil des Alltagsrussischen ab, und schon die ersten 1.000 Wörter machen etwa 85 % der alltäglichen Kommunikation aus. Mit Alltagsthemen zu beginnen – Familie, Essen, Stadt – ist der schnellste Weg, dein Verständnis zu steigern.'
+    }
+  }),
+
+  es: russianEntry('es', {
+    hubTitle: 'Listas de vocabulario en ruso — Listas gratis con traducción | OpenWords',
+    hubDescription:
+      'Listas de vocabulario en ruso con traducción para cada palabra: la familia, la comida, la ciudad y otros temas cotidianos. Elige una lista y practícala con tarjetas en OpenWords.',
+    hubH1Html: 'Listas de <em>vocabulario en ruso</em>',
+    hubSub:
+      'Listas de vocabulario en ruso cuidadosamente seleccionadas y agrupadas por temas cotidianos; cada palabra incluye su traducción. Elige una lista y aprende con un solo toque mediante repetición espaciada en OpenWords.',
+    listEyebrow: 'Lista de vocabulario en ruso',
+    siblingsLabel: 'Listas de vocabulario en ruso',
+    allLists: 'Todas las listas de ruso →',
+    listTitleSuffix: 'palabras en ruso con traducción | OpenWords',
+    listMetaTail: 'Vocabulario ruso con traducción — apréndelo con tarjetas en OpenWords.',
+    faqWordCount: {
+      q: '¿Cuántas palabras en ruso se necesitan para hablar con fluidez?',
+      a: 'Unas 3000 palabras cubren la mayor parte del ruso cotidiano, y las primeras 1000 ya representan alrededor del 85 % del habla diaria. Empezar por temas cotidianos —la familia, la comida, la ciudad— es la forma más rápida de mejorar tu comprensión.'
+    }
+  }),
+
+  fr: russianEntry('fr', {
+    hubTitle: 'Listes de mots en russe — Vocabulaire gratuit avec traduction | OpenWords',
+    hubDescription:
+      "Listes de vocabulaire russe avec une traduction pour chaque mot — la famille, la nourriture, la ville et d'autres thèmes du quotidien. Choisissez une liste et étudiez-les avec des flashcards sur OpenWords.",
+    hubH1Html: 'Listes de <em>mots russes</em>',
+    hubSub:
+      'Des listes de vocabulaire russe soigneusement sélectionnées et regroupées par thèmes du quotidien, chaque mot accompagné de sa traduction. Choisissez une liste et maîtrisez-la mot à mot grâce à la répétition espacée sur OpenWords.',
+    listEyebrow: 'Liste de vocabulaire russe',
+    siblingsLabel: 'Listes de vocabulaire russe',
+    allLists: 'Toutes les listes de russe →',
+    listTitleSuffix: 'mots russes avec traduction | OpenWords',
+    listMetaTail: 'Vocabulaire russe avec traduction — apprenez-le avec des flashcards sur OpenWords.',
+    faqWordCount: {
+      q: 'Combien de mots russes faut-il connaître pour parler couramment ?',
+      a: "Environ 3 000 mots couvrent l'essentiel du russe du quotidien, et les 1 000 premiers représentent déjà près de 85 % d'une conversation ordinaire. Commencer par les thèmes du quotidien — la famille, la nourriture, la ville — est le moyen le plus rapide d'améliorer votre compréhension."
+    }
+  }),
+
+  it: russianEntry('it', {
+    hubTitle: 'Liste di parole in russo — Vocabolario gratuito con traduzione | OpenWords',
+    hubDescription:
+      'Liste di vocaboli russi con una traduzione per ogni parola: la famiglia, il cibo, la città e altri temi di tutti i giorni. Scegli una lista e studiala con le flashcard su OpenWords.',
+    hubH1Html: 'Liste di <em>parole in russo</em>',
+    hubSub:
+      'Liste di vocaboli russi selezionate con cura e raggruppate per temi quotidiani, ogni parola con la sua traduzione. Scegli una lista e imparala parola per parola con la ripetizione spaziata su OpenWords.',
+    listEyebrow: 'Lista di parole in russo',
+    siblingsLabel: 'Liste di parole in russo',
+    allLists: 'Tutte le liste di russo →',
+    listTitleSuffix: 'parole russe con traduzione | OpenWords',
+    listMetaTail: 'Vocabolario russo con traduzione — imparalo con le flashcard su OpenWords.',
+    faqWordCount: {
+      q: 'Quante parole russe servono per parlare fluentemente?',
+      a: "Circa 3.000 parole coprono gran parte del russo di tutti i giorni, e le prime 1.000 rappresentano già circa l'85% dei discorsi quotidiani. Iniziare dai temi quotidiani — la famiglia, il cibo, la città — è il modo più rapido per migliorare la comprensione."
+    }
+  }),
+
+  cs: russianEntry('cs', {
+    hubTitle: 'Seznamy ruských slov — slovní zásoba zdarma s překladem | OpenWords',
+    hubDescription:
+      'Seznamy ruských slov s překladem u každého slova – rodina, jídlo, město a další každodenní témata. Vyberte si seznam a procvičujte ho pomocí kartiček v OpenWords.',
+    hubH1Html: 'Seznamy <em>ruských slov</em>',
+    hubSub:
+      'Pečlivě sestavené seznamy ruské slovní zásoby, uspořádané podle každodenních témat – u každého slova najdete překlad. Vyberte si seznam a ovládejte ho slovíčko po slovíčku díky intervalovému opakování v aplikaci OpenWords.',
+    listEyebrow: 'Seznam ruských slov',
+    siblingsLabel: 'Seznamy ruských slov',
+    allLists: 'Všechny ruské seznamy →',
+    listTitleSuffix: 'ruská slova s překladem | OpenWords',
+    listMetaTail: 'Ruská slovní zásoba s překladem — učte se ji pomocí kartiček v OpenWords.',
+    faqWordCount: {
+      q: 'Kolik ruských slov je potřeba pro plynulou komunikaci?',
+      a: 'Přibližně 3 000 slov pokryje většinu běžné ruštiny a už prvních 1 000 slov tvoří kolem 85 % běžné řeči. Začít s každodenními tématy – rodina, jídlo, město – je nejrychlejší způsob, jak zlepšit porozumění.'
+    }
+  }),
+
+  tr: russianEntry('tr', {
+    hubTitle: 'Rusça Kelime Listeleri — Türkçe Çevirili Ücretsiz Kelime Setleri | OpenWords',
+    hubDescription:
+      'Her kelime için Türkçe çeviri içeren Rusça kelime listeleri — aile, yemek, şehir ve diğer günlük konular. Bir liste seç ve OpenWords ile kelime kartlarıyla çalış.',
+    hubH1Html: 'Rusça <em>Kelime Listeleri</em>',
+    hubSub:
+      "Özenle hazırlanmış Rusça kelime listeleri — her kelime çevirisiyle birlikte ve günlük konulara göre gruplandırılmış. İstediğin listeyi seç ve OpenWords'ün aralıklı tekrar sistemiyle kelime kelime uzmanlaş.",
+    listEyebrow: 'Rusça Kelime Listesi',
+    siblingsLabel: 'Rusça Kelime Listeleri',
+    allLists: 'Tüm Rusça Listeleri →',
+    listTitleSuffix: 'Türkçe çevirili Rusça kelimeler | OpenWords',
+    listMetaTail: 'Türkçe çevirili Rusça kelimeler — OpenWords kelime kartlarıyla öğren.',
+    faqWordCount: {
+      q: 'Akıcı şekilde Rusça konuşabilmek için kaç kelime bilmek gerekir?',
+      a: "Yaklaşık 3.000 kelime günlük Rusçanın büyük bölümünü kapsar; ilk 1.000 kelime bile günlük konuşmaların yaklaşık %85'ini oluşturur. Aile, yemek, şehir gibi günlük konularla başlamak, anlama seviyeni artırmanın en hızlı yoludur."
+    }
+  })
+};

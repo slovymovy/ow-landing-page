@@ -1,0 +1,963 @@
+[
+{
+"w":"завтрак",
+"d":"Утренний приём пищи, обычно происходящий до обеда.",
+"t":{
+"en":"breakfast",
+"nl":"ontbijt",
+"pl":"śniadanie",
+"de":"Frühstück",
+"fr":"petit-déjeuner",
+"it":"colazione, prima colazione",
+"cs":"snídaně",
+"tr":"kahvaltı",
+"es":"desayuno"
+}
+},
+{
+"w":"обед",
+"d":"Основной приём пищи в середине дня (обычно между 12 и 15 часами).",
+"t":{
+"en":"lunch, dinner",
+"nl":"lunch, middagmaal, middageten",
+"pl":"obiad, lunch",
+"de":"Mittagessen, Mittag",
+"fr":"déjeuner, repas du midi",
+"it":"pranzo",
+"cs":"oběd",
+"tr":"öğle yemeği",
+"es":"almuerzo, comida"
+}
+},
+{
+"w":"ужин",
+"d":"Последний приём пищи, совершаемый вечером.",
+"t":{
+"en":"dinner, supper",
+"nl":"avondeten, avondmaal, diner",
+"pl":"kolacja",
+"de":"Abendessen, Abendbrot",
+"fr":"dîner, souper, repas du soir",
+"it":"cena",
+"cs":"večeře",
+"tr":"akşam yemeği",
+"es":"cena"
+}
+},
+{
+"w":"еда",
+"d":"То, что едят; пища, продовольствие.",
+"t":{
+"en":"food",
+"nl":"eten, voedsel",
+"pl":"jedzenie, pożywienie, żywność",
+"de":"Essen, Nahrung, Nahrungsmittel",
+"fr":"nourriture, alimentation",
+"it":"cibo, alimento",
+"cs":"jídlo, potrava, strava",
+"tr":"yemek, yiyecek, gıda",
+"es":"comida, alimento"
+}
+},
+{
+"w":"блюдо",
+"d":"Приготовленная еда, кушанье.",
+"t":{
+"en":"dish",
+"nl":"gerecht, schotel",
+"pl":"danie, potrawa",
+"de":"Gericht, Speise",
+"fr":"plat, mets",
+"it":"piatto, pietanza",
+"cs":"jídlo, pokrm",
+"tr":"yemek",
+"es":"plato, platillo"
+},
+"c":{
+"tr":"isim: hazırlanmış yemek"
+}
+},
+{
+"w":"напиток",
+"d":"Жидкость, специально приготовленная для питья.",
+"t":{
+"en":"drink, beverage",
+"nl":"drank, drankje",
+"pl":"napój",
+"de":"Getränk, Drink, Trank",
+"fr":"boisson, breuvage",
+"it":"bevanda, bibita",
+"cs":"nápoj, pití",
+"tr":"içecek, meşrubat",
+"es":"bebida"
+}
+},
+{
+"w":"хлеб",
+"d":"Пищевой продукт, выпекаемый из муки, обычно с добавлением воды, соли и дрожжей.",
+"t":{
+"en":"bread",
+"nl":"brood",
+"pl":"chleb, pieczywo",
+"de":"Brot",
+"fr":"pain",
+"it":"pane",
+"cs":"chléb, chleba",
+"tr":"ekmek",
+"es":"pan"
+}
+},
+{
+"w":"мясо",
+"d":"Часть туши убитых животных, используемая как продукт питания.",
+"t":{
+"en":"meat",
+"nl":"vlees",
+"pl":"mięso",
+"de":"Fleisch",
+"fr":"viande",
+"it":"carne",
+"cs":"maso",
+"tr":"et",
+"es":"carne"
+}
+},
+{
+"w":"молоко",
+"d":"Питательная жидкость белого цвета, которую дают коровы, козы и другие млекопитающие; основной продукт питания для младенцев.",
+"t":{
+"en":"milk",
+"nl":"melk",
+"pl":"mleko",
+"de":"Milch",
+"fr":"lait",
+"it":"latte",
+"cs":"mléko",
+"tr":"süt",
+"es":"leche"
+}
+},
+{
+"w":"рыба",
+"d":"Блюдо или продукт питания, приготовленные из мяса этого животного.",
+"t":{
+"en":"fish",
+"nl":"vis",
+"pl":"ryba",
+"de":"Fisch",
+"fr":"poisson",
+"it":"pesce",
+"cs":"ryba",
+"tr":"balık",
+"es":"pescado"
+}
+},
+{
+"w":"яйцо",
+"d":"Пищевой продукт овальной формы в твёрдой скорлупе, который несут птицы (обычно курицы).",
+"t":{
+"en":"egg",
+"nl":"ei",
+"pl":"jajko, jajo",
+"de":"Ei",
+"fr":"œuf",
+"it":"uovo",
+"cs":"vejce, vajíčko",
+"tr":"yumurta",
+"es":"huevo"
+}
+},
+{
+"w":"сыр",
+"d":"Пищевой продукт, изготовляемый из свернувшегося молока.",
+"t":{
+"en":"cheese",
+"nl":"kaas",
+"pl":"ser",
+"de":"Käse",
+"fr":"fromage",
+"it":"formaggio",
+"cs":"sýr",
+"tr":"peynir",
+"es":"queso"
+}
+},
+{
+"w":"масло",
+"d":"Густой пищевой продукт из молочных сливок (сливочное масло)",
+"t":{
+"en":"butter",
+"nl":"boter, roomboter",
+"pl":"masło",
+"de":"Butter",
+"fr":"beurre",
+"it":"burro",
+"cs":"máslo",
+"tr":"tereyağı",
+"es":"mantequilla, manteca"
+}
+},
+{
+"w":"мука",
+"d":"Пищевой продукт в виде мелкого порошка, получаемый путём размола зерна (обычно пшеницы или ржи).",
+"t":{
+"en":"flour",
+"nl":"bloem, meel",
+"pl":"mąka",
+"de":"Mehl",
+"fr":"farine",
+"it":"farina",
+"cs":"mouka",
+"tr":"un",
+"es":"harina"
+}
+},
+{
+"w":"соль",
+"d":"Белое кристаллическое вещество с острым характерным вкусом, которое используется как приправа к пище (хлорид натрия).",
+"t":{
+"en":"salt",
+"nl":"zout",
+"pl":"sól",
+"de":"Salz",
+"fr":"sel",
+"it":"sale",
+"cs":"sůl",
+"tr":"tuz",
+"es":"sal"
+}
+},
+{
+"w":"сахар",
+"d":"Пищевой продукт, белое сладкое кристаллическое вещество.",
+"t":{
+"en":"sugar",
+"nl":"suiker",
+"pl":"cukier",
+"de":"Zucker",
+"fr":"sucre",
+"it":"zucchero",
+"cs":"cukr",
+"tr":"şeker",
+"es":"azúcar"
+}
+},
+{
+"w":"мед",
+"d":"Вариант написания слова <w>мёд</w> (используется, когда буква «ё» недоступна или опускается на письме).",
+"t":{
+"en":"honey",
+"nl":"honing",
+"pl":"miód",
+"de":"Honig",
+"fr":"miel",
+"it":"miele",
+"cs":"med",
+"tr":"bal",
+"es":"miel"
+}
+},
+{
+"w":"каша",
+"d":"Густое кушанье из крупы, сваренной на воде или молоке.",
+"t":{
+"en":"porridge, kasha, oatmeal, mush",
+"nl":"pap, brij, havermoutpap",
+"pl":"kasza, owsianka",
+"de":"Brei, Grütze, Porridge",
+"fr":"bouillie, kacha, porridge",
+"it":"pappa, polenta, porridge",
+"cs":"kaše",
+"tr":"lapa, mama",
+"es":"gachas, papilla, puches"
+}
+},
+{
+"w":"творог",
+"d":"Кисломолочный продукт, получаемый путём сквашивания молока и удаления сыворотки.",
+"t":{
+"en":"cottage cheese, quark, curds",
+"nl":"kwark, plattekaas, verse kaas, cottage cheese",
+"pl":"twaróg, biały ser",
+"de":"Quark, Topfen, Weißkäse",
+"fr":"fromage blanc, caillé, fromage frais",
+"it":"ricotta, quark, fiocchi di latte",
+"cs":"tvaroh",
+"tr":"lor peyniri, çökelek, lor",
+"es":"requesón, queso cottage, cuajada"
+}
+},
+{
+"w":"картошка",
+"d":"Разговорное название овощного растения картофель, а также его клубней, употребляемых в пищу.",
+"t":{
+"en":"potato",
+"nl":"aardappel, aardappelen, patat",
+"pl":"ziemniak, kartofel, ziemniaki",
+"de":"Kartoffel, Kartoffeln",
+"fr":"patate, pomme de terre",
+"it":"patata, patate",
+"cs":"brambory, brambora",
+"tr":"patates",
+"es":"patata, papa"
+},
+"c":{
+"en":"informal everyday word",
+"tr":"günlük konuşma dili",
+"es":"palabra coloquial del día a día"
+}
+},
+{
+"w":"картофель",
+"d":"Клубни этого растения, употребляемые в пищу; блюдо, приготовленное из таких клубней.",
+"t":{
+"en":"potato",
+"nl":"aardappel",
+"pl":"ziemniak, kartofel",
+"de":"Kartoffel, Erdapfel",
+"fr":"pomme de terre, patate",
+"it":"patata",
+"cs":"brambory, brambor",
+"tr":"patates",
+"es":"patata, papa"
+},
+"c":{
+"en":"formal word, used in shops and menus",
+"tr":"resmî sözcük, menülerde ve mağazalarda",
+"es":"palabra formal, en tiendas y menús"
+}
+},
+{
+"w":"перец",
+"d":"Овощ с полыми плодами красного, жёлтого или зелёного цвета, употребляемый в пищу (сладкий или острый).",
+"t":{
+"en":"pepper, bell pepper, capsicum",
+"nl":"paprika, peper",
+"pl":"papryka",
+"de":"Paprika, Paprikaschote",
+"fr":"poivron, piment",
+"it":"peperone, peperoncino",
+"cs":"paprika",
+"tr":"biber, dolmalık biber",
+"es":"pimiento, pimiento morrón, chile, ají"
+}
+},
+{
+"w":"капуста",
+"d":"Огородное растение с крупными листьями, которые обычно образуют плотный шар (кочан); употребляется в пищу.",
+"t":{
+"en":"cabbage",
+"nl":"kool",
+"pl":"kapusta",
+"de":"Kohl, Kraut",
+"fr":"chou",
+"it":"cavolo",
+"cs":"zelí, kapusta",
+"tr":"lahana",
+"es":"col, repollo, berza"
+}
+},
+{
+"w":"морковь",
+"d":"Съедобный сладковатый корнеплод оранжевого цвета, богатый витаминами.",
+"t":{
+"en":"carrot",
+"nl":"wortel, peen",
+"pl":"marchew, marchewka",
+"de":"Karotte, Möhre, Mohrrübe",
+"fr":"carotte",
+"it":"carota",
+"cs":"mrkev, karotka",
+"tr":"havuç",
+"es":"zanahoria"
+}
+},
+{
+"w":"помидор",
+"d":"Съедобный сочный плод (ягода) одноименного растения, обычно красного цвета; овощ.",
+"t":{
+"en":"tomato",
+"nl":"tomaat",
+"pl":"pomidor",
+"de":"Tomate, Paradeiser",
+"fr":"tomate",
+"it":"pomodoro",
+"cs":"rajče, rajské jablíčko",
+"tr":"domates",
+"es":"tomate, jitomate"
+}
+},
+{
+"w":"банан",
+"d":"Продолговатый сладкий мучнистый фрукт с жёлтой кожурой, растущий в тропиках.",
+"t":{
+"en":"banana",
+"nl":"banaan",
+"pl":"banan",
+"de":"Banane",
+"fr":"banane",
+"it":"banana",
+"cs":"banán",
+"tr":"muz",
+"es":"plátano, banana"
+}
+},
+{
+"w":"виноград",
+"d":"Сладкие ягоды этого растения, собранные в гроздья, употребляемые в пищу и для производства вина",
+"t":{
+"en":"grapes, grape",
+"nl":"druiven, druif",
+"pl":"winogrona, winogrono",
+"de":"Weintraube, Traube, Weinbeere",
+"fr":"raisin",
+"it":"uva",
+"cs":"hroznové víno, hrozny, víno",
+"tr":"üzüm",
+"es":"uva, uvas"
+}
+},
+{
+"w":"суп",
+"d":"Жидкое кушанье, обычно представляющее собой отвар с приправами, овощами или мясом; первое блюдо.",
+"t":{
+"en":"soup, broth",
+"nl":"soep, bouillon",
+"pl":"zupa",
+"de":"Suppe, Brühe",
+"fr":"soupe, potage",
+"it":"zuppa, minestra",
+"cs":"polévka, vývar",
+"tr":"çorba",
+"es":"sopa, caldo"
+}
+},
+{
+"w":"салат",
+"d":"Холодное блюдо из смеси нарезанных овощей, грибов, мяса или рыбы, заправленное маслом, майонезом или другим соусом.",
+"t":{
+"en":"salad",
+"nl":"salade, sla",
+"pl":"sałatka, surówka",
+"de":"Salat",
+"fr":"salade",
+"it":"insalata",
+"cs":"salát",
+"tr":"salata",
+"es":"ensalada"
+}
+},
+{
+"w":"пирог",
+"d":"Печёное изделие из раскатанного теста с какой-либо начинкой.",
+"t":{
+"en":"pie, tart",
+"nl":"taart, pastei, vlaai",
+"pl":"ciasto, placek, tarta",
+"de":"Kuchen, Pastete, Pirogge",
+"fr":"tarte, tourte, gâteau",
+"it":"torta, crostata, pasticcio",
+"cs":"koláč, koláček, píra",
+"tr":"turta, pasta, börek, tart",
+"es":"pastel, tarta, empanada"
+}
+},
+{
+"w":"бутерброд",
+"d":"Ломтик хлеба с маслом, сыром, колбасой или другими продуктами, положенными сверху.",
+"t":{
+"en":"sandwich, open sandwich",
+"nl":"boterham, sandwich",
+"pl":"kanapka, kromka chleba z obkładem",
+"de":"belegtes Brot, Butterbrot, Stulle, Sandwich",
+"fr":"tartine, sandwich",
+"it":"panino, panino imbottito, tramezzino, sandwich",
+"cs":"obložený chléb, sendvič, chlebíček",
+"tr":"sandviç, açık sandviç",
+"es":"bocadillo, sándwich, emparedado"
+}
+},
+{
+"w":"сосиска",
+"d":"Небольшое колбасное изделие из измельчённого варёного мяса, которое перед едой обычно варят или жарят.",
+"t":{
+"en":"sausage, frankfurter, wiener",
+"nl":"worstje, knakworst, frankfurter",
+"pl":"parówka, serdel, paróweczka",
+"de":"Würstchen, Wurst, Wiener Würstchen, Frankfurter",
+"fr":"saucisse, saucisse de Strasbourg, knack",
+"it":"würstel, salsiccia",
+"cs":"párek, špekáček, klobása",
+"tr":"sosis",
+"es":"salchicha, salchicha de Viena"
+}
+},
+{
+"w":"пицца",
+"d":"Традиционное итальянское блюдо в виде круглой дрожжевой лепешки, которая запекается с уложенной сверху начинкой из томатного соуса, сыра и других ингредиентов.",
+"t":{
+"en":"pizza",
+"nl":"pizza",
+"pl":"pizza",
+"de":"Pizza",
+"fr":"pizza",
+"it":"pizza",
+"cs":"pizza",
+"tr":"pizza",
+"es":"pizza"
+}
+},
+{
+"w":"торт",
+"d":"Сладкое кондитерское изделие из коржей и крема, часто украшенное фруктами, шоколадом или глазурью, которое обычно подают на праздники.",
+"t":{
+"en":"cake, torte",
+"nl":"taart, cake",
+"pl":"tort",
+"de":"Torte, Kuchen",
+"fr":"gâteau, tarte",
+"it":"torta",
+"cs":"dort",
+"tr":"pasta, turta",
+"es":"tarta, torta, pastel"
+}
+},
+{
+"w":"шоколад",
+"d":"Кондитерское изделие на основе какао и сахара, обычно выпускаемое в виде плиток или конфет.",
+"t":{
+"en":"chocolate",
+"nl":"chocolade",
+"pl":"czekolada",
+"de":"Schokolade",
+"fr":"chocolat",
+"it":"cioccolato, cioccolata",
+"cs":"čokoláda",
+"tr":"çikolata",
+"es":"chocolate"
+}
+},
+{
+"w":"мороженое",
+"d":"Сладкое замороженное десертное лакомство, обычно приготовленное из молока, сливок, сахара, сока или фруктов.",
+"t":{
+"en":"ice cream",
+"nl":"ijs, roomijs",
+"pl":"lody",
+"de":"Eis, Eiscreme",
+"fr":"glace, crème glacée",
+"it":"gelato, sorbetto",
+"cs":"zmrzlina",
+"tr":"dondurma",
+"es":"helado"
+}
+},
+{
+"w":"вода",
+"d":"Прозрачная бесцветная жидкость, не имеющая вкуса и запаха, необходимая для жизни всех организмов.",
+"t":{
+"en":"water",
+"nl":"water",
+"pl":"woda",
+"de":"Wasser",
+"fr":"eau",
+"it":"acqua",
+"cs":"voda",
+"tr":"su",
+"es":"agua"
+}
+},
+{
+"w":"сок",
+"d":"Жидкий напиток, получаемый из свежих фруктов, ягод или овощей.",
+"t":{
+"en":"juice",
+"nl":"sap",
+"pl":"sok",
+"de":"Saft",
+"fr":"jus",
+"it":"succo",
+"cs":"džus, šťáva",
+"tr":"meyve suyu, su",
+"es":"zumo, jugo"
+}
+},
+{
+"w":"кофе",
+"d":"Ароматный бодрящий напиток тёмного цвета, который готовят из жареных зёрен кофейного дерева.",
+"t":{
+"en":"coffee",
+"nl":"koffie",
+"pl":"kawa",
+"de":"Kaffee",
+"fr":"café",
+"it":"caffè",
+"cs":"káva",
+"tr":"kahve",
+"es":"café"
+}
+},
+{
+"w":"пиво",
+"d":"Слабоалкогольный пенистый напиток, изготавливаемый из солода и хмеля.",
+"t":{
+"en":"beer, ale",
+"nl":"bier",
+"pl":"piwo",
+"de":"Bier",
+"fr":"bière, pression",
+"it":"birra",
+"cs":"pivo",
+"tr":"bira",
+"es":"cerveza"
+}
+},
+{
+"w":"вино",
+"d":"Алкогольный напиток, получаемый в результате брожения виноградного сока или сока других плодов.",
+"t":{
+"en":"wine",
+"nl":"wijn",
+"pl":"wino",
+"de":"Wein",
+"fr":"vin",
+"it":"vino",
+"cs":"víno",
+"tr":"şarap",
+"es":"vino"
+}
+},
+{
+"w":"водка",
+"d":"Крепкий алкогольный напиток, представляющий собой смесь очищенного этилового спирта с водой.",
+"t":{
+"en":"vodka",
+"nl":"wodka",
+"pl":"wódka",
+"de":"Wodka",
+"fr":"vodka, eau-de-vie",
+"it":"vodka, vodca",
+"cs":"vodka",
+"tr":"votka",
+"es":"vodka"
+}
+},
+{
+"w":"сметана",
+"d":"Густой жирный кисломолочный продукт, приготовленный из сливок.",
+"t":{
+"en":"sour cream",
+"nl":"zure room, crème fraîche",
+"pl":"śmietana, kwaśna śmietana",
+"de":"saure Sahne, Schmand, Sauerrahm",
+"fr":"crème fraîche, crème aigre",
+"it":"panna acida, smetana",
+"cs":"zakysaná smetana, kysaná smetana, smetana",
+"tr":"ekşi krema, smetana",
+"es":"crema agria, nata agria"
+}
+},
+{
+"w":"курица",
+"d":"Мясо этой птицы, употребляемое в пищу.",
+"t":{
+"en":"chicken",
+"nl":"kip, kippenvlees",
+"pl":"kurczak, kura, drób",
+"de":"Hühnerfleisch, Huhn",
+"fr":"poulet, poule",
+"it":"pollo",
+"cs":"kuře, kuřecí",
+"tr":"tavuk, tavuk eti",
+"es":"pollo"
+}
+},
+{
+"w":"рис",
+"d":"Белые или коричневые зёрна, которые используют в пищу, а также каша или гарнир из этих зёрен.",
+"t":{
+"en":"rice",
+"nl":"rijst",
+"pl":"ryż",
+"de":"Reis",
+"fr":"riz",
+"it":"riso",
+"cs":"rýže",
+"tr":"pirinç, pilav",
+"es":"arroz"
+}
+},
+{
+"w":"макароны",
+"d":"Пищевой продукт, изделие из пшеничной муки в виде длинных трубочек.",
+"t":{
+"en":"pasta, macaroni",
+"nl":"pasta, macaroni",
+"pl":"makaron",
+"de":"Nudeln, Pasta, Makkaroni",
+"fr":"pâtes, macaronis, spaghettis",
+"it":"pasta, maccheroni",
+"cs":"těstoviny, makaróny",
+"tr":"makarna",
+"es":"pasta, macarrones"
+}
+},
+{
+"w":"стакан",
+"d":"Стеклянный сосуд цилиндрической формы без ручки, предназначенный для питья.",
+"t":{
+"en":"glass, tumbler",
+"nl":"glas, drinkglas",
+"pl":"szklanka",
+"de":"Glas, Becher, Trinkglas",
+"fr":"verre, gobelet",
+"it":"bicchiere",
+"cs":"sklenice, sklenička",
+"tr":"bardak",
+"es":"vaso"
+}
+},
+{
+"w":"кружка",
+"d":"Сосуд для питья в виде большого стакана с ручкой.",
+"t":{
+"en":"mug, cup",
+"nl":"mok, beker, kroes",
+"pl":"kubek, kufel",
+"de":"Becher, Krug, Tasse",
+"fr":"mug, chope, tasse",
+"it":"tazza, mug, boccale",
+"cs":"hrnek, hrneček, půllitr",
+"tr":"kupa, maşrapa, fincan",
+"es":"taza, jarro, tazón"
+}
+},
+{
+"w":"ложка",
+"d":"Столовый прибор с ручкой и углублением для зачерпывания жидкой или рассыпчатой еды.",
+"t":{
+"en":"spoon",
+"nl":"lepel",
+"pl":"łyżka",
+"de":"Löffel",
+"fr":"cuillère, cuiller",
+"it":"cucchiaio",
+"cs":"lžíce, lžička",
+"tr":"kaşık",
+"es":"cuchara"
+}
+},
+{
+"w":"нож",
+"d":"Инструмент для резания, состоящий из клинка с лезвием и ручки.",
+"t":{
+"en":"knife",
+"nl":"mes",
+"pl":"nóż",
+"de":"Messer",
+"fr":"couteau",
+"it":"coltello",
+"cs":"nůž",
+"tr":"bıçak",
+"es":"cuchillo, navaja"
+}
+},
+{
+"w":"посуда",
+"d":"Обобщённое название предметов быта, используемых для приготовления, приёма и хранения пищи (тарелки, чашки, кастрюли, сковородки и т. п.).",
+"t":{
+"en":"dishes, tableware, crockery, cookware",
+"nl":"vaat, servies, vaatwerk, kookgerei",
+"pl":"naczynia, zastawa stołowa",
+"de":"Geschirr, Küchengeschirr, Essgeschirr",
+"fr":"vaisselle, ustensiles",
+"it":"stoviglie, piatti, pentolame, servizio da tavola",
+"cs":"nádobí, jídelní servis",
+"tr":"bulaşık, kap kacak, sofra takımı, mutfak eşyası",
+"es":"vajilla, platos, utensilios de cocina"
+}
+},
+{
+"w":"кухня",
+"d":"Помещение в доме, квартире или другом здании, предназначенное для приготовления пищи.",
+"t":{
+"en":"kitchen",
+"nl":"keuken",
+"pl":"kuchnia",
+"de":"Küche",
+"fr":"cuisine",
+"it":"cucina",
+"cs":"kuchyně, kuchyň",
+"tr":"mutfak",
+"es":"cocina"
+}
+},
+{
+"w":"холодильник",
+"d":"Бытовой электроприбор в виде шкафа для хранения пищевых продуктов при низкой температуре.",
+"t":{
+"en":"fridge, refrigerator",
+"nl":"koelkast, ijskast, frigo",
+"pl":"lodówka, chłodziarka",
+"de":"Kühlschrank",
+"fr":"réfrigérateur, frigo, frigidaire",
+"it":"frigorifero, frigo",
+"cs":"lednice, lednička, chladnička",
+"tr":"buzdolabı, soğutucu",
+"es":"nevera, frigorífico, refrigerador"
+}
+},
+{
+"w":"готовить",
+"d":"Приготавливать пищу, делать продукты пригодными для еды (варить, жарить и т.п.).",
+"t":{
+"en":"cook, prepare",
+"nl":"koken, klaarmaken, bereiden",
+"pl":"gotować, przygotowywać",
+"de":"kochen, zubereiten",
+"fr":"cuisiner, faire la cuisine, préparer",
+"it":"cucinare, preparare",
+"cs":"vařit, připravovat",
+"tr":"yemek yapmak, pişirmek, hazırlamak",
+"es":"cocinar, preparar"
+}
+},
+{
+"w":"варить",
+"d":"Готовить пищу в кипящей воде или другой жидкости.",
+"t":{
+"en":"boil, cook",
+"nl":"koken",
+"pl":"gotować",
+"de":"kochen, sieden",
+"fr":"faire bouillir, cuire, faire cuire",
+"it":"cuocere, bollire, lessare",
+"cs":"vařit, uvařit",
+"tr":"pişirmek, haşlamak",
+"es":"cocer, hervir, cocinar"
+}
+},
+{
+"w":"есть",
+"d":"Принимать пищу, глотать и пережёвывать еду.",
+"t":{
+"en":"eat",
+"nl":"eten",
+"pl":"jeść",
+"de":"essen",
+"fr":"manger",
+"it":"mangiare",
+"cs":"jíst",
+"tr":"yemek",
+"es":"comer"
+},
+"c":{
+"tr":"fiil: yemek yemek"
+}
+},
+{
+"w":"пить",
+"d":"Глотать жидкость для утоления жажды.",
+"t":{
+"en":"drink",
+"nl":"drinken",
+"pl":"pić",
+"de":"trinken",
+"fr":"boire",
+"it":"bere",
+"cs":"pít",
+"tr":"içmek",
+"es":"beber, tomar"
+}
+},
+{
+"w":"резать",
+"d":"Разделять что-либо на части или делать надрезы с помощью острого инструмента (ножа, ножниц и т.п.).",
+"t":{
+"en":"cut, slice",
+"nl":"snijden, knippen",
+"pl":"kroić, ciąć, krajać",
+"de":"schneiden, aufschneiden",
+"fr":"couper, trancher, découper",
+"it":"tagliare, affettare",
+"cs":"krájet, řezat, stříhat",
+"tr":"kesmek, dilimlemek, doğramak",
+"es":"cortar, rebanar"
+}
+},
+{
+"w":"пробовать",
+"d":"Есть или пить немного чего-либо, чтобы определить вкус или готовность.",
+"t":{
+"en":"taste, try",
+"nl":"proeven, proberen",
+"pl":"próbować, kosztować, degustować",
+"de":"probieren, kosten, probieren",
+"fr":"goûter, goûter à",
+"it":"assaggiare, provare",
+"cs":"ochutnávat, zkoušet",
+"tr":"tatmak, denemek, tadına bakmak",
+"es":"probar, gustar, degustar"
+}
+},
+{
+"w":"съесть",
+"d":"Принять пищу внутрь; проглотить что-либо съедобное.",
+"t":{
+"en":"eat, consume",
+"nl":"opeten, eten",
+"pl":"zjeść, skonsumować",
+"de":"aufessen, essen, verspeisen",
+"fr":"manger, consommer",
+"it":"mangiare, consumare",
+"cs":"sníst, sežrat",
+"tr":"yemek, tüketmek, yutmak",
+"es":"comer, comerse"
+}
+},
+{
+"w":"кормить",
+"d":"Давать еду человеку или животному, помогать принимать пищу.",
+"t":{
+"en":"feed",
+"nl":"voeren, te eten geven, voeden",
+"pl":"karmić",
+"de":"füttern, zu essen geben",
+"fr":"nourrir, donner à manger",
+"it":"dar da mangiare, imboccare, nutrire",
+"cs":"krmit, nakrmit",
+"tr":"beslemek, doyurmak",
+"es":"dar de comer, alimentar"
+}
+},
+{
+"w":"горький",
+"d":"Имеющий едкий, неприятный и резкий вкус (как у полыни, хины или горчицы); противоположный сладкому.",
+"t":{
+"en":"bitter",
+"nl":"bitter",
+"pl":"gorzki",
+"de":"bitter, herb",
+"fr":"amer",
+"it":"amaro",
+"cs":"hořký",
+"tr":"acı",
+"es":"amargo"
+}
+},
+{
+"w":"свежий",
+"d":"Натуральный, не подвергавшийся консервированию, солению или сушке (о продуктах).",
+"t":{
+"en":"fresh",
+"nl":"vers",
+"pl":"świeży, surowy",
+"de":"frisch",
+"fr":"frais",
+"it":"fresco",
+"cs":"čerstvý",
+"tr":"taze",
+"es":"fresco"
+}
+}
+]
