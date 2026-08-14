@@ -50,6 +50,7 @@ export const GET: APIRoute = () => {
       localized,
       wordListPages,
       `- [About OpenWords](${site.origin}/about/): team, story, and licensing.`,
+      `- [Roadmap](${site.origin}/roadmap/): languages coming next to OpenWords.`,
       `- [Privacy policy](${site.origin}/privacy/): how OpenWords handles data.`,
       '',
       '## Official links',
