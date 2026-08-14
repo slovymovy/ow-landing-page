@@ -1,0 +1,575 @@
+---
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import MobileDownloadBar from '../components/MobileDownloadBar.astro';
+import StoreButtons from '../components/StoreButtons.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { absoluteUrl, languageSlugs, languages, site, translationLanguages } from '../data/site';
+
+const locale = 'en';
+
+// What ships today, read straight from the registries so this page can't drift
+// out of sync with the /learn pages and the "Every meaning, in your language" band.
+const learningToday = languageSlugs.map((slug) => languages[slug].name);
+const translationToday = translationLanguages.map((l) => l.name.en);
+
+type LanguageKind = 'learning' | 'translation';
+
+interface RoadmapItem {
+  name: string;
+  /** Endonym, rendered with its own `lang` so scripts get the right font and pronunciation. */
+  native: string;
+  lang: string;
+  /** Omitted for languages we haven't committed to a form yet. */
+  kind?: LanguageKind;
+}
+
+interface RoadmapGroup {
+  id: string;
+  status: string;
+  when: string;
+  /** Marks the gold dot on the timeline rail. */
+  current?: boolean;
+  note?: string;
+  items: RoadmapItem[];
+}
+
+const roadmap: RoadmapGroup[] = [
+  {
+    id: 'progress',
+    status: 'In progress',
+    when: 'Mid-August 2026',
+    current: true,
+    note: 'Chinese is the most requested language. We’re adding it right now.',
+    items: [
+      { name: 'Simplified Chinese', native: '简体中文', lang: 'zh-Hans', kind: 'translation' }
+    ]
+  },
+  {
+    id: 'september',
+    status: 'Planned',
+    when: 'September 2026',
+    items: [
+      { name: 'German', native: 'Deutsch', lang: 'de', kind: 'learning' },
+      { name: 'French', native: 'Français', lang: 'fr', kind: 'learning' },
+      { name: 'Japanese', native: '日本語', lang: 'ja', kind: 'translation' }
+    ]
+  },
+  {
+    id: 'later',
+    status: 'Later',
+    when: 'Not scheduled yet',
+    items: [
+      { name: 'Traditional Chinese', native: '繁體中文', lang: 'zh-Hant' },
+      { name: 'Korean', native: '한국어', lang: 'ko' },
+      { name: 'Italian', native: 'Italiano', lang: 'it', kind: 'learning' },
+      { name: 'Arabic', native: 'العربية', lang: 'ar' },
+      { name: 'Persian', native: 'فارسی', lang: 'fa' },
+      { name: 'Central Kurdish', native: 'کوردیی ناوەندی', lang: 'ckb' },
+      { name: 'Lithuanian', native: 'Lietuvių', lang: 'lt' },
+      { name: 'Danish', native: 'Dansk', lang: 'da' },
+      { name: 'Norwegian', native: 'Norsk', lang: 'no' },
+      { name: 'Portuguese', native: 'Português', lang: 'pt' }
+    ]
+  }
+];
+
+const kindLabel: Record<LanguageKind, string> = {
+  learning: 'Learning language',
+  translation: 'Translation language'
+};
+
+const structuredData = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: 'OpenWords Roadmap',
+    url: absoluteUrl('/roadmap/'),
+    description: 'Languages coming next to OpenWords.',
+    isPartOf: {
+      '@type': 'WebSite',
+      name: 'OpenWords',
+      url: absoluteUrl('/')
+    }
+  }
+];
+---
+<BaseLayout
+  title="Roadmap – OpenWords"
+  description="The languages coming next to OpenWords: Simplified Chinese translations in mid-August, German and French as learning languages plus Japanese translations in September, and the languages people have asked for after that."
+  locale={locale}
+  path="/roadmap"
+  localized={false}
+  structuredData={structuredData}
+>
+  <Header locale={locale} path="/roadmap" localized={false} />
+
+  <main class="rm">
+    <section class="rm-hero">
+      <div class="container rm-container">
+        <div class="rm-eyebrow">Roadmap</div>
+        <h1 class="rm-h1">The languages we're adding next.</h1>
+        <p class="rm-lead">
+          Every language here is on the list because someone asked for it. Here's what's
+          in progress, what's planned, and what's still waiting on a date.
+        </p>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="rm-explainer">
+      <div class="container rm-container">
+        <h2 class="rm-h2">Two ways we support a language</h2>
+
+        <div class="kind-grid">
+          <article class="kind-card kind-card--learning">
+            <div class="kind-card__tag">Learning language</div>
+            <h3 class="kind-card__title">A language you study</h3>
+            <p class="kind-card__body">
+              A full dictionary you can search: every meaning a word carries, its CEFR
+              level, example sentences, synonyms, and curated word lists to work through.
+            </p>
+            <div class="kind-card__label">Available today</div>
+            <ul class="kind-card__list">
+              {learningToday.map((name) => <li>{name}</li>)}
+            </ul>
+          </article>
+
+          <article class="kind-card kind-card--translation">
+            <div class="kind-card__tag">Translation language</div>
+            <h3 class="kind-card__title">A language you read in</h3>
+            <p class="kind-card__body">
+              The language your definitions and example sentences are shown in.
+            </p>
+            <div class="kind-card__label">Available today</div>
+            <ul class="kind-card__list">
+              {translationToday.map((name) => <li>{name}</li>)}
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="rm-timeline-section">
+      <div class="container rm-container rm-container--wide">
+        <h2 class="rm-h2">What's coming</h2>
+
+        <div class="timeline">
+          {roadmap.map((group) => (
+            <section class:list={['tl-group', { 'tl-group--current': group.current }]}>
+              <span class="tl-dot" aria-hidden="true"></span>
+              <div class="tl-head">
+                <span class="tl-status">{group.status}</span>
+                <span class="tl-when">{group.when}</span>
+              </div>
+              {group.note && <p class="tl-note">{group.note}</p>}
+              <ul class="lang-grid">
+                {group.items.map((item) => (
+                  <li class:list={['lang-card', item.kind && `lang-card--${item.kind}`]}>
+                    <div class="lang-card__name">{item.name}</div>
+                    <div class="lang-card__native" dir="auto" lang={item.lang}>{item.native}</div>
+                    {item.kind && <div class="lang-card__kind">{kindLabel[item.kind]}</div>}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ))}
+        </div>
+
+        <p class="rm-footnote">
+          Dates are what we're aiming for, not a contract — we'll update this page as
+          things ship or move.
+        </p>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="rm-ask">
+      <div class="container rm-container">
+        <h2 class="rm-h2">Missing your language?</h2>
+        <p class="rm-p">
+          Send us a request from the app, or email us — requests are what decide the
+          order above.
+        </p>
+        <a class="rm-askbtn" href={`mailto:${site.email}`}>
+          <svg viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="4" width="16" height="12" rx="2" />
+            <path d="m2.5 5.5 7.5 5.5 7.5-5.5" />
+          </svg>
+          {site.email}
+        </a>
+
+        <p class="rm-ps">
+          <span class="rm-ps__label">P.S.</span>
+          Adding a new language is always a challenge to deliver at good quality. If you'd
+          like to volunteer and help, send us a message — <a href={`mailto:${site.email}`}>{site.email}</a>.
+        </p>
+      </div>
+    </section>
+
+    <section class="rm-cta">
+      <div class="container rm-container">
+        <h2 class="rm-h2 rm-cta__title">Start building your own wordbook.</h2>
+        <p class="rm-cta__sub">Free · No account required · Works offline</p>
+        <div class="rm-cta__btns">
+          <StoreButtons locale={locale} />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <MobileDownloadBar locale={locale} />
+
+  <Footer locale={locale} />
+</BaseLayout>
+
+<style>
+  .rm-container {
+    max-width: 760px;
+  }
+
+  .rm-container--wide {
+    max-width: 920px;
+  }
+
+  .divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(197, 163, 103, 0.14), transparent);
+  }
+
+  /* ── Hero ── */
+  .rm-hero {
+    padding: calc(60px + 56px) 0 48px;
+  }
+
+  .rm-eyebrow {
+    font-size: .6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #C5A367;
+    margin-bottom: 14px;
+  }
+
+  .rm-h1 {
+    font-family: Lora, Georgia, serif;
+    font-size: clamp(1.75rem, 4vw, 2.375rem);
+    font-weight: 600;
+    line-height: 1.18;
+    letter-spacing: -.01em;
+    color: #E2E4ED;
+    margin: 0 0 18px;
+  }
+
+  .rm-lead {
+    font-size: clamp(1.0625rem, 2.4vw, 1.1875rem);
+    line-height: 1.7;
+    color: #b8bcce;
+    margin: 0;
+  }
+
+  .rm-h2 {
+    font-family: Lora, Georgia, serif;
+    font-size: clamp(1.375rem, 3.2vw, 1.875rem);
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -.01em;
+    color: #E2E4ED;
+    margin: 0 0 14px;
+  }
+
+  .rm-p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #9499B0;
+    margin: 0 0 14px;
+  }
+
+  /* ── Two kinds of support ── */
+  .rm-explainer { padding: 48px 0; }
+
+  .kind-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-top: 28px;
+  }
+
+  .kind-card {
+    background: #1C1F2A;
+    border: 1px solid rgba(255, 255, 255, .07);
+    border-radius: 18px;
+    padding: 24px;
+  }
+
+  .kind-card__tag {
+    display: inline-block;
+    font-size: .625rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    padding: 4px 9px;
+    border-radius: 999px;
+    margin-bottom: 14px;
+  }
+
+  .kind-card--learning .kind-card__tag {
+    color: #DBBE84;
+    background: rgba(197, 163, 103, .13);
+    border: 1px solid rgba(197, 163, 103, .26);
+  }
+
+  .kind-card--translation .kind-card__tag {
+    color: #8ED4C6;
+    background: rgba(110, 198, 184, .11);
+    border: 1px solid rgba(110, 198, 184, .24);
+  }
+
+  .kind-card__title {
+    font-family: Lora, Georgia, serif;
+    font-size: 1.1875rem;
+    font-weight: 600;
+    color: #E2E4ED;
+    letter-spacing: -.01em;
+    margin: 0 0 8px;
+  }
+
+  .kind-card__body {
+    font-size: .9375rem;
+    line-height: 1.65;
+    color: #9499B0;
+    margin: 0 0 18px;
+  }
+
+  .kind-card__label {
+    font-size: .625rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    color: #6f7591;
+    margin-bottom: 10px;
+  }
+
+  .kind-card__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .kind-card__list li {
+    font-size: .8125rem;
+    font-weight: 600;
+    color: #b8bcce;
+    background: rgba(255, 255, 255, .055);
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 999px;
+    padding: 4px 10px;
+  }
+
+  /* ── Timeline ── */
+  .rm-timeline-section { padding: 48px 0; }
+
+  .timeline { margin-top: 30px; }
+
+  .tl-group {
+    position: relative;
+    padding: 0 0 38px 26px;
+    border-left: 1px solid rgba(255, 255, 255, .09);
+  }
+
+  .tl-group:last-of-type {
+    padding-bottom: 0;
+    border-left-color: transparent;
+  }
+
+  .tl-dot {
+    position: absolute;
+    left: -5px;
+    top: 5px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #373b52;
+    border: 1px solid rgba(255, 255, 255, .14);
+  }
+
+  .tl-group--current .tl-dot {
+    background: #C5A367;
+    border-color: #C5A367;
+    box-shadow: 0 0 0 4px rgba(197, 163, 103, .15);
+  }
+
+  .tl-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 10px;
+  }
+
+  .tl-status {
+    font-size: .6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    color: #868ca6;
+  }
+
+  .tl-group--current .tl-status { color: #C5A367; }
+
+  .tl-when {
+    font-family: Lora, Georgia, serif;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #E2E4ED;
+    letter-spacing: -.01em;
+  }
+
+  .tl-note {
+    font-size: .9375rem;
+    line-height: 1.7;
+    color: #9499B0;
+    margin: 8px 0 0;
+    max-width: 62ch;
+  }
+
+  .lang-grid {
+    list-style: none;
+    margin: 16px 0 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(168px, 1fr));
+    gap: 10px;
+  }
+
+  .lang-card {
+    background: #1C1F2A;
+    border: 1px solid rgba(255, 255, 255, .07);
+    border-radius: 14px;
+    padding: 16px;
+  }
+
+  .lang-card--learning { border-color: rgba(197, 163, 103, .28); }
+
+  .lang-card--translation { border-color: rgba(110, 198, 184, .26); }
+
+  .lang-card__name {
+    font-family: Lora, Georgia, serif;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    color: #E2E4ED;
+    letter-spacing: -.01em;
+  }
+
+  .lang-card__native {
+    font-size: .875rem;
+    color: #868ca6;
+    margin-top: 2px;
+  }
+
+  .lang-card__kind {
+    font-size: .625rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    margin-top: 12px;
+    color: #6f7591;
+  }
+
+  .lang-card--learning .lang-card__kind { color: #C5A367; }
+
+  .lang-card--translation .lang-card__kind { color: #7FC4B7; }
+
+  .rm-footnote {
+    font-size: .875rem;
+    line-height: 1.7;
+    color: #6f7591;
+    margin: 28px 0 0;
+  }
+
+  /* ── Ask ── */
+  .rm-ask { padding: 48px 0; }
+
+  .rm-askbtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    margin-top: 10px;
+    padding: 11px 18px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, .14);
+    background: rgba(255, 255, 255, .055);
+    color: #E2E4ED;
+    font-size: .9375rem;
+    font-weight: 600;
+    transition: border-color .18s, background .18s, color .18s;
+  }
+
+  .rm-askbtn:hover {
+    border-color: rgba(197, 163, 103, .5);
+    background: rgba(197, 163, 103, .1);
+    color: #DBBE84;
+  }
+
+  .rm-ps {
+    margin: 28px 0 0;
+    padding: 16px 18px;
+    border-left: 2px solid rgba(197, 163, 103, .38);
+    background: rgba(255, 255, 255, .03);
+    border-radius: 0 10px 10px 0;
+    font-size: .9375rem;
+    line-height: 1.7;
+    color: #9499B0;
+  }
+
+  .rm-ps__label {
+    font-weight: 700;
+    color: #C5A367;
+    margin-right: 4px;
+  }
+
+  .rm-ps a {
+    color: #b8bcce;
+    text-decoration: underline;
+    text-decoration-color: rgba(197, 163, 103, .45);
+    text-underline-offset: 3px;
+    transition: color .18s;
+  }
+
+  .rm-ps a:hover { color: #DBBE84; }
+
+  /* ── CTA ── */
+  .rm-cta {
+    padding: 24px 0 80px;
+    text-align: center;
+  }
+
+  .rm-cta__title { margin-bottom: 10px; }
+
+  .rm-cta__sub {
+    font-size: .9375rem;
+    color: #868ca6;
+    margin: 0 0 24px;
+  }
+
+  .rm-cta__btns :global(.store-btns) { justify-content: center; }
+
+  @media (min-width: 720px) {
+    .kind-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 640px) {
+    .rm-hero { padding: calc(60px + 36px) 0 36px; }
+    .rm-explainer,
+    .rm-timeline-section,
+    .rm-ask { padding: 36px 0; }
+    .rm-cta { padding: 16px 0 56px; }
+    .lang-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+  }
+</style>
