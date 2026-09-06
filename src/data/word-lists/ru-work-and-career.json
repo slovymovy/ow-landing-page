@@ -1,0 +1,1395 @@
+[
+{
+"w":"работа",
+"d":"Деятельность, занятие, труд; процесс выполнения какого-либо дела.",
+"t":{
+"en":"work, labor",
+"nl":"werk, arbeid",
+"pl":"praca, trud",
+"de":"Arbeit, Mühe",
+"fr":"travail, labeur",
+"it":"lavoro, fatica",
+"cs":"práce, úsilí",
+"tr":"iş, çalışma",
+"es":"trabajo, labor"
+},
+"c":{
+"en":"the activity itself",
+"nl":"de bezigheid zelf",
+"pl":"sama czynność",
+"de":"die Tätigkeit selbst",
+"fr":"l'activité elle-même",
+"it":"l'attività in sé",
+"cs":"sama činnost",
+"tr":"işin kendisi",
+"es":"la actividad en sí"
+}
+},
+{
+"w":"работа",
+"d":"Служба, должность, место, где человек трудится и зарабатывает деньги.",
+"t":{
+"en":"job, work",
+"nl":"werk, baan",
+"pl":"praca, posada, zatrudnienie",
+"de":"Arbeit, Job, Stelle",
+"fr":"travail, emploi",
+"it":"lavoro, occupazione",
+"cs":"práce, zaměstnání",
+"tr":"iş, görev",
+"es":"trabajo, empleo"
+},
+"c":{
+"en":"the post you hold",
+"nl":"de betrekking die je hebt",
+"pl":"posada, miejsce pracy",
+"de":"die Stelle, die man hat",
+"fr":"l'emploi que l'on occupe",
+"it":"l'impiego che si ha",
+"cs":"místo, zaměstnání",
+"tr":"sahip olunan iş, görev",
+"es":"el empleo que se tiene"
+}
+},
+{
+"w":"труд",
+"d":"Целесообразная деятельность человека, работа, требующая умственного и физического напряжения",
+"t":{
+"en":"labor, work, toil",
+"nl":"arbeid, werk",
+"pl":"praca, trud",
+"de":"Arbeit",
+"fr":"travail, labeur",
+"it":"lavoro, fatica",
+"cs":"práce, dřina",
+"tr":"emek, iş, çalışma",
+"es":"trabajo, labor"
+}
+},
+{
+"w":"работник",
+"d":"Человек, который работает, занимается каким-либо трудом или служит в учреждении по найму.",
+"t":{
+"en":"worker, employee",
+"nl":"werknemer, medewerker, arbeider",
+"pl":"pracownik, zatrudniony",
+"de":"Arbeiter, Angestellter, Mitarbeiter, Arbeitskraft",
+"fr":"travailleur, employé, salarié",
+"it":"lavoratore, dipendente, impiegato",
+"cs":"pracovník, zaměstnanec",
+"tr":"çalışan, işçi, personel",
+"es":"trabajador, empleado"
+}
+},
+{
+"w":"сотрудник",
+"d":"Человек, который работает в каком-либо учреждении или на предприятии по найму",
+"t":{
+"en":"employee, worker, staff member",
+"nl":"medewerker, werknemer",
+"pl":"pracownik, personel",
+"de":"Mitarbeiter, Angestellter",
+"fr":"employé, salarié",
+"it":"impiegato, dipendente",
+"cs":"zaměstnanec, pracovník",
+"tr":"çalışan, görevli, personel",
+"es":"empleado, trabajador"
+}
+},
+{
+"w":"коллега",
+"d":"Человек, с которым вы работаете в одной организации или имеете общую профессию.",
+"t":{
+"en":"colleague, coworker",
+"nl":"collega",
+"pl":"kolega, koleżanka",
+"de":"Kollege, Kollegin, Mitarbeiter",
+"fr":"collègue",
+"it":"collega",
+"cs":"kolega, kolegyně",
+"tr":"çalışma arkadaşı, meslektaş",
+"es":"colega, compañero de trabajo"
+}
+},
+{
+"w":"рабочий",
+"d":"Человек, работающий по найму и занимающийся физическим трудом, обычно в промышленности или строительстве.",
+"t":{
+"en":"worker, workman, laborer",
+"nl":"arbeider, werknemer",
+"pl":"robotnik, pracownik fizyczny",
+"de":"Arbeiter",
+"fr":"ouvrier",
+"it":"operaio, lavoratore",
+"cs":"dělník",
+"tr":"işçi",
+"es":"obrero, trabajador"
+},
+"c":{
+"en":"noun: a person",
+"nl":"zelfstandig naamwoord: een persoon",
+"pl":"rzeczownik: osoba",
+"de":"Substantiv: eine Person",
+"fr":"nom : une personne",
+"it":"sostantivo: una persona",
+"cs":"podstatné jméno: osoba",
+"tr":"isim: bir kişi",
+"es":"sustantivo: una persona"
+}
+},
+{
+"w":"специалист",
+"d":"Человек, обладающий глубокими знаниями, профессиональными навыками и опытом в определённой области деятельности.",
+"t":{
+"en":"specialist, expert",
+"nl":"specialist, expert, vakman",
+"pl":"specjalista, ekspert",
+"de":"Spezialist, Fachkraft, Experte",
+"fr":"spécialiste, expert",
+"it":"specialista, esperto",
+"cs":"specialista, odborník",
+"tr":"uzman, mütehassıs",
+"es":"especialista, experto"
+}
+},
+{
+"w":"менеджер",
+"d":"Специалист по управлению процессами или людьми в коммерческой организации.",
+"t":{
+"en":"manager",
+"nl":"manager, leidinggevende",
+"pl":"menedżer, kierownik",
+"de":"Manager, Führungskraft",
+"fr":"manager, cadre, responsable",
+"it":"manager, gestore",
+"cs":"manažer, vedoucí",
+"tr":"yönetici, müdür",
+"es":"gerente, ejecutivo, manager"
+}
+},
+{
+"w":"секретарь",
+"d":"Сотрудник, который ведет делопроизводство, отвечает на звонки и помогает руководителю в организации работы.",
+"t":{
+"en":"secretary, assistant",
+"nl":"secretaresse, secretaris, assistent",
+"pl":"sekretarz, sekretarka, asystent",
+"de":"Sekretär, Sekretärin, Assistent",
+"fr":"secrétaire, assistant",
+"it":"segretario, segretaria, assistente",
+"cs":"sekretářka, asistent",
+"tr":"sekreter, asistan",
+"es":"secretario, asistente"
+}
+},
+{
+"w":"начальник",
+"d":"Должностное лицо, которое руководит кем-либо или чем-либо и имеет власть над подчинёнными.",
+"t":{
+"en":"boss, head, chief, superior",
+"nl":"baas, chef, leidinggevende, hoofd",
+"pl":"szef, kierownik, naczelnik",
+"de":"Vorgesetzter, Chef, Leiter",
+"fr":"chef, patron, supérieur, responsable",
+"it":"capo, responsabile, direttore",
+"cs":"šéf, vedoucí, nadřízený",
+"tr":"şef, müdür, amir",
+"es":"jefe, superior, director"
+}
+},
+{
+"w":"директор",
+"d":"Официальный руководитель предприятия, организации, учреждения или учебного заведения.",
+"t":{
+"en":"director, principal, manager",
+"nl":"directeur, schoolhoofd, manager",
+"pl":"dyrektor, kierownik, prezes",
+"de":"Direktor, Geschäftsführer, Schulleiter",
+"fr":"directeur, proviseur, principal",
+"it":"direttore, preside, dirigente",
+"cs":"ředitel",
+"tr":"müdür, yönetici, okul müdürü",
+"es":"director, gerente, director de escuela"
+}
+},
+{
+"w":"клиент",
+"d":"Лицо или организация, пользующиеся услугами другого лица, компании или учреждения (продавца, банка, юриста и т. п.).",
+"t":{
+"en":"client, customer",
+"nl":"klant, cliënt",
+"pl":"klient",
+"de":"Kunde, Klient",
+"fr":"client",
+"it":"cliente",
+"cs":"klient, zákazník",
+"tr":"müşteri",
+"es":"cliente"
+}
+},
+{
+"w":"профессия",
+"d":"Род трудовой деятельности, требующий специальной подготовки и являющийся источником существования.",
+"t":{
+"en":"profession, occupation, trade",
+"nl":"beroep, vak",
+"pl":"zawód, profesja",
+"de":"Beruf",
+"fr":"profession, métier",
+"it":"professione, mestiere",
+"cs":"profese, povolání",
+"tr":"meslek",
+"es":"profesión, oficio"
+}
+},
+{
+"w":"офис",
+"d":"Помещение или здание, в котором работают сотрудники компании, принимают клиентов и ведётся деловая деятельность.",
+"t":{
+"en":"office",
+"nl":"kantoor",
+"pl":"biuro, gabinet",
+"de":"Büro, Arbeitszimmer",
+"fr":"bureau",
+"it":"ufficio, sede",
+"cs":"kancelář, úřad",
+"tr":"ofis, iş yeri",
+"es":"oficina, despacho"
+}
+},
+{
+"w":"компания",
+"d":"Коммерческая организация, предприятие или фирма, созданная для ведения бизнеса.",
+"t":{
+"en":"company, firm, corporation",
+"nl":"bedrijf, firma, zaak",
+"pl":"firma, przedsiębiorstwo",
+"de":"Firma, Unternehmen, Gesellschaft",
+"fr":"entreprise, société, compagnie",
+"it":"società, ditta, azienda",
+"cs":"společnost, firma",
+"tr":"şirket, firma, işletme",
+"es":"compañía, empresa, firma"
+}
+},
+{
+"w":"фирма",
+"d":"Торговое, промышленное или иное хозяйственное предприятие, компания.",
+"t":{
+"en":"firm, company",
+"nl":"bedrijf, firma, onderneming",
+"pl":"firma, przedsiębiorstwo",
+"de":"Firma, Unternehmen",
+"fr":"entreprise, société, firme",
+"it":"ditta, società, azienda",
+"cs":"firma, společnost",
+"tr":"firma, şirket",
+"es":"empresa, compañía"
+}
+},
+{
+"w":"завод",
+"d":"Промышленное предприятие, где производят товары или оборудование.",
+"t":{
+"en":"factory, plant",
+"nl":"fabriek, installatie",
+"pl":"fabryka, zakład",
+"de":"Fabrik, Werk",
+"fr":"usine, fabrique",
+"it":"fabbrica, stabilimento",
+"cs":"továrna, závod",
+"tr":"fabrika, tesis",
+"es":"fábrica, planta"
+}
+},
+{
+"w":"зарплата",
+"d":"Денежное вознаграждение, которое работник получает от работодателя за свой труд.",
+"t":{
+"en":"salary, pay, wages",
+"nl":"salaris, loon",
+"pl":"pensja, wynagrodzenie, wypłata",
+"de":"Gehalt, Lohn",
+"fr":"salaire, traitement, paie",
+"it":"stipendio, salario, paga",
+"cs":"plat, mzda, výdělek",
+"tr":"maaş, ücret",
+"es":"salario, sueldo"
+}
+},
+{
+"w":"опыт",
+"d":"Совокупность знаний и практических навыков, приобретённых в течение жизни или профессиональной деятельности.",
+"t":{
+"en":"experience",
+"nl":"ervaring",
+"pl":"doświadczenie",
+"de":"Erfahrung",
+"fr":"expérience",
+"it":"esperienza",
+"cs":"zkušenost",
+"tr":"tecrübe, deneyim",
+"es":"experiencia, práctica"
+}
+},
+{
+"w":"задача",
+"d":"То, что требует выполнения, разрешения; поставленная цель или поручение.",
+"t":{
+"en":"task, objective, mission",
+"nl":"taak, doelstelling, missie",
+"pl":"zadanie, cel, misja",
+"de":"Aufgabe",
+"fr":"tâche, mission, objectif",
+"it":"compito, obiettivo, missione",
+"cs":"úkol, cíl",
+"tr":"görev, hedef, misyon",
+"es":"tarea, objetivo, misión"
+}
+},
+{
+"w":"проект",
+"d":"Запланированное дело, мероприятие или инициатива, направленные на достижение определённой цели в рамках заданного времени и бюджета.",
+"t":{
+"en":"project",
+"nl":"project",
+"pl":"projekt",
+"de":"Projekt, Vorhaben",
+"fr":"projet",
+"it":"progetto",
+"cs":"projekt",
+"tr":"proje",
+"es":"proyecto"
+}
+},
+{
+"w":"встреча",
+"d":"Запланированное или случайное собрание людей для общения или обсуждения дел.",
+"t":{
+"en":"meeting, encounter",
+"nl":"vergadering, afspraak, ontmoeting",
+"pl":"spotkanie",
+"de":"Treffen, Besprechung",
+"fr":"réunion, rencontre",
+"it":"incontro, riunione",
+"cs":"schůzka, setkání",
+"tr":"toplantı, buluşma",
+"es":"reunión, encuentro"
+}
+},
+{
+"w":"команда",
+"d":"Группа людей, объединённых общей работой, целью или деятельностью.",
+"t":{
+"en":"team, crew",
+"nl":"team, groep",
+"pl":"zespół, grupa",
+"de":"Team, Gruppe",
+"fr":"équipe",
+"it":"squadra, gruppo",
+"cs":"tým, skupina",
+"tr":"ekip, takım",
+"es":"equipo, grupo de trabajo"
+}
+},
+{
+"w":"контракт",
+"d":"Договор, соглашение со взаимными обязательствами заключивших его сторон.",
+"t":{
+"en":"contract",
+"nl":"contract, overeenkomst",
+"pl":"kontrakt, umowa",
+"de":"Vertrag, Kontrakt",
+"fr":"contrat, marché",
+"it":"contratto, accordo",
+"cs":"smlouva, kontrakt",
+"tr":"sözleşme, kontrat",
+"es":"contrato, acuerdo"
+}
+},
+{
+"w":"резюме",
+"d":"Документ, содержащий информацию о навыках, опыте работы и образовании, предоставляемый работодателю при поиске работы.",
+"t":{
+"en":"resume, CV, curriculum vitae",
+"nl":"cv, curriculum vitae",
+"pl":"CV, życiorys",
+"de":"Lebenslauf, CV",
+"fr":"CV, curriculum vitæ",
+"it":"curriculum vitae, CV",
+"cs":"životopis, CV",
+"tr":"özgeçmiş, CV",
+"es":"currículum, hoja de vida, curriculum vitae"
+}
+},
+{
+"w":"отпуск",
+"d":"Временное освобождение от работы или службы на определённый срок для отдыха и личных целей",
+"t":{
+"en":"vacation, holiday, leave",
+"nl":"vakantie, verlof",
+"pl":"urlop, wakacje",
+"de":"Urlaub, Freistellung",
+"fr":"congé, vacances",
+"it":"vacanza, ferie, permesso",
+"cs":"dovolená, volno",
+"tr":"izin, tatil",
+"es":"vacaciones, permiso"
+}
+},
+{
+"w":"выходной",
+"d":"Свободный от работы день; день отдыха.",
+"t":{
+"en":"day off, holiday",
+"nl":"vrije dag",
+"pl":"dzień wolny, wolne",
+"de":"freier Tag, Ruhetag",
+"fr":"jour de repos, congé",
+"it":"giorno libero, giorno di riposo",
+"cs":"volný den, den volna",
+"tr":"izin günü, tatil",
+"es":"día libre, día de descanso"
+}
+},
+{
+"w":"работать",
+"d":"Заниматься делом, затрачивать усилия и время для создания или выполнения чего-либо; трудиться.",
+"t":{
+"en":"work, labor",
+"nl":"werken, arbeiden",
+"pl":"pracować, trudzić się",
+"de":"arbeiten",
+"fr":"travailler",
+"it":"lavorare, faticare",
+"cs":"pracovat, dřít se",
+"tr":"çalışmak, çaba harcamak",
+"es":"trabajar"
+},
+"c":{
+"en":"to put in effort on something",
+"nl":"ergens moeite in steken",
+"pl":"trudzić się nad czymś",
+"de":"sich mit etwas abmühen",
+"fr":"fournir un effort sur qch",
+"it":"impegnarsi in qualcosa",
+"cs":"namáhat se na něčem",
+"tr":"bir şey üzerinde çaba harcamak",
+"es":"esforzarse en algo"
+}
+},
+{
+"w":"работать",
+"d":"Иметь постоянное занятие, состоять на службе, исполнять обязанности сотрудника.",
+"t":{
+"en":"work, be employed",
+"nl":"werken, in dienst zijn",
+"pl":"pracować, być zatrudnionym",
+"de":"arbeiten, tätig sein",
+"fr":"travailler, être employé",
+"it":"lavorare, essere impiegato",
+"cs":"pracovat, být zaměstnán",
+"tr":"çalışmak, görev yapmak",
+"es":"trabajar, estar empleado"
+},
+"c":{
+"en":"to hold a job",
+"nl":"een baan hebben",
+"pl":"być zatrudnionym",
+"de":"angestellt sein",
+"fr":"occuper un emploi",
+"it":"avere un impiego",
+"cs":"být zaměstnán",
+"tr":"bir işte çalışmak",
+"es":"tener un empleo"
+}
+},
+{
+"w":"зарабатывать",
+"d":"Получать плату, деньги или иное вознаграждение за выполненную работу или труд.",
+"t":{
+"en":"earn, make",
+"nl":"verdienen, binnenhalen",
+"pl":"zarabiać",
+"de":"verdienen",
+"fr":"gagner, se faire",
+"it":"guadagnare, portare a casa",
+"cs":"vydělávat, vydělat si",
+"tr":"kazanmak",
+"es":"ganar"
+}
+},
+{
+"w":"платить",
+"d":"Отдавать деньги или другие ценности в обмен на товары, услуги или в качестве исполнения обязательств.",
+"t":{
+"en":"pay",
+"nl":"betalen",
+"pl":"płacić",
+"de":"zahlen, bezahlen",
+"fr":"payer, régler",
+"it":"pagare",
+"cs":"platit, proplácet",
+"tr":"ödemek",
+"es":"pagar, abonar"
+}
+},
+{
+"w":"устроиться",
+"d":"Поступить на работу, быть зачисленным в штат сотрудников.",
+"t":{
+"en":"get a job, get hired",
+"nl":"een baan vinden, aangenomen worden",
+"pl":"znaleźć pracę, zatrudnić się",
+"de":"eine Stelle finden, eingestellt werden",
+"fr":"trouver un travail, se faire embaucher",
+"it":"trovare lavoro, essere assunto",
+"cs":"najít si práci, zaměstnat se",
+"tr":"işe girmek, işe yerleşmek",
+"es":"conseguir trabajo, ser contratado"
+}
+},
+{
+"w":"искать",
+"d":"Стараться получить что-либо, добиваться чего-либо.",
+"t":{
+"en":"seek, look for",
+"nl":"zoeken, streven naar",
+"pl":"szukać, poszukiwać",
+"de":"suchen, anstreben",
+"fr":"chercher",
+"it":"cercare",
+"cs":"hledat, usilovat",
+"tr":"aramak, peşinde olmak",
+"es":"buscar, pretender"
+}
+},
+{
+"w":"опаздывать",
+"d":"Приходить позже назначенного времени или не успевать к началу какого-либо события.",
+"t":{
+"en":"be late",
+"nl":"te laat komen, verlaat zijn",
+"pl":"spóźniać się",
+"de":"zu spät kommen, sich verspäten",
+"fr":"être en retard, arriver en retard",
+"it":"essere in ritardo, fare tardi, tardare",
+"cs":"opožďovat se, přicházet pozdě",
+"tr":"geç kalmak, gecikmek",
+"es":"llegar tarde, tardar"
+}
+},
+{
+"w":"отдыхать",
+"d":"Восстанавливать силы после нагрузки или работы, делая перерыв или находясь в покое.",
+"t":{
+"en":"rest, relax, take a break",
+"nl":"rusten, ontspannen, pauzeren",
+"pl":"odpoczywać, relaksować się",
+"de":"sich ausruhen, sich erholen, rasten",
+"fr":"se reposer, se détendre, faire une pause",
+"it":"riposare, rilassarsi, fare una pausa",
+"cs":"odpočívat, relaxovat",
+"tr":"dinlenmek, istirahat etmek",
+"es":"descansar, relajarse"
+}
+},
+{
+"w":"рабочий",
+"d":"Относящийся к работе, труду; предназначенный для выполнения работы или осуществления трудовой деятельности.",
+"t":{
+"en":"working, work",
+"nl":"werk-, arbeids-",
+"pl":"roboczy, pracowniczy",
+"de":"Arbeits-",
+"fr":"de travail, professionnel",
+"it":"lavorativo, di lavoro",
+"cs":"pracovní",
+"tr":"çalışma, iş",
+"es":"laboral, de trabajo"
+},
+"c":{
+"en":"adjective: relating to work",
+"nl":"bijvoeglijk naamwoord: van het werk",
+"pl":"przymiotnik: dotyczący pracy",
+"de":"Adjektiv: die Arbeit betreffend",
+"fr":"adjectif : relatif au travail",
+"it":"aggettivo: relativo al lavoro",
+"cs":"přídavné jméno: pracovní",
+"tr":"sıfat: işle ilgili",
+"es":"adjetivo: relativo al trabajo"
+}
+},
+{
+"w":"главный",
+"d":"Самый важный, основной, имеющий наибольшее значение среди других.",
+"t":{
+"en":"main, chief, principal, leading",
+"nl":"belangrijkste, hoofd-, voornaamste",
+"pl":"główny, naczelny, podstawowy",
+"de":"haupt-, wichtigste, führend",
+"fr":"principal, majeur, essentiel",
+"it":"principale",
+"cs":"hlavní",
+"tr":"ana, başlıca, asıl",
+"es":"principal, capital, esencial"
+}
+},
+{
+"w":"строгий",
+"d":"Очень требовательный, взыскательный, не допускающий поблажек.",
+"t":{
+"en":"strict, stern",
+"nl":"streng, veeleisend",
+"pl":"surowy, srogi",
+"de":"streng, konsequent",
+"fr":"sévère, exigeant",
+"it":"severo, rigoroso",
+"cs":"přísný, důsledný",
+"tr":"sert, katı",
+"es":"estricto, riguroso, severo"
+}
+},
+{
+"w":"сложный",
+"d":"Трудный для выполнения, понимания или решения; требующий больших усилий.",
+"t":{
+"en":"difficult, complicated, hard, complex",
+"nl":"moeilijk, lastig, ingewikkeld",
+"pl":"trudny, skomplikowany",
+"de":"schwierig, kompliziert, hart",
+"fr":"difficile, compliqué",
+"it":"difficile, complicato",
+"cs":"těžký, složitý, obtížný",
+"tr":"zor, güç, karmaşık",
+"es":"difícil, complicado"
+}
+},
+{
+"w":"вежливый",
+"d":"Соблюдающий правила приличия, учтивый и обходительный в общении с другими людьми.",
+"t":{
+"en":"polite, courteous",
+"nl":"beleefd, hoffelijk",
+"pl":"uprzejmy, grzeczny",
+"de":"höflich, zuvorkommend",
+"fr":"poli, courtois",
+"it":"educato, cortese",
+"cs":"zdvořilý, slušný",
+"tr":"nazik, kibar",
+"es":"amable, cortés"
+}
+},
+{
+"w":"ленивый",
+"d":"Склонный к безделью, избегающий труда, не желающий работать.",
+"t":{
+"en":"lazy",
+"nl":"lui",
+"pl":"leniwy, gnuśny",
+"de":"faul",
+"fr":"paresseux, fainéant",
+"it":"pigro, svogliato",
+"cs":"líný, lenivý",
+"tr":"tembel, üşengeç",
+"es":"perezoso, haragán"
+}
+},
+{
+"w":"работодатель",
+"d":"Физическое или юридическое лицо, нанимающее сотрудников на работу",
+"t":{
+"en":"employer",
+"nl":"werkgever",
+"pl":"pracodawca",
+"de":"Arbeitgeber, Dienstgeber",
+"fr":"employeur",
+"it":"datore di lavoro, committente",
+"cs":"zaměstnavatel",
+"tr":"işveren, çalıştıran",
+"es":"empleador, patrono"
+}
+},
+{
+"w":"руководитель",
+"d":"Тот, кто занимает руководящую должность, управляет кем-либо или чем-либо (коллективом, отделом, предприятием).",
+"t":{
+"en":"manager, head, supervisor, director",
+"nl":"manager, leidinggevende, hoofd, directeur",
+"pl":"kierownik, szef, dyrektor",
+"de":"Führungskraft, Leiter, Manager, Chef",
+"fr":"dirigeant, chef, directeur",
+"it":"responsabile, direttore, capo, manager",
+"cs":"vedoucí, manažer, ředitel",
+"tr":"yönetici, müdür, direktör, şef",
+"es":"jefe, dirigente, director"
+}
+},
+{
+"w":"подчинённый",
+"d":"Исполнитель, лицо, подчиняющееся какому-либо начальнику или руководителю.",
+"t":{
+"en":"subordinate, employee",
+"nl":"ondergeschikte, medewerker",
+"pl":"podwładny, pracownik",
+"de":"Untergebener, Mitarbeiter",
+"fr":"subordonné, employé",
+"it":"subordinato, dipendente",
+"cs":"podřízený, zaměstnanec",
+"tr":"ast, çalışan",
+"es":"subordinado, empleado"
+}
+},
+{
+"w":"предприятие",
+"d":"Производственное, торговое или хозяйственное учреждение; завод, фабрика или фирма",
+"t":{
+"en":"enterprise, business",
+"nl":"onderneming, bedrijf, fabriek",
+"pl":"przedsiębiorstwo, firma, zakład",
+"de":"Unternehmen, Betrieb, Werk",
+"fr":"entreprise, société",
+"it":"azienda, impresa, ditta",
+"cs":"podnik, firma, závod",
+"tr":"işletme, firma, tesis",
+"es":"empresa, negocio"
+}
+},
+{
+"w":"контора",
+"d":"Учреждение, предприятие или административный отдел, где занимаются бумажными и деловыми вопросами; также помещение такого учреждения.",
+"t":{
+"en":"office, bureau, agency",
+"nl":"kantoor, bureau, agentschap",
+"pl":"biuro, kancelaria, urząd",
+"de":"Büro, Geschäftsstelle, Agentur",
+"fr":"bureau, agence, cabinet",
+"it":"ufficio, agenzia, studio",
+"cs":"kancelář, úřad, firma",
+"tr":"ofis, büro, acente",
+"es":"oficina, despacho, agencia"
+}
+},
+{
+"w":"отдел",
+"d":"Структурное подразделение в учреждении, на предприятии или в организации, занимающееся определённым видом деятельности.",
+"t":{
+"en":"department, division, section",
+"nl":"afdeling, sectie",
+"pl":"dział, wydział",
+"de":"Abteilung, Bereich",
+"fr":"département, service, section",
+"it":"dipartimento, ufficio, reparto",
+"cs":"oddělení, sekce",
+"tr":"departman, bölüm",
+"es":"departamento, sección"
+}
+},
+{
+"w":"должность",
+"d":"Служебное место, связанное с определённым кругом обязанностей и полномочий.",
+"t":{
+"en":"position, post, job",
+"nl":"functie, betrekking, post",
+"pl":"stanowisko, posada, funkcja",
+"de":"Stelle, Position, Posten",
+"fr":"poste, fonction, emploi",
+"it":"posizione, incarico, posto",
+"cs":"pozice, funkce, místo",
+"tr":"pozisyon, görev, makam",
+"es":"puesto, cargo, empleo"
+}
+},
+{
+"w":"карьера",
+"d":"Успешное продвижение в служебной, общественной, научной или иной деятельности; достижение известности и высокого статуса.",
+"t":{
+"en":"career",
+"nl":"carrière, loopbaan",
+"pl":"kariera, przebieg kariery",
+"de":"Karriere, Laufbahn",
+"fr":"carrière",
+"it":"carriera",
+"cs":"kariéra",
+"tr":"kariyer",
+"es":"carrera"
+}
+},
+{
+"w":"вакансия",
+"d":"Свободное рабочее место в штате организации.",
+"t":{
+"en":"vacancy",
+"nl":"vacature",
+"pl":"wakat, oferta pracy",
+"de":"freie Stelle, offene Stelle, Vakanz",
+"fr":"poste vacant, offre d'emploi, poste",
+"it":"posizione aperta, posto vacante",
+"cs":"volné pracovní místo, pozice",
+"tr":"açık pozisyon, iş imkanı",
+"es":"vacante"
+}
+},
+{
+"w":"собеседование",
+"d":"Официальная встреча для оценки кандидата при приеме на работу или поступлении в учебное заведение.",
+"t":{
+"en":"interview",
+"nl":"sollicitatiegesprek, interview",
+"pl":"rozmowa kwalifikacyjna, rekrutacja",
+"de":"Einstellungsgespräch, Vorstellungsgespräch",
+"fr":"entretien, entretien d'embauche",
+"it":"colloquio, intervista di assunzione",
+"cs":"pohovor",
+"tr":"iş görüşmesi, mülakat",
+"es":"entrevista"
+}
+},
+{
+"w":"стажировка",
+"d":"Период практической работы для приобретения профессионального опыта или повышения квалификации.",
+"t":{
+"en":"internship, work placement, traineeship",
+"nl":"stage, traineeship",
+"pl":"staż, praktyka, staż zawodowy",
+"de":"Praktikum, Trainee-Programm",
+"fr":"stage, formation pratique",
+"it":"tirocinio, stage, apprendistato",
+"cs":"stáž, praxe, odborná stáž",
+"tr":"staj, staj dönemi",
+"es":"pasantía, prácticas, beca de formación"
+}
+},
+{
+"w":"договор",
+"d":"Соглашение двух или нескольких сторон, устанавливающее их взаимные права и обязанности",
+"t":{
+"en":"contract, agreement, treaty",
+"nl":"contract, overeenkomst, verdrag",
+"pl":"umowa, kontrakt",
+"de":"Vertrag, Abkommen, Vereinbarung",
+"fr":"contrat, accord, traité",
+"it":"contratto, accordo, trattato",
+"cs":"smlouva, dohoda, mezinárodní smlouva",
+"tr":"sözleşme, anlaşma, antlaşma",
+"es":"contrato, acuerdo, tratado"
+}
+},
+{
+"w":"повышение",
+"d":"Продвижение по службе, получение более высокой должности.",
+"t":{
+"en":"promotion",
+"nl":"promotie",
+"pl":"awans",
+"de":"Beförderung",
+"fr":"promotion, avancement",
+"it":"promozione",
+"cs":"povýšení",
+"tr":"terfi",
+"es":"ascenso, promoción"
+}
+},
+{
+"w":"увольнение",
+"d":"Освобождение от занимаемой должности или работы, прекращение трудового договора (по инициативе работодателя или работника).",
+"t":{
+"en":"dismissal, resignation, discharge",
+"nl":"ontslag, opzegging",
+"pl":"zwolnienie, wypowiedzenie, rezygnacja",
+"de":"Kündigung, Entlassung",
+"fr":"licenciement, démission",
+"it":"licenziamento, dimissioni",
+"cs":"výpověď, propuštění, odchod ze zaměstnání",
+"tr":"işten ayrılma, işten çıkarılma, istifa",
+"es":"despido, renuncia, dimisión"
+}
+},
+{
+"w":"оклад",
+"d":"Фиксированный размер заработной платы или денежного вознаграждения.",
+"t":{
+"en":"salary, base pay",
+"nl":"salaris, basissalaris",
+"pl":"pensja, wynagrodzenie zasadnicze",
+"de":"Grundgehalt, Monatsgehalt",
+"fr":"salaire, traitement, rémunération",
+"it":"stipendio, paga base",
+"cs":"plat, základní mzda",
+"tr":"maaş, aylık",
+"es":"sueldo, salario base"
+}
+},
+{
+"w":"премия",
+"d":"Дополнительное вознаграждение или надбавка к основной заработной плате за высокие показатели труда.",
+"t":{
+"en":"bonus, premium",
+"nl":"bonus, toeslag",
+"pl":"premia, dodatek",
+"de":"Prämie, Bonus",
+"fr":"prime",
+"it":"bonus, gratifica",
+"cs":"prémie, bonus",
+"tr":"ikramiye, prim",
+"es":"prima, premio"
+}
+},
+{
+"w":"смена",
+"d":"Рабочее время, в течение которого одна группа сотрудников заменяет другую",
+"t":{
+"en":"shift",
+"nl":"dienst, ploegendienst",
+"pl":"zmiana",
+"de":"Schicht",
+"fr":"poste, quart",
+"it":"turno",
+"cs":"směna",
+"tr":"vardiya, nöbet",
+"es":"turno"
+}
+},
+{
+"w":"командировка",
+"d":"Поездка работника по распоряжению работодателя на определённый срок для выполнения служебного поручения вне места постоянной работы.",
+"t":{
+"en":"business trip, work assignment",
+"nl":"zakenreis, dienstreis",
+"pl":"delegacja, podróż służbowa",
+"de":"Dienstreise, Geschäftsreise",
+"fr":"voyage d'affaires, mission",
+"it":"trasferta, missione",
+"cs":"pracovní cesta, služební cesta",
+"tr":"iş seyahati, görev gezisi",
+"es":"viaje de negocios, comisión de servicio"
+}
+},
+{
+"w":"больничный",
+"d":"Официальный документ, подтверждающий временную нетрудоспособность человека и дающий право на освобождение от работы.",
+"t":{
+"en":"sick leave, medical certificate, sick note",
+"nl":"ziekmelding, doktersverklaring, ziekteverlof",
+"pl":"zwolnienie lekarskie, L4",
+"de":"Krankschreibung, Arbeitsunfähigkeitsbescheinigung, Krankmeldung",
+"fr":"arrêt maladie, certificat médical",
+"it":"certificato medico, malattia",
+"cs":"neschopenka, nemocenská",
+"tr":"sağlık raporu, istirahat raporu",
+"es":"baja médica, parte de baja"
+}
+},
+{
+"w":"обязанность",
+"d":"Служебная работа, круг действий, связанных с выполнением какой-либо должности.",
+"t":{
+"en":"duty, responsibility",
+"nl":"taken, verantwoordelijkheden",
+"pl":"obowiązki, zakres obowiązków",
+"de":"Pflichten, Aufgabenbereich, Obliegenheiten",
+"fr":"fonctions, responsabilités",
+"it":"mansioni, doveri",
+"cs":"pracovní povinnosti, úkoly",
+"tr":"görev, sorumluluk",
+"es":"funciones, responsabilidades"
+}
+},
+{
+"w":"совещание",
+"d":"Заседание или собрание, организованное для совместного обсуждения каких-либо деловых вопросов.",
+"t":{
+"en":"meeting",
+"nl":"vergadering, bespreking",
+"pl":"narada, spotkanie, zebranie",
+"de":"Besprechung, Konferenz, Sitzung",
+"fr":"réunion, conférence",
+"it":"riunione",
+"cs":"porada, schůze",
+"tr":"toplantı, oturum",
+"es":"reunión, conferencia"
+}
+},
+{
+"w":"переговоры",
+"d":"Обмен мнениями и обсуждение условий с целью достижения соглашения или заключения договора между сторонами.",
+"t":{
+"en":"negotiations, talks",
+"nl":"onderhandelingen, besprekingen",
+"pl":"negocjacje, rozmowy",
+"de":"Verhandlungen, Gespräche",
+"fr":"négociations, pourparlers",
+"it":"trattative, discussioni",
+"cs":"jednání, rozhovory",
+"tr":"görüşmeler, müzakereler",
+"es":"negociaciones, conversaciones"
+}
+},
+{
+"w":"отчёт",
+"d":"Официальное сообщение, доклад или документ, содержащий сведения о выполненной работе, расходах или результатах какой-либо деятельности.",
+"t":{
+"en":"report, account, statement",
+"nl":"verslag, rapport, overzicht",
+"pl":"raport, sprawozdanie",
+"de":"Bericht, Abrechnung, Rechenschaftsbericht",
+"fr":"rapport, compte-rendu, bilan",
+"it":"rapporto, resoconto, relazione",
+"cs":"zpráva, výkaz, report",
+"tr":"rapor, hesap",
+"es":"informe, reporte, balance"
+}
+},
+{
+"w":"успех",
+"d":"Хорошие результаты в работе, учёбе или другой деятельности (часто во множественном числе)",
+"t":{
+"en":"progress, achievement",
+"nl":"prestatie, vooruitgang",
+"pl":"postępy, osiągnięcia",
+"de":"Fortschritt, Erfolge",
+"fr":"progrès, réussite",
+"it":"progresso, risultati",
+"cs":"pokrok, úspěchy",
+"tr":"ilerleme, başarı",
+"es":"progreso, acierto"
+}
+},
+{
+"w":"халтура",
+"d":"Дополнительная работа, выполняемая помимо основной для получения заработка.",
+"t":{
+"en":"gig, side hustle, moonlighting",
+"nl":"bijbaantje, klusje, bijverdienste",
+"pl":"fucha, dorabianie",
+"de":"Nebenjob, Nebentätigkeit, Schwarzarbeit",
+"fr":"petit boulot, travail au noir, job d'appoint",
+"it":"lavoretto, secondo lavoro",
+"cs":"melouch, brigáda, vedlejšák",
+"tr":"ek iş, yan iş",
+"es":"trabajo extra, chamba, cachuelo"
+},
+"c":{
+"en":"extra work on the side",
+"nl":"bijklussen",
+"pl":"fucha, praca na boku",
+"de":"Nebenjob",
+"fr":"petit boulot en plus",
+"it":"lavoretto extra",
+"cs":"přivýdělek, práce bokem",
+"tr":"ek iş",
+"es":"trabajillo extra"
+}
+},
+{
+"w":"халтура",
+"d":"Небрежная, недобросовестная или некачественная работа.",
+"t":{
+"en":"shoddy work, slapdash work, cutting corners",
+"nl":"beunwerk, prutswerk, broddelwerk",
+"pl":"fuszerka, partactwo",
+"de":"Pfusch, Schlamperei, Stümperei",
+"fr":"travail bâclé, travail de sagouin, bricolage",
+"it":"lavoro fatto male, abborracciatura",
+"cs":"odfláknutá práce, šlendrián, fušeřina",
+"tr":"baştan savma iş, özensiz iş",
+"es":"chapuza, trabajo mediocre"
+},
+"c":{
+"en":"sloppy, careless work",
+"nl":"slordig werk",
+"pl":"partactwo, byle jaka robota",
+"de":"Pfusch, schlampige Arbeit",
+"fr":"travail bâclé",
+"it":"lavoro fatto male",
+"cs":"odbytá, šlendriánská práce",
+"tr":"baştan savma iş",
+"es":"chapuza, trabajo mal hecho"
+}
+},
+{
+"w":"нанять",
+"d":"Взять кого-либо на работу за плату.",
+"t":{
+"en":"hire, employ",
+"nl":"aannemen, in dienst nemen, inhuren",
+"pl":"zatrudnić, wynająć",
+"de":"einstellen, anstellen, engagieren",
+"fr":"embaucher, engager, recruter",
+"it":"assumere, ingaggiare",
+"cs":"najmout, zaměstnat",
+"tr":"işe almak, tutmak",
+"es":"contratar, emplear"
+}
+},
+{
+"w":"назначить",
+"d":"Поставить кого-либо на какую-либо должность или поручить выполнение работы.",
+"t":{
+"en":"appoint, assign, name",
+"nl":"aanstellen, benoemen, toewijzen",
+"pl":"mianować, wyznaczyć",
+"de":"ernennen, einsetzen, beauftragen",
+"fr":"nommer, désigner, affecter",
+"it":"nominare, assegnare",
+"cs":"jmenovat, ustavit, pověřit",
+"tr":"atamak, görevlendirmek",
+"es":"nombrar, designar"
+}
+},
+{
+"w":"повысить",
+"d":"Перевести кого-либо на более высокую должность или присвоить более высокое звание.",
+"t":{
+"en":"promote",
+"nl":"bevorderen, promoveren",
+"pl":"awansować",
+"de":"befördern",
+"fr":"promouvoir, faire monter en grade",
+"it":"promuovere",
+"cs":"povýšit",
+"tr":"terfi ettirmek",
+"es":"ascender, promocionar"
+}
+},
+{
+"w":"уволить",
+"d":"Освободить кого-либо от работы или должности; расторгнуть трудовой договор с сотрудником.",
+"t":{
+"en":"fire, dismiss, sack",
+"nl":"ontslaan, de laan uitsturen",
+"pl":"zwolnić, wyrzucić z pracy",
+"de":"entlassen, kündigen, feuern",
+"fr":"licencier, renvoyer, virer",
+"it":"licenziare, mandare via",
+"cs":"propustit, vyhodit, dát výpověď",
+"tr":"işten çıkarmak, kovmak, feshetmek",
+"es":"despedir, echar, destituir"
+}
+},
+{
+"w":"уволиться",
+"d":"Прекратить трудовые отношения по собственному желанию или уйти с работы.",
+"t":{
+"en":"quit, resign, leave one's job",
+"nl":"ontslag nemen, opstappen",
+"pl":"zwolnić się, złożyć wypowiedzenie",
+"de":"kündigen, seinen Job aufgeben, zurücktreten",
+"fr":"démissionner, quitter son emploi",
+"it":"dimettersi, licenziarsi, lasciare il lavoro",
+"cs":"dát výpověď, odejít ze zaměstnání",
+"tr":"istifa etmek, işten ayrılmak",
+"es":"renunciar, dimitir, dejar el trabajo"
+}
+},
+{
+"w":"руководить",
+"d":"Быть главным в какой-либо совместной деятельности, направлять чью-либо деятельность.",
+"t":{
+"en":"lead, manage, direct",
+"nl":"leiden, aansturen, managen",
+"pl":"kierować, zarządzać, dowodzić",
+"de":"leiten, führen, steuern",
+"fr":"diriger, gérer, encadrer",
+"it":"gestire, dirigere, condurre, amministrare",
+"cs":"vést, řídit, velet",
+"tr":"yönetmek, liderlik etmek, başında bulunmak",
+"es":"dirigir, administrar, regir"
+}
+},
+{
+"w":"управлять",
+"d":"Руководить деятельностью, направлять ход событий или работу организации",
+"t":{
+"en":"manage, govern, control",
+"nl":"beheren, besturen, leiden",
+"pl":"zarządzać, rządzić, kierować",
+"de":"leiten, steuern, verwalten, regieren",
+"fr":"diriger, gouverner, administrer",
+"it":"dirigere, governare",
+"cs":"řídit, spravovat, vést",
+"tr":"yönetmek, idare etmek, hükmetmek",
+"es":"dirigir, administrar, gobernar"
+}
+},
+{
+"w":"подчиняться",
+"d":"Находиться в служебной зависимости, работать под непосредственным руководством кого-либо.",
+"t":{
+"en":"report to, be subordinate to",
+"nl":"verantwoording afleggen aan, ondergeschikt zijn aan",
+"pl":"podlegać, być podwładnym",
+"de":"unterstellt sein, berichten an",
+"fr":"dépendre de, être sous les ordres de",
+"it":"fare capo a, essere subordinato a, dipendere da",
+"cs":"podléhat, být podřízen",
+"tr":"tabi olmak, bağlı olmak",
+"es":"depender de, estar subordinado a"
+}
+},
+{
+"w":"успевать",
+"d":"Иметь достаточно времени для выполнения чего-либо",
+"t":{
+"en":"have time, manage",
+"nl":"tijd hebben, redden",
+"pl":"zdążać, nadążać",
+"de":"schaffen, rechtzeitig fertig werden",
+"fr":"avoir assez de temps pour, réussir à",
+"it":"fare in tempo, riuscire",
+"cs":"stíhat, zvládat",
+"tr":"yetiştirmek, vakit bulmak",
+"es":"tener tiempo, lograr"
+}
+},
+{
+"w":"профессиональный",
+"d":"Связанный с профессией, относящийся к трудовой деятельности или специальности.",
+"t":{
+"en":"professional",
+"nl":"beroeps-, professioneel",
+"pl":"zawodowy, profesjonalny",
+"de":"beruflich, fachlich",
+"fr":"professionnel",
+"it":"professionale",
+"cs":"profesní, pracovní",
+"tr":"mesleki",
+"es":"profesional"
+}
+},
+{
+"w":"опытный",
+"d":"Обладающий большим опытом, делающий что-либо не в первый раз.",
+"t":{
+"en":"experienced, skilled, expert, versed",
+"nl":"ervaren, deskundig",
+"pl":"doświadczony, wprawny",
+"de":"erfahren, versiert, routiniert",
+"fr":"expérimenté, qualifié, compétent",
+"it":"esperto, navigato, qualificato",
+"cs":"zkušený, ostřílený, odborný",
+"tr":"deneyimli, tecrübeli, uzman",
+"es":"experimentado, experto"
+}
+},
+{
+"w":"ответственный",
+"d":"Честный, добросовестный, умеющий держать слово и серьёзно относящийся к обязанностям (о характере человека).",
+"t":{
+"en":"responsible, dependable",
+"nl":"verantwoordelijk, betrouwbaar, plichtsgetrouw",
+"pl":"odpowiedzialny, rzetelny",
+"de":"verantwortungsbewusst, zuverlässig",
+"fr":"responsable, consciencieux, fiable",
+"it":"responsabile, affidabile, coscienzioso",
+"cs":"zodpovědný, svědomitý",
+"tr":"sorumlu, güvenilir, vicdanlı",
+"es":"responsable, serio, cumplidor"
+}
+},
+{
+"w":"надёжный",
+"d":"Такой, на которого можно положиться, внушающий полное доверие.",
+"t":{
+"en":"reliable, dependable, trustworthy",
+"nl":"betrouwbaar, degelijk",
+"pl":"niezawodny, godny zaufania, pewny",
+"de":"zuverlässig, vertrauenswürdig",
+"fr":"fiable, digne de confiance",
+"it":"affidabile, fidato",
+"cs":"spolehlivý, důvěryhodný",
+"tr":"güvenilir, sadık",
+"es":"fiable, de confianza, leal"
+}
+},
+{
+"w":"трудолюбивый",
+"d":"Любящий работать, отличающийся усердием и старательностью в труде.",
+"t":{
+"en":"hardworking, industrious",
+"nl":"hardwerkend, ijverig",
+"pl":"pracowity, pilny, sumienny",
+"de":"fleißig, arbeitsam",
+"fr":"travailleur, assidu, appliqué",
+"it":"laborioso, operoso, gran lavoratore",
+"cs":"pracovitý, pilný",
+"tr":"çalışkan, gayretli",
+"es":"trabajador, laborioso"
+}
+},
+{
+"w":"занятой",
+"d":"Не имеющий свободного времени, обременённый делами или работой (о человеке); наполненный делами (о времени).",
+"t":{
+"en":"busy",
+"nl":"bezig, druk",
+"pl":"zajęty, zapracowany",
+"de":"beschäftigt, viel zu tun haben",
+"fr":"occupé, très pris",
+"it":"impegnato, occupato",
+"cs":"zaneprázdněný, vytížený",
+"tr":"meşgul, yoğun",
+"es":"ocupado"
+}
+},
+{
+"w":"срочный",
+"d":"Требующий немедленного выполнения или внимания.",
+"t":{
+"en":"urgent, rush",
+"nl":"dringend, spoedeisend",
+"pl":"pilny, niecierpiący zwłoki",
+"de":"dringend, eilig",
+"fr":"urgent, pressant",
+"it":"urgente, pressante",
+"cs":"naléhavý, urgentní",
+"tr":"acil, ivedi",
+"es":"urgente, apremiante"
+}
+},
+{
+"w":"постоянный",
+"d":"Рассчитанный на длительный срок использования, не временный.",
+"t":{
+"en":"permanent",
+"nl":"vast, permanent",
+"pl":"stały",
+"de":"dauerhaft, fest, ständig",
+"fr":"permanent, fixe",
+"it":"permanente, fisso",
+"cs":"trvalý, stálý",
+"tr":"kalıcı, daimi",
+"es":"permanente, fijo"
+}
+},
+{
+"w":"временный",
+"d":"Работающий где-либо или исполняющий обязанности не постоянно, а лишь в течение определённого срока.",
+"t":{
+"en":"temporary, provisional",
+"nl":"tijdelijk, interim",
+"pl":"tymczasowy, p.o. (pełniący obowiązki)",
+"de":"vorübergehend, einstweilig",
+"fr":"temporaire, provisoire",
+"it":"temporaneo, provvisorio",
+"cs":"dočasný, zastupující",
+"tr":"geçici, vekil",
+"es":"temporal, interino"
+}
+},
+{
+"w":"удалённый",
+"d":"Находящийся на большом расстоянии от кого-либо или от чего-либо; дальний.",
+"t":{
+"en":"remote, outlying",
+"nl":"afgelegen, op afstand",
+"pl":"zdalny, odległy",
+"de":"entfernt, abgelegen, fern",
+"fr":"éloigné, à distance, reculé",
+"it":"remoto, lontano, periferico",
+"cs":"vzdálený, odlehlý",
+"tr":"uzak, uzaktan",
+"es":"remoto, lejano"
+}
+}
+]

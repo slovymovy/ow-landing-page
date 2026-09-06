@@ -538,5 +538,1458 @@
 "tr":"uzak, ırak",
 "es":"lejano, distante"
 }
+},
+{
+"w":"автобус",
+"d":"Многоместный автомобиль для перевозки пассажиров по установленному маршруту.",
+"t":{
+"en":"bus",
+"nl":"bus, autobus",
+"pl":"autobus, autokar",
+"de":"Bus, Autobus, Omnibus",
+"fr":"autobus, bus",
+"it":"autobus",
+"cs":"autobus",
+"tr":"otobüs",
+"es":"autobús"
+}
+},
+{
+"w":"машина",
+"d":"автомобиль, транспортное средство",
+"t":{
+"en":"car",
+"nl":"auto, wagen",
+"pl":"samochód, auto",
+"de":"Auto",
+"fr":"voiture",
+"it":"macchina, automobile",
+"cs":"auto, stroj",
+"tr":"araba, otomobil",
+"es":"coche, auto, carro"
+}
+},
+{
+"w":"самолёт",
+"d":"Летательный аппарат тяжелее воздуха с жёстким неподвижным крылом и собственным мотором.",
+"t":{
+"en":"airplane, aeroplane, plane, aircraft",
+"nl":"vliegtuig",
+"pl":"samolot",
+"de":"Flugzeug",
+"fr":"avion",
+"it":"aereo, aeroplano",
+"cs":"letadlo, letoun",
+"tr":"uçak, tayyare",
+"es":"avión, aeroplano"
+}
+},
+{
+"w":"вокзал",
+"d":"Здание или комплекс зданий для обслуживания пассажиров на железнодорожной станции.",
+"t":{
+"en":"train station, railway station, terminal",
+"nl":"station, stationsgebouw",
+"pl":"dworzec",
+"de":"Bahnhof",
+"fr":"gare",
+"it":"stazione ferroviaria, stazione",
+"cs":"nádraží, hlavní nádraží",
+"tr":"tren istasyonu, gar",
+"es":"estación de tren, estación ferroviaria, terminal"
+}
+},
+{
+"w":"маршрутка",
+"d":"Вид городского общественного транспорта в виде микроавтобуса, следующего по установленному маршруту.",
+"t":{
+"en":"marshrutka, minibus taxi, shared taxi",
+"nl":"marshrutka, minibus-taxi, deeltaxi",
+"pl":"marszrutka, bus",
+"de":"Sammeltaxi, Marschrutka",
+"fr":"minibus, taxi collectif",
+"it":"minibus, taxi collettivo",
+"cs":"maršrutka, minibus, sdílené taxi",
+"tr":"dolmuş, minibüs",
+"es":"minibús, taxi colectivo"
+}
+},
+{
+"w":"электричка",
+"d":"Пригородный или внутригородской электропоезд.",
+"t":{
+"en":"commuter train, suburban train",
+"nl":"stoptrein, sprinter",
+"pl":"pociąg podmiejski, kolejka podmiejska",
+"de":"S-Bahn, Regionalzug",
+"fr":"train de banlieue, TER",
+"it":"treno regionale, treno suburbano",
+"cs":"příměstský vlak, osobní vlak",
+"tr":"Banliyö treni, Elektrikli tren",
+"es":"tren de cercanías, tren regional"
+}
+},
+{
+"w":"автовокзал",
+"d":"Комплекс зданий и сооружений для обслуживания пассажиров пригородных и междугородных автобусов.",
+"t":{
+"en":"bus station, bus terminal",
+"nl":"busstation",
+"pl":"dworzec autobusowy",
+"de":"Busbahnhof, Busterminal",
+"fr":"gare routière",
+"it":"autostazione, stazione degli autobus",
+"cs":"autobusové nádraží",
+"tr":"otogar, otobüs terminali",
+"es":"estación de autobuses, terminal de autobuses"
+}
+},
+{
+"w":"вагон",
+"d":"Транспортное средство, специально оборудованное для перевозки пассажиров или грузов по рельсовым путям (в составе поезда, трамвая, метро).",
+"t":{
+"en":"car, carriage, wagon",
+"nl":"wagon, rijtuig",
+"pl":"wagon, przedział",
+"de":"Waggon, Wagen",
+"fr":"wagon, voiture",
+"it":"vagone, carrozza",
+"cs":"vagon, vůz",
+"tr":"vagon",
+"es":"vagón, coche"
+}
+},
+{
+"w":"корабль",
+"d":"Крупное морское судно, предназначенное для перевозки грузов, пассажиров или для военных целей.",
+"t":{
+"en":"ship, vessel",
+"nl":"schip",
+"pl":"statek, okręt",
+"de":"Schiff",
+"fr":"navire, bateau, vaisseau",
+"it":"nave",
+"cs":"loď, koráb",
+"tr":"gemi",
+"es":"barco, embarcación, nave"
+}
+},
+{
+"w":"паром",
+"d":"Плавательное средство для перевозки пассажиров и транспортных средств через водоём.",
+"t":{
+"en":"ferry, ferryboat",
+"nl":"veerboot, veer, veerpont",
+"pl":"prom",
+"de":"Fähre, Fährschiff",
+"fr":"bac, ferry",
+"it":"traghetto",
+"cs":"trajekt, přívoz, prám",
+"tr":"feribot, araba vapuru",
+"es":"ferri, transbordador"
+}
+},
+{
+"w":"лодка",
+"d":"Небольшое судно для передвижения по воде при помощи вёсел, паруса или мотора",
+"t":{
+"en":"boat, dinghy",
+"nl":"boot",
+"pl":"łódź, łódka",
+"de":"Boot, Kahn",
+"fr":"bateau, barque, canot, embarcation",
+"it":"barca, battello, canotto",
+"cs":"člun, loďka",
+"tr":"kayık, sandal",
+"es":"barca, bote, lancha, barco"
+}
+},
+{
+"w":"парковка",
+"d":"Специально отведенное место для стоянки транспортных средств.",
+"t":{
+"en":"parking, parking lot, car park",
+"nl":"parkeerplaats, parkeergarage",
+"pl":"parking",
+"de":"Parkplatz, Parkhaus",
+"fr":"parking, stationnement",
+"it":"parcheggio, area di sosta",
+"cs":"parkoviště, parkování",
+"tr":"otopark, park yeri",
+"es":"aparcamiento, estacionamiento, parqueadero"
+}
+},
+{
+"w":"стоянка",
+"d":"специально отведенное место для парковки автомобилей",
+"t":{
+"en":"parking lot, car park",
+"nl":"parkeerplaats, parkeerterrein",
+"pl":"parking",
+"de":"Parkplatz, Parkhaus",
+"fr":"parking, parc de stationnement",
+"it":"parcheggio",
+"cs":"parkoviště, parkování",
+"tr":"otopark, park yeri",
+"es":"aparcamiento, estacionamiento"
+}
+},
+{
+"w":"заправка",
+"d":"Автозаправочная станция; место, где автомобили пополняют запасы топлива.",
+"t":{
+"en":"gas station, petrol station",
+"nl":"tankstation, benzinepomp",
+"pl":"stacja paliw, stacja benzynowa",
+"de":"Tankstelle",
+"fr":"station-service, station",
+"it":"stazione di servizio, distributore di benzina",
+"cs":"čerpací stanice, benzínka",
+"tr":"benzin istasyonu, akaryakıt istasyonu",
+"es":"gasolinera, estación de servicio"
+}
+},
+{
+"w":"шоссе",
+"d":"Автомобильная дорога с твёрдым покрытием.",
+"t":{
+"en":"highway",
+"nl":"snelweg, autoweg, hoofdweg",
+"pl":"szosa, autostrada, trasa",
+"de":"Landstraße, Autobahn, Fernstraße",
+"fr":"chaussée, grande route, route",
+"it":"autostrada, strada statale, superstrada",
+"cs":"silnice, dálnice, hlavní tah",
+"tr":"otoyol, karayolu, ana yol",
+"es":"carretera, autopista, autovía"
+}
+},
+{
+"w":"трасса",
+"d":"Крупная автомобильная дорога, соединяющая города или важные объекты (часто скоростная).",
+"t":{
+"en":"highway, motorway, road",
+"nl":"snelweg, autoweg, weg",
+"pl":"trasa, autostrada, szosa",
+"de":"Autobahn, Fernstraße, Landstraße",
+"fr":"autoroute, route nationale, voie rapide",
+"it":"autostrada, strada statale, strada a grande comunicazione",
+"cs":"silnice, dálnice, hlavní tah",
+"tr":"otoyol, karayolu, ana yol",
+"es":"carretera, autopista, autovía"
+}
+},
+{
+"w":"перекрёсток",
+"d":"Место пересечения двух или более дорог или улиц.",
+"t":{
+"en":"intersection, crossroads, crossing",
+"nl":"kruispunt, kruising",
+"pl":"skrzyżowanie, rozstaje",
+"de":"Kreuzung, Wegkreuzung",
+"fr":"carrefour, croisement, intersection",
+"it":"incrocio, bivio",
+"cs":"křižovatka, rozcestí",
+"tr":"kavşak, dört yol ağzı",
+"es":"cruce, intersección, encrucijada"
+}
+},
+{
+"w":"светофор",
+"d":"техническое устройство для регулирования движения транспорта и пешеходов с помощью световых сигналов",
+"t":{
+"en":"traffic light, traffic lights",
+"nl":"verkeerslicht, stoplicht",
+"pl":"sygnalizacja świetlna, światła",
+"de":"Ampel, Verkehrsampel, Lichtzeichenanlage",
+"fr":"feu de circulation, feux",
+"it":"semaforo",
+"cs":"semafor",
+"tr":"trafik ışığı",
+"es":"semáforo"
+}
+},
+{
+"w":"тротуар",
+"d":"Пешеходная дорожка, расположенная по бокам улицы, обычно приподнятая над проезжей частью и предназначенная для движения людей.",
+"t":{
+"en":"sidewalk, pavement",
+"nl":"stoep, trottoir, voetpad",
+"pl":"chodnik, trotuar",
+"de":"Bürgersteig, Gehweg, Trottoir",
+"fr":"trottoir",
+"it":"marciapiede",
+"cs":"chodník",
+"tr":"kaldırım, yaya kaldırımı",
+"es":"acera, vereda"
+}
+},
+{
+"w":"переход",
+"d":"Специально оборудованное место для пересечения дороги или путей пешеходами.",
+"t":{
+"en":"pedestrian crossing, crosswalk, zebra crossing",
+"nl":"voetgangersoversteekplaats, zebrapad",
+"pl":"przejście dla pieszych, zebra",
+"de":"Fußgängerüberweg, Zebrastreifen",
+"fr":"passage piéton, passage pour piétons",
+"it":"strisce pedonali, attraversamento pedonale",
+"cs":"přechod pro chodce, zebra",
+"tr":"yaya geçidi",
+"es":"paso de peatones, paso de cebra"
+},
+"c":{
+"en":"on the street, for pedestrians",
+"nl":"op straat, voor voetgangers",
+"pl":"na ulicy, dla pieszych",
+"de":"auf der Straße, für Fußgänger",
+"fr":"dans la rue, pour les piétons",
+"it":"in strada, per i pedoni",
+"cs":"na ulici, pro chodce",
+"tr":"sokakta, yayalar için",
+"es":"en la calle, para peatones"
+}
+},
+{
+"w":"переход",
+"d":"Специальное сооружение или коридор для перемещения между зданиями, уровнями или частями пространства.",
+"t":{
+"en":"passageway, underpass, walkway",
+"nl":"verbindingsgang, onderdoorgang",
+"pl":"przejście, przejście podziemne, łącznik",
+"de":"Verbindungsgang, Unterführung",
+"fr":"passage, passage souterrain, passerelle",
+"it":"passaggio, sottopassaggio, corridoio di collegamento",
+"cs":"podchod, spojovací chodba",
+"tr":"alt geçit, geçit",
+"es":"paso subterráneo, pasarela"
+},
+"c":{
+"en":"a connecting passage inside or between buildings",
+"nl":"verbindingsgang in of tussen gebouwen",
+"pl":"łącznik wewnątrz lub między budynkami",
+"de":"Verbindungsgang in oder zwischen Gebäuden",
+"fr":"couloir de liaison dans ou entre des bâtiments",
+"it":"corridoio di collegamento dentro o tra edifici",
+"cs":"spojovací chodba uvnitř nebo mezi budovami",
+"tr":"binalarda ya da binalar arasında bağlantı geçidi",
+"es":"pasaje de conexión dentro o entre edificios"
+}
+},
+{
+"w":"пешеход",
+"d":"человек, передвигающийся пешком",
+"t":{
+"en":"pedestrian",
+"nl":"voetganger",
+"pl":"pieszy",
+"de":"Fußgänger",
+"fr":"piéton",
+"it":"pedone",
+"cs":"chodec, pěší",
+"tr":"yaya",
+"es":"peatón"
+}
+},
+{
+"w":"знак",
+"d":"Дорожный указатель, регулирующий движение транспорта и пешеходов.",
+"t":{
+"en":"sign, road sign",
+"nl":"verkeersbord, bord",
+"pl":"znak drogowy",
+"de":"Verkehrsschild, Verkehrszeichen",
+"fr":"panneau de signalisation, signalisation",
+"it":"segnale stradale, cartello",
+"cs":"dopravní značka",
+"tr":"trafik levhası, trafik işareti",
+"es":"señal, señal de tráfico"
+}
+},
+{
+"w":"пробка",
+"d":"Скопление транспорта на дороге, которое мешает движению.",
+"t":{
+"en":"traffic jam, congestion, gridlock",
+"nl":"file, verkeersopstopping",
+"pl":"korek",
+"de":"Stau, Verkehrsstau",
+"fr":"embouteillage, bouchon, encombrement",
+"it":"ingorgo, traffico",
+"cs":"zácpa",
+"tr":"trafik sıkışıklığı, trafik",
+"es":"embotellamiento, atasco, tapón"
+}
+},
+{
+"w":"руль",
+"d":"Устройство, с помощью которого водитель управляет направлением движения автомобиля, велосипеда или мотоцикла.",
+"t":{
+"en":"steering wheel, handlebars, wheel",
+"nl":"stuur, stuurwiel, stuur",
+"pl":"kierownica",
+"de":"Lenkrad, Lenker",
+"fr":"volant, guidon",
+"it":"volante, manubrio",
+"cs":"volant, řídítka",
+"tr":"direksiyon, gidon",
+"es":"volante, manillar"
+}
+},
+{
+"w":"колесо",
+"d":"Круглая деталь машины или механизма, которая вращается вокруг оси и служит для движения.",
+"t":{
+"en":"wheel",
+"nl":"wiel",
+"pl":"koło",
+"de":"Rad",
+"fr":"roue",
+"it":"ruota",
+"cs":"kolo",
+"tr":"tekerlek",
+"es":"rueda"
+}
+},
+{
+"w":"билет",
+"d":"Документ, дающий право пользоваться транспортом или посещать мероприятия (театр, кино, музей и т.д.)",
+"t":{
+"en":"ticket",
+"nl":"ticket, kaartje, toegangsbewijs",
+"pl":"bilet",
+"de":"Fahrkarte, Eintrittskarte, Ticket",
+"fr":"billet",
+"it":"biglietto, titolo di viaggio",
+"cs":"jízdenka, vstupenka, lístek",
+"tr":"bilet",
+"es":"billete, entrada, boleto"
+}
+},
+{
+"w":"расписание",
+"d":"График или таблица, содержащие сведения о времени, месте и последовательности совершения чего-либо (например, движения транспорта или проведения занятий)",
+"t":{
+"en":"schedule, timetable",
+"nl":"dienstregeling, rooster, schema",
+"pl":"rozkład, plan",
+"de":"Zeitplan, Fahrplan, Stundenplan",
+"fr":"horaire, emploi du temps",
+"it":"orario, programma",
+"cs":"jízdní řád, rozvrh, harmonogram",
+"tr":"program, çizelge, ders programı, tarife",
+"es":"horario"
+}
+},
+{
+"w":"маршрут",
+"d":"Заранее намеченный или установленный путь следования человека или транспортного средства.",
+"t":{
+"en":"route, itinerary",
+"nl":"route, reisplan",
+"pl":"trasa, plan podróży",
+"de":"Route, Reiseroute",
+"fr":"itinéraire, trajet, parcours",
+"it":"percorso, itinerario",
+"cs":"trasa, itinerář",
+"tr":"güzergâh, rota",
+"es":"ruta, itinerario"
+}
+},
+{
+"w":"пересадка",
+"d":"Переход с одного вида транспорта или маршрута на другой во время поездки.",
+"t":{
+"en":"transfer, change",
+"nl":"overstap",
+"pl":"przesiadka",
+"de":"Umsteigen",
+"fr":"correspondance, changement",
+"it":"cambio, trasbordo",
+"cs":"přestup, přestupování, přesedání",
+"tr":"aktarma",
+"es":"transbordo, escala"
+}
+},
+{
+"w":"багаж",
+"d":"Вещи и имущество пассажира, упакованные для перевозки транспортом",
+"t":{
+"en":"luggage, baggage",
+"nl":"bagage",
+"pl":"bagaż",
+"de":"Gepäck",
+"fr":"bagage",
+"it":"bagaglio, valigie",
+"cs":"zavazadlo, zavazadla",
+"tr":"bagaj, yük",
+"es":"equipaje"
+}
+},
+{
+"w":"чемодан",
+"d":"Раскладная сумка в форме коробки с ручкой и жёсткими стенками, используемая для перевозки вещей и багажа.",
+"t":{
+"en":"suitcase, trunk, valise",
+"nl":"koffer, valies",
+"pl":"walizka",
+"de":"Koffer",
+"fr":"valise, malle",
+"it":"valigia",
+"cs":"kufr, zavazadlo",
+"tr":"valiz, bavul",
+"es":"maleta, valija"
+}
+},
+{
+"w":"поездка",
+"d":"Кратковременное путешествие или перемещение куда-либо с определенной целью.",
+"t":{
+"en":"trip, excursion, outing, journey",
+"nl":"reis, trip, tocht",
+"pl":"podróż, przejażdżka, wyjazd",
+"de":"Fahrt, Reise, Ausflug",
+"fr":"voyage, excursion, déplacement",
+"it":"viaggio, gita",
+"cs":"cesta, výlet",
+"tr":"yolculuk, gezi, seyahat",
+"es":"viaje, excursión"
+}
+},
+{
+"w":"путешествие",
+"d":"Поездка или передвижение пешком по каким-либо местам, странам, обычно на дальнее расстояние.",
+"t":{
+"en":"journey, trip, voyage, travel",
+"nl":"reis, tocht, zeereis",
+"pl":"podróż, wyprawa",
+"de":"Reise, Fahrt, Seereise",
+"fr":"voyage, trajet, périple",
+"it":"viaggio, traversata, escursione",
+"cs":"cesta, putování, cestování",
+"tr":"seyahat, gezi, yolculuk",
+"es":"viaje, travesía, recorrido"
+}
+},
+{
+"w":"пассажир",
+"d":"Человек, который совершает поездку в транспортном средстве (поезде, автомобиле, самолёте, судне), не являясь водителем или членом экипажа.",
+"t":{
+"en":"passenger",
+"nl":"passagier",
+"pl":"pasażer",
+"de":"Passagier, Fahrgast, Reisende",
+"fr":"passager, voyageur",
+"it":"passeggero",
+"cs":"cestující, pasažér",
+"tr":"yolcu",
+"es":"pasajero, viajero"
+}
+},
+{
+"w":"кондуктор",
+"d":"Работник общественного транспорта, который продает билеты и следит за порядком в салоне.",
+"t":{
+"en":"conductor",
+"nl":"conducteur",
+"pl":"konduktor",
+"de":"Schaffner",
+"fr":"contrôleur",
+"it":"bigliettaio, controllore",
+"cs":"průvodčí",
+"tr":"biletçi, kondüktör",
+"es":"cobrador, revisor"
+}
+},
+{
+"w":"центр",
+"d":"Главная, обычно старейшая часть города, где сосредоточена культурная и деловая жизнь.",
+"t":{
+"en":"center, city center, downtown",
+"nl":"centrum, binnenstad",
+"pl":"centrum, ścisłe centrum",
+"de":"Zentrum, Innenstadt",
+"fr":"centre-ville, centre",
+"it":"centro, centro città",
+"cs":"centrum",
+"tr":"merkez, şehir merkezi",
+"es":"centro, centro urbano"
+}
+},
+{
+"w":"район",
+"d":"Чётко очерченная административно-территориальная единица города или области.",
+"t":{
+"en":"district, neighborhood, area",
+"nl":"wijk, district, buurt",
+"pl":"dzielnica, rejon",
+"de":"Stadtteil, Bezirk, Ortsteil",
+"fr":"quartier, arrondissement, district",
+"it":"quartiere, distretto, zona",
+"cs":"čtvrť, obvod, oblast",
+"tr":"ilçe, semt",
+"es":"distrito, barrio, zona"
+}
+},
+{
+"w":"здание",
+"d":"Архитектурное сооружение, обычно надземное и имеющее большие размеры.",
+"t":{
+"en":"building, edifice, structure",
+"nl":"gebouw, bouwwerk",
+"pl":"budynek, gmach, budowla",
+"de":"Gebäude, Bauwerk, Bau",
+"fr":"bâtiment, immeuble, édifice",
+"it":"edificio, fabbricato, stabile, costruzione",
+"cs":"budova, stavba",
+"tr":"bina, yapı",
+"es":"edificio, construcción"
+}
+},
+{
+"w":"рынок",
+"d":"Место для торговли продуктами питания и другими товарами, часто расположенное под открытым небом или в торговых рядах.",
+"t":{
+"en":"market, marketplace",
+"nl":"markt",
+"pl":"rynek, targowisko, bazar",
+"de":"Markt, Marktplatz",
+"fr":"marché, halles",
+"it":"mercato",
+"cs":"trh, tržnice",
+"tr":"pazar, pazar yeri",
+"es":"mercado, plaza"
+}
+},
+{
+"w":"супермаркет",
+"d":"Магазин самообслуживания с широким ассортиментом продуктов питания и хозяйственных товаров.",
+"t":{
+"en":"supermarket",
+"nl":"supermarkt",
+"pl":"supermarket",
+"de":"Supermarkt, Kaufhalle",
+"fr":"supermarché",
+"it":"supermercato",
+"cs":"supermarket",
+"tr":"süpermarket",
+"es":"supermercado"
+}
+},
+{
+"w":"гостиница",
+"d":"Дом с меблированными комнатами (номерами) для временного проживания приезжих.",
+"t":{
+"en":"hotel, inn",
+"nl":"hotel",
+"pl":"hotel",
+"de":"Hotel, Gasthof",
+"fr":"hôtel",
+"it":"albergo, hotel",
+"cs":"hotel",
+"tr":"otel",
+"es":"hotel, fonda"
+}
+},
+{
+"w":"отель",
+"d":"Здание с меблированными комнатами для временного проживания приезжих.",
+"t":{
+"en":"hotel",
+"nl":"hotel",
+"pl":"hotel",
+"de":"Hotel",
+"fr":"hôtel",
+"it":"albergo, hotel",
+"cs":"hotel",
+"tr":"otel, konaklama tesisi",
+"es":"hotel"
+}
+},
+{
+"w":"стадион",
+"d":"Спортивное сооружение с большим полем для соревнований и трибунами для зрителей.",
+"t":{
+"en":"stadium",
+"nl":"stadion",
+"pl":"stadion",
+"de":"Stadion",
+"fr":"stade",
+"it":"stadio",
+"cs":"stadion",
+"tr":"stadyum, stat",
+"es":"estadio"
+}
+},
+{
+"w":"бассейн",
+"d":"искусственный водоём для купания, занятий водными видами спорта или содержания водных животных",
+"t":{
+"en":"swimming pool, pool",
+"nl":"zwembad",
+"pl":"basen, pływalnia",
+"de":"Schwimmbad, Bad",
+"fr":"piscine, bassin",
+"it":"piscina",
+"cs":"bazén, plavecký bazén",
+"tr":"yüzme havuzu, havuz",
+"es":"piscina, alberca"
+}
+},
+{
+"w":"церковь",
+"d":"Здание, предназначенное для христианских богослужений и молитв.",
+"t":{
+"en":"church",
+"nl":"kerk",
+"pl":"kościół, cerkiew",
+"de":"Kirche",
+"fr":"église",
+"it":"chiesa",
+"cs":"kostel",
+"tr":"kilise",
+"es":"iglesia"
+}
+},
+{
+"w":"собор",
+"d":"Главный или большой христианский храм в городе или монастыре.",
+"t":{
+"en":"cathedral",
+"nl":"kathedraal, dom",
+"pl":"katedra, sobór",
+"de":"Kathedrale, Dom",
+"fr":"cathédrale",
+"it":"cattedrale, duomo",
+"cs":"katedrála, chrám",
+"tr":"katedral",
+"es":"catedral"
+}
+},
+{
+"w":"памятник",
+"d":"Архитектурное или скульптурное сооружение в память или в честь какого-либо лица или события.",
+"t":{
+"en":"monument, statue, memorial",
+"nl":"monument, gedenkteken",
+"pl":"pomnik",
+"de":"Denkmal, Mahnmal",
+"fr":"monument, statue, mémorial",
+"it":"monumento, statua, memoriale",
+"cs":"památník, socha",
+"tr":"anıt, abide",
+"es":"monumento, estatua"
+}
+},
+{
+"w":"фонтан",
+"d":"Архитектурное сооружение, обычно декоративное, с бьющими вверх или стекающими струями воды.",
+"t":{
+"en":"fountain",
+"nl":"fontein",
+"pl":"fontanna",
+"de":"Springbrunnen, Fontäne",
+"fr":"fontaine",
+"it":"fontana",
+"cs":"fontána",
+"tr":"fıskiye, çeşme",
+"es":"fuente"
+}
+},
+{
+"w":"набережная",
+"d":"Улица или пешеходная дорога, проходящая вдоль берега реки, моря или другого водоёма",
+"t":{
+"en":"embankment, waterfront, promenade",
+"nl":"kade, boulevard, promenade",
+"pl":"bulwar, promenada, ulica nadbrzeżna",
+"de":"Uferpromenade, Uferstraße",
+"fr":"quai, promenade",
+"it":"lungomare, lungofiume, lungolago",
+"cs":"nábřeží, promenáda",
+"tr":"sahil yolu, kordon",
+"es":"malecón, paseo marítimo, ribera"
+}
+},
+{
+"w":"бульвар",
+"d":"Широкая аллея, обсаженная деревьями и предназначенная для пешеходных прогулок.",
+"t":{
+"en":"boulevard, promenade",
+"nl":"boulevard, promenade",
+"pl":"bulwar, promenada",
+"de":"Boulevard, Promenade",
+"fr":"boulevard, promenade",
+"it":"viale, passeggiata",
+"cs":"bulvár, promenáda",
+"tr":"bulvar, gezinti yolu",
+"es":"bulevar, paseo"
+}
+},
+{
+"w":"сквер",
+"d":"Небольшой общественный сад или парк в городе.",
+"t":{
+"en":"public garden, square",
+"nl":"plantsoen, stadsparkje",
+"pl":"skwer",
+"de":"Grünanlage, Parkanlage",
+"fr":"square",
+"it":"giardinetto, parchetto",
+"cs":"parčík, městský park",
+"tr":"mahalle bahçesi, park",
+"es":"jardín, parque"
+}
+},
+{
+"w":"двор",
+"d":"Огороженный участок земли при доме, здании или группе домов.",
+"t":{
+"en":"yard, courtyard",
+"nl":"binnenplaats, erf, binnenplein",
+"pl":"podwórko, dziedziniec",
+"de":"Hof, Innenhof",
+"fr":"cour",
+"it":"cortile, cortile interno",
+"cs":"dvůr, nádvoří",
+"tr":"avlu, bahçe",
+"es":"patio, corral"
+}
+},
+{
+"w":"полиция",
+"d":"Система государственных служб по охране общественного порядка и борьбе с преступностью",
+"t":{
+"en":"police, police force",
+"nl":"politie",
+"pl":"policja",
+"de":"Polizei",
+"fr":"police",
+"it":"polizia",
+"cs":"policie",
+"tr":"polis",
+"es":"policía"
+}
+},
+{
+"w":"пригород",
+"d":"Населённый пункт, расположенный вблизи территории города или примыкающий к черте города.",
+"t":{
+"en":"suburb, outskirts",
+"nl":"buitenwijk, voorstad",
+"pl":"przedmieście, obrzeża",
+"de":"Vorort, Vorstadt",
+"fr":"banlieue, faubourg",
+"it":"sobborgo, periferia",
+"cs":"předměstí, okraj města",
+"tr":"banliyö, kenar mahalle, yörekent",
+"es":"suburbio, arrabal"
+}
+},
+{
+"w":"житель",
+"d":"Человек, который живёт в каком-либо месте (стране, городе, селе, доме и т. п.).",
+"t":{
+"en":"resident, inhabitant",
+"nl":"bewoner, inwoner",
+"pl":"mieszkaniec, obywatel",
+"de":"Einwohner, Bewohner",
+"fr":"habitant, résident",
+"it":"abitante, residente",
+"cs":"obyvatel",
+"tr":"sakin, oturan",
+"es":"habitante, residente"
+}
+},
+{
+"w":"идти",
+"d":"Двигаться, передвигаться пешком, шагать.",
+"t":{
+"en":"walk, go on foot",
+"nl":"lopen, gaan",
+"pl":"iść, chodzić",
+"de":"gehen",
+"fr":"marcher, aller à pied",
+"it":"camminare, andare a piedi",
+"cs":"jít",
+"tr":"yürümek, gitmek",
+"es":"caminar, andar"
+},
+"c":{
+"en":"of a person, on foot",
+"nl":"van een persoon, te voet",
+"pl":"o człowieku, pieszo",
+"de":"von einer Person, zu Fuß",
+"fr":"d'une personne, à pied",
+"it":"di una persona, a piedi",
+"cs":"o člověku, pěšky",
+"tr":"bir kişi için, yürüyerek",
+"es":"de una persona, a pie"
+}
+},
+{
+"w":"идти",
+"d":"Двигаться, перемещаться (о транспорте, механизмах).",
+"t":{
+"en":"run, travel",
+"nl":"rijden",
+"pl":"jechać",
+"de":"fahren",
+"fr":"circuler, avancer",
+"it":"viaggiare, circolare",
+"cs":"jet",
+"tr":"gitmek, ilerlemek",
+"es":"circular, ir"
+},
+"c":{
+"en":"of transport: to be running",
+"nl":"van vervoer: rijden",
+"pl":"o transporcie: kursować",
+"de":"von Verkehrsmitteln: fahren",
+"fr":"d'un transport : circuler",
+"it":"di un mezzo: essere in servizio",
+"cs":"o dopravě: jezdit",
+"tr":"taşıt için: sefer yapmak",
+"es":"de un transporte: circular"
+}
+},
+{
+"w":"ходить",
+"d":"Перемещаться по поверхности, переставляя ноги.",
+"t":{
+"en":"walk, go",
+"nl":"lopen, gaan",
+"pl":"chodzić",
+"de":"gehen",
+"fr":"marcher",
+"it":"camminare, andare a piedi",
+"cs":"chodit",
+"tr":"yürümek, gitmek",
+"es":"andar, caminar"
+},
+"c":{
+"en":"of a person, on foot",
+"nl":"van een persoon, te voet",
+"pl":"o człowieku, pieszo",
+"de":"von einer Person, zu Fuß",
+"fr":"d'une personne, à pied",
+"it":"di una persona, a piedi",
+"cs":"o člověku, pěšky",
+"tr":"bir kişi için, yürüyerek",
+"es":"de una persona, a pie"
+}
+},
+{
+"w":"ходить",
+"d":"Регулярно курсировать по маршруту (о транспорте).",
+"t":{
+"en":"run",
+"nl":"rijden, gaan",
+"pl":"kursować, chodzić",
+"de":"verkehren, fahren",
+"fr":"circuler, passer",
+"it":"passare, essere in servizio",
+"cs":"jezdit",
+"tr":"çalışmak, sefer yapmak",
+"es":"pasar, circular"
+},
+"c":{
+"en":"of transport: to run on a route",
+"nl":"van vervoer: een route rijden",
+"pl":"o transporcie: kursować na trasie",
+"de":"von Verkehrsmitteln: auf einer Linie verkehren",
+"fr":"d'un transport : desservir une ligne",
+"it":"di un mezzo: fare servizio su una linea",
+"cs":"o dopravě: jezdit na lince",
+"tr":"taşıt için: hat üzerinde sefer yapmak",
+"es":"de un transporte: cubrir una línea"
+}
+},
+{
+"w":"ездить",
+"d":"Перемещаться в разных направлениях или регулярно с помощью транспортного средства (в отличие от ходьбы пешком).",
+"t":{
+"en":"go, travel, commute",
+"nl":"gaan, reizen, pendelen",
+"pl":"jeździć, podróżować, dojeżdżać",
+"de":"fahren, pendeln, reisen",
+"fr":"aller, faire le trajet",
+"it":"andare, viaggiare, fare il pendolare",
+"cs":"jezdit, cestovat, dojíždět",
+"tr":"gitmek, seyahat etmek, gidip gelmek",
+"es":"ir, viajar, desplazarse"
+}
+},
+{
+"w":"летать",
+"d":"Путешествовать или перемещаться по воздуху на самолёте, вертолёте или другом летательном аппарате.",
+"t":{
+"en":"fly, travel by air",
+"nl":"vliegen",
+"pl":"latać, lecieć",
+"de":"fliegen",
+"fr":"voler, voyager par avion",
+"it":"volare, viaggiare in aereo",
+"cs":"létat, cestovat letadlem",
+"tr":"uçmak",
+"es":"volar, viajar en avión"
+}
+},
+{
+"w":"приехать",
+"d":"Прибыть в какое-либо место, используя транспортное средство.",
+"t":{
+"en":"arrive, come",
+"nl":"aankomen, arriveren",
+"pl":"przyjechać",
+"de":"ankommen, eintreffen",
+"fr":"arriver, venir",
+"it":"arrivare",
+"cs":"přijet, dorazit",
+"tr":"varmak, gelmek",
+"es":"llegar, venir"
+}
+},
+{
+"w":"уехать",
+"d":"Покинуть какое-либо место на транспортном средстве, отправиться куда-либо.",
+"t":{
+"en":"leave, depart",
+"nl":"vertrekken, weggaan, op reis gaan",
+"pl":"wyjechać, odjechać",
+"de":"abfahren, verreisen, wegfahren",
+"fr":"partir, s'en aller",
+"it":"partire, andarsene",
+"cs":"odjet, odcestovat, odjet pryč",
+"tr":"gitmek, ayrılmak, yola çıkmak",
+"es":"irse, partir, marcharse"
+}
+},
+{
+"w":"доехать",
+"d":"Добраться до места назначения, используя транспортное средство.",
+"t":{
+"en":"get (to), reach, arrive",
+"nl":"bereiken, aankomen, geraken",
+"pl":"dojechać, dotrzeć",
+"de":"ankommen, hinkommen, erreichen",
+"fr":"arriver à, se rendre à",
+"it":"arrivare, raggiungere",
+"cs":"dojet, dostat se",
+"tr":"varmak, ulaşmak, gitmek",
+"es":"llegar, ir"
+}
+},
+{
+"w":"добраться",
+"d":"Прибыть в какое-либо место, достичь пункта назначения.",
+"t":{
+"en":"get to, reach",
+"nl":"bereiken, aankomen, geraken",
+"pl":"dotrzeć, dojechać",
+"de":"ankommen, erreichen, hinkommen",
+"fr":"arriver à, atteindre",
+"it":"arrivare a, raggiungere",
+"cs":"dostat se, dorazit",
+"tr":"varmak, ulaşmak",
+"es":"llegar a, alcanzar"
+}
+},
+{
+"w":"садиться",
+"d":"Заходить в транспортное средство для поездки.",
+"t":{
+"en":"board, get on",
+"nl":"instappen",
+"pl":"wsiadać",
+"de":"einsteigen",
+"fr":"monter",
+"it":"salire, imbarcarsi",
+"cs":"nastupovat, nastoupit",
+"tr":"binmek",
+"es":"subir, tomar"
+}
+},
+{
+"w":"сесть",
+"d":"Войти внутрь транспортного средства, чтобы совершить поездку.",
+"t":{
+"en":"to get on, to take, to get in",
+"nl":"instappen, nemen",
+"pl":"wsiąść",
+"de":"einsteigen, sich in etwas setzen",
+"fr":"monter dans, prendre",
+"it":"salire su, entrare in",
+"cs":"nastoupit, sednout si do",
+"tr":"binmek",
+"es":"subir, montar, entrar"
+}
+},
+{
+"w":"выходить",
+"d":"покидать какое-либо место, идя пешком",
+"t":{
+"en":"go out",
+"nl":"naar buiten gaan, uitgaan",
+"pl":"wychodzić",
+"de":"hinausgehen, herauskommen",
+"fr":"sortir",
+"it":"uscire",
+"cs":"vycházet",
+"tr":"çıkmak",
+"es":"salir"
+}
+},
+{
+"w":"выйти",
+"d":"Переместиться изнутри наружу, покинуть помещение или пределы чего-либо",
+"t":{
+"en":"go out, leave, exit, get out",
+"nl":"naar buiten gaan, verlaten, uitstappen",
+"pl":"wyjść, opuścić",
+"de":"hinausgehen, verlassen, aussteigen",
+"fr":"sortir, quitter",
+"it":"uscire, andare fuori, lasciare",
+"cs":"vyjít, odejít, vystoupit",
+"tr":"çıkmak, ayrılmak",
+"es":"salir, abandonar, bajarse"
+}
+},
+{
+"w":"переходить",
+"d":"Пересекать какое-либо пространство, перемещаться с одной стороны чего-либо на другую.",
+"t":{
+"en":"cross, go across",
+"nl":"oversteken, overgaan",
+"pl":"przechodzić, przekraczać",
+"de":"überqueren, hinübergehen",
+"fr":"traverser, passer",
+"it":"attraversare, passare",
+"cs":"přecházet, přejít",
+"tr":"karşıdan karşıya geçmek, geçmek",
+"es":"cruzar, atravesar"
+}
+},
+{
+"w":"перейти",
+"d":"Переместиться через какое-либо пространство или объект с одной стороны на другую.",
+"t":{
+"en":"cross, pass, get across",
+"nl":"oversteken, overgaan",
+"pl":"przechodzić, przekraczać",
+"de":"überqueren, hinübergehen",
+"fr":"traverser, franchir",
+"it":"attraversare, passare",
+"cs":"přejít, překročit",
+"tr":"karşıya geçmek, geçmek",
+"es":"cruzar, atravesar"
+}
+},
+{
+"w":"повернуть",
+"d":"Изменить направление своего движения, пойти или поехать в другую сторону.",
+"t":{
+"en":"turn",
+"nl":"afslaan, draaien",
+"pl":"skręcić, zawrócić",
+"de":"abbiegen, umkehren",
+"fr":"tourner",
+"it":"svoltare, girare",
+"cs":"zahnout, otočit se",
+"tr":"dönmek, sapmak",
+"es":"girar, doblar"
+}
+},
+{
+"w":"опаздывать",
+"d":"Приходить позже назначенного времени или не успевать к началу какого-либо события.",
+"t":{
+"en":"be late",
+"nl":"te laat komen, verlaat zijn",
+"pl":"spóźniać się",
+"de":"zu spät kommen, sich verspäten",
+"fr":"être en retard, arriver en retard",
+"it":"essere in ritardo, fare tardi, tardare",
+"cs":"opožďovat se, přicházet pozdě",
+"tr":"geç kalmak, gecikmek",
+"es":"llegar tarde, tardar"
+}
+},
+{
+"w":"опоздать",
+"d":"Прийти или приехать позже назначенного времени или ожидаемого срока.",
+"t":{
+"en":"be late, arrive late, miss",
+"nl":"te laat komen, missen",
+"pl":"spóźnić się, nie zdążyć",
+"de":"zu spät kommen, verpassen",
+"fr":"être en retard, manquer",
+"it":"fare tardi, essere in ritardo, perdere",
+"cs":"přijít pozdě, zmeškat",
+"tr":"geç kalmak, kaçırmak",
+"es":"llegar tarde, retrasarse, perder"
+}
+},
+{
+"w":"ждать",
+"d":"Находиться где-либо или проводить время в бездействии до появления кого-либо или наступления чего-либо.",
+"t":{
+"en":"wait, wait for",
+"nl":"wachten, wachten op",
+"pl":"czekać",
+"de":"warten, warten auf",
+"fr":"attendre",
+"it":"aspettare, attendere",
+"cs":"čekat",
+"tr":"beklemek",
+"es":"esperar, aguardar"
+}
+},
+{
+"w":"водить",
+"d":"Управлять транспортным средством (машиной, автобусом и т. д.).",
+"t":{
+"en":"drive",
+"nl":"rijden, besturen",
+"pl":"prowadzić, kierować",
+"de":"fahren, steuern",
+"fr":"conduire, piloter",
+"it":"guidare, condurre",
+"cs":"řídit, jezdit",
+"tr":"kullanmak, sürmek",
+"es":"conducir, manejar"
+}
+},
+{
+"w":"заблудиться",
+"d":"Потерять дорогу, сбиться с пути.",
+"t":{
+"en":"get lost, go astray",
+"nl":"verdwalen",
+"pl":"zgubić się, zabłądzić",
+"de":"sich verlaufen, sich verirren",
+"fr":"se perdre, s'égarer",
+"it":"perdersi, smarrire la strada",
+"cs":"ztratit se, zabloudit",
+"tr":"kaybolmak, yolunu şaşırmak",
+"es":"perderse"
+}
+},
+{
+"w":"остановиться",
+"d":"Прекратить двигаться, перестать идти или ехать",
+"t":{
+"en":"stop, come to a halt",
+"nl":"stoppen, tot stilstand komen",
+"pl":"zatrzymać się, stanąć",
+"de":"anhalten, stoppen",
+"fr":"s'arrêter",
+"it":"fermarsi, arrestarsi",
+"cs":"zastavit se, zastavit",
+"tr":"durmak, duraksamak",
+"es":"pararse, detenerse"
+},
+"c":{
+"en":"to come to a halt",
+"nl":"tot stilstand komen",
+"pl":"zatrzymać się w ruchu",
+"de":"zum Stehen kommen",
+"fr":"s'immobiliser",
+"it":"fermarsi, arrestarsi",
+"cs":"zastavit se v pohybu",
+"tr":"hareketi durdurmak",
+"es":"detenerse en marcha"
+}
+},
+{
+"w":"остановиться",
+"d":"Временно поселиться где-либо, например в гостинице или у знакомых",
+"t":{
+"en":"stay, stop",
+"nl":"verblijven, overnachten",
+"pl":"zatrzymać się, zamieszkać",
+"de":"übernachten, absteigen, unterkommen",
+"fr":"descendre, séjourner, s'arrêter",
+"it":"alloggiare, fermarsi, soggiornare",
+"cs":"ubytovat se, zastavit se",
+"tr":"kalmak, konaklamak",
+"es":"hospedarse, quedarse"
+},
+"c":{
+"en":"to stay somewhere for a while",
+"nl":"ergens tijdelijk verblijven",
+"pl":"zatrzymać się na nocleg",
+"de":"vorübergehend unterkommen",
+"fr":"loger quelque part un moment",
+"it":"alloggiare, fermarsi da qualcuno",
+"cs":"dočasně se ubytovat",
+"tr":"bir yerde geçici kalmak",
+"es":"alojarse un tiempo"
+}
+},
+{
+"w":"близкий",
+"d":"Находящийся на небольшом расстоянии от кого-либо или чего-либо.",
+"t":{
+"en":"near, close",
+"nl":"dichtbij, nabij",
+"pl":"bliski",
+"de":"nah",
+"fr":"proche",
+"it":"vicino",
+"cs":"blízký",
+"tr":"yakın",
+"es":"cercano, próximo"
+}
+},
+{
+"w":"быстрый",
+"d":"Движущийся или происходящий с большой скоростью.",
+"t":{
+"en":"fast, rapid, quick",
+"nl":"snel, vlug",
+"pl":"szybki, prędki",
+"de":"schnell, rasch",
+"fr":"rapide",
+"it":"veloce, rapido",
+"cs":"rychlý",
+"tr":"hızlı, süratli",
+"es":"rápido"
+}
+},
+{
+"w":"медленный",
+"d":"Имеющий небольшую скорость, совершающийся за большой промежуток времени.",
+"t":{
+"en":"slow, leisurely",
+"nl":"langzaam, traag",
+"pl":"wolny, powolny",
+"de":"langsam",
+"fr":"lent",
+"it":"lento, calmo",
+"cs":"pomalý, pozvolný",
+"tr":"yavaş, ağır",
+"es":"lento, tardío"
+}
+},
+{
+"w":"городской",
+"d":"Связанный с городом, находящийся в городе или свойственный ему.",
+"t":{
+"en":"urban, city, municipal",
+"nl":"stedelijk, stads-, gemeentelijk",
+"pl":"miejski",
+"de":"städtisch, Stadt-, stadteigen",
+"fr":"urbain, de ville, municipal",
+"it":"urbano, cittadino",
+"cs":"městský",
+"tr":"kentsel, şehir, belediye",
+"es":"urbano, de la ciudad"
+}
+},
+{
+"w":"общественный",
+"d":"Значимый для широкого круга людей, публичный, открытый для всех.",
+"t":{
+"en":"public",
+"nl":"openbaar",
+"pl":"publiczny",
+"de":"öffentlich",
+"fr":"public",
+"it":"pubblico",
+"cs":"veřejný",
+"tr":"kamusal",
+"es":"público"
+}
+},
+{
+"w":"центральный",
+"d":"Находящийся в центре или в середине чего-либо.",
+"t":{
+"en":"central",
+"nl":"centraal",
+"pl":"centralny, środkowy",
+"de":"zentral",
+"fr":"central",
+"it":"centrale",
+"cs":"centrální, středový",
+"tr":"merkezi, orta",
+"es":"central"
+}
+},
+{
+"w":"прямо",
+"d":"В прямом направлении, ровно, не сворачивая в сторону.",
+"t":{
+"en":"straight, directly",
+"nl":"rechtdoor, recht",
+"pl":"prosto, bezpośrednio",
+"de":"geradeaus, direkt",
+"fr":"tout droit, directement",
+"it":"diritto, direttamente",
+"cs":"rovně, přímo",
+"tr":"düz, dosdoğru",
+"es":"derecho, directamente"
+}
+},
+{
+"w":"налево",
+"d":"В левую сторону; по направлению к левой стороне.",
+"t":{
+"en":"left, to the left",
+"nl":"links, naar links",
+"pl":"w lewo, na lewo",
+"de":"links, nach links",
+"fr":"à gauche",
+"it":"a sinistra",
+"cs":"doleva, vlevo",
+"tr":"sola, sol tarafa",
+"es":"a la izquierda"
+}
+},
+{
+"w":"направо",
+"d":"В правую сторону; по направлению к правой руке.",
+"t":{
+"en":"right, to the right",
+"nl":"rechts, naar rechts",
+"pl":"w prawo",
+"de":"nach rechts",
+"fr":"à droite",
+"it":"a destra",
+"cs":"doprava",
+"tr":"sağa",
+"es":"a la derecha"
+}
+},
+{
+"w":"пешком",
+"d":"Передвигаясь с помощью собственных ног, шагом, без использования транспорта.",
+"t":{
+"en":"on foot",
+"nl":"te voet",
+"pl":"pieszo",
+"de":"zu Fuß",
+"fr":"à pied",
+"it":"a piedi",
+"cs":"pěšky",
+"tr":"yürüyerek, yaya olarak",
+"es":"a pie, andando"
+}
+},
+{
+"w":"ремень",
+"d":"Ремень безопасности в автомобиле или другом транспортном средстве.",
+"t":{
+"en":"seat belt, belt",
+"nl":"gordel, veiligheidsgordel",
+"pl":"pas bezpieczeństwa, pas",
+"de":"Sicherheitsgurt, Gurt",
+"fr":"ceinture de sécurité, ceinture",
+"it":"cintura di sicurezza",
+"cs":"bezpečnostní pás",
+"tr":"emniyet kemeri",
+"es":"cinturón de seguridad"
+}
 }
 ]

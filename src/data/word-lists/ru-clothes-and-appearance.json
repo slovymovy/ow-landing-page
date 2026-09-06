@@ -343,5 +343,1287 @@
 "tr":"sıcak, kalın",
 "es":"abrigado, caliente, cálido"
 }
+},
+{
+"w":"юбка",
+"d":"Предмет женской одежды, покрывающий нижнюю часть тела от талии.",
+"t":{
+"en":"skirt",
+"nl":"rok",
+"pl":"spódnica",
+"de":"Rock",
+"fr":"jupe",
+"it":"gonna",
+"cs":"sukně",
+"tr":"etek",
+"es":"falda, saya"
+}
+},
+{
+"w":"футболка",
+"d":"Трикотажная рубашка без пуговиц, воротника и карманов, обычно с короткими рукавами.",
+"t":{
+"en":"T-shirt, tee",
+"nl":"T-shirt, T-hemd",
+"pl":"T-shirt, koszulka, koszulka sportowa",
+"de":"T-Shirt",
+"fr":"t-shirt, tee-shirt, chandail à manches courtes",
+"it":"maglietta, t-shirt",
+"cs":"tričko",
+"tr":"tişört",
+"es":"camiseta, playera, remera, franela"
+}
+},
+{
+"w":"блузка",
+"d":"Женская одежда из легкой ткани, надеваемая поверх юбки или брюк.",
+"t":{
+"en":"blouse",
+"nl":"blouse",
+"pl":"bluzka",
+"de":"Bluse",
+"fr":"chemisier, blouse",
+"it":"camicetta, blusa",
+"cs":"blůza",
+"tr":"bluz",
+"es":"blusa"
+}
+},
+{
+"w":"кофта",
+"d":"Короткая одежда для верхней части тела, обычно изготовляемая из мягкой ткани.",
+"t":{
+"en":"cardigan, knitted jacket, sweater",
+"nl":"vest, trui, gebreid jasje",
+"pl":"sweter, kardigan, bluza",
+"de":"Strickjacke, Pullover, Jacke",
+"fr":"gilet, cardigan, pull",
+"it":"cardigan, maglione, giacca di maglia",
+"cs":"svetřík, kardigan, mikina",
+"tr":"hırka, kazak",
+"es":"cárdigan, suéter, chaqueta de punto"
+}
+},
+{
+"w":"толстовка",
+"d":"Верхняя спортивная одежда свободного кроя из плотной ткани, часто с длинными рукавами.",
+"t":{
+"en":"sweatshirt, hoodie",
+"nl":"sweatshirt, hoodie",
+"pl":"bluza, bluza z kapturem",
+"de":"Sweatshirt, Kapuzenpullover",
+"fr":"sweat-shirt, sweat à capuche",
+"it":"felpa, felpa con cappuccio",
+"cs":"mikina, mikina s kapucí",
+"tr":"sweatshirt, kapüşonlu sweatshirt",
+"es":"sudadera, chaqueta deportiva, sudadera con capucha"
+}
+},
+{
+"w":"майка",
+"d":"трикотажная одежда без воротника, без рукавов или с короткими рукавами",
+"t":{
+"en":"undershirt, T-shirt, tank top",
+"nl":"hemd, T-shirt, tanktop",
+"pl":"podkoszulek, koszulka, tank top",
+"de":"Unterhemd, Tanktop",
+"fr":"maillot de corps, T-shirt",
+"it":"canottiera, maglietta",
+"cs":"tílko, tričko",
+"tr":"atlet, tişört",
+"es":"camiseta, camiseta de tirantes, camiseta interior"
+}
+},
+{
+"w":"шорты",
+"d":"Короткие штаны, не доходящие до колен, которые обычно носят летом.",
+"t":{
+"en":"shorts",
+"nl":"short",
+"pl":"szorty, krótkie spodenki",
+"de":"Shorts",
+"fr":"short",
+"it":"shorts, calzoncini",
+"cs":"kraťasy, šortky",
+"tr":"şort",
+"es":"shorts, pantalón corto"
+}
+},
+{
+"w":"костюм",
+"d":"Комплект верхней одежды, обычно состоящий из пиджака и брюк или юбки, сшитых из одной ткани.",
+"t":{
+"en":"suit",
+"nl":"kostuum, pak",
+"pl":"garnitur, kostium",
+"de":"Anzug, Kostüm",
+"fr":"costume, tailleur, ensemble",
+"it":"abito, completo",
+"cs":"oblek",
+"tr":"takım elbise",
+"es":"traje, ambo"
+}
+},
+{
+"w":"жилет",
+"d":"Мужская или женская одежда без рукавов, надеваемая поверх рубашки или блузки.",
+"t":{
+"en":"vest, waistcoat, gilet",
+"nl":"gilet, vest",
+"pl":"kamizelka, bezrękawnik",
+"de":"Weste, Pullunder",
+"fr":"gilet, sans-manches",
+"it":"gilet, panciotto",
+"cs":"vesta, kamizola",
+"tr":"yelek",
+"es":"chaleco"
+}
+},
+{
+"w":"плащ",
+"d":"Лёгкое, обычно непромокаемое пальто, защищающее от дождя.",
+"t":{
+"en":"raincoat, slicker",
+"nl":"regenjas, trenchcoat",
+"pl":"płaszcz przeciwdeszczowy, peleryna",
+"de":"Regenmantel, Mantel",
+"fr":"imperméable, manteau de pluie",
+"it":"impermeabile",
+"cs":"pláštěnka, pršiplášť",
+"tr":"yağmurluk, pardösü",
+"es":"impermeable, chubasquero"
+}
+},
+{
+"w":"шуба",
+"d":"Верхняя зимняя одежда из меха или на меху.",
+"t":{
+"en":"fur coat",
+"nl":"bontjas",
+"pl":"futro, kożuch",
+"de":"Pelzmantel, Pelz",
+"fr":"manteau de fourrure",
+"it":"pelliccia",
+"cs":"kožich",
+"tr":"kürk",
+"es":"abrigo de piel"
+}
+},
+{
+"w":"пуховик",
+"d":"куртка или пальто, утепленные пухом",
+"t":{
+"en":"down jacket, puffer jacket",
+"nl":"donsjas, pufferjack",
+"pl":"kurtka puchowa, puchówka",
+"de":"Daunenjacke, Steppjacke",
+"fr":"doudoune",
+"it":"piumino, giubbotto imbottito",
+"cs":"péřová bunda, prošívaná bunda",
+"tr":"kaz tüyü mont, şişme mont",
+"es":"chaqueta de plumas, plumífero"
+}
+},
+{
+"w":"халат",
+"d":"Домашняя одежда для отдыха, запахивающаяся или застёгивающаяся спереди, которую часто надевают после сна или душа.",
+"t":{
+"en":"bathrobe, dressing gown, robe",
+"nl":"badjas, ochtendjas",
+"pl":"szlafrok, podomka",
+"de":"Bademantel, Morgenmantel",
+"fr":"peignoir, robe de chambre",
+"it":"accappatoio, vestaglia",
+"cs":"župan",
+"tr":"bornoz, sabahlık",
+"es":"bata, albornoz"
+},
+"c":{
+"en":"worn at home",
+"nl":"voor thuis",
+"pl":"noszony w domu",
+"de":"für zu Hause",
+"fr":"porté à la maison",
+"it":"da casa",
+"cs":"domácí",
+"tr":"evde giyilen",
+"es":"para estar en casa"
+}
+},
+{
+"w":"халат",
+"d":"Специальная рабочая одежда, которую носят врачи, лаборанты, повара и другие специалисты.",
+"t":{
+"en":"lab coat, smock",
+"nl":"doktersjas, labjas, kiel",
+"pl":"fartuch",
+"de":"Kittel",
+"fr":"blouse, tablier",
+"it":"camice, grembiule",
+"cs":"plášť, zástěra",
+"tr":"önlük, beyaz önlük",
+"es":"bata blanca, bata de laboratorio, delantal"
+},
+"c":{
+"en":"worn at work, over other clothes",
+"nl":"voor het werk, over andere kleding",
+"pl":"roboczy, noszony na ubranie",
+"de":"für die Arbeit, über der Kleidung",
+"fr":"porté au travail, par-dessus les vêtements",
+"it":"da lavoro, sopra gli abiti",
+"cs":"pracovní, přes oblečení",
+"tr":"işte, giysinin üzerine giyilen",
+"es":"de trabajo, sobre la ropa"
+}
+},
+{
+"w":"пижама",
+"d":"Костюм для сна или отдыха, состоящий из свободных брюк и куртки.",
+"t":{
+"en":"pyjamas, pajamas",
+"nl":"pyjama",
+"pl":"piżama",
+"de":"Schlafanzug, Pyjama",
+"fr":"pyjama",
+"it":"pigiama",
+"cs":"pyžamo",
+"tr":"pijama",
+"es":"pijama"
+}
+},
+{
+"w":"бельё",
+"d":"предметы одежды, надеваемые непосредственно на тело",
+"t":{
+"en":"underwear, lingerie",
+"nl":"ondergoed, lingerie",
+"pl":"bielizna",
+"de":"Unterwäsche",
+"fr":"sous-vêtements, lingerie",
+"it":"biancheria intima, lingerie",
+"cs":"spodní prádlo",
+"tr":"iç çamaşırı",
+"es":"ropa interior, lencería"
+}
+},
+{
+"w":"лифчик",
+"d":"Предмет женского нижнего белья, поддерживающий грудь; бюстгальтер.",
+"t":{
+"en":"bra, brassiere",
+"nl":"beha, bh",
+"pl":"stanik, biustonosz",
+"de":"BH, Büstenhalter",
+"fr":"soutien-gorge, soutif",
+"it":"reggiseno",
+"cs":"podprsenka",
+"tr":"sütyen",
+"es":"sujetador, brasier"
+}
+},
+{
+"w":"колготки",
+"d":"Предмет женской или детской одежды, представляющий собой облегающие чулки, соединенные с трусами.",
+"t":{
+"en":"tights, pantyhose",
+"nl":"panty, maillot",
+"pl":"rajstopy",
+"de":"Strumpfhose",
+"fr":"collants",
+"it":"collant",
+"cs":"punčocháče",
+"tr":"külotlu çorap",
+"es":"leotardos, medias"
+}
+},
+{
+"w":"плавки",
+"d":"Короткие, плотно прилегающие мужские трусы для купания и плавания.",
+"t":{
+"en":"swimming trunks, swim briefs, trunks",
+"nl":"zwembroek, zwemslip",
+"pl":"kąpielówki",
+"de":"Badehose, Badeslip",
+"fr":"maillot de bain, slip de bain",
+"it":"costume da bagno, slip da bagno",
+"cs":"plavky",
+"tr":"deniz şortu, yüzücü mayosu",
+"es":"bañador, slip de baño"
+}
+},
+{
+"w":"форма",
+"d":"Единая по стилю одежда для людей определённой профессии или организации.",
+"t":{
+"en":"uniform",
+"nl":"uniform",
+"pl":"mundur, mundurek",
+"de":"Uniform",
+"fr":"uniforme, tenue",
+"it":"divisa, uniforme",
+"cs":"uniforma",
+"tr":"üniforma",
+"es":"uniforme"
+}
+},
+{
+"w":"штаны",
+"d":"Предмет верхней одежды, покрывающий нижнюю часть тела и каждую ногу отдельно.",
+"t":{
+"en":"pants, trousers",
+"nl":"broek, pantalon",
+"pl":"spodnie",
+"de":"Hose",
+"fr":"pantalon",
+"it":"pantaloni, calzoni",
+"cs":"kalhoty",
+"tr":"pantolon, pantol",
+"es":"pantalones"
+}
+},
+{
+"w":"комбинезон",
+"d":"Предмет одежды, представляющий собой соединение верхней части (куртки или рубашки) и брюк в одно целое.",
+"t":{
+"en":"overalls, jumpsuit, snowsuit",
+"nl":"overall, jumpsuit, skipak",
+"pl":"kombinezon, kombinezon roboczy, kombinezon zimowy",
+"de":"Overall, Jumpsuit, Schneeanzug",
+"fr":"combinaison, combinaison de travail, combinaison de ski",
+"it":"tuta, salopette",
+"cs":"kombinéza, montérky, overal",
+"tr":"tulum, iş tulumu, kar tulumu",
+"es":"mono, traje de faena, buzo"
+}
+},
+{
+"w":"каблук",
+"d":"деталь обуви, твёрдая набойка на подошве под пяткой",
+"t":{
+"en":"heel",
+"nl":"hak",
+"pl":"obcas",
+"de":"Absatz",
+"fr":"talon",
+"it":"tacco",
+"cs":"podpatek",
+"tr":"topuk, ökçe",
+"es":"tacón, taco"
+}
+},
+{
+"w":"платок",
+"d":"Предмет одежды в виде куска ткани, обычно квадратной формы, который повязывают на голову или накидывают на плечи.",
+"t":{
+"en":"shawl, headscarf",
+"nl":"hoofddoek, sjaal",
+"pl":"chusta, chustka, szal",
+"de":"Kopftuch, Schultertuch, Schal",
+"fr":"fichu, châle",
+"it":"scialle, foulard, fazzoletto da testa",
+"cs":"šátek, šál",
+"tr":"başörtüsü, şal",
+"es":"pañuelo, chal"
+}
+},
+{
+"w":"шляпа",
+"d":"Головной убор, обычно состоящий из тульи (верхней части) и полей.",
+"t":{
+"en":"hat",
+"nl":"hoed",
+"pl":"kapelusz",
+"de":"Hut",
+"fr":"chapeau, couvre-chef",
+"it":"cappello",
+"cs":"klobouk",
+"tr":"şapka",
+"es":"sombrero"
+}
+},
+{
+"w":"кепка",
+"d":"Мягкий головной убор с козырьком, обычно мужской.",
+"t":{
+"en":"cap, peaked cap",
+"nl":"pet, baseballpet",
+"pl":"czapka z daszkiem, kaszkiet",
+"de":"Schirmmütze, Cap",
+"fr":"casquette",
+"it":"berretto, cappellino",
+"cs":"kšiltovka, čepice s kšiltem",
+"tr":"kasket, şapka",
+"es":"gorra, gorra con visera"
+}
+},
+{
+"w":"галстук",
+"d":"Предмет мужской одежды в виде полосы ткани, которую завязывают узлом вокруг шеи под воротником рубашки.",
+"t":{
+"en":"tie, necktie",
+"nl":"das",
+"pl":"krawat",
+"de":"Krawatte, Schlips",
+"fr":"cravate",
+"it":"cravatta",
+"cs":"kravata",
+"tr":"kravat",
+"es":"corbata"
+}
+},
+{
+"w":"ремень",
+"d":"Предмет одежды в виде длинной полосы кожи или ткани, служащий для поддержания брюк или для украшения.",
+"t":{
+"en":"belt",
+"nl":"riem, ceintuur",
+"pl":"pasek",
+"de":"Gürtel",
+"fr":"ceinture",
+"it":"cintura",
+"cs":"pásek, opasek",
+"tr":"kemer, kayış",
+"es":"cinturón, correa"
+}
+},
+{
+"w":"кошелёк",
+"d":"небольшой предмет для хранения денег и банковских карт",
+"t":{
+"en":"wallet",
+"nl":"portemonnee, beurs",
+"pl":"portfel",
+"de":"Geldbörse, Portemonnaie",
+"fr":"portefeuille, porte-monnaie",
+"it":"portafoglio",
+"cs":"peněženka, portmonka",
+"tr":"cüzdan, para çantası",
+"es":"billetera, cartera"
+}
+},
+{
+"w":"рюкзак",
+"d":"Заплечный мешок с лямками для ношения вещей за спиной.",
+"t":{
+"en":"backpack, rucksack",
+"nl":"rugzak, rugtas",
+"pl":"plecak",
+"de":"Rucksack",
+"fr":"sac à dos",
+"it":"zaino, sacco da montagna",
+"cs":"batoh, ruksak",
+"tr":"sırt çantası, kamp çantası",
+"es":"mochila, morral"
+}
+},
+{
+"w":"зонт",
+"d":"складывающееся приспособление на трости, обтянутое тканью, для защиты от дождя или солнца",
+"t":{
+"en":"umbrella",
+"nl":"paraplu",
+"pl":"parasol",
+"de":"Regenschirm, Schirm",
+"fr":"parapluie",
+"it":"ombrello",
+"cs":"deštník",
+"tr":"şemsiye",
+"es":"paraguas"
+}
+},
+{
+"w":"часы",
+"d":"Прибор или механизм, предназначенный для определения и измерения времени в пределах суток.",
+"t":{
+"en":"watch, clock",
+"nl":"horloge, klok",
+"pl":"zegarek, zegar",
+"de":"Uhr",
+"fr":"montre, horloge, pendule",
+"it":"orologio",
+"cs":"hodinky, hodiny",
+"tr":"saat",
+"es":"reloj"
+}
+},
+{
+"w":"украшение",
+"d":"Предмет, который придаёт красоту, нарядный вид; драгоценность или бижутерия",
+"t":{
+"en":"decoration, ornament, jewelry",
+"nl":"versiering, sieraad, ornament",
+"pl":"ozdoba, biżuteria, dekoracja",
+"de":"Schmuck, Dekoration, Verzierung",
+"fr":"ornement, parure, décoration",
+"it":"decorazione, ornamento, gioiello",
+"cs":"ozdoba, šperk, dekorace",
+"tr":"süs, takı, dekorasyon",
+"es":"adorno, joya, decoración"
+}
+},
+{
+"w":"карман",
+"d":"Деталь одежды, сумки или рюкзака в виде вшитого или нашитого мешочка для ношения мелких предметов.",
+"t":{
+"en":"pocket",
+"nl":"zak",
+"pl":"kieszeń",
+"de":"Tasche",
+"fr":"poche, gousset",
+"it":"tasca",
+"cs":"kapsa",
+"tr":"cep",
+"es":"bolsillo"
+}
+},
+{
+"w":"пуговица",
+"d":"небольшой предмет, обычно круглой формы, который пришивается к одежде для застегивания",
+"t":{
+"en":"button",
+"nl":"knoop",
+"pl":"guzik",
+"de":"Knopf",
+"fr":"bouton",
+"it":"bottone",
+"cs":"knoflík",
+"tr":"düğme",
+"es":"botón"
+}
+},
+{
+"w":"молния",
+"d":"застёжка в виде двух полос ткани с рядами сцепляемых зубцов",
+"t":{
+"en":"zipper, zip",
+"nl":"ritssluiting, rits",
+"pl":"zamek błyskawiczny, suwak",
+"de":"Reißverschluss",
+"fr":"fermeture éclair, fermeture Éclair",
+"it":"lampo, cerniera",
+"cs":"zip, zdrhovadlo",
+"tr":"fermuar",
+"es":"cremallera"
+}
+},
+{
+"w":"воротник",
+"d":"деталь одежды, полоса ткани, обрамляющая вырез горловины",
+"t":{
+"en":"collar",
+"nl":"kraag",
+"pl":"kołnierz",
+"de":"Kragen",
+"fr":"col, collet",
+"it":"colletto, collo",
+"cs":"límec",
+"tr":"yaka",
+"es":"cuello"
+}
+},
+{
+"w":"рукав",
+"d":"Часть одежды, покрывающая руку (полностью или частично).",
+"t":{
+"en":"sleeve",
+"nl":"mouw",
+"pl":"rękaw",
+"de":"Ärmel",
+"fr":"manche",
+"it":"manica",
+"cs":"rukáv",
+"tr":"kol",
+"es":"manga"
+}
+},
+{
+"w":"размер",
+"d":"Установленная мерка, номер или буква, обозначающие величину одежды, обуви и других изделий.",
+"t":{
+"en":"size",
+"nl":"maat",
+"pl":"rozmiar",
+"de":"Größe",
+"fr":"taille, pointure",
+"it":"taglia, numero",
+"cs":"velikost",
+"tr":"beden, numara",
+"es":"talla, número"
+}
+},
+{
+"w":"ткань",
+"d":"Материал, изготовленный из нитей или волокон на станке или другим способом, используемый для шитья одежды и других изделий.",
+"t":{
+"en":"fabric, material, cloth",
+"nl":"stof, weefsel",
+"pl":"tkanina, materiał",
+"de":"Stoff, Gewebe",
+"fr":"tissu, étoffe",
+"it":"tessuto, stoffa",
+"cs":"látka, textilie",
+"tr":"kumaş, dokuma",
+"es":"tela, tejido"
+}
+},
+{
+"w":"шерсть",
+"d":"Ткань, изготовленная из шерстяной пряжи, а также одежда из такой ткани.",
+"t":{
+"en":"wool",
+"nl":"wol",
+"pl":"wełna",
+"de":"Wolle, Wollstoff",
+"fr":"laine, lainage",
+"it":"lana",
+"cs":"vlna",
+"tr":"yünlü",
+"es":"lana"
+}
+},
+{
+"w":"кожа",
+"d":"Выделанная шкура животного, используемая как материал для изготовления одежды, обуви и других изделий.",
+"t":{
+"en":"leather",
+"nl":"leer, leder",
+"pl":"skóra",
+"de":"Leder",
+"fr":"cuir, peau",
+"it":"pelle, cuoio",
+"cs":"kůže, useň",
+"tr":"deri",
+"es":"cuero, piel"
+}
+},
+{
+"w":"хлопок",
+"d":"Натуральная ткань или нить, изготовленная из волокон хлопчатника.",
+"t":{
+"en":"cotton",
+"nl":"katoen",
+"pl":"bawełna",
+"de":"Baumwolle",
+"fr":"coton",
+"it":"cotone",
+"cs":"bavlna",
+"tr":"pamuk, pamuklu",
+"es":"algodón"
+}
+},
+{
+"w":"цвет",
+"d":"Окраска, световой тон, свойство предмета вызывать определённое зрительное ощущение в зависимости от спектра отражаемого или испускаемого света.",
+"t":{
+"en":"color, colour",
+"nl":"kleur",
+"pl":"kolor, barwa",
+"de":"Farbe",
+"fr":"couleur",
+"it":"colore, tinta",
+"cs":"barva",
+"tr":"renk",
+"es":"color"
+}
+},
+{
+"w":"скидка",
+"d":"Уменьшение установленной цены на товар или услугу.",
+"t":{
+"en":"discount, reduction",
+"nl":"korting, reductie",
+"pl":"zniżka, rabat, upust",
+"de":"Rabatt, Preisnachlass, Preisermäßigung",
+"fr":"remise, rabais, réduction",
+"it":"sconto, riduzione, abbuono",
+"cs":"sleva",
+"tr":"indirim, iskonto, tenzilat",
+"es":"descuento, rebaja"
+}
+},
+{
+"w":"распродажа",
+"d":"Торговля товарами по сниженным ценам для их быстрой реализации.",
+"t":{
+"en":"sale, clearance sale",
+"nl":"uitverkoop, opruiming",
+"pl":"wyprzedaż, promocja",
+"de":"Schlussverkauf, Sonderangebot",
+"fr":"soldes, liquidation",
+"it":"saldi, vendita promozionale, liquidazione",
+"cs":"výprodej, akce",
+"tr":"indirim, ucuzluk, tasfiye satışı",
+"es":"rebajas, oferta, liquidación"
+}
+},
+{
+"w":"примерочная",
+"d":"Специальное помещение в магазине, где покупатель может примерить одежду перед покупкой.",
+"t":{
+"en":"fitting room, changing room",
+"nl":"pashokje, pasruimte",
+"pl":"przymierzalnia",
+"de":"Umkleidekabine, Anprobe",
+"fr":"cabine d'essayage",
+"it":"camerino, camerino di prova",
+"cs":"kabinka, zkušební kabinka",
+"tr":"kabin, deneme kabini",
+"es":"probador, vestidor"
+}
+},
+{
+"w":"чек",
+"d":"Талон из кассы, подтверждающий, что товар или услуга были оплачены.",
+"t":{
+"en":"receipt",
+"nl":"bon, kassabon, reçu",
+"pl":"paragon, rachunek",
+"de":"Kassenbon, Quittung, Kassenzettel",
+"fr":"ticket de caisse, reçu, facture",
+"it":"scontrino, ricevuta",
+"cs":"účtenka, paragon, pokladní stvrzenka",
+"tr":"fiş, fatura",
+"es":"ticket, recibo, factura"
+}
+},
+{
+"w":"мода",
+"d":"Временное господство определенных вкусов в одежде или поведении.",
+"t":{
+"en":"fashion",
+"nl":"mode",
+"pl":"moda",
+"de":"Mode, in Mode",
+"fr":"mode",
+"it":"moda, in voga",
+"cs":"móda",
+"tr":"moda",
+"es":"moda, estar de moda"
+}
+},
+{
+"w":"надеть",
+"d":"Покрыть тело или часть тела одеждой, обувью или аксессуарами.",
+"t":{
+"en":"put on, don",
+"nl":"aantrekken, opzetten, omdoen",
+"pl":"założyć, ubrać",
+"de":"anziehen, aufsetzen",
+"fr":"mettre, enfiler, revêtir",
+"it":"indossare, mettersi, calzare",
+"cs":"obléknout si, obout si, navléknout si",
+"tr":"giymek, takmak",
+"es":"ponerse, vestir, calzar"
+}
+},
+{
+"w":"одеться",
+"d":"Надеть на себя одежду",
+"t":{
+"en":"get dressed, dress",
+"nl":"zich aankleden, zich kleden",
+"pl":"ubrać się",
+"de":"sich anziehen, sich kleiden",
+"fr":"s'habiller, se vêtir",
+"it":"vestirsi",
+"cs":"obléknout se",
+"tr":"giyinmek",
+"es":"vestirse"
+}
+},
+{
+"w":"снять",
+"d":"Отделить предмет одежды, обуви или аксессуар от тела.",
+"t":{
+"en":"take off, remove",
+"nl":"uittrekken, afdoen",
+"pl":"zdjąć",
+"de":"ausziehen, abnehmen",
+"fr":"enlever, ôter",
+"it":"togliersi, levarsi",
+"cs":"svléknout, zout, sundat",
+"tr":"çıkarmak",
+"es":"quitarse"
+}
+},
+{
+"w":"примерять",
+"d":"надевать одежду или аксессуары, чтобы проверить, подходят ли они по размеру",
+"t":{
+"en":"try on",
+"nl":"passen, aanpassen",
+"pl":"przymierzać",
+"de":"anprobieren",
+"fr":"essayer",
+"it":"provare, indossare per prova",
+"cs":"zkoušet si",
+"tr":"denemek",
+"es":"probarse"
+}
+},
+{
+"w":"застегнуть",
+"d":"Соединить края одежды, обуви или аксессуаров с помощью пуговиц, молнии или других застёжек.",
+"t":{
+"en":"to button up, to zip up, to fasten",
+"nl":"dichtdoen, dichtknopen, dichtritsen, vastmaken",
+"pl":"zapiąć, zasunąć, zapiąć na guziki",
+"de":"zuknöpfen, zumachen, schließen, den Reißverschluss hochziehen",
+"fr":"fermer, boutonner, zipper",
+"it":"allacciare, abbottonare, chiudere",
+"cs":"zapnout, zapnout si, zapnout na knoflíky, zapnout na zip",
+"tr":"iliklemek, fermuarını çekmek, kapatmak, bağlamak",
+"es":"abrochar, cerrar, abotonar"
+}
+},
+{
+"w":"завязать",
+"d":"Сделать узел, соединив концы веревки, шнурка или ткани.",
+"t":{
+"en":"tie, knot, tie up",
+"nl":"strikken, vastknopen, knopen",
+"pl":"wiązać, zawiązać",
+"de":"binden, zuknoten",
+"fr":"nouer, attacher",
+"it":"annodare, legare, allacciare",
+"cs":"zavázat, uvázat",
+"tr":"bağlamak, düğümlemek",
+"es":"atar, anudar"
+}
+},
+{
+"w":"стирать",
+"d":"Мыть одежду, бельё или другие изделия из ткани с помощью воды и моющих средств.",
+"t":{
+"en":"wash, launder",
+"nl":"wassen",
+"pl":"prać",
+"de":"waschen",
+"fr":"laver, faire une lessive",
+"it":"lavare",
+"cs":"prát",
+"tr":"yıkamak",
+"es":"lavar"
+}
+},
+{
+"w":"покупать",
+"d":"Приобретать что-либо в собственность за деньги.",
+"t":{
+"en":"buy, purchase",
+"nl":"kopen, aanschaffen",
+"pl":"kupować",
+"de":"kaufen, anschaffen",
+"fr":"acheter",
+"it":"comprare, acquistare",
+"cs":"kupovat, pořizovat",
+"tr":"satın almak, almak",
+"es":"comprar, adquirir"
+}
+},
+{
+"w":"купить",
+"d":"Получить что-либо в собственность в обмен на деньги.",
+"t":{
+"en":"buy, purchase",
+"nl":"kopen, aanschaffen",
+"pl":"kupić, zakupić",
+"de":"kaufen, erwerben",
+"fr":"acheter, acquérir",
+"it":"comprare, acquistare, comperare",
+"cs":"koupit, nakoupit",
+"tr":"satın almak, almak",
+"es":"comprar, adquirir"
+}
+},
+{
+"w":"подходить",
+"d":"Быть годным, приемлемым, соответствовать требованиям, размеру или внешнему виду.",
+"t":{
+"en":"fit, suit, do",
+"nl":"passen, staan, geschikt zijn",
+"pl":"pasować, odpowiadać",
+"de":"passen, stehen, geeignet sein",
+"fr":"convenir, aller, correspondre",
+"it":"andare bene, stare bene, entrare",
+"cs":"sedět, slušet, vyhovovat",
+"tr":"uymak, yakışmak, yaramak",
+"es":"quedar bien, encajar, ser adecuado"
+}
+},
+{
+"w":"подойти",
+"d":"Оказаться годным, приемлемым или соответствующим по размеру, качеству или назначению.",
+"t":{
+"en":"fit, suit, do",
+"nl":"passen, geschikt zijn, uitkomen",
+"pl":"pasować, nadawać się",
+"de":"passen, geeignet sein, infrage kommen",
+"fr":"aller, convenir, correspondre",
+"it":"andare bene, calzare, essere adatto",
+"cs":"sedět, hodit se, vyhovovat",
+"tr":"uymak, yakışmak, yeterli olmak",
+"es":"quedar, servir, encajar"
+}
+},
+{
+"w":"идти",
+"d":"Быть к лицу, подходить (об одежде, стиле, цвете).",
+"t":{
+"en":"suit, look good on",
+"nl":"staan, passen",
+"pl":"pasować, dobrze leżeć",
+"de":"stehen, passen",
+"fr":"aller, bien aller",
+"it":"stare bene, donare",
+"cs":"slušet",
+"tr":"yakışmak, gitmek",
+"es":"quedar bien, sentar bien"
+}
+},
+{
+"w":"новый",
+"d":"Тот, которого не было раньше, возникший или появившийся недавно; пришедший на смену старому.",
+"t":{
+"en":"new, brand-new",
+"nl":"nieuw, gloednieuw",
+"pl":"nowy",
+"de":"neu, brandneu",
+"fr":"nouveau, neuf",
+"it":"nuovo, nuovissimo",
+"cs":"nový, zbrusu nový",
+"tr":"yeni, yeni",
+"es":"nuevo"
+}
+},
+{
+"w":"старый",
+"d":"Не новый, долго бывший в употреблении, ставший ветхим или испорченным.",
+"t":{
+"en":"old, worn",
+"nl":"oud, versleten",
+"pl":"stary, zużyty, zniszczony",
+"de":"alt, abgenutzt",
+"fr":"vieux, usé",
+"it":"vecchio, usato, logoro",
+"cs":"starý, opotřebovaný, vetchý",
+"tr":"eski",
+"es":"viejo, gastado, antiguo"
+}
+},
+{
+"w":"длинный",
+"d":"Имеющий большую протяжённость в пространстве; противоположный короткому.",
+"t":{
+"en":"long",
+"nl":"lang",
+"pl":"długi",
+"de":"lang",
+"fr":"long",
+"it":"lungo",
+"cs":"dlouhý",
+"tr":"uzun",
+"es":"largo"
+}
+},
+{
+"w":"короткий",
+"d":"Имеющий малую длину, небольшое протяжение в пространстве.",
+"t":{
+"en":"short",
+"nl":"kort",
+"pl":"krótki",
+"de":"kurz",
+"fr":"court",
+"it":"corto",
+"cs":"krátký",
+"tr":"kısa",
+"es":"corto"
+}
+},
+{
+"w":"узкий",
+"d":"Плотно облегающий тело, тесный (об одежде или обуви).",
+"t":{
+"en":"tight, narrow",
+"nl":"nauw, strak",
+"pl":"ciasny, wąski",
+"de":"eng",
+"fr":"serré, étroit",
+"it":"stretto",
+"cs":"úzký, těsný",
+"tr":"dar",
+"es":"ajustado, estrecho"
+}
+},
+{
+"w":"широкий",
+"d":"Слишком свободный, больше нужного размера по ширине (об одежде или обуви).",
+"t":{
+"en":"loose, wide, baggy",
+"nl":"te wijd, los",
+"pl":"szeroki, luźny",
+"de":"weit, locker",
+"fr":"trop large, ample",
+"it":"largo, abbondante",
+"cs":"volný, široký",
+"tr":"bol, geniş",
+"es":"ancho, holgado"
+}
+},
+{
+"w":"свободный",
+"d":"Просторный, широкий, не стесняющий движений (об одежде).",
+"t":{
+"en":"loose",
+"nl":"wijd, los",
+"pl":"luźny, obszerny",
+"de":"weit, locker",
+"fr":"ample, large",
+"it":"largo, ampio",
+"cs":"volný",
+"tr":"bol, rahat",
+"es":"holgado, suelto"
+}
+},
+{
+"w":"лёгкий",
+"d":"Имеющий малый вес, не тяжёлый.",
+"t":{
+"en":"light, lightweight",
+"nl":"licht",
+"pl":"lekki",
+"de":"leicht",
+"fr":"léger",
+"it":"leggero",
+"cs":"lehký",
+"tr":"hafif",
+"es":"ligero, liviano"
+}
+},
+{
+"w":"дорогой",
+"d":"Стоящий больших денег, продаваемый или покупаемый по высокой цене.",
+"t":{
+"en":"expensive, costly, dear",
+"nl":"duur, kostbaar",
+"pl":"drogi, kosztowny",
+"de":"teuer, kostspielig, kostbar",
+"fr":"cher, coûteux",
+"it":"caro, costoso",
+"cs":"drahý, nákladný",
+"tr":"pahalı",
+"es":"caro, costoso"
+}
+},
+{
+"w":"дешёвый",
+"d":"Имеющий низкую цену, недорогой.",
+"t":{
+"en":"cheap, inexpensive",
+"nl":"goedkoop",
+"pl":"tani",
+"de":"billig, preiswert",
+"fr":"bon marché, peu coûteux",
+"it":"economico, a basso prezzo",
+"cs":"laciný, levný",
+"tr":"ucuz",
+"es":"barato, económico"
+}
+},
+{
+"w":"чистый",
+"d":"Свободный от грязи, пыли и пятен; не загрязнённый.",
+"t":{
+"en":"clean, tidy",
+"nl":"schoon, proper",
+"pl":"czysty",
+"de":"sauber, rein",
+"fr":"propre",
+"it":"pulito, lindo",
+"cs":"čistý",
+"tr":"temiz",
+"es":"limpio, aseado"
+}
+},
+{
+"w":"грязный",
+"d":"Покрытый грязью, запачканный, нечистый.",
+"t":{
+"en":"dirty, filthy, unclean",
+"nl":"vuil, smerig, smoezelig",
+"pl":"brudny, ubłocony, nieczysty",
+"de":"schmutzig, dreckig",
+"fr":"sale, malpropre",
+"it":"sporco, sudicio",
+"cs":"špinavý, nečistý, ušpiněný",
+"tr":"kirli, pis",
+"es":"sucio, mugriento"
+}
+},
+{
+"w":"яркий",
+"d":"Насыщенный по тону, резко выделяющийся (о цвете)",
+"t":{
+"en":"bright, vivid",
+"nl":"fel, levendig",
+"pl":"jaskrawy, żywy",
+"de":"grell, leuchtend",
+"fr":"vif, voyant",
+"it":"vivace, acceso",
+"cs":"jasný, sytý, výrazný",
+"tr":"canlı, parlak",
+"es":"vivo, llamativo"
+}
+},
+{
+"w":"светлый",
+"d":"Имеющий окраску светлого тона, не тёмный; бледный (о цвете, волосах, глазах).",
+"t":{
+"en":"light, fair, blonde",
+"nl":"licht, blond",
+"pl":"jasny, blond",
+"de":"hell, blond",
+"fr":"clair",
+"it":"chiaro, biondo",
+"cs":"světlý, plavý",
+"tr":"açık, kumral",
+"es":"claro, rubio"
+}
+},
+{
+"w":"туфля",
+"d":"вид обуви, закрывающий ногу ниже щиколотки",
+"t":{
+"en":"shoe",
+"nl":"schoen, pump",
+"pl":"pantofel, but",
+"de":"Schuh, Halbschuh",
+"fr":"chaussure, soulier",
+"it":"scarpa",
+"cs":"střevíc, polobotka",
+"tr":"ayakkabı, iskarpin",
+"es":"zapato"
+}
+},
+{
+"w":"кроссовка",
+"d":"спортивная обувь для бега или повседневной носки",
+"t":{
+"en":"sneaker, trainer",
+"nl":"sneakers, sportschoenen",
+"pl":"buty sportowe, adidasy, sneakersy",
+"de":"Sneaker, Turnschuh",
+"fr":"baskets, chaussures de sport, tennis",
+"it":"scarpe da ginnastica, sneakers",
+"cs":"tenisky, sportovní boty",
+"tr":"spor ayakkabı, sneaker",
+"es":"zapatillas de deporte, tenis, zapatillas"
+}
+},
+{
+"w":"ботинок",
+"d":"Вид обуви, закрывающий ногу по щиколотку, обычно на шнуровке или застежках.",
+"t":{
+"en":"boot",
+"nl":"schoen, laars",
+"pl":"but",
+"de":"Stiefel, Schuh",
+"fr":"bottine, chaussure montante",
+"it":"scarponcino, stivaletto",
+"cs":"bota, kotníková bota",
+"tr":"bot, ayakkabı",
+"es":"botín, bota"
+}
+},
+{
+"w":"тапочек",
+"d":"Лёгкая и мягкая домашняя обувь без каблука",
+"t":{
+"en":"slippers",
+"nl":"pantoffels, slippers",
+"pl":"kapcie, pantofle",
+"de":"Hausschuhe, Pantoffeln",
+"fr":"pantoufles, chaussons",
+"it":"pantofole, ciabatte",
+"cs":"bačkory, pantofle",
+"tr":"terlik",
+"es":"zapatillas, pantuflas"
+}
+},
+{
+"w":"босоножка",
+"d":"вид открытой летней женской обуви",
+"t":{
+"en":"sandal, mule",
+"nl":"sandaal, muiltje",
+"pl":"sandały",
+"de":"Sandalette, Sandalen",
+"fr":"sandale, nu-pieds",
+"it":"sandalo, zoccolo",
+"cs":"sandály, střevíčky",
+"tr":"sandalet",
+"es":"sandalia"
+}
+},
+{
+"w":"перчатка",
+"d":"Предмет одежды, закрывающий кисть руки и имеющий отдельные отделения для каждого пальца.",
+"t":{
+"en":"glove",
+"nl":"handschoen",
+"pl":"rękawiczka",
+"de":"Handschuh",
+"fr":"gant",
+"it":"guanto",
+"cs":"rukavice",
+"tr":"eldiven",
+"es":"guante"
+}
+},
+{
+"w":"варежка",
+"d":"Тёплая, обычно вязаная рукавица для защиты рук от холода.",
+"t":{
+"en":"mitten",
+"nl":"want",
+"pl":"rękawica z jednym palcem, łapawica",
+"de":"Fäustling, Fausthandschuh",
+"fr":"moufle, mitaine",
+"it":"manopole",
+"cs":"palčáky, rukavice",
+"tr":"eldiven, tek parmaklı eldiven",
+"es":"manopla, mitón"
+}
+},
+{
+"w":"купальник",
+"d":"женский предмет одежды для плавания в воде",
+"t":{
+"en":"swimsuit, bathing suit, bikini",
+"nl":"badpak, bikini",
+"pl":"kostium kąpielowy, strój kąpielowy, bikini",
+"de":"Badeanzug, Bikini",
+"fr":"maillot de bain, bikini",
+"it":"costume da bagno, bikini",
+"cs":"plavky, bikiny",
+"tr":"mayo, bikini",
+"es":"bañador, traje de baño, bikini"
+}
+},
+{
+"w":"тёмный",
+"d":"Имеющий цвет, близкий к чёрному.",
+"t":{
+"en":"dark",
+"nl":"donker",
+"pl":"ciemny",
+"de":"dunkel",
+"fr":"foncé, sombre",
+"it":"scuro",
+"cs":"tmavý",
+"tr":"koyu",
+"es":"oscuro"
+}
 }
 ]

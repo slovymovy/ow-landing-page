@@ -1,0 +1,1082 @@
+[
+{
+"w":"радость",
+"d":"Чувство большого удовольствия, внутреннего удовлетворения и весёлого настроения.",
+"t":{
+"en":"joy, delight, happiness",
+"nl":"vreugde, blijdschap, plezier",
+"pl":"radość, szczęście, uciecha",
+"de":"Freude, Glück, Fröhlichkeit",
+"fr":"joie, allégresse, bonheur",
+"it":"gioia, allegria, felicità",
+"cs":"radost, potěšení",
+"tr":"sevinç, mutluluk, memnuniyet",
+"es":"alegría, gozo, felicidad"
+}
+},
+{
+"w":"счастье",
+"d":"Состояние высшей удовлетворённости жизнью, чувство глубокого довольства и радости.",
+"t":{
+"en":"happiness, bliss",
+"nl":"geluk, gelukzaligheid",
+"pl":"szczęście",
+"de":"Glück, Glückseligkeit",
+"fr":"bonheur, félicité",
+"it":"felicità, beatitudine",
+"cs":"štěstí, blaženost",
+"tr":"mutluluk, saadet",
+"es":"felicidad, dicha"
+}
+},
+{
+"w":"любовь",
+"d":"Глубокое эмоциональное влечение, сильная сердечная привязанность к другому человеку или объекту.",
+"t":{
+"en":"love, affection",
+"nl":"liefde, genegenheid",
+"pl":"miłość",
+"de":"Liebe",
+"fr":"amour, affection",
+"it":"amore, affetto",
+"cs":"láska",
+"tr":"sevgi, aşk",
+"es":"amor, afecto"
+}
+},
+{
+"w":"страх",
+"d":"Чувство сильной тревоги и беспокойства перед опасностью или чем-то неизвестным",
+"t":{
+"en":"fear, dread, fright",
+"nl":"angst, vrees",
+"pl":"strach, lęk, trwoga",
+"de":"Angst, Furcht",
+"fr":"peur, crainte, frayeur",
+"it":"paura, timore, spavento",
+"cs":"strach, bázeň, úděs",
+"tr":"korku, dehşet, yılgı",
+"es":"miedo, temor, horror"
+}
+},
+{
+"w":"грусть",
+"d":"Чувство печали, лёгкого огорчения.",
+"t":{
+"en":"sadness, melancholy, sorrow",
+"nl":"verdriet, weemoed, melancholie",
+"pl":"smutek, żal, melancholia",
+"de":"Traurigkeit, Wehmut, Melancholie",
+"fr":"tristesse, mélancolie, chagrin",
+"it":"tristezza, malinconia, nostalgia",
+"cs":"smutek, žal, melancholie",
+"tr":"hüzün, üzüntü, keder, melankoli",
+"es":"tristeza, melancolía, pena"
+}
+},
+{
+"w":"злость",
+"d":"Чувство сильного раздражения, гнева, враждебности по отношению к кому-либо или чему-либо.",
+"t":{
+"en":"anger, rage, spite",
+"nl":"woede, boosheid, woede-uitbarsting",
+"pl":"złość, gniew, wściekłość",
+"de":"Wut, Zorn, Ärger, Bosheit",
+"fr":"colère, rage, fureur",
+"it":"rabbia, ira, rancore",
+"cs":"zlost, hněv, vzteky",
+"tr":"öfke, kızgınlık, hiddet",
+"es":"rabia, ira, enojo"
+}
+},
+{
+"w":"удивление",
+"d":"Состояние, вызванное сильным впечатлением от чего-либо необычного, неожиданного или странного.",
+"t":{
+"en":"surprise, astonishment, amazement",
+"nl":"verbazing, verrassing, verwondering",
+"pl":"zdziwienie, zaskoczenie, zdumienie",
+"de":"Überraschung, Erstaunen, Verwunderung, Staunen",
+"fr":"surprise, étonnement, stupéfaction",
+"it":"sorpresa, stupore, meraviglia",
+"cs":"překvapení, div, údiv, uvedení v úžas",
+"tr":"şaşkınlık, hayret, hayret etme",
+"es":"sorpresa, asombro, extrañeza"
+}
+},
+{
+"w":"скука",
+"d":"Тягостное душевное состояние, уныние и тоска от безделья или отсутствия интереса к чему-либо.",
+"t":{
+"en":"boredom",
+"nl":"verveling",
+"pl":"nuda, znudzenie",
+"de":"Langeweile",
+"fr":"ennui",
+"it":"noia, tedio",
+"cs":"nuda, otrávenost",
+"tr":"can sıkıntısı, sıkıntı",
+"es":"aburrimiento, hastío, tedio"
+}
+},
+{
+"w":"интерес",
+"d":"Внимание, любопытство, желание узнать или понять что-либо.",
+"t":{
+"en":"interest, curiosity",
+"nl":"interesse, belangstelling",
+"pl":"zainteresowanie, ciekawość",
+"de":"Interesse, Neugier",
+"fr":"intérêt, curiosité",
+"it":"interesse, curiosità",
+"cs":"zájem",
+"tr":"ilgi, merak",
+"es":"interés, curiosidad"
+}
+},
+{
+"w":"настроение",
+"d":"Внутреннее, душевное состояние человека, его эмоциональный настрой в определенный момент.",
+"t":{
+"en":"mood, spirits",
+"nl":"humeur, stemming",
+"pl":"nastrój, humor, samopoczucie",
+"de":"Stimmung, Laune",
+"fr":"humeur, moral",
+"it":"umore, umore, spirito",
+"cs":"nálada, rozpoložení",
+"tr":"ruh hali, keyif, moral",
+"es":"humor, ánimo, estado de ánimo"
+}
+},
+{
+"w":"чувство",
+"d":"Внутреннее психическое состояние человека, эмоция или душевное переживание (радость, страх, гордость и т.д.).",
+"t":{
+"en":"feeling, sense, emotion",
+"nl":"gevoel, emotie",
+"pl":"uczucie, poczucie, emocja",
+"de":"Gefühl, Emotion, Empfindung",
+"fr":"sentiment, sensation, émotion",
+"it":"sentimento, senso",
+"cs":"pocit, cit, emoce",
+"tr":"duygu, his",
+"es":"sentimiento, sensación"
+}
+},
+{
+"w":"эмоция",
+"d":"Душевное переживание, внутреннее чувство человека, отражающее его отношение к окружающему миру или к самому себе.",
+"t":{
+"en":"emotion, feeling",
+"nl":"emotie, gevoel",
+"pl":"emocja, uczucie",
+"de":"Emotion, Gefühl",
+"fr":"émotion, sentiment",
+"it":"emozione, sentimento",
+"cs":"emoce, cit",
+"tr":"duygu, emosyon",
+"es":"emoción, sentimiento"
+}
+},
+{
+"w":"улыбка",
+"d":"Выражение лица с поднятыми уголками губ, показывающее расположение к смеху, выражающее какое-либо чувство или отношение к кому-либо или чему-либо.",
+"t":{
+"en":"smile",
+"nl":"glimlach, lach",
+"pl":"uśmiech",
+"de":"Lächeln",
+"fr":"sourire",
+"it":"sorriso",
+"cs":"úsměv",
+"tr":"gülümseme, tebessüm, gülüş",
+"es":"sonrisa"
+}
+},
+{
+"w":"слеза",
+"d":"Капля прозрачной солоноватой жидкости, выделяемой железами глаза.",
+"t":{
+"en":"tear",
+"nl":"traan",
+"pl":"łza",
+"de":"Träne",
+"fr":"larme",
+"it":"lacrima",
+"cs":"slza",
+"tr":"gözyaşı damlası, gözyaşı",
+"es":"lágrima"
+}
+},
+{
+"w":"гнев",
+"d":"Чувство сильного, яростного возмущения.",
+"t":{
+"en":"anger, wrath, rage, ire",
+"nl":"woede, boosheid, toorn",
+"pl":"gniew, złość, wściekłość",
+"de":"Zorn, Wut, Ärger",
+"fr":"colère, fureur, courroux",
+"it":"rabbia, collera, ira",
+"cs":"hněv, vztek, zlost",
+"tr":"öfke, kızgınlık, hiddet, gazap",
+"es":"ira, rabia, enojo, furia"
+}
+},
+{
+"w":"тревога",
+"d":"Чувство беспокойства, волнения в ожидании неприятности или опасности.",
+"t":{
+"en":"anxiety, alarm, worry",
+"nl":"angst, bezorgdheid, onrust",
+"pl":"niepokój, lęk, trwoga",
+"de":"Sorge, Angst, Unruhe",
+"fr":"inquiétude, anxiété, angoisse, malaise",
+"it":"ansia, preoccupazione, inquietudine",
+"cs":"úzkost, obava, neklid",
+"tr":"endişe, kaygı, tasa, telaş",
+"es":"ansiedad, inquietud, preocupación"
+}
+},
+{
+"w":"волнение",
+"d":"Чувство беспокойства, тревоги или сильного душевного возбуждения.",
+"t":{
+"en":"nervousness, excitement, anxiety",
+"nl":"zenuwachtigheid, opwinding, spanning",
+"pl":"zdenerwowanie, ekscytacja, niepokój, wzruszenie",
+"de":"Aufregung, Aufgeregtheit, Nervosität",
+"fr":"émotion, agitation, émoi, nervosité",
+"it":"agitazione, emozione, ansia, nervosismo",
+"cs":"nervozita, vzrušení, neklid, rozechvění",
+"tr":"heyecan, endişe, telaş",
+"es":"nerviosismo, emoción, inquietud, ansiedad"
+}
+},
+{
+"w":"стыд",
+"d":"Чувство сильного смущения от сознания предосудительности поступка, вины или несоответствия нормам.",
+"t":{
+"en":"shame, embarrassment",
+"nl":"schaamte, gêne",
+"pl":"wstyd, zażenowanie",
+"de":"Scham, Schamgefühl",
+"fr":"honte, gêne, embarras",
+"it":"vergogna, imbarazzo",
+"cs":"stud, hanba",
+"tr":"utanç, utanma, hicap",
+"es":"vergüenza, pena"
+}
+},
+{
+"w":"зависть",
+"d":"Чувство досады и раздражения, вызванное благополучием, успехом или превосходством другого человека, а также желание обладать тем, что есть у него.",
+"t":{
+"en":"envy, jealousy",
+"nl":"afgunst, jaloezie",
+"pl":"zazdrość",
+"de":"Neid, Missgunst",
+"fr":"envie, jalousie",
+"it":"invidia",
+"cs":"závist",
+"tr":"kıskançlık, haset, gıypta",
+"es":"envidia, celos"
+}
+},
+{
+"w":"ревность",
+"d":"Мучительное сомнение в чьей-либо верности и любви, подозрение в измене или в большей привязанности к кому-то другому.",
+"t":{
+"en":"jealousy",
+"nl":"jaloezie, jaloersheid",
+"pl":"zazdrość",
+"de":"Eifersucht",
+"fr":"jalousie",
+"it":"gelosia",
+"cs":"žárlivost",
+"tr":"kıskançlık",
+"es":"celos"
+}
+},
+{
+"w":"гордость",
+"d":"Чувство глубокого удовлетворения от достигнутых успехов или сознания важности чего-либо.",
+"t":{
+"en":"pride",
+"nl":"trots, fierheid",
+"pl":"duma",
+"de":"Stolz",
+"fr":"fierté",
+"it":"orgoglio, fierezza",
+"cs":"hrdost, pýcha",
+"tr":"gurur, kıvanç",
+"es":"orgullo"
+}
+},
+{
+"w":"надежда",
+"d":"Душевное состояние, связанное с ожиданием чего-либо хорошего, вера в возможность осуществления чего-либо радостного или благоприятного.",
+"t":{
+"en":"hope, expectation",
+"nl":"hoop, verwachting",
+"pl":"nadzieja",
+"de":"Hoffnung, Erwartung",
+"fr":"espoir, espérance",
+"it":"speranza",
+"cs":"naděje, víra",
+"tr":"umut, ümit",
+"es":"esperanza, ilusión"
+}
+},
+{
+"w":"разочарование",
+"d":"Чувство неудовлетворенности, вызванное несбывшимися, неоправдавшимися ожиданиями, надеждами или мечтаниями.",
+"t":{
+"en":"disappointment, disillusionment, frustration",
+"nl":"teleurstelling, desillusie, frustratie",
+"pl":"rozczarowanie, zawód, depresja",
+"de":"Enttäuschung, Desillusionierung, Frustration",
+"fr":"déception, désillusion, frustration",
+"it":"delusione, disillusione, disinganno, disincanto",
+"cs":"zklamání, rozčarování, frustrace",
+"tr":"hayal kırıklığı, hüsran, sukutuhayal",
+"es":"decepción, desilusión, desencanto, desengaño"
+}
+},
+{
+"w":"обида",
+"d":"Чувство огорчения, горечи или досады, вызванное несправедливостью, оскорблением или неприятным событием.",
+"t":{
+"en":"resentment, offense, grudge",
+"nl":"wrok, gekwetstheid, belediging",
+"pl":"żal, uraza, obraza",
+"de":"Groll, Kränkung, Beleidigtsein",
+"fr":"ressentiment, rancune, peine",
+"it":"risentimento, offesa, rancore",
+"cs":"křivda, urážka, hořkost",
+"tr":"kırgınlık, gücenme, alınma",
+"es":"resentimiento, ofensa, rencor"
+}
+},
+{
+"w":"одиночество",
+"d":"Состояние человека, который находится один, без других людей, или чувство внутренней изоляции и покинутости.",
+"t":{
+"en":"loneliness, solitude",
+"nl":"eenzaamheid, afzondering",
+"pl":"samotność, odosobnienie",
+"de":"Einsamkeit, Alleinsein",
+"fr":"solitude, isolement",
+"it":"solitudine, isolamento",
+"cs":"samota, osamělost",
+"tr":"yalnızlık, tek başınalık",
+"es":"soledad"
+}
+},
+{
+"w":"восторг",
+"d":"Состояние сильного душевного подъёма, восхищения и огромной радости.",
+"t":{
+"en":"delight, rapture, ecstasy",
+"nl":"verrukking, enthousiasme, extase",
+"pl":"zachwyt, entuzjazm, ekstaza",
+"de":"Begeisterung, Entzücken, Verzückung",
+"fr":"enthousiasme, ravissement, transport",
+"it":"entusiasmo, estasi, delizia",
+"cs":"nadšení, nadšení, vytržení, okouzlení",
+"tr":"hayranlık, coşku, mest olma",
+"es":"entusiasmo, éxtasis, arrobamiento, delirio"
+}
+},
+{
+"w":"отвращение",
+"d":"Сильное чувство неприязни, омерзения к кому-либо или чему-либо.",
+"t":{
+"en":"disgust, aversion, repugnance",
+"nl":"walging, afkeer, afschuw",
+"pl":"wstręt, odraza, awersja",
+"de":"Abscheu, Ekel, Abneigung",
+"fr":"dégoût, aversion, répulsion",
+"it":"disgusto, avversione, ripugnanza",
+"cs":"odpor, ošklivost, zhnusení, averze",
+"tr":"tiksinti, iğrenme, nefret",
+"es":"asco, repugnancia, aversión"
+}
+},
+{
+"w":"жалость",
+"d":"Чувство сострадания, доброго участия, вызванное чьим-либо несчастьем или страданием.",
+"t":{
+"en":"pity, compassion, sympathy",
+"nl":"medelijden, medeleven, compassie",
+"pl":"litość, współczucie",
+"de":"Mitleid, Mitgefühl",
+"fr":"pitié, compassion",
+"it":"pietà, compassione",
+"cs":"lítost, soucit",
+"tr":"acıma, merhamet, şefkat",
+"es":"lástima, compasión, piedad"
+}
+},
+{
+"w":"ненависть",
+"d":"Чувство сильной вражды и отвращения к кому-либо или чему-либо.",
+"t":{
+"en":"hatred, hate",
+"nl":"haat",
+"pl":"nienawiść",
+"de":"Hass",
+"fr":"haine",
+"it":"odio",
+"cs":"nenávist, zášť",
+"tr":"nefret, kin",
+"es":"odio, aborrecimiento"
+}
+},
+{
+"w":"удовольствие",
+"d":"Чувство радости и довольства, возникающее от приятных ощущений, переживаний или исполнения желаний.",
+"t":{
+"en":"pleasure, enjoyment, delight",
+"nl":"plezier, genoegen, genot",
+"pl":"przyjemność, satysfakcja, rozkosz",
+"de":"Vergnügen, Freude, Genuss",
+"fr":"plaisir, satisfaction",
+"it":"piacere, godimento, soddisfazione",
+"cs":"potěšení, radost, požitkářství",
+"tr":"zevk, keyif, memnuniyet",
+"es":"placer, gusto, gozo"
+}
+},
+{
+"w":"облегчение",
+"d":"Чувство успокоения, освобождения от тревоги, страха, боли или беспокойства.",
+"t":{
+"en":"relief, ease",
+"nl":"oplossing, verlichting, opluchting",
+"pl":"ulga, odetchnienie",
+"de":"Erleichterung",
+"fr":"soulagement, apaisement",
+"it":"sollievo, liberazione",
+"cs":"úleva, ulehčení",
+"tr":"rahatlama, ferahlama",
+"es":"alivio, desahogo"
+}
+},
+{
+"w":"счастливый",
+"d":"Испытывающий чувство радости, полного удовлетворения жизнью; такой, которому сопутствует счастье.",
+"t":{
+"en":"happy",
+"nl":"gelukkig, blij",
+"pl":"szczęśliwy",
+"de":"glücklich",
+"fr":"heureux, content",
+"it":"felice, contento",
+"cs":"šťastný",
+"tr":"mutlu, mesut, bahtiyar",
+"es":"feliz, afortunado"
+}
+},
+{
+"w":"грустный",
+"d":"Испытывающий чувство печали, огорчения или уныния (о человеке или живом существе).",
+"t":{
+"en":"sad, sorrowful",
+"nl":"verdrietig, bedroefd, treurig",
+"pl":"smutny, zasmucony",
+"de":"traurig, betrübt",
+"fr":"triste, mélancolique",
+"it":"triste, malinconico",
+"cs":"smutný, zasmušilý",
+"tr":"üzgün, hüzünlü, kederli",
+"es":"triste, apenado"
+}
+},
+{
+"w":"весёлый",
+"d":"Настроенный радостно, склонный к смеху, полный веселья, жизнерадостный.",
+"t":{
+"en":"cheerful, jolly, happy, merry",
+"nl":"vrolijk, monter, blij",
+"pl":"wesoły, radosny",
+"de":"fröhlich, lustig, heiter",
+"fr":"gai, joyeux",
+"it":"allegro, gioioso, gaio, ilare",
+"cs":"veselý, radostný",
+"tr":"neşeli, şen, keyifli",
+"es":"alegre, jovial, contento"
+}
+},
+{
+"w":"злой",
+"d":"Сердитый, испытывающий сильное чувство гнева или раздражения.",
+"t":{
+"en":"angry, mad, cross",
+"nl":"boos, kwaad, woedend",
+"pl":"zły, wściekły, zdenerwowany",
+"de":"wütend, verärgert, zornig, böse",
+"fr":"en colère, fâché, furieux",
+"it":"arrabbiato, furioso",
+"cs":"naštvaný, rozzlobený, vzteklý",
+"tr":"kızgın, öfkeli, sinirli",
+"es":"enojado, enfadado, furioso"
+}
+},
+{
+"w":"усталый",
+"d":"Испытывающий слабость, утомление или упадок сил после физической или умственной работы, движения или усилий.",
+"t":{
+"en":"tired, weary, fatigued",
+"nl":"moe, vermoeid",
+"pl":"zmęczony, znużony, wykończony",
+"de":"müde, erschöpft, ermüdet",
+"fr":"fatigué, las, rendu",
+"it":"stanco, affaticato, stracco",
+"cs":"unavený, znavený, umdlený",
+"tr":"yorgun, bitkin, halsiz",
+"es":"cansado, fatigado, rendido"
+}
+},
+{
+"w":"довольный",
+"d":"Испытывающий удовлетворение, радость или удовольствие от чего-либо.",
+"t":{
+"en":"satisfied, pleased, content",
+"nl":"tevreden, voldaan, blij",
+"pl":"zadowolony, kontent",
+"de":"zufrieden, erfreut, beglückt",
+"fr":"content, satisfait, ravi",
+"it":"soddisfatto, contento",
+"cs":"spokojený, potěšený",
+"tr":"memnun, hoşnut, tatmin olmuş",
+"es":"satisfecho, contento"
+}
+},
+{
+"w":"спокойный",
+"d":"Не испытывающий волнения и тревоги; находящийся в состоянии душевного равновесия.",
+"t":{
+"en":"calm, serene, composed",
+"nl":"rustig, kalm, gemoedelijk",
+"pl":"spokojny, opanowany",
+"de":"ruhig, gelassen, ruhevoll",
+"fr":"calme, serein, posé",
+"it":"calmo, tranquillo, sereno",
+"cs":"klidný, vyrovnaný, poklidný",
+"tr":"sakin, huzurlu, soğukkanlı",
+"es":"tranquilo, calmado, sereno"
+}
+},
+{
+"w":"нервный",
+"d":"Легко возбудимый, болезненно раздражительный, склонный к переживаниям.",
+"t":{
+"en":"nervous, high-strung, edgy",
+"nl":"nerveus, prikkelbaar, gespannen",
+"pl":"nerwowy, drażliwy",
+"de":"nervös, reizbar",
+"fr":"nerveux, irritable, tendu",
+"it":"nervoso, irritabile, ansioso",
+"cs":"nervózní, podrážděný",
+"tr":"sinirli, asabi, gergin",
+"es":"nervioso, irritable, inquieto"
+}
+},
+{
+"w":"испуганный",
+"d":"Испытывающий чувство страха, охваченный испугом.",
+"t":{
+"en":"frightened, scared, terrified",
+"nl":"bang, angstig, beangst, verschrikt",
+"pl":"przestraszony, wystraszony, przerażony",
+"de":"ängstlich, erschrocken, verängstigt",
+"fr":"effrayé, apeuré, terrorisé",
+"it":"spaventato, impaurito, terrorizzato",
+"cs":"vylekaný, vystrašený, vyděšený",
+"tr":"korkmuş, ürkütülmüş, dehşete düşmüş",
+"es":"asustado, atemorizado, espantado"
+}
+},
+{
+"w":"удивлённый",
+"d":"Испытывающий чувство удивления, изумления (о человеке).",
+"t":{
+"en":"surprised, astonished, amazed",
+"nl":"verbaasd, verrast, verwonderd",
+"pl":"zdziwiony, zaskoczony, zdumiony",
+"de":"überrascht, erstaunt, verblüfft",
+"fr":"surpris, étonné",
+"it":"sorpreso, stupito, meravigliato",
+"cs":"překvapený, udivený, užaslý",
+"tr":"şaşırmış, şaşkın, hayrete düşmüş",
+"es":"sorprendido, asombrado, maravillado"
+}
+},
+{
+"w":"влюблённый",
+"d":"Испытывающий чувство любовного влечения к кому-либо, влюбившийся в кого-либо.",
+"t":{
+"en":"in love, enamored",
+"nl":"verliefd",
+"pl":"zakochany",
+"de":"verliebt",
+"fr":"amoureux, épris",
+"it":"innamorato, invaghito",
+"cs":"zamilovaný",
+"tr":"aşık, sevdalı",
+"es":"enamorado"
+}
+},
+{
+"w":"тревожный",
+"d":"Испытывающий волнение, беспокойство или склонный к ним (о человеке или его состоянии).",
+"t":{
+"en":"anxious, uneasy, troubled",
+"nl":"angstig, onrustig, bezorgd",
+"pl":"lękliwy, niespokojny, zatroskany",
+"de":"ängstlich, besorgt, unruhig",
+"fr":"anxieux, inquiets",
+"it":"ansioso, inquieto, preoccupato",
+"cs":"úzkostný, neklidný, znepokojený",
+"tr":"endişeli, kaygılı, huzursuz, vesveseli",
+"es":"ansioso, inquieto, preocupado"
+}
+},
+{
+"w":"взволнованный",
+"d":"Испытывающий сильное душевное беспокойство, тревогу или волнение.",
+"t":{
+"en":"excited, agitated, anxious, worried",
+"nl":"opgewonden, onrustig, bezorgd, zenuwachtig",
+"pl":"zdenerwowany, podekscytowany, zaniepokojony, przejęty",
+"de":"aufgeregt, beunruhigt, nervös",
+"fr":"agité, inquiet, ému, anxieux",
+"it":"agitato, emozionato, preoccupato, ansioso",
+"cs":"znepokojený, rozrušený, vzrušený",
+"tr":"heyecanlı, endişeli, telaşlı, huzursuz",
+"es":"agitado, nervioso, emocionado, preocupado"
+}
+},
+{
+"w":"расстроенный",
+"d":"Находящийся в состоянии грусти, огорчения или душевного беспокойства.",
+"t":{
+"en":"upset, distressed, sad",
+"nl":"overstuur, verdrietig, teleurgesteld",
+"pl":"zmartwiony, rozstrojony, przygnębiony",
+"de":"traurig, betrübt, aufgebracht, verstimmt",
+"fr":"contrarié, triste, bouleversé, affecté",
+"it":"dispiaciuto, turbato, triste",
+"cs":"rozrušený, smutný, zklamaný, nešťastný",
+"tr":"üzgün, bozuk, canı sıkkın",
+"es":"disgustado, triste, afectado"
+}
+},
+{
+"w":"разочарованный",
+"d":"Испытывающий чувство неудовлетворённости от несбывшихся ожиданий или надежд.",
+"t":{
+"en":"disappointed, frustrated",
+"nl":"teleurgesteld, gefrustreerd",
+"pl":"rozczarowany, zawiedziony",
+"de":"enttäuscht, frustriert",
+"fr":"déçu, frustré",
+"it":"deluso, amareggiato",
+"cs":"zklamaný, rozčarovaný",
+"tr":"hayal kırıklığına uğramış, hüsrana uğramış",
+"es":"decepcionado, desilusionado, frustrado"
+}
+},
+{
+"w":"обиженный",
+"d":"Испытывающий чувство обиды, огорчения или несправедливости (о человеке).",
+"t":{
+"en":"offended, hurt, resentful",
+"nl":"gekwetst, beledigd, verongelijkt",
+"pl":"obrażony, dotknięty, urażony",
+"de":"beleidigt, gekränkt, verletzt",
+"fr":"vexé, blessé, offensé",
+"it":"offeso, ferito, risentito",
+"cs":"uražený, dotčený, ublížený",
+"tr":"kırgın, alınmış, gücenmiş",
+"es":"ofendido, dolido, resentido"
+}
+},
+{
+"w":"одинокий",
+"d":"Не имеющий семьи, родственников, близких друзей; испытывающий чувство душевной изоляции.",
+"t":{
+"en":"lonely, solitary, single",
+"nl":"eenzaam, alleenstaand, vrijgezel",
+"pl":"samotny, singiel",
+"de":"einsam, alleinstehend, single",
+"fr":"solitaire, seul",
+"it":"solo, solitario",
+"cs":"osamělý, sám, opuštěný",
+"tr":"yalnız, kimsesiz, bekar",
+"es":"solo, solitario"
+}
+},
+{
+"w":"гордый",
+"d":"Испытывающий чувство собственного достоинства, самоуважения или удовлетворения от своих успехов.",
+"t":{
+"en":"proud",
+"nl":"trots, fier",
+"pl":"dumny",
+"de":"stolz",
+"fr":"fier, orgueilleux",
+"it":"orgoglioso, fiero",
+"cs":"hrdý, pyšný",
+"tr":"gururlu, mağrur, onurlu",
+"es":"orgulloso"
+}
+},
+{
+"w":"смущённый",
+"d":"Испытывающий неловкость, замешательство или стыд; находящийся в состоянии смущения.",
+"t":{
+"en":"embarrassed, confused, abashed",
+"nl":"verlegen, beschaamd, gênant",
+"pl":"zmieszany, zakłopotany, speszony",
+"de":"verlegen, peinlich berührt, befangen",
+"fr":"gêné, embarrassé, confus",
+"it":"imbarazzato, confuso, disorientato",
+"cs":"rozpačitý, zahanbený, zmatený",
+"tr":"utanmış, mahcup, şaşkın",
+"es":"avergonzado, embarazado, apurado"
+}
+},
+{
+"w":"равнодушный",
+"d":"Безразличный, не испытывающий никаких чувств по отношению к окружающему, происходящему.",
+"t":{
+"en":"indifferent, apathetic, unconcerned",
+"nl":"onverschillig, ongeïnteresseerd, apathisch",
+"pl":"obojętny, niewrażliwy, apatyczny",
+"de":"gleichgültig, teilnahmslos, desinteressiert",
+"fr":"indifférent, insensible, apathique",
+"it":"indifferente, insensibile, apatico",
+"cs":"lhostejný, netečný, nevšímavý",
+"tr":"kayıtsız, duyarsız, ilgisiz",
+"es":"indiferente, apático, desinteresado"
+}
+},
+{
+"w":"растерянный",
+"d":"Утративший самообладание, не знающий, как поступить от волнения, страха или смущения.",
+"t":{
+"en":"confused, bewildered, lost, mixed-up",
+"nl":"verward, verbijsterd, radeloos",
+"pl":"zagubiony, zmieszany, zdezorientowany, speszony",
+"de":"verwirrt, ratlos, fassungslos, hilflos",
+"fr":"désemparé, perplexe, décontenancé, perdu",
+"it":"confuso, smarrito, disorientato, perplesso",
+"cs":"zmatený, bezradný, rozpačitý",
+"tr":"şaşkın, afallamış, kafa karışıklığı yaşayan",
+"es":"desconcertado, confundido, desorientado, perplejo"
+}
+},
+{
+"w":"любить",
+"d":"Чувствовать глубокую привязанность, преданность и сильное влечение к человеку, семье или родине.",
+"t":{
+"en":"love, adore, cherish",
+"nl":"houden van, liefhebben",
+"pl":"kochać, uwielbiać",
+"de":"lieben",
+"fr":"aimer, adorer, chérir",
+"it":"amare, voler bene a",
+"cs":"milovat, mít rád",
+"tr":"sevmek, gönül vermek",
+"es":"amar, querer, adorar"
+}
+},
+{
+"w":"бояться",
+"d":"Испытывать чувство страха, пугаться кого-либо или чего-либо.",
+"t":{
+"en":"be afraid, be scared, fear",
+"nl":"bang zijn voor, vrezen, angst hebben voor",
+"pl":"bać się, obawiać się",
+"de":"Angst haben, sich fürchten, fürchten",
+"fr":"avoir peur, craindre, redouter",
+"it":"aver paura, temere, spaventarsi",
+"cs":"bát se, mít strach, děsit se",
+"tr":"korkmak, ürkmek",
+"es":"tener miedo, temer, asustarse"
+}
+},
+{
+"w":"радоваться",
+"d":"Испытывать чувство радости, удовольствия, быть довольным чем-либо или кем-либо.",
+"t":{
+"en":"be happy, rejoice, be glad",
+"nl":"blij zijn, zich verheugen, genieten",
+"pl":"cieszyć się, radować się",
+"de":"sich freuen, froh sein",
+"fr":"se réjouir, être heureux",
+"it":"rallegrarsi, gioire, essere felice, godersi",
+"cs":"radovat se, mít radost, těšit se",
+"tr":"sevinmek, mutlu olmak",
+"es":"alegrarse, disfrutar, regocijarse"
+}
+},
+{
+"w":"злиться",
+"d":"Испытывать чувство злости, раздражения или гнева по отношению к кому-либо или чему-либо.",
+"t":{
+"en":"to get angry, to be angry, to be mad",
+"nl":"boos worden, boos zijn, zich ergeren",
+"pl":"złościć się, gniewać się, wściekać się",
+"de":"sich ärgern, wütend sein, böse sein",
+"fr":"se fâcher, être en colère, s'énerver",
+"it":"arrabbiarsi, essere arrabbiato, incollerirsi",
+"cs":"zlobit se, hněvat se, být naštvaný, vztekat se",
+"tr":"kızmak, öfkelenmek, sinirlenmek",
+"es":"enojarse, enfadarse, estar enojado, cabrearse"
+}
+},
+{
+"w":"грустить",
+"d":"Испытывать чувство грусти, печали; находиться в унынии.",
+"t":{
+"en":"be sad, grieve, feel blue",
+"nl":"verdrietig zijn, treuren, somber zijn",
+"pl":"smutzić się, tęsknić, martwić się",
+"de":"traurig sein, trauern, Trübsal blasen",
+"fr":"être triste, s'attrister, être mélancolique",
+"it":"essere triste, rattristarsi, essere malinconico",
+"cs":"smutnit, být smutný, žalovat",
+"tr":"üzülmek, hüzünlenmek, kederlenmek",
+"es":"estar triste, entristecerse, afligirse"
+}
+},
+{
+"w":"волноваться",
+"d":"Испытывать чувство беспокойства, тревоги или сильного душевного возбуждения.",
+"t":{
+"en":"worry, be nervous, get excited",
+"nl":"zich zorgen maken, zenuwachtig zijn, opgewonden raken",
+"pl":"martwić się, denerwować się, niepokoić się, przejmować się",
+"de":"sich Sorgen machen, sich aufregen, nervös sein",
+"fr":"s'inquiéter, se faire du souci, s'en faire, être anxieux",
+"it":"preoccuparsi, agitarsi, stare in ansia",
+"cs":"bát se, strachovat se, znepokojovat se, být nervózní",
+"tr":"endişelenmek, merak etmek, heyecanlanmak",
+"es":"preocuparse, inquietarse, alterarse, ponerse nervioso"
+}
+},
+{
+"w":"смеяться",
+"d":"Издавать характерные звуки, выражая веселье, радость или удовольствие.",
+"t":{
+"en":"laugh, chuckle",
+"nl":"lachen, giechelen",
+"pl":"śmiać się",
+"de":"lachen, kichern",
+"fr":"rire, rigoler",
+"it":"ridere",
+"cs":"smát se",
+"tr":"gülmek",
+"es":"reírse, reír"
+}
+},
+{
+"w":"плакать",
+"d":"Проливать слёзы из-за сильных эмоций (горя, радости) или физической боли.",
+"t":{
+"en":"cry, weep",
+"nl":"huilen, wenen",
+"pl":"płakać, szlochać",
+"de":"weinen, heulen",
+"fr":"pleurer",
+"it":"piangere",
+"cs":"plakat, brečet",
+"tr":"ağlamak",
+"es":"llorar"
+}
+},
+{
+"w":"улыбаться",
+"d":"Выражать на лице радость, удовольствие, приветствие или иронию, поднимая уголки губ.",
+"t":{
+"en":"smile, grin",
+"nl":"glimlachen, lachen",
+"pl":"uśmiechać się",
+"de":"lächeln, schmunzeln",
+"fr":"sourire",
+"it":"sorridere",
+"cs":"usmívat se, smát se",
+"tr":"gülümsemek, tebessüm etmek",
+"es":"sonreír, sonreírse"
+}
+},
+{
+"w":"скучать",
+"d":"Болезненно переживать отсутствие кого-либо или чего-либо, испытывать тоску по кому-то или чему-то.",
+"t":{
+"en":"miss, long for",
+"nl":"missen, verlangen naar",
+"pl":"tęsknić",
+"de":"vermissen, sich sehnen nach",
+"fr":"manquer, se languir",
+"it":"mancare, sentire la mancanza, avere nostalgia",
+"cs":"stýskat se, mít stesk",
+"tr":"özlemek, hasret çekmek",
+"es":"extrañar, echar de menos, añorar"
+}
+},
+{
+"w":"ненавидеть",
+"d":"Испытывать чувство сильной вражды и отвращения к кому-либо или чему-либо.",
+"t":{
+"en":"hate, detest, loathe",
+"nl":"haten, verafschuwen",
+"pl":"nienawidzić",
+"de":"hassen, verabscheuen",
+"fr":"détester, haïr, abhorrer",
+"it":"odiare, detestare, aborrire",
+"cs":"nenávidět, nevražit",
+"tr":"nefret etmek, kin beslemek",
+"es":"odiar, detestar, aborrecer"
+}
+},
+{
+"w":"завидовать",
+"d":"Испытывать чувство досады или неудовольствия, вызванное благополучием, успехом или превосходством другого, желая обладать тем же.",
+"t":{
+"en":"envy, be jealous of, begrudge",
+"nl":"benijden, jaloers zijn op",
+"pl":"zazdrościć",
+"de":"beneiden, neidisch sein",
+"fr":"envier, être jaloux de, porter envie",
+"it":"invidiare, provare invidia, avere invidia",
+"cs":"závidět, žárlit",
+"tr":"kıskanmak, imrenmek, gıpta etmek",
+"es":"envidiar, sentir envidia, tener envidia"
+}
+},
+{
+"w":"обижаться",
+"d":"Чувствовать обиду, принимать что-либо за обиду, испытывать чувство огорчения от несправедливого отношения.",
+"t":{
+"en":"be offended, take offense, feel hurt, sulk",
+"nl":"beledigd zijn, zich beledigd voelen, gekwetst zijn, mokken",
+"pl":"obrażać się, czuć się urażonym, dąsać się",
+"de":"beleidigt sein, sich beleidigt fühlen, schmollen, übel nehmen",
+"fr":"se vexer, s'offenser, être vexé, bouder",
+"it":"offendersi, aversela a male, rimanerci male, prendersela",
+"cs":"urážet se, hněvat se, urazit se",
+"tr":"alınmak, darılmak, kırılmak, gücenmek",
+"es":"ofenderse, molestarse, sentirse ofendido, tomarse a mal"
+}
+},
+{
+"w":"переживать",
+"d":"Испытывать беспокойство, волнение, тревогу или душевную боль из-за кого-либо или чего-либо.",
+"t":{
+"en":"worry, be upset, be anxious",
+"nl":"zich zorgen maken, inzetten over, meeleven",
+"pl":"martwić się, przejmować się, niepokoić się",
+"de":"sich Sorgen machen, mitfühlen, beunruhigt sein",
+"fr":"s'inquiéter, se faire du souci, se tourmenter",
+"it":"preoccuparsi, stare in ansia, soffrire",
+"cs":"dělat si starosti, strachovat se, trápit se",
+"tr":"endişelenmek, üzülmek, merak etmek",
+"es":"preocuparse, angustiarse, pasarlo mal"
+}
+},
+{
+"w":"надеяться",
+"d":"Ожидать, что произойдёт что-либо хорошее или желаемое, и верить в возможность этого.",
+"t":{
+"en":"hope",
+"nl":"hopen",
+"pl":"mieć nadzieję, spodziewać się",
+"de":"hoffen",
+"fr":"espérer",
+"it":"sperare",
+"cs":"doufat",
+"tr":"ummak, ümit etmek, umut etmek",
+"es":"esperar, tener la esperanza"
+}
+},
+{
+"w":"расстраиваться",
+"d":"Приходить в плохое настроение, испытывать грусть или огорчение.",
+"t":{
+"en":"get upset, be upset, get distressed",
+"nl":"overstuur raken, zich druk maken, verdrietig worden",
+"pl":"martwić się, smutasić się, denerwować się",
+"de":"sich ärgern, traurig werden, sich aufregen",
+"fr":"s'attrister, se chagriner, se vexer",
+"it":"dispiacersi, rimanerci male, rattristarsi, prendersela",
+"cs":"rozčilovat se, trápit se, být smutný",
+"tr":"üzülmek, canı sıkılmak, keyfi kaçmak",
+"es":"disgustarse, entristecerse, ponerse triste"
+}
+},
+{
+"w":"стесняться",
+"d":"Испытывать чувство стеснительности, неловкости, смущения или робости перед кем-либо или в какой-либо ситуации.",
+"t":{
+"en":"be shy, feel embarrassed, feel self-conscious",
+"nl":"verlegen zijn, zich schamen, zich opgelaten voelen",
+"pl":"wstydzić się, krępować się, być nieśmiałym",
+"de":"schüchtern sein, sich genieren, verlegen sein",
+"fr":"être timide, être embarrassé, avoir honte",
+"it":"vergognarsi, essere timido, sentirsi in imbarazzo",
+"cs":"stydět se, ostýchat se, být nesmělý",
+"tr":"utanmak, çekinmek, sıkılmak",
+"es":"tener vergüenza, dar vergüenza, ser tímido, avergonzarse"
+}
+},
+{
+"w":"восхищаться",
+"d":"Испытывать чувство глубокого удовлетворения, восторга, радости от кого-либо или чего-либо; выражать сильное одобрение.",
+"t":{
+"en":"admire, marvel, be delighted",
+"nl":"bewonderen, verrukt zijn over, dwepen met",
+"pl":"zachwycać się, podziwiać, być zachwyconym",
+"de":"bewundern, begeistert sein von, anschwärmen",
+"fr":"admirer, s'extasier (devant)",
+"it":"ammirare, entusiasmarsi, meravigliarsi",
+"cs":"obdivovat, kochat se, rozplývat se",
+"tr":"hayran olmak, hayranlık duymak, gözü kalmak",
+"es":"admirar, maravillarse, deleitarse"
+}
+},
+{
+"w":"успокоиться",
+"d":"Перестать волноваться, нервничать или плакать; вернуть душевное равновесие.",
+"t":{
+"en":"calm down, settle down, cool off",
+"nl":"kalmeren, rustig worden, bedaren",
+"pl":"uspokoić się, ochłonąć, wyciszyć się",
+"de":"sich beruhigen, ruhig werden, sich abregen",
+"fr":"se calmer, se tranquilliser, se rassurer",
+"it":"calmarsi, tranquillizzarsi, rassicurarsi",
+"cs":"uklidnit se, utišit se, vychladnout",
+"tr":"sakinleşmek, yatışmak, kendine gelmek",
+"es":"tranquilizarse, calmarse, sosegarse"
+}
+},
+{
+"w":"сердиться",
+"d":"Испытывать раздражение, гнев на кого-либо или что-либо; быть недовольным.",
+"t":{
+"en":"be angry, get angry, be cross",
+"nl":"boos zijn, boos worden, zich ergeren",
+"pl":"gniewać się, złościć się",
+"de":"böse sein, sich ärgern, wütend sein",
+"fr":"être en colère, se fâcher, s'énerver",
+"it":"arrabbiarsi, essere arrabbiato, aversela a male",
+"cs":"hněvat se, zlobit se, čertit se",
+"tr":"kızmak, öfkelenmek, darılmak",
+"es":"enfadarse, enojarse"
+}
+}
+]

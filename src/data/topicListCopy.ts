@@ -502,6 +502,60 @@ export const topicListCopy: Record<string, TopicListCopy> = {
     }
   },
 
+  'work-and-career': {
+    title: {
+      en: 'Work & Career Vocabulary',
+      ru: 'Лексика о работе и карьере',
+      nl: 'Woordenschat over werk en carrière',
+      pl: 'Słownictwo o pracy i karierze',
+      de: 'Wortschatz für Arbeit und Beruf',
+      es: 'Vocabulario del trabajo y la carrera',
+      fr: 'Vocabulaire du travail et de la carrière',
+      it: 'Vocabolario del lavoro e della carriera',
+      cs: 'Slovní zásoba o práci a kariéře',
+      tr: 'İş ve Kariyer Kelimeleri'
+    },
+    subtitle: {
+      en: 'The Russian words for the office, the paycheck, and the boss — vocabulary for the working day and the career behind it.',
+      ru: 'Русские слова об офисе, зарплате и начальнике — лексика рабочего дня и карьеры за ним.',
+      nl: 'De Russische woorden voor het kantoor, het salaris en de baas — woordenschat voor de werkdag en de loopbaan erachter.',
+      pl: 'Rosyjskie słowa o biurze, wypłacie i szefie — słownictwo dnia pracy i kariery, która za nim stoi.',
+      de: 'Die russischen Wörter für Büro, Gehalt und Chef – Wortschatz für den Arbeitstag und die Laufbahn dahinter.',
+      es: 'Las palabras rusas para la oficina, el sueldo y el jefe: vocabulario de la jornada laboral y de la carrera que hay detrás.',
+      fr: 'Les mots russes pour le bureau, le salaire et le patron : le vocabulaire de la journée de travail et de la carrière qui va avec.',
+      it: 'Le parole russe per l\'ufficio, lo stipendio e il capo: vocabolario della giornata di lavoro e della carriera che ci sta dietro.',
+      cs: 'Ruská slova pro kancelář, výplatu a šéfa – slovní zásoba pracovního dne i kariéry za ním.',
+      tr: 'Ofis, maaş ve patron için Rusça kelimeler — iş günü ve arkasındaki kariyer için kelimeler.'
+    }
+  },
+
+  'feelings-and-emotions': {
+    title: {
+      en: 'Feelings & Emotions Vocabulary',
+      ru: 'Лексика о чувствах и эмоциях',
+      nl: 'Woordenschat over gevoelens en emoties',
+      pl: 'Słownictwo o uczuciach i emocjach',
+      de: 'Wortschatz für Gefühle und Emotionen',
+      es: 'Vocabulario de sentimientos y emociones',
+      fr: 'Vocabulaire des sentiments et des émotions',
+      it: 'Vocabolario dei sentimenti e delle emozioni',
+      cs: 'Slovní zásoba o pocitech a emocích',
+      tr: 'Duygular ve Hisler Kelimeleri'
+    },
+    subtitle: {
+      en: 'The Russian words for emotions, moods, and reactions — vocabulary for saying how you feel and understanding how others do.',
+      ru: 'Русские слова для эмоций, настроений и реакций — лексика, чтобы сказать, что вы чувствуете, и понять других.',
+      nl: 'De Russische woorden voor emoties, stemmingen en reacties — woordenschat om te zeggen hoe je je voelt en anderen te begrijpen.',
+      pl: 'Rosyjskie słowa dotyczące emocji, nastrojów i reakcji — słownictwo, by powiedzieć, co czujesz, i zrozumieć innych.',
+      de: 'Die russischen Wörter für Gefühle, Stimmungen und Reaktionen – Wortschatz, um zu sagen, wie es dir geht, und andere zu verstehen.',
+      es: 'Las palabras rusas para las emociones, los estados de ánimo y las reacciones: vocabulario para decir cómo te sientes y entender a los demás.',
+      fr: 'Les mots russes pour les émotions, les humeurs et les réactions : le vocabulaire pour dire ce que vous ressentez et comprendre les autres.',
+      it: 'Le parole russe per emozioni, stati d\'animo e reazioni: vocabolario per dire come ti senti e capire gli altri.',
+      cs: 'Ruská slova pro emoce, nálady a reakce – slovní zásoba, abyste řekli, jak se cítíte, a porozuměli ostatním.',
+      tr: 'Duygular, ruh hâlleri ve tepkiler için Rusça kelimeler — nasıl hissettiğini anlatmak ve başkalarını anlamak için kelimeler.'
+    }
+  },
+
   // ── Polish lists ─────────────────────────────────────────────────────────
   'administration-and-documents': {
     title: {
