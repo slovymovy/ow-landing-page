@@ -147,6 +147,87 @@ export const topicListCopy: Record<string, TopicListCopy> = {
     }
   },
 
+  'school-vocabulary': {
+    title: {
+      en: 'School Vocabulary',
+      ru: 'Школьная лексика',
+      nl: 'Schoolwoordenschat',
+      pl: 'Słownictwo szkolne',
+      de: 'Schul-Wortschatz',
+      es: 'Vocabulario escolar',
+      fr: 'Vocabulaire scolaire',
+      it: 'Vocabolario della scuola',
+      cs: 'Školní slovní zásoba',
+      tr: 'Okul Kelimeleri'
+    },
+    subtitle: {
+      en: 'The English words for classrooms, subjects, exams, and school life — everything you need to talk about studying.',
+      ru: 'Английские слова о классах, предметах, экзаменах и школьной жизни — всё, чтобы говорить об учёбе.',
+      nl: 'De Engelse woorden voor klaslokalen, vakken, examens en het schoolleven — alles om over studeren te praten.',
+      pl: 'Angielskie słowa dotyczące klas, przedmiotów, egzaminów i życia szkolnego — wszystko, by rozmawiać o nauce.',
+      de: 'Die englischen Wörter für Klassenzimmer, Fächer, Prüfungen und das Schulleben – alles, um über das Lernen zu sprechen.',
+      es: 'Las palabras en inglés para las aulas, las asignaturas, los exámenes y la vida escolar: todo para hablar de los estudios.',
+      fr: "Les mots anglais pour les salles de classe, les matières, les examens et la vie scolaire : tout pour parler des études.",
+      it: 'Le parole inglesi per aule, materie, esami e vita scolastica: tutto ciò che serve per parlare di studio.',
+      cs: 'Anglická slova pro učebny, předměty, zkoušky a školní život – vše, co potřebujete k povídání o studiu.',
+      tr: 'Sınıflar, dersler, sınavlar ve okul hayatı için İngilizce kelimeler — okumak hakkında konuşmak için ihtiyacın olan her şey.'
+    }
+  },
+
+  'emotions-vocabulary': {
+    title: {
+      en: 'Feelings & Emotions Vocabulary',
+      ru: 'Лексика чувств и эмоций',
+      nl: 'Woordenschat over gevoelens en emoties',
+      pl: 'Słownictwo uczuć i emocji',
+      de: 'Wortschatz für Gefühle und Emotionen',
+      es: 'Vocabulario de sentimientos y emociones',
+      fr: 'Vocabulaire des sentiments et des émotions',
+      it: 'Vocabolario dei sentimenti e delle emozioni',
+      cs: 'Slovní zásoba pocitů a emocí',
+      tr: 'Duygular ve Hisler Kelimeleri'
+    },
+    subtitle: {
+      en: 'The English words for emotions, moods, and reactions — everything you need to say how you feel and understand how others do.',
+      ru: 'Английские слова для эмоций, настроений и реакций — всё, чтобы сказать, что вы чувствуете, и понять других.',
+      nl: 'De Engelse woorden voor emoties, stemmingen en reacties — alles om te zeggen hoe je je voelt en anderen te begrijpen.',
+      pl: 'Angielskie słowa dotyczące emocji, nastrojów i reakcji — wszystko, by powiedzieć, co czujesz, i zrozumieć innych.',
+      de: 'Die englischen Wörter für Gefühle, Stimmungen und Reaktionen – alles, um zu sagen, wie es dir geht, und andere zu verstehen.',
+      es: 'Las palabras en inglés para las emociones, los estados de ánimo y las reacciones: todo para decir cómo te sientes y entender a los demás.',
+      fr: 'Les mots anglais pour les émotions, les humeurs et les réactions : tout pour dire ce que vous ressentez et comprendre les autres.',
+      it: "Le parole inglesi per emozioni, stati d'animo e reazioni: tutto ciò che serve per dire come ti senti e capire gli altri.",
+      cs: 'Anglická slova pro emoce, nálady a reakce – vše, co potřebujete, abyste řekli, jak se cítíte, a porozuměli ostatním.',
+      tr: 'Duygular, ruh hâlleri ve tepkiler için İngilizce kelimeler — nasıl hissettiğini anlatmak ve başkalarını anlamak için gereken her şey.'
+    }
+  },
+
+  'housing-vocabulary': {
+    title: {
+      en: 'Housing Vocabulary',
+      ru: 'Лексика о жилье',
+      nl: 'Woordenschat over wonen',
+      pl: 'Słownictwo mieszkaniowe',
+      de: 'Wortschatz für Wohnen und Immobilien',
+      es: 'Vocabulario de la vivienda',
+      fr: 'Vocabulaire du logement',
+      it: "Vocabolario dell'abitazione",
+      cs: 'Slovní zásoba o bydlení',
+      tr: 'Konut Kelimeleri'
+    },
+    subtitle: {
+      en: 'The English words for renting, buying, and furnishing a home — everything you need to find a place to live and settle in.',
+      ru: 'Английские слова об аренде, покупке и обустройстве жилья — всё, чтобы найти жильё и обжиться на новом месте.',
+      nl: 'De Engelse woorden voor huren, kopen en een huis inrichten — alles om een woning te vinden en je er thuis te voelen.',
+      pl: 'Angielskie słowa dotyczące wynajmu, kupna i urządzania mieszkania — wszystko, by znaleźć lokum i się w nim zadomowić.',
+      de: 'Die englischen Wörter für Mieten, Kaufen und Einrichten – alles, um eine Wohnung zu finden und sich einzuleben.',
+      es: 'Las palabras en inglés para alquilar, comprar y amueblar una vivienda: todo para encontrar dónde vivir e instalarte.',
+      fr: "Les mots anglais pour louer, acheter et meubler un logement : tout pour trouver où habiter et s'y installer.",
+      it: 'Le parole inglesi per affittare, comprare e arredare una casa: tutto ciò che serve per trovare dove vivere e sistemarti.',
+      cs: 'Anglická slova pro pronájem, koupi a zařizování bydlení – vše, co potřebujete, abyste našli bydlení a zabydleli se.',
+      tr: 'Kiralamak, satın almak ve ev döşemek için İngilizce kelimeler — oturacak bir yer bulmak ve yerleşmek için gereken her şey.'
+    }
+  },
+
   // ── Dutch lists ──────────────────────────────────────────────────────────
   // NOTE: the Dutch `500-most-common` list is rendered as the core frequency list
   // (topic:false), so its copy lives in wordListCopyNl (bespoke fields), not here.

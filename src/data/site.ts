@@ -362,7 +362,17 @@ export const standalonePaths = ['/about/', '/roadmap/'];
 // Ordered like the learn pages (`languages` above): english, dutch, polish, russian.
 export const wordListLanguages = ['english', 'dutch', 'polish', 'russian'] as const;
 export const wordListSlugs: Record<(typeof wordListLanguages)[number], string[]> = {
-  english: ['500-most-common', 'travel-vocabulary', 'work-vocabulary', 'cooking-vocabulary', 'football-vocabulary', 'harry-potter-vocabulary'],
+  english: [
+    '500-most-common',
+    'travel-vocabulary',
+    'work-vocabulary',
+    'cooking-vocabulary',
+    'football-vocabulary',
+    'harry-potter-vocabulary',
+    'school-vocabulary',
+    'emotions-vocabulary',
+    'housing-vocabulary'
+  ],
   dutch: ['just-arrived', '500-most-common', 'knm-exam', 'supermarket', 'at-the-doctor', 'family'],
   polish: ['administration-and-documents', 'healthcare-and-dentist', 'renting-and-housing', 'home-and-household'],
   russian: [

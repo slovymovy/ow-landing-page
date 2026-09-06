@@ -4,6 +4,9 @@ import travelWords from './word-lists/travel-vocabulary.json';
 import workWords from './word-lists/work-vocabulary.json';
 import harryPotterWords from './word-lists/harry-potter-vocabulary.json';
 import cookingWords from './word-lists/cooking-vocabulary.json';
+import schoolWords from './word-lists/school-vocabulary.json';
+import emotionWords from './word-lists/emotions-vocabulary.json';
+import housingWords from './word-lists/housing-vocabulary.json';
 import nlJustArrived from './word-lists/nl-just-arrived.json';
 import nl500Common from './word-lists/nl-500-most-common.json';
 import nlKnmExam from './word-lists/nl-knm-exam.json';
@@ -112,6 +115,9 @@ const REGISTRY: ListDef[] = [
   { language: 'english', slug: 'cooking-vocabulary', order: 4, topic: true, words: cookingWords as RawWord[] },
   { language: 'english', slug: 'football-vocabulary', order: 5, topic: true, words: footballWords as RawWord[] },
   { language: 'english', slug: 'harry-potter-vocabulary', order: 6, topic: true, words: harryPotterWords as RawWord[] },
+  { language: 'english', slug: 'school-vocabulary', order: 7, topic: true, words: schoolWords as RawWord[] },
+  { language: 'english', slug: 'emotions-vocabulary', order: 8, topic: true, words: emotionWords as RawWord[] },
+  { language: 'english', slug: 'housing-vocabulary', order: 9, topic: true, words: housingWords as RawWord[] },
 
   // Dutch lists — `order` follows the source content ordering. `500-most-common`
   // is the Dutch core list: bespoke copy like English's, but the source words are
