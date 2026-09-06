@@ -18,6 +18,8 @@ import ruShoppingAndMoney from './word-lists/ru-shopping-and-money.json';
 import ruHealthAndBody from './word-lists/ru-health-and-body.json';
 import ruClothesAndAppearance from './word-lists/ru-clothes-and-appearance.json';
 import ruWeatherAndNature from './word-lists/ru-weather-and-nature.json';
+import ruWorkAndCareer from './word-lists/ru-work-and-career.json';
+import ruFeelingsAndEmotions from './word-lists/ru-feelings-and-emotions.json';
 import plAdministrationAndDocuments from './word-lists/pl-administration-and-documents.json';
 import plHealthcareAndDentist from './word-lists/pl-healthcare-and-dentist.json';
 import plRentingAndHousing from './word-lists/pl-renting-and-housing.json';
@@ -123,7 +125,7 @@ const REGISTRY: ListDef[] = [
   { language: 'dutch', slug: 'family', order: 6, topic: true, words: nlFamily as RawWord[] },
 
   // Russian lists — all thematic (no frequency/core list), ordered by everyday
-  // usefulness. Source: ru_lists_export.csv via gen_ru.py.
+  // usefulness. Source: ru_lists_export.csv + ru_lists_export_4lists.csv.
   { language: 'russian', slug: 'family-and-people', order: 1, topic: true, words: ruFamilyAndPeople as RawWord[] },
   { language: 'russian', slug: 'food-and-kitchen', order: 2, topic: true, words: ruFoodAndKitchen as RawWord[] },
   { language: 'russian', slug: 'city-and-transport', order: 3, topic: true, words: ruCityAndTransport as RawWord[] },
@@ -132,6 +134,8 @@ const REGISTRY: ListDef[] = [
   { language: 'russian', slug: 'health-and-body', order: 6, topic: true, words: ruHealthAndBody as RawWord[] },
   { language: 'russian', slug: 'clothes-and-appearance', order: 7, topic: true, words: ruClothesAndAppearance as RawWord[] },
   { language: 'russian', slug: 'weather-and-nature', order: 8, topic: true, words: ruWeatherAndNature as RawWord[] },
+  { language: 'russian', slug: 'work-and-career', order: 9, topic: true, words: ruWorkAndCareer as RawWord[] },
+  { language: 'russian', slug: 'feelings-and-emotions', order: 10, topic: true, words: ruFeelingsAndEmotions as RawWord[] },
 
   // Polish lists — all thematic (no frequency/core list), aimed at everyday
   // life in Poland; ordered by a newcomer's priorities. Source:

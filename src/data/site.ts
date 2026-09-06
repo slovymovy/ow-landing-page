@@ -373,7 +373,9 @@ export const wordListSlugs: Record<(typeof wordListLanguages)[number], string[]>
     'shopping-and-money',
     'health-and-body',
     'clothes-and-appearance',
-    'weather-and-nature'
+    'weather-and-nature',
+    'work-and-career',
+    'feelings-and-emotions'
   ]
 };
 const wordListPaths = wordListLanguages.flatMap((lang) => [
