@@ -324,6 +324,7 @@ export const translationLanguages = [
   { code: 'PL', exclude: 'polish', name: { en: 'Polish', pl: 'Polski', nl: 'Pools', ru: 'Польский', it: 'Polacco', es: 'Polaco', de: 'Polnisch', fr: 'Polonais', cs: 'Polština', tr: 'Lehçe' } },
   { code: 'TR', name: { en: 'Turkish', pl: 'Turecki', nl: 'Turks', ru: 'Турецкий', it: 'Turco', es: 'Turco', de: 'Türkisch', fr: 'Turc', cs: 'Turečtina', tr: 'Türkçe' } },
   { code: 'CS', name: { en: 'Czech', pl: 'Czeski', nl: 'Tsjechisch', ru: 'Чешский', it: 'Ceco', es: 'Checo', de: 'Tschechisch', fr: 'Tchèque', cs: 'Čeština', tr: 'Çekçe' } },
+  { code: 'ZH', name: { en: 'Simplified Chinese', pl: 'Chiński uproszczony', nl: 'Vereenvoudigd Chinees', ru: 'Упрощённый китайский', it: 'Cinese semplificato', es: 'Chino simplificado', de: 'Vereinfachtes Chinesisch', fr: 'Chinois simplifié', cs: 'Zjednodušená čínština', tr: 'Basitleştirilmiş Çince' } },
   { code: 'RU', exclude: 'russian', name: { en: 'Russian', pl: 'Rosyjski', nl: 'Russisch', ru: 'Русский', it: 'Russo', es: 'Ruso', de: 'Russisch', fr: 'Russe', cs: 'Ruština', tr: 'Rusça' } }
 ] as const;
 

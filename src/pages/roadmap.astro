@@ -36,19 +36,10 @@ interface RoadmapGroup {
 
 const roadmap: RoadmapGroup[] = [
   {
-    id: 'progress',
-    status: 'In progress',
-    when: 'Mid-August 2026',
-    current: true,
-    note: 'Chinese is the most requested language. We’re adding it right now.',
-    items: [
-      { name: 'Simplified Chinese', native: '简体中文', lang: 'zh-Hans', kind: 'translation' }
-    ]
-  },
-  {
     id: 'september',
     status: 'Planned',
     when: 'September 2026',
+    current: true,
     items: [
       { name: 'German', native: 'Deutsch', lang: 'de', kind: 'learning' },
       { name: 'French', native: 'Français', lang: 'fr', kind: 'learning' },
@@ -60,21 +51,40 @@ const roadmap: RoadmapGroup[] = [
     status: 'Later',
     when: 'Not scheduled yet',
     items: [
-      { name: 'Traditional Chinese', native: '繁體中文', lang: 'zh-Hant' },
+      { name: 'Traditional Chinese', native: '繁體中文', lang: 'zh-Hant', kind: 'translation' },
       { name: 'Korean', native: '한국어', lang: 'ko' },
       { name: 'Italian', native: 'Italiano', lang: 'it', kind: 'learning' },
       { name: 'Arabic', native: 'العربية', lang: 'ar' },
-      { name: 'Persian', native: 'فارسی', lang: 'fa' },
+      { name: 'Persian', native: 'فارسی', lang: 'fa', kind: 'translation' },
       { name: 'Central Kurdish', native: 'کوردیی ناوەندی', lang: 'ckb' },
       { name: 'Lithuanian', native: 'Lietuvių', lang: 'lt' },
       { name: 'Danish', native: 'Dansk', lang: 'da' },
       { name: 'Norwegian', native: 'Norsk', lang: 'no' },
-      { name: 'Portuguese', native: 'Português', lang: 'pt' },
+      { name: 'Portuguese', native: 'Português', lang: 'pt', kind: 'learning' },
       { name: 'Czech', native: 'Čeština', lang: 'cs', kind: 'learning' },
-      { name: 'Swedish', native: 'Svenska', lang: 'sv' }
+      { name: 'Swedish', native: 'Svenska', lang: 'sv' },
+      { name: 'Greek', native: 'Ελληνικά', lang: 'el', kind: 'translation' },
+      { name: 'Hindi', native: 'हिन्दी', lang: 'hi', kind: 'translation' },
+      { name: 'Vietnamese', native: 'Tiếng Việt', lang: 'vi', kind: 'translation' },
+      { name: 'Bengali', native: 'বাংলা', lang: 'bn', kind: 'translation' },
+      { name: 'Uzbek', native: 'Oʻzbekcha', lang: 'uz', kind: 'translation' },
+      { name: 'Ukrainian', native: 'Українська', lang: 'uk', kind: 'learning' },
+      { name: 'Kazakh', native: 'Қазақша', lang: 'kk', kind: 'translation' },
+      { name: 'Azerbaijani', native: 'Azərbaycanca', lang: 'az', kind: 'translation' },
+      { name: 'Telugu', native: 'తెలుగు', lang: 'te', kind: 'translation' },
+      { name: 'Hebrew', native: 'עברית', lang: 'he', kind: 'translation' }
     ]
   }
 ];
+
+// Learning languages first, then translation languages, then ones with no form yet.
+const kindOrder: Record<string, number> = { learning: 0, translation: 1 };
+const sortedRoadmap = roadmap.map((group) => ({
+  ...group,
+  items: [...group.items].sort(
+    (a, b) => (kindOrder[a.kind ?? ''] ?? 2) - (kindOrder[b.kind ?? ''] ?? 2)
+  )
+}));
 
 const kindLabel: Record<LanguageKind, string> = {
   learning: 'Learning language',
@@ -98,7 +108,7 @@ const structuredData = [
 ---
 <BaseLayout
   title="Roadmap – OpenWords"
-  description="The languages coming next to OpenWords: Simplified Chinese translations in mid-August, German and French as learning languages plus Japanese translations in September, and the languages people have asked for after that."
+  description="The languages coming next to OpenWords: German and French as learning languages plus Japanese translations in September, and the languages people have asked for after that."
   locale={locale}
   path="/roadmap"
   localized={false}
@@ -160,7 +170,7 @@ const structuredData = [
         <h2 class="rm-h2">What's coming</h2>
 
         <div class="timeline">
-          {roadmap.map((group) => (
+          {sortedRoadmap.map((group) => (
             <section class:list={['tl-group', { 'tl-group--current': group.current }]}>
               <span class="tl-dot" aria-hidden="true"></span>
               <div class="tl-head">
@@ -446,15 +456,15 @@ const structuredData = [
     margin: 16px 0 0;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(168px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 8px;
   }
 
   .lang-card {
     background: #1C1F2A;
     border: 1px solid rgba(255, 255, 255, .07);
-    border-radius: 14px;
-    padding: 16px;
+    border-radius: 12px;
+    padding: 13px 14px;
   }
 
   .lang-card--learning { border-color: rgba(197, 163, 103, .28); }
@@ -463,16 +473,16 @@ const structuredData = [
 
   .lang-card__name {
     font-family: Lora, Georgia, serif;
-    font-size: 1.0625rem;
+    font-size: 1rem;
     font-weight: 600;
     color: #E2E4ED;
     letter-spacing: -.01em;
   }
 
   .lang-card__native {
-    font-size: .875rem;
+    font-size: .8125rem;
     color: #868ca6;
-    margin-top: 2px;
+    margin-top: 1px;
   }
 
   .lang-card__kind {
@@ -480,7 +490,7 @@ const structuredData = [
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: .08em;
-    margin-top: 12px;
+    margin-top: 9px;
     color: #6f7591;
   }
 
@@ -572,6 +582,6 @@ const structuredData = [
     .rm-timeline-section,
     .rm-ask { padding: 36px 0; }
     .rm-cta { padding: 16px 0 56px; }
-    .lang-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+    .lang-grid { grid-template-columns: repeat(auto-fill, minmax(132px, 1fr)); }
   }
 </style>
