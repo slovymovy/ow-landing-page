@@ -36,9 +36,9 @@ interface RoadmapGroup {
 
 const roadmap: RoadmapGroup[] = [
   {
-    id: 'september',
-    status: 'Planned',
-    when: 'September 2026',
+    id: 'october',
+    status: 'In progress',
+    when: 'October 2026',
     current: true,
     items: [
       { name: 'German', native: 'Deutsch', lang: 'de', kind: 'learning' },
@@ -51,7 +51,10 @@ const roadmap: RoadmapGroup[] = [
     status: 'Later',
     when: 'Not scheduled yet',
     items: [
+      { name: 'Japanese', native: '日本語', lang: 'ja', kind: 'learning' },
       { name: 'Traditional Chinese', native: '繁體中文', lang: 'zh-Hant', kind: 'translation' },
+      { name: 'Bosnian', native: 'Bosanski', lang: 'bs', kind: 'translation' },
+      { name: 'Romanian', native: 'Română', lang: 'ro', kind: 'translation' },
       { name: 'Korean', native: '한국어', lang: 'ko' },
       { name: 'Italian', native: 'Italiano', lang: 'it', kind: 'learning' },
       { name: 'Arabic', native: 'العربية', lang: 'ar' },
@@ -108,7 +111,7 @@ const structuredData = [
 ---
 <BaseLayout
   title="Roadmap – OpenWords"
-  description="The languages coming next to OpenWords: German and French as learning languages plus Japanese translations in September, and the languages people have asked for after that."
+  description="The languages coming next to OpenWords: German and French as learning languages plus Japanese translations in October, and the languages people have asked for after that."
   locale={locale}
   path="/roadmap"
   localized={false}
