@@ -4,13 +4,14 @@ import Header from '../components/Header.astro';
 import MobileDownloadBar from '../components/MobileDownloadBar.astro';
 import StoreButtons from '../components/StoreButtons.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { absoluteUrl, languageSlugs, languages, site, translationLanguages } from '../data/site';
+import { absoluteUrl, languageInfo, site, supportedLanguageSlugs, translationLanguages } from '../data/site';
 
 const locale = 'en';
 
 // What ships today, read straight from the registries so this page can't drift
 // out of sync with the /learn pages and the "Every meaning, in your language" band.
-const learningToday = languageSlugs.map((slug) => languages[slug].name);
+// `supportedLanguageSlugs` includes learning languages live in the app without a /learn page yet.
+const learningToday = supportedLanguageSlugs.map((slug) => languageInfo(slug).name);
 const translationToday = translationLanguages.map((l) => l.name.en);
 
 type LanguageKind = 'learning' | 'translation';
@@ -41,7 +42,6 @@ const roadmap: RoadmapGroup[] = [
     when: 'October 2026',
     current: true,
     items: [
-      { name: 'German', native: 'Deutsch', lang: 'de', kind: 'learning' },
       { name: 'French', native: 'Français', lang: 'fr', kind: 'learning' },
       { name: 'Japanese', native: '日本語', lang: 'ja', kind: 'translation' }
     ]
@@ -66,7 +66,7 @@ const roadmap: RoadmapGroup[] = [
       { name: 'Portuguese', native: 'Português', lang: 'pt', kind: 'learning' },
       { name: 'Czech', native: 'Čeština', lang: 'cs', kind: 'learning' },
       { name: 'Swedish', native: 'Svenska', lang: 'sv' },
-      { name: 'Greek', native: 'Ελληνικά', lang: 'el', kind: 'translation' },
+      { name: 'Greek', native: 'Ελληνικά', lang: 'el' },
       { name: 'Hindi', native: 'हिन्दी', lang: 'hi', kind: 'translation' },
       { name: 'Vietnamese', native: 'Tiếng Việt', lang: 'vi', kind: 'translation' },
       { name: 'Bengali', native: 'বাংলা', lang: 'bn', kind: 'translation' },
@@ -75,7 +75,9 @@ const roadmap: RoadmapGroup[] = [
       { name: 'Kazakh', native: 'Қазақша', lang: 'kk', kind: 'translation' },
       { name: 'Azerbaijani', native: 'Azərbaycanca', lang: 'az', kind: 'translation' },
       { name: 'Telugu', native: 'తెలుగు', lang: 'te', kind: 'translation' },
-      { name: 'Hebrew', native: 'עברית', lang: 'he', kind: 'translation' }
+      { name: 'Hebrew', native: 'עברית', lang: 'he', kind: 'translation' },
+      { name: 'Georgian', native: 'ქართული', lang: 'ka', kind: 'translation' },
+      { name: 'Brazilian Portuguese', native: 'Português do Brasil', lang: 'pt-BR', kind: 'translation' }
     ]
   }
 ];
@@ -111,7 +113,7 @@ const structuredData = [
 ---
 <BaseLayout
   title="Roadmap – OpenWords"
-  description="The languages coming next to OpenWords: German and French as learning languages plus Japanese translations in October, and the languages people have asked for after that."
+  description="The languages coming next to OpenWords: French as a learning language plus Japanese translations in October, and the languages people have asked for after that."
   locale={locale}
   path="/roadmap"
   localized={false}

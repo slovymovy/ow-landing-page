@@ -310,6 +310,43 @@ export const languages = {
   }
 } as const;
 
+// Learning languages the app already supports but that have no /learn page or
+// word lists on the website yet. They appear in the homepage hero chips, the
+// language cards and the roadmap's "Available today" list, but generate no
+// routes, nav links or sitemap entries. When a language's learn page ships,
+// move its entry into `languages` above (and add its copy in copy.ts).
+export const appOnlyLanguages = {
+  german: {
+    slug: 'german',
+    name: 'German',
+    flag: '🇩🇪',
+    displayName: {
+      en: 'German',
+      pl: 'Niemiecki',
+      nl: 'Duits',
+      ru: 'Немецкий',
+      it: 'Tedesco',
+      es: 'Alemán',
+      de: 'Deutsch',
+      fr: 'Allemand',
+      cs: 'Němčina',
+      tr: 'Almanca'
+    },
+    localName: {
+      en: 'German',
+      pl: 'niemieckiego',
+      nl: 'Duits',
+      ru: 'немецкий',
+      it: 'tedesco',
+      es: 'alemán',
+      de: 'Deutsch',
+      fr: 'allemand',
+      cs: 'němčiny',
+      tr: 'Almanca'
+    }
+  }
+} as const;
+
 // Languages that definitions + example sentences are translated into, shown in
 // the "Every meaning, in your language" band on each /learn page. Names are
 // localised to the page's own locale (SEO: single-language content signal).
@@ -330,9 +367,20 @@ export const translationLanguages = [
 
 export type LocaleCode = keyof typeof locales;
 export type LanguageSlug = keyof typeof languages;
+export type AppOnlyLanguageSlug = keyof typeof appOnlyLanguages;
 
 export const localeCodes = Object.keys(locales) as LocaleCode[];
 export const languageSlugs = Object.keys(languages) as LanguageSlug[];
+export const appOnlyLanguageSlugs = Object.keys(appOnlyLanguages) as AppOnlyLanguageSlug[];
+
+// Display order for "supported languages" lists (hero chips, homepage cards,
+// roadmap "Available today"): English first, German second, then the rest.
+// Keep the prose lists in copy.ts and llms.txt.ts in the same order.
+export type SupportedLanguageSlug = LanguageSlug | AppOnlyLanguageSlug;
+export const supportedLanguageSlugs: SupportedLanguageSlug[] = ['english', 'german', 'dutch', 'polish', 'russian'];
+export const hasLearnPage = (slug: SupportedLanguageSlug): slug is LanguageSlug => slug in languages;
+export const languageInfo = (slug: SupportedLanguageSlug) =>
+  hasLearnPage(slug) ? languages[slug] : appOnlyLanguages[slug];
 
 export function localizePath(locale: LocaleCode, path = '/') {
   const cleanPath = path === '/' ? '' : path.replace(/\/$/, '');
