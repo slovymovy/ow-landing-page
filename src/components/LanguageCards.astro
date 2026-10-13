@@ -1,6 +1,6 @@
 ---
 import { homeCopy } from '../data/copy';
-import { languageSlugs, languages, localizePath, type LanguageSlug, type LocaleCode } from '../data/site';
+import { hasLearnPage, languageInfo, localizePath, supportedLanguageSlugs, type LocaleCode, type SupportedLanguageSlug } from '../data/site';
 
 interface Props {
   locale?: LocaleCode;
@@ -12,37 +12,48 @@ const copy = homeCopy[locale];
 // Czech "Učit se" needs the accusative case. `localName` holds the genitive
 // form the learn pages rely on (e.g. "slovní zásoba angličtiny"), so the card
 // CTA supplies its own accusative form just for Czech.
-const csAccusative: Record<LanguageSlug, string> = {
+type CardSlug = SupportedLanguageSlug;
+const csAccusative: Record<CardSlug, string> = {
   english: 'angličtinu',
   dutch: 'nizozemštinu',
   polish: 'polštinu',
-  russian: 'ruštinu'
+  russian: 'ruštinu',
+  german: 'němčinu'
 };
 // French needs a definite article after "Apprendre" ("Apprendre l'anglais",
 // "Apprendre le néerlandais"), which localName (bare name) doesn't include.
-const frArticle: Record<LanguageSlug, string> = {
+const frArticle: Record<CardSlug, string> = {
   english: 'l\'anglais',
   dutch: 'le néerlandais',
   polish: 'le polonais',
-  russian: 'le russe'
+  russian: 'le russe',
+  german: 'l\'allemand'
 };
-const ctaName = (slug: LanguageSlug) =>
+const info = languageInfo;
+const ctaName = (slug: CardSlug) =>
   locale === 'cs' ? csAccusative[slug]
   : locale === 'fr' ? frArticle[slug]
-  : languages[slug].localName[locale];
+  : info(slug).localName[locale];
 
 // Turkish is verb-final: the object comes before the verb ("İngilizce Öğren",
 // not "Öğren İngilizce"), so the CTA flips word order for Turkish.
-const ctaText = (slug: LanguageSlug) =>
+const ctaText = (slug: CardSlug) =>
   locale === 'tr'
     ? `${ctaName(slug)} ${copy.learnVerb}`
     : `${copy.learnVerb} ${ctaName(slug)}`;
+
+// Learn-page languages link to their /learn page. App-only languages (German,
+// no website page yet) link to the download section on the same page instead.
+const cards = supportedLanguageSlugs.map((slug) => ({
+  slug,
+  href: hasLearnPage(slug) ? localizePath(locale, `/learn/${slug}`) : '#download'
+}));
 ---
 <div class="lang-grid">
-  {languageSlugs.map((slug) => (
-    <a class="lang-card" href={localizePath(locale, `/learn/${slug}`)}>
-      <div class="lang-card__flag" aria-hidden="true">{languages[slug].flag}</div>
-      <div class="lang-card__name">{languages[slug].displayName[locale]}</div>
+  {cards.map(({ slug, href }) => (
+    <a class="lang-card" href={href}>
+      <div class="lang-card__flag" aria-hidden="true">{info(slug).flag}</div>
+      <div class="lang-card__name">{info(slug).displayName[locale]}</div>
       <div class="lang-card__cta">
         {ctaText(slug)}
         <span aria-hidden="true">→</span>
@@ -52,14 +63,20 @@ const ctaText = (slug: LanguageSlug) =>
 </div>
 
 <style>
-  /* Compact 2×2 grid on phones — avoids tall stacked cards / dead space. */
+  /* Compact 2-column grid on phones — avoids tall stacked cards / dead space.
+     With an odd card count the last card spans the row so nothing dangles. */
   .lang-grid {
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr 1fr;
   }
 
-  @media (min-width: 960px) { .lang-grid { grid-template-columns: repeat(4, 1fr); } }
+  .lang-card:last-child:nth-child(odd) { grid-column: 1 / -1; }
+
+  @media (min-width: 960px) {
+    .lang-grid { grid-template-columns: repeat(5, 1fr); }
+    .lang-card:last-child:nth-child(odd) { grid-column: auto; }
+  }
 
   .lang-card {
     display: flex;

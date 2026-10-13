@@ -2,8 +2,8 @@ import { languages, type LanguageSlug, type LocaleCode } from './site';
 
 export const homeCopy = {
   en: {
-    title: 'OpenWords - Vocabulary app for English, Dutch, Polish and Russian',
-    description: 'Look up any word, save the exact meaning in one tap, and review it with spaced repetition. Free vocabulary app for English, Dutch, Polish, and Russian.',
+    title: 'OpenWords - Vocabulary app for English, German, Dutch, Polish and Russian',
+    description: 'Look up any word, save the exact meaning in one tap, and review it with spaced repetition. Free vocabulary app for English, German, Dutch, Polish, and Russian.',
     navDownload: 'Download',
     eyebrow: 'Available on iOS & Android',
     heroEyebrow: 'Dictionary & flashcards',
@@ -11,7 +11,7 @@ export const homeCopy = {
     heroH1Em: 'actually meet.',
     heroH1Html: 'Look up any word.<br>Save it.<br><em>Remember it.</em>',
     heroTagline: 'Free · No account required · Works offline',
-    subtitle: 'Remember the words you usually forget by tomorrow. OpenWords is a dictionary and flashcard app for English, Dutch, Polish, and Russian. Look up a word you just met, save its exact meaning in one tap, and it comes back as a flashcard until it sticks.',
+    subtitle: 'Remember the words you usually forget by tomorrow. OpenWords is a dictionary and flashcard app for English, German, Dutch, Polish, and Russian. Look up a word you just met, save its exact meaning in one tap, and it comes back as a flashcard until it sticks.',
     problemTitle: 'You already look words up. You already forget them. That\'s not your fault.',
     problemTitleEm: 'That\'s not your fault.',
     problem: 'Forgetting is how memory works — a word you meet once is supposed to fade. The fix isn\'t more discipline. It\'s seeing the word again at the right moment, in different ways. OpenWords closes that loop: the lookup is the flashcard, the review schedule runs itself, and each word comes back as a different kind of card so it sticks from more than one angle.',
@@ -91,7 +91,7 @@ export const homeCopy = {
     }
   },
   pl: {
-    title: 'OpenWords – aplikacja do nauki słownictwa (angielski, niderlandzki, polski, rosyjski)',
+    title: 'OpenWords – aplikacja do nauki słownictwa (angielski, niemiecki, niderlandzki, polski, rosyjski)',
     description: 'Sprawdzaj słówka, zapisuj ich dokładne znaczenie jednym kliknięciem i powtarzaj je metodą powtórek interwałowych. Darmowa aplikacja bez logowania i offline.',
     navDownload: 'Pobierz',
     eyebrow: 'Dostępne na iOS i Androida',
@@ -100,7 +100,7 @@ export const homeCopy = {
     heroH1Em: 'naprawdę napotykasz.',
     heroH1Html: 'Znajdź słowo.<br>Zapisz je.<br><em>Zapamiętaj.</em>',
     heroTagline: 'Całkowicie za darmo · Bez zakładania konta · Działa offline',
-    subtitle: 'Zapamiętaj słowa, które zwykle zapominasz już do jutra. OpenWords to słownik i aplikacja do fiszek dla języka angielskiego, niderlandzkiego, polskiego i rosyjskiego. Zapisz dokładne znaczenie nowego słowa jednym kliknięciem i powtarzaj je na fiszkach, aż na dobre zapadnie Ci w pamięć.',
+    subtitle: 'Zapamiętaj słowa, które zwykle zapominasz już do jutra. OpenWords to słownik i aplikacja do fiszek dla języka angielskiego, niemieckiego, niderlandzkiego, polskiego i rosyjskiego. Zapisz dokładne znaczenie nowego słowa jednym kliknięciem i powtarzaj je na fiszkach, aż na dobre zapadnie Ci w pamięć.',
     problemTitle: 'I tak już sprawdzasz nowe słówka. I tak zaraz je zapominasz. To nie Twoja wina.',
     problemTitleEm: 'To nie Twoja wina.',
     problem: 'Zapominanie to naturalny mechanizm pamięci – słowo usłyszane tylko raz ma prawo ulecieć. Rozwiązaniem nie jest większa dyscyplina, lecz ponowne zetknięcie się ze słowem we właściwym momencie i na różne sposoby. OpenWords zamyka to błędne koło: samo wyszukiwanie staje się fiszką, harmonogram powtórek steruje się sam, a każde słowo wraca w formie różnych ćwiczeń, dzięki czemu utrwala się w pamięci z wielu stron.',
@@ -180,7 +180,7 @@ export const homeCopy = {
     }
   },
   nl: {
-    title: 'OpenWords – woordenschat-app voor Engels, Nederlands, Pools en Russisch',
+    title: 'OpenWords – woordenschat-app voor Engels, Duits, Nederlands, Pools en Russisch',
     description: 'Zoek woorden op, bewaar de exacte betekenis met één tik en leer met gespreide herhaling. Gratis woordenschat-app zonder account en offline te gebruiken.',
     navDownload: 'Download',
     eyebrow: 'Beschikbaar voor iOS & Android',
@@ -189,7 +189,7 @@ export const homeCopy = {
     heroH1Em: 'echt tegenkomt.',
     heroH1Html: 'Zoek elk woord op.<br>Sla het op.<br><em>Onthoud het.</em>',
     heroTagline: 'Volledig gratis · Geen account nodig · Werkt offline',
-    subtitle: 'Onthoud de woorden die je normaal morgen alweer vergeet. OpenWords is een woordenboek- en flitskaarten-app voor Engels, Nederlands, Pools en Russisch. Vind de exacte betekenis van een nieuw woord met één tik, sla het op, en het komt terug als flitskaart totdat het blijft hangen.',
+    subtitle: 'Onthoud de woorden die je normaal morgen alweer vergeet. OpenWords is een woordenboek- en flitskaarten-app voor Engels, Duits, Nederlands, Pools en Russisch. Vind de exacte betekenis van een nieuw woord met één tik, sla het op, en het komt terug als flitskaart totdat het blijft hangen.',
     problemTitle: 'Je zoekt woorden nu ook al op. En je vergeet ze net zo snel weer. Dat is niet jouw schuld.',
     problemTitleEm: 'Dat is niet jouw schuld.',
     problem: 'Vergeten is simpelweg hoe ons geheugen werkt – een woord dat je maar één keer tegenkomt, hoort te vervagen. Meer discipline is niet de oplossing. Wat wel helpt, is het woord opnieuw tegenkomen op het juiste moment én op verschillende manieren. OpenWords doorbreekt deze cirkel: de zoekopdracht wordt direct een flashcard, het herhaalschema regelt zichzelf en elk woord komt in een andere vorm terug. Zo blijft het vanuit meerdere invalshoeken hangen.',
@@ -269,7 +269,7 @@ export const homeCopy = {
     }
   },
   ru: {
-    title: 'OpenWords — приложение для изучения слов (английский, нидерландский, польский, русский)',
+    title: 'OpenWords — приложение для изучения слов (английский, немецкий, нидерландский, польский, русский)',
     description: 'Ищите слова, сохраняйте точное значение в один тап и закрепляйте их в памяти по методу интервальных повторений. Бесплатное приложение без регистрации и офлайн.',
     navDownload: 'Скачать',
     eyebrow: 'Доступно на iOS и Android',
@@ -278,7 +278,7 @@ export const homeCopy = {
     heroH1Em: 'действительно встречаете в жизни.',
     heroH1Html: 'Ищите любые слова.<br>Сохраняйте их.<br><em>Запоминайте.</em>',
     heroTagline: 'Полностью бесплатно · Без регистрации · Работает офлайн',
-    subtitle: 'Запоминайте слова, которые обычно забываете уже к завтрашнему дню. OpenWords — это словарь и приложение с карточками для изучения английского, нидерландского, польского и русского языков. Сохраняйте точное значение нового слова в один тап и повторяйте его по карточкам, пока оно не закрепится в памяти.',
+    subtitle: 'Запоминайте слова, которые обычно забываете уже к завтрашнему дню. OpenWords — это словарь и приложение с карточками для изучения английского, немецкого, нидерландского, польского и русского языков. Сохраняйте точное значение нового слова в один тап и повторяйте его по карточкам, пока оно не закрепится в памяти.',
     problemTitle: 'Вы уже ищете новые слова в словаре. И вы всё равно их забываете. Это не ваша вина.',
     problemTitleEm: 'Это не ваша вина.',
     problem: 'Забывание — естественный механизм памяти. Слово, которое вы встретили всего один раз, просто обязано стереться. И дело здесь не в нехватке дисциплины. Решение в том, чтобы снова столкнуться со словом вовремя и в разных форматах. OpenWords замыкает этот круг: сам поиск слова превращается в готовую карточку, расписание повторений подстраивается автоматически, а каждое слово возвращается в разных типах заданий. Так оно закрепляется в памяти со всех сторон.',
@@ -358,8 +358,8 @@ export const homeCopy = {
     }
   },
   it: {
-    title: 'OpenWords – app di vocabolario per inglese, olandese, polacco e russo',
-    description: 'Cerca qualsiasi parola, salva il significato esatto con un tocco e ripassalo con la ripetizione dilazionata. App di vocabolario gratuita per inglese, olandese, polacco e russo.',
+    title: 'OpenWords – app di vocabolario per inglese, tedesco, olandese, polacco e russo',
+    description: 'Cerca qualsiasi parola, salva il significato esatto con un tocco e ripassalo con la ripetizione dilazionata. App di vocabolario gratuita per inglese, tedesco, olandese, polacco e russo.',
     navDownload: 'Scarica',
     eyebrow: 'Disponibile su iOS e Android',
     heroEyebrow: 'Dizionario e flashcard',
@@ -367,7 +367,7 @@ export const homeCopy = {
     heroH1Em: 'incontri davvero.',
     heroH1Html: 'Cerca qualsiasi parola.<br>Salvala.<br><em>Ricordala.</em>',
     heroTagline: 'Gratis · Nessun account richiesto · Funziona offline',
-    subtitle: 'Ricorda le parole che di solito dimentichi entro domani. OpenWords è un\'app di dizionario e flashcard per inglese, olandese, polacco e russo. Cerca una parola che hai appena incontrato, salvane il significato esatto con un tocco, e tornerà come flashcard finché non ti resta in mente.',
+    subtitle: 'Ricorda le parole che di solito dimentichi entro domani. OpenWords è un\'app di dizionario e flashcard per inglese, tedesco, olandese, polacco e russo. Cerca una parola che hai appena incontrato, salvane il significato esatto con un tocco, e tornerà come flashcard finché non ti resta in mente.',
     problemTitle: 'Cerchi già le parole nel dizionario. E le dimentichi comunque. Non è colpa tua.',
     problemTitleEm: 'Non è colpa tua.',
     problem: 'Dimenticare è il modo in cui funziona la memoria: una parola incontrata una sola volta è destinata a svanire. La soluzione non è più disciplina. È rivedere la parola al momento giusto, in modi diversi. OpenWords chiude questo cerchio: la ricerca diventa la flashcard, il programma di ripasso si gestisce da solo e ogni parola torna in una forma diversa, così si fissa da più angolazioni.',
@@ -447,8 +447,8 @@ export const homeCopy = {
     }
   },
   es: {
-    title: 'OpenWords – app de vocabulario para inglés, neerlandés, polaco y ruso',
-    description: 'Busca cualquier palabra, guarda su significado exacto con un toque y repásalo con repetición espaciada. App de vocabulario gratuita para inglés, neerlandés, polaco y ruso.',
+    title: 'OpenWords – app de vocabulario para inglés, alemán, neerlandés, polaco y ruso',
+    description: 'Busca cualquier palabra, guarda su significado exacto con un toque y repásalo con repetición espaciada. App de vocabulario gratuita para inglés, alemán, neerlandés, polaco y ruso.',
     navDownload: 'Descargar',
     eyebrow: 'Disponible en iOS y Android',
     heroEyebrow: 'Diccionario y tarjetas',
@@ -456,7 +456,7 @@ export const homeCopy = {
     heroH1Em: 'realmente encuentras.',
     heroH1Html: 'Busca cualquier palabra.<br>Guárdala.<br><em>Recuérdala.</em>',
     heroTagline: 'Gratis · Sin cuenta · Funciona sin conexión',
-    subtitle: 'Recuerda las palabras que sueles olvidar para mañana. OpenWords es una app de diccionario y tarjetas para inglés, neerlandés, polaco y ruso. Busca una palabra que acabas de encontrar, guarda su significado exacto con un toque, y volverá como tarjeta hasta que se quede grabada.',
+    subtitle: 'Recuerda las palabras que sueles olvidar para mañana. OpenWords es una app de diccionario y tarjetas para inglés, alemán, neerlandés, polaco y ruso. Busca una palabra que acabas de encontrar, guarda su significado exacto con un toque, y volverá como tarjeta hasta que se quede grabada.',
     problemTitle: 'Ya buscas las palabras. Y aun así las olvidas. No es culpa tuya.',
     problemTitleEm: 'No es culpa tuya.',
     problem: 'Olvidar es como funciona la memoria: una palabra que ves una sola vez está destinada a desvanecerse. La solución no es más disciplina. Es volver a ver la palabra en el momento adecuado, de distintas maneras. OpenWords cierra ese ciclo: la búsqueda es la tarjeta, el calendario de repaso se gestiona solo y cada palabra vuelve en un formato distinto para que se fije desde más de un ángulo.',
@@ -536,8 +536,8 @@ export const homeCopy = {
     }
   },
   de: {
-    title: 'OpenWords – Vokabel-App für Englisch, Niederländisch, Polnisch und Russisch',
-    description: 'Schlage jedes Wort nach, speichere die exakte Bedeutung mit einem Tippen und wiederhole sie mit verteilter Wiederholung. Kostenlose Vokabel-App für Englisch, Niederländisch, Polnisch und Russisch.',
+    title: 'OpenWords – Vokabel-App für Englisch, Deutsch, Niederländisch, Polnisch und Russisch',
+    description: 'Schlage jedes Wort nach, speichere die exakte Bedeutung mit einem Tippen und wiederhole sie mit verteilter Wiederholung. Kostenlose Vokabel-App für Englisch, Deutsch, Niederländisch, Polnisch und Russisch.',
     navDownload: 'Herunterladen',
     eyebrow: 'Verfügbar für iOS und Android',
     heroEyebrow: 'Wörterbuch und Karteikarten',
@@ -545,7 +545,7 @@ export const homeCopy = {
     heroH1Em: 'wirklich begegnest.',
     heroH1Html: 'Schlage jedes Wort nach.<br>Speichere es.<br><em>Merke es dir.</em>',
     heroTagline: 'Kostenlos · Kein Konto nötig · Funktioniert offline',
-    subtitle: 'Merke dir die Wörter, die du sonst bis morgen vergisst. OpenWords ist eine Wörterbuch- und Karteikarten-App für Englisch, Niederländisch, Polnisch und Russisch. Schlage ein Wort nach, dem du gerade begegnet bist, speichere seine exakte Bedeutung mit einem Tippen, und es kommt als Karteikarte zurück, bis es sitzt.',
+    subtitle: 'Merke dir die Wörter, die du sonst bis morgen vergisst. OpenWords ist eine Wörterbuch- und Karteikarten-App für Englisch, Deutsch, Niederländisch, Polnisch und Russisch. Schlage ein Wort nach, dem du gerade begegnet bist, speichere seine exakte Bedeutung mit einem Tippen, und es kommt als Karteikarte zurück, bis es sitzt.',
     problemTitle: 'Du schlägst Wörter ohnehin schon nach. Und vergisst sie trotzdem. Das ist nicht deine Schuld.',
     problemTitleEm: 'Das ist nicht deine Schuld.',
     problem: 'Vergessen ist genau die Art, wie das Gedächtnis funktioniert — ein Wort, dem du nur einmal begegnest, soll verblassen. Die Lösung ist nicht mehr Disziplin. Es ist, dem Wort zum richtigen Zeitpunkt wieder zu begegnen, auf verschiedene Weise. OpenWords schließt diesen Kreis: Das Nachschlagen wird zur Karteikarte, der Wiederholungsplan läuft von selbst, und jedes Wort kommt in einer anderen Form zurück, damit es aus mehreren Richtungen sitzt.',
@@ -625,8 +625,8 @@ export const homeCopy = {
     }
   },
   fr: {
-    title: 'OpenWords – Application de vocabulaire pour l\'anglais, le néerlandais, le polonais et le russe',
-    description: 'Recherchez n\'importe quel mot, enregistrez son sens exact d\'un simple clic et révisez-le grâce à la répétition espacée. Application de vocabulaire gratuite pour l\'anglais, le néerlandais, le polonais et le russe.',
+    title: 'OpenWords – Application de vocabulaire pour l\'anglais, l\'allemand, le néerlandais, le polonais et le russe',
+    description: 'Recherchez n\'importe quel mot, enregistrez son sens exact d\'un simple clic et révisez-le grâce à la répétition espacée. Application de vocabulaire gratuite pour l\'anglais, l\'allemand, le néerlandais, le polonais et le russe.',
     navDownload: 'Télécharger',
     eyebrow: 'Disponible sur iOS et Android',
     heroEyebrow: 'Dictionnaire et cartes mémoire',
@@ -634,7 +634,7 @@ export const homeCopy = {
     heroH1Em: 'que vous croisez réellement.',
     heroH1Html: 'Recherchez n\'importe quel mot.<br>Enregistrez-le.<br><em>Retenez-le.</em>',
     heroTagline: 'Gratuit · Sans compte · Fonctionne hors ligne',
-    subtitle: 'Retenez les mots que vous oublieriez normalement dès le lendemain. OpenWords est une application de dictionnaire et de cartes mémoire pour l\'anglais, le néerlandais, le polonais et le russe. Recherchez un mot que vous venez de croiser, enregistrez son sens exact d\'un simple clic, et il réapparaîtra sous forme de carte jusqu\'à ce qu\'il soit définitivement assimilé.',
+    subtitle: 'Retenez les mots que vous oublieriez normalement dès le lendemain. OpenWords est une application de dictionnaire et de cartes mémoire pour l\'anglais, l\'allemand, le néerlandais, le polonais et le russe. Recherchez un mot que vous venez de croiser, enregistrez son sens exact d\'un simple clic, et il réapparaîtra sous forme de carte jusqu\'à ce qu\'il soit définitivement assimilé.',
     problemTitle: 'Vous recherchez déjà des mots. Vous les oubliez déjà. Et ce n\'est pas votre faute.',
     problemTitleEm: 'Ce n\'est pas votre faute.',
     problem: 'L\'oubli est un mécanisme naturel de la mémoire — un mot croisé une seule fois finit inévitablement par s\'effacer. La solution ne réside pas dans une discipline de fer, mais dans le fait de revoir ce mot au bon moment et sous différentes formes. OpenWords ferme la boucle : la recherche devient une carte mémoire, le calendrier de révision se gère tout seul, et chaque mot revient sous une forme différente pour s\'ancrer durablement sous tous les angles.',
@@ -714,8 +714,8 @@ export const homeCopy = {
     }
   },
   cs: {
-    title: 'OpenWords – Slovníková aplikace pro angličtinu, nizozemštinu, polštinu a ruštinu',
-    description: 'Vyhledejte jakékoli slovo, jedním ťuknutím uložte jeho přesný význam a díky rozloženému opakování si ho zafixujte. Bezplatná aplikace na slovní zásobu pro angličtinu, nizozemštinu, polštinu a ruštinu.',
+    title: 'OpenWords – Slovníková aplikace pro angličtinu, němčinu, nizozemštinu, polštinu a ruštinu',
+    description: 'Vyhledejte jakékoli slovo, jedním ťuknutím uložte jeho přesný význam a díky rozloženému opakování si ho zafixujte. Bezplatná aplikace na slovní zásobu pro angličtinu, němčinu, nizozemštinu, polštinu a ruštinu.',
     navDownload: 'Stáhnout',
     eyebrow: 'Dostupné pro iOS a Android',
     heroEyebrow: 'Slovník a kartičky',
@@ -723,7 +723,7 @@ export const homeCopy = {
     heroH1Em: 'doopravdy narazíte.',
     heroH1Html: 'Vyhledejte jakékoli slovo.<br>Uložte si ho.<br><em>Zapamatujte si ho.</em>',
     heroTagline: 'Zdarma · Bez účtu · Funguje offline',
-    subtitle: 'Zapamatujte si slova, která byste jinak do zítřka zapomněli. OpenWords je slovníková aplikace s kartičkami pro angličtinu, nizozemštinu, polštinu a ruštinu. Vyhledejte slovo, na které jste právě narazili, a uložte jeho přesný význam jedním ťuknutím. Aplikace vám ho pak bude vracet jako kartičku, dokud vám neutkví v paměti.',
+    subtitle: 'Zapamatujte si slova, která byste jinak do zítřka zapomněli. OpenWords je slovníková aplikace s kartičkami pro angličtinu, němčinu, nizozemštinu, polštinu a ruštinu. Vyhledejte slovo, na které jste právě narazili, a uložte jeho přesný význam jedním ťuknutím. Aplikace vám ho pak bude vracet jako kartičku, dokud vám neutkví v paměti.',
     problemTitle: 'Slova si stejně vyhledáváte. A stejně je zapomínáte. Není to vaše chyba.',
     problemTitleEm: 'Není to vaše chyba.',
     problem: 'Zapomínání je přesně to, jak funguje paměť — slovo, na které narazíte jen jednou, se má z paměti vytratit. Řešením není víc disciplíny, ale připomenout si slovo ve správnou chvíli, a to různými způsoby. OpenWords tento okruh uzavírá: vyhledání se stává kartičkou, plán opakování běží sám a každé slovo se vrací v jiné podobě, aby vám utkvělo v paměti ze všech stran.',
@@ -803,8 +803,8 @@ export const homeCopy = {
     }
   },
   tr: {
-    title: 'OpenWords – İngilizce, Felemenkçe, Lehçe ve Rusça Kelime Öğrenme Uygulaması',
-    description: 'İstediğin kelimeyi ara, anlamını tek dokunuşla kaydet ve aralıklı tekrar sistemiyle hafızana kazı. İngilizce, Felemenkçe, Lehçe ve Rusça için ücretsiz kelime öğrenme uygulaması.',
+    title: 'OpenWords – İngilizce, Almanca, Felemenkçe, Lehçe ve Rusça Kelime Öğrenme Uygulaması',
+    description: 'İstediğin kelimeyi ara, anlamını tek dokunuşla kaydet ve aralıklı tekrar sistemiyle hafızana kazı. İngilizce, Almanca, Felemenkçe, Lehçe ve Rusça için ücretsiz kelime öğrenme uygulaması.',
     navDownload: 'İndir',
     eyebrow: 'iOS ve Android için',
     heroEyebrow: 'Sözlük ve kelime kartları',
@@ -812,7 +812,7 @@ export const homeCopy = {
     heroH1Em: 'gerçekten karşına çıkan kelimelerle',
     heroH1Html: 'Kelime ara.<br>Kaydet.<br><em>Hafızanda tut.</em>',
     heroTagline: 'Ücretsiz · Üyelik gerekmez · Çevrimdışı çalışır',
-    subtitle: 'Normalde ertesi güne unutacağın kelimeleri hafızanda tut. OpenWords; İngilizce, Felemenkçe, Lehçe ve Rusça dilleri için bir sözlük ve kelime kartı uygulamasıdır. Karşına çıkan bir kelimeyi ara, tam anlamını tek dokunuşla kaydet; kelime, zihnine iyice yerleşene kadar bir kart olarak karşına çıkmaya devam etsin.',
+    subtitle: 'Normalde ertesi güne unutacağın kelimeleri hafızanda tut. OpenWords; İngilizce, Almanca, Felemenkçe, Lehçe ve Rusça dilleri için bir sözlük ve kelime kartı uygulamasıdır. Karşına çıkan bir kelimeyi ara, tam anlamını tek dokunuşla kaydet; kelime, zihnine iyice yerleşene kadar bir kart olarak karşına çıkmaya devam etsin.',
     problemTitle: 'Kelimeleri zaten arıyorsun. Sonra da unutuyorsun. Bu senin suçun değil.',
     problemTitleEm: 'Bu senin suçun değil.',
     problem: 'Unutmak, hafızanın doğal bir çalışma şeklidir — sadece bir kez gördüğün bir kelimenin zihninden uçup gitmesi çok normal. Çözüm daha fazla disiplin değil; kelimeyi tam doğru zamanda ve farklı formatlarda yeniden görmektir. OpenWords bu döngüyü senin için tamamlar: arama bir kelime kartına dönüşür, tekrar planı kendi kendine işler ve her kelime farklı bir formatta karşına çıkar, böylece zihnine her açıdan tam olarak yerleşir.',
@@ -1831,7 +1831,7 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
 export function homeFaq(locale: LocaleCode) {
   const faqs = {
     en: [
-      ['What is OpenWords?', 'A vocabulary app for English, Dutch, Polish, and Russian. You look up a word, save the exact meaning in one tap, and the app brings it back at the right moment so you actually remember it.'],
+      ['What is OpenWords?', 'A vocabulary app for English, German, Dutch, Polish, and Russian. You look up a word, save the exact meaning in one tap, and the app brings it back at the right moment so you actually remember it.'],
       ['Is OpenWords good for beginners?', 'OpenWords works for any level — beginners included. Start with the most common words, save what you encounter, and build from there. It\'s not a substitute for grammar lessons or speaking practice — OpenWords is your vocabulary partner.'],
       ['Is it really free?', 'Yes. No subscriptions, no paywalls, no premium tier waiting behind a feature.'],
       ['Do I need an account?', 'No. No email, no sign-up. Your saved words live on your phone.'],
@@ -1842,7 +1842,7 @@ export function homeFaq(locale: LocaleCode) {
       ['How is OpenWords different from Google Translate?', 'Google Translate is great for texts, sentences, and photo translation. OpenWords is for vocabulary building: every meaning, level, forms, and usage — save a word once, remember it through repetition.']
     ],
     pl: [
-      ['Czym jest OpenWords?', 'To nowoczesna aplikacja do słownictwa dla języka angielskiego, niderlandzkiego, polskiego i rosyjskiego. Wyszukujesz słowo, zapisujesz jego dokładne znaczenie jednym dotknięciem, a aplikacja przypomina Ci je w optymalnym momencie, aby naprawdę zapadło w pamięć.'],
+      ['Czym jest OpenWords?', 'To nowoczesna aplikacja do słownictwa dla języka angielskiego, niemieckiego, niderlandzkiego, polskiego i rosyjskiego. Wyszukujesz słowo, zapisujesz jego dokładne znaczenie jednym dotknięciem, a aplikacja przypomina Ci je w optymalnym momencie, aby naprawdę zapadło w pamięć.'],
       ['Czy OpenWords jest odpowiedni dla początkujących?', 'OpenWords działa na każdym poziomie — także dla początkujących. Zacznij od najczęstszych słów, zapisuj to, co napotykasz, i buduj od tego miejsca. To nie zastępstwo dla lekcji gramatyki ani praktyki mówienia — OpenWords to twój partner do nauki słownictwa.'],
       ['Czy aplikacja jest naprawdę darmowa?', 'Tak. Nie ma tu subskrypcji, paywalli ani funkcji premium ukrytych za ścianą płatności.'],
       ['Czy muszę zakładać konto?', 'Nie. Nie wymagamy e-maila ani rejestracji. Wszystkie zapisane słówka są przechowywane bezpiecznie na Twoim telefonie.'],
@@ -1853,7 +1853,7 @@ export function homeFaq(locale: LocaleCode) {
       ['Czym OpenWords różni się od Google Translate?', 'Google Translate świetnie radzi sobie z tekstami, zdaniami i tłumaczeniem zdjęć. OpenWords służy do budowania słownictwa: każde znaczenie, poziom, formy i użycie — zapisz słowo raz i zapamiętaj je przez powtarzanie.']
     ],
     nl: [
-      ['Wat is OpenWords?', 'Een effectieve woordenschat-app voor Engels, Nederlands, Pools en Russisch. Je zoekt een woord op, slaat de exacte betekenis op met één tik, en de app herinnert je er op het juiste moment aan zodat je het ook echt onthoudt.'],
+      ['Wat is OpenWords?', 'Een effectieve woordenschat-app voor Engels, Duits, Nederlands, Pools en Russisch. Je zoekt een woord op, slaat de exacte betekenis op met één tik, en de app herinnert je er op het juiste moment aan zodat je het ook echt onthoudt.'],
       ['Is OpenWords geschikt voor beginners?', 'OpenWords werkt voor elk niveau — ook voor beginners. Begin met de meest voorkomende woorden, sla op wat je tegenkomt en bouw van daaruit verder. Het is geen vervanging voor grammaticalessen of spreekoefeningen — OpenWords is jouw woordenschatpartner.'],
       ['Is het echt gratis?', 'Ja. Er zijn geen abonnementen, geen betaalmuren en er zitten geen premium-functies achter een slotje verborgen.'],
       ['Heb ik een account nodig?', 'Nee. Geen e-mailadres, geen registratie. Je opgeslagen woorden blijven veilig op je eigen telefoon staan.'],
@@ -1864,7 +1864,7 @@ export function homeFaq(locale: LocaleCode) {
       ['Hoe verschilt OpenWords van Google Translate?', 'Google Translate is geweldig voor teksten, zinnen en fotovertaling. OpenWords is voor woordenschatopbouw: elke betekenis, niveau, vormen en gebruik — sla een woord één keer op en onthoud het door herhaling.']
     ],
     ru: [
-      ['Что такое OpenWords?', 'Это удобное приложение для изучения слов в английском, нидерландском, польском и русском языках. Вы ищете слово, сохраняете его точный перевод в один тап, а приложение напоминает его в нужный момент, чтобы вы действительно его запомнили.'],
+      ['Что такое OpenWords?', 'Это удобное приложение для изучения слов в английском, немецком, нидерландском, польском и русском языках. Вы ищете слово, сохраняете его точный перевод в один тап, а приложение напоминает его в нужный момент, чтобы вы действительно его запомнили.'],
       ['Подходит ли OpenWords для начинающих?', 'OpenWords работает на любом уровне — в том числе для начинающих. Начни с самых частотных слов, сохраняй то, что встречается, и постепенно расширяй словарный запас. Это не замена урокам грамматики или разговорной практике — OpenWords это твой партнёр по словарному запасу.'],
       ['Приложение правда бесплатное?', 'Да. Здесь нет подписок, ограничений функционала (paywall) или скрытых премиум-тарифов.'],
       ['Нужен ли аккаунт?', 'Нет. Мы не требуем email или регистрацию. Все ваши сохранённые слова хранятся локально на вашем телефоне.'],
@@ -1875,7 +1875,7 @@ export function homeFaq(locale: LocaleCode) {
       ['Чем OpenWords отличается от Google Translate?', 'Google Переводчик отлично справляется с текстами, предложениями и переводом с фото. OpenWords — для пополнения словарного запаса: все значения, уровень, формы и употребление — сохрани слово один раз и запомни через повторение.']
     ],
     it: [
-      ['Cos\'è OpenWords?', 'Un\'app di vocabolario per inglese, olandese, polacco e russo. Cerchi una parola, ne salvi il significato esatto con un tocco e l\'app te la ripropone al momento giusto, così la ricordi davvero.'],
+      ['Cos\'è OpenWords?', 'Un\'app di vocabolario per inglese, tedesco, olandese, polacco e russo. Cerchi una parola, ne salvi il significato esatto con un tocco e l\'app te la ripropone al momento giusto, così la ricordi davvero.'],
       ['OpenWords è adatto ai principianti?', 'OpenWords funziona a qualsiasi livello, principianti inclusi. Inizia dalle parole più comuni, salva ciò che incontri e prosegui da lì. Non sostituisce le lezioni di grammatica o la pratica orale: OpenWords è il tuo compagno per il vocabolario.'],
       ['È davvero gratis?', 'Sì. Nessun abbonamento, nessun paywall, nessun livello premium nascosto dietro una funzione.'],
       ['Mi serve un account?', 'No. Nessuna email, nessuna registrazione. Le tue parole salvate restano sul tuo telefono.'],
@@ -1886,7 +1886,7 @@ export function homeFaq(locale: LocaleCode) {
       ['In cosa OpenWords è diverso da Google Translate?', 'Google Translate è ottimo per testi, frasi e traduzione da foto. OpenWords serve a costruire il vocabolario: ogni significato, livello, forma e uso — salva una parola una volta e ricordala con la ripetizione.']
     ],
     es: [
-      ['¿Qué es OpenWords?', 'Una app de vocabulario para inglés, neerlandés, polaco y ruso. Buscas una palabra, guardas su significado exacto con un toque y la app te la trae de vuelta en el momento justo para que la recuerdes de verdad.'],
+      ['¿Qué es OpenWords?', 'Una app de vocabulario para inglés, alemán, neerlandés, polaco y ruso. Buscas una palabra, guardas su significado exacto con un toque y la app te la trae de vuelta en el momento justo para que la recuerdes de verdad.'],
       ['¿OpenWords es bueno para principiantes?', 'OpenWords funciona en cualquier nivel, principiantes incluidos. Empieza con las palabras más comunes, guarda lo que encuentres y avanza desde ahí. No sustituye a las clases de gramática ni a la práctica oral: OpenWords es tu compañero de vocabulario.'],
       ['¿Es realmente gratis?', 'Sí. Sin suscripciones, sin muros de pago, sin un nivel premium escondido detrás de una función.'],
       ['¿Necesito una cuenta?', 'No. Sin email, sin registro. Tus palabras guardadas viven en tu teléfono.'],
@@ -1897,7 +1897,7 @@ export function homeFaq(locale: LocaleCode) {
       ['¿En qué se diferencia OpenWords de Google Translate?', 'Google Translate es genial para textos, frases y traducción por foto. OpenWords es para construir vocabulario: cada significado, nivel, forma y uso — guarda una palabra una vez y recuérdala con la repetición.']
     ],
     de: [
-      ['Was ist OpenWords?', 'Eine Vokabel-App für Englisch, Niederländisch, Polnisch und Russisch. Du schlägst ein Wort nach, speicherst die exakte Bedeutung mit einem Tippen, und die App bringt es zum richtigen Zeitpunkt zurück, damit du es wirklich behältst.'],
+      ['Was ist OpenWords?', 'Eine Vokabel-App für Englisch, Deutsch, Niederländisch, Polnisch und Russisch. Du schlägst ein Wort nach, speicherst die exakte Bedeutung mit einem Tippen, und die App bringt es zum richtigen Zeitpunkt zurück, damit du es wirklich behältst.'],
       ['Ist OpenWords für Anfänger geeignet?', 'OpenWords funktioniert auf jedem Niveau, auch für Anfänger. Beginne mit den häufigsten Wörtern, speichere, was dir begegnet, und baue von dort aus auf. Es ersetzt keinen Grammatikunterricht und keine Sprechpraxis — OpenWords ist dein Wortschatz-Partner.'],
       ['Ist es wirklich kostenlos?', 'Ja. Keine Abos, keine Bezahlschranken, keine Premium-Stufe, die hinter einer Funktion wartet.'],
       ['Brauche ich ein Konto?', 'Nein. Keine E-Mail, keine Anmeldung. Deine gespeicherten Wörter bleiben auf deinem Telefon.'],
@@ -1908,7 +1908,7 @@ export function homeFaq(locale: LocaleCode) {
       ['Wie unterscheidet sich OpenWords von Google Übersetzer?', 'Google Übersetzer ist großartig für Texte, Sätze und Fotoübersetzung. OpenWords dient dem Wortschatzaufbau: jede Bedeutung, jedes Niveau, jede Form und Verwendung — speichere ein Wort einmal und merke es dir durch Wiederholung.']
     ],
     fr: [
-      ['Qu\'est-ce qu\'OpenWords ?', 'Une application d\'apprentissage du vocabulaire pour l\'anglais, le néerlandais, le polonais et le russe. Vous recherchez un mot, vous enregistrez son sens exact d\'un simple clic, et l\'application vous le réaffiche au bon moment pour que vous le reteniez vraiment.'],
+      ['Qu\'est-ce qu\'OpenWords ?', 'Une application d\'apprentissage du vocabulaire pour l\'anglais, l\'allemand, le néerlandais, le polonais et le russe. Vous recherchez un mot, vous enregistrez son sens exact d\'un simple clic, et l\'application vous le réaffiche au bon moment pour que vous le reteniez vraiment.'],
       ['OpenWords convient-il aux débutants ?', 'Oui, OpenWords s\'adresse à tous les niveaux, y compris les débutants. Commencez par les mots les plus fréquents, enregistrez ceux que vous croisez et progressez à votre rythme. L\'application ne remplace pas les cours de grammaire ou la pratique orale, mais elle est votre alliée idéale pour enrichir votre vocabulaire.'],
       ['Est-ce vraiment gratuit ?', 'Oui. Il n\'y a aucun abonnement, aucun paywall, ni aucune fonctionnalité premium payante.'],
       ['Faut-il créer un compte ?', 'Non. Aucun e-mail ni aucune inscription ne sont nécessaires. Tous les mots que vous enregistrez restent stockés en toute sécurité sur votre téléphone.'],
@@ -1919,7 +1919,7 @@ export function homeFaq(locale: LocaleCode) {
       ['En quoi OpenWords est-il différent de Google Traduction ?', 'Google Traduction est idéal pour traduire des textes complets, des phrases ou des photos. OpenWords, en revanche, est conçu spécifiquement pour enrichir votre vocabulaire de manière durable en vous montrant chaque nuance, niveau, forme et usage. Vous enregistrez un mot une fois, et vous le retenez définitivement grâce aux révisions.']
     ],
     cs: [
-      ['Co je OpenWords?', 'Aplikace pro výuku slovní zásoby pro angličtinu, nizozemštinu, polštinu a ruštinu. Vyhledáte slovo, jedním ťuknutím uložíte jeho přesný význam a aplikace vám ho připomene přesně ve správnou chvíli, abyste si ho doopravdy zapamatovali.'],
+      ['Co je OpenWords?', 'Aplikace pro výuku slovní zásoby pro angličtinu, němčinu, nizozemštinu, polštinu a ruštinu. Vyhledáte slovo, jedním ťuknutím uložíte jeho přesný význam a aplikace vám ho připomene přesně ve správnou chvíli, abyste si ho doopravdy zapamatovali.'],
       ['Je OpenWords pro začátečníky?', 'Ano, OpenWords se hodí pro jakoukoli úroveň – včetně úplných začátečníků. Můžete začít s nejčastějšími slovy, ukládat si to, na co zrovna narazíte, a postupně se posouvat dál. Nenahrazuje sice výuku gramatiky ani konverzaci, ale je to váš ideální parťák pro budování slovní zásoby.'],
       ['Je to opravdu zdarma?', 'Ano. Nečekají vás žádná předplatná, žádné paywally ani prémiové funkce schované za poplatky.'],
       ['Potřebuji účet?', 'Ne. Žádný e-mail, žádná registrace. Vaše uložená slova zůstávají bezpečně ve vašem telefonu.'],
@@ -1930,7 +1930,7 @@ export function homeFaq(locale: LocaleCode) {
       ['Čím se OpenWords liší od Překladače Google?', 'Překladač Google je skvělý na rychlé překlady textů, celých vět nebo nápisů z fotek. OpenWords se ale zaměřuje na skutečné budování a dlouhodobé uchování slovní zásoby. U každého hesla vidíte všechny významy, úroveň obtížnosti, správné tvary i použití – slovo si jednoduše uložíte a díky chytrému opakování už ho nezapomenete.']
     ],
     tr: [
-      ['OpenWords nedir?', 'İngilizce, Felemenkçe, Lehçe ve Rusça dilleri için geliştirilmiş bir kelime öğrenme uygulamasıdır. İstediğin bir kelimeyi arar, anlamını tek dokunuşla kaydedersin; uygulama da onu tam doğru zamanda karşına çıkarır, böylece kelimeler hafızana gerçekten kazınır.'],
+      ['OpenWords nedir?', 'İngilizce, Almanca, Felemenkçe, Lehçe ve Rusça dilleri için geliştirilmiş bir kelime öğrenme uygulamasıdır. İstediğin bir kelimeyi arar, anlamını tek dokunuşla kaydedersin; uygulama da onu tam doğru zamanda karşına çıkarır, böylece kelimeler hafızana gerçekten kazınır.'],
       ['OpenWords yeni başlayanlar için uygun mu?', 'Evet, OpenWords yeni başlayanlar da dahil olmak üzere her seviyeye uygundur. En sık kullanılan kelimelerle başlayabilir, günlük hayatta karşına çıkanları kaydedebilir ve adım adım ilerleyebilirsin. Dil bilgisi derslerinin veya konuşma pratiğinin yerini tutmaz — OpenWords, kelime dağarcığını geliştirirken senin en büyük yardımcındır.'],
       ['Gerçekten ücretsiz mi?', 'Evet. Abonelik yok, ödeme duvarı (paywall) yok, gizli ücretlerin arkasına saklanmış premium özellikler yok.'],
       ['Üyelik gerekiyor mu?', 'Hayır. E-posta derdi yok, kayıt olmak yok. Kaydettiğin tüm kelimeler tamamen senin telefonunda güvenle saklanır.'],

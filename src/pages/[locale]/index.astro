@@ -6,7 +6,7 @@ import LanguageCards from '../../components/LanguageCards.astro';
 import MobileDownloadBar from '../../components/MobileDownloadBar.astro';
 import StoreButtons from '../../components/StoreButtons.astro';
 import { cardDemo, homeCopy, homeFaq } from '../../data/copy';
-import { languageSlugs, languages, locales, type LocaleCode } from '../../data/site';
+import { languageInfo, supportedLanguageSlugs, locales, type LocaleCode } from '../../data/site';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
 export function getStaticPaths() {
@@ -19,6 +19,7 @@ const locale = Astro.params.locale as LocaleCode;
 const copy = homeCopy[locale];
 const demo = cardDemo[locale];
 const faq = homeFaq(locale);
+const chipNames = supportedLanguageSlugs.map((slug) => languageInfo(slug).displayName[locale]);
 ---
 <BaseLayout title={copy.title} description={copy.description} locale={locale} path="/" faq={faq}>
   <Header locale={locale} />
@@ -39,8 +40,8 @@ const faq = homeFaq(locale);
               <StoreButtons locale={locale} />
               <p class="hero__tagline">{copy.heroTagline}</p>
               <div class="hero__chips" aria-label={copy.ui.supportedLanguages}>
-                {languageSlugs.map((slug) => (
-                  <span class="chip">{languages[slug].displayName[locale]}</span>
+                {chipNames.map((name) => (
+                  <span class="chip">{name}</span>
                 ))}
               </div>
             </div>
