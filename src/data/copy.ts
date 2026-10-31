@@ -1,4 +1,4 @@
-import { languages, type LanguageSlug, type LocaleCode } from './site';
+import { languages, translationLanguages, type LanguageSlug, type LocaleCode } from './site';
 
 export const homeCopy = {
   en: {
@@ -1027,6 +1027,11 @@ export const cardDemo: Record<LocaleCode, CardDemo> = {
 
 export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
   const appLanguage = languages[language];
+  // Number of pills the "Every meaning, in your language" band shows for this
+  // learn language — mirrors the filter in the learn pages.
+  const translationCount = translationLanguages.filter(
+    (l) => l.exclude !== language && (!l.only || l.only === language)
+  ).length;
   const localLanguage = appLanguage.localName[locale];
   const displayLanguage = appLanguage.displayName[locale];
   const vocabPhrase = appLanguage.vocabPhrase[locale];
@@ -1098,7 +1103,7 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
       ] as string[],
       faqTitle: `${name} vocabulary questions`,
       langsBandH2Html: 'Every meaning, in <em>your language.</em>',
-      langsBandSub: `Definitions and example sentences are translated into 9 languages — so you understand every new ${name} word from the very first tap.`,
+      langsBandSub: `Definitions and example sentences are translated into ${translationCount} languages — so you understand every new ${name} word from the very first tap.`,
       wordCardCaption: 'Tap a meaning to expand',
       ctaEyebrow: 'Available on iOS & Android',
       cta: `Start learning ${name} vocabulary with OpenWords.`,
@@ -1139,7 +1144,7 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
       ] as string[],
       faqTitle: `Najczęstsze pytania o naukę słownictwa ${localLanguage}`,
       langsBandH2Html: 'Każde znaczenie w <em>Twoim języku.</em>',
-      langsBandSub: 'Definicje i przykładowe zdania są tłumaczone na 9 języków — dzięki czemu rozumiesz każde nowe słowo już od pierwszego stuknięcia.',
+      langsBandSub: `Definicje i przykładowe zdania są tłumaczone na ${translationCount} języków — dzięki czemu rozumiesz każde nowe słowo już od pierwszego stuknięcia.`,
       wordCardCaption: 'Stuknij znaczenie, aby je rozwinąć',
       ctaEyebrow: 'Dostępne na iOS i Androida',
       cta: `Zacznij rozwijać swoje ${localLanguage.replace('ego', 'ie')} słownictwo z OpenWords.`,
@@ -1180,7 +1185,7 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
       ] as string[],
       faqTitle: `Veelgestelde vragen over de ${vocabPhrase}`,
       langsBandH2Html: 'Elke betekenis, in <em>jouw taal.</em>',
-      langsBandSub: 'Definities en voorbeeldzinnen zijn vertaald in 9 talen — zodat je elk nieuw woord vanaf de allereerste tik begrijpt.',
+      langsBandSub: `Definities en voorbeeldzinnen zijn vertaald in ${translationCount} talen — zodat je elk nieuw woord vanaf de allereerste tik begrijpt.`,
       wordCardCaption: 'Tik op een betekenis om uit te klappen',
       ctaEyebrow: 'Beschikbaar voor iOS & Android',
       cta: `Begin met het leren van de ${vocabPhrase} in OpenWords.`,
@@ -1221,7 +1226,7 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
       ] as string[],
       faqTitle: `Вопросы об изучении ${localLanguage.replace(/ий$/, 'их')} слов`,
       langsBandH2Html: 'Каждое значение — на <em>вашем языке.</em>',
-      langsBandSub: 'Определения и примеры предложений переведены на 9 языков — чтобы вы понимали каждое новое слово с первого же тапа.',
+      langsBandSub: `Определения и примеры предложений переведены на ${translationCount} языков — чтобы вы понимали каждое новое слово с первого же тапа.`,
       wordCardCaption: 'Нажмите на значение, чтобы развернуть',
       ctaEyebrow: 'Доступно на iOS и Android',
       cta: `Начните учить ${vocabPhrase} в OpenWords.`,
@@ -1262,7 +1267,7 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
       ] as string[],
       faqTitle: `Domande sull'apprendimento del ${vocabPhrase}`,
       langsBandH2Html: 'Ogni significato, nella <em>tua lingua.</em>',
-      langsBandSub: `Definizioni e frasi d'esempio sono tradotte in 9 lingue — così capisci ogni nuova parola fin dal primo tocco.`,
+      langsBandSub: `Definizioni e frasi d'esempio sono tradotte in ${translationCount} lingue — così capisci ogni nuova parola fin dal primo tocco.`,
       wordCardCaption: 'Tocca un significato per espanderlo',
       ctaEyebrow: 'Disponibile su iOS e Android',
       cta: `Inizia a imparare il ${vocabPhrase} con OpenWords.`,
@@ -1303,7 +1308,7 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
       ] as string[],
       faqTitle: `Preguntas sobre el aprendizaje del ${vocabPhrase}`,
       langsBandH2Html: 'Cada significado, en <em>tu idioma.</em>',
-      langsBandSub: `Las definiciones y las frases de ejemplo están traducidas a 9 idiomas, para que entiendas cada palabra nueva desde el primer toque.`,
+      langsBandSub: `Las definiciones y las frases de ejemplo están traducidas a ${translationCount} idiomas, para que entiendas cada palabra nueva desde el primer toque.`,
       wordCardCaption: 'Toca un significado para ampliarlo',
       ctaEyebrow: 'Disponible en iOS y Android',
       cta: `Empieza a aprender ${vocabPhrase} con OpenWords.`,
@@ -1344,7 +1349,7 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
       ] as string[],
       faqTitle: `Fragen zum ${displayLanguage}-Wortschatz`,
       langsBandH2Html: 'Jede Bedeutung, in <em>deiner Sprache.</em>',
-      langsBandSub: `Definitionen und Beispielsätze werden in 9 Sprachen übersetzt — damit du jedes neue Wort vom ersten Tippen an verstehst.`,
+      langsBandSub: `Definitionen und Beispielsätze werden in ${translationCount} Sprachen übersetzt — damit du jedes neue Wort vom ersten Tippen an verstehst.`,
       wordCardCaption: 'Tippe auf eine Bedeutung, um sie aufzuklappen',
       ctaEyebrow: 'Verfügbar für iOS und Android',
       cta: `Beginne, ${displayLanguage}-Wortschatz mit OpenWords zu lernen.`,
@@ -1385,7 +1390,7 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
       ] as string[],
       faqTitle: 'Questions fréquentes',
       langsBandH2Html: 'Chaque sens, dans <em>votre langue.</em>',
-      langsBandSub: `Les définitions et les phrases d'exemple sont traduites en 9 langues — pour vous permettre de comprendre chaque nouveau mot dès le premier clic.`,
+      langsBandSub: `Les définitions et les phrases d'exemple sont traduites en ${translationCount} langues — pour vous permettre de comprendre chaque nouveau mot dès le premier clic.`,
       wordCardCaption: 'Cliquez sur un sens pour le développer',
       ctaEyebrow: 'Disponible sur iOS et Android',
       cta: `Commencez à enrichir votre vocabulaire ${localLanguage} avec OpenWords.`,
@@ -1426,7 +1431,7 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
       ] as string[],
       faqTitle: 'Časté otázky',
       langsBandH2Html: 'Každý význam ve <em>vašem rodném jazyce.</em>',
-      langsBandSub: `Definice a příkladové věty jsou přeloženy do 9 jazyků, abyste každému novému slovu porozuměli hned od prvního ťuknutí.`,
+      langsBandSub: `Definice a příkladové věty jsou přeloženy do ${translationCount} jazyků, abyste každému novému slovu porozuměli hned od prvního ťuknutí.`,
       wordCardCaption: 'Ťuknutím význam rozbalíte',
       ctaEyebrow: 'Dostupné pro iOS a Android',
       cta: `Začněte si rozšiřovat ${csForm.adjAcc} slovní zásobu s OpenWords.`,
@@ -1467,7 +1472,7 @@ export function learnCopy(locale: LocaleCode, language: LanguageSlug) {
       ] as string[],
       faqTitle: 'Sıkça Sorulan Sorular',
       langsBandH2Html: 'Her anlam, <em>kendi ana dilinde.</em>',
-      langsBandSub: `Tanımlar ve örnek cümleler 9 farklı dile çevrilir — böylece her yeni kelimeyi daha ilk dokunuşta kolayca anlarsın.`,
+      langsBandSub: `Tanımlar ve örnek cümleler ${translationCount} farklı dile çevrilir — böylece her yeni kelimeyi daha ilk dokunuşta kolayca anlarsın.`,
       wordCardCaption: 'Detayları görmek için anlama dokun',
       ctaEyebrow: 'iOS ve Android için',
       cta: `OpenWords ile ${displayLanguage} kelime dağarcığını geliştirmeye başla.`,
