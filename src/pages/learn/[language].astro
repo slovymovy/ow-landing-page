@@ -178,7 +178,7 @@ const flagMap: Record<LanguageSlug, string> = {
           <h2 class="langs-band__h2" set:html={copy.langsBandH2Html}></h2>
           <p class="langs-band__sub">{copy.langsBandSub}</p>
           <div class="langs-band__pills">
-            {translationLanguages.filter((l) => l.exclude !== language).map((l) => (
+            {translationLanguages.filter((l) => l.exclude !== language && (!l.only || l.only === language)).map((l) => (
               <span class="lang-pill"><span class="lang-pill__code">{l.code}</span>{l.name[locale]}</span>
             ))}
           </div>

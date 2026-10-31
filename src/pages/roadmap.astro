@@ -12,7 +12,7 @@ const locale = 'en';
 // out of sync with the /learn pages and the "Every meaning, in your language" band.
 // `supportedLanguageSlugs` includes learning languages live in the app without a /learn page yet.
 const learningToday = supportedLanguageSlugs.map((slug) => languageInfo(slug).name);
-const translationToday = translationLanguages.map((l) => l.name.en);
+const translationToday = translationLanguages.map((l) => ({ name: l.name.en, englishOnly: Boolean(l.only) }));
 
 type LanguageKind = 'learning' | 'translation';
 
@@ -37,13 +37,12 @@ interface RoadmapGroup {
 
 const roadmap: RoadmapGroup[] = [
   {
-    id: 'october',
+    id: 'november',
     status: 'In progress',
-    when: 'October 2026',
+    when: 'Beginning of November 2026',
     current: true,
     items: [
-      { name: 'French', native: 'Français', lang: 'fr', kind: 'learning' },
-      { name: 'Japanese', native: '日本語', lang: 'ja', kind: 'translation' }
+      { name: 'French', native: 'Français', lang: 'fr', kind: 'learning' }
     ]
   },
   {
@@ -113,7 +112,7 @@ const structuredData = [
 ---
 <BaseLayout
   title="Roadmap – OpenWords"
-  description="The languages coming next to OpenWords: French as a learning language plus Japanese translations in October, and the languages people have asked for after that."
+  description="The languages coming next to OpenWords: French as a learning language at the beginning of November, and the languages people have asked for after that."
   locale={locale}
   path="/roadmap"
   localized={false}
@@ -161,7 +160,9 @@ const structuredData = [
             </p>
             <div class="kind-card__label">Available today</div>
             <ul class="kind-card__list">
-              {translationToday.map((name) => <li>{name}</li>)}
+              {translationToday.map(({ name, englishOnly }) => (
+                <li>{name}{englishOnly && <span class="kind-card__only">For English learners</span>}</li>
+              ))}
             </ul>
           </article>
         </div>
@@ -381,6 +382,10 @@ const structuredData = [
   }
 
   .kind-card__list li {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    white-space: nowrap;
     font-size: .8125rem;
     font-weight: 600;
     color: #b8bcce;
@@ -388,6 +393,19 @@ const structuredData = [
     border: 1px solid rgba(255, 255, 255, .08);
     border-radius: 999px;
     padding: 4px 10px;
+  }
+
+  .kind-card__only {
+    font-size: .5625rem;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: #8ED4C6;
+    padding: 3px 6px;
+    border-radius: 999px;
+    background: rgba(110, 198, 184, .11);
+    border: 1px solid rgba(110, 198, 184, .24);
   }
 
   /* ── Timeline ── */

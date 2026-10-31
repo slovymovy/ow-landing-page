@@ -351,6 +351,8 @@ export const appOnlyLanguages = {
 // the "Every meaning, in your language" band on each /learn page. Names are
 // localised to the page's own locale (SEO: single-language content signal).
 // `exclude` drops the band entry that matches the page's own learn language.
+// `only` restricts an entry to a single learn language (the app translates into
+// it only when you study that language); the roadmap flags these as English-only.
 export const translationLanguages = [
   { code: 'DE', name: { en: 'German', pl: 'Niemiecki', nl: 'Duits', ru: 'Немецкий', it: 'Tedesco', es: 'Alemán', de: 'Deutsch', fr: 'Allemand', cs: 'Němčina', tr: 'Almanca' } },
   { code: 'EN', exclude: 'english', name: { en: 'English', pl: 'Angielski', nl: 'Engels', ru: 'Английский', it: 'Inglese', es: 'Inglés', de: 'Englisch', fr: 'Anglais', cs: 'Angličtina', tr: 'İngilizce' } },
@@ -362,7 +364,9 @@ export const translationLanguages = [
   { code: 'TR', name: { en: 'Turkish', pl: 'Turecki', nl: 'Turks', ru: 'Турецкий', it: 'Turco', es: 'Turco', de: 'Türkisch', fr: 'Turc', cs: 'Turečtina', tr: 'Türkçe' } },
   { code: 'CS', name: { en: 'Czech', pl: 'Czeski', nl: 'Tsjechisch', ru: 'Чешский', it: 'Ceco', es: 'Checo', de: 'Tschechisch', fr: 'Tchèque', cs: 'Čeština', tr: 'Çekçe' } },
   { code: 'ZH', name: { en: 'Simplified Chinese', pl: 'Chiński uproszczony', nl: 'Vereenvoudigd Chinees', ru: 'Упрощённый китайский', it: 'Cinese semplificato', es: 'Chino simplificado', de: 'Vereinfachtes Chinesisch', fr: 'Chinois simplifié', cs: 'Zjednodušená čínština', tr: 'Basitleştirilmiş Çince' } },
-  { code: 'RU', exclude: 'russian', name: { en: 'Russian', pl: 'Rosyjski', nl: 'Russisch', ru: 'Русский', it: 'Russo', es: 'Ruso', de: 'Russisch', fr: 'Russe', cs: 'Ruština', tr: 'Rusça' } }
+  { code: 'RU', exclude: 'russian', name: { en: 'Russian', pl: 'Rosyjski', nl: 'Russisch', ru: 'Русский', it: 'Russo', es: 'Ruso', de: 'Russisch', fr: 'Russe', cs: 'Ruština', tr: 'Rusça' } },
+  { code: 'JA', only: 'english', name: { en: 'Japanese', pl: 'Japoński', nl: 'Japans', ru: 'Японский', it: 'Giapponese', es: 'Japonés', de: 'Japanisch', fr: 'Japonais', cs: 'Japonština', tr: 'Japonca' } },
+  { code: 'PT', only: 'english', name: { en: 'European Portuguese', pl: 'Portugalski europejski', nl: 'Europees Portugees', ru: 'Европейский португальский', it: 'Portoghese europeo', es: 'Portugués europeo', de: 'Europäisches Portugiesisch', fr: 'Portugais européen', cs: 'Evropská portugalština', tr: 'Avrupa Portekizcesi' } }
 ] as const;
 
 export type LocaleCode = keyof typeof locales;
